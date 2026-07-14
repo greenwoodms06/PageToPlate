@@ -1,6 +1,6 @@
 import 'fake-indexeddb/auto';
 import { beforeEach, describe, expect, it } from 'vitest';
-import { bulkPut, clearAll, del, getAll, getDb, getSettings, put, putSettings } from './db';
+import { bulkDel, bulkPut, clearAll, del, get, getAll, getDb, getSettings, put, putSettings } from './db';
 import { DEFAULT_SETTINGS, type Recipe } from './types';
 
 const sampleRecipe = (id: string, name = 'Coq au Vin'): Recipe => ({
@@ -63,6 +63,19 @@ describe('raw CRUD helpers', () => {
     await put('recipes', sampleRecipe('r1'));
     await del('recipes', 'r1');
     expect(await getAll('recipes')).toEqual([]);
+  });
+
+  it('get fetches a single record by id', async () => {
+    const recipe = sampleRecipe('r1');
+    await put('recipes', recipe);
+    expect(await get('recipes', 'r1')).toEqual(recipe);
+    expect(await get('recipes', 'missing')).toBeUndefined();
+  });
+
+  it('bulkDel removes many records in one transaction', async () => {
+    await bulkPut('recipes', [sampleRecipe('r1'), sampleRecipe('r2'), sampleRecipe('r3')]);
+    await bulkDel('recipes', ['r1', 'r3']);
+    expect((await getAll('recipes')).map((r) => r.id)).toEqual(['r2']);
   });
 
   it('stores settings under the literal key "app"', async () => {

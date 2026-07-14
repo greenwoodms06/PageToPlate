@@ -64,6 +64,13 @@ export async function getAll<S extends P2PStoreName>(store: S): Promise<StoreVal
   return (await getDb()).getAll(store);
 }
 
+export async function get<S extends Exclude<P2PStoreName, 'settings'>>(
+  store: S,
+  id: string,
+): Promise<StoreValue<P2PSchema, S> | undefined> {
+  return (await getDb()).get(store, id);
+}
+
 export async function put<S extends Exclude<P2PStoreName, 'settings'>>(
   store: S,
   val: StoreValue<P2PSchema, S>,
@@ -83,6 +90,15 @@ export async function bulkPut<S extends Exclude<P2PStoreName, 'settings'>>(
 
 export async function del(store: Exclude<P2PStoreName, 'settings'>, id: string): Promise<void> {
   await (await getDb()).delete(store, id);
+}
+
+// Single transaction: deleteBookHard removes ~1,600 recipes at once; one
+// transaction instead of N keeps that from taking seconds on real IndexedDB.
+export async function bulkDel(store: Exclude<P2PStoreName, 'settings'>, ids: string[]): Promise<void> {
+  const db = await getDb();
+  const tx = db.transaction(store, 'readwrite');
+  for (const id of ids) void tx.store.delete(id);
+  await tx.done;
 }
 
 export async function getSettings(): Promise<Settings | undefined> {
