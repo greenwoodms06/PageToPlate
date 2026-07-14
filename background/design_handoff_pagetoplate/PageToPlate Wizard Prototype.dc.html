@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&amp;family=Instrument+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#E9E6DC;font-family:'Instrument Sans',system-ui,sans-serif}
+a{color:#2D6A4F}a:hover{color:#1F4C38}
+button{cursor:pointer}
+</style>
+</helmet>
+
+<div style="max-width:430px;margin:0 auto;min-height:100vh;background:#F6F4EC;color:#23241E;font-size:15px;line-height:1.45;display:flex;flex-direction:column;box-shadow:0 0 40px rgba(0,0,0,.12)">
+  <div style="flex:1;padding:20px 16px 100px">
+    <div style="display:flex;align-items:baseline;justify-content:space-between">
+      <div style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#75766B;font-weight:600">Page to Plate</div>
+      <div style="font-size:11px;color:#75766B;font-weight:600">{{ stepLabel }}</div>
+    </div>
+    <div style="display:flex;gap:6px;margin:10px 0 16px">
+      <span style="flex:1;height:4px;border-radius:2px;background:{{ seg1 }}"></span>
+      <span style="flex:1;height:4px;border-radius:2px;background:{{ seg2 }}"></span>
+      <span style="flex:1;height:4px;border-radius:2px;background:{{ seg3 }}"></span>
+    </div>
+
+    <sc-if value="{{ isStep1 }}" hint-placeholder-val="{{ true }}">
+      <div data-screen-label="Wizard step 1 books">
+        <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:24px;letter-spacing:-.01em">Choose your cookbooks</div>
+        <div style="font-size:13px;color:#75766B;margin:2px 0 12px">Each book gets a color in the order you tap it.</div>
+        <sc-for list="{{ books }}" as="b" hint-placeholder-count="4">
+          <button onClick="{{ b.toggle }}" style="width:100%;text-align:left;display:flex;align-items:center;gap:12px;background:#FFFEF9;border:1.5px solid {{ b.border }};box-shadow:{{ b.shadow }};border-radius:12px;padding:12px 14px;margin-bottom:9px;font-family:inherit;font-size:15px;min-height:64px;color:#23241E">
+            <span style="flex:none;width:14px;height:44px;border-radius:3px;background:{{ b.spine }};box-shadow:inset -3px 0 0 rgba(0,0,0,.15)"></span>
+            <span style="flex:1;min-width:0"><b style="font-weight:600">{{ b.name }}</b><br><span style="font-size:12.5px;color:#75766B">{{ b.meta }}</span></span>
+            <sc-if value="{{ b.selected }}" hint-placeholder-val="{{ false }}">
+              <span style="flex:none;width:24px;height:24px;border-radius:50%;background:{{ b.color }};color:#fff;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center">{{ b.order }}</span>
+            </sc-if>
+          </button>
+        </sc-for>
+        <button onClick="{{ goStep2 }}" disabled="{{ next1Disabled }}" style="width:100%;min-height:52px;border:none;background:{{ next1Bg }};color:#fff;border-radius:14px;font-size:16px;font-weight:700;font-family:inherit;margin-top:10px">Next: categories →</button>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isStep2 }}" hint-placeholder-val="{{ false }}">
+      <div data-screen-label="Wizard step 2 categories">
+        <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:24px;letter-spacing:-.01em">What are we making?</div>
+        <div style="font-size:13px;color:#75766B;margin:2px 0 12px">Set a count per category. Filters apply only to their category.</div>
+        <sc-for list="{{ cats }}" as="c" hint-placeholder-count="4">
+          <div style="background:#FFFEF9;border:1.5px solid {{ c.border }};border-radius:12px;margin-bottom:9px;overflow:hidden">
+            <div style="display:flex;align-items:center;gap:8px;padding:10px 10px 10px 12px">
+              <span style="font-weight:600;flex:1;min-width:0">{{ c.name }}</span>
+              <span style="font-size:11.5px;color:{{ c.availCol }};font-weight:700;white-space:nowrap">{{ c.availText }}</span>
+              <span style="display:flex;align-items:center;border:1.5px solid #E2DFD2;border-radius:999px;overflow:hidden;flex:none">
+                <button onClick="{{ c.dec }}" style="border:none;background:#FFFEF9;width:38px;height:36px;font-size:18px;color:#2D6A4F;font-weight:700;font-family:inherit">−</button>
+                <span style="width:26px;text-align:center;font-weight:700;font-size:15px;color:{{ c.countCol }}">{{ c.count }}</span>
+                <button onClick="{{ c.inc }}" style="border:none;background:#FFFEF9;width:38px;height:36px;font-size:18px;color:#2D6A4F;font-weight:700;font-family:inherit">+</button>
+              </span>
+              <button onClick="{{ c.togglePanel }}" style="border:1.5px solid {{ c.filterBorder }};background:{{ c.filterBg }};border-radius:999px;min-width:38px;height:36px;font-size:13px;color:{{ c.filterCol }};font-family:inherit;font-weight:700;flex:none">{{ c.filterLabel }}</button>
+            </div>
+            <sc-if value="{{ c.expanded }}" hint-placeholder-val="{{ false }}">
+              <div style="border-top:1.5px dashed #E2DFD2;padding:10px 12px 12px;background:#FBFAF3">
+                <div style="display:flex;flex-wrap:wrap;gap:7px">
+                  <sc-for list="{{ c.pills }}" as="p" hint-placeholder-count="1">
+                    <span style="display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:7px 8px 7px 13px;font-size:12.5px;font-weight:700;border:1.5px solid {{ p.col }};color:{{ p.col }};background:{{ p.bg }}">
+                      <span onClick="{{ p.cycle }}" style="cursor:pointer">{{ p.label }}</span>
+                      <button onClick="{{ p.remove }}" style="border:none;background:rgba(0,0,0,.08);color:inherit;border-radius:50%;width:18px;height:18px;font-size:11px;line-height:1;display:flex;align-items:center;justify-content:center;font-family:inherit;padding:0">×</button>
+                    </span>
+                  </sc-for>
+                  <sc-for list="{{ c.chips }}" as="ch" hint-placeholder-count="3">
+                    <button onClick="{{ ch.add }}" style="border:1.5px solid #E2DFD2;background:#FFFEF9;border-radius:999px;padding:7px 13px;font-size:12.5px;font-weight:600;color:#75766B;font-family:inherit">{{ ch.label }}</button>
+                  </sc-for>
+                </div>
+                <input value="{{ c.inputVal }}" onChange="{{ c.onInput }}" onKeyDown="{{ c.onKey }}" placeholder="Type a keyword, return adds a pill…" style="width:100%;border:1.5px solid #E2DFD2;border-radius:10px;padding:10px 12px;font-family:inherit;font-size:14px;background:#FFFEF9;margin-top:9px;box-sizing:border-box;color:#23241E">
+                <div style="font-size:11.5px;color:#75766B;margin-top:6px">Tap a pill to flip include ↔ not. Filters match recipe names and tags.</div>
+              </div>
+            </sc-if>
+          </div>
+        </sc-for>
+        <button onClick="{{ generate }}" disabled="{{ genDisabled }}" style="width:100%;min-height:52px;border:none;background:{{ genBg }};color:#fff;border-radius:14px;font-size:16px;font-weight:700;font-family:inherit;margin-top:10px">{{ genLabel }}</button>
+        <button onClick="{{ goStep1 }}" style="width:100%;min-height:44px;border:1.5px solid #E2DFD2;background:none;border-radius:14px;font-size:14px;font-weight:600;color:#54554B;font-family:inherit;margin-top:8px">← Books</button>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isStep3 }}" hint-placeholder-val="{{ false }}">
+      <div data-screen-label="Wizard step 3 results">
+        <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:24px;letter-spacing:-.01em">Your picks</div>
+        <div style="font-size:13px;color:#75766B;margin:2px 0 12px">Reject any you don&rsquo;t fancy, then regenerate to replace them.</div>
+        <div style="display:flex;flex-wrap:wrap;gap:12px;margin-bottom:14px">
+          <sc-for list="{{ legend }}" as="l" hint-placeholder-count="2">
+            <div style="display:flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:#54554B"><i style="width:11px;height:16px;border-radius:2px;background:{{ l.color }};box-shadow:inset -2px 0 0 rgba(0,0,0,.18)"></i>{{ l.name }}</div>
+          </sc-for>
+        </div>
+        <sc-for list="{{ groups }}" as="g" hint-placeholder-count="2">
+          <div>
+            <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#75766B;margin:12px 0 8px;display:flex;align-items:center;gap:8px">{{ g.name }} <span style="flex:1;height:1px;background:#DAD7C8"></span> {{ g.countText }}</div>
+            <sc-if value="{{ g.note }}" hint-placeholder-val="{{ false }}">
+              <div style="background:#FBF4DE;border:1px solid #EBDCAA;border-radius:10px;padding:9px 12px;font-size:12.5px;margin-bottom:10px">{{ g.note }}</div>
+            </sc-if>
+            <sc-for list="{{ g.cards }}" as="r" hint-placeholder-count="2">
+              <div style="background:#FFFEF9;border:1px solid #E2DFD2;border-radius:12px;padding:14px 14px 12px 20px;margin-bottom:10px;position:relative;opacity:{{ r.op }}">
+                <span style="position:absolute;left:0;top:0;bottom:0;width:7px;background:{{ r.color }};border-radius:12px 0 0 12px"></span>
+                <span style="position:absolute;right:14px;top:-1px;background:{{ r.color }};color:#fff;font-size:11px;font-weight:700;padding:3px 9px 4px;border-radius:0 0 7px 7px">p. {{ r.page }}</span>
+                <div style="font-weight:600;font-size:16px;padding-right:56px;text-decoration:{{ r.deco }}">{{ r.name }}</div>
+                <div style="font-size:12.5px;color:#75766B;margin-top:2px">{{ r.meta }}</div>
+                <div style="display:flex;gap:8px;margin-top:11px">
+                  <button onClick="{{ r.keep }}" style="flex:1;min-height:40px;border:1.5px solid #2D6A4F;color:#2D6A4F;background:{{ r.keepBg }};border-radius:999px;font-size:13px;font-weight:700;font-family:inherit">{{ r.keepLabel }}</button>
+                  <button onClick="{{ r.reject }}" style="flex:1;min-height:40px;border:1.5px solid {{ r.rejBorder }};color:{{ r.rejCol }};background:{{ r.rejBg }};border-radius:999px;font-size:13px;font-weight:{{ r.rejWeight }};font-family:inherit">{{ r.rejLabel }}</button>
+                  <button onClick="{{ r.never }}" style="min-height:40px;padding:0 13px;border:1.5px solid {{ r.nevBorder }};color:#A9553F;background:{{ r.nevBg }};border-radius:999px;font-size:13px;font-weight:{{ r.nevWeight }};font-family:inherit">{{ r.nevLabel }}</button>
+                </div>
+              </div>
+            </sc-for>
+          </div>
+        </sc-for>
+        <sc-if value="{{ hasRejected }}" hint-placeholder-val="{{ false }}">
+          <button onClick="{{ regenerate }}" style="width:100%;min-height:48px;border:1.5px solid #E2DFD2;background:none;border-radius:14px;font-size:15px;font-weight:600;color:#23241E;font-family:inherit;margin-top:6px">↻ Regenerate {{ rejectedCount }} rejected</button>
+        </sc-if>
+        <button onClick="{{ planThese }}" disabled="{{ planDisabled }}" style="width:100%;min-height:52px;border:none;background:{{ planBg }};color:#fff;border-radius:14px;font-size:16px;font-weight:700;font-family:inherit;margin-top:8px">{{ planLabel }}</button>
+        <button onClick="{{ goStep2 }}" style="width:100%;min-height:44px;border:1.5px solid #E2DFD2;background:none;border-radius:14px;font-size:14px;font-weight:600;color:#54554B;font-family:inherit;margin-top:8px">← Back to filters</button>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isStep4 }}" hint-placeholder-val="{{ false }}">
+      <div data-screen-label="Wizard step 4 confirmation" style="text-align:center;padding-top:24px">
+        <div style="width:64px;height:64px;border-radius:50%;background:#EDF3EE;border:2px solid #2D6A4F;color:#2D6A4F;font-size:28px;display:flex;align-items:center;justify-content:center;margin:0 auto 14px">✓</div>
+        <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:24px;letter-spacing:-.01em">Plan created</div>
+        <div style="font-size:13px;color:#75766B;margin:4px 0 18px">Planned July 13 · {{ planCount }} recipes</div>
+        <div style="text-align:left">
+          <sc-for list="{{ planItems }}" as="r" hint-placeholder-count="3">
+            <button onClick="{{ r.open }}" style="width:100%;text-align:left;display:flex;align-items:center;gap:10px;background:#FFFEF9;border:1px solid #E2DFD2;border-radius:12px;padding:11px 14px;margin-bottom:8px;font-family:inherit;color:#23241E">
+              <i style="width:5px;height:28px;border-radius:2px;background:{{ r.color }};flex:none"></i>
+              <span style="flex:1;font-size:14px">{{ r.name }}<br><small style="color:#75766B;font-size:11.5px">{{ r.meta }}</small></span>
+              <span style="flex:none;color:#B9B6A8;font-size:16px">›</span>
+            </button>
+          </sc-for>
+        </div>
+        <button onClick="{{ goToPlan }}" style="width:100%;min-height:52px;border:none;background:#2D6A4F;color:#fff;border-radius:14px;font-size:16px;font-weight:700;font-family:inherit;margin-top:12px">View plan in Plans →</button>
+        <button onClick="{{ startOver }}" style="width:100%;min-height:46px;border:1.5px solid #E2DFD2;background:none;color:#54554B;border-radius:14px;font-size:14px;font-weight:600;font-family:inherit;margin-top:8px">Generate another</button>
+        <div style="font-size:11.5px;color:#75766B;margin-top:10px">Your books and filters are remembered.</div>
+      </div>
+    </sc-if>
+  </div>
+
+  <div style="position:sticky;bottom:0;display:flex;border-top:1px solid #E2DFD2;background:#FFFEF9">
+    <div style="flex:1;text-align:center;padding:10px 0 14px;font-size:11px;font-weight:700;color:#2D6A4F"><div style="font-size:18px">⚄</div>Generate</div>
+    <div style="flex:1;text-align:center;padding:10px 0 14px;font-size:11px;font-weight:600;color:#75766B"><div style="font-size:18px">▤</div>Plans</div>
+    <div style="flex:1;text-align:center;padding:10px 0 14px;font-size:11px;font-weight:600;color:#75766B"><div style="font-size:18px">⌕</div>Browse</div>
+    <div style="flex:1;text-align:center;padding:10px 0 14px;font-size:11px;font-weight:600;color:#75766B"><div style="font-size:18px">▥</div>Books</div>
+  </div>
+
+  <sc-if value="{{ toastShow }}" hint-placeholder-val="{{ false }}">
+    <div style="position:fixed;bottom:78px;left:50%;transform:translateX(-50%);background:#23241E;color:#fff;padding:10px 16px;border-radius:999px;font-size:13px;font-weight:600;white-space:nowrap;z-index:9;display:flex;gap:10px;align-items:center;box-shadow:0 6px 20px rgba(0,0,0,.25)">
+      <span>{{ toastMsg }}</span>
+      <sc-if value="{{ toastHasUndo }}" hint-placeholder-val="{{ false }}">
+        <button onClick="{{ toastUndo }}" style="border:none;background:none;color:#9FD3B6;font-weight:700;font-size:13px;font-family:inherit;padding:0">Undo</button>
+      </sc-if>
+    </div>
+  </sc-if>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;: {&quot;width&quot;: 430, &quot;height&quot;: 900}, &quot;preferUnmade&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Generation&quot;}}">
+class Component extends DCLogic {
+  state = {
+    step: 1,
+    sel: [],
+    cfg: {},
+    open: null,
+    inputs: {},
+    groups: null,
+    sessionRejected: {},
+    never: {},
+    toast: null,
+  };
+
+  BOOKS = [
+    { id: 'w', name: 'The Woks of Life', meta: '312 recipes · 41 made' },
+    { id: 'm', name: 'Moosewood Cookbook', meta: '188 recipes · 12 made' },
+    { id: 'j', name: 'Joy of Cooking', meta: '1,645 recipes · 87 made' },
+    { id: 'b', name: 'The Boston Cooking-School Book', meta: 'Linked pack · 220 recipes · 6 made' },
+    { id: 'o', name: 'My Own Recipes', meta: 'Custom · 14 recipes · 9 made' },
+  ];
+  PALETTE = ['#0072B2', '#E69F00', '#009E73', '#CC79A7', '#D55E00', '#56B4E9', '#8172B3', '#B4A200'];
+  CATS = ['Mains', 'Desserts', 'Sides', 'Soups & Stews', 'Salads', 'Breads'];
+  CHIPS = {
+    'Mains': ['beef', 'chicken', 'pork', 'fish', 'vegetarian'],
+    'Desserts': ['chocolate', 'fruit', 'cake'],
+    'Sides': ['potato', 'grain'],
+    'Soups & Stews': ['creamy', 'brothy'],
+    'Salads': ['green', 'grain'],
+    'Breads': ['quick', 'yeasted'],
+  };
+  RECIPES = [
+    { n: 'Stir-Fried Beef with Oyster Sauce', p: 142, b: 'w', c: 'Mains', t: ['chinese'], made: 0 },
+    { n: 'White-Cut Chicken with Ginger Sauce', p: 156, b: 'w', c: 'Mains', t: ['poached', 'cantonese'], made: 2 },
+    { n: 'Soy Sauce Chicken', p: 148, b: 'w', c: 'Mains', t: [], made: 1 },
+    { n: 'Char Siu Pork', p: 163, b: 'w', c: 'Mains', t: ['roast'], made: 0 },
+    { n: 'Steamed Whole Fish', p: 171, b: 'w', c: 'Mains', t: [], made: 0 },
+    { n: 'Mapo Tofu', p: 134, b: 'w', c: 'Mains', t: ['vegetarian', 'spicy'], made: 0 },
+    { n: 'Garlic Green Beans', p: 201, b: 'w', c: 'Sides', t: ['vegetarian'], made: 1 },
+    { n: 'Scallion Pancakes', p: 88, b: 'w', c: 'Breads', t: ['flatbread'], made: 0 },
+    { n: 'Wonton Soup', p: 52, b: 'w', c: 'Soups & Stews', t: ['brothy'], made: 0 },
+    { n: 'Hot and Sour Soup', p: 55, b: 'w', c: 'Soups & Stews', t: ['brothy', 'spicy'], made: 0 },
+    { n: 'Mango Pudding', p: 298, b: 'w', c: 'Desserts', t: ['fruit'], made: 0 },
+    { n: 'Mushroom Moussaka', p: 87, b: 'm', c: 'Mains', t: ['vegetarian'], made: 0 },
+    { n: 'Vegetable Stroganoff', p: 92, b: 'm', c: 'Mains', t: ['vegetarian'], made: 0 },
+    { n: 'Zucchini-Crusted Pizza', p: 104, b: 'm', c: 'Mains', t: ['vegetarian'], made: 1 },
+    { n: 'Hungarian Mushroom Soup', p: 44, b: 'm', c: 'Soups & Stews', t: ['creamy'], made: 1 },
+    { n: 'Cream of Broccoli Soup', p: 38, b: 'm', c: 'Soups & Stews', t: ['creamy', 'vegetarian'], made: 0 },
+    { n: 'Gypsy Soup', p: 41, b: 'm', c: 'Soups & Stews', t: ['brothy', 'vegetarian'], made: 0 },
+    { n: 'Marinated Sweet Potato Salad', p: 121, b: 'm', c: 'Salads', t: [], made: 0 },
+    { n: 'Ricotta Cake', p: 188, b: 'm', c: 'Desserts', t: [], made: 0 },
+    { n: 'Fresh Fruit Crisp', p: 193, b: 'm', c: 'Desserts', t: [], made: 0 },
+    { n: 'Chocolate Honey Cake', p: 190, b: 'm', c: 'Desserts', t: [], made: 0 },
+    { n: 'Vegetarian Chili', p: 96, b: 'm', c: 'Soups & Stews', t: ['stew'], made: 0 },
+    { n: 'Cornbread', p: 152, b: 'm', c: 'Breads', t: ['quick'], made: 1 },
+    { n: 'Roast Chicken with Herbs', p: 388, b: 'j', c: 'Mains', t: [], made: 3 },
+    { n: 'Beef Stroganoff', p: 412, b: 'j', c: 'Mains', t: [], made: 0 },
+    { n: 'Fried Chicken', p: 395, b: 'j', c: 'Mains', t: [], made: 1 },
+    { n: 'Poached Salmon', p: 433, b: 'j', c: 'Mains', t: ['fish'], made: 0 },
+    { n: 'Pork Tenderloin with Apples', p: 420, b: 'j', c: 'Mains', t: [], made: 0 },
+    { n: 'Mashed Potatoes', p: 310, b: 'j', c: 'Sides', t: [], made: 4 },
+    { n: 'Rice Pilaf', p: 322, b: 'j', c: 'Sides', t: ['grain'], made: 0 },
+    { n: 'Chicken Noodle Soup', p: 120, b: 'j', c: 'Soups & Stews', t: ['brothy'], made: 1 },
+    { n: 'New England Clam Chowder', p: 128, b: 'j', c: 'Soups & Stews', t: ['creamy'], made: 0 },
+    { n: 'Caesar Salad', p: 233, b: 'j', c: 'Salads', t: ['green'], made: 2 },
+    { n: 'Waldorf Salad', p: 240, b: 'j', c: 'Salads', t: ['fruit'], made: 0 },
+    { n: 'Devil\u2019s Food Cake', p: 712, b: 'j', c: 'Desserts', t: ['chocolate', 'cake'], made: 0 },
+    { n: 'Apple Pie', p: 688, b: 'j', c: 'Desserts', t: ['fruit'], made: 1 },
+    { n: 'Chocolate Chip Cookies', p: 745, b: 'j', c: 'Desserts', t: [], made: 5 },
+    { n: 'Fudge Brownies', p: 748, b: 'j', c: 'Desserts', t: ['chocolate'], made: 0 },
+    { n: 'Buttermilk Biscuits', p: 630, b: 'j', c: 'Breads', t: ['quick'], made: 0 },
+    { n: 'Banana Bread', p: 642, b: 'j', c: 'Breads', t: ['quick'], made: 2 },
+    { n: 'Broiled Scrod', p: 201, b: 'b', c: 'Mains', t: ['fish'], made: 0 },
+    { n: 'Chicken Fricassee', p: 218, b: 'b', c: 'Mains', t: [], made: 0 },
+    { n: 'Cream of Celery Soup', p: 98, b: 'b', c: 'Soups & Stews', t: ['creamy'], made: 0 },
+    { n: 'Gingerbread', p: 540, b: 'b', c: 'Desserts', t: ['cake'], made: 0 },
+    { n: 'Indian Pudding', p: 552, b: 'b', c: 'Desserts', t: [], made: 0 },
+    { n: 'Parker House Rolls', p: 488, b: 'b', c: 'Breads', t: ['yeasted'], made: 0 },
+    { n: 'Dad\u2019s Chili', p: 1, b: 'o', c: 'Mains', t: ['beef', 'stew'], made: 6 },
+    { n: 'Weeknight Pasta', p: 2, b: 'o', c: 'Mains', t: ['vegetarian'], made: 3 },
+    { n: 'No-Bake Cheesecake', p: 3, b: 'o', c: 'Desserts', t: ['cake'], made: 1 },
+  ];
+
+  cfgFor(cat) { return this.state.cfg[cat] || { count: 0, pills: [] }; }
+
+  matches(cat) {
+    const { sel, never } = this.state;
+    const pills = this.cfgFor(cat).pills;
+    return this.RECIPES.filter(r => {
+      if (r.c !== cat || !sel.includes(r.b) || never[r.n]) return false;
+      const hay = (r.n + ' ' + (r.t || []).join(' ')).toLowerCase();
+      return pills.every(p => { const has = hay.includes(p.text); return p.neg ? !has : has; });
+    });
+  }
+
+  setCfg(cat, patch) {
+    this.setState(s => ({ cfg: { ...s.cfg, [cat]: { ...(s.cfg[cat] || { count: 0, pills: [] }), ...patch } } }));
+  }
+
+  showToast(msg, undo) {
+    clearTimeout(this._tt);
+    this.setState({ toast: { msg, undo } });
+    this._tt = setTimeout(() => this.setState({ toast: null }), 3500);
+  }
+
+  pick(cat, count, excludeNames) {
+    const preferUnmade = this.props.preferUnmade ?? true;
+    let pool = this.matches(cat).filter(r => !excludeNames.includes(r.n) && !this.state.sessionRejected[r.n]);
+    const shuffle = a => a.map(x => [Math.random(), x]).sort((p, q) => p[0] - q[0]).map(p => p[1]);
+    if (preferUnmade) {
+      pool = [...shuffle(pool.filter(r => !r.made)), ...shuffle(pool.filter(r => r.made))];
+    } else pool = shuffle(pool);
+    return pool.slice(0, count);
+  }
+
+  doGenerate() {
+    const groups = this.CATS.filter(c => this.cfgFor(c).count > 0).map(cat => {
+      const want = this.cfgFor(cat).count;
+      const picked = this.pick(cat, want, []);
+      return {
+        cat, want,
+        cards: picked.map(r => ({ ...r, status: 'kept' })),
+        note: picked.length < want ? ('Only ' + picked.length + ' of ' + want + ' requested match your filters \u2014 showing what\u2019s available.') : null,
+      };
+    });
+    this.setState({ groups, step: 3 });
+  }
+
+  doRegenerate() {
+    const rejectedNames = {};
+    this.state.groups.forEach(g => g.cards.forEach(c => { if (c.status === 'rejected') rejectedNames[c.n] = true; }));
+    this.setState(s => ({ sessionRejected: { ...s.sessionRejected, ...rejectedNames } }), () => {
+      const groups = this.state.groups.map(g => {
+        const keptCards = g.cards.filter(c => c.status !== 'rejected');
+        const need = g.cards.length - keptCards.length;
+        const repl = this.pick(g.cat, need, keptCards.map(c => c.n)).map(r => ({ ...r, status: 'kept' }));
+        const note = repl.length < need ? ('No more matches to replace ' + (need - repl.length) + ' rejected \u2014 pool exhausted.') : g.note;
+        return { ...g, cards: [...keptCards, ...repl], note };
+      });
+      this.setState({ groups });
+      this.showToast('Replaced rejected picks');
+    });
+  }
+
+  setCardStatus(name, status) {
+    this.setState(s => ({
+      groups: s.groups.map(g => ({ ...g, cards: g.cards.map(c => c.n === name ? { ...c, status } : c) })),
+    }));
+  }
+
+  renderVals() {
+    const s = this.state;
+    const P = this.PALETTE;
+    const line = '#DAD7C8', green = '#2D6A4F';
+
+    const books = this.BOOKS.map(b => {
+      const idx = s.sel.indexOf(b.id);
+      const selected = idx >= 0;
+      const color = selected ? P[idx % 8] : null;
+      return {
+        name: b.name, meta: b.meta, selected,
+        color, order: idx + 1,
+        border: selected ? color : '#E2DFD2',
+        shadow: selected ? ('0 0 0 1px ' + color) : 'none',
+        spine: selected ? color : '#DAD7C8',
+        toggle: () => this.setState(st => ({ sel: selected ? st.sel.filter(x => x !== b.id) : [...st.sel, b.id] })),
+      };
+    });
+
+    const cats = this.CATS.map(cat => {
+      const cfg = this.cfgFor(cat);
+      const avail = s.sel.length ? this.matches(cat).length : 0;
+      const active = cfg.count > 0;
+      const expanded = s.open === cat;
+      const hasPills = cfg.pills.length > 0;
+      const usedChipTexts = cfg.pills.map(p => p.text);
+      return {
+        name: cat,
+        count: cfg.count,
+        countCol: active ? '#23241E' : '#B9B6A8',
+        availText: hasPills ? (avail + ' match') : (avail + ' available'),
+        availCol: hasPills ? green : '#75766B',
+        border: active ? green : '#E2DFD2',
+        expanded,
+        filterLabel: hasPills ? ('\u26B2 ' + cfg.pills.length) : '\u26B2',
+        filterBorder: hasPills ? green : '#E2DFD2',
+        filterBg: hasPills ? '#EDF3EE' : 'transparent',
+        filterCol: hasPills ? green : '#75766B',
+        inc: () => this.setCfg(cat, { count: Math.min(9, cfg.count + 1) }),
+        dec: () => this.setCfg(cat, { count: Math.max(0, cfg.count - 1) }),
+        togglePanel: () => this.setState({ open: expanded ? null : cat }),
+        pills: cfg.pills.map((p, i) => ({
+          label: (p.neg ? 'not ' : '') + p.text,
+          col: p.neg ? '#A9553F' : green,
+          bg: p.neg ? '#F8ECE8' : '#EDF3EE',
+          cycle: () => this.setCfg(cat, { pills: cfg.pills.map((q, j) => j === i ? { ...q, neg: !q.neg } : q) }),
+          remove: () => this.setCfg(cat, { pills: cfg.pills.filter((q, j) => j !== i) }),
+        })),
+        chips: (this.CHIPS[cat] || []).filter(t => !usedChipTexts.includes(t)).map(t => ({
+          label: t,
+          add: () => this.setCfg(cat, { pills: [...cfg.pills, { text: t, neg: false }] }),
+        })),
+        inputVal: s.inputs[cat] || '',
+        onInput: e => this.setState(st => ({ inputs: { ...st.inputs, [cat]: e.target.value } })),
+        onKey: e => {
+          if (e.key === 'Enter') {
+            const v = (s.inputs[cat] || '').trim().toLowerCase();
+            if (v && !usedChipTexts.includes(v)) this.setCfg(cat, { pills: [...cfg.pills, { text: v, neg: false }] });
+            this.setState(st => ({ inputs: { ...st.inputs, [cat]: '' } }));
+          }
+        },
+      };
+    });
+
+    const total = this.CATS.reduce((n, c) => n + this.cfgFor(c).count, 0);
+
+    const legend = s.sel.map((id, i) => ({ name: this.BOOKS.find(b => b.id === id).name, color: P[i % 8] }));
+    const bookName = id => this.BOOKS.find(b => b.id === id).name;
+    const bookColor = id => { const i = s.sel.indexOf(id); return i >= 0 ? P[i % 8] : '#B9B6A8'; };
+
+    let rejectedCount = 0, keptCount = 0;
+    const groups = (s.groups || []).map(g => {
+      const cards = g.cards.map(r => {
+        if (r.status === 'rejected') rejectedCount++;
+        if (r.status === 'kept') keptCount++;
+        const rejected = r.status === 'rejected', never = r.status === 'never';
+        return {
+          name: r.n, page: r.p,
+          color: bookColor(r.b),
+          op: (rejected || never) ? 0.55 : 1,
+          deco: (rejected || never) ? 'line-through' : 'none',
+          meta: bookName(r.b) + (r.made ? ' · made ' + r.made + '\u00D7' : ' · never made') + (rejected ? ' · rejected' : '') + (never ? ' · never make' : ''),
+          keepLabel: r.status === 'kept' ? '\u2713 Keep' : 'Keep',
+          keepBg: r.status === 'kept' ? '#EDF3EE' : 'transparent',
+          rejLabel: rejected ? '\u2715 Rejected \u2014 undo' : 'Reject',
+          rejBorder: rejected ? '#54554B' : '#DAD7C8',
+          rejCol: rejected ? '#23241E' : '#54554B',
+          rejBg: rejected ? '#EEEDE5' : 'transparent',
+          rejWeight: rejected ? 700 : 600,
+          nevLabel: never ? 'Never \u2014 undo' : 'Never',
+          nevBorder: never ? '#A9553F' : '#DAD7C8',
+          nevBg: never ? '#F8ECE8' : 'transparent',
+          nevWeight: never ? 700 : 600,
+          keep: () => this.setCardStatus(r.n, 'kept'),
+          reject: () => this.setCardStatus(r.n, rejected ? 'kept' : 'rejected'),
+          never: () => {
+            if (never) {
+              this.setState(st => { const nv = { ...st.never }; delete nv[r.n]; return { never: nv } });
+              this.setCardStatus(r.n, 'kept');
+              return;
+            }
+            this.setState(st => ({ never: { ...st.never, [r.n]: true } }));
+            this.setCardStatus(r.n, 'never');
+            this.showToast('\u201C' + r.n + '\u201D marked never make', () => {
+              this.setState(st => { const nv = { ...st.never }; delete nv[r.n]; return { never: nv }; });
+              this.setCardStatus(r.n, 'kept');
+            });
+          },
+        };
+      });
+      return { name: g.cat, countText: cards.filter(c => c.deco === 'none').length + ' of ' + g.want, note: g.note, cards };
+    });
+
+    const planItems = (s.groups || []).flatMap(g => g.cards.filter(c => c.status === 'kept')).map(r => ({
+      name: r.n, color: bookColor(r.b), meta: bookName(r.b) + ' · p. ' + r.p,
+      open: () => this.showToast('Opens the universal recipe card (see design 2e)'),
+    }));
+
+    return {
+      isStep1: s.step === 1, isStep2: s.step === 2, isStep3: s.step === 3, isStep4: s.step === 4,
+      stepLabel: s.step === 4 ? 'Done' : 'Step ' + s.step + ' of 3',
+      seg1: s.step >= 1 ? green : line, seg2: s.step >= 2 ? green : line, seg3: s.step >= 3 ? green : line,
+      books,
+      next1Disabled: s.sel.length === 0,
+      next1Bg: s.sel.length ? green : '#B9C6BF',
+      goStep1: () => this.setState({ step: 1 }),
+      goStep2: () => this.setState({ step: 2 }),
+      cats,
+      genDisabled: total === 0,
+      genBg: total ? green : '#B9C6BF',
+      genLabel: total ? ('Generate ' + total + ' recipe' + (total > 1 ? 's' : '') + ' \u2192') : 'Set at least one count',
+      generate: () => this.doGenerate(),
+      legend, groups,
+      hasRejected: rejectedCount > 0, rejectedCount,
+      regenerate: () => this.doRegenerate(),
+      planDisabled: keptCount === 0,
+      planBg: keptCount ? green : '#B9C6BF',
+      planLabel: 'Plan these ' + keptCount + ' \u2192',
+      planThese: () => this.setState({ step: 4 }),
+      planCount: planItems.length,
+      planItems,
+      startOver: () => this.setState({ step: 1, groups: null, sessionRejected: {} }),
+      goToPlan: () => this.showToast('Jumps to the Plans tab (see design 2c)'),
+      toastShow: !!s.toast,
+      toastMsg: s.toast ? s.toast.msg : '',
+      toastHasUndo: !!(s.toast && s.toast.undo),
+      toastUndo: () => { const u = s.toast && s.toast.undo; this.setState({ toast: null }); if (u) u(); },
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,1553 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<meta name="design_doc_mode" content="canvas">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&amp;family=Instrument+Sans:wght@400;500;600;700&amp;family=Archivo:wght@400;500;600;700;800;900&amp;family=Space+Grotesk:wght@400;500;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#f0eee9;font-family:system-ui,sans-serif}
+a{color:#2a6a4f}a:hover{color:#1d4d38}
+.dv-turn{padding:40px 44px 32px;border-bottom:1px solid rgba(0,0,0,.08);scroll-margin-top:16px}
+.dv-thd{display:flex;align-items:baseline;gap:10px;margin:0 0 8px}
+.dv-tid{font:600 10px ui-monospace,Menlo,monospace;padding:3px 7px;background:#1a1a1a;color:#fff;border-radius:4px;text-decoration:none}
+.dv-tname{font:600 13px/1.2 system-ui,sans-serif;color:#1a1a1a}
+.dv-note{font:400 12px/1.5 system-ui,sans-serif;color:rgba(0,0,0,.55);max-width:720px;margin:0 0 24px}
+.dv-opts{display:flex;flex-wrap:wrap;gap:36px;align-items:flex-start}
+.dv-opt{flex:none;display:flex;flex-direction:column;gap:10px;scroll-margin-top:16px}
+.dv-oid{font:600 10.5px ui-monospace,Menlo,monospace;padding:3px 7px;background:rgba(0,0,0,.08);color:#1a1a1a;border-radius:5px;text-decoration:none}
+.dv-olabel{display:flex;align-items:baseline;gap:8px;font:400 11px/1.3 system-ui,sans-serif;color:rgba(0,0,0,.55)}
+.dv-card{max-width:100%;background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:14px;box-shadow:0 2px 10px rgba(0,0,0,.07);overflow:hidden}
+.dv-opt:target .dv-oid{background:#2a78d6;color:#fff}
+.dv-next{margin:26px 0 0;font:12px/1.5 system-ui,sans-serif;color:rgba(0,0,0,.5)}
+</style>
+</helmet>
+
+<section class="dv-turn" id="t5">
+  <div class="dv-thd"><a class="dv-tid" href="#t5">5</a><span class="dv-tname">AI import help — the copy-paste workflow from <a class="dv-oid" href="#4a">4a</a></span></div>
+  <div class="dv-opts">
+
+    <div class="dv-opt" id="5a">
+      <div class="dv-olabel"><a class="dv-oid" href="#5a">5a</a>Import a book with AI help — numbered steps, copyable prompt</div>
+      <div class="dv-card" style="width:390px">
+        <div data-screen-label="5a AI import help" style="background:#F6F4EC;font-family:'Instrument Sans',sans-serif;color:#23241E;font-size:15px;line-height:1.45;padding:20px 16px 24px">
+          <div style="display:flex;align-items:center;gap:10px">
+            <button style="border:1.5px solid #E2DFD2;background:#FFFEF9;border-radius:999px;width:38px;height:38px;font-size:15px;color:#54554B;font-family:inherit">←</button>
+            <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:22px;letter-spacing:-.01em">Import a book with AI help</div>
+          </div>
+          <div style="font-size:13px;color:#75766B;margin:6px 0 16px">Skip typing hundreds of recipes — let an AI chatbot read your book&rsquo;s table of contents and build the file for you. Takes about 5 minutes.</div>
+
+          <div style="display:flex;gap:12px;margin-bottom:14px">
+            <div style="flex:none;width:30px;height:30px;border-radius:50%;background:#2D6A4F;color:#fff;font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center">1</div>
+            <div style="flex:1">
+              <b style="font-weight:600">Photograph the table of contents</b>
+              <div style="font-size:13px;color:#54554B;margin-top:2px">Or the index — whichever lists recipe names with page numbers. Several photos are fine.</div>
+              <div style="margin-top:8px;height:74px;border-radius:10px;background:repeating-linear-gradient(45deg,#EDEBE0 0 8px,#E4E1D3 8px 16px);border:1px solid #E2DFD2;display:flex;align-items:center;justify-content:center;font-family:monospace;font-size:10px;color:#75766B">example: photo of a contents page</div>
+            </div>
+          </div>
+
+          <div style="display:flex;gap:12px;margin-bottom:14px">
+            <div style="flex:none;width:30px;height:30px;border-radius:50%;background:#2D6A4F;color:#fff;font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center">2</div>
+            <div style="flex:1">
+              <b style="font-weight:600">Paste this prompt into any AI chatbot</b>
+              <div style="font-size:13px;color:#54554B;margin-top:2px">Attach your photos, then send the prompt (Claude, ChatGPT, Gemini — any works).</div>
+              <div style="margin-top:8px;background:#FFFEF9;border:1px solid #E2DFD2;border-radius:10px;padding:11px 12px;font-family:monospace;font-size:11.5px;color:#54554B;line-height:1.5">Read the attached cookbook table-of-contents photos. Output a CSV with columns: recipe name, page, category. Use these categories where possible: Mains, Sides, Soups &amp; Stews, Salads… <span style="color:#B9B6A8">(+8 more lines)</span></div>
+              <button style="margin-top:8px;min-height:44px;padding:0 16px;border:1.5px solid #2D6A4F;background:#EDF3EE;color:#2D6A4F;border-radius:999px;font-size:13px;font-weight:700;font-family:inherit">⧉ Copy full prompt</button>
+            </div>
+          </div>
+
+          <div style="display:flex;gap:12px;margin-bottom:14px">
+            <div style="flex:none;width:30px;height:30px;border-radius:50%;background:#2D6A4F;color:#fff;font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center">3</div>
+            <div style="flex:1">
+              <b style="font-weight:600">Save the reply as a .csv file</b>
+              <div style="font-size:13px;color:#54554B;margin-top:2px">Copy the chatbot&rsquo;s output into a text file named anything ending in <b>.csv</b>. Don&rsquo;t worry about stray spaces — the importer is forgiving.</div>
+            </div>
+          </div>
+
+          <div style="display:flex;gap:12px;margin-bottom:16px">
+            <div style="flex:none;width:30px;height:30px;border-radius:50%;background:#2D6A4F;color:#fff;font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center">4</div>
+            <div style="flex:1">
+              <b style="font-weight:600">Import it here</b>
+              <div style="font-size:13px;color:#54554B;margin-top:2px">You&rsquo;ll get a preview (&ldquo;47 recipes found&rdquo;) before anything is saved. Re-importing later never duplicates recipes.</div>
+            </div>
+          </div>
+
+          <button style="width:100%;min-height:52px;border:none;background:#2D6A4F;color:#fff;border-radius:14px;font-size:16px;font-weight:700;font-family:inherit">Choose CSV file to import…</button>
+          <div style="font-size:11.5px;color:#75766B;margin-top:10px;text-align:center">Names + page numbers only — no recipe text is copied. Fix any wrong category later, right on the recipe card.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dv-opt" id="5b">
+      <div class="dv-olabel"><a class="dv-oid" href="#5b">5b</a>CSV preview — confirm before commit, category mapping nudge</div>
+      <div class="dv-card" style="width:390px">
+        <div data-screen-label="5b CSV preview" style="background:#F6F4EC;font-family:'Instrument Sans',sans-serif;color:#23241E;font-size:15px;line-height:1.45;padding:20px 16px 24px">
+          <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:22px;letter-spacing:-.01em">Ready to import</div>
+          <div style="font-size:13px;color:#75766B;margin:4px 0 10px">the-woks-of-life.csv</div>
+
+          <div style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#75766B;font-weight:700;margin:0 0 6px">Book name</div>
+          <div style="display:flex;align-items:center;gap:8px;background:#FFFEF9;border:1.5px solid #E2DFD2;border-radius:12px;padding:11px 13px;margin-bottom:10px">
+            <span style="flex:1;font-size:15px;font-weight:600">The Woks of Life</span>
+            <span style="font-size:13px;color:#75766B">✎</span>
+          </div>
+
+          <div style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#75766B;font-weight:700;margin:0 0 6px">Book tags <span style="font-weight:600;text-transform:none;letter-spacing:0;color:#B9B6A8">— applied to every recipe, filterable everywhere</span></div>
+          <div style="display:flex;flex-wrap:wrap;gap:7px;margin-bottom:12px">
+            <span style="display:inline-flex;align-items:center;gap:6px;border:1.5px solid #2D6A4F;background:#EDF3EE;border-radius:999px;padding:6px 8px 6px 12px;font-size:12.5px;font-weight:700;color:#2D6A4F">chinese <button style="border:none;background:rgba(0,0,0,.08);color:inherit;border-radius:50%;width:18px;height:18px;font-size:11px;display:flex;align-items:center;justify-content:center;font-family:inherit;padding:0">×</button></span>
+            <span style="display:inline-flex;align-items:center;gap:6px;border:1.5px solid #2D6A4F;background:#EDF3EE;border-radius:999px;padding:6px 8px 6px 12px;font-size:12.5px;font-weight:700;color:#2D6A4F">weeknight <button style="border:none;background:rgba(0,0,0,.08);color:inherit;border-radius:50%;width:18px;height:18px;font-size:11px;display:flex;align-items:center;justify-content:center;font-family:inherit;padding:0">×</button></span>
+            <button style="border:1.5px dashed #DAD7C8;background:none;border-radius:999px;padding:6px 12px;font-size:12.5px;font-weight:600;color:#75766B;font-family:inherit">+ add tag</button>
+          </div>
+
+          <div style="background:#EDF3EE;border:1px solid #BCD5C6;border-radius:12px;padding:11px 13px;font-size:13.5px;margin-bottom:10px"><b>312 recipes found</b> · 11 categories · 0 duplicates</div>
+
+          <div style="background:#FBF4DE;border:1px solid #EBDCAA;border-radius:12px;padding:11px 13px;font-size:13px;margin-bottom:12px">
+            <b>1 category isn&rsquo;t recognized:</b> &ldquo;Noodles &amp; Rice&rdquo; (48 recipes)
+            <div style="display:flex;gap:7px;flex-wrap:wrap;margin-top:8px">
+              <button style="border:1.5px solid #2D6A4F;background:#fff;color:#2D6A4F;border-radius:999px;padding:7px 13px;font-size:12.5px;font-weight:700;font-family:inherit">Map to Mains</button>
+              <button style="border:1.5px solid #E2DFD2;background:#fff;color:#54554B;border-radius:999px;padding:7px 13px;font-size:12.5px;font-weight:600;font-family:inherit">Create category</button>
+              <button style="border:1.5px solid #E2DFD2;background:#fff;color:#54554B;border-radius:999px;padding:7px 13px;font-size:12.5px;font-weight:600;font-family:inherit">Uncategorized</button>
+            </div>
+          </div>
+
+          <div style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#75766B;font-weight:700;margin:0 0 6px">Sample of what&rsquo;s coming in</div>
+          <div style="background:#FFFEF9;border:1px solid #E2DFD2;border-radius:12px;overflow:hidden;font-size:13.5px">
+            <div style="display:flex;gap:8px;padding:10px 12px;border-bottom:1px dashed #E2DFD2"><span style="flex:1">Stir-Fried Beef with Oyster Sauce</span><span style="color:#75766B">p. 142</span><span style="color:#75766B;width:88px;text-align:right">Mains</span></div>
+            <div style="display:flex;gap:8px;padding:10px 12px;border-bottom:1px dashed #E2DFD2"><span style="flex:1">Dan Dan Noodles</span><span style="color:#75766B">p. 178</span><span style="color:#A9553F;width:88px;text-align:right;font-weight:600">Noodles?</span></div>
+            <div style="display:flex;gap:8px;padding:10px 12px;border-bottom:1px dashed #E2DFD2"><span style="flex:1">Scallion Pancakes</span><span style="color:#75766B">p. 88</span><span style="color:#75766B;width:88px;text-align:right">Breads</span></div>
+            <div style="display:flex;gap:8px;padding:10px 12px"><span style="flex:1;color:#B9B6A8">…and 309 more</span></div>
+          </div>
+
+          <button style="width:100%;min-height:52px;border:none;background:#2D6A4F;color:#fff;border-radius:14px;font-size:16px;font-weight:700;font-family:inherit;margin-top:14px">Import 312 recipes</button>
+          <button style="width:100%;min-height:46px;border:1.5px solid #E2DFD2;background:none;color:#54554B;border-radius:14px;font-size:14px;font-weight:600;font-family:inherit;margin-top:8px">Cancel</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="dv-opt" id="5c">
+      <div class="dv-olabel"><a class="dv-oid" href="#5c">5c</a>Book detail — name &amp; tags editable after import, stats, archive/delete</div>
+      <div class="dv-card" style="width:390px">
+        <div data-screen-label="5c Book detail" style="background:#F6F4EC;font-family:'Instrument Sans',sans-serif;color:#23241E;font-size:15px;line-height:1.45;padding:20px 16px 24px">
+          <div style="display:flex;align-items:center;gap:10px">
+            <button style="border:1.5px solid #E2DFD2;background:#FFFEF9;border-radius:999px;width:38px;height:38px;font-size:15px;color:#54554B;font-family:inherit">←</button>
+            <div style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#75766B;font-weight:600">Books / detail</div>
+          </div>
+
+          <div style="display:flex;gap:12px;align-items:center;margin:14px 0 4px">
+            <span style="flex:none;width:18px;height:60px;border-radius:3px;background:#0072B2;box-shadow:inset -3px 0 0 rgba(0,0,0,.18)"></span>
+            <div style="flex:1;min-width:0">
+              <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:21px;letter-spacing:-.01em">The Woks of Life <span style="font-size:13px;color:#75766B;font-weight:600">✎</span></div>
+              <div style="font-size:12.5px;color:#75766B">312 recipes · imported from CSV · May 2026</div>
+            </div>
+          </div>
+
+          <div style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#75766B;font-weight:700;margin:14px 0 6px">Book tags</div>
+          <div style="display:flex;flex-wrap:wrap;gap:7px;margin-bottom:14px">
+            <span style="display:inline-flex;align-items:center;gap:6px;border:1.5px solid #2D6A4F;background:#EDF3EE;border-radius:999px;padding:6px 8px 6px 12px;font-size:12.5px;font-weight:700;color:#2D6A4F">chinese <button style="border:none;background:rgba(0,0,0,.08);color:inherit;border-radius:50%;width:18px;height:18px;font-size:11px;display:flex;align-items:center;justify-content:center;font-family:inherit;padding:0">×</button></span>
+            <span style="display:inline-flex;align-items:center;gap:6px;border:1.5px solid #2D6A4F;background:#EDF3EE;border-radius:999px;padding:6px 8px 6px 12px;font-size:12.5px;font-weight:700;color:#2D6A4F">weeknight <button style="border:none;background:rgba(0,0,0,.08);color:inherit;border-radius:50%;width:18px;height:18px;font-size:11px;display:flex;align-items:center;justify-content:center;font-family:inherit;padding:0">×</button></span>
+            <button style="border:1.5px dashed #DAD7C8;background:none;border-radius:999px;padding:6px 12px;font-size:12.5px;font-weight:600;color:#75766B;font-family:inherit">+ add tag</button>
+          </div>
+
+          <div style="background:#FFFEF9;border:1px solid #E2DFD2;border-radius:12px;padding:13px 14px;display:flex;gap:16px;font-size:12.5px;color:#54554B;margin-bottom:10px">
+            <span><b style="font-family:'Bricolage Grotesque',sans-serif;font-size:18px;font-weight:800;color:#23241E">41</b><br>made</span>
+            <span><b style="font-family:'Bricolage Grotesque',sans-serif;font-size:18px;font-weight:800;color:#23241E">13%</b><br>explored</span>
+            <span><b style="font-family:'Bricolage Grotesque',sans-serif;font-size:18px;font-weight:800;color:#23241E">7.8</b><br>avg rating</span>
+            <span style="flex:1;min-width:0"><b style="font-family:'Bricolage Grotesque',sans-serif;font-size:13px;font-weight:800;color:#23241E">Soy Sauce Chicken</b><br>most made · 4×</span>
+          </div>
+
+          <div style="background:#FFFEF9;border:1px solid #E2DFD2;border-radius:12px;overflow:hidden;margin-bottom:10px">
+            <button style="width:100%;text-align:left;display:flex;align-items:center;gap:10px;background:none;border:none;border-bottom:1px dashed #E2DFD2;padding:13px 14px;font-family:inherit;font-size:14.5px;color:#23241E;min-height:50px"><span style="flex:1"><b style="font-weight:600">Browse its 312 recipes</b></span><span style="color:#B9B6A8">›</span></button>
+            <button style="width:100%;text-align:left;display:flex;align-items:center;gap:10px;background:none;border:none;border-bottom:1px dashed #E2DFD2;padding:13px 14px;font-family:inherit;font-size:14.5px;color:#23241E;min-height:50px"><span style="flex:1"><b style="font-weight:600">Add a recipe manually</b></span><span style="color:#B9B6A8">›</span></button>
+            <button style="width:100%;text-align:left;display:flex;align-items:center;gap:10px;background:none;border:none;padding:13px 14px;font-family:inherit;font-size:14.5px;color:#23241E;min-height:50px"><span style="flex:1"><b style="font-weight:600">Re-import CSV</b><br><small style="color:#75766B;font-size:12px">Updates recipes, never duplicates</small></span><span style="color:#B9B6A8">›</span></button>
+          </div>
+
+          <div style="display:flex;gap:8px">
+            <button style="flex:1;min-height:46px;border:1.5px solid #E2DFD2;background:none;border-radius:12px;font-size:13.5px;font-weight:600;color:#54554B;font-family:inherit">Disable book</button>
+            <button style="flex:1;min-height:46px;border:1.5px solid #E2DFD2;background:none;border-radius:12px;font-size:13.5px;font-weight:600;color:#A9553F;font-family:inherit">Delete…</button>
+          </div>
+          <div style="font-size:11.5px;color:#75766B;margin-top:8px;text-align:center">Disable hides it from generation but keeps all history — recommended over delete.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <p class="dv-next">Try next: &ldquo;orphaned-history reconnect prompt&rdquo; · &ldquo;delete-book warning flow&rdquo; · &ldquo;handoff package for Claude Code&rdquo;</p>
+</section>
+<section class="dv-turn" id="t4">
+  <div class="dv-thd"><a class="dv-tid" href="#t4">4</a><span class="dv-tname">Settings — home, chip editor, backup &amp; restore</span></div>
+  <div class="dv-opts">
+
+    <div class="dv-opt" id="4a">
+      <div class="dv-olabel"><a class="dv-oid" href="#4a">4a</a>Settings home — behind the gear icon</div>
+      <div class="dv-card" style="width:390px">
+        <div data-screen-label="4a Settings" style="background:#F6F4EC;font-family:'Instrument Sans',sans-serif;color:#23241E;font-size:15px;line-height:1.45;padding:20px 16px 24px;min-height:700px">
+          <div style="display:flex;align-items:center;gap:10px">
+            <button style="border:1.5px solid #E2DFD2;background:#FFFEF9;border-radius:999px;width:38px;height:38px;font-size:15px;color:#54554B;font-family:inherit">←</button>
+            <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:24px;letter-spacing:-.01em">Settings</div>
+          </div>
+
+          <div style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#75766B;font-weight:700;margin:18px 0 8px">Generation</div>
+          <div style="background:#FFFEF9;border:1px solid #E2DFD2;border-radius:12px;overflow:hidden">
+            <button style="width:100%;text-align:left;display:flex;align-items:center;gap:10px;background:none;border:none;border-bottom:1px dashed #E2DFD2;padding:14px;font-family:inherit;font-size:14.5px;color:#23241E;min-height:52px"><span style="flex:1"><b style="font-weight:600">Categories</b><br><small style="color:#75766B;font-size:12px">12 default + 1 custom</small></span><span style="color:#B9B6A8">›</span></button>
+            <button style="width:100%;text-align:left;display:flex;align-items:center;gap:10px;background:none;border:none;border-bottom:1px dashed #E2DFD2;padding:14px;font-family:inherit;font-size:14.5px;color:#23241E;min-height:52px"><span style="flex:1"><b style="font-weight:600">Filter chips</b><br><small style="color:#75766B;font-size:12px">Quick keywords shown per category</small></span><span style="color:#B9B6A8">›</span></button>
+            <button style="width:100%;text-align:left;display:flex;align-items:center;gap:10px;background:none;border:none;padding:14px;font-family:inherit;font-size:14.5px;color:#23241E;min-height:52px"><span style="flex:1"><b style="font-weight:600">Saved presets</b><br><small style="color:#75766B;font-size:12px">Weeknight dinner, Sunday bake, +3</small></span><span style="color:#B9B6A8">›</span></button>
+          </div>
+
+          <div style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#75766B;font-weight:700;margin:18px 0 8px">Your data</div>
+          <div style="background:#FFFEF9;border:1px solid #E2DFD2;border-radius:12px;overflow:hidden">
+            <button style="width:100%;text-align:left;display:flex;align-items:center;gap:10px;background:none;border:none;border-bottom:1px dashed #E2DFD2;padding:14px;font-family:inherit;font-size:14.5px;color:#23241E;min-height:52px"><span style="flex:1"><b style="font-weight:600">Back up &amp; restore</b><br><small style="color:#A9553F;font-size:12px">Last backup 34 days ago — back up soon</small></span><span style="color:#B9B6A8">›</span></button>
+            <button style="width:100%;text-align:left;display:flex;align-items:center;gap:10px;background:none;border:none;padding:14px;font-family:inherit;font-size:14.5px;color:#23241E;min-height:52px"><span style="flex:1"><b style="font-weight:600">Import a book with AI help</b><br><small style="color:#75766B;font-size:12px">Photograph a table of contents → CSV</small></span><span style="color:#B9B6A8">›</span></button>
+          </div>
+
+          <div style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#75766B;font-weight:700;margin:18px 0 8px">About</div>
+          <div style="background:#FFFEF9;border:1px solid #E2DFD2;border-radius:12px;padding:14px;font-size:13px;color:#54554B">
+            Page to Plate v1.0 · open source<br>
+            <span style="color:#2D6A4F;font-weight:600">GitHub repo</span> · <span style="color:#2D6A4F;font-weight:600">Support the project</span><br>
+            <span style="font-size:12px;color:#75766B">Linked cookbook packs courtesy of the Internet Archive.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dv-opt" id="4b">
+      <div class="dv-olabel"><a class="dv-oid" href="#4b">4b</a>Filter chips editor — per-category quick keywords</div>
+      <div class="dv-card" style="width:390px">
+        <div data-screen-label="4b Chip editor" style="background:#F6F4EC;font-family:'Instrument Sans',sans-serif;color:#23241E;font-size:15px;line-height:1.45;padding:20px 16px 24px;min-height:700px">
+          <div style="display:flex;align-items:center;gap:10px">
+            <button style="border:1.5px solid #E2DFD2;background:#FFFEF9;border-radius:999px;width:38px;height:38px;font-size:15px;color:#54554B;font-family:inherit">←</button>
+            <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:24px;letter-spacing:-.01em">Filter chips</div>
+          </div>
+          <div style="font-size:13px;color:#75766B;margin:6px 0 14px">These appear as one-tap keywords in that category&rsquo;s filter panel.</div>
+
+          <div style="background:#FFFEF9;border:1px solid #E2DFD2;border-radius:12px;padding:12px;margin-bottom:9px">
+            <div style="display:flex;align-items:center;margin-bottom:9px"><b style="font-weight:600;flex:1">Mains</b><button style="border:none;background:none;font-size:12px;font-weight:600;color:#2D6A4F;font-family:inherit">Restore defaults</button></div>
+            <div style="display:flex;flex-wrap:wrap;gap:7px">
+              <span style="display:inline-flex;align-items:center;gap:6px;border:1.5px solid #E2DFD2;background:#FFFEF9;border-radius:999px;padding:6px 8px 6px 12px;font-size:12.5px;font-weight:600;color:#54554B">beef <button style="border:none;background:rgba(0,0,0,.08);color:inherit;border-radius:50%;width:18px;height:18px;font-size:11px;display:flex;align-items:center;justify-content:center;font-family:inherit;padding:0">×</button></span>
+              <span style="display:inline-flex;align-items:center;gap:6px;border:1.5px solid #E2DFD2;background:#FFFEF9;border-radius:999px;padding:6px 8px 6px 12px;font-size:12.5px;font-weight:600;color:#54554B">chicken <button style="border:none;background:rgba(0,0,0,.08);color:inherit;border-radius:50%;width:18px;height:18px;font-size:11px;display:flex;align-items:center;justify-content:center;font-family:inherit;padding:0">×</button></span>
+              <span style="display:inline-flex;align-items:center;gap:6px;border:1.5px solid #E2DFD2;background:#FFFEF9;border-radius:999px;padding:6px 8px 6px 12px;font-size:12.5px;font-weight:600;color:#54554B">pork <button style="border:none;background:rgba(0,0,0,.08);color:inherit;border-radius:50%;width:18px;height:18px;font-size:11px;display:flex;align-items:center;justify-content:center;font-family:inherit;padding:0">×</button></span>
+              <span style="display:inline-flex;align-items:center;gap:6px;border:1.5px solid #E2DFD2;background:#FFFEF9;border-radius:999px;padding:6px 8px 6px 12px;font-size:12.5px;font-weight:600;color:#54554B">fish <button style="border:none;background:rgba(0,0,0,.08);color:inherit;border-radius:50%;width:18px;height:18px;font-size:11px;display:flex;align-items:center;justify-content:center;font-family:inherit;padding:0">×</button></span>
+              <span style="display:inline-flex;align-items:center;gap:6px;border:1.5px solid #E2DFD2;background:#FFFEF9;border-radius:999px;padding:6px 8px 6px 12px;font-size:12.5px;font-weight:600;color:#54554B">vegetarian <button style="border:none;background:rgba(0,0,0,.08);color:inherit;border-radius:50%;width:18px;height:18px;font-size:11px;display:flex;align-items:center;justify-content:center;font-family:inherit;padding:0">×</button></span>
+              <span style="display:inline-flex;align-items:center;gap:6px;border:1.5px solid #2D6A4F;background:#EDF3EE;border-radius:999px;padding:6px 8px 6px 12px;font-size:12.5px;font-weight:700;color:#2D6A4F">weeknight <button style="border:none;background:rgba(0,0,0,.08);color:inherit;border-radius:50%;width:18px;height:18px;font-size:11px;display:flex;align-items:center;justify-content:center;font-family:inherit;padding:0">×</button></span>
+              <button style="border:1.5px dashed #DAD7C8;background:none;border-radius:999px;padding:6px 12px;font-size:12.5px;font-weight:600;color:#75766B;font-family:inherit">+ add chip</button>
+            </div>
+            <div style="font-size:11.5px;color:#75766B;margin-top:8px">Green = your custom chips. Chips are just saved keywords.</div>
+          </div>
+
+          <div style="background:#FFFEF9;border:1px solid #E2DFD2;border-radius:12px;padding:12px;margin-bottom:9px">
+            <div style="display:flex;align-items:center;margin-bottom:9px"><b style="font-weight:600;flex:1">Desserts</b><button style="border:none;background:none;font-size:12px;font-weight:600;color:#2D6A4F;font-family:inherit">Restore defaults</button></div>
+            <div style="display:flex;flex-wrap:wrap;gap:7px">
+              <span style="display:inline-flex;align-items:center;gap:6px;border:1.5px solid #E2DFD2;background:#FFFEF9;border-radius:999px;padding:6px 8px 6px 12px;font-size:12.5px;font-weight:600;color:#54554B">chocolate <button style="border:none;background:rgba(0,0,0,.08);color:inherit;border-radius:50%;width:18px;height:18px;font-size:11px;display:flex;align-items:center;justify-content:center;font-family:inherit;padding:0">×</button></span>
+              <span style="display:inline-flex;align-items:center;gap:6px;border:1.5px solid #E2DFD2;background:#FFFEF9;border-radius:999px;padding:6px 8px 6px 12px;font-size:12.5px;font-weight:600;color:#54554B">fruit <button style="border:none;background:rgba(0,0,0,.08);color:inherit;border-radius:50%;width:18px;height:18px;font-size:11px;display:flex;align-items:center;justify-content:center;font-family:inherit;padding:0">×</button></span>
+              <span style="display:inline-flex;align-items:center;gap:6px;border:1.5px solid #E2DFD2;background:#FFFEF9;border-radius:999px;padding:6px 8px 6px 12px;font-size:12.5px;font-weight:600;color:#54554B">cake <button style="border:none;background:rgba(0,0,0,.08);color:inherit;border-radius:50%;width:18px;height:18px;font-size:11px;display:flex;align-items:center;justify-content:center;font-family:inherit;padding:0">×</button></span>
+              <button style="border:1.5px dashed #DAD7C8;background:none;border-radius:999px;padding:6px 12px;font-size:12.5px;font-weight:600;color:#75766B;font-family:inherit">+ add chip</button>
+            </div>
+          </div>
+
+          <div style="background:#FFFEF9;border:1px solid #E2DFD2;border-radius:12px;padding:12px;opacity:.75">
+            <div style="display:flex;align-items:center"><b style="font-weight:600;flex:1">Camp cooking <span style="font-size:10.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:2px 6px;border-radius:5px;background:#EEEDE5;color:#75766B;margin-left:6px">custom</span></b><span style="font-size:12px;color:#75766B">no chips yet ›</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dv-opt" id="4c">
+      <div class="dv-olabel"><a class="dv-oid" href="#4c">4c</a>Back up &amp; restore — the only data-loss protection</div>
+      <div class="dv-card" style="width:390px">
+        <div data-screen-label="4c Backup" style="background:#F6F4EC;font-family:'Instrument Sans',sans-serif;color:#23241E;font-size:15px;line-height:1.45;padding:20px 16px 24px;min-height:700px">
+          <div style="display:flex;align-items:center;gap:10px">
+            <button style="border:1.5px solid #E2DFD2;background:#FFFEF9;border-radius:999px;width:38px;height:38px;font-size:15px;color:#54554B;font-family:inherit">←</button>
+            <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:24px;letter-spacing:-.01em">Back up &amp; restore</div>
+          </div>
+
+          <div style="background:#FBF4DE;border:1px solid #EBDCAA;border-radius:12px;padding:11px 13px;font-size:13px;margin:14px 0">Your data lives only on this device. <b>Last backup: June 9</b> — 34 days and 61 changes ago.</div>
+
+          <div style="background:#FFFEF9;border:1px solid #E2DFD2;border-radius:12px;padding:14px">
+            <b style="font-weight:600;font-size:15.5px">Back up everything</b>
+            <div style="font-size:12.5px;color:#75766B;margin:2px 0 12px">One file with all books, recipes, history, and photos (12.4 MB). Save it to your phone or a drive.</div>
+            <button style="width:100%;min-height:50px;border:none;background:#2D6A4F;color:#fff;border-radius:12px;font-size:15px;font-weight:700;font-family:inherit">↑ Export backup file</button>
+          </div>
+
+          <div style="background:#FFFEF9;border:1px solid #E2DFD2;border-radius:12px;padding:14px;margin-top:10px">
+            <b style="font-weight:600;font-size:15.5px">Restore from a backup</b>
+            <div style="font-size:12.5px;color:#75766B;margin:2px 0 12px"><b style="color:#A9553F">Replaces</b> everything currently in the app — it does not merge.</div>
+            <button style="width:100%;min-height:50px;border:1.5px solid #E2DFD2;background:none;color:#23241E;border-radius:12px;font-size:15px;font-weight:600;font-family:inherit">↓ Choose backup file…</button>
+          </div>
+
+          <div style="display:flex;align-items:center;gap:10px;background:#FFFEF9;border:1px solid #E2DFD2;border-radius:12px;padding:12px 14px;margin-top:10px">
+            <span style="flex:1;font-size:13px"><b style="font-weight:600">Remind me to back up</b><br><small style="color:#75766B;font-size:12px">After 30 days of unsaved changes</small></span>
+            <span style="flex:none;width:46px;height:28px;border-radius:999px;background:#2D6A4F;position:relative"><i style="position:absolute;right:3px;top:3px;width:22px;height:22px;border-radius:50%;background:#fff"></i></span>
+          </div>
+
+          <div style="font-size:12px;color:#75766B;margin-top:14px;line-height:1.5">✓ Persistent storage granted — the browser won&rsquo;t evict your data.<br>Backups include a version stamp so future app versions can read them.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <p class="dv-next">Try next: &ldquo;AI import help page&rdquo; · &ldquo;book detail with per-book stats&rdquo; · &ldquo;dark mode for settings&rdquo;</p>
+</section>
+<section class="dv-turn" id="t3">
+  <div class="dv-thd"><a class="dv-tid" href="#t3">3</a><span class="dv-tname">Mark-as-made dialog + dark mode for all of turn <a class="dv-oid" href="#t2">2</a></span></div>
+  <p class="dv-note">Dark mode keeps the paper metaphor — warm ink instead of cool gray; spine colors brighten one step for contrast; the green accent lightens to <b>#7FB89A</b> with dark text on primary buttons.</p>
+  <div class="dv-opts">
+    <div class="dv-opt" id="3a">
+      <div class="dv-olabel"><a class="dv-oid" href="#3a">3a</a>Mark as made — dark · tap the date for a calendar · book title + open-page link</div>
+      <div class="dv-card" style="width:390px">
+        <div data-screen-label="3a Mark as made" style="background:#14130F;font-family:'Instrument Sans',sans-serif;color:#EDEAE0;font-size:15px;line-height:1.45;position:relative;min-height:790px;overflow:hidden">
+          <div style="padding:20px 16px;opacity:.3;filter:blur(1px)">
+            <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:20px;color:#EDEAE0">White-Cut Chicken with Ginger Sauce</div>
+            <div style="background:#2A2822;border-radius:12px;height:120px;margin-top:12px"></div>
+          </div>
+          <div style="position:absolute;left:14px;right:14px;top:90px;background:#211F1A;border-radius:18px;box-shadow:0 12px 40px rgba(0,0,0,.35);padding:18px 16px 16px">
+            <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:21px;letter-spacing:-.01em">Mark as made</div>
+            <div style="display:flex;align-items:center;gap:8px;margin:4px 0 14px">
+              <i style="width:9px;height:16px;border-radius:2px;background:#4FA3D9;flex:none"></i>
+              <span style="flex:1;min-width:0;font-size:13px;color:#C4C1B2">White-Cut Chicken with Ginger Sauce<br><b style="color:#EDEAE0">The Woks of Life</b> · p. 156</span><button style="flex:none;border:1.5px solid #4FA3D9;background:none;color:#4FA3D9;border-radius:999px;padding:8px 13px;font-size:12px;font-weight:700;font-family:inherit">Open page ↗</button>
+            </div>
+            <div style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#9A9788;font-weight:700;margin-bottom:6px">Date made</div>
+            <div style="display:flex;gap:8px;margin-bottom:14px">
+              <button style="flex:1;min-height:46px;border:1.5px solid #7FB89A;background:rgba(127,184,154,.15);border-radius:12px;font-size:14px;font-weight:700;color:#7FB89A;font-family:inherit">Today · Jul 13 ▾</button>
+            </div>
+            <div style="font-size:11.5px;color:#9A9788;margin:-6px 0 12px">Tap the date to open a calendar</div><div style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#9A9788;font-weight:700;margin-bottom:6px">Rating</div>
+            <div style="display:grid;grid-template-columns:repeat(10,1fr);gap:5px;margin-bottom:14px">
+              <button style="min-height:44px;border:1.5px solid #3A382F;background:#2A2822;border-radius:10px;font-size:13px;font-weight:700;color:#C4C1B2;font-family:inherit">1</button>
+              <button style="min-height:44px;border:1.5px solid #3A382F;background:#2A2822;border-radius:10px;font-size:13px;font-weight:700;color:#C4C1B2;font-family:inherit">2</button>
+              <button style="min-height:44px;border:1.5px solid #3A382F;background:#2A2822;border-radius:10px;font-size:13px;font-weight:700;color:#C4C1B2;font-family:inherit">3</button>
+              <button style="min-height:44px;border:1.5px solid #3A382F;background:#2A2822;border-radius:10px;font-size:13px;font-weight:700;color:#C4C1B2;font-family:inherit">4</button>
+              <button style="min-height:44px;border:1.5px solid #3A382F;background:#2A2822;border-radius:10px;font-size:13px;font-weight:700;color:#C4C1B2;font-family:inherit">5</button>
+              <button style="min-height:44px;border:1.5px solid #3A382F;background:#2A2822;border-radius:10px;font-size:13px;font-weight:700;color:#C4C1B2;font-family:inherit">6</button>
+              <button style="min-height:44px;border:1.5px solid #3A382F;background:#2A2822;border-radius:10px;font-size:13px;font-weight:700;color:#C4C1B2;font-family:inherit">7</button>
+              <button style="min-height:44px;border:none;background:#7FB89A;color:#161511;border-radius:10px;font-size:13px;font-weight:800;font-family:inherit">8</button>
+              <button style="min-height:44px;border:1.5px solid #3A382F;background:#2A2822;border-radius:10px;font-size:13px;font-weight:700;color:#C4C1B2;font-family:inherit">9</button>
+              <button style="min-height:44px;border:1.5px solid #3A382F;background:#2A2822;border-radius:10px;font-size:13px;font-weight:700;color:#C4C1B2;font-family:inherit">10</button>
+            </div>
+            <div style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#9A9788;font-weight:700;margin-bottom:6px">Photos</div>
+            <div style="display:flex;gap:8px;margin-bottom:14px">
+              <div style="width:64px;height:64px;border-radius:10px;background:repeating-linear-gradient(45deg,#33312A 0 8px,#3A3830 8px 16px);border:1px solid #3A382F;display:flex;align-items:center;justify-content:center;font-family:monospace;font-size:9px;color:#9A9788;text-align:center">dish photo</div>
+              <button style="width:64px;height:64px;border-radius:10px;border:1.5px dashed #4A4840;background:none;color:#9A9788;font-size:20px;font-family:inherit">+</button>
+            </div>
+            <div style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#9A9788;font-weight:700;margin-bottom:6px">Notes</div>
+            <div style="border:1.5px solid #3A382F;background:#2A2822;border-radius:12px;padding:11px 12px;font-size:14px;color:#C4C1B2;min-height:56px;margin-bottom:16px">Used thigh instead of whole bird — even better.</div>
+            <button style="width:100%;min-height:52px;border:none;background:#7FB89A;color:#161511;border-radius:14px;font-size:16px;font-weight:700;font-family:inherit">Save · Made Jul 13 ✓</button>
+            <button style="width:100%;min-height:46px;border:none;background:none;border-radius:14px;font-size:14px;font-weight:600;color:#9A9788;font-family:inherit;margin-top:4px">Cancel</button>
+          </div>
+          <div style="position:absolute;left:50%;transform:translateX(-50%);bottom:16px;background:#EDEAE0;color:#211F1A;padding:10px 18px;border-radius:999px;font-size:13px;font-weight:600;white-space:nowrap">Marked as made · <b style="color:#2D6A4F">Undo</b></div>
+        </div>
+      </div>
+    </div>
+    <div class="dv-opt" id="3b">
+      <div class="dv-olabel"><a class="dv-oid" href="#3b">3b</a>Generate · Step 1 — books colored by tap order · dark</div>
+      <div class="dv-card" style="width:390px">
+        <div data-screen-label="3b dark Generate books" style="background:#211F1A;font-family:'Instrument Sans',sans-serif;color:#EDEAE0;font-size:15px;line-height:1.45;display:flex;flex-direction:column;min-height:760px">
+          <div style="padding:20px 16px 0;flex:1">
+            <div style="display:flex;align-items:baseline;justify-content:space-between">
+              <div style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#9A9788;font-weight:600">Page to Plate</div>
+              <div style="font-size:11px;color:#9A9788;font-weight:600">Step 1 of 3</div>
+            </div>
+            <div style="display:flex;gap:6px;margin:10px 0 16px">
+              <span style="flex:1;height:4px;border-radius:2px;background:#7FB89A"></span>
+              <span style="flex:1;height:4px;border-radius:2px;background:#4A4840"></span>
+              <span style="flex:1;height:4px;border-radius:2px;background:#4A4840"></span>
+            </div>
+            <div style="background:#2A2822;border:1px solid #3A382F;border-radius:12px;padding:10px 14px;margin-bottom:14px;display:flex;align-items:center;gap:10px">
+              <span style="font-size:13px;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis"><b>Plan status</b> not yet updated</span>
+              <span style="font-size:13px;font-weight:700;color:#7FB89A;white-space:nowrap">Plans →</span>
+            </div>
+            <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:24px;letter-spacing:-.01em">Choose your cookbooks</div>
+            <div style="font-size:13px;color:#9A9788;margin:2px 0 12px">Each book gets a color in the order you tap it.</div>
+            <div style="background:#2A2822;border:1.5px solid #3A382F;border-radius:12px;padding:10px 12px;display:flex;gap:8px;align-items:center;margin-bottom:10px;color:#6E6B5E;font-size:14px">⌕ Filter books…</div>
+
+            <button style="width:100%;text-align:left;display:flex;align-items:center;gap:12px;background:#2A2822;border:1.5px solid #4FA3D9;box-shadow:0 0 0 1px #4FA3D9;border-radius:12px;padding:12px 14px;margin-bottom:9px;font-family:inherit;font-size:15px;min-height:64px;color:#EDEAE0">
+              <span style="flex:none;width:14px;height:44px;border-radius:3px;background:#4FA3D9;box-shadow:inset -3px 0 0 rgba(0,0,0,.18)"></span>
+              <span style="flex:1;min-width:0"><b style="font-weight:600">The Woks of Life</b><br><span style="font-size:12.5px;color:#9A9788">312 recipes · 41 made</span></span>
+              <span style="flex:none;width:24px;height:24px;border-radius:50%;background:#4FA3D9;color:#161511;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center">1</span>
+            </button>
+            <button style="width:100%;text-align:left;display:flex;align-items:center;gap:12px;background:#2A2822;border:1.5px solid #E8B84B;box-shadow:0 0 0 1px #E8B84B;border-radius:12px;padding:12px 14px;margin-bottom:9px;font-family:inherit;font-size:15px;min-height:64px;color:#EDEAE0">
+              <span style="flex:none;width:14px;height:44px;border-radius:3px;background:#E8B84B;box-shadow:inset -3px 0 0 rgba(0,0,0,.18)"></span>
+              <span style="flex:1;min-width:0"><b style="font-weight:600">Moosewood Cookbook</b><br><span style="font-size:12.5px;color:#9A9788">188 recipes · 12 made</span></span>
+              <span style="flex:none;width:24px;height:24px;border-radius:50%;background:#E8B84B;color:#161511;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center">2</span>
+            </button>
+            <button style="width:100%;text-align:left;display:flex;align-items:center;gap:12px;background:#2A2822;border:1.5px solid #3FC79A;box-shadow:0 0 0 1px #3FC79A;border-radius:12px;padding:12px 14px;margin-bottom:9px;font-family:inherit;font-size:15px;min-height:64px;color:#EDEAE0">
+              <span style="flex:none;width:14px;height:44px;border-radius:3px;background:#3FC79A;box-shadow:inset -3px 0 0 rgba(0,0,0,.18)"></span>
+              <span style="flex:1;min-width:0"><b style="font-weight:600">Joy of Cooking</b><br><span style="font-size:12.5px;color:#9A9788">1,645 recipes · 87 made</span></span>
+              <span style="flex:none;width:24px;height:24px;border-radius:50%;background:#3FC79A;color:#161511;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center">3</span>
+            </button>
+            <button style="width:100%;text-align:left;display:flex;align-items:center;gap:12px;background:#2A2822;border:1.5px solid #3A382F;border-radius:12px;padding:12px 14px;margin-bottom:9px;font-family:inherit;font-size:15px;min-height:64px;color:#EDEAE0">
+              <span style="flex:none;width:14px;height:44px;border-radius:3px;background:#4A4840;box-shadow:inset -3px 0 0 rgba(0,0,0,.12)"></span>
+              <span style="flex:1;min-width:0"><b style="font-weight:600">The Boston Cooking-School Book</b><br><span style="font-size:12.5px;color:#9A9788">Linked pack · 220 recipes · 6 made</span></span>
+            </button>
+            <button style="width:100%;text-align:left;display:flex;align-items:center;gap:12px;background:#2A2822;border:1.5px solid #3A382F;border-radius:12px;padding:12px 14px;margin-bottom:9px;font-family:inherit;font-size:15px;min-height:64px;color:#EDEAE0">
+              <span style="flex:none;width:14px;height:44px;border-radius:3px;background:#4A4840;box-shadow:inset -3px 0 0 rgba(0,0,0,.12)"></span>
+              <span style="flex:1;min-width:0"><b style="font-weight:600">My Own Recipes</b><br><span style="font-size:12.5px;color:#9A9788">Custom · 14 recipes · 9 made</span></span>
+            </button>
+
+            <button style="width:100%;min-height:44px;border:1.5px solid #3A382F;background:none;border-radius:999px;font-size:13px;font-weight:600;color:#C4C1B2;font-family:inherit;margin:12px 0 4px;display:flex;align-items:center;justify-content:center;gap:6px">Presets: Weeknight dinner, Sunday bake, +3 ▾</button>
+            <button style="width:100%;min-height:52px;border:none;background:#7FB89A;color:#161511;border-radius:14px;font-size:16px;font-weight:700;font-family:inherit;margin-top:10px">Next: categories →</button>
+          </div>
+          <div style="display:flex;border-top:1px solid #3A382F;background:#2A2822;margin-top:20px">
+            <div style="flex:1;text-align:center;padding:10px 0 14px;font-size:11px;font-weight:700;color:#7FB89A"><div style="font-size:18px">⚄</div>Generate</div>
+            <div style="flex:1;text-align:center;padding:10px 0 14px;font-size:11px;font-weight:600;color:#9A9788"><div style="font-size:18px">▤</div>Plans</div>
+            <div style="flex:1;text-align:center;padding:10px 0 14px;font-size:11px;font-weight:600;color:#9A9788"><div style="font-size:18px">⌕</div>Browse</div>
+            <div style="flex:1;text-align:center;padding:10px 0 14px;font-size:11px;font-weight:600;color:#9A9788"><div style="font-size:18px">▥</div>Books</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dv-opt" id="3c">
+      <div class="dv-olabel"><a class="dv-oid" href="#3c">3c</a>Generate · Step 2 — counts + per-category keyword filters (Mains expanded) · dark</div>
+      <div class="dv-card" style="width:390px">
+        <div data-screen-label="3c dark Generate categories" style="background:#211F1A;font-family:'Instrument Sans',sans-serif;color:#EDEAE0;font-size:15px;line-height:1.45;padding:20px 16px 24px">
+          <div style="display:flex;align-items:baseline;justify-content:space-between">
+            <div style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#9A9788;font-weight:600">Page to Plate</div>
+            <div style="font-size:11px;color:#9A9788;font-weight:600">Step 2 of 3</div>
+          </div>
+          <div style="display:flex;gap:6px;margin:10px 0 16px">
+            <span style="flex:1;height:4px;border-radius:2px;background:#7FB89A"></span>
+            <span style="flex:1;height:4px;border-radius:2px;background:#7FB89A"></span>
+            <span style="flex:1;height:4px;border-radius:2px;background:#4A4840"></span>
+          </div>
+          <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:24px;letter-spacing:-.01em">What are we making?</div>
+          <div style="font-size:13px;color:#9A9788;margin:2px 0 14px">Set a count per category. Filters apply only to their category.</div>
+
+          <div style="background:#2A2822;border:1.5px solid #7FB89A;border-radius:12px;margin-bottom:9px;overflow:hidden">
+            <div style="display:flex;align-items:center;gap:10px;padding:12px 12px 10px">
+              <span style="font-weight:600;flex:1">Mains</span>
+              <span style="font-size:11.5px;color:#7FB89A;font-weight:700">7 match</span>
+              <span style="display:flex;align-items:center;border:1.5px solid #3A382F;border-radius:999px;overflow:hidden">
+                <button style="border:none;background:#2A2822;width:38px;height:36px;font-size:18px;color:#7FB89A;font-weight:700;font-family:inherit">−</button>
+                <span style="width:28px;text-align:center;font-weight:700;font-size:15px">2</span>
+                <button style="border:none;background:#2A2822;width:38px;height:36px;font-size:18px;color:#7FB89A;font-weight:700;font-family:inherit">+</button>
+              </span>
+            </div>
+            <div style="border-top:1.5px dashed #3A382F;padding:10px 12px 12px;background:#26241F">
+              <div style="display:flex;flex-wrap:wrap;gap:7px">
+                <span style="display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:7px 8px 7px 13px;font-size:12.5px;font-weight:700;border:1.5px solid #7FB89A;color:#7FB89A;background:rgba(127,184,154,.15)">chicken <button style="border:none;background:rgba(255,255,255,.14);color:inherit;border-radius:50%;width:18px;height:18px;font-size:11px;line-height:1;display:flex;align-items:center;justify-content:center;font-family:inherit">×</button></span>
+                <span style="display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:7px 8px 7px 13px;font-size:12.5px;font-weight:700;border:1.5px solid #C97B63;color:#C97B63;background:rgba(201,123,99,.15)">not fried <button style="border:none;background:rgba(255,255,255,.14);color:inherit;border-radius:50%;width:18px;height:18px;font-size:11px;line-height:1;display:flex;align-items:center;justify-content:center;font-family:inherit">×</button></span>
+                <button style="border:1.5px solid #3A382F;background:#2A2822;border-radius:999px;padding:7px 13px;font-size:12.5px;font-weight:600;color:#9A9788;font-family:inherit">beef</button>
+                <button style="border:1.5px solid #3A382F;background:#2A2822;border-radius:999px;padding:7px 13px;font-size:12.5px;font-weight:600;color:#9A9788;font-family:inherit">pork</button>
+                <button style="border:1.5px solid #3A382F;background:#2A2822;border-radius:999px;padding:7px 13px;font-size:12.5px;font-weight:600;color:#9A9788;font-family:inherit">fish</button>
+                <button style="border:1.5px solid #3A382F;background:#2A2822;border-radius:999px;padding:7px 13px;font-size:12.5px;font-weight:600;color:#9A9788;font-family:inherit">vegetarian</button>
+              </div>
+              <input style="width:100%;border:1.5px solid #3A382F;border-radius:10px;padding:10px 12px;font-family:inherit;font-size:14px;background:#2A2822;margin-top:9px;box-sizing:border-box;color:#EDEAE0" placeholder="Type a keyword, return adds a pill…">
+              <div style="font-size:11.5px;color:#9A9788;margin-top:6px">Tap a pill to flip include ↔ not. Filters match recipe names and tags.</div>
+            </div>
+          </div>
+
+          <div style="display:flex;align-items:center;gap:10px;background:#2A2822;border:1px solid #3A382F;border-radius:12px;padding:12px;margin-bottom:9px">
+            <span style="font-weight:600;flex:1">Desserts</span>
+            <span style="font-size:11.5px;color:#9A9788">2 match &ldquo;chocolate&rdquo;</span>
+            <span style="display:flex;align-items:center;border:1.5px solid #3A382F;border-radius:999px;overflow:hidden">
+              <button style="border:none;background:#2A2822;width:38px;height:36px;font-size:18px;color:#7FB89A;font-weight:700;font-family:inherit">−</button>
+              <span style="width:28px;text-align:center;font-weight:700;font-size:15px">1</span>
+              <button style="border:none;background:#2A2822;width:38px;height:36px;font-size:18px;color:#7FB89A;font-weight:700;font-family:inherit">+</button>
+            </span>
+            <button style="border:1.5px solid #3A382F;background:none;border-radius:999px;width:36px;height:36px;font-size:14px;color:#7FB89A;font-family:inherit">⚲<span style="position:absolute;margin:-4px 0 0 -3px;font-size:9px;background:#7FB89A;color:#161511;border-radius:50%;width:13px;height:13px;display:inline-flex;align-items:center;justify-content:center">1</span></button>
+          </div>
+
+          <div style="display:flex;align-items:center;gap:10px;background:#2A2822;border:1px solid #3A382F;border-radius:12px;padding:12px;margin-bottom:9px">
+            <span style="font-weight:600;flex:1">Sides</span>
+            <span style="font-size:11.5px;color:#9A9788">31 available</span>
+            <span style="display:flex;align-items:center;border:1.5px solid #3A382F;border-radius:999px;overflow:hidden">
+              <button style="border:none;background:#2A2822;width:38px;height:36px;font-size:18px;color:#7FB89A;font-weight:700;font-family:inherit">−</button>
+              <span style="width:28px;text-align:center;font-weight:700;font-size:15px;color:#6E6B5E">0</span>
+              <button style="border:none;background:#2A2822;width:38px;height:36px;font-size:18px;color:#7FB89A;font-weight:700;font-family:inherit">+</button>
+            </span>
+            <button style="border:1.5px solid #3A382F;background:none;border-radius:999px;width:36px;height:36px;font-size:14px;color:#9A9788;font-family:inherit">⚲</button>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;background:#2A2822;border:1px solid #3A382F;border-radius:12px;padding:12px;margin-bottom:9px">
+            <span style="font-weight:600;flex:1">Soups &amp; Stews</span>
+            <span style="font-size:11.5px;color:#9A9788">18 available</span>
+            <span style="display:flex;align-items:center;border:1.5px solid #3A382F;border-radius:999px;overflow:hidden">
+              <button style="border:none;background:#2A2822;width:38px;height:36px;font-size:18px;color:#7FB89A;font-weight:700;font-family:inherit">−</button>
+              <span style="width:28px;text-align:center;font-weight:700;font-size:15px;color:#6E6B5E">0</span>
+              <button style="border:none;background:#2A2822;width:38px;height:36px;font-size:18px;color:#7FB89A;font-weight:700;font-family:inherit">+</button>
+            </span>
+            <button style="border:1.5px solid #3A382F;background:none;border-radius:999px;width:36px;height:36px;font-size:14px;color:#9A9788;font-family:inherit">⚲</button>
+          </div>
+          <button style="width:100%;min-height:44px;border:1.5px dashed #4A4840;background:none;border-radius:12px;font-size:13px;font-weight:600;color:#9A9788;font-family:inherit;margin-bottom:4px">Show 8 more categories ▾</button>
+
+          <button style="width:100%;min-height:52px;border:none;background:#7FB89A;color:#161511;border-radius:14px;font-size:16px;font-weight:700;font-family:inherit;margin-top:10px">Generate 3 recipes →</button>
+          <div style="display:flex;gap:8px;margin-top:8px">
+            <button style="flex:1;min-height:44px;border:1.5px solid #3A382F;background:none;border-radius:14px;font-size:14px;font-weight:600;color:#C4C1B2;font-family:inherit">← Books</button>
+            <button style="flex:1;min-height:44px;border:1.5px solid #3A382F;background:none;border-radius:14px;font-size:14px;font-weight:600;color:#C4C1B2;font-family:inherit">Save as preset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dv-opt" id="3d">
+      <div class="dv-olabel"><a class="dv-oid" href="#3d">3d</a>Plans tab — list + calendar, planned vs made markers · dark</div>
+      <div class="dv-card" style="width:390px">
+        <div data-screen-label="3d dark Plans" style="background:#211F1A;font-family:'Instrument Sans',sans-serif;color:#EDEAE0;font-size:15px;line-height:1.45;display:flex;flex-direction:column;min-height:760px">
+          <div style="padding:20px 16px 0;flex:1">
+            <div style="display:flex;align-items:baseline;justify-content:space-between">
+              <div style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#9A9788;font-weight:600">Page to Plate</div>
+              <div style="font-size:15px;color:#9A9788">⚙</div>
+            </div>
+            <div style="display:flex;align-items:center;justify-content:space-between;margin:8px 0 12px">
+              <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:24px;letter-spacing:-.01em">Plans</div>
+              <div style="display:flex;border:1.5px solid #3A382F;border-radius:999px;overflow:hidden">
+                <button style="border:none;background:#7FB89A;color:#161511;padding:8px 16px;font-size:12.5px;font-weight:700;font-family:inherit">List</button>
+                <button style="border:none;background:#2A2822;color:#9A9788;padding:8px 16px;font-size:12.5px;font-weight:600;font-family:inherit">Calendar</button>
+              </div>
+            </div>
+            <div style="background:#2A2822;border:1px solid #3A382F;border-radius:12px;padding:10px 14px;margin-bottom:12px;display:flex;gap:14px;font-size:12.5px;color:#C4C1B2">
+              <span><b style="font-family:'Bricolage Grotesque',sans-serif;font-size:17px;font-weight:800;color:#EDEAE0">14</b> made this year</span>
+              <span><b style="font-family:'Bricolage Grotesque',sans-serif;font-size:17px;font-weight:800;color:#EDEAE0">2</b> open plans</span>
+              <span><b style="font-family:'Bricolage Grotesque',sans-serif;font-size:17px;font-weight:800;color:#EDEAE0">7.4</b> avg rating</span>
+            </div>
+
+            <div style="background:#2A2822;border:1px solid #3A382F;border-radius:12px;padding:13px 14px;margin-bottom:11px">
+              <div style="display:flex;align-items:baseline;justify-content:space-between">
+                <div style="font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#9A9788">Planned July 11 · 3 recipes</div>
+                <div style="font-size:12px;font-weight:700;color:#7FB89A">Share ↗</div>
+              </div>
+              <div style="display:flex;align-items:center;gap:9px;padding:9px 0;border-bottom:1px dashed #3A382F">
+                <i style="width:5px;height:28px;border-radius:2px;background:#4FA3D9;flex:none"></i>
+                <span style="flex:1;font-size:14px">Stir-Fried Beef with Oyster Sauce<br><small style="color:#9A9788;font-size:11.5px">The Woks of Life · p. 142</small></span>
+                <button style="border:1.5px solid #7FB89A;color:#7FB89A;background:none;border-radius:999px;padding:8px 13px;font-size:12px;font-weight:700;font-family:inherit;min-height:36px">Made ✓</button>
+              </div>
+              <div style="display:flex;align-items:center;gap:9px;padding:9px 0;border-bottom:1px dashed #3A382F">
+                <i style="width:5px;height:28px;border-radius:2px;background:#3FC79A;flex:none"></i>
+                <span style="flex:1;font-size:14px">Devil&rsquo;s Food Cake<br><small style="color:#9A9788;font-size:11.5px">Joy of Cooking · p. 712</small></span>
+                <button style="border:none;color:#161511;background:#7FB89A;border-radius:999px;padding:8px 13px;font-size:12px;font-weight:700;font-family:inherit;min-height:36px">Made · 8/10</button>
+              </div>
+              <div style="display:flex;align-items:center;gap:9px;padding:9px 0">
+                <i style="width:5px;height:28px;border-radius:2px;background:#E8B84B;flex:none"></i>
+                <span style="flex:1;font-size:14px">Hungarian Mushroom Soup<br><small style="color:#9A9788;font-size:11.5px">Moosewood · p. 44</small></span>
+                <button style="border:1.5px solid #7FB89A;color:#7FB89A;background:none;border-radius:999px;padding:8px 13px;font-size:12px;font-weight:700;font-family:inherit;min-height:36px">Made ✓</button>
+              </div>
+              <div style="display:flex;gap:8px;margin-top:6px">
+                <button style="flex:1;min-height:38px;border:1.5px solid #3A382F;background:none;border-radius:999px;font-size:12.5px;font-weight:600;color:#C4C1B2;font-family:inherit">Swap a recipe</button>
+                <button style="flex:1;min-height:38px;border:1.5px solid #3A382F;background:none;border-radius:999px;font-size:12.5px;font-weight:600;color:#C97B63;font-family:inherit">Dismiss plan</button>
+              </div>
+            </div>
+
+            <div style="background:#2A2822;border:1px solid #3A382F;border-radius:12px;padding:13px 14px;margin-bottom:14px;opacity:.75">
+              <div style="font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#9A9788">Planned July 3 · 5 recipes · 4 made</div>
+              <div style="font-size:13px;color:#C4C1B2;margin-top:4px">Karaage · Ribollita · Corn Chowder · Focaccia · <s>Aspic</s></div>
+            </div>
+
+            <div style="background:#2A2822;border:1px solid #3A382F;border-radius:12px;padding:12px">
+              <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:8px">
+                <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:15px">July 2026</div>
+                <div style="display:flex;gap:12px;font-size:11px;color:#C4C1B2;font-weight:600">
+                  <span style="display:flex;align-items:center;gap:4px"><i style="width:8px;height:8px;border-radius:50%;border:2px solid #8A8DDF"></i>planned</span>
+                  <span style="display:flex;align-items:center;gap:4px"><i style="width:8px;height:8px;border-radius:50%;background:#7FB89A"></i>made</span>
+                </div>
+              </div>
+              <div style="display:grid;grid-template-columns:repeat(7,1fr);gap:3px;font-size:12px;text-align:center">
+                <span style="color:#9A9788;font-weight:700;font-size:10px;padding:3px 0">M</span><span style="color:#9A9788;font-weight:700;font-size:10px;padding:3px 0">T</span><span style="color:#9A9788;font-weight:700;font-size:10px;padding:3px 0">W</span><span style="color:#9A9788;font-weight:700;font-size:10px;padding:3px 0">T</span><span style="color:#9A9788;font-weight:700;font-size:10px;padding:3px 0">F</span><span style="color:#9A9788;font-weight:700;font-size:10px;padding:3px 0">S</span><span style="color:#9A9788;font-weight:700;font-size:10px;padding:3px 0">S</span>
+                <span style="padding:7px 0;color:#6E6B5E">29</span><span style="padding:7px 0;color:#6E6B5E">30</span><span style="padding:7px 0">1</span><span style="padding:7px 0">2</span>
+                <span style="padding:7px 0;border-radius:8px;position:relative">3<span style="position:absolute;left:0;right:0;bottom:1px;display:flex;gap:2px;justify-content:center"><i style="width:5px;height:5px;border-radius:50%;border:1.5px solid #8A8DDF"></i></span></span>
+                <span style="padding:7px 0;position:relative">4<span style="position:absolute;left:0;right:0;bottom:1px;display:flex;gap:2px;justify-content:center"><i style="width:5px;height:5px;border-radius:50%;background:#7FB89A"></i></span></span>
+                <span style="padding:7px 0;position:relative">5<span style="position:absolute;left:0;right:0;bottom:1px;display:flex;gap:2px;justify-content:center"><i style="width:5px;height:5px;border-radius:50%;background:#7FB89A"></i><i style="width:5px;height:5px;border-radius:50%;background:#7FB89A"></i></span></span>
+                <span style="padding:7px 0">6</span><span style="padding:7px 0;position:relative">7<span style="position:absolute;left:0;right:0;bottom:1px;display:flex;gap:2px;justify-content:center"><i style="width:5px;height:5px;border-radius:50%;background:#7FB89A"></i></span></span><span style="padding:7px 0">8</span><span style="padding:7px 0">9</span><span style="padding:7px 0">10</span>
+                <span style="padding:7px 0;border-radius:8px;background:rgba(127,184,154,.15);position:relative;font-weight:700">11<span style="position:absolute;left:0;right:0;bottom:1px;display:flex;gap:2px;justify-content:center"><i style="width:5px;height:5px;border-radius:50%;border:1.5px solid #8A8DDF"></i><i style="width:5px;height:5px;border-radius:50%;background:#7FB89A"></i></span></span>
+                <span style="padding:7px 0">12</span>
+                <span style="padding:7px 0;border-radius:8px;border:1.5px solid #7FB89A;font-weight:700">13</span>
+                <span style="padding:7px 0;color:#6E6B5E">14</span><span style="padding:7px 0;color:#6E6B5E">15</span><span style="padding:7px 0;color:#6E6B5E">16</span><span style="padding:7px 0;color:#6E6B5E">17</span><span style="padding:7px 0;color:#6E6B5E">18</span><span style="padding:7px 0;color:#6E6B5E">19</span>
+              </div>
+              <div style="margin-top:10px;border-top:1px dashed #3A382F;padding-top:9px"><div style="font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#9A9788;margin-bottom:6px">Friday, July 11 — selected</div><div style="display:flex;align-items:center;gap:8px;padding:5px 0;font-size:13px"><i style="width:8px;height:8px;border-radius:50%;border:2px solid #8A8DDF;flex:none"></i><span style="flex:1">Plan accepted · 3 recipes, 1 still open</span></div><div style="display:flex;align-items:center;gap:8px;padding:5px 0;font-size:13px"><i style="width:8px;height:8px;border-radius:50%;background:#7FB89A;flex:none"></i><span style="flex:1">Devil&rsquo;s Food Cake made · ★ 8</span></div></div>
+            </div>
+          </div>
+          <div style="display:flex;border-top:1px solid #3A382F;background:#2A2822;margin-top:20px">
+            <div style="flex:1;text-align:center;padding:10px 0 14px;font-size:11px;font-weight:600;color:#9A9788"><div style="font-size:18px">⚄</div>Generate</div>
+            <div style="flex:1;text-align:center;padding:10px 0 14px;font-size:11px;font-weight:700;color:#7FB89A"><div style="font-size:18px">▤</div>Plans</div>
+            <div style="flex:1;text-align:center;padding:10px 0 14px;font-size:11px;font-weight:600;color:#9A9788"><div style="font-size:18px">⌕</div>Browse</div>
+            <div style="flex:1;text-align:center;padding:10px 0 14px;font-size:11px;font-weight:600;color:#9A9788"><div style="font-size:18px">▥</div>Books</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dv-opt" id="3e">
+      <div class="dv-olabel"><a class="dv-oid" href="#3e">3e</a>Browse tab — pill search, collapsible book/category dropdowns, status chips · dark</div>
+      <div class="dv-card" style="width:390px">
+        <div data-screen-label="3e dark Browse" style="background:#211F1A;font-family:'Instrument Sans',sans-serif;color:#EDEAE0;font-size:15px;line-height:1.45;display:flex;flex-direction:column;min-height:760px">
+          <div style="padding:20px 16px 0;flex:1">
+            <div style="display:flex;align-items:baseline;justify-content:space-between">
+              <div style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#9A9788;font-weight:600">Page to Plate</div>
+              <div style="font-size:15px;color:#9A9788">⚙</div>
+            </div>
+            <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:24px;letter-spacing:-.01em;margin:8px 0 12px">Browse</div>
+
+            <div style="background:#2A2822;border:1.5px solid #3A382F;border-radius:12px;padding:9px 12px;display:flex;flex-wrap:wrap;gap:7px;align-items:center;margin-bottom:10px">
+              <span style="display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:6px 8px 6px 12px;font-size:12.5px;font-weight:700;border:1.5px solid #7FB89A;color:#7FB89A;background:rgba(127,184,154,.15)">chicken <button style="border:none;background:rgba(255,255,255,.14);color:inherit;border-radius:50%;width:18px;height:18px;font-size:11px;line-height:1;display:flex;align-items:center;justify-content:center;font-family:inherit">×</button></span>
+              <span style="display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:6px 8px 6px 12px;font-size:12.5px;font-weight:700;border:1.5px solid #C97B63;color:#C97B63;background:rgba(201,123,99,.15)">not fried <button style="border:none;background:rgba(255,255,255,.14);color:inherit;border-radius:50%;width:18px;height:18px;font-size:11px;line-height:1;display:flex;align-items:center;justify-content:center;font-family:inherit">×</button></span>
+              <span style="flex:1;min-width:80px;color:#6E6B5E;font-size:14px">⌕ add keyword…</span>
+            </div>
+
+            <div style="display:flex;gap:8px;margin-bottom:8px">
+              <button style="flex:1;min-height:40px;border:1.5px solid #7FB89A;background:rgba(127,184,154,.15);border-radius:999px;font-size:12.5px;font-weight:700;color:#7FB89A;font-family:inherit">Books: 2 selected ▾</button>
+              <button style="flex:1;min-height:40px;border:1.5px solid #3A382F;background:#2A2822;border-radius:999px;font-size:12.5px;font-weight:600;color:#C4C1B2;font-family:inherit">Categories: all ▾</button>
+            </div>
+            <div style="background:#2A2822;border:1.5px dashed #4A4840;border-radius:12px;padding:9px;display:flex;flex-wrap:wrap;gap:7px;margin-bottom:10px">
+              <button style="border:1.5px solid #3A382F;background:#2A2822;border-radius:999px;padding:7px 12px;font-size:12.5px;font-weight:600;color:#9A9788;font-family:inherit">All books</button>
+              <button style="border:1.5px solid #4FA3D9;background:rgba(0,114,178,.09);border-radius:999px;padding:7px 12px;font-size:12.5px;font-weight:700;color:#4FA3D9;font-family:inherit;display:inline-flex;align-items:center;gap:6px"><i style="width:9px;height:14px;border-radius:2px;background:#4FA3D9"></i>The Woks of Life ✓</button>
+              <button style="border:1.5px solid #E8B84B;background:rgba(230,159,0,.10);border-radius:999px;padding:7px 12px;font-size:12.5px;font-weight:700;color:#9A6B00;font-family:inherit;display:inline-flex;align-items:center;gap:6px"><i style="width:9px;height:14px;border-radius:2px;background:#E8B84B"></i>Moosewood ✓</button>
+              <button style="border:1.5px solid #3A382F;background:#2A2822;border-radius:999px;padding:7px 12px;font-size:12.5px;font-weight:600;color:#9A9788;font-family:inherit;display:inline-flex;align-items:center;gap:6px"><i style="width:9px;height:14px;border-radius:2px;background:#4A4840"></i>Joy of Cooking</button>
+              <button style="border:1.5px solid #C97B63;background:rgba(201,123,99,.15);border-radius:999px;padding:7px 12px;font-size:12.5px;font-weight:700;color:#C97B63;font-family:inherit;display:inline-flex;align-items:center;gap:6px"><i style="width:9px;height:14px;border-radius:2px;background:#4A4840"></i>not Boston Cooking-School</button>
+            </div>
+
+            <div style="display:flex;gap:7px;flex-wrap:wrap;margin-bottom:12px">
+              <button style="border:1.5px solid #3A382F;background:#2A2822;border-radius:999px;padding:7px 13px;font-size:12.5px;font-weight:600;color:#9A9788;font-family:inherit">Active</button>
+              <button style="border:1.5px solid #7FB89A;background:rgba(127,184,154,.15);border-radius:999px;padding:7px 13px;font-size:12.5px;font-weight:700;color:#7FB89A;font-family:inherit">Made ✓</button>
+              <button style="border:1.5px solid #3A382F;background:#2A2822;border-radius:999px;padding:7px 13px;font-size:12.5px;font-weight:600;color:#9A9788;font-family:inherit">Planned</button>
+              <button style="border:1.5px solid #3A382F;background:#2A2822;border-radius:999px;padding:7px 13px;font-size:12.5px;font-weight:600;color:#9A9788;font-family:inherit">Never make</button>
+              <button style="border:1.5px solid #3A382F;background:#2A2822;border-radius:999px;padding:7px 13px;font-size:12.5px;font-weight:600;color:#9A9788;font-family:inherit">★ 8+</button>
+            </div>
+
+            <div style="font-size:12px;color:#9A9788;margin-bottom:8px">6 recipes · <b>chicken</b>, not <b>fried</b>, made, in 2 books</div>
+
+            <div style="background:#2A2822;border:1px solid #3A382F;border-radius:12px;padding:12px 12px 12px 18px;margin-bottom:9px;position:relative">
+              <span style="position:absolute;left:0;top:0;bottom:0;width:7px;background:#4FA3D9;border-radius:12px 0 0 12px"></span>
+              <div style="display:flex;justify-content:space-between;gap:10px;align-items:baseline">
+                <div style="font-weight:600;font-size:15.5px">White-Cut Chicken with Ginger Sauce</div>
+                <div style="font-size:12px;color:#9A9788;white-space:nowrap">p. 156</div>
+              </div>
+              <div style="display:flex;gap:6px;align-items:center;margin-top:4px;flex-wrap:wrap">
+                <span style="font-size:12px;color:#9A9788">The Woks of Life · Mains</span>
+                <span style="font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 7px;border-radius:5px;background:rgba(127,184,154,.15);color:#7FB89A">Made ×2</span>
+                <span style="font-size:12px;color:#E0B24A;font-weight:700">★ 9</span>
+              </div>
+            </div>
+            <div style="background:#2A2822;border:1px solid #3A382F;border-radius:12px;padding:12px 12px 12px 18px;margin-bottom:9px;position:relative">
+              <span style="position:absolute;left:0;top:0;bottom:0;width:7px;background:#4FA3D9;border-radius:12px 0 0 12px"></span>
+              <div style="display:flex;justify-content:space-between;gap:10px;align-items:baseline">
+                <div style="font-weight:600;font-size:15.5px">Soy Sauce Chicken</div>
+                <div style="font-size:12px;color:#9A9788;white-space:nowrap">p. 148</div>
+              </div>
+              <div style="display:flex;gap:6px;align-items:center;margin-top:4px;flex-wrap:wrap">
+                <span style="font-size:12px;color:#9A9788">The Woks of Life · Mains</span>
+                <span style="font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 7px;border-radius:5px;background:rgba(127,184,154,.15);color:#7FB89A">Made</span>
+                <span style="font-size:12px;color:#E0B24A;font-weight:700">★ 7</span>
+              </div>
+            </div>
+            <div style="background:#2A2822;border:1px solid #3A382F;border-radius:12px;padding:12px 12px 12px 18px;margin-bottom:9px;position:relative">
+              <span style="position:absolute;left:0;top:0;bottom:0;width:7px;background:#E8B84B;border-radius:12px 0 0 12px"></span>
+              <div style="display:flex;justify-content:space-between;gap:10px;align-items:baseline">
+                <div style="font-weight:600;font-size:15.5px">Chicken Paprikash</div>
+                <div style="font-size:12px;color:#9A9788;white-space:nowrap">p. 203</div>
+              </div>
+              <div style="display:flex;gap:6px;align-items:center;margin-top:4px;flex-wrap:wrap">
+                <span style="font-size:12px;color:#9A9788">Moosewood · Mains · tag: hungarian</span>
+                <span style="font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 7px;border-radius:5px;background:rgba(127,184,154,.15);color:#7FB89A">Made</span>
+                <span style="font-size:12px;color:#E0B24A;font-weight:700">★ 8</span>
+              </div>
+            </div>
+            <div style="background:#2A2822;border:1px solid #3A382F;border-radius:12px;padding:12px 12px 12px 18px;margin-bottom:9px;position:relative;opacity:.6">
+              <span style="position:absolute;left:0;top:0;bottom:0;width:7px;background:#E8B84B;border-radius:12px 0 0 12px"></span>
+              <div style="display:flex;justify-content:space-between;gap:10px;align-items:baseline">
+                <div style="font-weight:600;font-size:15.5px">Chicken Liver Pâté</div>
+                <div style="font-size:12px;color:#9A9788;white-space:nowrap">p. 61</div>
+              </div>
+              <div style="display:flex;gap:6px;align-items:center;margin-top:4px;flex-wrap:wrap">
+                <span style="font-size:12px;color:#9A9788">Moosewood · Appetizers</span>
+                <span style="font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 7px;border-radius:5px;background:rgba(201,123,99,.15);color:#C97B63">Never make</span>
+              </div>
+            </div>
+          </div>
+          <div style="display:flex;border-top:1px solid #3A382F;background:#2A2822;margin-top:20px">
+            <div style="flex:1;text-align:center;padding:10px 0 14px;font-size:11px;font-weight:600;color:#9A9788"><div style="font-size:18px">⚄</div>Generate</div>
+            <div style="flex:1;text-align:center;padding:10px 0 14px;font-size:11px;font-weight:600;color:#9A9788"><div style="font-size:18px">▤</div>Plans</div>
+            <div style="flex:1;text-align:center;padding:10px 0 14px;font-size:11px;font-weight:700;color:#7FB89A"><div style="font-size:18px">⌕</div>Browse</div>
+            <div style="flex:1;text-align:center;padding:10px 0 14px;font-size:11px;font-weight:600;color:#9A9788"><div style="font-size:18px">▥</div>Books</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dv-opt" id="3f">
+      <div class="dv-olabel"><a class="dv-oid" href="#3f">3f</a>Universal recipe card — sheet over Browse, everything editable in place · dark</div>
+      <div class="dv-card" style="width:390px">
+        <div data-screen-label="3f dark Recipe card sheet" style="background:#14130F;font-family:'Instrument Sans',sans-serif;color:#EDEAE0;font-size:15px;line-height:1.45;position:relative;min-height:760px;overflow:hidden">
+          <div style="padding:20px 16px;opacity:.35;filter:blur(1px)">
+            <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:24px;color:#211F1A">Browse</div>
+            <div style="background:#2A2822;border-radius:12px;height:64px;margin-top:12px"></div>
+            <div style="background:#2A2822;border-radius:12px;height:64px;margin-top:9px"></div>
+          </div>
+          <div style="position:absolute;left:0;right:0;bottom:0;top:120px;background:#211F1A;border-radius:22px 22px 0 0;box-shadow:0 -8px 30px rgba(0,0,0,.25);padding:10px 16px 20px;overflow:hidden">
+            <div style="width:40px;height:4px;border-radius:2px;background:#4A4840;margin:0 auto 12px"></div>
+            <div style="background:#2A2822;border:1px solid #3A382F;border-radius:12px;padding:14px 14px 14px 20px;position:relative;background-image:repeating-linear-gradient(transparent,transparent 26px,#34322A 26px,#34322A 27px);background-position:0 52px">
+              <span style="position:absolute;left:0;top:0;bottom:0;width:7px;background:#4FA3D9;border-radius:12px 0 0 12px"></span>
+              <div style="display:flex;justify-content:space-between;gap:10px;align-items:flex-start">
+                <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:20px;letter-spacing:-.01em">White-Cut Chicken with Ginger Sauce <span style="font-size:12px;color:#9A9788;font-weight:600">✎</span></div>
+              </div>
+              <div style="display:flex;gap:7px;flex-wrap:wrap;margin-top:8px">
+                <button style="border:1.5px solid #3A382F;background:#2A2822;border-radius:999px;padding:6px 12px;font-size:12.5px;font-weight:600;color:#C4C1B2;font-family:inherit;display:inline-flex;align-items:center;gap:6px"><i style="width:9px;height:14px;border-radius:2px;background:#4FA3D9"></i>The Woks of Life ▾</button>
+                <button style="border:1.5px solid #3A382F;background:#2A2822;border-radius:999px;padding:6px 12px;font-size:12.5px;font-weight:600;color:#C4C1B2;font-family:inherit">Mains ▾</button>
+                <button style="border:1.5px solid #3A382F;background:#2A2822;border-radius:999px;padding:6px 12px;font-size:12.5px;font-weight:600;color:#C4C1B2;font-family:inherit">p. 156 ✎</button>
+              </div>
+              <div style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#9A9788;font-weight:700;margin:14px 0 6px">Tags</div>
+              <div style="display:flex;gap:7px;flex-wrap:wrap">
+                <span style="display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:6px 8px 6px 12px;font-size:12.5px;font-weight:700;border:1.5px solid #7FB89A;color:#7FB89A;background:rgba(127,184,154,.15)">poached <button style="border:none;background:rgba(255,255,255,.14);color:inherit;border-radius:50%;width:18px;height:18px;font-size:11px;display:flex;align-items:center;justify-content:center;font-family:inherit">×</button></span>
+                <span style="display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:6px 8px 6px 12px;font-size:12.5px;font-weight:700;border:1.5px solid #7FB89A;color:#7FB89A;background:rgba(127,184,154,.15)">cantonese <button style="border:none;background:rgba(255,255,255,.14);color:inherit;border-radius:50%;width:18px;height:18px;font-size:11px;display:flex;align-items:center;justify-content:center;font-family:inherit">×</button></span>
+                <button style="border:1.5px dashed #4A4840;background:none;border-radius:999px;padding:6px 12px;font-size:12.5px;font-weight:600;color:#9A9788;font-family:inherit">+ add tag</button>
+              </div>
+              <div style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#9A9788;font-weight:700;margin:14px 0 6px">Attachments</div>
+              <div style="display:flex;gap:8px">
+                <div style="width:74px;height:74px;border-radius:10px;background:repeating-linear-gradient(45deg,#33312A 0 8px,#3A3830 8px 16px);border:1px solid #3A382F;display:flex;align-items:center;justify-content:center;font-family:monospace;font-size:9px;color:#9A9788;text-align:center">book page photo</div>
+                <button style="width:74px;height:74px;border-radius:10px;border:1.5px dashed #4A4840;background:none;color:#9A9788;font-size:22px;font-family:inherit">+</button>
+              </div>
+              <div style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#9A9788;font-weight:700;margin:14px 0 6px">History</div>
+              <div style="display:flex;align-items:center;gap:9px;padding:8px 0;border-bottom:1px dashed #3A382F">
+                <span style="flex:1;font-size:13.5px">May 24, 2026 · <b style="color:#E0B24A">★ 9</b> · &ldquo;family favorite&rdquo;</span>
+                <button style="border:none;background:none;font-size:12px;color:#9A9788;font-family:inherit;padding:6px">✎</button>
+                <button style="border:none;background:none;font-size:12px;color:#C97B63;font-family:inherit;padding:6px">🗑</button>
+              </div>
+              <div style="display:flex;align-items:center;gap:9px;padding:8px 0">
+                <span style="flex:1;font-size:13.5px">Feb 2, 2026 · <b style="color:#E0B24A">★ 8</b></span>
+                <button style="border:none;background:none;font-size:12px;color:#9A9788;font-family:inherit;padding:6px">✎</button>
+                <button style="border:none;background:none;font-size:12px;color:#C97B63;font-family:inherit;padding:6px">🗑</button>
+              </div>
+              <div style="display:flex;align-items:center;justify-content:space-between;margin-top:12px;padding-top:10px;border-top:1px solid #3A382F">
+                <span style="font-size:12.5px;color:#C4C1B2;font-weight:600">Status: <b style="color:#7FB89A">Active</b></span>
+                <button style="border:1.5px solid #3A382F;background:none;border-radius:999px;padding:7px 13px;font-size:12px;font-weight:600;color:#C97B63;font-family:inherit">Never make</button>
+              </div>
+            </div>
+            <div style="display:flex;gap:8px;margin-top:12px">
+              <button style="flex:1.4;min-height:50px;border:none;background:#7FB89A;color:#161511;border-radius:14px;font-size:15px;font-weight:700;font-family:inherit">✓ Mark as made</button>
+              <button style="flex:1;min-height:50px;border:1.5px solid #7FB89A;background:none;color:#7FB89A;border-radius:14px;font-size:15px;font-weight:700;font-family:inherit">+ Add to plan</button>
+            </div>
+            <div style="text-align:center;font-size:11.5px;color:#9A9788;margin-top:10px">Edits save instantly · <b>Undo</b></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dv-opt" id="3g">
+      <div class="dv-olabel"><a class="dv-oid" href="#3g">3g</a>Library — content packs in Books tab, uninstalled grayed, one-tap install · dark</div>
+      <div class="dv-card" style="width:390px">
+        <div data-screen-label="3g dark Library" style="background:#211F1A;font-family:'Instrument Sans',sans-serif;color:#EDEAE0;font-size:15px;line-height:1.45;display:flex;flex-direction:column;min-height:760px">
+          <div style="padding:20px 16px 0;flex:1">
+            <div style="display:flex;align-items:baseline;justify-content:space-between">
+              <div style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#9A9788;font-weight:600">Page to Plate</div>
+              <div style="font-size:15px;color:#9A9788">⚙</div>
+            </div>
+            <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:24px;letter-spacing:-.01em;margin:8px 0 2px">Books</div>
+            <div style="display:flex;gap:8px;margin:10px 0 14px">
+              <button style="border:1.5px solid #3A382F;background:#2A2822;border-radius:999px;padding:8px 15px;font-size:12.5px;font-weight:600;color:#C4C1B2;font-family:inherit;min-height:40px">My shelf · 5</button>
+              <button style="border:1.5px solid #7FB89A;background:rgba(127,184,154,.15);border-radius:999px;padding:8px 15px;font-size:12.5px;font-weight:700;color:#7FB89A;font-family:inherit;min-height:40px">Library · 24 packs</button>
+            </div>
+
+            <div style="background:#2A2822;border:1.5px solid #3A382F;border-radius:12px;padding:10px 12px;display:flex;gap:8px;align-items:center;margin-bottom:8px;color:#6E6B5E;font-size:14px">⌕ Search the catalog…</div>
+            <div style="display:flex;gap:7px;flex-wrap:wrap;margin-bottom:14px">
+              <button style="border:1.5px solid #7FB89A;background:rgba(127,184,154,.15);border-radius:999px;padding:7px 13px;font-size:12.5px;font-weight:700;color:#7FB89A;font-family:inherit">Readable online</button>
+              <button style="border:1.5px solid #3A382F;background:#2A2822;border-radius:999px;padding:7px 13px;font-size:12.5px;font-weight:600;color:#9A9788;font-family:inherit">Index only</button>
+              <button style="border:1.5px solid #3A382F;background:#2A2822;border-radius:999px;padding:7px 13px;font-size:12.5px;font-weight:600;color:#9A9788;font-family:inherit">Era ▾</button>
+              <button style="border:1.5px solid #3A382F;background:#2A2822;border-radius:999px;padding:7px 13px;font-size:12.5px;font-weight:600;color:#9A9788;font-family:inherit">Cuisine ▾</button>
+            </div>
+
+            <div style="background:#2A2822;border:1px solid #3A382F;border-radius:12px;padding:13px 14px;margin-bottom:9px;display:flex;gap:12px;align-items:center">
+              <span style="flex:none;width:16px;height:56px;border-radius:3px;background:#4FA3D9;box-shadow:inset -3px 0 0 rgba(0,0,0,.18)"></span>
+              <span style="flex:1;min-width:0">
+                <b style="font-weight:600">The Boston Cooking-School Cook Book</b>
+                <span style="display:block;font-size:12px;color:#9A9788">Fannie Farmer · 1896 · American</span>
+                <span style="display:flex;gap:6px;margin-top:5px;flex-wrap:wrap">
+                  <span style="font-size:10.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:3px 7px;border-radius:5px;background:rgba(127,184,154,.15);color:#7FB89A">Installed</span>
+                  <span style="font-size:10.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:3px 7px;border-radius:5px;background:rgba(140,160,200,.18);color:#9FB0D8">Readable online</span>
+                  <span style="font-size:11px;color:#9A9788;padding:3px 0">220 recipes</span>
+                </span>
+              </span>
+            </div>
+
+            <div style="background:#2A2822;border:1px solid #3A382F;border-radius:12px;padding:13px 14px;margin-bottom:9px;display:flex;gap:12px;align-items:center">
+              <span style="flex:none;width:16px;height:56px;border-radius:3px;background:repeating-linear-gradient(0deg,#4A4840 0 6px,#4A4840 6px 12px)"></span>
+              <span style="flex:1;min-width:0">
+                <b style="font-weight:600;color:#9A9788">Mrs. Beeton&rsquo;s Book of Household Management</b>
+                <span style="display:block;font-size:12px;color:#7C796C">Isabella Beeton · 1861 · British</span>
+                <span style="display:flex;gap:6px;margin-top:5px;flex-wrap:wrap">
+                  <span style="font-size:10.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:3px 7px;border-radius:5px;background:rgba(140,160,200,.18);color:#8A94AC">Readable online</span>
+                  <span style="font-size:11px;color:#7C796C;padding:3px 0">418 recipes · 12 unverified pages</span>
+                </span>
+              </span>
+              <button style="flex:none;border:1.5px solid #7FB89A;background:none;color:#7FB89A;border-radius:999px;padding:0 16px;min-height:44px;font-size:13px;font-weight:700;font-family:inherit">Install</button>
+            </div>
+
+            <div style="background:#2A2822;border:1px solid #3A382F;border-radius:12px;padding:13px 14px;margin-bottom:9px;display:flex;gap:12px;align-items:center">
+              <span style="flex:none;width:16px;height:56px;border-radius:3px;background:repeating-linear-gradient(0deg,#4A4840 0 6px,#4A4840 6px 12px)"></span>
+              <span style="flex:1;min-width:0">
+                <b style="font-weight:600;color:#9A9788">The Original Picayune Creole Cook Book</b>
+                <span style="display:block;font-size:12px;color:#7C796C">1901 · Creole, American South</span>
+                <span style="display:flex;gap:6px;margin-top:5px;flex-wrap:wrap">
+                  <span style="font-size:10.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:3px 7px;border-radius:5px;background:rgba(140,160,200,.18);color:#8A94AC">Readable online</span>
+                  <span style="font-size:11px;color:#7C796C;padding:3px 0">356 recipes</span>
+                </span>
+              </span>
+              <button style="flex:none;border:1.5px solid #7FB89A;background:none;color:#7FB89A;border-radius:999px;padding:0 16px;min-height:44px;font-size:13px;font-weight:700;font-family:inherit">Install</button>
+            </div>
+
+            <div style="background:#2A2822;border:1px solid #3A382F;border-radius:12px;padding:13px 14px;margin-bottom:9px;display:flex;gap:12px;align-items:center">
+              <span style="flex:none;width:16px;height:56px;border-radius:3px;background:repeating-linear-gradient(0deg,#4A4840 0 6px,#4A4840 6px 12px)"></span>
+              <span style="flex:1;min-width:0">
+                <b style="font-weight:600;color:#9A9788">The Food Lab</b>
+                <span style="display:block;font-size:12px;color:#7C796C">J. Kenji López-Alt · 2015 · American</span>
+                <span style="display:flex;gap:6px;margin-top:5px;flex-wrap:wrap">
+                  <span style="font-size:10.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:3px 7px;border-radius:5px;background:#332F26;color:#A29D8A">Index only — own the book</span>
+                  <span style="font-size:11px;color:#7C796C;padding:3px 0">298 recipes</span>
+                </span>
+              </span>
+              <button style="flex:none;border:1.5px solid #7FB89A;background:none;color:#7FB89A;border-radius:999px;padding:0 16px;min-height:44px;font-size:13px;font-weight:700;font-family:inherit">Install</button>
+            </div>
+
+            <div style="font-size:11.5px;color:#9A9788;margin-top:10px;text-align:center">Linked packs open at the exact page on archive.org — free to cook from.</div>
+          </div>
+          <div style="display:flex;border-top:1px solid #3A382F;background:#2A2822;margin-top:20px">
+            <div style="flex:1;text-align:center;padding:10px 0 14px;font-size:11px;font-weight:600;color:#9A9788"><div style="font-size:18px">⚄</div>Generate</div>
+            <div style="flex:1;text-align:center;padding:10px 0 14px;font-size:11px;font-weight:600;color:#9A9788"><div style="font-size:18px">▤</div>Plans</div>
+            <div style="flex:1;text-align:center;padding:10px 0 14px;font-size:11px;font-weight:600;color:#9A9788"><div style="font-size:18px">⌕</div>Browse</div>
+            <div style="flex:1;text-align:center;padding:10px 0 14px;font-size:11px;font-weight:700;color:#7FB89A"><div style="font-size:18px">▥</div>Books</div>
+          </div>
+        </div>
+      </div>
+    </div><!-- T2-SLOT -->
+  </div>
+  <p class="dv-next">Try next: &ldquo;clickable wizard prototype&rdquo; · &ldquo;settings screens&rdquo; · &ldquo;add-to-plan picker&rdquo;</p>
+</section>
+<section class="dv-turn" id="t2">
+  <div class="dv-thd"><a class="dv-tid" href="#t2">2</a><span class="dv-tname">Deep dive on <a class="dv-oid" href="#1a">1a</a> Card Catalog — all five key screens</span></div>
+  <p class="dv-note">Cream paper, ruled index cards, spine stripes + hanging page tabs, Bricolage Grotesque + Instrument Sans, green accent. Book colors follow tap order (Okabe–Ito). Bottom nav on tab screens; the recipe card (<a class="dv-oid" href="#2e">2e</a>) is a sheet over Browse.</p>
+  <div class="dv-opts"><div class="dv-opt" id="2a">
+      <div class="dv-olabel"><a class="dv-oid" href="#2a">2a</a>Generate · Step 1 — books colored by tap order</div>
+      <div class="dv-card" style="width:390px">
+        <div data-screen-label="2a Generate books" style="background:#F6F4EC;font-family:'Instrument Sans',sans-serif;color:#23241E;font-size:15px;line-height:1.45;display:flex;flex-direction:column;min-height:760px">
+          <div style="padding:20px 16px 0;flex:1">
+            <div style="display:flex;align-items:baseline;justify-content:space-between">
+              <div style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#75766B;font-weight:600">Page to Plate</div>
+              <div style="font-size:11px;color:#75766B;font-weight:600">Step 1 of 3</div>
+            </div>
+            <div style="display:flex;gap:6px;margin:10px 0 16px">
+              <span style="flex:1;height:4px;border-radius:2px;background:#2D6A4F"></span>
+              <span style="flex:1;height:4px;border-radius:2px;background:#DAD7C8"></span>
+              <span style="flex:1;height:4px;border-radius:2px;background:#DAD7C8"></span>
+            </div>
+            <div style="background:#FFFEF9;border:1px solid #E2DFD2;border-radius:12px;padding:10px 14px;margin-bottom:14px;display:flex;align-items:center;gap:10px">
+              <span style="font-size:13px;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis"><b>Plan status</b> not yet updated</span>
+              <span style="font-size:13px;font-weight:700;color:#2D6A4F;white-space:nowrap">Plans →</span>
+            </div>
+            <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:24px;letter-spacing:-.01em">Choose your cookbooks</div>
+            <div style="font-size:13px;color:#75766B;margin:2px 0 12px">Each book gets a color in the order you tap it.</div>
+            <div style="background:#FFFEF9;border:1.5px solid #E2DFD2;border-radius:12px;padding:10px 12px;display:flex;gap:8px;align-items:center;margin-bottom:10px;color:#B9B6A8;font-size:14px">⌕ Filter books…</div>
+
+            <button style="width:100%;text-align:left;display:flex;align-items:center;gap:12px;background:#FFFEF9;border:1.5px solid #0072B2;box-shadow:0 0 0 1px #0072B2;border-radius:12px;padding:12px 14px;margin-bottom:9px;font-family:inherit;font-size:15px;min-height:64px;color:#23241E">
+              <span style="flex:none;width:14px;height:44px;border-radius:3px;background:#0072B2;box-shadow:inset -3px 0 0 rgba(0,0,0,.18)"></span>
+              <span style="flex:1;min-width:0"><b style="font-weight:600">The Woks of Life</b><br><span style="font-size:12.5px;color:#75766B">312 recipes · 41 made</span></span>
+              <span style="flex:none;width:24px;height:24px;border-radius:50%;background:#0072B2;color:#fff;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center">1</span>
+            </button>
+            <button style="width:100%;text-align:left;display:flex;align-items:center;gap:12px;background:#FFFEF9;border:1.5px solid #E69F00;box-shadow:0 0 0 1px #E69F00;border-radius:12px;padding:12px 14px;margin-bottom:9px;font-family:inherit;font-size:15px;min-height:64px;color:#23241E">
+              <span style="flex:none;width:14px;height:44px;border-radius:3px;background:#E69F00;box-shadow:inset -3px 0 0 rgba(0,0,0,.18)"></span>
+              <span style="flex:1;min-width:0"><b style="font-weight:600">Moosewood Cookbook</b><br><span style="font-size:12.5px;color:#75766B">188 recipes · 12 made</span></span>
+              <span style="flex:none;width:24px;height:24px;border-radius:50%;background:#E69F00;color:#fff;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center">2</span>
+            </button>
+            <button style="width:100%;text-align:left;display:flex;align-items:center;gap:12px;background:#FFFEF9;border:1.5px solid #009E73;box-shadow:0 0 0 1px #009E73;border-radius:12px;padding:12px 14px;margin-bottom:9px;font-family:inherit;font-size:15px;min-height:64px;color:#23241E">
+              <span style="flex:none;width:14px;height:44px;border-radius:3px;background:#009E73;box-shadow:inset -3px 0 0 rgba(0,0,0,.18)"></span>
+              <span style="flex:1;min-width:0"><b style="font-weight:600">Joy of Cooking</b><br><span style="font-size:12.5px;color:#75766B">1,645 recipes · 87 made</span></span>
+              <span style="flex:none;width:24px;height:24px;border-radius:50%;background:#009E73;color:#fff;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center">3</span>
+            </button>
+            <button style="width:100%;text-align:left;display:flex;align-items:center;gap:12px;background:#FFFEF9;border:1.5px solid #E2DFD2;border-radius:12px;padding:12px 14px;margin-bottom:9px;font-family:inherit;font-size:15px;min-height:64px;color:#23241E">
+              <span style="flex:none;width:14px;height:44px;border-radius:3px;background:#DAD7C8;box-shadow:inset -3px 0 0 rgba(0,0,0,.12)"></span>
+              <span style="flex:1;min-width:0"><b style="font-weight:600">The Boston Cooking-School Book</b><br><span style="font-size:12.5px;color:#75766B">Linked pack · 220 recipes · 6 made</span></span>
+            </button>
+            <button style="width:100%;text-align:left;display:flex;align-items:center;gap:12px;background:#FFFEF9;border:1.5px solid #E2DFD2;border-radius:12px;padding:12px 14px;margin-bottom:9px;font-family:inherit;font-size:15px;min-height:64px;color:#23241E">
+              <span style="flex:none;width:14px;height:44px;border-radius:3px;background:#DAD7C8;box-shadow:inset -3px 0 0 rgba(0,0,0,.12)"></span>
+              <span style="flex:1;min-width:0"><b style="font-weight:600">My Own Recipes</b><br><span style="font-size:12.5px;color:#75766B">Custom · 14 recipes · 9 made</span></span>
+            </button>
+
+            <button style="width:100%;min-height:44px;border:1.5px solid #E2DFD2;background:none;border-radius:999px;font-size:13px;font-weight:600;color:#54554B;font-family:inherit;margin:12px 0 4px;display:flex;align-items:center;justify-content:center;gap:6px">Presets: Weeknight dinner, Sunday bake, +3 ▾</button>
+            <button style="width:100%;min-height:52px;border:none;background:#2D6A4F;color:#fff;border-radius:14px;font-size:16px;font-weight:700;font-family:inherit;margin-top:10px">Next: categories →</button>
+          </div>
+          <div style="display:flex;border-top:1px solid #E2DFD2;background:#FFFEF9;margin-top:20px">
+            <div style="flex:1;text-align:center;padding:10px 0 14px;font-size:11px;font-weight:700;color:#2D6A4F"><div style="font-size:18px">⚄</div>Generate</div>
+            <div style="flex:1;text-align:center;padding:10px 0 14px;font-size:11px;font-weight:600;color:#75766B"><div style="font-size:18px">▤</div>Plans</div>
+            <div style="flex:1;text-align:center;padding:10px 0 14px;font-size:11px;font-weight:600;color:#75766B"><div style="font-size:18px">⌕</div>Browse</div>
+            <div style="flex:1;text-align:center;padding:10px 0 14px;font-size:11px;font-weight:600;color:#75766B"><div style="font-size:18px">▥</div>Books</div>
+          </div>
+        </div>
+      </div>
+    </div><div class="dv-opt" id="2b">
+      <div class="dv-olabel"><a class="dv-oid" href="#2b">2b</a>Generate · Step 2 — counts + per-category keyword filters (Mains expanded)</div>
+      <div class="dv-card" style="width:390px">
+        <div data-screen-label="2b Generate categories" style="background:#F6F4EC;font-family:'Instrument Sans',sans-serif;color:#23241E;font-size:15px;line-height:1.45;padding:20px 16px 24px">
+          <div style="display:flex;align-items:baseline;justify-content:space-between">
+            <div style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#75766B;font-weight:600">Page to Plate</div>
+            <div style="font-size:11px;color:#75766B;font-weight:600">Step 2 of 3</div>
+          </div>
+          <div style="display:flex;gap:6px;margin:10px 0 16px">
+            <span style="flex:1;height:4px;border-radius:2px;background:#2D6A4F"></span>
+            <span style="flex:1;height:4px;border-radius:2px;background:#2D6A4F"></span>
+            <span style="flex:1;height:4px;border-radius:2px;background:#DAD7C8"></span>
+          </div>
+          <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:24px;letter-spacing:-.01em">What are we making?</div>
+          <div style="font-size:13px;color:#75766B;margin:2px 0 14px">Set a count per category. Filters apply only to their category.</div>
+
+          <div style="background:#FFFEF9;border:1.5px solid #2D6A4F;border-radius:12px;margin-bottom:9px;overflow:hidden">
+            <div style="display:flex;align-items:center;gap:10px;padding:12px 12px 10px">
+              <span style="font-weight:600;flex:1">Mains</span>
+              <span style="font-size:11.5px;color:#2D6A4F;font-weight:700">7 match</span>
+              <span style="display:flex;align-items:center;border:1.5px solid #E2DFD2;border-radius:999px;overflow:hidden">
+                <button style="border:none;background:#FFFEF9;width:38px;height:36px;font-size:18px;color:#2D6A4F;font-weight:700;font-family:inherit">−</button>
+                <span style="width:28px;text-align:center;font-weight:700;font-size:15px">2</span>
+                <button style="border:none;background:#FFFEF9;width:38px;height:36px;font-size:18px;color:#2D6A4F;font-weight:700;font-family:inherit">+</button>
+              </span>
+            </div>
+            <div style="border-top:1.5px dashed #E2DFD2;padding:10px 12px 12px;background:#FBFAF3">
+              <div style="display:flex;flex-wrap:wrap;gap:7px">
+                <span style="display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:7px 8px 7px 13px;font-size:12.5px;font-weight:700;border:1.5px solid #2D6A4F;color:#2D6A4F;background:#EDF3EE">chicken <button style="border:none;background:rgba(0,0,0,.08);color:inherit;border-radius:50%;width:18px;height:18px;font-size:11px;line-height:1;display:flex;align-items:center;justify-content:center;font-family:inherit">×</button></span>
+                <span style="display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:7px 8px 7px 13px;font-size:12.5px;font-weight:700;border:1.5px solid #A9553F;color:#A9553F;background:#F8ECE8">not fried <button style="border:none;background:rgba(0,0,0,.08);color:inherit;border-radius:50%;width:18px;height:18px;font-size:11px;line-height:1;display:flex;align-items:center;justify-content:center;font-family:inherit">×</button></span>
+                <button style="border:1.5px solid #E2DFD2;background:#FFFEF9;border-radius:999px;padding:7px 13px;font-size:12.5px;font-weight:600;color:#75766B;font-family:inherit">beef</button>
+                <button style="border:1.5px solid #E2DFD2;background:#FFFEF9;border-radius:999px;padding:7px 13px;font-size:12.5px;font-weight:600;color:#75766B;font-family:inherit">pork</button>
+                <button style="border:1.5px solid #E2DFD2;background:#FFFEF9;border-radius:999px;padding:7px 13px;font-size:12.5px;font-weight:600;color:#75766B;font-family:inherit">fish</button>
+                <button style="border:1.5px solid #E2DFD2;background:#FFFEF9;border-radius:999px;padding:7px 13px;font-size:12.5px;font-weight:600;color:#75766B;font-family:inherit">vegetarian</button>
+              </div>
+              <input style="width:100%;border:1.5px solid #E2DFD2;border-radius:10px;padding:10px 12px;font-family:inherit;font-size:14px;background:#FFFEF9;margin-top:9px;box-sizing:border-box;color:#23241E" placeholder="Type a keyword, return adds a pill…">
+              <div style="font-size:11.5px;color:#75766B;margin-top:6px">Tap a pill to flip include ↔ not. Filters match recipe names and tags.</div>
+            </div>
+          </div>
+
+          <div style="display:flex;align-items:center;gap:10px;background:#FFFEF9;border:1px solid #E2DFD2;border-radius:12px;padding:12px;margin-bottom:9px">
+            <span style="font-weight:600;flex:1">Desserts</span>
+            <span style="font-size:11.5px;color:#75766B">2 match &ldquo;chocolate&rdquo;</span>
+            <span style="display:flex;align-items:center;border:1.5px solid #E2DFD2;border-radius:999px;overflow:hidden">
+              <button style="border:none;background:#FFFEF9;width:38px;height:36px;font-size:18px;color:#2D6A4F;font-weight:700;font-family:inherit">−</button>
+              <span style="width:28px;text-align:center;font-weight:700;font-size:15px">1</span>
+              <button style="border:none;background:#FFFEF9;width:38px;height:36px;font-size:18px;color:#2D6A4F;font-weight:700;font-family:inherit">+</button>
+            </span>
+            <button style="border:1.5px solid #E2DFD2;background:none;border-radius:999px;width:36px;height:36px;font-size:14px;color:#2D6A4F;font-family:inherit">⚲<span style="position:absolute;margin:-4px 0 0 -3px;font-size:9px;background:#2D6A4F;color:#fff;border-radius:50%;width:13px;height:13px;display:inline-flex;align-items:center;justify-content:center">1</span></button>
+          </div>
+
+          <div style="display:flex;align-items:center;gap:10px;background:#FFFEF9;border:1px solid #E2DFD2;border-radius:12px;padding:12px;margin-bottom:9px">
+            <span style="font-weight:600;flex:1">Sides</span>
+            <span style="font-size:11.5px;color:#75766B">31 available</span>
+            <span style="display:flex;align-items:center;border:1.5px solid #E2DFD2;border-radius:999px;overflow:hidden">
+              <button style="border:none;background:#FFFEF9;width:38px;height:36px;font-size:18px;color:#2D6A4F;font-weight:700;font-family:inherit">−</button>
+              <span style="width:28px;text-align:center;font-weight:700;font-size:15px;color:#B9B6A8">0</span>
+              <button style="border:none;background:#FFFEF9;width:38px;height:36px;font-size:18px;color:#2D6A4F;font-weight:700;font-family:inherit">+</button>
+            </span>
+            <button style="border:1.5px solid #E2DFD2;background:none;border-radius:999px;width:36px;height:36px;font-size:14px;color:#75766B;font-family:inherit">⚲</button>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;background:#FFFEF9;border:1px solid #E2DFD2;border-radius:12px;padding:12px;margin-bottom:9px">
+            <span style="font-weight:600;flex:1">Soups &amp; Stews</span>
+            <span style="font-size:11.5px;color:#75766B">18 available</span>
+            <span style="display:flex;align-items:center;border:1.5px solid #E2DFD2;border-radius:999px;overflow:hidden">
+              <button style="border:none;background:#FFFEF9;width:38px;height:36px;font-size:18px;color:#2D6A4F;font-weight:700;font-family:inherit">−</button>
+              <span style="width:28px;text-align:center;font-weight:700;font-size:15px;color:#B9B6A8">0</span>
+              <button style="border:none;background:#FFFEF9;width:38px;height:36px;font-size:18px;color:#2D6A4F;font-weight:700;font-family:inherit">+</button>
+            </span>
+            <button style="border:1.5px solid #E2DFD2;background:none;border-radius:999px;width:36px;height:36px;font-size:14px;color:#75766B;font-family:inherit">⚲</button>
+          </div>
+          <button style="width:100%;min-height:44px;border:1.5px dashed #DAD7C8;background:none;border-radius:12px;font-size:13px;font-weight:600;color:#75766B;font-family:inherit;margin-bottom:4px">Show 8 more categories ▾</button>
+
+          <button style="width:100%;min-height:52px;border:none;background:#2D6A4F;color:#fff;border-radius:14px;font-size:16px;font-weight:700;font-family:inherit;margin-top:10px">Generate 3 recipes →</button>
+          <div style="display:flex;gap:8px;margin-top:8px">
+            <button style="flex:1;min-height:44px;border:1.5px solid #E2DFD2;background:none;border-radius:14px;font-size:14px;font-weight:600;color:#54554B;font-family:inherit">← Books</button>
+            <button style="flex:1;min-height:44px;border:1.5px solid #E2DFD2;background:none;border-radius:14px;font-size:14px;font-weight:600;color:#54554B;font-family:inherit">Save as preset</button>
+          </div>
+        </div>
+      </div>
+    </div><div class="dv-opt" id="2c">
+      <div class="dv-olabel"><a class="dv-oid" href="#2c">2c</a>Plans tab — list + calendar, planned vs made markers</div>
+      <div class="dv-card" style="width:390px">
+        <div data-screen-label="2c Plans" style="background:#F6F4EC;font-family:'Instrument Sans',sans-serif;color:#23241E;font-size:15px;line-height:1.45;display:flex;flex-direction:column;min-height:760px">
+          <div style="padding:20px 16px 0;flex:1">
+            <div style="display:flex;align-items:baseline;justify-content:space-between">
+              <div style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#75766B;font-weight:600">Page to Plate</div>
+              <div style="font-size:15px;color:#75766B">⚙</div>
+            </div>
+            <div style="display:flex;align-items:center;justify-content:space-between;margin:8px 0 12px">
+              <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:24px;letter-spacing:-.01em">Plans</div>
+              <div style="display:flex;border:1.5px solid #E2DFD2;border-radius:999px;overflow:hidden">
+                <button style="border:none;background:#2D6A4F;color:#fff;padding:8px 16px;font-size:12.5px;font-weight:700;font-family:inherit">List</button>
+                <button style="border:none;background:#FFFEF9;color:#75766B;padding:8px 16px;font-size:12.5px;font-weight:600;font-family:inherit">Calendar</button>
+              </div>
+            </div>
+            <div style="background:#FFFEF9;border:1px solid #E2DFD2;border-radius:12px;padding:10px 14px;margin-bottom:12px;display:flex;gap:14px;font-size:12.5px;color:#54554B">
+              <span><b style="font-family:'Bricolage Grotesque',sans-serif;font-size:17px;font-weight:800;color:#23241E">14</b> made this year</span>
+              <span><b style="font-family:'Bricolage Grotesque',sans-serif;font-size:17px;font-weight:800;color:#23241E">2</b> open plans</span>
+              <span><b style="font-family:'Bricolage Grotesque',sans-serif;font-size:17px;font-weight:800;color:#23241E">7.4</b> avg rating</span>
+            </div>
+
+            <div style="background:#FFFEF9;border:1px solid #E2DFD2;border-radius:12px;padding:13px 14px;margin-bottom:11px">
+              <div style="display:flex;align-items:baseline;justify-content:space-between">
+                <div style="font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#75766B">Planned July 11 · 3 recipes</div>
+                <div style="font-size:12px;font-weight:700;color:#2D6A4F">Share ↗</div>
+              </div>
+              <div style="display:flex;align-items:center;gap:9px;padding:9px 0;border-bottom:1px dashed #E2DFD2">
+                <i style="width:5px;height:28px;border-radius:2px;background:#0072B2;flex:none"></i>
+                <span style="flex:1;font-size:14px">Stir-Fried Beef with Oyster Sauce<br><small style="color:#75766B;font-size:11.5px">The Woks of Life · p. 142</small></span>
+                <button style="border:1.5px solid #2D6A4F;color:#2D6A4F;background:none;border-radius:999px;padding:8px 13px;font-size:12px;font-weight:700;font-family:inherit;min-height:36px">Made ✓</button>
+              </div>
+              <div style="display:flex;align-items:center;gap:9px;padding:9px 0;border-bottom:1px dashed #E2DFD2">
+                <i style="width:5px;height:28px;border-radius:2px;background:#009E73;flex:none"></i>
+                <span style="flex:1;font-size:14px">Devil&rsquo;s Food Cake<br><small style="color:#75766B;font-size:11.5px">Joy of Cooking · p. 712</small></span>
+                <button style="border:none;color:#fff;background:#2D6A4F;border-radius:999px;padding:8px 13px;font-size:12px;font-weight:700;font-family:inherit;min-height:36px">Made · 8/10</button>
+              </div>
+              <div style="display:flex;align-items:center;gap:9px;padding:9px 0">
+                <i style="width:5px;height:28px;border-radius:2px;background:#E69F00;flex:none"></i>
+                <span style="flex:1;font-size:14px">Hungarian Mushroom Soup<br><small style="color:#75766B;font-size:11.5px">Moosewood · p. 44</small></span>
+                <button style="border:1.5px solid #2D6A4F;color:#2D6A4F;background:none;border-radius:999px;padding:8px 13px;font-size:12px;font-weight:700;font-family:inherit;min-height:36px">Made ✓</button>
+              </div>
+              <div style="display:flex;gap:8px;margin-top:6px">
+                <button style="flex:1;min-height:38px;border:1.5px solid #E2DFD2;background:none;border-radius:999px;font-size:12.5px;font-weight:600;color:#54554B;font-family:inherit">Swap a recipe</button>
+                <button style="flex:1;min-height:38px;border:1.5px solid #E2DFD2;background:none;border-radius:999px;font-size:12.5px;font-weight:600;color:#A9553F;font-family:inherit">Dismiss plan</button>
+              </div>
+            </div>
+
+            <div style="background:#FFFEF9;border:1px solid #E2DFD2;border-radius:12px;padding:13px 14px;margin-bottom:14px;opacity:.75">
+              <div style="font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#75766B">Planned July 3 · 5 recipes · 4 made</div>
+              <div style="font-size:13px;color:#54554B;margin-top:4px">Karaage · Ribollita · Corn Chowder · Focaccia · <s>Aspic</s></div>
+            </div>
+
+            <div style="background:#FFFEF9;border:1px solid #E2DFD2;border-radius:12px;padding:12px">
+              <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:8px">
+                <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:15px">July 2026</div>
+                <div style="display:flex;gap:12px;font-size:11px;color:#54554B;font-weight:600">
+                  <span style="display:flex;align-items:center;gap:4px"><i style="width:8px;height:8px;border-radius:50%;border:2px solid #8A8DDF"></i>planned</span>
+                  <span style="display:flex;align-items:center;gap:4px"><i style="width:8px;height:8px;border-radius:50%;background:#2D6A4F"></i>made</span>
+                </div>
+              </div>
+              <div style="display:grid;grid-template-columns:repeat(7,1fr);gap:3px;font-size:12px;text-align:center">
+                <span style="color:#75766B;font-weight:700;font-size:10px;padding:3px 0">M</span><span style="color:#75766B;font-weight:700;font-size:10px;padding:3px 0">T</span><span style="color:#75766B;font-weight:700;font-size:10px;padding:3px 0">W</span><span style="color:#75766B;font-weight:700;font-size:10px;padding:3px 0">T</span><span style="color:#75766B;font-weight:700;font-size:10px;padding:3px 0">F</span><span style="color:#75766B;font-weight:700;font-size:10px;padding:3px 0">S</span><span style="color:#75766B;font-weight:700;font-size:10px;padding:3px 0">S</span>
+                <span style="padding:7px 0;color:#B9B6A8">29</span><span style="padding:7px 0;color:#B9B6A8">30</span><span style="padding:7px 0">1</span><span style="padding:7px 0">2</span>
+                <span style="padding:7px 0;border-radius:8px;position:relative">3<span style="position:absolute;left:0;right:0;bottom:1px;display:flex;gap:2px;justify-content:center"><i style="width:5px;height:5px;border-radius:50%;border:1.5px solid #8A8DDF"></i></span></span>
+                <span style="padding:7px 0;position:relative">4<span style="position:absolute;left:0;right:0;bottom:1px;display:flex;gap:2px;justify-content:center"><i style="width:5px;height:5px;border-radius:50%;background:#2D6A4F"></i></span></span>
+                <span style="padding:7px 0;position:relative">5<span style="position:absolute;left:0;right:0;bottom:1px;display:flex;gap:2px;justify-content:center"><i style="width:5px;height:5px;border-radius:50%;background:#2D6A4F"></i><i style="width:5px;height:5px;border-radius:50%;background:#2D6A4F"></i></span></span>
+                <span style="padding:7px 0">6</span><span style="padding:7px 0;position:relative">7<span style="position:absolute;left:0;right:0;bottom:1px;display:flex;gap:2px;justify-content:center"><i style="width:5px;height:5px;border-radius:50%;background:#2D6A4F"></i></span></span><span style="padding:7px 0">8</span><span style="padding:7px 0">9</span><span style="padding:7px 0">10</span>
+                <span style="padding:7px 0;border-radius:8px;background:#EDF3EE;position:relative;font-weight:700">11<span style="position:absolute;left:0;right:0;bottom:1px;display:flex;gap:2px;justify-content:center"><i style="width:5px;height:5px;border-radius:50%;border:1.5px solid #8A8DDF"></i><i style="width:5px;height:5px;border-radius:50%;background:#2D6A4F"></i></span></span>
+                <span style="padding:7px 0">12</span>
+                <span style="padding:7px 0;border-radius:8px;border:1.5px solid #2D6A4F;font-weight:700">13</span>
+                <span style="padding:7px 0;color:#B9B6A8">14</span><span style="padding:7px 0;color:#B9B6A8">15</span><span style="padding:7px 0;color:#B9B6A8">16</span><span style="padding:7px 0;color:#B9B6A8">17</span><span style="padding:7px 0;color:#B9B6A8">18</span><span style="padding:7px 0;color:#B9B6A8">19</span>
+              </div>
+              <div style="margin-top:10px;border-top:1px dashed #E2DFD2;padding-top:9px"><div style="font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#75766B;margin-bottom:6px">Friday, July 11 — selected</div><div style="display:flex;align-items:center;gap:8px;padding:5px 0;font-size:13px"><i style="width:8px;height:8px;border-radius:50%;border:2px solid #8A8DDF;flex:none"></i><span style="flex:1">Plan accepted · 3 recipes, 1 still open</span></div><div style="display:flex;align-items:center;gap:8px;padding:5px 0;font-size:13px"><i style="width:8px;height:8px;border-radius:50%;background:#2D6A4F;flex:none"></i><span style="flex:1">Devil&rsquo;s Food Cake made · ★ 8</span></div></div>
+            </div>
+          </div>
+          <div style="display:flex;border-top:1px solid #E2DFD2;background:#FFFEF9;margin-top:20px">
+            <div style="flex:1;text-align:center;padding:10px 0 14px;font-size:11px;font-weight:600;color:#75766B"><div style="font-size:18px">⚄</div>Generate</div>
+            <div style="flex:1;text-align:center;padding:10px 0 14px;font-size:11px;font-weight:700;color:#2D6A4F"><div style="font-size:18px">▤</div>Plans</div>
+            <div style="flex:1;text-align:center;padding:10px 0 14px;font-size:11px;font-weight:600;color:#75766B"><div style="font-size:18px">⌕</div>Browse</div>
+            <div style="flex:1;text-align:center;padding:10px 0 14px;font-size:11px;font-weight:600;color:#75766B"><div style="font-size:18px">▥</div>Books</div>
+          </div>
+        </div>
+      </div>
+    </div><div class="dv-opt" id="2d">
+      <div class="dv-olabel"><a class="dv-oid" href="#2d">2d</a>Browse tab — pill search, collapsible book/category dropdowns, status chips</div>
+      <div class="dv-card" style="width:390px">
+        <div data-screen-label="2d Browse" style="background:#F6F4EC;font-family:'Instrument Sans',sans-serif;color:#23241E;font-size:15px;line-height:1.45;display:flex;flex-direction:column;min-height:760px">
+          <div style="padding:20px 16px 0;flex:1">
+            <div style="display:flex;align-items:baseline;justify-content:space-between">
+              <div style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#75766B;font-weight:600">Page to Plate</div>
+              <div style="font-size:15px;color:#75766B">⚙</div>
+            </div>
+            <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:24px;letter-spacing:-.01em;margin:8px 0 12px">Browse</div>
+
+            <div style="background:#FFFEF9;border:1.5px solid #E2DFD2;border-radius:12px;padding:9px 12px;display:flex;flex-wrap:wrap;gap:7px;align-items:center;margin-bottom:10px">
+              <span style="display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:6px 8px 6px 12px;font-size:12.5px;font-weight:700;border:1.5px solid #2D6A4F;color:#2D6A4F;background:#EDF3EE">chicken <button style="border:none;background:rgba(0,0,0,.08);color:inherit;border-radius:50%;width:18px;height:18px;font-size:11px;line-height:1;display:flex;align-items:center;justify-content:center;font-family:inherit">×</button></span>
+              <span style="display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:6px 8px 6px 12px;font-size:12.5px;font-weight:700;border:1.5px solid #A9553F;color:#A9553F;background:#F8ECE8">not fried <button style="border:none;background:rgba(0,0,0,.08);color:inherit;border-radius:50%;width:18px;height:18px;font-size:11px;line-height:1;display:flex;align-items:center;justify-content:center;font-family:inherit">×</button></span>
+              <span style="flex:1;min-width:80px;color:#B9B6A8;font-size:14px">⌕ add keyword…</span>
+            </div>
+
+            <div style="display:flex;gap:8px;margin-bottom:8px">
+              <button style="flex:1;min-height:40px;border:1.5px solid #2D6A4F;background:#EDF3EE;border-radius:999px;font-size:12.5px;font-weight:700;color:#2D6A4F;font-family:inherit">Books: 2 selected ▾</button>
+              <button style="flex:1;min-height:40px;border:1.5px solid #E2DFD2;background:#FFFEF9;border-radius:999px;font-size:12.5px;font-weight:600;color:#54554B;font-family:inherit">Categories: all ▾</button>
+            </div>
+            <div style="background:#FFFEF9;border:1.5px dashed #DAD7C8;border-radius:12px;padding:9px;display:flex;flex-wrap:wrap;gap:7px;margin-bottom:10px">
+              <button style="border:1.5px solid #E2DFD2;background:#FFFEF9;border-radius:999px;padding:7px 12px;font-size:12.5px;font-weight:600;color:#75766B;font-family:inherit">All books</button>
+              <button style="border:1.5px solid #0072B2;background:rgba(0,114,178,.09);border-radius:999px;padding:7px 12px;font-size:12.5px;font-weight:700;color:#0072B2;font-family:inherit;display:inline-flex;align-items:center;gap:6px"><i style="width:9px;height:14px;border-radius:2px;background:#0072B2"></i>The Woks of Life ✓</button>
+              <button style="border:1.5px solid #E69F00;background:rgba(230,159,0,.10);border-radius:999px;padding:7px 12px;font-size:12.5px;font-weight:700;color:#9A6B00;font-family:inherit;display:inline-flex;align-items:center;gap:6px"><i style="width:9px;height:14px;border-radius:2px;background:#E69F00"></i>Moosewood ✓</button>
+              <button style="border:1.5px solid #E2DFD2;background:#FFFEF9;border-radius:999px;padding:7px 12px;font-size:12.5px;font-weight:600;color:#75766B;font-family:inherit;display:inline-flex;align-items:center;gap:6px"><i style="width:9px;height:14px;border-radius:2px;background:#DAD7C8"></i>Joy of Cooking</button>
+              <button style="border:1.5px solid #A9553F;background:#F8ECE8;border-radius:999px;padding:7px 12px;font-size:12.5px;font-weight:700;color:#A9553F;font-family:inherit;display:inline-flex;align-items:center;gap:6px"><i style="width:9px;height:14px;border-radius:2px;background:#DAD7C8"></i>not Boston Cooking-School</button>
+            </div>
+
+            <div style="display:flex;gap:7px;flex-wrap:wrap;margin-bottom:12px">
+              <button style="border:1.5px solid #E2DFD2;background:#FFFEF9;border-radius:999px;padding:7px 13px;font-size:12.5px;font-weight:600;color:#75766B;font-family:inherit">Active</button>
+              <button style="border:1.5px solid #2D6A4F;background:#EDF3EE;border-radius:999px;padding:7px 13px;font-size:12.5px;font-weight:700;color:#2D6A4F;font-family:inherit">Made ✓</button>
+              <button style="border:1.5px solid #E2DFD2;background:#FFFEF9;border-radius:999px;padding:7px 13px;font-size:12.5px;font-weight:600;color:#75766B;font-family:inherit">Planned</button>
+              <button style="border:1.5px solid #E2DFD2;background:#FFFEF9;border-radius:999px;padding:7px 13px;font-size:12.5px;font-weight:600;color:#75766B;font-family:inherit">Never make</button>
+              <button style="border:1.5px solid #E2DFD2;background:#FFFEF9;border-radius:999px;padding:7px 13px;font-size:12.5px;font-weight:600;color:#75766B;font-family:inherit">★ 8+</button>
+            </div>
+
+            <div style="font-size:12px;color:#75766B;margin-bottom:8px">6 recipes · <b>chicken</b>, not <b>fried</b>, made, in 2 books</div>
+
+            <div style="background:#FFFEF9;border:1px solid #E2DFD2;border-radius:12px;padding:12px 12px 12px 18px;margin-bottom:9px;position:relative">
+              <span style="position:absolute;left:0;top:0;bottom:0;width:7px;background:#0072B2;border-radius:12px 0 0 12px"></span>
+              <div style="display:flex;justify-content:space-between;gap:10px;align-items:baseline">
+                <div style="font-weight:600;font-size:15.5px">White-Cut Chicken with Ginger Sauce</div>
+                <div style="font-size:12px;color:#75766B;white-space:nowrap">p. 156</div>
+              </div>
+              <div style="display:flex;gap:6px;align-items:center;margin-top:4px;flex-wrap:wrap">
+                <span style="font-size:12px;color:#75766B">The Woks of Life · Mains</span>
+                <span style="font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 7px;border-radius:5px;background:#EDF3EE;color:#2D6A4F">Made ×2</span>
+                <span style="font-size:12px;color:#C08A17;font-weight:700">★ 9</span>
+              </div>
+            </div>
+            <div style="background:#FFFEF9;border:1px solid #E2DFD2;border-radius:12px;padding:12px 12px 12px 18px;margin-bottom:9px;position:relative">
+              <span style="position:absolute;left:0;top:0;bottom:0;width:7px;background:#0072B2;border-radius:12px 0 0 12px"></span>
+              <div style="display:flex;justify-content:space-between;gap:10px;align-items:baseline">
+                <div style="font-weight:600;font-size:15.5px">Soy Sauce Chicken</div>
+                <div style="font-size:12px;color:#75766B;white-space:nowrap">p. 148</div>
+              </div>
+              <div style="display:flex;gap:6px;align-items:center;margin-top:4px;flex-wrap:wrap">
+                <span style="font-size:12px;color:#75766B">The Woks of Life · Mains</span>
+                <span style="font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 7px;border-radius:5px;background:#EDF3EE;color:#2D6A4F">Made</span>
+                <span style="font-size:12px;color:#C08A17;font-weight:700">★ 7</span>
+              </div>
+            </div>
+            <div style="background:#FFFEF9;border:1px solid #E2DFD2;border-radius:12px;padding:12px 12px 12px 18px;margin-bottom:9px;position:relative">
+              <span style="position:absolute;left:0;top:0;bottom:0;width:7px;background:#E69F00;border-radius:12px 0 0 12px"></span>
+              <div style="display:flex;justify-content:space-between;gap:10px;align-items:baseline">
+                <div style="font-weight:600;font-size:15.5px">Chicken Paprikash</div>
+                <div style="font-size:12px;color:#75766B;white-space:nowrap">p. 203</div>
+              </div>
+              <div style="display:flex;gap:6px;align-items:center;margin-top:4px;flex-wrap:wrap">
+                <span style="font-size:12px;color:#75766B">Moosewood · Mains · tag: hungarian</span>
+                <span style="font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 7px;border-radius:5px;background:#EDF3EE;color:#2D6A4F">Made</span>
+                <span style="font-size:12px;color:#C08A17;font-weight:700">★ 8</span>
+              </div>
+            </div>
+            <div style="background:#FFFEF9;border:1px solid #E2DFD2;border-radius:12px;padding:12px 12px 12px 18px;margin-bottom:9px;position:relative;opacity:.6">
+              <span style="position:absolute;left:0;top:0;bottom:0;width:7px;background:#E69F00;border-radius:12px 0 0 12px"></span>
+              <div style="display:flex;justify-content:space-between;gap:10px;align-items:baseline">
+                <div style="font-weight:600;font-size:15.5px">Chicken Liver Pâté</div>
+                <div style="font-size:12px;color:#75766B;white-space:nowrap">p. 61</div>
+              </div>
+              <div style="display:flex;gap:6px;align-items:center;margin-top:4px;flex-wrap:wrap">
+                <span style="font-size:12px;color:#75766B">Moosewood · Appetizers</span>
+                <span style="font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 7px;border-radius:5px;background:#F8ECE8;color:#A9553F">Never make</span>
+              </div>
+            </div>
+          </div>
+          <div style="display:flex;border-top:1px solid #E2DFD2;background:#FFFEF9;margin-top:20px">
+            <div style="flex:1;text-align:center;padding:10px 0 14px;font-size:11px;font-weight:600;color:#75766B"><div style="font-size:18px">⚄</div>Generate</div>
+            <div style="flex:1;text-align:center;padding:10px 0 14px;font-size:11px;font-weight:600;color:#75766B"><div style="font-size:18px">▤</div>Plans</div>
+            <div style="flex:1;text-align:center;padding:10px 0 14px;font-size:11px;font-weight:700;color:#2D6A4F"><div style="font-size:18px">⌕</div>Browse</div>
+            <div style="flex:1;text-align:center;padding:10px 0 14px;font-size:11px;font-weight:600;color:#75766B"><div style="font-size:18px">▥</div>Books</div>
+          </div>
+        </div>
+      </div>
+    </div><div class="dv-opt" id="2e">
+      <div class="dv-olabel"><a class="dv-oid" href="#2e">2e</a>Universal recipe card — sheet over Browse, everything editable in place</div>
+      <div class="dv-card" style="width:390px">
+        <div data-screen-label="2e Recipe card sheet" style="background:#8B887B;font-family:'Instrument Sans',sans-serif;color:#23241E;font-size:15px;line-height:1.45;position:relative;min-height:760px;overflow:hidden">
+          <div style="padding:20px 16px;opacity:.35;filter:blur(1px)">
+            <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:24px;color:#F6F4EC">Browse</div>
+            <div style="background:#FFFEF9;border-radius:12px;height:64px;margin-top:12px"></div>
+            <div style="background:#FFFEF9;border-radius:12px;height:64px;margin-top:9px"></div>
+          </div>
+          <div style="position:absolute;left:0;right:0;bottom:0;top:120px;background:#F6F4EC;border-radius:22px 22px 0 0;box-shadow:0 -8px 30px rgba(0,0,0,.25);padding:10px 16px 20px;overflow:hidden">
+            <div style="width:40px;height:4px;border-radius:2px;background:#DAD7C8;margin:0 auto 12px"></div>
+            <div style="background:#FFFEF9;border:1px solid #E2DFD2;border-radius:12px;padding:14px 14px 14px 20px;position:relative;background-image:repeating-linear-gradient(transparent,transparent 26px,#E7E4D6 26px,#E7E4D6 27px);background-position:0 52px">
+              <span style="position:absolute;left:0;top:0;bottom:0;width:7px;background:#0072B2;border-radius:12px 0 0 12px"></span>
+              <div style="display:flex;justify-content:space-between;gap:10px;align-items:flex-start">
+                <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:20px;letter-spacing:-.01em">White-Cut Chicken with Ginger Sauce <span style="font-size:12px;color:#75766B;font-weight:600">✎</span></div>
+              </div>
+              <div style="display:flex;gap:7px;flex-wrap:wrap;margin-top:8px">
+                <button style="border:1.5px solid #E2DFD2;background:#FFFEF9;border-radius:999px;padding:6px 12px;font-size:12.5px;font-weight:600;color:#54554B;font-family:inherit;display:inline-flex;align-items:center;gap:6px"><i style="width:9px;height:14px;border-radius:2px;background:#0072B2"></i>The Woks of Life ▾</button>
+                <button style="border:1.5px solid #E2DFD2;background:#FFFEF9;border-radius:999px;padding:6px 12px;font-size:12.5px;font-weight:600;color:#54554B;font-family:inherit">Mains ▾</button>
+                <button style="border:1.5px solid #E2DFD2;background:#FFFEF9;border-radius:999px;padding:6px 12px;font-size:12.5px;font-weight:600;color:#54554B;font-family:inherit">p. 156 ✎</button>
+              </div>
+              <div style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#75766B;font-weight:700;margin:14px 0 6px">Tags</div>
+              <div style="display:flex;gap:7px;flex-wrap:wrap">
+                <span style="display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:6px 8px 6px 12px;font-size:12.5px;font-weight:700;border:1.5px solid #2D6A4F;color:#2D6A4F;background:#EDF3EE">poached <button style="border:none;background:rgba(0,0,0,.08);color:inherit;border-radius:50%;width:18px;height:18px;font-size:11px;display:flex;align-items:center;justify-content:center;font-family:inherit">×</button></span>
+                <span style="display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:6px 8px 6px 12px;font-size:12.5px;font-weight:700;border:1.5px solid #2D6A4F;color:#2D6A4F;background:#EDF3EE">cantonese <button style="border:none;background:rgba(0,0,0,.08);color:inherit;border-radius:50%;width:18px;height:18px;font-size:11px;display:flex;align-items:center;justify-content:center;font-family:inherit">×</button></span>
+                <button style="border:1.5px dashed #DAD7C8;background:none;border-radius:999px;padding:6px 12px;font-size:12.5px;font-weight:600;color:#75766B;font-family:inherit">+ add tag</button>
+              </div>
+              <div style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#75766B;font-weight:700;margin:14px 0 6px">Attachments</div>
+              <div style="display:flex;gap:8px">
+                <div style="width:74px;height:74px;border-radius:10px;background:repeating-linear-gradient(45deg,#EDEBE0 0 8px,#E4E1D3 8px 16px);border:1px solid #E2DFD2;display:flex;align-items:center;justify-content:center;font-family:monospace;font-size:9px;color:#75766B;text-align:center">book page photo</div>
+                <button style="width:74px;height:74px;border-radius:10px;border:1.5px dashed #DAD7C8;background:none;color:#75766B;font-size:22px;font-family:inherit">+</button>
+              </div>
+              <div style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#75766B;font-weight:700;margin:14px 0 6px">History</div>
+              <div style="display:flex;align-items:center;gap:9px;padding:8px 0;border-bottom:1px dashed #E2DFD2">
+                <span style="flex:1;font-size:13.5px">May 24, 2026 · <b style="color:#C08A17">★ 9</b> · &ldquo;family favorite&rdquo;</span>
+                <button style="border:none;background:none;font-size:12px;color:#75766B;font-family:inherit;padding:6px">✎</button>
+                <button style="border:none;background:none;font-size:12px;color:#A9553F;font-family:inherit;padding:6px">🗑</button>
+              </div>
+              <div style="display:flex;align-items:center;gap:9px;padding:8px 0">
+                <span style="flex:1;font-size:13.5px">Feb 2, 2026 · <b style="color:#C08A17">★ 8</b></span>
+                <button style="border:none;background:none;font-size:12px;color:#75766B;font-family:inherit;padding:6px">✎</button>
+                <button style="border:none;background:none;font-size:12px;color:#A9553F;font-family:inherit;padding:6px">🗑</button>
+              </div>
+              <div style="display:flex;align-items:center;justify-content:space-between;margin-top:12px;padding-top:10px;border-top:1px solid #E2DFD2">
+                <span style="font-size:12.5px;color:#54554B;font-weight:600">Status: <b style="color:#2D6A4F">Active</b></span>
+                <button style="border:1.5px solid #E2DFD2;background:none;border-radius:999px;padding:7px 13px;font-size:12px;font-weight:600;color:#A9553F;font-family:inherit">Never make</button>
+              </div>
+            </div>
+            <div style="display:flex;gap:8px;margin-top:12px">
+              <button style="flex:1.4;min-height:50px;border:none;background:#2D6A4F;color:#fff;border-radius:14px;font-size:15px;font-weight:700;font-family:inherit">✓ Mark as made</button>
+              <button style="flex:1;min-height:50px;border:1.5px solid #2D6A4F;background:none;color:#2D6A4F;border-radius:14px;font-size:15px;font-weight:700;font-family:inherit">+ Add to plan</button>
+            </div>
+            <div style="text-align:center;font-size:11.5px;color:#75766B;margin-top:10px">Edits save instantly · <b>Undo</b></div>
+          </div>
+        </div>
+      </div>
+    </div><div class="dv-opt" id="2f">
+      <div class="dv-olabel"><a class="dv-oid" href="#2f">2f</a>Library — content packs in Books tab, uninstalled grayed, one-tap install</div>
+      <div class="dv-card" style="width:390px">
+        <div data-screen-label="2f Library" style="background:#F6F4EC;font-family:'Instrument Sans',sans-serif;color:#23241E;font-size:15px;line-height:1.45;display:flex;flex-direction:column;min-height:760px">
+          <div style="padding:20px 16px 0;flex:1">
+            <div style="display:flex;align-items:baseline;justify-content:space-between">
+              <div style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#75766B;font-weight:600">Page to Plate</div>
+              <div style="font-size:15px;color:#75766B">⚙</div>
+            </div>
+            <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:24px;letter-spacing:-.01em;margin:8px 0 2px">Books</div>
+            <div style="display:flex;gap:8px;margin:10px 0 14px">
+              <button style="border:1.5px solid #E2DFD2;background:#FFFEF9;border-radius:999px;padding:8px 15px;font-size:12.5px;font-weight:600;color:#54554B;font-family:inherit;min-height:40px">My shelf · 5</button>
+              <button style="border:1.5px solid #2D6A4F;background:#EDF3EE;border-radius:999px;padding:8px 15px;font-size:12.5px;font-weight:700;color:#2D6A4F;font-family:inherit;min-height:40px">Library · 24 packs</button>
+            </div>
+
+            <div style="background:#FFFEF9;border:1.5px solid #E2DFD2;border-radius:12px;padding:10px 12px;display:flex;gap:8px;align-items:center;margin-bottom:8px;color:#B9B6A8;font-size:14px">⌕ Search the catalog…</div>
+            <div style="display:flex;gap:7px;flex-wrap:wrap;margin-bottom:14px">
+              <button style="border:1.5px solid #2D6A4F;background:#EDF3EE;border-radius:999px;padding:7px 13px;font-size:12.5px;font-weight:700;color:#2D6A4F;font-family:inherit">Readable online</button>
+              <button style="border:1.5px solid #E2DFD2;background:#FFFEF9;border-radius:999px;padding:7px 13px;font-size:12.5px;font-weight:600;color:#75766B;font-family:inherit">Index only</button>
+              <button style="border:1.5px solid #E2DFD2;background:#FFFEF9;border-radius:999px;padding:7px 13px;font-size:12.5px;font-weight:600;color:#75766B;font-family:inherit">Era ▾</button>
+              <button style="border:1.5px solid #E2DFD2;background:#FFFEF9;border-radius:999px;padding:7px 13px;font-size:12.5px;font-weight:600;color:#75766B;font-family:inherit">Cuisine ▾</button>
+            </div>
+
+            <div style="background:#FFFEF9;border:1px solid #E2DFD2;border-radius:12px;padding:13px 14px;margin-bottom:9px;display:flex;gap:12px;align-items:center">
+              <span style="flex:none;width:16px;height:56px;border-radius:3px;background:#0072B2;box-shadow:inset -3px 0 0 rgba(0,0,0,.18)"></span>
+              <span style="flex:1;min-width:0">
+                <b style="font-weight:600">The Boston Cooking-School Cook Book</b>
+                <span style="display:block;font-size:12px;color:#75766B">Fannie Farmer · 1896 · American</span>
+                <span style="display:flex;gap:6px;margin-top:5px;flex-wrap:wrap">
+                  <span style="font-size:10.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:3px 7px;border-radius:5px;background:#EDF3EE;color:#2D6A4F">Installed</span>
+                  <span style="font-size:10.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:3px 7px;border-radius:5px;background:#EEF1F7;color:#4C5C88">Readable online</span>
+                  <span style="font-size:11px;color:#75766B;padding:3px 0">220 recipes</span>
+                </span>
+              </span>
+            </div>
+
+            <div style="background:#FFFEF9;border:1px solid #E2DFD2;border-radius:12px;padding:13px 14px;margin-bottom:9px;display:flex;gap:12px;align-items:center">
+              <span style="flex:none;width:16px;height:56px;border-radius:3px;background:repeating-linear-gradient(0deg,#CFCCBE 0 6px,#DAD7C8 6px 12px)"></span>
+              <span style="flex:1;min-width:0">
+                <b style="font-weight:600;color:#75766B">Mrs. Beeton&rsquo;s Book of Household Management</b>
+                <span style="display:block;font-size:12px;color:#A5A294">Isabella Beeton · 1861 · British</span>
+                <span style="display:flex;gap:6px;margin-top:5px;flex-wrap:wrap">
+                  <span style="font-size:10.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:3px 7px;border-radius:5px;background:#EEF1F7;color:#8A94AC">Readable online</span>
+                  <span style="font-size:11px;color:#A5A294;padding:3px 0">418 recipes · 12 unverified pages</span>
+                </span>
+              </span>
+              <button style="flex:none;border:1.5px solid #2D6A4F;background:none;color:#2D6A4F;border-radius:999px;padding:0 16px;min-height:44px;font-size:13px;font-weight:700;font-family:inherit">Install</button>
+            </div>
+
+            <div style="background:#FFFEF9;border:1px solid #E2DFD2;border-radius:12px;padding:13px 14px;margin-bottom:9px;display:flex;gap:12px;align-items:center">
+              <span style="flex:none;width:16px;height:56px;border-radius:3px;background:repeating-linear-gradient(0deg,#CFCCBE 0 6px,#DAD7C8 6px 12px)"></span>
+              <span style="flex:1;min-width:0">
+                <b style="font-weight:600;color:#75766B">The Original Picayune Creole Cook Book</b>
+                <span style="display:block;font-size:12px;color:#A5A294">1901 · Creole, American South</span>
+                <span style="display:flex;gap:6px;margin-top:5px;flex-wrap:wrap">
+                  <span style="font-size:10.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:3px 7px;border-radius:5px;background:#EEF1F7;color:#8A94AC">Readable online</span>
+                  <span style="font-size:11px;color:#A5A294;padding:3px 0">356 recipes</span>
+                </span>
+              </span>
+              <button style="flex:none;border:1.5px solid #2D6A4F;background:none;color:#2D6A4F;border-radius:999px;padding:0 16px;min-height:44px;font-size:13px;font-weight:700;font-family:inherit">Install</button>
+            </div>
+
+            <div style="background:#FFFEF9;border:1px solid #E2DFD2;border-radius:12px;padding:13px 14px;margin-bottom:9px;display:flex;gap:12px;align-items:center">
+              <span style="flex:none;width:16px;height:56px;border-radius:3px;background:repeating-linear-gradient(0deg,#CFCCBE 0 6px,#DAD7C8 6px 12px)"></span>
+              <span style="flex:1;min-width:0">
+                <b style="font-weight:600;color:#75766B">The Food Lab</b>
+                <span style="display:block;font-size:12px;color:#A5A294">J. Kenji López-Alt · 2015 · American</span>
+                <span style="display:flex;gap:6px;margin-top:5px;flex-wrap:wrap">
+                  <span style="font-size:10.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:3px 7px;border-radius:5px;background:#F2EFE5;color:#8A8672">Index only — own the book</span>
+                  <span style="font-size:11px;color:#A5A294;padding:3px 0">298 recipes</span>
+                </span>
+              </span>
+              <button style="flex:none;border:1.5px solid #2D6A4F;background:none;color:#2D6A4F;border-radius:999px;padding:0 16px;min-height:44px;font-size:13px;font-weight:700;font-family:inherit">Install</button>
+            </div>
+
+            <div style="font-size:11.5px;color:#75766B;margin-top:10px;text-align:center">Linked packs open at the exact page on archive.org — free to cook from.</div>
+          </div>
+          <div style="display:flex;border-top:1px solid #E2DFD2;background:#FFFEF9;margin-top:20px">
+            <div style="flex:1;text-align:center;padding:10px 0 14px;font-size:11px;font-weight:600;color:#75766B"><div style="font-size:18px">⚄</div>Generate</div>
+            <div style="flex:1;text-align:center;padding:10px 0 14px;font-size:11px;font-weight:600;color:#75766B"><div style="font-size:18px">▤</div>Plans</div>
+            <div style="flex:1;text-align:center;padding:10px 0 14px;font-size:11px;font-weight:600;color:#75766B"><div style="font-size:18px">⌕</div>Browse</div>
+            <div style="flex:1;text-align:center;padding:10px 0 14px;font-size:11px;font-weight:700;color:#2D6A4F"><div style="font-size:18px">▥</div>Books</div>
+          </div>
+        </div>
+      </div>
+    </div><!-- T2-SLOT --></div>
+  <p class="dv-next">Try next: &ldquo;show the recipe card&rsquo;s mark-as-made dialog&rdquo; · &ldquo;dark mode for <a class="dv-oid" href="#2c">2c</a>&rdquo; · &ldquo;make the wizard clickable&rdquo;</p>
+</section>
+<section class="dv-turn" id="t1">
+  <div class="dv-thd"><a class="dv-tid" href="#t1">1</a><span class="dv-tname">Three directions — Generate results screen, light + dark</span></div>
+  <p class="dv-note">Same screen, same data in all three so the comparison is fair: 3 books colored by tap order (Okabe–Ito colorblind-safe palette), results grouped by category, one rejected card, one partial-pool note. Each direction carries the book color differently — spine stripe + index tab (<a class="dv-oid" href="#1a">1a</a>), enamel badge + rim (<a class="dv-oid" href="#1b">1b</a>), whole-card tint wash (<a class="dv-oid" href="#1c">1c</a>).</p>
+  <div class="dv-opts">
+
+    <!-- ================= 1a INDEX CARD, EVOLVED ================= -->
+    <div class="dv-opt" id="1a">
+      <div class="dv-olabel"><a class="dv-oid" href="#1a">1a</a>Card Catalog — evolved index-card · Bricolage Grotesque + Instrument Sans · spine stripe + page tab</div>
+      <div class="dv-card" style="width:390px">
+        <div data-screen-label="1a Results light" style="background:#F6F4EC;font-family:'Instrument Sans',sans-serif;color:#23241E;padding:20px 16px 24px;font-size:15px;line-height:1.45">
+          <div style="display:flex;align-items:baseline;justify-content:space-between">
+            <div style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#75766B;font-weight:600">Page to Plate</div>
+            <div style="font-size:11px;color:#75766B;font-weight:600">Step 3 of 3</div>
+          </div>
+          <div style="display:flex;gap:6px;margin:10px 0 16px">
+            <span style="flex:1;height:4px;border-radius:2px;background:#2D6A4F"></span>
+            <span style="flex:1;height:4px;border-radius:2px;background:#2D6A4F"></span>
+            <span style="flex:1;height:4px;border-radius:2px;background:#2D6A4F"></span>
+          </div>
+          <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:24px;letter-spacing:-.01em">Your picks</div>
+          <div style="font-size:13px;color:#75766B;margin:2px 0 14px">Reject any you don&rsquo;t fancy, then regenerate to replace them.</div>
+          <div style="display:flex;flex-wrap:wrap;gap:12px;margin-bottom:14px">
+            <div style="display:flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:#54554B"><i style="width:11px;height:16px;border-radius:2px;background:#0072B2;box-shadow:inset -2px 0 0 rgba(0,0,0,.18)"></i>The Woks of Life</div>
+            <div style="display:flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:#54554B"><i style="width:11px;height:16px;border-radius:2px;background:#E69F00;box-shadow:inset -2px 0 0 rgba(0,0,0,.18)"></i>Moosewood</div>
+            <div style="display:flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:#54554B"><i style="width:11px;height:16px;border-radius:2px;background:#009E73;box-shadow:inset -2px 0 0 rgba(0,0,0,.18)"></i>Joy of Cooking</div>
+          </div>
+
+          <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#75766B;margin:4px 0 8px;display:flex;align-items:center;gap:8px">Mains <span style="flex:1;height:1px;background:#DAD7C8"></span> 2 of 2</div>
+
+          <div style="background:#FFFEF9;border:1px solid #E2DFD2;border-radius:12px;padding:14px 14px 12px 20px;margin-bottom:10px;position:relative;background-image:repeating-linear-gradient(transparent,transparent 26px,#E7E4d6 26px,#E7E4D6 27px);background-position:0 46px">
+            <span style="position:absolute;left:0;top:0;bottom:0;width:7px;background:#0072B2;border-radius:12px 0 0 12px"></span>
+            <span style="position:absolute;right:14px;top:-1px;background:#0072B2;color:#fff;font-size:11px;font-weight:700;padding:3px 9px 4px;border-radius:0 0 7px 7px">p. 142</span>
+            <div style="font-weight:600;font-size:16px;padding-right:56px">Stir-Fried Beef with Oyster Sauce</div>
+            <div style="font-size:12.5px;color:#75766B;margin-top:2px">The Woks of Life</div>
+            <div style="display:flex;gap:8px;margin-top:11px">
+              <button style="flex:1;min-height:40px;border:1.5px solid #2D6A4F;color:#2D6A4F;background:#EDF3EE;border-radius:999px;font-size:13px;font-weight:700;font-family:inherit">✓ Keep</button>
+              <button style="flex:1;min-height:40px;border:1.5px solid #DAD7C8;color:#54554B;background:none;border-radius:999px;font-size:13px;font-weight:600;font-family:inherit">Reject</button>
+              <button style="min-height:40px;padding:0 13px;border:1.5px solid #DAD7C8;color:#A9553F;background:none;border-radius:999px;font-size:13px;font-weight:600;font-family:inherit">Never</button>
+            </div>
+          </div>
+
+          <div style="background:#FFFEF9;border:1px solid #E2DFD2;border-radius:12px;padding:14px 14px 12px 20px;margin-bottom:10px;position:relative;opacity:.55">
+            <span style="position:absolute;left:0;top:0;bottom:0;width:7px;background:#E69F00;border-radius:12px 0 0 12px"></span>
+            <span style="position:absolute;right:14px;top:-1px;background:#E69F00;color:#fff;font-size:11px;font-weight:700;padding:3px 9px 4px;border-radius:0 0 7px 7px">p. 87</span>
+            <div style="font-weight:600;font-size:16px;text-decoration:line-through;padding-right:56px">Mushroom Moussaka</div>
+            <div style="font-size:12.5px;color:#75766B;margin-top:2px">Moosewood · rejected — regenerate to replace</div>
+            <div style="display:flex;gap:8px;margin-top:11px">
+              <button style="flex:1;min-height:40px;border:1.5px solid #DAD7C8;color:#54554B;background:none;border-radius:999px;font-size:13px;font-weight:600;font-family:inherit">↩ Undo reject</button>
+            </div>
+          </div>
+
+          <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#75766B;margin:16px 0 8px;display:flex;align-items:center;gap:8px">Desserts &amp; Sweets <span style="flex:1;height:1px;background:#DAD7C8"></span> 1 of 2</div>
+          <div style="background:#FBF4DE;border:1px solid #EBDCAA;border-radius:10px;padding:9px 12px;font-size:12.5px;margin-bottom:10px">Only 1 dessert matches <b>chocolate</b> across these books — showing what&rsquo;s available.</div>
+
+          <div style="background:#FFFEF9;border:1px solid #E2DFD2;border-radius:12px;padding:14px 14px 12px 20px;margin-bottom:10px;position:relative;background-image:repeating-linear-gradient(transparent,transparent 26px,#E7E4D6 26px,#E7E4D6 27px);background-position:0 46px">
+            <span style="position:absolute;left:0;top:0;bottom:0;width:7px;background:#009E73;border-radius:12px 0 0 12px"></span>
+            <span style="position:absolute;right:14px;top:-1px;background:#009E73;color:#fff;font-size:11px;font-weight:700;padding:3px 9px 4px;border-radius:0 0 7px 7px">p. 712</span>
+            <div style="font-weight:600;font-size:16px;padding-right:56px">Devil&rsquo;s Food Cake</div>
+            <div style="font-size:12.5px;color:#75766B;margin-top:2px">Joy of Cooking</div>
+            <div style="display:flex;gap:8px;margin-top:11px">
+              <button style="flex:1;min-height:40px;border:1.5px solid #2D6A4F;color:#2D6A4F;background:#EDF3EE;border-radius:999px;font-size:13px;font-weight:700;font-family:inherit">✓ Keep</button>
+              <button style="flex:1;min-height:40px;border:1.5px solid #DAD7C8;color:#54554B;background:none;border-radius:999px;font-size:13px;font-weight:600;font-family:inherit">Reject</button>
+              <button style="min-height:40px;padding:0 13px;border:1.5px solid #DAD7C8;color:#A9553F;background:none;border-radius:999px;font-size:13px;font-weight:600;font-family:inherit">Never</button>
+            </div>
+          </div>
+
+          <button style="width:100%;min-height:48px;border:1.5px solid #DAD7C8;background:none;border-radius:14px;font-size:15px;font-weight:600;color:#23241E;font-family:inherit;margin-top:6px">↻ Regenerate 1 rejected</button>
+          <button style="width:100%;min-height:52px;border:none;background:#2D6A4F;color:#fff;border-radius:14px;font-size:16px;font-weight:700;font-family:inherit;margin-top:8px">Plan these 2 →</button>
+        </div>
+      </div>
+      <div class="dv-olabel"><span style="font-weight:600">dark</span> — warm ink paper, spine colors unchanged</div>
+      <div class="dv-card" style="width:390px">
+        <div data-screen-label="1a Results dark" style="background:#211F1A;font-family:'Instrument Sans',sans-serif;color:#EDEAE0;padding:20px 16px 22px;font-size:15px;line-height:1.45">
+          <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:24px;letter-spacing:-.01em">Your picks</div>
+          <div style="font-size:13px;color:#9A9788;margin:2px 0 14px">Reject any you don&rsquo;t fancy, then regenerate.</div>
+          <div style="background:#2A2822;border:1px solid #3A382F;border-radius:12px;padding:14px 14px 12px 20px;margin-bottom:10px;position:relative;background-image:repeating-linear-gradient(transparent,transparent 26px,#34322A 26px,#34322A 27px);background-position:0 46px">
+            <span style="position:absolute;left:0;top:0;bottom:0;width:7px;background:#4FA3D9;border-radius:12px 0 0 12px"></span>
+            <span style="position:absolute;right:14px;top:-1px;background:#4FA3D9;color:#161511;font-size:11px;font-weight:700;padding:3px 9px 4px;border-radius:0 0 7px 7px">p. 142</span>
+            <div style="font-weight:600;font-size:16px;padding-right:56px">Stir-Fried Beef with Oyster Sauce</div>
+            <div style="font-size:12.5px;color:#9A9788;margin-top:2px">The Woks of Life</div>
+            <div style="display:flex;gap:8px;margin-top:11px">
+              <button style="flex:1;min-height:40px;border:1.5px solid #7FB89A;color:#7FB89A;background:rgba(127,184,154,.12);border-radius:999px;font-size:13px;font-weight:700;font-family:inherit">✓ Keep</button>
+              <button style="flex:1;min-height:40px;border:1.5px solid #3A382F;color:#B9B6A8;background:none;border-radius:999px;font-size:13px;font-weight:600;font-family:inherit">Reject</button>
+            </div>
+          </div>
+          <div style="background:#2A2822;border:1px solid #3A382F;border-radius:12px;padding:14px 14px 12px 20px;position:relative">
+            <span style="position:absolute;left:0;top:0;bottom:0;width:7px;background:#3FC79A;border-radius:12px 0 0 12px"></span>
+            <span style="position:absolute;right:14px;top:-1px;background:#3FC79A;color:#161511;font-size:11px;font-weight:700;padding:3px 9px 4px;border-radius:0 0 7px 7px">p. 712</span>
+            <div style="font-weight:600;font-size:16px;padding-right:56px">Devil&rsquo;s Food Cake</div>
+            <div style="font-size:12.5px;color:#9A9788;margin-top:2px">Joy of Cooking</div>
+          </div>
+          <button style="width:100%;min-height:52px;border:none;background:#7FB89A;color:#161511;border-radius:14px;font-size:16px;font-weight:700;font-family:inherit;margin-top:12px">Plan these 2 →</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= 1b ENAMELWARE ================= -->
+    <div class="dv-opt" id="1b">
+      <div class="dv-olabel"><a class="dv-oid" href="#1b">1b</a>Enamelware — kitchen utility · Archivo · enamel badge with rim, gingham accents</div>
+      <div class="dv-card" style="width:390px">
+        <div data-screen-label="1b Results light" style="background:#FAF7F0;font-family:'Archivo',sans-serif;color:#1F2A38;padding:0 0 24px;font-size:15px;line-height:1.45">
+          <div style="height:10px;background:repeating-linear-gradient(90deg,#1F3A5F 0 10px,rgba(31,58,95,.35) 10px 20px)"></div>
+          <div style="padding:16px 16px 0">
+            <div style="display:flex;align-items:baseline;justify-content:space-between">
+              <div style="font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#1F3A5F;font-weight:800">Page to Plate</div>
+              <div style="font-size:11px;color:#7A8494;font-weight:700">STEP 3 / 3</div>
+            </div>
+            <div style="font-weight:900;font-size:25px;letter-spacing:-.01em;margin-top:10px;text-transform:uppercase">Your picks</div>
+            <div style="font-size:13px;color:#5C6675;margin:3px 0 14px">Reject any you don&rsquo;t fancy, then regenerate.</div>
+            <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:16px">
+              <div style="display:flex;align-items:center;gap:7px;font-size:12px;font-weight:700;color:#3C4655"><i style="width:16px;height:16px;border-radius:50%;background:#0072B2;border:2.5px solid #fff;box-shadow:0 0 0 1.5px #1F3A5F"></i>The Woks of Life</div>
+              <div style="display:flex;align-items:center;gap:7px;font-size:12px;font-weight:700;color:#3C4655"><i style="width:16px;height:16px;border-radius:50%;background:#E69F00;border:2.5px solid #fff;box-shadow:0 0 0 1.5px #1F3A5F"></i>Moosewood</div>
+              <div style="display:flex;align-items:center;gap:7px;font-size:12px;font-weight:700;color:#3C4655"><i style="width:16px;height:16px;border-radius:50%;background:#009E73;border:2.5px solid #fff;box-shadow:0 0 0 1.5px #1F3A5F"></i>Joy of Cooking</div>
+            </div>
+
+            <div style="font-weight:800;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#1F3A5F;margin:0 0 8px">Mains — 2 of 2</div>
+
+            <div style="background:#fff;border:2px solid #1F3A5F;border-radius:16px;padding:13px 14px;margin-bottom:10px;display:flex;gap:12px;align-items:flex-start">
+              <div style="flex:none;width:44px;height:44px;border-radius:50%;background:#0072B2;border:3px solid #fff;box-shadow:0 0 0 2px #1F3A5F;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px">142</div>
+              <div style="flex:1;min-width:0">
+                <div style="font-weight:700;font-size:16px">Stir-Fried Beef with Oyster Sauce</div>
+                <div style="font-size:12.5px;color:#5C6675;margin-top:1px">The Woks of Life · p. 142</div>
+                <div style="display:flex;gap:8px;margin-top:10px">
+                  <button style="flex:1;min-height:44px;border:2px solid #1F3A5F;background:#1F3A5F;color:#fff;border-radius:12px;font-size:13px;font-weight:800;font-family:inherit;text-transform:uppercase;letter-spacing:.04em">Keep</button>
+                  <button style="flex:1;min-height:44px;border:2px solid #C7CEDA;background:#fff;color:#3C4655;border-radius:12px;font-size:13px;font-weight:700;font-family:inherit;text-transform:uppercase;letter-spacing:.04em">Reject</button>
+                  <button style="min-height:44px;padding:0 12px;border:2px solid #C7CEDA;background:#fff;color:#B23A28;border-radius:12px;font-size:13px;font-weight:700;font-family:inherit;text-transform:uppercase;letter-spacing:.04em">Never</button>
+                </div>
+              </div>
+            </div>
+
+            <div style="background:#fff;border:2px dashed #C7CEDA;border-radius:16px;padding:13px 14px;margin-bottom:10px;display:flex;gap:12px;align-items:center;opacity:.6">
+              <div style="flex:none;width:44px;height:44px;border-radius:50%;background:#E69F00;border:3px solid #fff;box-shadow:0 0 0 2px #C7CEDA;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px">87</div>
+              <div style="flex:1;min-width:0">
+                <div style="font-weight:700;font-size:16px;text-decoration:line-through">Mushroom Moussaka</div>
+                <div style="font-size:12.5px;color:#5C6675">Moosewood · rejected</div>
+              </div>
+              <button style="min-height:44px;padding:0 14px;border:2px solid #C7CEDA;background:#fff;color:#3C4655;border-radius:12px;font-size:13px;font-weight:700;font-family:inherit">↩ Undo</button>
+            </div>
+
+            <div style="font-weight:800;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#1F3A5F;margin:16px 0 8px">Desserts &amp; Sweets — 1 of 2</div>
+            <div style="background:#FFF3E4;border:2px solid #E8C89A;border-radius:12px;padding:9px 12px;font-size:12.5px;font-weight:500;margin-bottom:10px">Only 1 dessert matches <b>chocolate</b> — showing what&rsquo;s available.</div>
+
+            <div style="background:#fff;border:2px solid #1F3A5F;border-radius:16px;padding:13px 14px;margin-bottom:10px;display:flex;gap:12px;align-items:flex-start">
+              <div style="flex:none;width:44px;height:44px;border-radius:50%;background:#009E73;border:3px solid #fff;box-shadow:0 0 0 2px #1F3A5F;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px">712</div>
+              <div style="flex:1;min-width:0">
+                <div style="font-weight:700;font-size:16px">Devil&rsquo;s Food Cake</div>
+                <div style="font-size:12.5px;color:#5C6675;margin-top:1px">Joy of Cooking · p. 712</div>
+                <div style="display:flex;gap:8px;margin-top:10px">
+                  <button style="flex:1;min-height:44px;border:2px solid #1F3A5F;background:#1F3A5F;color:#fff;border-radius:12px;font-size:13px;font-weight:800;font-family:inherit;text-transform:uppercase;letter-spacing:.04em">Keep</button>
+                  <button style="flex:1;min-height:44px;border:2px solid #C7CEDA;background:#fff;color:#3C4655;border-radius:12px;font-size:13px;font-weight:700;font-family:inherit;text-transform:uppercase;letter-spacing:.04em">Reject</button>
+                  <button style="min-height:44px;padding:0 12px;border:2px solid #C7CEDA;background:#fff;color:#B23A28;border-radius:12px;font-size:13px;font-weight:700;font-family:inherit;text-transform:uppercase;letter-spacing:.04em">Never</button>
+                </div>
+              </div>
+            </div>
+
+            <button style="width:100%;min-height:48px;border:2px solid #1F3A5F;background:#fff;border-radius:14px;font-size:14px;font-weight:800;color:#1F3A5F;font-family:inherit;margin-top:6px;text-transform:uppercase;letter-spacing:.05em">↻ Regenerate 1 rejected</button>
+            <button style="width:100%;min-height:54px;border:none;background:#B23A28;color:#fff;border-radius:14px;font-size:16px;font-weight:800;font-family:inherit;margin-top:8px;text-transform:uppercase;letter-spacing:.05em;box-shadow:inset 0 -3px 0 rgba(0,0,0,.2)">Plan these 2 →</button>
+          </div>
+        </div>
+      </div>
+      <div class="dv-olabel"><span style="font-weight:600">dark</span> — graniteware: near-black enamel, cream type</div>
+      <div class="dv-card" style="width:390px">
+        <div data-screen-label="1b Results dark" style="background:#181C24;font-family:'Archivo',sans-serif;color:#F2EFE6;padding:0 0 22px;font-size:15px;line-height:1.45">
+          <div style="height:10px;background:repeating-linear-gradient(90deg,#E8B84B 0 10px,rgba(232,184,75,.3) 10px 20px)"></div>
+          <div style="padding:16px 16px 0">
+            <div style="font-weight:900;font-size:25px;text-transform:uppercase;letter-spacing:-.01em">Your picks</div>
+            <div style="font-size:13px;color:#9AA2B0;margin:3px 0 14px">Reject any you don&rsquo;t fancy, then regenerate.</div>
+            <div style="background:#212633;border:2px solid #394152;border-radius:16px;padding:13px 14px;margin-bottom:10px;display:flex;gap:12px;align-items:flex-start">
+              <div style="flex:none;width:44px;height:44px;border-radius:50%;background:#4FA3D9;border:3px solid #181C24;box-shadow:0 0 0 2px #4FA3D9;color:#10131A;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px">142</div>
+              <div style="flex:1;min-width:0">
+                <div style="font-weight:700;font-size:16px">Stir-Fried Beef with Oyster Sauce</div>
+                <div style="font-size:12.5px;color:#9AA2B0;margin-top:1px">The Woks of Life · p. 142</div>
+                <div style="display:flex;gap:8px;margin-top:10px">
+                  <button style="flex:1;min-height:44px;border:2px solid #F2EFE6;background:#F2EFE6;color:#181C24;border-radius:12px;font-size:13px;font-weight:800;font-family:inherit;text-transform:uppercase">Keep</button>
+                  <button style="flex:1;min-height:44px;border:2px solid #394152;background:none;color:#C6CCD8;border-radius:12px;font-size:13px;font-weight:700;font-family:inherit;text-transform:uppercase">Reject</button>
+                </div>
+              </div>
+            </div>
+            <div style="background:#212633;border:2px solid #394152;border-radius:16px;padding:13px 14px;display:flex;gap:12px;align-items:flex-start">
+              <div style="flex:none;width:44px;height:44px;border-radius:50%;background:#3FC79A;border:3px solid #181C24;box-shadow:0 0 0 2px #3FC79A;color:#10131A;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px">712</div>
+              <div style="flex:1;min-width:0">
+                <div style="font-weight:700;font-size:16px">Devil&rsquo;s Food Cake</div>
+                <div style="font-size:12.5px;color:#9AA2B0;margin-top:1px">Joy of Cooking · p. 712</div>
+              </div>
+            </div>
+            <button style="width:100%;min-height:54px;border:none;background:#E8B84B;color:#181C24;border-radius:14px;font-size:16px;font-weight:800;font-family:inherit;margin-top:12px;text-transform:uppercase;letter-spacing:.05em">Plan these 2 →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= 1c PANTRY LEDGER ================= -->
+    <div class="dv-opt" id="1c">
+      <div class="dv-olabel"><a class="dv-oid" href="#1c">1c</a>Pantry Ledger — editorial + catalog mono · Space Grotesk + IBM Plex Mono · whole-card tint wash</div>
+      <div class="dv-card" style="width:390px">
+        <div data-screen-label="1c Results light" style="background:#F2F0EA;font-family:'Space Grotesk',sans-serif;color:#191A17;padding:20px 16px 24px;font-size:15px;line-height:1.45">
+          <div style="display:flex;align-items:baseline;justify-content:space-between;border-bottom:2px solid #191A17;padding-bottom:10px">
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:600">Page→Plate</div>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#6E6F68">3/3 · RESULTS</div>
+          </div>
+          <div style="font-weight:700;font-size:28px;letter-spacing:-.02em;margin:14px 0 2px">Your picks</div>
+          <div style="font-size:13px;color:#6E6F68;margin-bottom:14px">Reject any you don&rsquo;t fancy, then regenerate.</div>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px;font-family:'IBM Plex Mono',monospace">
+            <div style="font-size:11px;font-weight:600;background:#0072B2;color:#fff;padding:4px 9px;border-radius:4px">① WOKS OF LIFE</div>
+            <div style="font-size:11px;font-weight:600;background:#E69F00;color:#191A17;padding:4px 9px;border-radius:4px">② MOOSEWOOD</div>
+            <div style="font-size:11px;font-weight:600;background:#009E73;color:#fff;padding:4px 9px;border-radius:4px">③ JOY OF COOKING</div>
+          </div>
+
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#6E6F68;margin:0 0 8px">— Mains · 2 of 2</div>
+
+          <div style="background:linear-gradient(0deg,rgba(0,114,178,.10),rgba(0,114,178,.10)),#FCFBF7;border:1px solid rgba(0,114,178,.45);border-radius:10px;padding:13px 14px;margin-bottom:10px">
+            <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px">
+              <div style="font-weight:700;font-size:16.5px">Stir-Fried Beef with Oyster Sauce</div>
+              <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:600;color:#0072B2;white-space:nowrap">P.142</div>
+            </div>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#6E6F68;margin-top:2px">① THE WOKS OF LIFE</div>
+            <div style="display:flex;gap:8px;margin-top:11px">
+              <button style="flex:1;min-height:42px;border:none;background:#191A17;color:#F2F0EA;border-radius:8px;font-size:13px;font-weight:700;font-family:'Space Grotesk',sans-serif">Keep</button>
+              <button style="flex:1;min-height:42px;border:1.5px solid #191A17;background:none;color:#191A17;border-radius:8px;font-size:13px;font-weight:600;font-family:'Space Grotesk',sans-serif">Reject</button>
+              <button style="min-height:42px;padding:0 13px;border:1.5px solid rgba(25,26,23,.25);background:none;color:#8A4B32;border-radius:8px;font-size:13px;font-weight:600;font-family:'Space Grotesk',sans-serif">Never</button>
+            </div>
+          </div>
+
+          <div style="background:#FCFBF7;border:1px dashed rgba(25,26,23,.3);border-radius:10px;padding:13px 14px;margin-bottom:10px;opacity:.55">
+            <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px">
+              <div style="font-weight:700;font-size:16.5px;text-decoration:line-through">Mushroom Moussaka</div>
+              <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#6E6F68">P.87</div>
+            </div>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#6E6F68;margin-top:2px">② MOOSEWOOD · REJECTED</div>
+          </div>
+
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#6E6F68;margin:16px 0 8px">— Desserts &amp; Sweets · 1 of 2</div>
+          <div style="font-family:'IBM Plex Mono',monospace;background:#FFF6DE;border:1px solid #E5D391;border-radius:8px;padding:9px 12px;font-size:11.5px;margin-bottom:10px">! ONLY 1 MATCHES &ldquo;CHOCOLATE&rdquo; — SHOWING AVAILABLE</div>
+
+          <div style="background:linear-gradient(0deg,rgba(0,158,115,.10),rgba(0,158,115,.10)),#FCFBF7;border:1px solid rgba(0,158,115,.45);border-radius:10px;padding:13px 14px;margin-bottom:10px">
+            <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px">
+              <div style="font-weight:700;font-size:16.5px">Devil&rsquo;s Food Cake</div>
+              <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:600;color:#009E73;white-space:nowrap">P.712</div>
+            </div>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#6E6F68;margin-top:2px">③ JOY OF COOKING</div>
+            <div style="display:flex;gap:8px;margin-top:11px">
+              <button style="flex:1;min-height:42px;border:none;background:#191A17;color:#F2F0EA;border-radius:8px;font-size:13px;font-weight:700;font-family:'Space Grotesk',sans-serif">Keep</button>
+              <button style="flex:1;min-height:42px;border:1.5px solid #191A17;background:none;color:#191A17;border-radius:8px;font-size:13px;font-weight:600;font-family:'Space Grotesk',sans-serif">Reject</button>
+              <button style="min-height:42px;padding:0 13px;border:1.5px solid rgba(25,26,23,.25);background:none;color:#8A4B32;border-radius:8px;font-size:13px;font-weight:600;font-family:'Space Grotesk',sans-serif">Never</button>
+            </div>
+          </div>
+
+          <button style="width:100%;min-height:48px;border:1.5px solid #191A17;background:none;border-radius:10px;font-size:14px;font-weight:700;color:#191A17;font-family:'Space Grotesk',sans-serif;margin-top:6px">↻ Regenerate 1 rejected</button>
+          <button style="width:100%;min-height:54px;border:none;background:#191A17;color:#F2F0EA;border-radius:10px;font-size:16px;font-weight:700;font-family:'Space Grotesk',sans-serif;margin-top:8px">Plan these 2 →</button>
+        </div>
+      </div>
+      <div class="dv-olabel"><span style="font-weight:600">dark</span> — ledger black, tints brighten</div>
+      <div class="dv-card" style="width:390px">
+        <div data-screen-label="1c Results dark" style="background:#141513;font-family:'Space Grotesk',sans-serif;color:#EDECE4;padding:20px 16px 22px;font-size:15px;line-height:1.45">
+          <div style="font-weight:700;font-size:28px;letter-spacing:-.02em">Your picks</div>
+          <div style="font-size:13px;color:#8B8C83;margin:2px 0 14px">Reject any you don&rsquo;t fancy, then regenerate.</div>
+          <div style="background:linear-gradient(0deg,rgba(79,163,217,.16),rgba(79,163,217,.16)),#1C1E1B;border:1px solid rgba(79,163,217,.5);border-radius:10px;padding:13px 14px;margin-bottom:10px">
+            <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px">
+              <div style="font-weight:700;font-size:16.5px">Stir-Fried Beef with Oyster Sauce</div>
+              <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:600;color:#4FA3D9;white-space:nowrap">P.142</div>
+            </div>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8B8C83;margin-top:2px">① THE WOKS OF LIFE</div>
+          </div>
+          <div style="background:linear-gradient(0deg,rgba(63,199,154,.16),rgba(63,199,154,.16)),#1C1E1B;border:1px solid rgba(63,199,154,.5);border-radius:10px;padding:13px 14px">
+            <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px">
+              <div style="font-weight:700;font-size:16.5px">Devil&rsquo;s Food Cake</div>
+              <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:600;color:#3FC79A;white-space:nowrap">P.712</div>
+            </div>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8B8C83;margin-top:2px">③ JOY OF COOKING</div>
+          </div>
+          <button style="width:100%;min-height:54px;border:none;background:#EDECE4;color:#141513;border-radius:10px;font-size:16px;font-weight:700;font-family:'Space Grotesk',sans-serif;margin-top:12px">Plan these 2 →</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <p class="dv-next">Try next: &ldquo;go deep on <a class="dv-oid" href="#1b">1b</a>, all 5 screens&rdquo; · &ldquo;mix <a class="dv-oid" href="#1a">1a</a>&rsquo;s cards with <a class="dv-oid" href="#1b">1b</a>&rsquo;s badges&rdquo; · &ldquo;show the book-selection step in the winner&rdquo;</p>
+</section>
+
+</x-dc>
+</body>
+</html>

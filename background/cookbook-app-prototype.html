@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Shelf to Stove — Prototype</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F6F5F0; --card:#FFFEFA; --ink:#22231E; --ink-soft:#6B6C63;
+    --line:#E3E1D7; --accent:#2D6A4F; --accent-ink:#FFFFFF; --danger:#B4442E;
+    --rule:#D9D6C9;
+    --radius:14px;
+  }
+  *{box-sizing:border-box; -webkit-tap-highlight-color:transparent;}
+  html,body{margin:0; padding:0; background:var(--paper); color:var(--ink);
+    font-family:'Instrument Sans',system-ui,sans-serif; font-size:15px; line-height:1.45;}
+  body{max-width:480px; margin:0 auto; min-height:100vh; display:flex; flex-direction:column;}
+  h1,h2,h3{font-family:'Bricolage Grotesque',sans-serif; margin:0;}
+  button{font-family:inherit; font-size:inherit; cursor:pointer;}
+
+  /* header */
+  header{padding:18px 18px 10px;}
+  header .kicker{font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-soft); font-weight:600;}
+  header h1{font-size:24px; font-weight:800; letter-spacing:-.01em;}
+
+  main{flex:1; padding:4px 16px 96px; overflow-y:auto;}
+
+  /* bottom nav */
+  nav{position:fixed; bottom:0; left:50%; transform:translateX(-50%); width:100%; max-width:480px;
+    background:var(--card); border-top:1px solid var(--line); display:flex;
+    padding-bottom:env(safe-area-inset-bottom);}
+  nav button{flex:1; background:none; border:none; padding:10px 0 12px; color:var(--ink-soft);
+    font-size:11px; font-weight:600; display:flex; flex-direction:column; align-items:center; gap:3px;}
+  nav button .ic{font-size:19px; line-height:1;}
+  nav button.on{color:var(--accent);}
+
+  .screen{display:none;} .screen.on{display:block;}
+
+  /* recipe card = index card with spine stripe */
+  .rcard{background:var(--card); border:1px solid var(--line); border-radius:var(--radius);
+    padding:12px 14px 12px 18px; margin-bottom:10px; position:relative; overflow:hidden;
+    background-image:repeating-linear-gradient(transparent,transparent 25px,var(--rule) 25px,var(--rule) 26px);
+    background-position:0 44px;}
+  .rcard::before{content:""; position:absolute; left:0; top:0; bottom:0; width:6px; background:var(--spine,#bbb);}
+  .rcard .rname{font-weight:600; font-size:15.5px;}
+  .rcard .rmeta{font-size:12.5px; color:var(--ink-soft); margin-top:1px;}
+  .rcard .ractions{display:flex; gap:8px; margin-top:9px;}
+  .rcard.rejected{opacity:.45;}
+  .rcard.rejected .rname{text-decoration:line-through;}
+
+  .chipbtn{border:1.5px solid var(--line); background:var(--card); border-radius:999px;
+    padding:5px 12px; font-size:12.5px; font-weight:600; color:var(--ink-soft);}
+  .chipbtn.on{border-color:var(--accent); color:var(--accent); background:#EAF3EE;}
+  .chipbtn.warn.on{border-color:var(--danger); color:var(--danger); background:#F8ECE8;}
+
+  /* keyword pills: tap body to toggle include/not, tap × to remove */
+  .pill{display:inline-flex; align-items:center; gap:6px; border-radius:999px; padding:5px 6px 5px 12px;
+    font-size:12.5px; font-weight:700; border:1.5px solid var(--accent); color:var(--accent); background:#EAF3EE;}
+  .pill.neg{border-color:var(--danger); color:var(--danger); background:#F8ECE8;}
+  .pill .px{border:none; background:rgba(0,0,0,.08); color:inherit; border-radius:50%;
+    width:18px; height:18px; font-size:11px; line-height:1; display:flex; align-items:center; justify-content:center;}
+  .ddpanel{background:var(--card); border:1.5px dashed var(--line); border-radius:var(--radius); padding:9px;}
+
+  .primary{display:block; width:100%; background:var(--accent); color:var(--accent-ink);
+    border:none; border-radius:var(--radius); padding:14px; font-weight:700; font-size:16px; margin-top:14px;}
+  .primary:disabled{background:#B9C6BF;}
+  .ghost{background:none; border:1.5px solid var(--line); border-radius:var(--radius);
+    padding:10px 14px; font-weight:600; color:var(--ink);}
+
+  /* wizard */
+  .steps{display:flex; gap:6px; margin:6px 0 14px;}
+  .steps span{flex:1; height:4px; border-radius:2px; background:var(--line);}
+  .steps span.done{background:var(--accent);}
+  .stitle{font-size:19px; font-weight:800; margin-bottom:2px;}
+  .ssub{font-size:13px; color:var(--ink-soft); margin-bottom:12px;}
+
+  /* book select cards */
+  .bookcard{display:flex; align-items:center; gap:12px; background:var(--card);
+    border:1.5px solid var(--line); border-radius:var(--radius); padding:12px 14px; margin-bottom:9px; width:100%; text-align:left;}
+  .bookcard .spine{width:14px; height:44px; border-radius:3px; background:var(--line); flex:none;
+    box-shadow:inset -3px 0 0 rgba(0,0,0,.12);}
+  .bookcard .bt{font-weight:600;} .bookcard .bc{font-size:12.5px; color:var(--ink-soft);}
+  .bookcard.sel{border-color:var(--selcol); box-shadow:0 0 0 1px var(--selcol);}
+  .bookcard .ord{margin-left:auto; font-size:12px; font-weight:700; color:#fff; background:var(--selcol,#999);
+    width:22px; height:22px; border-radius:50%; display:none; align-items:center; justify-content:center;}
+  .bookcard.sel .ord{display:flex;}
+
+  /* category rows */
+  .catrow{display:flex; align-items:center; gap:10px; background:var(--card); border:1px solid var(--line);
+    border-radius:var(--radius); padding:11px 12px; margin-bottom:8px;}
+  .catrow .cn{font-weight:600; flex:1;}
+  .catrow .avail{font-size:11.5px; color:var(--ink-soft);}
+  .stepper{display:flex; align-items:center; gap:0; border:1.5px solid var(--line); border-radius:999px; overflow:hidden;}
+  .stepper button{border:none; background:var(--card); width:32px; height:30px; font-size:17px; color:var(--accent); font-weight:700;}
+  .stepper .val{width:26px; text-align:center; font-weight:700; font-size:14px;}
+
+  .kwrap{display:flex; flex-wrap:wrap; gap:7px; margin-top:8px;}
+  .kwinput{width:100%; border:1.5px solid var(--line); border-radius:var(--radius); padding:10px 12px;
+    font-family:inherit; font-size:14px; background:var(--card); margin-top:10px;}
+  .hint{font-size:11.5px; color:var(--ink-soft); margin-top:6px;}
+
+  .cathead{font-family:'Bricolage Grotesque'; font-weight:800; font-size:13px; letter-spacing:.1em;
+    text-transform:uppercase; color:var(--ink-soft); margin:16px 0 8px;}
+  .legend{display:flex; flex-wrap:wrap; gap:10px; margin-bottom:4px;}
+  .legend div{display:flex; align-items:center; gap:5px; font-size:12px; color:var(--ink-soft); font-weight:600;}
+  .legend i{width:10px; height:10px; border-radius:2px; display:inline-block;}
+
+  .note{background:#FFF6DE; border:1px solid #EBDCAA; border-radius:var(--radius); padding:9px 12px; font-size:12.5px; margin-bottom:10px;}
+
+  /* plans */
+  .plancard{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:13px 14px; margin-bottom:11px;}
+  .plancard .pd{font-size:12px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-soft);}
+  .planitem{display:flex; align-items:center; gap:9px; padding:8px 0; border-bottom:1px dashed var(--line);}
+  .planitem:last-child{border-bottom:none;}
+  .planitem i{width:5px; height:26px; border-radius:2px; flex:none;}
+  .planitem .pn{flex:1; font-size:14px;}
+  .planitem .pn small{display:block; color:var(--ink-soft); font-size:11.5px;}
+  .madebtn{border:1.5px solid var(--accent); color:var(--accent); background:none; border-radius:999px;
+    padding:4px 11px; font-size:12px; font-weight:700;}
+  .madebtn.done{background:var(--accent); color:#fff;}
+
+  /* calendar */
+  .cal{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:12px; margin-bottom:12px;}
+  .cal .cm{font-weight:800; font-family:'Bricolage Grotesque'; margin-bottom:8px;}
+  .calgrid{display:grid; grid-template-columns:repeat(7,1fr); gap:4px; font-size:11.5px; text-align:center;}
+  .calgrid .dh{color:var(--ink-soft); font-weight:700; font-size:10px;}
+  .calgrid .d{padding:5px 0; border-radius:8px; position:relative;}
+  .calgrid .d .dots{display:flex; gap:2px; justify-content:center; margin-top:1px;}
+  .calgrid .d .dots b{width:4px;height:4px;border-radius:50%;}
+  .dot-plan{background:#8A8DDF;} .dot-made{background:var(--accent);}
+
+  /* browse */
+  .search{width:100%; border:1.5px solid var(--line); border-radius:var(--radius); padding:11px 13px;
+    font-family:inherit; font-size:14.5px; background:var(--card); margin-bottom:10px;}
+  .statustag{font-size:10.5px; font-weight:700; letter-spacing:.06em; text-transform:uppercase;
+    padding:2px 7px; border-radius:5px; background:#EEEDE5; color:var(--ink-soft);}
+  .statustag.made{background:#EAF3EE; color:var(--accent);}
+  .statustag.excl{background:#F8ECE8; color:var(--danger);}
+  .stars{color:#C08A17; font-size:12px; font-weight:700;}
+
+  /* books tab */
+  .bkrow{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:13px 14px; margin-bottom:10px;
+    display:flex; gap:12px; align-items:center;}
+  .bkrow .spine{width:16px; height:52px; border-radius:3px; box-shadow:inset -3px 0 0 rgba(0,0,0,.15);}
+  .bar{height:6px; background:var(--line); border-radius:3px; margin-top:7px; overflow:hidden;}
+  .bar i{display:block; height:100%; background:var(--accent);}
+  .addbtn{width:100%; border:1.5px dashed var(--line); background:none; border-radius:var(--radius);
+    padding:13px; color:var(--ink-soft); font-weight:600;}
+
+  .toast{position:fixed; bottom:76px; left:50%; transform:translateX(-50%); background:var(--ink); color:#fff;
+    padding:10px 16px; border-radius:999px; font-size:13px; font-weight:600; opacity:0; transition:opacity .25s; pointer-events:none; z-index:9; white-space:nowrap;}
+  .toast.show{opacity:1;}
+  .protobadge{font-size:10px; font-weight:700; letter-spacing:.1em; color:var(--ink-soft); border:1px solid var(--line);
+    border-radius:5px; padding:2px 6px; vertical-align:middle; margin-left:6px;}
+</style>
+</head>
+<body>
+
+<header style="display:flex;align-items:flex-end;justify-content:space-between">
+  <div>
+    <div class="kicker">Shelf to Stove</div>
+    <h1 id="hTitle">Generate <span class="protobadge">PROTOTYPE</span></h1>
+  </div>
+  <button class="chipbtn" style="margin-bottom:2px" onclick="openSettings()">⚙︎</button>
+</header>
+
+<main>
+  <!-- ============ GENERATE ============ -->
+  <section id="scr-gen" class="screen on">
+    <div class="steps"><span id="st1" class="done"></span><span id="st2"></span><span id="st3"></span></div>
+
+    <!-- step 1: books -->
+    <div id="gstep1">
+      <div class="stitle">Choose your cookbooks</div>
+      <div class="ssub">Each book gets a color in the order you pick it.</div>
+      <div id="booklist"></div>
+      <button class="primary" id="toStep2" disabled>Next: categories</button>
+    </div>
+
+    <!-- step 2: categories + filters -->
+    <div id="gstep2" style="display:none">
+      <div class="stitle">What are we making?</div>
+      <div class="ssub">Set a count per category — tap ⚲ filter to add keywords that apply only to that category.</div>
+      <div id="catlist"></div>
+      <div class="hint">Filters match recipe names and tags within their category. Tap a chip twice for “not this.”</div>
+      <button class="primary" id="doGen">Generate <span id="genCount"></span></button>
+      <button class="ghost" style="width:100%;margin-top:8px" onclick="gotoStep(1)">Back to books</button>
+    </div>
+
+    <!-- step 3: results -->
+    <div id="gstep3" style="display:none">
+      <div class="stitle">Tonight’s picks</div>
+      <div class="ssub">Reject any you don’t fancy, then regenerate to replace them.</div>
+      <div class="legend" id="legend"></div>
+      <div id="results"></div>
+      <button class="ghost" id="regen" style="width:100%">↻ Regenerate rejected</button>
+      <button class="primary" id="planBtn">Plan these</button>
+      <button class="ghost" style="width:100%;margin-top:8px" onclick="gotoStep(2)">Back to filters</button>
+    </div>
+  </section>
+
+  <!-- ============ PLANS ============ -->
+  <section id="scr-plans" class="screen">
+    <div class="cal">
+      <div class="cm">July 2026</div>
+      <div class="calgrid" id="calgrid"></div>
+      <div class="legend" style="margin-top:9px">
+        <div><i class="dot-plan" style="width:8px;height:8px;border-radius:50%"></i> planned</div>
+        <div><i class="dot-made" style="width:8px;height:8px;border-radius:50%"></i> made</div>
+      </div>
+    </div>
+    <div class="cathead">Plans</div>
+    <div id="planlist"></div>
+  </section>
+
+  <!-- ============ BROWSE ============ -->
+  <section id="scr-browse" class="screen">
+    <input class="search" id="bsearch" placeholder="Type a keyword, press return to add it…">
+    <div class="kwrap" id="bpills" style="margin-bottom:8px"></div>
+    <div class="kwrap" style="margin-bottom:8px">
+      <button class="chipbtn" id="ddBooksBtn" onclick="togDD('books')">Books: all ▾</button>
+      <button class="chipbtn" id="ddCatsBtn" onclick="togDD('cats')">Categories: all ▾</button>
+    </div>
+    <div class="kwrap ddpanel" id="bbooks" style="display:none;margin-bottom:8px"></div>
+    <div class="kwrap ddpanel" id="bcats" style="display:none;margin-bottom:8px"></div>
+    <div class="kwrap" style="margin-bottom:12px">
+      <button class="chipbtn on" data-bf="all">All</button>
+      <button class="chipbtn" data-bf="made">Made</button>
+      <button class="chipbtn" data-bf="fav">★ 8+</button>
+      <button class="chipbtn" data-bf="excl">Never make</button>
+    </div>
+    <div id="browselist"></div>
+  </section>
+
+  <!-- ============ BOOKS ============ -->
+  <section id="scr-books" class="screen">
+    <div id="bookmgr"></div>
+    <button class="addbtn">＋ Add a cookbook — import CSV or add recipes by hand</button>
+    <div class="cathead" style="margin-top:18px">Library — content packs</div>
+    <div class="kwrap" style="margin-bottom:10px">
+      <button class="chipbtn on" data-pf="all">All</button>
+      <button class="chipbtn" data-pf="linked">Readable online</button>
+      <button class="chipbtn" data-pf="pre1931">Pre-1931</button>
+      <button class="chipbtn" data-pf="modern">Modern</button>
+    </div>
+    <div id="packlist"></div>
+    <div class="hint" style="margin-top:10px">Tip: photograph a table of contents, ask an AI chatbot to turn it into a CSV of “recipe name, page,” then import it here.</div>
+  </section>
+
+  <!-- ============ SETTINGS ============ -->
+  <section id="scr-settings" class="screen">
+    <div class="cathead" style="margin-top:0">Category filter chips</div>
+    <div class="hint" style="margin-bottom:10px">These are the quick filters shown for each category when generating. Tap ✕ to remove, type to add. We ship defaults; make them yours.</div>
+    <div id="chipmgr"></div>
+    <div class="cathead" style="margin-top:18px">Data</div>
+    <div class="bkrow" style="justify-content:space-between"><b>Backup</b><button class="madebtn" onclick="toast('Would export data + photos via share sheet')">Export</button></div>
+    <div class="bkrow" style="justify-content:space-between"><b>Restore</b><button class="madebtn" onclick="toast('Would import a backup file (replaces data)')">Import</button></div>
+    <div class="cathead" style="margin-top:18px">About</div>
+    <div class="bkrow" style="justify-content:space-between"><span><b>Shelf to Stove</b><br><span class="hint" style="margin:0">v0.1 prototype</span></span></div>
+    <div class="bkrow" style="justify-content:space-between"><b>Source on GitHub</b><button class="madebtn" onclick="toast('Would open the GitHub repo')">Open</button></div>
+    <div class="bkrow" style="justify-content:space-between"><b>Support this app</b><button class="madebtn" onclick="toast('Would open donate link')">Donate</button></div>
+    <div class="bkrow" style="justify-content:space-between"><span><b>Credits</b><br><span class="hint" style="margin:0">Linked historical books courtesy of the Internet Archive</span></span></div>
+  </section>
+</main>
+
+<nav>
+  <button class="on" data-t="gen"><span class="ic">🎲</span>Generate</button>
+  <button data-t="plans"><span class="ic">🗓</span>Plans</button>
+  <button data-t="browse"><span class="ic">🔍</span>Browse</button>
+  <button data-t="books"><span class="ic">📚</span>Books</button>
+</nav>
+
+<div class="toast" id="toast"></div>
+
+<script>
+/* ---------- sample data ---------- */
+const PALETTE = ["#C1552F","#2B6CB0","#2D6A4F","#7B4FA6","#B8860B","#B03A5B","#317873","#5A5A5A"];
+const BOOKS = [
+  {id:"sfah", title:"Salt Fat Acid Heat", n:38},
+  {id:"joy",  title:"Joy of Cooking", n:112},
+  {id:"otto", title:"Ottolenghi Simple", n:64},
+];
+const RECIPES = [
+ // book, name, page, cat, made?, rating
+ ["sfah","Buttermilk Roast Chicken",142,"Main Dishes",1,9],
+ ["sfah","Beef & Barley Stew",167,"Soups & Stews",0,0],
+ ["sfah","Pasta alle Vongole",151,"Main Dishes",0,0],
+ ["sfah","Caesar Salad",118,"Salads",1,7],
+ ["sfah","Ligurian Focaccia",231,"Breads",1,10],
+ ["sfah","Chocolate Midnight Cake",289,"Desserts",0,0],
+ ["joy","Beef Stroganoff",412,"Main Dishes",0,0],
+ ["joy","Chicken Pot Pie",398,"Main Dishes",1,8],
+ ["joy","Glazed Carrots",233,"Side Dishes",0,0],
+ ["joy","Scalloped Potatoes",241,"Side Dishes",1,6],
+ ["joy","French Onion Soup",96,"Soups & Stews",0,0],
+ ["joy","Banana Bread",601,"Breads",1,8],
+ ["joy","Chocolate Chip Cookies",712,"Desserts",1,9],
+ ["joy","Lemon Meringue Pie",688,"Desserts",0,0],
+ ["otto","Harissa Beef Meatballs",87,"Main Dishes",0,0],
+ ["otto","Za'atar Chicken Thighs",95,"Main Dishes",0,0],
+ ["otto","Charred Broccolini",41,"Side Dishes",0,0],
+ ["otto","Herby Couscous",55,"Side Dishes",1,7],
+ ["otto","Chilled Cucumber Soup",29,"Soups & Stews",0,0],
+ ["otto","Chocolate Tahini Brownies",203,"Desserts",0,0],
+].map((r,i)=>({id:i, book:r[0], name:r[1], page:r[2], cat:r[3], made:!!r[4], rating:r[5], excl:false}));
+RECIPES[13].excl = true; // lemon meringue = "never make" demo
+
+const CATS = ["Main Dishes","Side Dishes","Soups & Stews","Salads","Breads","Desserts"];
+const CATCHIPS = {   // shipped defaults, editable in Settings
+  "Main Dishes":["beef","chicken","pork","fish","vegetarian"],
+  "Side Dishes":["potato","vegetable","grain"],
+  "Soups & Stews":["creamy","brothy","beef","chicken"],
+  "Salads":["green","grain","fruit"],
+  "Breads":["yeast","quick","sweet"],
+  "Desserts":["chocolate","fruit","cake","cookie"],
+};
+
+/* ---------- state ---------- */
+let sel = [];               // ordered selected book ids
+let counts = {};            // cat -> n
+let catKws = {};            // cat -> {chip: 1|-1}
+let catPills = {};          // cat -> [{k, neg}]
+let openFilter = {};        // cat -> filter row expanded?
+let picks = [];             // generated recipe ids
+let rejected = new Set();
+let plans = [
+  {date:"Planned July 5", items:[4,12], made:new Set([12])},
+];
+
+const $ = s=>document.querySelector(s);
+const toast = m=>{ const t=$("#toast"); t.textContent=m; t.classList.add("show"); setTimeout(()=>t.classList.remove("show"),1800); };
+const bookColor = id=>{ const i=sel.indexOf(id); return i>=0?PALETTE[i%8]:"#bbb"; };
+const bookTitle = id=>BOOKS.find(b=>b.id===id).title;
+
+/* ---------- nav ---------- */
+document.querySelectorAll("nav button").forEach(b=>b.onclick=()=>{
+  document.querySelectorAll("nav button").forEach(x=>x.classList.remove("on"));
+  b.classList.add("on");
+  const t=b.dataset.t;
+  document.querySelectorAll(".screen").forEach(s=>s.classList.remove("on"));
+  $("#scr-"+(t==="gen"?"gen":t)).classList.add("on");
+  $("#hTitle").innerHTML={gen:"Generate",plans:"Plans",browse:"Browse",books:"My Books"}[t]+' <span class="protobadge">PROTOTYPE</span>';
+  if(t==="plans") renderPlans();
+  if(t==="browse") renderBrowse();
+  if(t==="books") renderBooks();
+});
+
+/* ---------- step 1 ---------- */
+function renderBookSelect(){
+  $("#booklist").innerHTML = BOOKS.map(b=>{
+    const on = sel.includes(b.id);
+    const col = bookColor(b.id);
+    return `<button class="bookcard ${on?"sel":""}" style="--selcol:${col}" onclick="togBook('${b.id}')">
+      <span class="spine" style="background:${on?col:"var(--line)"}"></span>
+      <span><span class="bt">${b.title}</span><br><span class="bc">${b.n} recipes</span></span>
+      <span class="ord">${on?sel.indexOf(b.id)+1:""}</span></button>`;
+  }).join("");
+  $("#toStep2").disabled = sel.length===0;
+}
+function togBook(id){ sel.includes(id)?sel=sel.filter(x=>x!==id):sel.push(id); renderBookSelect(); }
+$("#toStep2").onclick = ()=>gotoStep(2);
+
+/* ---------- step 2 ---------- */
+function pool(cat){
+  return RECIPES.filter(r=> sel.includes(r.book) && !r.excl && (!cat||r.cat===cat) && kwMatch(r,cat));
+}
+function kwMatch(r,cat){
+  if(!cat) return true;
+  const hay=(r.name).toLowerCase();
+  const k1=catKws[cat]||{};
+  for(const k in k1){
+    if(k1[k]===1 && !hay.includes(k)) return false;
+    if(k1[k]===-1 && hay.includes(k)) return false;
+  }
+  for(const p of (catPills[cat]||[])){
+    if(!p.neg && !hay.includes(p.k)) return false;
+    if(p.neg && hay.includes(p.k)) return false;
+  }
+  return true;
+}
+function catFilterCount(cat){
+  return Object.keys(catKws[cat]||{}).length + (catPills[cat]||[]).length;
+}
+function renderCats(){
+  $("#catlist").innerHTML = CATS.map(c=>{
+    const n=counts[c]||0, av=pool(c).length, open=!!openFilter[c], nf=catFilterCount(c);
+    const k1=catKws[c]||{};
+    const chips = (CATCHIPS[c]||[]).map(k=>{
+      const s=k1[k]||0;
+      return `<button class="chipbtn ${s===1?"on":""} ${s===-1?"warn on":""}" onclick="togKw('${c}','${k}')">${s===-1?"not ":""}${k}</button>`;
+    }).join("");
+    const pills=(catPills[c]||[]).map((p,i)=>
+      `<span class="pill ${p.neg?"neg":""}" onclick="togCatPill('${c}',${i})">${p.neg?"not ":""}${p.k}
+        <button class="px" onclick="event.stopPropagation();delCatPill('${c}',${i})">✕</button></span>`).join("");
+    return `<div class="catrow" style="flex-wrap:wrap">
+      <span class="cn">${c}<br><span class="avail">${av} match${av===1?"":"es"}${nf?` · ${nf} filter${nf>1?"s":""}`:""}</span></span>
+      <button class="chipbtn ${nf||open?"on":""}" onclick="togOpen('${c}')">⚲ filter</button>
+      <span class="stepper"><button onclick="bump('${c}',-1)">−</button><span class="val">${n}</span><button onclick="bump('${c}',1)">＋</button></span>
+      ${open?`<div style="width:100%;padding-top:9px;border-top:1px dashed var(--line);margin-top:9px">
+        <div class="kwrap">${chips}${pills}</div>
+        <input class="kwinput" placeholder="Type a keyword for ${c.toLowerCase()}, press return…" onkeydown="catPillKey(event,'${c}')">
+      </div>`:""}
+    </div>`;
+  }).join("");
+  const total=Object.values(counts).reduce((a,b)=>a+b,0);
+  $("#genCount").textContent = total?`${total} recipe${total>1?"s":""}`:"";
+  $("#doGen").disabled = total===0;
+}
+function bump(c,d){ counts[c]=Math.max(0,(counts[c]||0)+d); renderCats(); }
+function togOpen(c){ openFilter[c]=!openFilter[c]; renderCats(); }
+function togKw(c,k){
+  catKws[c]=catKws[c]||{};
+  catKws[c][k]=((catKws[c][k]||0)+2)%3-1;
+  if(catKws[c][k]===0)delete catKws[c][k];
+  renderCats();
+}
+function catPillKey(e,c){
+  if(e.key!=="Enter") return;
+  const k=e.target.value.trim().toLowerCase();
+  catPills[c]=catPills[c]||[];
+  if(k && !catPills[c].some(p=>p.k===k)) catPills[c].push({k, neg:false});
+  e.target.value="";
+  renderCats();
+  // reopen focus on the same category's input after re-render
+  setTimeout(()=>{const inp=[...document.querySelectorAll("#catlist .kwinput")].find(x=>x.placeholder.includes(c.toLowerCase())); if(inp) inp.focus();},0);
+}
+function togCatPill(c,i){ catPills[c][i].neg=!catPills[c][i].neg; renderCats(); }
+function delCatPill(c,i){ catPills[c].splice(i,1); renderCats(); }
+
+/* ---------- step 3 ---------- */
+function generate(replaceOnly=false){
+  const keep = replaceOnly ? picks.filter(id=>!rejected.has(id)) : [];
+  const sessionOut = new Set([...keep, ...rejected]);
+  const out=[...keep];
+  let short=false;
+  for(const c of CATS){
+    const want=(counts[c]||0) - keep.filter(id=>RECIPES[id].cat===c).length;
+    if(want<=0) continue;
+    // prefer unmade
+    let cand = pool(c).filter(r=>!sessionOut.has(r.id));
+    let unmade = cand.filter(r=>!r.made);
+    const pickFrom = arr=>arr.splice(Math.floor(Math.random()*arr.length),1)[0];
+    for(let i=0;i<want;i++){
+      const src = unmade.length?unmade:cand;
+      if(!src.length){ short=true; break; }
+      const p=pickFrom(src); cand=cand.filter(r=>r.id!==p.id);
+      out.push(p.id); sessionOut.add(p.id);
+    }
+  }
+  picks=out; rejected.clear(); renderResults(short); gotoStep(3);
+}
+function renderResults(short){
+  $("#legend").innerHTML = sel.map(b=>`<div><i style="background:${bookColor(b)}"></i>${bookTitle(b)}</div>`).join("");
+  let html = short?`<div class="note">Some categories had fewer matches than you asked for — showing what’s available.</div>`:"";
+  for(const c of CATS){
+    const rows=picks.filter(id=>RECIPES[id].cat===c);
+    if(!rows.length) continue;
+    html+=`<div class="cathead">${c}</div>`+rows.map(id=>{
+      const r=RECIPES[id], rej=rejected.has(id);
+      return `<div class="rcard ${rej?"rejected":""}" style="--spine:${bookColor(r.book)}">
+        <div class="rname">${r.name}</div>
+        <div class="rmeta">${bookTitle(r.book)} · p. ${r.page}${r.unv?" * (page unverified)":""}${r.made?" · made before":""}</div>
+        <div class="ractions">
+          <button class="chipbtn ${rej?"":"on"}" onclick="togRej(${id})">${rej?"Rejected":"Keeping ✓"}</button>
+          <button class="chipbtn warn" onclick="never(${id})">Never make</button>
+        </div></div>`;
+    }).join("");
+  }
+  $("#results").innerHTML=html;
+  $("#regen").style.display = rejected.size? "block":"none";
+}
+function togRej(id){ rejected.has(id)?rejected.delete(id):rejected.add(id); renderResults(); }
+function never(id){ RECIPES[id].excl=true; rejected.add(id); toast("Marked “never make” — undo anytime in Browse"); renderResults(); }
+$("#doGen").onclick=()=>generate(false);
+$("#regen").onclick=()=>generate(true);
+$("#planBtn").onclick=()=>{
+  const items=picks.filter(id=>!rejected.has(id));
+  if(!items.length){ toast("Nothing kept to plan"); return; }
+  plans.unshift({date:"Planned July 11", items, made:new Set()});
+  toast(`Planned ${items.length} recipe${items.length>1?"s":""} 🎉`);
+  document.querySelector('nav button[data-t="plans"]').click();
+};
+
+function gotoStep(n){
+  ["#gstep1","#gstep2","#gstep3"].forEach((s,i)=>$(s).style.display=(i===n-1)?"block":"none");
+  ["#st1","#st2","#st3"].forEach((s,i)=>$(s).classList.toggle("done",i<n));
+  if(n===2){renderCats();}
+}
+
+/* ---------- plans ---------- */
+function renderPlans(){
+  // calendar
+  const dh=["S","M","T","W","T","F","S"].map(d=>`<span class="dh">${d}</span>`).join("");
+  let days=""; for(let d=1;d<=31;d++){
+    const plan=(d===5||d===11), made=(d===7||d===9);
+    days+=`<span class="d">${d}<span class="dots">${plan?'<b class="dot-plan"></b>':""}${made?'<b class="dot-made"></b>':""}</span></span>`;
+  }
+  $("#calgrid").innerHTML=dh+'<span></span><span></span><span></span>'+days;
+  // plan cards
+  $("#planlist").innerHTML = plans.map((p,pi)=>`<div class="plancard">
+    <div class="pd">${p.date} · ${p.items.length} recipes</div>
+    ${p.items.map(id=>{const r=RECIPES[id];const done=p.made.has(id);
+      return `<div class="planitem"><i style="background:${libColor(r.book)}"></i>
+        <span class="pn">${r.name}<small>${bookTitle(r.book)} · p. ${r.page}</small></span>
+        <button class="madebtn ${done?"done":""}" onclick="markMade(${pi},${id})">${done?"Made ✓":"Mark made"}</button></div>`;}).join("")}
+  </div>`).join("") || `<div class="hint">No plans yet — generate some recipes to get cooking.</div>`;
+}
+function markMade(pi,id){
+  const p=plans[pi];
+  p.made.has(id)?p.made.delete(id):(p.made.add(id),RECIPES[id].made=true,toast("Marked made — add rating & photo in Browse"));
+  renderPlans();
+}
+
+/* ---------- browse ---------- */
+let bfilter="all";
+let bBooks=new Set();   // empty = all books
+let bCats=new Set();    // empty = all categories
+let bPills=[];          // [{k:"beef", neg:false}]
+let dd={books:false, cats:false};
+document.querySelectorAll("[data-bf]").forEach(b=>b.onclick=()=>{
+  document.querySelectorAll("[data-bf]").forEach(x=>x.classList.remove("on"));
+  b.classList.add("on"); bfilter=b.dataset.bf; renderBrowse();
+});
+$("#bsearch").addEventListener("keydown",e=>{
+  if(e.key==="Enter"){
+    const k=e.target.value.trim().toLowerCase();
+    if(k && !bPills.some(p=>p.k===k)){ bPills.push({k, neg:false}); }
+    e.target.value=""; renderBrowse();
+  }
+});
+function togPill(i){ bPills[i].neg=!bPills[i].neg; renderBrowse(); }
+function delPill(i){ bPills.splice(i,1); renderBrowse(); }
+function togDD(which){ dd[which]=!dd[which]; renderBrowse(); }
+function togBBook(id){ bBooks.has(id)?bBooks.delete(id):bBooks.add(id); renderBrowse(); }
+function togBCat(c){ bCats.has(c)?bCats.delete(c):bCats.add(c); renderBrowse(); }
+function libColor(bid){
+  const base={sfah:PALETTE[0],joy:PALETTE[1],otto:PALETTE[2]};
+  if(base[bid]) return base[bid];
+  return (bid in installed)?PALETTE[(3+installed[bid])%8]:"#999";
+}
+function renderBrowse(){
+  // keyword pills (tap = include ↔ not, × = remove)
+  $("#bpills").innerHTML = bPills.map((p,i)=>
+    `<span class="pill ${p.neg?"neg":""}" onclick="togPill(${i})">${p.neg?"not ":""}${p.k}
+      <button class="px" onclick="event.stopPropagation();delPill(${i})">✕</button></span>`).join("");
+  // dropdown toggle labels summarize selection
+  $("#ddBooksBtn").textContent = `Books: ${bBooks.size?bBooks.size+" selected":"all"} ${dd.books?"▴":"▾"}`;
+  $("#ddBooksBtn").classList.toggle("on", bBooks.size>0);
+  $("#ddCatsBtn").textContent = `Categories: ${bCats.size?bCats.size+" selected":"all"} ${dd.cats?"▴":"▾"}`;
+  $("#ddCatsBtn").classList.toggle("on", bCats.size>0);
+  $("#bbooks").style.display = dd.books?"flex":"none";
+  $("#bcats").style.display = dd.cats?"flex":"none";
+  $("#bbooks").innerHTML = BOOKS.map(b=>{
+    const on=bBooks.has(b.id);
+    return `<button class="chipbtn ${on?"on":""}" onclick="togBBook('${b.id}')">
+      <span style="display:inline-block;width:8px;height:8px;border-radius:2px;background:${libColor(b.id)};margin-right:4px"></span>${b.title.split(" (")[0]}</button>`;
+  }).join("");
+  $("#bcats").innerHTML = CATS.map(c=>
+    `<button class="chipbtn ${bCats.has(c)?"on":""}" onclick="togBCat('${c}')">${c}</button>`).join("");
+  const rows=RECIPES.filter(r=>{
+    if(bBooks.size && !bBooks.has(r.book)) return false;
+    if(bCats.size && !bCats.has(r.cat)) return false;
+    const hay=(r.name+" "+r.cat).toLowerCase();
+    for(const p of bPills){
+      if(!p.neg && !hay.includes(p.k)) return false;
+      if(p.neg && hay.includes(p.k)) return false;
+    }
+    if(bfilter==="made") return r.made;
+    if(bfilter==="fav") return r.rating>=8;
+    if(bfilter==="excl") return r.excl;
+    return true;
+  });
+  $("#browselist").innerHTML=rows.map(r=>`<div class="rcard" style="--spine:${libColor(r.book)}">
+    <div class="rname">${r.name} ${r.rating?`<span class="stars">★ ${r.rating}/10</span>`:""}</div>
+    <div class="rmeta">${bookTitle(r.book)} · p. ${r.page}${r.unv?" *":""} · ${r.cat}</div>
+    <div class="ractions">
+      ${r.excl?`<span class="statustag excl">never make</span><button class="chipbtn" onclick="unexcl(${r.id})">Restore</button>`
+        : r.made?`<span class="statustag made">made</span>`:`<span class="statustag">not yet made</span>`}
+      ${r.unv?`<span class="statustag">page unverified</span>`:""}
+      ${r.link?`<button class="chipbtn" onclick="toast('${r.unv?"Would open reader searching “"+r.name+"”":"Would open archive.org reader at p. "+r.page}')">📖 ${r.unv?"Search in book":"Open page"}</button>`:""}
+    </div></div>`).join("") || `<div class="hint">No recipes match.</div>`;
+}
+function unexcl(id){ RECIPES[id].excl=false; toast("Back in the rotation"); renderBrowse(); }
+
+/* ---------- books & library ---------- */
+const CATALOG = [
+  {id:"boston1896", title:"Boston Cooking-School Cook Book", author:"Fannie Farmer", year:1896, country:"USA", type:"linked",
+   sample:[["Parker House Rolls",78,"Breads"],["Clam Chowder",121,"Soups & Stews"],["Roast Beef with Yorkshire Pudding",214,"Main Dishes"],["Boston Cream Pie",412,"Desserts"]]},
+  {id:"winwar1918", title:"Win the War Cook Book", author:"Council of Nat'l Defense", year:1918, country:"USA", type:"linked",
+   sample:[["Victory Bread",12,"Breads"],["Meatless Monday Loaf",31,"Main Dishes"],["War-Time Corn Pudding",44,"Side Dishes",true]]},
+  {id:"simple", title:"Ottolenghi Simple (index only)", author:"Yotam Ottolenghi", year:2018, country:"UK", type:"index",
+   sample:[["Braised Chickpeas with Chard",112,"Main Dishes"],["Roast Chicken with Preserved Lemon",89,"Main Dishes"],["Burnt-Butter Crumpets",250,"Breads"]]},
+];
+let installed = {};   // pack id -> book color index
+let pfilter = "all";
+document.querySelectorAll("[data-pf]").forEach(b=>b.onclick=()=>{
+  document.querySelectorAll("[data-pf]").forEach(x=>x.classList.remove("on"));
+  b.classList.add("on"); pfilter=b.dataset.pf; renderBooks();
+});
+function installPack(pid){
+  const p=CATALOG.find(x=>x.id===pid);
+  BOOKS.push({id:pid, title:p.title, n:p.sample.length});
+  p.sample.forEach(s=>RECIPES.push({id:RECIPES.length, book:pid, name:s[0], page:s[1], cat:s[2],
+    made:false, rating:0, excl:false, link:p.type==="linked", unv:!!s[3]}));
+  installed[pid]=Object.keys(installed).length;
+  toast(p.type==="linked" ? "Installed — pages readable online" : "Installed — index for your copy");
+  renderBooks();
+}
+function renderBooks(){
+  const cols={sfah:PALETTE[0],joy:PALETTE[1],otto:PALETTE[2]};
+  Object.keys(installed).forEach((pid,i)=>cols[pid]=PALETTE[(3+i)%8]);
+  $("#bookmgr").innerHTML = BOOKS.map(b=>{
+    const rs=RECIPES.filter(r=>r.book===b.id);
+    const made=rs.filter(r=>r.made).length;
+    const pct=rs.length?Math.round(made/rs.length*100):0;
+    const pack=CATALOG.find(p=>p.id===b.id);
+    return `<div class="bkrow"><span class="spine" style="background:${cols[b.id]||"#999"}"></span>
+      <span style="flex:1"><b>${b.title}</b>${pack&&pack.type==="linked"?' <span class="statustag made">readable online</span>':''}<br>
+      <span class="hint" style="margin:0">${rs.length} recipes in app · ${made} made (${pct}% explored)</span>
+      <span class="bar"><i style="width:${pct}%"></i></span></span></div>`;
+  }).join("");
+  // library catalog
+  $("#packlist").innerHTML = CATALOG.filter(p=>{
+    if(pfilter==="linked") return p.type==="linked";
+    if(pfilter==="pre1931") return p.year<1931;
+    if(pfilter==="modern") return p.year>=1931;
+    return true;
+  }).map(p=>{
+    const inst=p.id in installed;
+    return `<div class="bkrow" style="${inst?"":"opacity:.55"}">
+      <span class="spine" style="background:${inst?PALETTE[(3+installed[p.id])%8]:"var(--line)"}"></span>
+      <span style="flex:1"><b>${p.title}</b><br>
+      <span class="hint" style="margin:0">${p.author} · ${p.year} · ${p.country} · ${p.sample.length} recipes · ${p.type==="linked"?"readable online":"index for owners"}</span></span>
+      ${inst?'<span class="statustag made">installed</span>':`<button class="madebtn" onclick="installPack('${p.id}')">Install</button>`}
+    </div>`;
+  }).join("");
+}
+
+/* ---------- settings ---------- */
+function openSettings(){
+  document.querySelectorAll("nav button").forEach(x=>x.classList.remove("on"));
+  document.querySelectorAll(".screen").forEach(s=>s.classList.remove("on"));
+  $("#scr-settings").classList.add("on");
+  $("#hTitle").innerHTML='Settings <span class="protobadge">PROTOTYPE</span>';
+  renderChipMgr();
+}
+function renderChipMgr(){
+  $("#chipmgr").innerHTML = CATS.map(c=>`<div class="catrow" style="flex-wrap:wrap">
+    <span class="cn" style="width:100%">${c}</span>
+    <div class="kwrap" style="width:100%">
+      ${(CATCHIPS[c]||[]).map((k,i)=>`<span class="pill" style="border-color:var(--line);color:var(--ink-soft);background:var(--card)">${k}
+        <button class="px" onclick="rmChip('${c}',${i})">✕</button></span>`).join("")}
+    </div>
+    <input class="kwinput" placeholder="Add a chip to ${c.toLowerCase()}…" onkeydown="addChip(event,'${c}')">
+  </div>`).join("");
+}
+function addChip(e,c){
+  if(e.key!=="Enter") return;
+  const k=e.target.value.trim().toLowerCase();
+  if(k && !(CATCHIPS[c]||[]).includes(k)) (CATCHIPS[c]=CATCHIPS[c]||[]).push(k);
+  e.target.value=""; renderChipMgr();
+}
+function rmChip(c,i){ CATCHIPS[c].splice(i,1); renderChipMgr(); }
+
+/* init */
+renderBookSelect();
+</script>
+</body>
+</html>
