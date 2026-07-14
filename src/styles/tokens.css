@@ -33,6 +33,11 @@
   --on-accent: #FFFFFF;
   --tab-text: #FFFFFF;
 
+  /* DERIVED — not a canvas token. The toast is an inverse surface (bg --ink /
+     text --paper), so the theme's own --accent has poor contrast on it; the
+     readable "green Undo" (handoff §Toast) is the OTHER theme's accent. */
+  --toast-undo: #7FB89A; /* = dark --accent, on the near-black light-mode pill */
+
   /* book spine palette (Okabe–Ito, colorblind-safe, 8 max, tap-order assigned) */
   --spine-1: #0072B2;
   --spine-2: #E69F00;
@@ -79,6 +84,7 @@
   --gold: #E0B24A;
   --on-accent: #161511;
   --tab-text: #161511;
+  --toast-undo: #2D6A4F; /* = light --accent, on the light dark-mode pill */
   --spine-1: #4FA3D9;
   --spine-2: #E8B84B;
   --spine-3: #3FC79A;
