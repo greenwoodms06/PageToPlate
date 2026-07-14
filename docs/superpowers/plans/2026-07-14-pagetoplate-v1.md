@@ -32,6 +32,14 @@
 
 Conventional calls (stated, not open): hash-based routing (`HashRouter`), dark mode = system + manual override, memory-first store over `idb`, photos compressed to ≤1200px long edge JPEG ~0.82, Lucide icons ~18px in nav.
 
+## Checkpoint 1 amendments (owner, 2026-07-14, after live wizard demo)
+
+1. **Chip defaults approved as proposed** (Task 4 values ship).
+2. **ATK pack title confirmed:** "The Complete America's Test Kitchen TV Show Cookbook 2001–2025" (replaces the devSeed placeholder; feeds Task 25 pack build).
+3. **Index-card ruling removed from recipe cards** — owner: the background lines make cards hard to read. Overrides the handoff's signature ruling on hero recipe cards, app-wide (results cards now; Task 22's universal recipe card must NOT be ruled either). The `.index-ruling` utility stays in base.css, unused, for reference.
+4. **Regenerate covers "never" cards too** — owner: regenerate should replace both rejected AND never'd cards (supersedes spec/prototype rejected-only). Never'd recipes stay `excluded` (undo via toast/Browse); their cards are replaced on regenerate. Footer button appears when rejected+never > 0, label "↻ Regenerate N". `regenerate()` logic + tests updated accordingly.
+5. **Bug fix:** rejected-state button contrast (owner saw gray fill with unreadable text) — add dark `--rejected-fill` + correct text token in both themes.
+
 ## File structure
 
 ```
