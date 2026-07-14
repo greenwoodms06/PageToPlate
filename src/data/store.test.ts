@@ -242,13 +242,8 @@ describe('deleteBookHard', () => {
   });
 });
 
-describe('deleteBookKeepHistory (stubbed until Task 10)', () => {
-  it('throws the orphan-logic placeholder', async () => {
-    const store = await initStore();
-    await store.addBook(makeBook('b1'));
-    await expect(store.deleteBookKeepHistory('b1')).rejects.toThrow('orphans: implemented in Task 10');
-  });
-});
+// deleteBookKeepHistory (real since Task 10) is pinned in src/logic/orphans.test.ts
+// alongside the orphan transform it delegates to.
 
 describe('attachments', () => {
   it('round-trips a blob through addAttachment/getAttachment', async () => {

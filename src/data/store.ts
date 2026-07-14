@@ -8,6 +8,7 @@
 // getAttachment(). Everything else is small metadata and loads on init().
 import { useSyncExternalStore } from 'react';
 import * as db from './db';
+import { orphanBook } from '../logic/orphans';
 import { DEFAULT_CATEGORIES } from './categories';
 import { DEFAULT_SETTINGS, newId } from './types';
 import type {
@@ -90,6 +91,43 @@ export class Store {
       this.settingsObj = { ...DEFAULT_SETTINGS };
       await db.putSettings(this.settingsObj);
     }
+    this.notify();
+  }
+
+  /**
+   * Restore is REPLACE, never merge (spec rule on backups): wipe IndexedDB,
+   * bulk-load the backup payload, rebuild memory. Deliberately does NOT bump
+   * changesSinceBackup — the restored settings carry their own counter (a
+   * just-made backup restores to 0 changes since backup).
+   */
+  async restoreAll(data: {
+    books: Cookbook[];
+    recipes: Recipe[];
+    madeEntries: MadeEntry[];
+    plans: Plan[];
+    categories: Category[];
+    presets: Preset[];
+    settings: Settings;
+    attachments: AttachmentRec[];
+  }): Promise<void> {
+    await db.clearAll();
+    await Promise.all([
+      db.bulkPut('books', data.books),
+      db.bulkPut('recipes', data.recipes),
+      db.bulkPut('madeEntries', data.madeEntries),
+      db.bulkPut('plans', data.plans),
+      db.bulkPut('categories', data.categories),
+      db.bulkPut('presets', data.presets),
+      db.bulkPut('attachments', data.attachments),
+      db.putSettings(data.settings),
+    ]);
+    this.booksMap = new Map(data.books.map((b) => [b.id, b]));
+    this.recipesMap = new Map(data.recipes.map((r) => [r.id, r]));
+    this.madeMap = new Map(data.madeEntries.map((m) => [m.id, m]));
+    this.plansMap = new Map(data.plans.map((p) => [p.id, p]));
+    this.categoriesMap = new Map(data.categories.map((c) => [c.id, c]));
+    this.presetsMap = new Map(data.presets.map((p) => [p.id, p]));
+    this.settingsObj = data.settings;
     this.notify();
   }
 
@@ -180,16 +218,27 @@ export class Store {
     await this.bumpAndNotify();
   }
 
-  // TODO(task-10): orphan logic — convert MadeEntries of this book's recipes
-  // to orphaned entries (recipeId: null + snapshot of book/recipe/page), then
-  // delete book + recipes but keep the history. Method exists now so the API
-  // is complete; Task 10 replaces the placeholder.
+  // "Delete book, keep cooking history" (spec rule 8): the book and its
+  // recipes go, but their MadeEntries become orphans (recipeId: null +
+  // {bookTitle, recipeName, page} snapshot — see src/logic/orphans.ts).
+  // Made-entry photos survive with their entries; the deleted recipes' own
+  // attachments are removed so no unreferenced blobs leak.
   async deleteBookKeepHistory(id: string): Promise<void> {
-    this.orphanPlaceholder(id);
-  }
+    const book = this.booksMap.get(id);
+    if (!book) return;
+    const recipes = [...this.recipesMap.values()].filter((r) => r.bookId === id);
+    const orphaned = orphanBook(book, recipes, [...this.madeMap.values()]);
+    const recipeAttachmentIds = recipes.flatMap((r) => r.attachmentIds);
 
-  private orphanPlaceholder(_id: string): never {
-    throw new Error('orphans: implemented in Task 10');
+    this.booksMap.delete(id);
+    for (const r of recipes) this.recipesMap.delete(r.id);
+    for (const m of orphaned) this.madeMap.set(m.id, m);
+
+    await db.del('books', id);
+    await db.bulkDel('recipes', recipes.map((r) => r.id));
+    await db.bulkPut('madeEntries', orphaned);
+    await db.bulkDel('attachments', recipeAttachmentIds);
+    await this.bumpAndNotify();
   }
 
   // Hard delete is "delete everything": the book, its recipes, those recipes'
@@ -354,6 +403,15 @@ export class Store {
 
   async getAttachment(id: string): Promise<AttachmentRec | undefined> {
     return db.get('attachments', id);
+  }
+
+  /**
+   * Every attachment record, blobs included — for backup export only. Loading
+   * all blobs at once is exactly what the memory-first design avoids in normal
+   * operation (see header note), but a full export needs the bytes anyway.
+   */
+  async allAttachments(): Promise<AttachmentRec[]> {
+    return db.getAll('attachments');
   }
 
   // ── derived ────────────────────────────────────────────────────────────
