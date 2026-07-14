@@ -3,17 +3,20 @@
 // survives tab switches (see wizardState.ts for the decision note).
 import { useEffect, useMemo, useReducer } from 'react';
 import { store, useStore } from '../../data/store';
-import { generate } from '../../logic/generate';
+import { useToast } from '../../components/Toast';
+import { generate, regenerate } from '../../logic/generate';
 import type { Candidate } from '../../logic/generate';
 import type { CatConfig } from '../../data/types';
 import { WizardHeader } from './wizardUi';
 import { BooksStep } from './BooksStep';
 import { CategoriesStep } from './CategoriesStep';
+import { ResultsStep } from './ResultsStep';
 import { cfgFor, loadWizard, saveWizard, wizardReducer } from './wizardState';
 
 export function GenerateTab() {
   const [state, dispatch] = useReducer(wizardReducer, undefined, loadWizard);
   useEffect(() => saveWizard(state), [state]);
+  const showToast = useToast();
 
   const version = useStore((s) => s.version); // re-render on any store change
 
@@ -59,6 +62,26 @@ export function GenerateTab() {
     dispatch({ type: 'setGroups', groups });
   };
 
+  // Prototype doRegenerate: current rejections join sessionRejected, then
+  // regenerate() replaces ONLY the rejected cards (kept/never stay put).
+  const onRegenerate = () => {
+    if (!state.groups) return;
+    const sessionRejected = new Set(state.sessionRejected);
+    for (const g of state.groups)
+      for (const c of g.cards) if (c.status === 'rejected') sessionRejected.add(c.recipe.id);
+    const groups = regenerate(
+      state.groups,
+      candidates,
+      books,
+      state.sel,
+      orderedCfg(),
+      sessionRejected,
+      store.settings.preferUnmade,
+    );
+    dispatch({ type: 'regenerated', groups, sessionRejected });
+    showToast('Replaced rejected picks');
+  };
+
   return (
     <main style={{ padding: '20px 16px 96px' }}>
       <WizardHeader step={state.step} />
@@ -82,7 +105,18 @@ export function GenerateTab() {
           dispatch={dispatch}
         />
       )}
-      {state.step >= 3 && <p className="meta">Steps 3–4 land in Tasks 16–17.</p>}
+      {state.step === 3 && (
+        <ResultsStep
+          state={state}
+          books={books}
+          onRegenerate={onRegenerate}
+          onPlanThese={() => {
+            /* Task 17 wires plan creation. */
+          }}
+          dispatch={dispatch}
+        />
+      )}
+      {state.step === 4 && <p className="meta">Step 4 lands in Task 17.</p>}
     </main>
   );
 }
