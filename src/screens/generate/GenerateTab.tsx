@@ -7,10 +7,12 @@ import { useToast } from '../../components/Toast';
 import { generate, regenerate } from '../../logic/generate';
 import type { Candidate } from '../../logic/generate';
 import type { CatConfig } from '../../data/types';
+import { newId, todayISO } from '../../data/types';
 import { WizardHeader } from './wizardUi';
 import { BooksStep } from './BooksStep';
 import { CategoriesStep } from './CategoriesStep';
 import { ResultsStep } from './ResultsStep';
+import { PlanCreated } from './PlanCreated';
 import { cfgFor, loadWizard, saveWizard, wizardReducer } from './wizardState';
 
 export function GenerateTab() {
@@ -82,6 +84,22 @@ export function GenerateTab() {
     showToast('Replaced rejected picks');
   };
 
+  // Plan creation (Rule 4: plans are dated by ACCEPTANCE, not cooking).
+  // genContext snapshots the books+filters so Plans-tab Swap (Task 19) can
+  // re-pick from the same pool.
+  const onPlanThese = () => {
+    const kept = (state.groups ?? []).flatMap((g) => g.cards.filter((c) => c.status === 'kept'));
+    if (kept.length === 0) return;
+    const acceptedAt = todayISO();
+    void store.addPlan({
+      id: newId(),
+      acceptedAt,
+      items: kept.map((c) => ({ recipeId: c.recipe.id, state: 'open' as const })),
+      genContext: { bookIds: [...state.sel], config: structuredClone(orderedCfg()) },
+    });
+    dispatch({ type: 'planned', plannedAt: acceptedAt });
+  };
+
   return (
     <main style={{ padding: '20px 16px 96px' }}>
       <WizardHeader step={state.step} />
@@ -110,13 +128,11 @@ export function GenerateTab() {
           state={state}
           books={books}
           onRegenerate={onRegenerate}
-          onPlanThese={() => {
-            /* Task 17 wires plan creation. */
-          }}
+          onPlanThese={onPlanThese}
           dispatch={dispatch}
         />
       )}
-      {state.step === 4 && <p className="meta">Step 4 lands in Task 17.</p>}
+      {state.step === 4 && <PlanCreated state={state} books={books} dispatch={dispatch} />}
     </main>
   );
 }

@@ -17,6 +17,7 @@ export function RecipeRow({
   tag,
   rating,
   dimmed = false,
+  chevron = false,
   onClick,
 }: {
   name: string;
@@ -30,11 +31,28 @@ export function RecipeRow({
   /** Gold ★ score (Browse shows the max across made entries). */
   rating?: number;
   dimmed?: boolean;
+  /** Right-edge › affordance (plan-created rows, Task 17; sheet-opening rows, Task 22). */
+  chevron?: boolean;
   onClick?: () => void;
 }) {
   const inner = (
     <>
       <SpineStripe color={color} />
+      {chevron && (
+        <span
+          aria-hidden
+          style={{
+            position: 'absolute',
+            right: 12,
+            top: '50%',
+            transform: 'translateY(-50%)',
+            color: 'var(--ink-disabled)',
+            fontSize: 16,
+          }}
+        >
+          ›
+        </span>
+      )}
       <span style={{ display: 'flex', justifyContent: 'space-between', gap: 10, alignItems: 'baseline' }}>
         <span style={{ fontWeight: 600, fontSize: 15.5 }}>{name}</span>
         {page !== undefined && (
@@ -60,7 +78,7 @@ export function RecipeRow({
     background: 'var(--card)',
     border: '1px solid var(--line)',
     borderRadius: 'var(--r-card)',
-    padding: '12px 12px 12px 18px', // 18 left clears the 7px stripe
+    padding: chevron ? '12px 26px 12px 18px' : '12px 12px 12px 18px', // 18 left clears the 7px stripe; 26 right clears ›
     position: 'relative',
     opacity: dimmed ? 0.6 : 1,
   } as const;
