@@ -1,0 +1,42 @@
+export interface Cookbook {
+  id: string; name: string; tags: string[]; archived: boolean;
+  packId?: string; packVersion?: number; createdAt: string;
+}
+export type PageStatus = 'verified' | 'unverified';
+export interface Recipe {
+  id: string; bookId: string; name: string; page: string;
+  category: string; tags: string[];
+  status: 'active' | 'excluded';
+  isCustom: boolean; text?: string;
+  attachmentIds: string[];
+  link?: { url: string; pageStatus: PageStatus };
+  createdAt: string;
+}
+export interface MadeEntry {
+  id: string; recipeId: string | null;      // null ⇒ orphaned
+  date: string;                              // 'YYYY-MM-DD'
+  rating?: number;                           // 1–10
+  notes?: string; photoIds: string[];
+  orphan?: { bookTitle: string; recipeName: string; page: string };
+}
+export interface PlanItem { recipeId: string; state: 'open' | 'made' | 'dismissed'; madeEntryId?: string }
+export interface Plan {
+  id: string; acceptedAt: string; items: PlanItem[];
+  genContext?: { bookIds: string[]; config: Record<string, CatConfig> };
+}
+export interface Category { id: string; name: string; order: number; isDefault: boolean; chips: string[] }
+export interface Pill { text: string; neg: boolean }
+export interface CatConfig { count: number; pills: Pill[] }
+export interface Preset { id: string; name: string; bookIds: string[]; config: Record<string, CatConfig> }
+export interface AttachmentRec { id: string; blob: Blob; name: string; type: string }
+export interface Settings {
+  preferUnmade: boolean; theme: 'system' | 'light' | 'dark';
+  backupReminder: boolean; lastBackupAt?: string; changesSinceBackup: number;
+  verifiedPagesOnly: boolean; persistGranted?: boolean;
+}
+export const DEFAULT_SETTINGS: Settings = {
+  preferUnmade: true, theme: 'system', backupReminder: true,
+  changesSinceBackup: 0, verifiedPagesOnly: false,
+};
+export const newId = () => crypto.randomUUID();
+export const todayISO = () => new Date().toISOString().slice(0, 10);
