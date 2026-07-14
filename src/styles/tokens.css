@@ -30,6 +30,20 @@
   --readable-text: #4C5C88;
   --neutral-spine: #DAD7C8;
   --rejected-fill: #EEEDE5;
+
+  /* Extracted from canvas (light Library rows): "Index only — own the book"
+     status tag bg #F2EFE5 / text #8A8672 — warm gray, distinct from
+     --rejected-fill/#75766B used by the small "custom" tag. */
+  --indexonly-bg: #F2EFE5;
+  --indexonly-text: #8A8672;
+
+  /* Extracted from canvas: the pill's 18px circular × button background —
+     light screens use rgba(0,0,0,.08), dark screens rgba(255,255,255,.14). */
+  --pill-x-bg: rgba(0, 0, 0, .08);
+
+  /* Extracted from canvas (2f Library, uninstalled pack rows): horizontal-
+     striped neutral spine. */
+  --spine-striped: repeating-linear-gradient(0deg, #CFCCBE 0 6px, #DAD7C8 6px 12px);
   --on-accent: #FFFFFF;
   --tab-text: #FFFFFF;
 
@@ -110,4 +124,16 @@
      are drawn in #4A4840 (= dark --dash), mirroring light where
      --neutral-spine equals the light --dash. */
   --neutral-spine: #4A4840;
+
+  /* Extracted from canvas "3a Mark as made" / "3f Recipe card sheet" dark
+     pills: × button bg flips to a white wash. */
+  --pill-x-bg: rgba(255, 255, 255, .14);
+
+  /* Canvas 3g draws dark uninstalled spines with BOTH gradient stops #4A4840
+     (reads solid) — reproduced exactly rather than inventing a dark stripe. */
+  --spine-striped: repeating-linear-gradient(0deg, #4A4840 0 6px, #4A4840 6px 12px);
+
+  /* Extracted from canvas 3g dark Library: "Index only — own the book" tag. */
+  --indexonly-bg: #332F26;
+  --indexonly-text: #A29D8A;
 }
