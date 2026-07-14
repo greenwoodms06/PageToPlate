@@ -14,9 +14,10 @@ import { parseRecipeCsv } from '../logic/csv';
 import { planImport } from '../logic/importer';
 import { UNCATEGORIZED } from '../data/categories';
 
-// Placeholder title until the owner confirms the exact ATK edition (plan
-// Demo Checkpoint 1 reviews this).
-export const ATK_BOOK_NAME = "America's Test Kitchen";
+// Owner-confirmed at Checkpoint 1 (plan "Checkpoint 1 amendments" item 2):
+// exact ATK edition title, en dash in the year range. Feeds Task 25's pack
+// build — the pack must ship under this same name.
+export const ATK_BOOK_NAME = "The Complete America's Test Kitchen TV Show Cookbook 2001–2025";
 
 export async function seedAtk(): Promise<string> {
   const { default: csv } = await import('../../background/atk_index.csv?raw');

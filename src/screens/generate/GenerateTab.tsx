@@ -64,8 +64,12 @@ export function GenerateTab() {
     dispatch({ type: 'setGroups', groups });
   };
 
-  // Prototype doRegenerate: current rejections join sessionRejected, then
-  // regenerate() replaces ONLY the rejected cards (kept/never stay put).
+  // Prototype doRegenerate, amended at Checkpoint 1 (owner, 2026-07-14):
+  // current rejections join sessionRejected, then regenerate() replaces both
+  // rejected AND never'd cards (supersedes prototype rejected-only). Never'd
+  // ids stay out of sessionRejected on purpose — their recipes are already
+  // status 'excluded' (persisted in ResultsStep), which keeps them out of the
+  // pool AND out of every future generate, not just this session's.
   const onRegenerate = () => {
     if (!state.groups) return;
     const sessionRejected = new Set(state.sessionRejected);
@@ -81,7 +85,7 @@ export function GenerateTab() {
       store.settings.preferUnmade,
     );
     dispatch({ type: 'regenerated', groups, sessionRejected });
-    showToast('Replaced rejected picks');
+    showToast('Replaced picks');
   };
 
   // Plan creation (Rule 4: plans are dated by ACCEPTANCE, not cooking).

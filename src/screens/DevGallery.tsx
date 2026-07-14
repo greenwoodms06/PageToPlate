@@ -137,16 +137,16 @@ export function DevGallery() {
             <OrderBadge key={i} n={i + 1} color={spineColor(i)} />
           ))}
         </div>
-        {/* SpineStripe + PageTab in context: a ruled results-style card. */}
+        {/* SpineStripe + PageTab in context: a results-style card. Unruled —
+            owner removed the index-card ruling from recipe cards at
+            Checkpoint 1 (readability); .index-ruling stays in base.css unused. */}
         <div
-          className="index-ruling"
           style={{
             background: 'var(--card)',
             border: '1px solid var(--line)',
             borderRadius: 'var(--r-card)',
             padding: '14px 14px 12px 20px',
             position: 'relative',
-            backgroundPosition: '0 46px',
           }}
         >
           <SpineStripe color={spineColor(0)} />

@@ -34,7 +34,12 @@ export function generate(recipes: Candidate[], books: Cookbook[], bookIds: strin
 export function regenerate(groups: GenGroup[], recipes: Candidate[], books: Cookbook[], bookIds: string[],
     config: Record<string, CatConfig>, sessionRejected: Set<string>, preferUnmade: boolean, rng: Rng = Math.random): GenGroup[] {
   return groups.map(g => {
-    const kept = g.cards.filter(c => c.status !== 'rejected');
+    // Owner amendment at Checkpoint 1 (plan item 4) supersedes the prototype's
+    // rejected-only semantics: BOTH 'rejected' and 'never' cards are replaced
+    // (kept = status 'kept'). Never'd recipes are already status 'excluded' in
+    // `recipes` (the UI persisted that via store.updateRecipe), so eligible()
+    // keeps them out of the replacement pool without needing sessionRejected.
+    const kept = g.cards.filter(c => c.status === 'kept');
     const need = g.cards.length - kept.length;
     if (!need) return g;
     const shown = new Set(kept.map(c => c.recipe.id));

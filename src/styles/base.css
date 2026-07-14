@@ -95,7 +95,11 @@ a {
 }
 
 /* Index-card ruling for hero recipe cards; offset the lines below the title
-   at the use site with background-position (canvas uses `0 46px`). */
+   at the use site with background-position (canvas uses `0 46px`).
+   RETAINED UNUSED — owner removed the ruling from recipe cards at Checkpoint 1
+   (2026-07-14, readability: the background lines made cards hard to read).
+   Applies app-wide: results cards AND the Task 22 universal recipe card must
+   stay unruled. Kept only as a reference to the handoff's signature style. */
 .index-ruling {
   background-image: repeating-linear-gradient(
     transparent,

@@ -136,4 +136,15 @@
   /* Extracted from canvas 3g dark Library: "Index only — own the book" tag. */
   --indexonly-bg: #332F26;
   --indexonly-text: #A29D8A;
+
+  /* DERIVED — owner bug report at Checkpoint 1 (2026-07-14): the rejected
+     button was unreadable in dark because the light #EEEDE5 fill had no dark
+     override while its label uses --ink (cream in dark) — cream on cream.
+     No dark rejected state exists on the canvas (rejected cards appear only
+     in the light Results screens 1a–1c; the dark 1a–1c variants show none —
+     re-checked for this fix). Following the handoff's dark convention "tints
+     become alpha washes": a wash of the dark --ink #EDEAE0 (rgb 237,234,224)
+     at .12 over the card — a slightly-lightened neutral that keeps the --ink
+     label and --ink-mid border readable. */
+  --rejected-fill: rgba(237, 234, 224, .12);
 }

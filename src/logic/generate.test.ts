@@ -124,22 +124,36 @@ describe('generate (Rules 2, 9)', () => {
   });
 });
 
-describe('regenerate (Rule 3)', () => {
+describe('regenerate (Rule 3; owner amendment at Checkpoint 1: covers never too)', () => {
   const books = [book('b1')];
   const group = (cards: GenGroup['cards'], note: string | null = null): GenGroup =>
     ({ category: 'Mains', want: cards.length, cards, note });
 
-  it('replaces only rejected cards; kept cards stay put', () => {
-    const a = cand('a'), b = cand('b'), c = cand('c');
-    const groups = [group([{ recipe: a, status: 'kept' }, { recipe: b, status: 'rejected' }])];
-    const out = regenerate(groups, [a, b, c], books, ['b1'],
-      { Mains: cfg(2) }, new Set(['b']), true, mulberry32(1));
-    expect(ids(out[0].cards)).toEqual(['a', 'c']);
+  it('replaces rejected AND never cards; kept cards keep identical ids', () => {
+    // Owner amendment (Checkpoint 1 item 4): never'd cards are replaced too,
+    // superseding the prototype's rejected-only semantics. The never'd recipe
+    // is already status 'excluded' in the recipes array (the UI persists that
+    // via store.updateRecipe before regenerate runs), so eligible() keeps it
+    // out of the pool without it ever entering sessionRejected.
+    const a = cand('a'), b = cand('b'), c = cand('c'), d = cand('d'), e = cand('e');
+    const nvr = { ...c, status: 'excluded' as const };
+    const groups = [group([
+      { recipe: a, status: 'kept' },
+      { recipe: b, status: 'rejected' },
+      { recipe: c, status: 'never' },
+    ])];
+    const out = regenerate(groups, [a, b, nvr, d, e], books, ['b1'],
+      { Mains: cfg(3) }, new Set(['b']), true, mulberry32(1));
+    expect(out[0].cards).toHaveLength(3);
+    expect(ids(out[0].cards)[0]).toBe('a'); // kept card keeps its id and slot
+    expect(ids(out[0].cards).slice(1).sort()).toEqual(['d', 'e']); // both replaced
+    expect(ids(out[0].cards)).not.toContain('b');
+    expect(ids(out[0].cards)).not.toContain('c');
     expect(out[0].cards.every(card => card.status === 'kept')).toBe(true);
     expect(out[0].note).toBeNull();
   });
 
-  it('leaves groups without rejections untouched', () => {
+  it('leaves groups with neither rejections nor nevers untouched', () => {
     const a = cand('a'), b = cand('b');
     const g = group([{ recipe: a, status: 'kept' }]);
     const out = regenerate([g], [a, b], books, ['b1'],
@@ -154,6 +168,19 @@ describe('regenerate (Rule 3)', () => {
     const out = regenerate(groups, [a, b, c, d], books, ['b1'],
       { Mains: cfg(2) }, new Set(['b', 'd']), true, mulberry32(1));
     expect(ids(out[0].cards)).toEqual(['a', 'c']);
+  });
+
+  it('never re-deals a never\'d recipe even though it is not in sessionRejected', () => {
+    // The never'd id is excluded purely by pool filtering (status 'excluded'
+    // fails eligible()'s status === 'active' check) — mirrors the UI, where
+    // store.updateRecipe(id, { status: 'excluded' }) has already landed.
+    const a = cand('a'), b = cand('b'), c = cand('c');
+    const nvr = { ...b, status: 'excluded' as const };
+    const groups = [group([{ recipe: a, status: 'kept' }, { recipe: b, status: 'never' }])];
+    const out = regenerate(groups, [a, nvr, c], books, ['b1'],
+      { Mains: cfg(2) }, new Set(), true, mulberry32(1));
+    expect(ids(out[0].cards)).toEqual(['a', 'c']);
+    expect(out[0].note).toBeNull();
   });
 
   it('emits the exact pool-exhausted note when dry', () => {

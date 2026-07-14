@@ -5,6 +5,12 @@
 // "Never — undo" danger tint. Reject is session-only; Never persists
 // (recipe status 'excluded') and offers undo both via toast and by tapping
 // the button again.
+//
+// Checkpoint 1 amendment (owner, 2026-07-14): regenerate covers never'd cards
+// too — the footer button counts rejected + never and regenerate() replaces
+// both (supersedes prototype/spec rejected-only). sessionRejected still only
+// accumulates rejected ids; never'd recipes are excluded from the pool by
+// their persisted 'excluded' status.
 import type { Dispatch } from 'react';
 import { PageTab } from '../../components/PageTab';
 import { SpineStripe } from '../../components/SpineStripe';
@@ -25,7 +31,7 @@ export function ResultsStep({
 }: {
   state: WizardState;
   books: Cookbook[];
-  /** Adds current rejections to sessionRejected, replaces only those cards. */
+  /** Adds current rejections to sessionRejected, replaces rejected + never'd cards. */
   onRegenerate: () => void;
   onPlanThese: () => void;
   dispatch: Dispatch<WizardAction>;
@@ -36,7 +42,9 @@ export function ResultsStep({
   const bookColor = (id: string) => spineColor(state.sel.indexOf(id));
 
   const allCards = groups.flatMap((g) => g.cards);
-  const rejectedCount = allCards.filter((c) => c.status === 'rejected').length;
+  // Checkpoint 1 amendment: the footer button covers rejected AND never'd
+  // cards — both get replaced on regenerate.
+  const replaceCount = allCards.filter((c) => c.status !== 'kept').length;
   const keptCount = allCards.filter((c) => c.status === 'kept').length;
 
   const setStatus = (recipeId: string, status: 'kept' | 'rejected' | 'never') =>
@@ -95,18 +103,20 @@ export function ResultsStep({
                 key={r.id}
                 data-recipe-id={r.id}
                 data-status={c.status}
-                className={struck ? undefined : 'index-ruling'}
+                // DO NOT add .index-ruling back to these cards. Owner decision
+                // at Checkpoint 1 (2026-07-14, live wizard demo): the index-card
+                // ruling made cards hard to read, so it is removed app-wide —
+                // this overrides the handoff's signature ruled hero cards, and
+                // "restoring fidelity" here would reintroduce the complaint.
+                // (.index-ruling survives in base.css, unused, for reference.)
                 style={{
-                  // backgroundColor, NOT the background shorthand — the
-                  // shorthand would wipe out .index-ruling's background-image.
-                  backgroundColor: 'var(--card)',
+                  background: 'var(--card)',
                   border: '1px solid var(--line)',
                   borderRadius: 'var(--r-card)',
                   padding: '14px 14px 12px 20px',
                   marginBottom: 10,
                   position: 'relative',
                   opacity: struck ? 0.55 : 1,
-                  backgroundPosition: '0 46px', // ruling starts below the title
                 }}
               >
                 <SpineStripe color={color} />
@@ -203,9 +213,9 @@ export function ResultsStep({
         </div>
       ))}
 
-      {rejectedCount > 0 && (
+      {replaceCount > 0 && (
         <GhostBtn
-          label={`↻ Regenerate ${rejectedCount} rejected`}
+          label={`↻ Regenerate ${replaceCount}`}
           onClick={onRegenerate}
           minHeight={48}
           fontSize={15}
