@@ -1,0 +1,107 @@
+/* Design tokens — "Card Catalog"
+   Source of truth: background/design_handoff_pagetoplate/README.md
+   (Colors light/dark, Typography, Shape & spacing, Design Tokens summary)
+   + "PageToPlate Directions.dc.html" canvas for values the README omits.
+   Light is the default (:root); dark overrides apply under [data-theme="dark"]
+   — set on <html> by src/theme.ts, or on any subtree wrapper (vars inherit). */
+
+:root {
+  /* paper & ink (light) */
+  --paper: #F6F4EC;
+  --card: #FFFEF9;
+  --panel: #FBFAF3;
+  --ink: #23241E;
+  --ink-soft: #75766B;
+  --ink-mid: #54554B;
+  --ink-disabled: #B9B6A8;
+  --line: #E2DFD2;
+  --dash: #DAD7C8;
+  --ruling: #E7E4D6;
+  --accent: #2D6A4F;
+  --accent-tint: #EDF3EE;
+  --accent-disabled: #B9C6BF;
+  --danger: #A9553F;
+  --danger-tint: #F8ECE8;
+  --warn-bg: #FBF4DE;
+  --warn-border: #EBDCAA;
+  --gold: #C08A17;
+  --planned: #8A8DDF;
+  --readable-bg: #EEF1F7;
+  --readable-text: #4C5C88;
+  --neutral-spine: #DAD7C8;
+  --rejected-fill: #EEEDE5;
+  --on-accent: #FFFFFF;
+  --tab-text: #FFFFFF;
+
+  /* book spine palette (Okabe–Ito, colorblind-safe, 8 max, tap-order assigned) */
+  --spine-1: #0072B2;
+  --spine-2: #E69F00;
+  --spine-3: #009E73;
+  --spine-4: #CC79A7;
+  --spine-5: #D55E00;
+  --spine-6: #56B4E9;
+  --spine-7: #8172B3;
+  --spine-8: #B4A200;
+
+  /* shape */
+  --r-tag: 5px;
+  --r-inner: 10px;
+  --r-card: 12px;
+  --r-cta: 14px;
+  --r-sheet: 22px;
+  --r-pill: 999px;
+  --shadow-sheet: 0 -8px 30px rgba(0, 0, 0, .25);
+  --shadow-dialog: 0 12px 40px rgba(0, 0, 0, .35);
+
+  /* type */
+  --font-display: 'Bricolage Grotesque', sans-serif;
+  --font-body: 'Instrument Sans', sans-serif;
+}
+
+/* Dark — warm ink, not gray. Spine palette brightens one step for slots 1–3
+   only (README); slots 4–8 keep their light values. */
+[data-theme="dark"] {
+  --paper: #211F1A;
+  --card: #2A2822;
+  --panel: #26241F;
+  --ink: #EDEAE0;
+  --ink-soft: #9A9788;
+  --ink-mid: #C4C1B2;
+  --ink-disabled: #6E6B5E;
+  --line: #3A382F;
+  --dash: #4A4840;
+  --ruling: #34322A;
+  --accent: #7FB89A;
+  --accent-tint: rgba(127, 184, 154, .15);
+  --accent-disabled: #4A5F54;
+  --danger: #C97B63;
+  --danger-tint: rgba(201, 123, 99, .15);
+  --gold: #E0B24A;
+  --on-accent: #161511;
+  --tab-text: #161511;
+  --spine-1: #4FA3D9;
+  --spine-2: #E8B84B;
+  --spine-3: #3FC79A;
+
+  /* Extracted from canvas screen "3g dark Library" (Readable-online badge on
+     the installed pack row): bg rgba(140,160,200,.18), text #9FB0D8.
+     (Uninstalled rows mute that text to #8A94AC — a component-level graying,
+     not a token.) */
+  --readable-bg: rgba(140, 160, 200, .18);
+  --readable-text: #9FB0D8;
+
+  /* DERIVED — not on the canvas. No dark warning note exists in the design
+     canvas (the light warn colors #FBF4DE/#EBDCAA appear only in light screens
+     1a Results / 4c Backup / 5b CSV preview). Following the handoff's dark
+     convention "tints become alpha washes": both values are washes of the
+     light warn BORDER #EBDCAA (rgb 235,220,170) over the dark card — bg at
+     .15 to match the accent/danger tint washes, border stronger at .38 so the
+     hairline stays visible. Revisit if a dark warning mock ever appears. */
+  --warn-bg: rgba(235, 220, 170, .15);
+  --warn-border: rgba(235, 220, 170, .38);
+
+  /* Extracted from canvas screen "3g dark Library": uninstalled striped spines
+     are drawn in #4A4840 (= dark --dash), mirroring light where
+     --neutral-spine equals the light --dash. */
+  --neutral-spine: #4A4840;
+}

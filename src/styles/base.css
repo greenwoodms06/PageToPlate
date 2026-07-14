@@ -1,0 +1,106 @@
+/* Base styles — reset, app column, Card Catalog type utilities.
+   Values from background/design_handoff_pagetoplate/README.md §Typography,
+   §Shape & spacing. */
+
+/* --- reset --- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  height: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100%;
+  background: var(--paper);
+  color: var(--ink);
+  font: 15px/1.45 var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+}
+
+/* --- app column: phone-first (design width 390px), centered when wider --- */
+#root {
+  max-width: 430px;
+  margin: 0 auto;
+  min-height: 100dvh;
+}
+
+/* --- type utilities --- */
+.screen-title {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 24px;
+  letter-spacing: -.01em;
+}
+
+.section-label {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+}
+
+.meta {
+  font-size: 12.5px;
+  color: var(--ink-soft);
+}
+
+.hint {
+  font-size: 11.5px;
+  color: var(--ink-soft);
+}
+
+.field-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
+/* Index-card ruling for hero recipe cards; offset the lines below the title
+   at the use site with background-position (canvas uses `0 46px`). */
+.index-ruling {
+  background-image: repeating-linear-gradient(
+    transparent,
+    transparent 26px,
+    var(--ruling) 26px,
+    var(--ruling) 27px
+  );
+}
