@@ -3,10 +3,13 @@
 // survives tab switches (see wizardState.ts for the decision note).
 import { useEffect, useMemo, useReducer } from 'react';
 import { store, useStore } from '../../data/store';
+import { generate } from '../../logic/generate';
 import type { Candidate } from '../../logic/generate';
+import type { CatConfig } from '../../data/types';
 import { WizardHeader } from './wizardUi';
 import { BooksStep } from './BooksStep';
-import { loadWizard, saveWizard, wizardReducer } from './wizardState';
+import { CategoriesStep } from './CategoriesStep';
+import { cfgFor, loadWizard, saveWizard, wizardReducer } from './wizardState';
 
 export function GenerateTab() {
   const [state, dispatch] = useReducer(wizardReducer, undefined, loadWizard);
@@ -40,6 +43,22 @@ export function GenerateTab() {
     return `${rs.length.toLocaleString('en-US')} recipes · ${made} made`;
   };
 
+  // cfg in category display order — generate() iterates config entries, so
+  // this fixes result-group order to match the step-2 rows (prototype CATS).
+  const orderedCfg = (): Record<string, CatConfig> => {
+    const out: Record<string, CatConfig> = {};
+    for (const c of store.categories) {
+      const k = cfgFor(state.cfg, c.name);
+      if (k.count > 0 || k.pills.length > 0) out[c.name] = k;
+    }
+    return out;
+  };
+
+  const onGenerate = () => {
+    const groups = generate(candidates, books, state.sel, orderedCfg(), store.settings.preferUnmade);
+    dispatch({ type: 'setGroups', groups });
+  };
+
   return (
     <main style={{ padding: '20px 16px 96px' }}>
       <WizardHeader step={state.step} />
@@ -53,7 +72,17 @@ export function GenerateTab() {
           dispatch={dispatch}
         />
       )}
-      {state.step >= 2 && <p className="meta">Steps 2–4 land in Tasks 15–17.</p>}
+      {state.step === 2 && (
+        <CategoriesStep
+          state={state}
+          categories={store.categories}
+          candidates={candidates}
+          books={books}
+          onGenerate={onGenerate}
+          dispatch={dispatch}
+        />
+      )}
+      {state.step >= 3 && <p className="meta">Steps 3–4 land in Tasks 16–17.</p>}
     </main>
   );
 }
