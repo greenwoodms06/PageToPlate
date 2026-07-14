@@ -44,6 +44,12 @@ function parseRoute(hash: string): Route {
 // concurrent init() calls would double-seed. One promise, however many mounts.
 let initPromise: Promise<void> | null = null;
 
+// DEV-only escape hatch for Playwright/manual console assertions against live
+// state (e.g. "recipe X is status excluded"). Compile-time false in prod.
+if (import.meta.env.DEV && typeof window !== 'undefined') {
+  (window as unknown as { __store?: typeof store }).__store = store;
+}
+
 export default function App() {
   const [ready, setReady] = useState(false);
   const theme = useStore((s) => s.settings.theme);

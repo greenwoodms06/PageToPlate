@@ -1,7 +1,102 @@
-// Placeholder (Task 12) — the Generate wizard (BooksStep, CategoriesStep,
-// ResultsStep, PlanCreated) lands in Tasks 14–17.
-import { GearLink, PlaceholderScreen } from '../Placeholder';
+// Generate wizard — the hero flow (plan Milestone D, Tasks 14–17).
+// Session state lives in a reducer here, mirrored to a module singleton so it
+// survives tab switches (see wizardState.ts for the decision note).
+import { useEffect, useMemo, useReducer } from 'react';
+import { store, useStore } from '../../data/store';
+import type { Candidate } from '../../logic/generate';
+import { WizardHeader } from './wizardUi';
+import { BooksStep } from './BooksStep';
+import { loadWizard, saveWizard, wizardReducer } from './wizardState';
 
 export function GenerateTab() {
-  return <PlaceholderScreen title="Generate" stub="The Generate wizard lands in Tasks 14–17." action={<GearLink />} />;
+  const [state, dispatch] = useReducer(wizardReducer, undefined, loadWizard);
+  useEffect(() => saveWizard(state), [state]);
+
+  const version = useStore((s) => s.version); // re-render on any store change
+
+  // Candidates = recipes joined with made stats — the shape generate()/
+  // availability() consume. The store mutates in place, so its change counter
+  // (`version`) is the real dependency; `void version` makes that legible to
+  // exhaustive-deps.
+  const candidates = useMemo<Candidate[]>(() => {
+    void version;
+    return store.recipes.map((r) => ({
+      ...r,
+      madeCount: store.madeCountFor(r.id),
+      lastMade: store.lastMadeFor(r.id),
+    }));
+  }, [version]);
+
+  const books = useMemo(() => {
+    void version;
+    return store.books.filter((b) => !b.archived);
+  }, [version]);
+  const hasOpenPlans = store.plans.some((p) => p.items.some((i) => i.state === 'open'));
+
+  // "312 recipes · 41 made" — made counts distinct recipes cooked ≥1×.
+  const bookMeta = (id: string) => {
+    const rs = candidates.filter((r) => r.bookId === id);
+    const made = rs.filter((r) => r.madeCount > 0).length;
+    return `${rs.length.toLocaleString('en-US')} recipes · ${made} made`;
+  };
+
+  return (
+    <main style={{ padding: '20px 16px 96px' }}>
+      <WizardHeader step={state.step} />
+      {state.step === 1 && hasOpenPlans && <OpenPlansBanner />}
+      {state.step === 1 && (
+        <BooksStep
+          books={books}
+          sel={state.sel}
+          presets={store.presets}
+          bookMeta={bookMeta}
+          dispatch={dispatch}
+        />
+      )}
+      {state.step >= 2 && <p className="meta">Steps 2–4 land in Tasks 15–17.</p>}
+    </main>
+  );
+}
+
+// "Plan status not yet updated · Plans →" (canvas 2a): shown while any plan
+// still has open items — a nudge to go mark things made or dismissed.
+function OpenPlansBanner() {
+  return (
+    <div
+      style={{
+        background: 'var(--card)',
+        border: '1px solid var(--line)',
+        borderRadius: 'var(--r-card)',
+        padding: '10px 14px',
+        marginBottom: 14,
+        display: 'flex',
+        alignItems: 'center',
+        gap: 10,
+      }}
+    >
+      <span
+        style={{
+          fontSize: 13,
+          flex: 1,
+          whiteSpace: 'nowrap',
+          overflow: 'hidden',
+          textOverflow: 'ellipsis',
+        }}
+      >
+        <b>Plan status</b> not yet updated
+      </span>
+      <a
+        href="#/plans"
+        style={{
+          fontSize: 13,
+          fontWeight: 700,
+          color: 'var(--accent)',
+          whiteSpace: 'nowrap',
+          textDecoration: 'none',
+        }}
+      >
+        Plans →
+      </a>
+    </div>
+  );
 }

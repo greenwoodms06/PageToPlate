@@ -45,6 +45,7 @@ export function DevGallery() {
   const [segment, setSegment] = useState('List');
   const [sheetOpen, setSheetOpen] = useState(false);
   const [dialogOpen, setDialogOpen] = useState(false);
+  const [seedMsg, setSeedMsg] = useState('');
 
   return (
     <main style={{ padding: '18px 16px 40px' }}>
@@ -194,6 +195,42 @@ export function DevGallery() {
           </button>
         </div>
       </Section>
+
+      {/* Dev-only demo seeding (plan Demo Checkpoint 1). import.meta.env.DEV
+          is compile-time false in prod builds, so this block — and with it the
+          dynamic import of devSeed.ts and the ATK CSV — is dead-code-eliminated
+          from production bundles (verified by grepping dist/ after build). */}
+      {import.meta.env.DEV && (
+        <Section title="Dev data (DEV builds only)">
+          <div style={{ display: 'flex', gap: 10 }}>
+            <button
+              data-testid="seed-atk"
+              onClick={async () => {
+                const { seedAtk } = await import('./devSeed');
+                setSeedMsg(await seedAtk());
+              }}
+              style={openerStyle}
+            >
+              Seed ATK book
+            </button>
+            <button
+              data-testid="seed-demo"
+              onClick={async () => {
+                const { seedDemoBooks } = await import('./devSeed');
+                setSeedMsg(await seedDemoBooks());
+              }}
+              style={openerStyle}
+            >
+              Seed 2 demo books
+            </button>
+          </div>
+          {seedMsg && (
+            <p className="meta" data-testid="seed-result" style={{ marginTop: 8 }}>
+              {seedMsg}
+            </p>
+          )}
+        </Section>
+      )}
 
       <Sheet open={sheetOpen} onClose={() => setSheetOpen(false)} label="Demo sheet">
         <div className="screen-title" style={{ fontSize: 20 }}>Sheet title</div>
