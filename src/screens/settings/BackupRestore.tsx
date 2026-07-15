@@ -12,6 +12,20 @@ import { WarningNote } from '../../components/WarningNote';
 import { daysSince } from './SettingsHome';
 import { Card, SettingsHeader, ToggleRow } from './settingsUi';
 
+/** Anchor-click download — the share-unavailable/share-broken fallback. */
+function downloadFile(blob: Blob, filename: string): void {
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  // Delayed revoke: Chromium starts the download synchronously, but
+  // Firefox can still be reading the blob URL right after click().
+  setTimeout(() => URL.revokeObjectURL(url), 30_000);
+}
+
 export function BackupRestore() {
   const settings = useStore((s) => s.settings);
   const showToast = useToast();
@@ -24,27 +38,27 @@ export function BackupRestore() {
     try {
       const { blob, filename } = await exportBackup(store);
       const file = new File([blob], filename, { type: blob.type });
-      // Both paths shipped: the share sheet is the phone-friendly route
-      // (Android PWA), the anchor download covers desktop and any browser
-      // where files aren't shareable (canShare is feature + payload check).
+      // Share FIRST on every device (round-1 amendment 6): the phone share
+      // sheet (Drive/Files/messaging) is where a backup actually gets OFF the
+      // device; the anchor download is the fallback only — when files aren't
+      // shareable (canShare is feature + payload check; desktop Chromium on
+      // Linux lacks files-share entirely, which is why the E2E keeps
+      // asserting the download path) or when share() itself breaks.
       if (navigator.canShare?.({ files: [file] })) {
         try {
           await navigator.share({ files: [file], title: 'PageToPlate backup' });
-        } catch {
-          // User dismissed the share sheet. The backup itself already
-          // succeeded (lastBackupAt/counter were reset by exportBackup).
+        } catch (err) {
+          // AbortError = the user closed the share sheet — they changed
+          // their mind. No fallback download, no error toast, and no
+          // "exported" toast either. (exportBackup already reset
+          // lastBackupAt/changesSinceBackup; the file just wasn't sent
+          // anywhere, which is exactly what the user asked for.)
+          if ((err as DOMException).name === 'AbortError') return;
+          // Any OTHER share failure must still deliver the file.
+          downloadFile(blob, filename);
         }
       } else {
-        const url = URL.createObjectURL(blob);
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = filename;
-        document.body.appendChild(a);
-        a.click();
-        a.remove();
-        // Delayed revoke: Chromium starts the download synchronously, but
-        // Firefox can still be reading the blob URL right after click().
-        setTimeout(() => URL.revokeObjectURL(url), 30_000);
+        downloadFile(blob, filename);
       }
       showToast('Backup exported');
     } catch (e) {

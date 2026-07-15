@@ -277,8 +277,14 @@ export function BrowseTab() {
         <GhostInput onAdd={(text) => setPills(addPill(pills, text))} />
       </div>
 
-      {/* Collapsible dropdowns. Opening one closes the other. */}
-      <div style={{ display: 'flex', gap: 8, marginBottom: 8 }}>
+      {/* Collapsible dropdowns. Opening one closes the others. Rating sits
+          HERE, not in the status row (round-1 amendment 5): it behaves like
+          Books/Categories (a dropdown panel, not a toggle), so it lives with
+          them. Three chips can outgrow the column once labels lengthen
+          ("Categories: 3 selected"), so the row scrolls horizontally instead
+          of wrapping — useSwipeTabs detects that via scrollWidth and keeps a
+          scroll-flick on this row from switching tabs. */}
+      <div data-testid="filter-drop-row" style={{ display: 'flex', gap: 8, marginBottom: 8, overflowX: 'auto' }}>
         <DropBtn
           label={booksLabel}
           active={bookSel.length > 0}
@@ -290,6 +296,12 @@ export function BrowseTab() {
           active={catSel.length > 0}
           open={openPanel === 'cats'}
           onClick={() => setOpenPanel(openPanel === 'cats' ? null : 'cats')}
+        />
+        <DropBtn
+          label={effRating ? ratingChipLabel(effRating) : '★ Rating'}
+          active={effRating !== null}
+          open={openPanel === 'rating'}
+          onClick={() => setOpenPanel(openPanel === 'rating' ? null : 'rating')}
         />
       </div>
 
@@ -330,53 +342,6 @@ export function BrowseTab() {
           })}
         </DashPanel>
       )}
-
-      {/* Status chips — multi-toggleable, AND semantics — plus the rating
-          dropdown chip (amendment 2: value + mode instead of fixed ★ 8+). */}
-      <div style={{ display: 'flex', gap: 7, flexWrap: 'wrap', marginBottom: 12 }}>
-        {STATUS_CHIPS.map((c) => {
-          const on = statusSel.has(c.key);
-          return (
-            <button
-              key={c.key}
-              aria-pressed={on}
-              onClick={() => {
-                const next = new Set(statusSel);
-                if (on) next.delete(c.key);
-                else next.add(c.key);
-                setStatusSel(next);
-              }}
-              style={{
-                border: `1.5px solid ${on ? 'var(--accent)' : 'var(--line)'}`,
-                background: on ? 'var(--accent-tint)' : 'var(--card)',
-                borderRadius: 'var(--r-pill)',
-                padding: '7px 13px',
-                fontSize: 12.5,
-                fontWeight: on ? 700 : 600,
-                color: on ? 'var(--accent)' : 'var(--ink-soft)',
-              }}
-            >
-              {c.label}
-            </button>
-          );
-        })}
-        <button
-          aria-expanded={openPanel === 'rating'}
-          onClick={() => setOpenPanel(openPanel === 'rating' ? null : 'rating')}
-          style={{
-            border: `1.5px solid ${effRating ? 'var(--accent)' : 'var(--line)'}`,
-            background: effRating ? 'var(--accent-tint)' : 'var(--card)',
-            borderRadius: 'var(--r-pill)',
-            padding: '7px 13px',
-            fontSize: 12.5,
-            fontWeight: effRating ? 700 : 600,
-            color: effRating ? 'var(--accent)' : 'var(--ink-soft)',
-          }}
-        >
-          {effRating ? ratingChipLabel(effRating) : '★ Rating'} ▾
-        </button>
-      </div>
-
       {openPanel === 'rating' && (
         <DashPanel>
           <div style={{ width: '100%', display: 'flex', gap: 5, flexWrap: 'wrap' }}>
@@ -430,6 +395,37 @@ export function BrowseTab() {
           </button>
         </DashPanel>
       )}
+
+      {/* Status chips — multi-toggleable, AND semantics. Status ONLY since
+          round-1 amendment 5 moved the rating chip up to the dropdown row. */}
+      <div style={{ display: 'flex', gap: 7, flexWrap: 'wrap', marginBottom: 12 }}>
+        {STATUS_CHIPS.map((c) => {
+          const on = statusSel.has(c.key);
+          return (
+            <button
+              key={c.key}
+              aria-pressed={on}
+              onClick={() => {
+                const next = new Set(statusSel);
+                if (on) next.delete(c.key);
+                else next.add(c.key);
+                setStatusSel(next);
+              }}
+              style={{
+                border: `1.5px solid ${on ? 'var(--accent)' : 'var(--line)'}`,
+                background: on ? 'var(--accent-tint)' : 'var(--card)',
+                borderRadius: 'var(--r-pill)',
+                padding: '7px 13px',
+                fontSize: 12.5,
+                fontWeight: on ? 700 : 600,
+                color: on ? 'var(--accent)' : 'var(--ink-soft)',
+              }}
+            >
+              {c.label}
+            </button>
+          );
+        })}
+      </div>
 
       <div data-testid="result-count" style={{ fontSize: 12, color: 'var(--ink-soft)', marginBottom: 8 }}>
         {count.toLocaleString('en-US')} recipe{count === 1 ? '' : 's'}
@@ -494,8 +490,12 @@ function DropBtn({ label, active, open, onClick }: { label: string; active: bool
       onClick={onClick}
       aria-expanded={open}
       style={{
-        flex: 1,
+        // 1 0 auto + nowrap: chips grow to share the row but never squash
+        // their labels — overflow makes the row scroll (see row note above).
+        flex: '1 0 auto',
+        whiteSpace: 'nowrap',
         minHeight: 40,
+        padding: '0 12px',
         border: `1.5px solid ${active ? 'var(--accent)' : 'var(--line)'}`,
         background: active ? 'var(--accent-tint)' : 'var(--card)',
         borderRadius: 'var(--r-pill)',
