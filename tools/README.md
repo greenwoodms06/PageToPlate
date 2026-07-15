@@ -104,7 +104,7 @@ with unmapped categories, and creates/replaces the pack's entry in
   "title": "The Complete America's Test Kitchen TV Show Cookbook 2001–2025",
   "author": "America's Test Kitchen", "year": 2025, "country": "US",
   "cuisines": ["american"], "era": "modern", "type": "index-only",
-  "recipeCount": 1645, "categories": ["Mains", "Desserts", "..."],
+  "recipeCount": 1635, "categories": ["Mains", "Desserts", "..."],
   "file": "packs/atk-complete.json",   // relative to the app's BASE_URL
   "version": 1
 }]}
