@@ -63,7 +63,8 @@ export function RecipeCardSheet({ recipeId, onClose }: { recipeId: string; onClo
 
   const [editingTitle, setEditingTitle] = useState(false);
   const [editingPage, setEditingPage] = useState(false);
-  const [chooser, setChooser] = useState<'book' | 'category' | null>(null);
+  const [catChooser, setCatChooser] = useState(false);
+  const [moveDialog, setMoveDialog] = useState(false);
   const [madeDialog, setMadeDialog] = useState<{ madeEntryId?: string } | null>(null);
   const [addToPlan, setAddToPlan] = useState(false);
   const [confirmDelete, setConfirmDelete] = useState<MadeEntry | null>(null);
@@ -112,6 +113,18 @@ export function RecipeCardSheet({ recipeId, onClose }: { recipeId: string; onClo
     [recipeId],
   );
 
+  // ── recipe notes (round-1 amendment 1): same commit-on-blur + unmount-flush
+  // pattern as the custom text above — never per-keystroke (each keystroke
+  // would be an IDB write + changesSinceBackup bump + full re-render) ──
+  const notesRef = useRef<{ value: string; dirty: boolean }>({ value: recipe?.notes ?? '', dirty: false });
+  useEffect(
+    () => () => {
+      if (notesRef.current.dirty && store.recipes.some((r) => r.id === recipeId))
+        void store.updateRecipe(recipeId, { notes: notesRef.current.value });
+    },
+    [recipeId],
+  );
+
   // Recipe deleted while the sheet is open (e.g. undo of an import) — nothing
   // to show; the empty sheet still closes normally.
   if (!recipe) return null;
@@ -137,7 +150,7 @@ export function RecipeCardSheet({ recipeId, onClose }: { recipeId: string; onClo
   };
 
   const moveToBook = (bookId: string) => {
-    setChooser(null);
+    setMoveDialog(false);
     if (bookId === recipe.bookId) return;
     const prior = recipe.bookId;
     void store.updateRecipe(recipe.id, { bookId });
@@ -147,7 +160,7 @@ export function RecipeCardSheet({ recipeId, onClose }: { recipeId: string; onClo
   };
 
   const setCategory = (category: string) => {
-    setChooser(null);
+    setCatChooser(false);
     if (category === recipe.category) return;
     const prior = recipe.category;
     void store.updateRecipe(recipe.id, { category });
@@ -223,6 +236,14 @@ export function RecipeCardSheet({ recipeId, onClose }: { recipeId: string; onClo
     const prior = recipe.text;
     void store.updateRecipe(recipe.id, { text: value });
     showToast('Recipe text saved', () => void store.updateRecipe(recipe.id, { text: prior }));
+  };
+
+  const commitNotes = (value: string) => {
+    notesRef.current.dirty = false;
+    if (value === (recipe.notes ?? '')) return;
+    const prior = recipe.notes;
+    void store.updateRecipe(recipe.id, { notes: value });
+    showToast('Notes saved', () => void store.updateRecipe(recipe.id, { notes: prior }));
   };
 
   const entries = store.madeEntries
@@ -303,20 +324,19 @@ export function RecipeCardSheet({ recipeId, onClose }: { recipeId: string; onClo
           </div>
         )}
 
-        {/* Book / category / page pill selectors. */}
+        {/* Book / category / page pill selectors. The book pill opens the
+            Move-to-book DIALOG (round-1 amendment 2): the old inline chip
+            panel read as a tap-to-select toggle and the owner found it
+            confusing — moving a recipe is now an explicit, named action. */}
         <div style={{ display: 'flex', gap: 7, flexWrap: 'wrap', marginTop: 8 }}>
-          <button
-            style={selectorPill}
-            aria-expanded={chooser === 'book'}
-            onClick={() => setChooser(chooser === 'book' ? null : 'book')}
-          >
+          <button style={selectorPill} aria-haspopup="dialog" onClick={() => setMoveDialog(true)}>
             {swatch}
             {book?.name ?? 'Unknown book'} ▾
           </button>
           <button
             style={selectorPill}
-            aria-expanded={chooser === 'category'}
-            onClick={() => setChooser(chooser === 'category' ? null : 'category')}
+            aria-expanded={catChooser}
+            onClick={() => setCatChooser(!catChooser)}
           >
             {recipe.category} ▾
           </button>
@@ -342,20 +362,7 @@ export function RecipeCardSheet({ recipeId, onClose }: { recipeId: string; onClo
           )}
         </div>
 
-        {chooser === 'book' && (
-          <ChooserPanel>
-            {store.books.map((b) => (
-              <ChooserChip
-                key={b.id}
-                label={b.name}
-                current={b.id === recipe.bookId}
-                swatch
-                onClick={() => moveToBook(b.id)}
-              />
-            ))}
-          </ChooserPanel>
-        )}
-        {chooser === 'category' && (
+        {catChooser && (
           <ChooserPanel>
             {[
               ...store.categories.map((c) => c.name),
@@ -500,6 +507,27 @@ export function RecipeCardSheet({ recipeId, onClose }: { recipeId: string; onClo
           </div>
         )}
 
+        <div style={sectionLabel}>Notes</div>
+        <textarea
+          defaultValue={recipe.notes ?? ''}
+          aria-label="Recipe notes"
+          placeholder="Your notes about this recipe…"
+          rows={3}
+          onChange={(e) => {
+            notesRef.current = { value: e.target.value, dirty: true };
+          }}
+          onBlur={(e) => commitNotes(e.target.value)}
+          style={{
+            width: '100%',
+            border: '1.5px solid var(--line)',
+            background: 'var(--paper)',
+            borderRadius: 'var(--r-inner)',
+            padding: '10px 12px',
+            fontSize: 13.5,
+            resize: 'vertical',
+          }}
+        />
+
         <div style={sectionLabel}>History</div>
         {entries.length === 0 && <div className="meta">Not made yet.</div>}
         {entries.map((e, i) => (
@@ -615,6 +643,62 @@ export function RecipeCardSheet({ recipeId, onClose }: { recipeId: string; onClo
         <MarkAsMadeDialog recipeId={recipeId} madeEntryId={madeDialog.madeEntryId} onClose={() => setMadeDialog(null)} />
       )}
       {addToPlan && <AddToPlanDialog recipeId={recipeId} onClose={() => setAddToPlan(false)} />}
+      {moveDialog && (
+        <Dialog open onClose={() => setMoveDialog(false)} label="Move to book">
+          <div style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: 18, marginBottom: 10 }}>
+            Move to book…
+          </div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 6, maxHeight: '50dvh', overflowY: 'auto' }}>
+            {/* Archived books are hidden here, matching generation: a shelf
+                you've put away shouldn't collect new recipes. */}
+            {store.books
+              .filter((b) => !b.archived)
+              .map((b) => {
+                const current = b.id === recipe.bookId;
+                return (
+                  <button
+                    key={b.id}
+                    disabled={current}
+                    onClick={() => moveToBook(b.id)}
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: 9,
+                      textAlign: 'left',
+                      border: `1.5px solid ${current ? 'var(--accent)' : 'var(--line)'}`,
+                      background: current ? 'var(--accent-tint)' : 'var(--card)',
+                      color: current ? 'var(--accent)' : 'var(--ink)',
+                      borderRadius: 'var(--r-inner)',
+                      padding: '10px 12px',
+                      fontSize: 13.5,
+                      fontWeight: 600,
+                    }}
+                  >
+                    <i
+                      aria-hidden
+                      style={{
+                        width: 11,
+                        height: 16,
+                        borderRadius: 2,
+                        background: 'var(--neutral-spine)',
+                        boxShadow: 'inset -2px 0 0 rgba(0,0,0,.18)',
+                        flex: 'none',
+                      }}
+                    />
+                    <span style={{ flex: 1, minWidth: 0 }}>{b.name}</span>
+                    {current && <span style={{ fontSize: 11.5, fontWeight: 700, flex: 'none' }}>current ✓</span>}
+                  </button>
+                );
+              })}
+          </div>
+          <button
+            onClick={() => setMoveDialog(false)}
+            style={{ width: '100%', minHeight: 44, fontSize: 14, fontWeight: 600, color: 'var(--ink-soft)', marginTop: 8 }}
+          >
+            Cancel
+          </button>
+        </Dialog>
+      )}
       {confirmDelete && (
         <Dialog open onClose={() => setConfirmDelete(null)} label="Delete history entry">
           <div style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: 18, marginBottom: 6 }}>
@@ -699,12 +783,10 @@ function ChooserPanel({ children }: { children: ReactNode }) {
 function ChooserChip({
   label,
   current,
-  swatch = false,
   onClick,
 }: {
   label: string;
   current: boolean;
-  swatch?: boolean;
   onClick: () => void;
 }) {
   return (
@@ -724,19 +806,6 @@ function ChooserChip({
         gap: 6,
       }}
     >
-      {swatch && (
-        <i
-          aria-hidden
-          style={{
-            width: 11,
-            height: 16,
-            borderRadius: 2,
-            background: 'var(--neutral-spine)',
-            boxShadow: 'inset -2px 0 0 rgba(0,0,0,.18)',
-            flex: 'none',
-          }}
-        />
-      )}
       {label}
       {current ? ' ✓' : ''}
     </button>

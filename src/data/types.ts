@@ -8,6 +8,9 @@ export interface Recipe {
   category: string; tags: string[];
   status: 'active' | 'excluded';
   isCustom: boolean; text?: string;
+  /** Recipe-level notes (round-1 amendment 1) — distinct from per-MadeEntry
+   * notes: "always halve the salt" belongs to the recipe, not to one cook. */
+  notes?: string;
   attachmentIds: string[];
   link?: { url: string; pageStatus: PageStatus };
   createdAt: string;

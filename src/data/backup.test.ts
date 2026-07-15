@@ -69,7 +69,8 @@ async function initStore(): Promise<Store> {
 async function seed(store: Store): Promise<void> {
   await store.addBook(makeBook('b1'));
   await store.addRecipes([
-    makeRecipe('r1', 'b1'),
+    // Recipe-level notes (round-1 amendment 1) ride whole-recipe serialization.
+    makeRecipe('r1', 'b1', { notes: 'Halve the salt; owner prefers thigh meat.' }),
     makeRecipe('r2', 'b1', { name: 'Beef Bourguignon', page: '90', status: 'excluded' }),
   ]);
   await store.addMadeEntry(makeMade('m1', 'r1', '2026-07-01', { rating: 8, notes: 'great' }));
@@ -155,6 +156,10 @@ describe('restoreBackup (JSON round trip)', () => {
 
     expectMatches(store, expected);
     expect(store.books.some((b) => b.id === 'junk')).toBe(false);
+    // Recipe notes survive the round trip (round-1 amendment 1) — pinned
+    // explicitly, not just via toEqual, so this fails loudly if notes are
+    // ever split out of whole-recipe serialization.
+    expect(store.recipes.find((r) => r.id === 'r1')?.notes).toBe('Halve the salt; owner prefers thigh meat.');
 
     // And it actually hit IndexedDB — a fresh Store sees the restored state.
     const fresh = await initStore();
