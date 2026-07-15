@@ -40,6 +40,13 @@ Conventional calls (stated, not open): hash-based routing (`HashRouter`), dark m
 4. **Regenerate covers "never" cards too** — owner: regenerate should replace both rejected AND never'd cards (supersedes spec/prototype rejected-only). Never'd recipes stay `excluded` (undo via toast/Browse); their cards are replaced on regenerate. Footer button appears when rejected+never > 0, label "↻ Regenerate N". `regenerate()` logic + tests updated accordingly.
 5. **Bug fix:** rejected-state button contrast (owner saw gray fill with unreadable text) — add dark `--rejected-fill` + correct text token in both themes.
 
+## Checkpoint 2 amendments (owner, 2026-07-15, after full-app demo)
+
+1. **License: MIT** (add LICENSE file; About screen references it).
+2. **Flexible rating filter in Browse** — replace the fixed "★ 8+" chip with a dropdown: star value + mode (and above / exactly / and below) + clear.
+3. **Rating display scale setting** — `settings.ratingScale: 5 | 10`, default 10. Storage stays canonical 1–10 forever; 5-scale is display-only binning (1–2→1, 3–4→2, 5–6→3, 7–8→4, 9–10→5; input on 5-scale stores ×2). Switching never mutates data. 1–100 / fully-custom scales considered and rejected (false precision, UI + complexity cost); the canonical 1–10 storage leaves room to add display options later without migration.
+4. **Polish:** Generate step 1 empty state with zero books says "No books yet — add one in Books", not `No books match ""`.
+
 ## File structure
 
 ```
