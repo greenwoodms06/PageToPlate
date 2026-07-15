@@ -4,7 +4,7 @@
 // download otherwise), Restore card with explicit replace-not-merge copy and
 // a confirm dialog, the 30-day reminder toggle, and persistent-storage status.
 import { useRef, useState } from 'react';
-import { exportBackup, restoreBackup } from '../../data/backup';
+import { exportBackup, markBackedUp, restoreBackup } from '../../data/backup';
 import { store, useStore } from '../../data/store';
 import { Dialog } from '../../components/Dialog';
 import { useToast } from '../../components/Toast';
@@ -36,7 +36,7 @@ export function BackupRestore() {
   const doExport = async () => {
     setBusy(true);
     try {
-      const { blob, filename } = await exportBackup(store);
+      const { blob, filename, exportedAt } = await exportBackup(store);
       const file = new File([blob], filename, { type: blob.type });
       // Share FIRST on every device (round-1 amendment 6): the phone share
       // sheet (Drive/Files/messaging) is where a backup actually gets OFF the
@@ -49,10 +49,9 @@ export function BackupRestore() {
           await navigator.share({ files: [file], title: 'PageToPlate backup' });
         } catch (err) {
           // AbortError = the user closed the share sheet — they changed
-          // their mind. No fallback download, no error toast, and no
-          // "exported" toast either. (exportBackup already reset
-          // lastBackupAt/changesSinceBackup; the file just wasn't sent
-          // anywhere, which is exactly what the user asked for.)
+          // their mind. No fallback download, no toast, and CRUCIALLY no
+          // markBackedUp: the file went nowhere, the backup nudge must
+          // keep counting.
           if ((err as DOMException).name === 'AbortError') return;
           // Any OTHER share failure must still deliver the file.
           downloadFile(blob, filename);
@@ -60,6 +59,9 @@ export function BackupRestore() {
       } else {
         downloadFile(blob, filename);
       }
+      // Only now — after the file was shared or handed to the browser's
+      // download — does the backup count as done.
+      await markBackedUp(store, exportedAt);
       showToast('Backup exported');
     } catch (e) {
       showToast(`Export failed: ${(e as Error).message}`);

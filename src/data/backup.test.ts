@@ -10,7 +10,7 @@ import { beforeEach, describe, expect, it } from 'vitest';
 import { strFromU8, unzipSync } from 'fflate';
 import { Store } from './store';
 import { clearAll } from './db';
-import { exportBackup, restoreBackup } from './backup';
+import { exportBackup, markBackedUp, restoreBackup } from './backup';
 import { todayISO } from './types';
 import type { Cookbook, MadeEntry, Plan, Preset, Recipe } from './types';
 
@@ -128,14 +128,26 @@ describe('exportBackup (no attachments → plain JSON)', () => {
     expect(payload.settings.theme).toBe('dark');
   });
 
-  it('marks the backup done: lastBackupAt set, changesSinceBackup reset to 0', async () => {
+  it('export alone does NOT mark backed up (a cancelled share must keep the nudge)', async () => {
     const store = await initStore();
     await seed(store);
-    expect(store.settings.changesSinceBackup).toBeGreaterThan(0);
+    const changesBefore = store.settings.changesSinceBackup;
+    expect(changesBefore).toBeGreaterThan(0);
 
     await exportBackup(store);
 
-    expect(store.settings.lastBackupAt).toBeTruthy();
+    expect(store.settings.lastBackupAt).toBeUndefined();
+    expect(store.settings.changesSinceBackup).toBe(changesBefore);
+  });
+
+  it('markBackedUp sets lastBackupAt and resets changesSinceBackup', async () => {
+    const store = await initStore();
+    await seed(store);
+
+    const { exportedAt } = await exportBackup(store);
+    await markBackedUp(store, exportedAt);
+
+    expect(store.settings.lastBackupAt).toBe(exportedAt);
     expect(store.settings.changesSinceBackup).toBe(0);
   });
 });
@@ -145,8 +157,9 @@ describe('restoreBackup (JSON round trip)', () => {
     const store = await initStore();
     await seed(store);
 
-    const { blob } = await exportBackup(store);
-    const expected = snapshot(store); // post-export: lastBackupAt set, counter 0
+    const { blob, exportedAt } = await exportBackup(store);
+    await markBackedUp(store, exportedAt); // file "delivered" — restore compares against marked state
+    const expected = snapshot(store);
 
     // Pollute: data added after the backup must vanish on restore.
     await store.addBook(makeBook('junk', 'Junk Book'));
@@ -214,7 +227,8 @@ describe('backup with attachments (zip round trip)', () => {
     });
     await store.updateRecipe('r1', { attachmentIds: ['a1'] });
 
-    const { blob } = await exportBackup(store);
+    const { blob, exportedAt } = await exportBackup(store);
+    await markBackedUp(store, exportedAt); // file "delivered" — restore compares against marked state
     const expected = snapshot(store);
 
     // Wipe attachment + pollute, then restore the zip.

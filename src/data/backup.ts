@@ -37,7 +37,7 @@ interface BackupPayload {
   attachments: { id: string; name: string; type: string }[];
 }
 
-export async function exportBackup(store: Store): Promise<{ blob: Blob; filename: string }> {
+export async function exportBackup(store: Store): Promise<{ blob: Blob; filename: string; exportedAt: string }> {
   const attachments = await store.allAttachments();
   const now = new Date().toISOString();
   // The backup snapshots POST-backup settings (lastBackupAt = now, counter 0):
@@ -72,8 +72,16 @@ export async function exportBackup(store: Store): Promise<{ blob: Blob; filename
     filename = `pagetoplate-backup-${date}.zip`;
   }
 
-  await store.updateSettings({ lastBackupAt: now, changesSinceBackup: 0 });
-  return { blob, filename };
+  // Deliberately NO bookkeeping reset here: the caller marks the backup done
+  // only after the file actually left the device (share completed or download
+  // triggered). A share sheet the user cancels must NOT silence the backup
+  // nudge — the file went nowhere. (Post-deploy round 1 follow-up.)
+  return { blob, filename, exportedAt: now };
+}
+
+/** Call after the exported file was actually delivered (shared or downloaded). */
+export async function markBackedUp(store: Store, exportedAt: string): Promise<void> {
+  await store.updateSettings({ lastBackupAt: exportedAt, changesSinceBackup: 0 });
 }
 
 export async function restoreBackup(store: Store, file: Blob): Promise<void> {
