@@ -142,5 +142,7 @@ test('core loop: import → generate → plan → made → browse → persist �
   await page.getByText('Export backup file').click();
   const download = await downloadPromise;
   // No photo attachments in this journey → plain JSON container.
-  expect(download.suggestedFilename()).toMatch(/^pagetoplate-backup-\d{4}-\d{2}-\d{2}\.json$/);
+  // .ptp.txt costume for the Chromium Web Share allowlist (P2P-005) —
+  // see the force-comment in src/data/backup.ts.
+  expect(download.suggestedFilename()).toMatch(/^pagetoplate-backup-\d{4}-\d{2}-\d{2}\.ptp\.txt$/);
 });

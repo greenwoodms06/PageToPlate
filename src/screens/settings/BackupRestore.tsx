@@ -175,7 +175,7 @@ export function BackupRestore() {
         <input
           ref={fileInput}
           type="file"
-          accept=".json,.zip,application/json,application/zip"
+          accept=".txt,.json,.zip,text/plain,application/json,application/zip"
           aria-label="Backup file"
           style={{ display: 'none' }}
           onChange={(e) => {

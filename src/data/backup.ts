@@ -58,18 +58,27 @@ export async function exportBackup(store: Store): Promise<{ blob: Blob; filename
   const json = JSON.stringify(payload);
   const date = todayISO();
 
+  // The file is named .ptp.txt and typed text/plain REGARDLESS of what it
+  // really is (JSON, or a zip when photos exist). Chromium's Web Share API
+  // only permits an allowlist of extensions — .json and .zip are both
+  // excluded, so canShare({files}) is false and Android users never get the
+  // share sheet (P2P-005; owner hit the same wall in a previous app).
+  // The costume is safe because restoreBackup identifies the format by
+  // CONTENT (PK magic bytes → zip, else JSON), never by extension or MIME —
+  // and old .json/.zip backups keep restoring forever. Same name on the
+  // download path too: one artifact, one identity (owner decision,
+  // 2026-07-15). Do not "clean this up" to honest extensions without
+  // re-verifying share on a real Android device.
+  const filename = `pagetoplate-backup-${date}.ptp.txt`;
   let blob: Blob;
-  let filename: string;
   if (attachments.length === 0) {
-    blob = new Blob([json], { type: 'application/json' });
-    filename = `pagetoplate-backup-${date}.json`;
+    blob = new Blob([json], { type: 'text/plain' });
   } else {
     const files: Record<string, Uint8Array> = { 'backup.json': strToU8(json) };
     for (const a of attachments) {
       files[`photos/${a.id}`] = new Uint8Array(await a.blob.arrayBuffer());
     }
-    blob = new Blob([zipSync(files) as Uint8Array<ArrayBuffer>], { type: 'application/zip' });
-    filename = `pagetoplate-backup-${date}.zip`;
+    blob = new Blob([zipSync(files) as Uint8Array<ArrayBuffer>], { type: 'text/plain' });
   }
 
   // Deliberately NO bookkeeping reset here: the caller marks the backup done

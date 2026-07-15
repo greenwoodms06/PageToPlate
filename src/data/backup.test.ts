@@ -116,7 +116,10 @@ describe('exportBackup (no attachments → plain JSON)', () => {
 
     const { blob, filename } = await exportBackup(store);
 
-    expect(filename).toBe(`pagetoplate-backup-${todayISO()}.json`);
+    // .ptp.txt costume: Chromium Web Share allowlist excludes .json/.zip
+    // (P2P-005) — see the force-comment in backup.ts before changing this.
+    expect(filename).toBe(`pagetoplate-backup-${todayISO()}.ptp.txt`);
+    expect(blob.type).toBe('text/plain');
     const payload = JSON.parse(strFromU8(new Uint8Array(await blob.arrayBuffer())));
     expect(payload.schemaVersion).toBe(1); // Rule 11: backups are versioned
     expect(payload.books).toHaveLength(1);
@@ -204,7 +207,8 @@ describe('backup with attachments (zip round trip)', () => {
 
     const { blob, filename } = await exportBackup(store);
 
-    expect(filename).toBe(`pagetoplate-backup-${todayISO()}.zip`);
+    // Zip content wearing the same .ptp.txt name — restore sniffs PK bytes.
+    expect(filename).toBe(`pagetoplate-backup-${todayISO()}.ptp.txt`);
     const bytes = new Uint8Array(await blob.arrayBuffer());
     expect(bytes[0]).toBe(0x50); // 'P'
     expect(bytes[1]).toBe(0x4b); // 'K'
