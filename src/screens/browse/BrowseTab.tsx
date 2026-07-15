@@ -344,7 +344,9 @@ export function BrowseTab() {
       )}
       {openPanel === 'rating' && (
         <DashPanel>
-          <div style={{ width: '100%', display: 'flex', gap: 5, flexWrap: 'wrap' }}>
+          {/* Plain numbers on one row, same grid as the Mark-as-made rating
+              section — "★ 1" labels made the 10-cell row wrap (owner, round 2). */}
+          <div style={{ width: '100%', display: 'grid', gridTemplateColumns: `repeat(${scale}, 1fr)`, gap: 5 }}>
             {Array.from({ length: scale }, (_, i) => i + 1).map((n) => {
               const on = ratingDraft.value === n;
               return (
@@ -353,9 +355,7 @@ export function BrowseTab() {
                   aria-pressed={on && effRating !== null}
                   onClick={() => setRatingSel({ ...ratingDraft, value: n })}
                   style={{
-                    minWidth: 40,
                     minHeight: 40,
-                    flex: '1 0 auto',
                     border: on ? 'none' : '1.5px solid var(--line)',
                     background: on ? 'var(--accent)' : 'var(--card)',
                     color: on ? 'var(--on-accent)' : 'var(--ink-mid)',
@@ -364,7 +364,7 @@ export function BrowseTab() {
                     fontWeight: on ? 800 : 700,
                   }}
                 >
-                  ★ {n}
+                  {n}
                 </button>
               );
             })}
