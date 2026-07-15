@@ -200,7 +200,9 @@ export function BackupRestore() {
               flex: 1,
               minHeight: 44,
               background: 'var(--danger)',
-              color: '#fff',
+              // on-accent, not #fff: dark --danger brightens to #C97B63, which
+              // needs the same dark-ink flip as accent buttons (dark sweep, T27).
+              color: 'var(--on-accent)',
               borderRadius: 'var(--r-cta)',
               fontSize: 14,
               fontWeight: 700,

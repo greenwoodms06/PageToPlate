@@ -138,6 +138,9 @@ export function Switch({ on, onChange, label }: { on: boolean; onChange: (on: bo
           width: 22,
           height: 22,
           borderRadius: '50%',
+          // Theme-invariant (dark sweep, T27): a white switch knob reads on both
+          // tracks in both themes (accent #2D6A4F/#7FB89A on, dash off); the
+          // dark --card #2A2822 would vanish against the dark off-track.
           background: '#fff',
           transition: 'left .2s',
         }}
