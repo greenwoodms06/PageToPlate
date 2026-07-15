@@ -42,12 +42,15 @@ export function PlanCard({
   plan,
   onMarkMade,
   onEditEntry,
+  onOpenRecipe,
 }: {
   plan: Plan;
   /** Open the mark-as-made dialog for an open item (caller passes this plan's id). */
   onMarkMade: (recipeId: string) => void;
   /** Open the dialog in edit mode for a made item's entry. */
   onEditEntry: (recipeId: string, madeEntryId: string) => void;
+  /** Row body tap → universal recipe card (Task 22); action buttons keep their own handlers. */
+  onOpenRecipe: (recipeId: string) => void;
 }) {
   const showToast = useToast();
   const [expandedDone, setExpandedDone] = useState(false);
@@ -169,13 +172,21 @@ export function PlanCard({
               }}
             />
             <span style={{ flex: 1, minWidth: 0, fontSize: 14 }}>
-              <span style={{ textDecoration: dismissed ? 'line-through' : 'none' }}>
-                {recipe?.name ?? 'Removed recipe'}
-              </span>
-              <br />
-              <small style={{ color: 'var(--ink-soft)', fontSize: 11.5 }}>
-                {bookNameOf(recipe)} · p. {recipe?.page ?? '?'}
-              </small>
+              {/* Name + meta are the tap target for the universal recipe
+                  card; Made/Swap/Dismiss stay separate buttons (Task 22). */}
+              <button
+                onClick={() => recipe && onOpenRecipe(recipe.id)}
+                disabled={!recipe}
+                style={{ display: 'block', width: '100%', textAlign: 'left', fontSize: 14, cursor: recipe ? 'pointer' : 'default' }}
+              >
+                <span style={{ textDecoration: dismissed ? 'line-through' : 'none' }}>
+                  {recipe?.name ?? 'Removed recipe'}
+                </span>
+                <br />
+                <small style={{ color: 'var(--ink-soft)', fontSize: 11.5 }}>
+                  {bookNameOf(recipe)} · p. {recipe?.page ?? '?'}
+                </small>
+              </button>
               {item.state === 'open' && recipe && (
                 <span style={{ display: 'flex', gap: 16, marginTop: 2 }}>
                   <button

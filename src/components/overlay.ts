@@ -12,6 +12,26 @@ import { useEffect, useRef } from 'react';
 // overlay's listener; only the topmost may act.
 const stack: symbol[] = [];
 
+// Programmatic unwinds in flight. Found via Task 22 E2E: saving MarkAsMade
+// from inside RecipeCardSheet closed the SHEET too — the dialog's deferred
+// history.back() (unwinding its own entry after a programmatic close) fired
+// a popstate that the sheet, by then top of stack, read as a user back-press.
+// A programmatic unwind's popstate must be swallowed, not routed to the next
+// overlay. This listener is registered at module init, so it runs BEFORE any
+// overlay's listener (registration order) and tags the event; it also does
+// the bookkeeping when no overlay is open at all (the common single-overlay
+// case, where nothing else would decrement the counter).
+let pendingUnwinds = 0;
+type TaggedPop = PopStateEvent & { __overlayUnwind?: boolean };
+if (typeof window !== 'undefined') {
+  window.addEventListener('popstate', (ev: TaggedPop) => {
+    if (pendingUnwinds > 0) {
+      pendingUnwinds -= 1;
+      ev.__overlayUnwind = true;
+    }
+  });
+}
+
 /**
  * Wire back-button / Escape dismissal for an overlay.
  * Returns `requestClose` — call it for backdrop taps (and any explicit close
@@ -53,7 +73,8 @@ export function usePopstateClose(open: boolean, onClose: () => void): () => void
       if (i !== -1) stack.splice(i, 1);
     };
 
-    const onPop = () => {
+    const onPop = (ev: TaggedPop) => {
+      if (ev.__overlayUnwind) return; // programmatic unwind, not a user back press
       if (!isTop()) return; // a stacked overlay above us owns this back press
       drop();
       idRef.current = null; // entry already consumed by the browser
@@ -78,6 +99,7 @@ export function usePopstateClose(open: boolean, onClose: () => void): () => void
         idRef.current = null;
         unwindTimer.current = setTimeout(() => {
           unwindTimer.current = null;
+          pendingUnwinds += 1; // swallow the resulting popstate (see module note)
           history.back();
         }, 0);
       }

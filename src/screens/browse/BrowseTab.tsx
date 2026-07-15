@@ -15,8 +15,8 @@ import type { Pill as PillT, Recipe } from '../../data/types';
 import { addPill, recipeMatches, removePill, togglePill } from '../../logic/pills';
 import { Pill } from '../../components/Pill';
 import { RecipeRow, RowList } from '../../components/RecipeRow';
-import { useToast } from '../../components/Toast';
 import { spineColor } from '../../components/spine';
+import { RecipeCardSheet } from '../recipe/RecipeCardSheet';
 
 // Dropdown selections keep TAP ORDER, not a Set: the Nth *included* book gets
 // spine color N (canvas 2d shows session-order colors on selected book chips
@@ -57,7 +57,7 @@ export function BrowseTab() {
   const [catSel, setCatSel] = useState<SelEntry[]>([]);
   const [statusSel, setStatusSel] = useState<ReadonlySet<StatusKey>>(new Set());
   const [openPanel, setOpenPanel] = useState<'books' | 'cats' | null>(null);
-  const showToast = useToast(); // placeholder until the universal recipe card lands (Task 22)
+  const [openRecipeId, setOpenRecipeId] = useState<string | null>(null);
   const [limit, setLimit] = useState(PAGE);
 
   // New filter = new result set: window back to the top. Store edits (version
@@ -143,7 +143,7 @@ export function BrowseTab() {
               }
               rating={rating}
               dimmed={r.status === 'excluded'}
-              onClick={() => showToast('Opens the universal recipe card (Task 22)')}
+              onClick={() => setOpenRecipeId(r.id)}
             />
           );
         })}
@@ -316,6 +316,8 @@ export function BrowseTab() {
 
       {count === 0 ? <p className="meta">No recipes match — remove a filter or two.</p> : rows}
       {count > limit && <MoreSentinel onMore={() => setLimit((l) => l + PAGE_MORE)} />}
+
+      {openRecipeId && <RecipeCardSheet recipeId={openRecipeId} onClose={() => setOpenRecipeId(null)} />}
     </main>
   );
 }

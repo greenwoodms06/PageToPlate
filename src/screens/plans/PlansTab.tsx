@@ -7,6 +7,7 @@ import { store, useStore } from '../../data/store';
 import { todayISO } from '../../data/types';
 import { SegmentToggle } from '../../components/SegmentToggle';
 import { MarkAsMadeDialog } from '../recipe/MarkAsMadeDialog';
+import { RecipeCardSheet } from '../recipe/RecipeCardSheet';
 import { PlanCard } from './PlanCard';
 import { CalendarView } from './CalendarView';
 
@@ -16,6 +17,7 @@ export function PlansTab() {
   useStore((s) => s.version);
   const [view, setView] = useState('List');
   const [dialog, setDialog] = useState<DialogState | null>(null);
+  const [openRecipeId, setOpenRecipeId] = useState<string | null>(null);
 
   // Stat strip (canvas 2c): "14 made this year · 2 open plans · 7.4 avg rating".
   // Made counts ENTRIES this calendar year (cooking the same recipe twice is
@@ -87,6 +89,7 @@ export function PlansTab() {
               plan={p}
               onMarkMade={(recipeId) => setDialog({ recipeId, planId: p.id })}
               onEditEntry={(recipeId, madeEntryId) => setDialog({ recipeId, madeEntryId })}
+              onOpenRecipe={setOpenRecipeId}
             />
           ))
         )
@@ -95,6 +98,7 @@ export function PlansTab() {
       )}
 
       {dialog && <MarkAsMadeDialog {...dialog} onClose={() => setDialog(null)} />}
+      {openRecipeId && <RecipeCardSheet recipeId={openRecipeId} onClose={() => setOpenRecipeId(null)} />}
     </main>
   );
 }

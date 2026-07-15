@@ -2,8 +2,12 @@
 // panel inset 14px each side, 90px from the top, radius 18, --shadow-dialog,
 // padding 18px 16px 16px, over the same dim+blur backdrop as Sheet. Backdrop
 // tap, Escape and Android back close via usePopstateClose. Modest fade/rise
-// enter; unmount immediate. Same z-band as Sheet (a dialog opened from a
-// sheet stacks above it in DOM order at equal z-index).
+// enter; unmount immediate. z-index 15 = the Sheet PANEL's z, so a dialog
+// opened from a sheet (RecipeCardSheet → mark-as-made / confirm, Task 22)
+// stacks above it purely by DOM order. Dialogs must be rendered as SIBLINGS
+// of a Sheet, never inside it: the sheet panel's transform makes it the
+// containing block for position:fixed descendants, which would pin (and
+// clip) the dialog to the sheet instead of the viewport.
 import type { ReactNode } from 'react';
 import { useEntered } from './Sheet';
 import { usePopstateClose } from './overlay';
@@ -39,7 +43,7 @@ export function Dialog({
         padding: '90px 14px 24px',
         opacity: entered ? 1 : 0,
         transition: 'opacity .25s ease-out',
-        zIndex: 14,
+        zIndex: 15, // see header note — must not sit under the Sheet panel (15)
       }}
     >
       <div

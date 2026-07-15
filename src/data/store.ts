@@ -327,6 +327,14 @@ export class Store {
     await this.bumpAndNotify();
   }
 
+  // Added for AddToPlanDialog's "New plan" toast-undo (Task 22) — a plan
+  // created by mistake must be removable, matching every other edit's Undo.
+  async deletePlan(id: string): Promise<void> {
+    if (!this.plansMap.delete(id)) return;
+    await db.del('plans', id);
+    await this.bumpAndNotify();
+  }
+
   // ── presets ─────────────────────────────────────────────────────────────
 
   async savePreset(preset: Preset): Promise<void> {

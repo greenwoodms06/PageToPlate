@@ -1,12 +1,12 @@
 // Generate step 4 — plan created (plan Task 17; prototype step 4). Rows open
-// the universal recipe card once Task 22 lands; until then a placeholder
-// toast, exactly like the prototype. "Generate another" keeps books+filters
+// the universal recipe card (Task 22). "Generate another" keeps books+filters
 // (wizardReducer 'generateAnother').
+import { useState } from 'react';
 import type { Dispatch } from 'react';
 import { RecipeRow, RowList } from '../../components/RecipeRow';
-import { useToast } from '../../components/Toast';
 import { spineColor } from '../../components/spine';
 import type { Cookbook } from '../../data/types';
+import { RecipeCardSheet } from '../recipe/RecipeCardSheet';
 import { GhostBtn, PrimaryCta } from './wizardUi';
 import type { WizardAction, WizardState } from './wizardState';
 
@@ -19,7 +19,7 @@ export function PlanCreated({
   books: Cookbook[];
   dispatch: Dispatch<WizardAction>;
 }) {
-  const showToast = useToast();
+  const [openRecipeId, setOpenRecipeId] = useState<string | null>(null);
   const kept = (state.groups ?? []).flatMap((g) => g.cards.filter((c) => c.status === 'kept'));
   const bookName = (id: string) => books.find((b) => b.id === id)?.name ?? '?';
 
@@ -60,7 +60,7 @@ export function PlanCreated({
               meta={`${bookName(c.recipe.bookId)} · p. ${c.recipe.page}`}
               color={spineColor(state.sel.indexOf(c.recipe.bookId))}
               chevron
-              onClick={() => showToast('Opens the universal recipe card')}
+              onClick={() => setOpenRecipeId(c.recipe.id)}
             />
           ))}
         </RowList>
@@ -81,6 +81,7 @@ export function PlanCreated({
       <div className="hint" style={{ marginTop: 10 }}>
         Your books and filters are remembered.
       </div>
+      {openRecipeId && <RecipeCardSheet recipeId={openRecipeId} onClose={() => setOpenRecipeId(null)} />}
     </div>
   );
 }

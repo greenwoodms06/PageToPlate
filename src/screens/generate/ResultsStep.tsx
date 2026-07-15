@@ -11,6 +11,7 @@
 // both (supersedes prototype/spec rejected-only). sessionRejected still only
 // accumulates rejected ids; never'd recipes are excluded from the pool by
 // their persisted 'excluded' status.
+import { useState } from 'react';
 import type { Dispatch } from 'react';
 import { PageTab } from '../../components/PageTab';
 import { SpineStripe } from '../../components/SpineStripe';
@@ -19,6 +20,7 @@ import { useToast } from '../../components/Toast';
 import { spineColor } from '../../components/spine';
 import { store } from '../../data/store';
 import type { Cookbook } from '../../data/types';
+import { RecipeCardSheet } from '../recipe/RecipeCardSheet';
 import { GhostBtn, PrimaryCta } from './wizardUi';
 import type { WizardAction, WizardState } from './wizardState';
 
@@ -37,6 +39,7 @@ export function ResultsStep({
   dispatch: Dispatch<WizardAction>;
 }) {
   const showToast = useToast();
+  const [openRecipeId, setOpenRecipeId] = useState<string | null>(null);
   const groups = state.groups ?? [];
   const bookName = (id: string) => books.find((b) => b.id === id)?.name ?? '?';
   const bookColor = (id: string) => spineColor(state.sel.indexOf(id));
@@ -103,6 +106,14 @@ export function ResultsStep({
                 key={r.id}
                 data-recipe-id={r.id}
                 data-status={c.status}
+                // Card BODY opens the universal recipe card (Task 22). The
+                // closest('button') guard — not stopPropagation on each
+                // button — keeps Keep/Reject/Never (and any future inner
+                // button) from also opening the sheet.
+                onClick={(e) => {
+                  if ((e.target as HTMLElement).closest('button')) return;
+                  setOpenRecipeId(r.id);
+                }}
                 // DO NOT add .index-ruling back to these cards. Owner decision
                 // at Checkpoint 1 (2026-07-14, live wizard demo): the index-card
                 // ruling made cards hard to read, so it is removed app-wide —
@@ -229,6 +240,7 @@ export function ResultsStep({
         onClick={() => dispatch({ type: 'setStep', step: 2 })}
         style={{ marginTop: 8 }}
       />
+      {openRecipeId && <RecipeCardSheet recipeId={openRecipeId} onClose={() => setOpenRecipeId(null)} />}
     </div>
   );
 }

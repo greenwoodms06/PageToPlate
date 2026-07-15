@@ -9,6 +9,7 @@ import type { CSSProperties } from 'react';
 import { store, useStore } from '../../data/store';
 import { todayISO } from '../../data/types';
 import { fromISO } from '../../logic/dates';
+import { RecipeCardSheet } from '../recipe/RecipeCardSheet';
 
 const pad2 = (n: number) => String(n).padStart(2, '0');
 
@@ -25,6 +26,7 @@ export function CalendarView() {
   const today = todayISO();
   const [ym, setYm] = useState(today.slice(0, 7)); // 'YYYY-MM'
   const [selected, setSelected] = useState<string>(today);
+  const [openRecipeId, setOpenRecipeId] = useState<string | null>(null);
 
   const y = Number(ym.slice(0, 4));
   const m = Number(ym.slice(5, 7));
@@ -135,12 +137,13 @@ export function CalendarView() {
         )}
       </div>
 
-      <DayDetail iso={selected} />
+      <DayDetail iso={selected} onOpenRecipe={setOpenRecipeId} />
+      {openRecipeId && <RecipeCardSheet recipeId={openRecipeId} onClose={() => setOpenRecipeId(null)} />}
     </section>
   );
 }
 
-function DayDetail({ iso }: { iso: string }) {
+function DayDetail({ iso, onOpenRecipe }: { iso: string; onOpenRecipe: (recipeId: string) => void }) {
   const plans = store.plans.filter((p) => p.acceptedAt === iso);
   const entries = store.madeEntries.filter((e) => e.date === iso);
   const header = fromISO(iso).toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
@@ -175,21 +178,35 @@ function DayDetail({ iso }: { iso: string }) {
         const recipe = e.recipeId !== null ? store.recipes.find((r) => r.id === e.recipeId) : undefined;
         const orphaned = e.recipeId === null;
         const name = recipe?.name ?? e.orphan?.recipeName ?? 'Unknown recipe';
+        const body = (
+          <>
+            {name} made
+            {e.rating !== undefined && (
+              <>
+                {' · '}
+                <b style={{ color: 'var(--gold)' }}>★ {e.rating}</b>
+              </>
+            )}
+            {orphaned && e.orphan && (
+              <small style={{ color: 'var(--ink-soft)' }}> — {e.orphan.bookTitle}</small>
+            )}
+          </>
+        );
         return (
           <div key={e.id} style={line}>
             <i aria-hidden style={orphaned ? dotNeutral8 : dot8} />
-            <span style={{ flex: 1 }}>
-              {name} made
-              {e.rating !== undefined && (
-                <>
-                  {' · '}
-                  <b style={{ color: 'var(--gold)' }}>★ {e.rating}</b>
-                </>
-              )}
-              {orphaned && e.orphan && (
-                <small style={{ color: 'var(--ink-soft)' }}> — {e.orphan.bookTitle}</small>
-              )}
-            </span>
+            {/* Live entries open the universal recipe card (Task 22);
+                orphaned ones have no recipe to open. */}
+            {recipe ? (
+              <button
+                onClick={() => onOpenRecipe(recipe.id)}
+                style={{ flex: 1, textAlign: 'left', fontSize: 13 }}
+              >
+                {body}
+              </button>
+            ) : (
+              <span style={{ flex: 1 }}>{body}</span>
+            )}
           </div>
         );
       })}
