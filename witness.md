@@ -75,7 +75,8 @@ WHAT:         Owner reports backup export goes straight to download; no share pi
 TYPE:         Universe Contradiction — "share({files}) works on Android" vs Chromium's
               file-extension allowlist (hypothesis: .json/.zip excluded; unverified)
 CONSEQUENCE:  Backups reach Downloads only; Drive/copy targets unavailable. Unresolved.
-STATUS:       Open
+STATUS:       Resolved — hypothesis confirmed; fix d635a3e (.ptp.txt costume);
+              owner verified the share sheet on device 2026-07-15.
 ```
 
 ---
