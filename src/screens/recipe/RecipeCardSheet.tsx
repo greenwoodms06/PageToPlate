@@ -25,6 +25,7 @@ import { SpineStripe } from '../../components/SpineStripe';
 import { useToast } from '../../components/Toast';
 import { compressImage } from '../../logic/images';
 import { fromISO } from '../../logic/dates';
+import { displayRating } from '../../logic/rating';
 import { MarkAsMadeDialog } from './MarkAsMadeDialog';
 import { AddToPlanDialog } from './AddToPlanDialog';
 
@@ -517,7 +518,7 @@ export function RecipeCardSheet({ recipeId, onClose }: { recipeId: string; onClo
               {e.rating !== undefined && (
                 <>
                   {' · '}
-                  <b style={{ color: 'var(--gold)' }}>★ {e.rating}</b>
+                  <b style={{ color: 'var(--gold)' }}>★ {displayRating(e.rating, store.settings.ratingScale)}</b>
                 </>
               )}
               {e.notes && <span style={{ color: 'var(--ink-mid)' }}> · “{e.notes}”</span>}
@@ -621,7 +622,9 @@ export function RecipeCardSheet({ recipeId, onClose }: { recipeId: string; onClo
           </div>
           <p className="meta" style={{ marginBottom: 14 }}>
             Made {historyDate(confirmDelete.date)}
-            {confirmDelete.rating !== undefined ? ` · ★ ${confirmDelete.rating}` : ''} — this removes it from your
+            {confirmDelete.rating !== undefined
+              ? ` · ★ ${displayRating(confirmDelete.rating, store.settings.ratingScale)}`
+              : ''} — this removes it from your
             cooking history.
           </p>
           <button

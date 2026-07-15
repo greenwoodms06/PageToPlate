@@ -86,7 +86,10 @@ export class Store {
     }
 
     if (settings) {
-      this.settingsObj = settings;
+      // Spread under DEFAULT_SETTINGS: settings persisted before a field
+      // existed (e.g. ratingScale, added Checkpoint 2) hydrate with the
+      // default instead of undefined — no migration step needed.
+      this.settingsObj = { ...DEFAULT_SETTINGS, ...settings };
     } else {
       this.settingsObj = { ...DEFAULT_SETTINGS };
       await db.putSettings(this.settingsObj);
@@ -111,6 +114,9 @@ export class Store {
     attachments: AttachmentRec[];
   }): Promise<void> {
     await db.clearAll();
+    // Backups written before a settings field existed (e.g. ratingScale)
+    // restore with the default filled in — same tolerance as init().
+    const settings: Settings = { ...DEFAULT_SETTINGS, ...data.settings };
     await Promise.all([
       db.bulkPut('books', data.books),
       db.bulkPut('recipes', data.recipes),
@@ -119,7 +125,7 @@ export class Store {
       db.bulkPut('categories', data.categories),
       db.bulkPut('presets', data.presets),
       db.bulkPut('attachments', data.attachments),
-      db.putSettings(data.settings),
+      db.putSettings(settings),
     ]);
     this.booksMap = new Map(data.books.map((b) => [b.id, b]));
     this.recipesMap = new Map(data.recipes.map((r) => [r.id, r]));
@@ -127,7 +133,7 @@ export class Store {
     this.plansMap = new Map(data.plans.map((p) => [p.id, p]));
     this.categoriesMap = new Map(data.categories.map((c) => [c.id, c]));
     this.presetsMap = new Map(data.presets.map((p) => [p.id, p]));
-    this.settingsObj = data.settings;
+    this.settingsObj = settings;
     this.notify();
   }
 

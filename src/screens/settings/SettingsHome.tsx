@@ -10,6 +10,7 @@ import { Card, NavRow, SectionLabel, SettingsHeader, ToggleRow } from './setting
 
 const REPO_URL = 'https://github.com/greenwoodms06/PageToPlate';
 const THEME_OPTIONS = ['System', 'Light', 'Dark'] as const;
+const RATING_SCALE_OPTIONS = ['1–5', '1–10'] as const;
 
 export const DAY_MS = 86_400_000;
 export const BACKUP_OVERDUE_DAYS = 30;
@@ -76,8 +77,23 @@ export function SettingsHome() {
           sub="Generation picks recipes you haven’t made first"
           on={settings.preferUnmade}
           onChange={(on) => void store.updateSettings({ preferUnmade: on })}
-          last
         />
+        {/* Checkpoint 2 amendment 3: display-only scale. Ratings are stored
+            1–10 forever (logic/rating.ts); this toggle never touches data. */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '12px 14px', minHeight: 52 }}>
+          <span style={{ flex: 1, minWidth: 0, fontSize: 13 }}>
+            <b style={{ fontWeight: 600, fontSize: 14.5 }}>Rating scale</b>
+            <br />
+            <small style={{ color: 'var(--ink-soft)', fontSize: 12 }}>
+              Display only — saved ratings never change.
+            </small>
+          </span>
+          <SegmentToggle
+            options={RATING_SCALE_OPTIONS}
+            value={settings.ratingScale === 5 ? '1–5' : '1–10'}
+            onChange={(v) => void store.updateSettings({ ratingScale: v === '1–5' ? 5 : 10 })}
+          />
+        </div>
       </Card>
 
       <SectionLabel>Your data</SectionLabel>

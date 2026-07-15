@@ -17,6 +17,7 @@ import { Dialog } from '../../components/Dialog';
 import { PillEditor } from '../../components/PillEditor';
 import { SpineChip } from '../../components/SpineChip';
 import { useToast } from '../../components/Toast';
+import { avgDisplay } from '../../logic/rating';
 import { presetBrowseBook } from '../browse/BrowseTab';
 import { CsvImportFlow } from './CsvImport';
 
@@ -82,7 +83,10 @@ export function BookDetail({ bookId }: { bookId: string }) {
   const cookedRecipes = new Set(entries.map((e) => e.recipeId)).size;
   const explored = recipes.length > 0 ? Math.round((100 * cookedRecipes) / recipes.length) : 0;
   const rated = entries.filter((e) => e.rating !== undefined);
-  const avgRating = rated.length > 0 ? (rated.reduce((s, e) => s + e.rating!, 0) / rated.length).toFixed(1) : '—';
+  const avgRating =
+    rated.length > 0
+      ? avgDisplay(rated.reduce((s, e) => s + e.rating!, 0) / rated.length, store.settings.ratingScale).toFixed(1)
+      : '—';
   let mostMade: { name: string; count: number } | null = null;
   {
     const counts = new Map<string, number>();

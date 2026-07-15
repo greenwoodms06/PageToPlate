@@ -12,6 +12,7 @@ import { eligible, pick } from '../../logic/generate';
 import type { Candidate } from '../../logic/generate';
 import type { Plan, PlanItem, Recipe } from '../../data/types';
 import { monthDayLong } from '../../logic/dates';
+import { formatRating } from '../../logic/rating';
 
 const card: CSSProperties = {
   background: 'var(--card)',
@@ -217,7 +218,7 @@ export function PlanCard({
                 onClick={() => item.madeEntryId && onEditEntry(item.recipeId, item.madeEntryId)}
                 style={{ ...pill, background: 'var(--accent)', color: 'var(--on-accent)' }}
               >
-                {entry?.rating !== undefined ? `Made · ${entry.rating}/10` : 'Made ✓'}
+                {entry?.rating !== undefined ? `Made · ${formatRating(entry.rating, store.settings.ratingScale)}` : 'Made ✓'}
               </button>
             )}
             {dismissed && (

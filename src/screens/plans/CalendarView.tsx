@@ -9,6 +9,7 @@ import type { CSSProperties } from 'react';
 import { store, useStore } from '../../data/store';
 import { todayISO } from '../../data/types';
 import { fromISO } from '../../logic/dates';
+import { displayRating } from '../../logic/rating';
 import { RecipeCardSheet } from '../recipe/RecipeCardSheet';
 
 const pad2 = (n: number) => String(n).padStart(2, '0');
@@ -184,7 +185,7 @@ function DayDetail({ iso, onOpenRecipe }: { iso: string; onOpenRecipe: (recipeId
             {e.rating !== undefined && (
               <>
                 {' · '}
-                <b style={{ color: 'var(--gold)' }}>★ {e.rating}</b>
+                <b style={{ color: 'var(--gold)' }}>★ {displayRating(e.rating, store.settings.ratingScale)}</b>
               </>
             )}
             {orphaned && e.orphan && (

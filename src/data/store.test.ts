@@ -1,7 +1,7 @@
 import 'fake-indexeddb/auto';
 import { beforeEach, describe, expect, it } from 'vitest';
 import { Store } from './store';
-import { clearAll, getSettings } from './db';
+import { clearAll, getSettings, putSettings } from './db';
 import { DEFAULT_CATEGORIES } from './categories';
 import { DEFAULT_SETTINGS } from './types';
 import type {
@@ -12,6 +12,7 @@ import type {
   Plan,
   Preset,
   Recipe,
+  Settings,
 } from './types';
 
 const makeBook = (id: string, name = 'The Joy of Cooking'): Cookbook => ({
@@ -103,6 +104,17 @@ describe('Store.init seeding', () => {
     const second = await initStore();
     expect(second.categories).toHaveLength(11);
     expect(second.categories.map((c) => c.id).sort()).toEqual(ids);
+  });
+
+  it('fills fields missing from persisted settings with defaults (pre-ratingScale DBs)', async () => {
+    // Simulate settings written before ratingScale existed (Checkpoint 2):
+    // hydration must default it to 10 instead of leaving undefined.
+    const legacy: Omit<Settings, 'ratingScale'> = { ...DEFAULT_SETTINGS, preferUnmade: false };
+    delete (legacy as Partial<Settings>).ratingScale;
+    await putSettings(legacy as Settings);
+    const store = await initStore();
+    expect(store.settings.ratingScale).toBe(10);
+    expect(store.settings.preferUnmade).toBe(false); // stored values still win
   });
 });
 

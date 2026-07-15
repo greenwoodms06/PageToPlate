@@ -33,10 +33,12 @@ export interface Settings {
   preferUnmade: boolean; theme: 'system' | 'light' | 'dark';
   backupReminder: boolean; lastBackupAt?: string; changesSinceBackup: number;
   verifiedPagesOnly: boolean; persistGranted?: boolean;
+  /** Display-only rating scale — stored ratings stay canonical 1–10 (see logic/rating.ts). */
+  ratingScale: 5 | 10;
 }
 export const DEFAULT_SETTINGS: Settings = {
   preferUnmade: true, theme: 'system', backupReminder: true,
-  changesSinceBackup: 0, verifiedPagesOnly: false,
+  changesSinceBackup: 0, verifiedPagesOnly: false, ratingScale: 10,
 };
 export const newId = () => crypto.randomUUID();
 // Local date, not UTC: an evening cook must journal under the user's own day

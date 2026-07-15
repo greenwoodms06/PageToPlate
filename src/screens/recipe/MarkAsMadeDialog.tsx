@@ -1,8 +1,9 @@
 // Mark-as-made dialog (plan Task 18; canvas 3a, screenshot 09). Centered
 // Dialog: recipe line (neutral spine chip — no generate session exists here,
 // so no session color), single date button toggling a native picker (no
-// yesterday/quick buttons — canvas 3a), 10-cell rating grid (tap the selected
-// cell again to clear), photo attachments through compressImage, notes.
+// yesterday/quick buttons — canvas 3a), rating grid with one cell per point
+// of the display scale (settings.ratingScale; tap the selected cell again to
+// clear), photo attachments through compressImage, notes.
 // Save writes a MadeEntry (or patches one in edit mode) and, when opened from
 // a plan row, flips that plan item to 'made' — all undoable from the toast.
 import { useEffect, useRef, useState } from 'react';
@@ -16,6 +17,7 @@ import { useToast } from '../../components/Toast';
 import { spineColor } from '../../components/spine';
 import { compressImage } from '../../logic/images';
 import { monthDayShort } from '../../logic/dates';
+import { displayRating, storeRating } from '../../logic/rating';
 
 export function MarkAsMadeDialog({
   recipeId,
@@ -34,6 +36,7 @@ export function MarkAsMadeDialog({
   useStore((s) => s.version);
   const recipe = store.recipes.find((r) => r.id === recipeId);
   const book = store.books.find((b) => b.id === recipe?.bookId);
+  const scale = store.settings.ratingScale;
 
   // Edit mode: snapshot the entry ONCE at mount — it is both the form's
   // initial values and the toast-undo target.
@@ -219,14 +222,20 @@ export function MarkAsMadeDialog({
       )}
 
       <FieldLabel>Rating</FieldLabel>
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(10, 1fr)', gap: 5, marginBottom: 14 }}>
-        {Array.from({ length: 10 }, (_, i) => i + 1).map((n) => {
-          const on = rating === n;
+      <div style={{ display: 'grid', gridTemplateColumns: `repeat(${scale}, 1fr)`, gap: 5, marginBottom: 14 }}>
+        {Array.from({ length: scale }, (_, i) => i + 1).map((n) => {
+          const on = rating !== undefined && displayRating(rating, scale) === n;
           return (
             <button
               key={n}
               aria-pressed={on}
-              onClick={() => setRating(on ? undefined : n)}
+              // `rating` state holds the CANONICAL stored 1–10 value; only a
+              // grid tap converts through storeRating. This is what keeps an
+              // odd stored rating (e.g. 7 shown as "4" on the 5-scale) intact
+              // on save when the user edits other fields but never taps the
+              // grid — the owner's rule that switching scales / editing an
+              // entry must never silently rewrite saved ratings.
+              onClick={() => setRating(on ? undefined : storeRating(n, scale))}
               style={{
                 minHeight: 44,
                 border: on ? 'none' : '1.5px solid var(--line)',

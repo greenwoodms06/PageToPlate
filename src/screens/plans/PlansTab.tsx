@@ -6,6 +6,7 @@ import { Settings } from 'lucide-react';
 import { store, useStore } from '../../data/store';
 import { todayISO } from '../../data/types';
 import { SegmentToggle } from '../../components/SegmentToggle';
+import { avgDisplay } from '../../logic/rating';
 import { MarkAsMadeDialog } from '../recipe/MarkAsMadeDialog';
 import { RecipeCardSheet } from '../recipe/RecipeCardSheet';
 import { PlanCard } from './PlanCard';
@@ -27,7 +28,9 @@ export function PlansTab() {
   const madeThisYear = store.madeEntries.filter((m) => m.date.startsWith(year)).length;
   const openPlans = store.plans.filter((p) => p.items.some((i) => i.state === 'open')).length;
   const ratings = store.madeEntries.map((m) => m.rating).filter((r): r is number => r !== undefined);
-  const avgRating = ratings.length > 0 ? (ratings.reduce((a, b) => a + b, 0) / ratings.length).toFixed(1) : '—';
+  const scale = store.settings.ratingScale;
+  const avgRating =
+    ratings.length > 0 ? avgDisplay(ratings.reduce((a, b) => a + b, 0) / ratings.length, scale).toFixed(1) : '—';
 
   const plans = [...store.plans].sort((a, b) => b.acceptedAt.localeCompare(a.acceptedAt));
 
