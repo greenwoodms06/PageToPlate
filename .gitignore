@@ -6,5 +6,8 @@ test-results/
 playwright-report/
 *.local
 
+# archive.org triage HTTP cache (regenerated on demand by tools/curate_packs.py)
+tools/curation/.cache/
+
 # Soul runtime state (handoff cursor, event log) — not part of the durable record
 .soul/
