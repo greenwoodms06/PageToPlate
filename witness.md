@@ -64,3 +64,18 @@ STATUS:       Resolved
 ```
 
 ---
+
+```
+ID:           P2P-005
+WHEN:         2026-07-15 / post-deploy / owner device use
+WHERE:        src/screens/settings/BackupRestore.tsx > doExport share path, on Android Chrome
+WHAT:         Owner reports backup export goes straight to download; no share picker
+              appears. Code tries navigator.share first; canShare({files}) evidently
+              returns false on the device for our .json/.zip files.
+TYPE:         Universe Contradiction — "share({files}) works on Android" vs Chromium's
+              file-extension allowlist (hypothesis: .json/.zip excluded; unverified)
+CONSEQUENCE:  Backups reach Downloads only; Drive/copy targets unavailable. Unresolved.
+STATUS:       Open
+```
+
+---
