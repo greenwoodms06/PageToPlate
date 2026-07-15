@@ -15,6 +15,10 @@ Subcommands:
                index + chapter contents in the OCR text, parse entries,
                categorize by chapter, resolve deep links. Writes
                tools/curation/books/<id>/{draft.json,review.md,notes.md}.
+  classify     Name-based meal-role classifier for books whose categories can't
+               come from a chapter map (hierarchical/alphabetical indexes):
+               drops pure fragments, categorizes every kept entry by its recipe
+               name. Writes final.csv + needs_review.csv + dropped.csv.
   apply        Read tools/curation/books/<id>/final.csv (the judgment pass's
                output) and emit public/packs/<id>.json + a catalog.json entry.
   verify-links HEAD-check a sample of a book's entry URLs (catches malformed
@@ -364,10 +368,14 @@ def ocr_quality(sampled: list[tuple[str, str]]) -> float:
 # are listed, the FIRST is taken):
 #   "name ...... 123"        dotted leader (front CONTENTS, most indexes)
 #   "name, 123" / "name, 123, 456"   comma form (Escoffier's back index)
+#   "name, 123."             comma form, trailing period (Boston 1918 index
+#                            prints one after EVERY entry; without \.? the
+#                            whole 3,800-line index was invisible and extract
+#                            fell back to the 31-line TOC — selftest pins it)
 DOTTED_ENTRY_RE = re.compile(
     r"^(.{2,120}?)[ .]{2,}\s*-?\s*(\d{1,4})(?:\s*,\s*\d{1,4})*\s*\.?\s*$")
 COMMA_ENTRY_RE = re.compile(
-    r"^(.{2,120}?)\s*[,;]\s*(\d{1,4})(?:\s*,\s*\d{1,4})*\s*$")
+    r"^(.{2,120}?)\s*[,;]\s*(\d{1,4})(?:\s*,\s*\d{1,4})*\s*\.?\s*$")
 # Escoffier-style numbered indexes prefix each entry with its recipe number
 # ("1755  Aiguillettes ..., 558"); strip it when the line also ends in a page.
 RECIPE_NO_RE = re.compile(r"^\d{1,4}[a-z]?\s+(?=[^\d\s])")
@@ -953,6 +961,541 @@ def write_review_md(path: Path, draft: dict, chapters: list[tuple[str, int]]) ->
 
 
 # --------------------------------------------------------------------------
+# classify: name-based meal-role classifier + fragment drop
+# --------------------------------------------------------------------------
+#
+# Why this exists: hierarchical-index books (Fannie Farmer's "Boston Cooking-
+# School Cook Book", 1918) print an alphabetical index where sub-recipes are
+# listed under a parent noun with the parent ELIDED — the raw entry is just the
+# qualifier ("Butyric" under "Acid"; "Broiled" under "Beef"; "Devil's Food"
+# under "Cake"). The extractor keeps the correct page link but cannot recover
+# the parent noun, and the chapter-range categorizer has no chapter map to work
+# from (this book's TOC parses to one line). So categories can't come from
+# chapter ranges — they must come from the recipe NAME itself.
+#
+# `classify_name` reads meal ROLE off dish/head-noun keywords (categories are
+# meal role per src/data/categories.ts — never cuisine or technique). It is
+# reusable across any name-only book, not a one-off for this pack.
+#
+# `is_fragment` drops the ~7% of index rows that are PURE fragments (leading
+# preposition/conjunction, bare roman numeral, sub-word noise) — those carry no
+# classifiable head noun and read as broken. Truncated-but-real sub-entries
+# (a lone qualifier like "Broiled") are KEPT with their correct link and get a
+# best-effort category; they surface in needs_review.csv for a human/LLM scan.
+
+# OCR on these scans routinely renders an accented vowel as a digit
+# ("Canap6s", "Caf6", "Saut6d", "Glac6e", "Consomm6", "Frapp6") — the accent
+# is the frequent casualty. Turn any digit adjacent to a letter back into 'e'
+# (é/è are by far the most common) so those dish words classify.
+_OCR_DIGIT_L = re.compile(r"(?<=[a-z])[0-9]")
+_OCR_DIGIT_R = re.compile(r"[0-9](?=[a-z])")
+_ALA_OCR = re.compile(r"\b[kh]\s+la\b")   # "à la" mis-OCR'd as "k la" / "h la"
+
+
+def _clf_clean(name: str) -> str:
+    """Lowercased, OCR-repaired, punctuation-normalized form for keyword scan."""
+    s = name.lower()
+    s = _ALA_OCR.sub("a la", s)
+    s = _OCR_DIGIT_L.sub("e", s)
+    s = _OCR_DIGIT_R.sub("e", s)
+    s = re.sub(r"[^a-z'&, -]", " ", s)
+    return re.sub(r"\s+", " ", s).strip()
+
+
+def _clf_words(s: str) -> set[str]:
+    """Word set for scanning, with light depluralization so a table that lists
+    the singular ('steak', 'cake') also catches the plural ('steaks')."""
+    out: set[str] = set()
+    for w in re.findall(r"[a-z][a-z'&-]*", s):
+        out.add(w)
+        if w.endswith("ies") and len(w) > 4:
+            out.add(w[:-3] + "y")
+        elif w.endswith("es") and len(w) > 4:
+            out.add(w[:-2])
+        if w.endswith("s") and len(w) > 3:
+            out.add(w[:-1])
+    return out
+
+
+# Ingredient vocabularies used only to RESOLVE ambiguous dish words (a "pie"
+# with a meat word is a main; with a fruit word, a dessert). Not categories.
+_SWEET = {
+    "apple", "apricot", "peach", "pear", "plum", "cherry", "berry", "blackberry",
+    "blueberry", "raspberry", "strawberry", "currant", "grape", "lemon", "orange",
+    "lime", "pineapple", "banana", "raisin", "mince", "mincemeat", "pumpkin",
+    "prune", "rhubarb", "date", "fig", "cranberry", "gooseberry", "huckleberry",
+    "quince", "custard", "chocolate", "coconut", "cocoanut", "almond", "walnut",
+    "nut", "jam", "marmalade", "caramel", "molasses", "honey", "maple", "vanilla",
+    "sugar", "sweet", "washington", "marlborough", "cocoa", "peppermint", "sponge",
+    "angel", "pound", "tapioca", "whipped", "cream", "mocha", "spice", "brandy",
+    "maraschino", "wine",
+}
+_FRUIT = {
+    "fruit", "apple", "apricot", "peach", "pear", "plum", "cherry", "berry",
+    "blackberry", "blueberry", "raspberry", "strawberry", "currant", "grape",
+    "orange", "lemon", "lime", "pineapple", "banana", "raisin", "prune", "rhubarb",
+    "date", "fig", "cranberry", "gooseberry", "huckleberry", "quince", "cantaloupe",
+    "melon", "peaches", "pears", "berries", "apples", "cherries", "plums",
+    "grapefruit",
+}
+_MEAT = {
+    "beef", "veal", "mutton", "lamb", "pork", "ham", "chicken", "turkey", "duck",
+    "goose", "game", "venison", "rabbit", "hare", "oyster", "clam", "lobster",
+    "crab", "crabmeat", "fish", "cod", "codfish", "salmon", "halibut", "bass",
+    "trout", "haddock", "mackerel", "shad", "smelt", "sole", "flounder", "sardine",
+    "tuna", "herring", "finnan", "scallop", "shrimp", "terrapin", "frog", "sausage",
+    "liver", "sweetbread", "tripe", "kidney", "bacon", "tongue", "meat", "steak",
+    "chop", "calf", "brains", "forcemeat", "giblet", "bluefish", "quail", "grouse",
+    "partridge", "pigeon", "squab", "snipe", "plover", "reedbird", "eel", "mussel",
+    "whitebait", "whitefish", "perch", "pickerel", "pike", "turbot", "crawfish",
+    "crayfish", "prawn", "scampi", "sturgeon", "whiting", "weakfish",
+}
+_VEG = {
+    "potato", "bean", "pea", "carrot", "beet", "cabbage", "spinach", "corn",
+    "asparagus", "tomato", "onion", "turnip", "squash", "celery", "lettuce",
+    "cauliflower", "cucumber", "parsnip", "eggplant", "mushroom", "macaroni",
+    "spaghetti", "rice", "hominy", "lentil", "artichoke", "okra", "kale", "chard",
+    "salsify", "succotash", "samp", "vegetable", "dandelion", "chestnut", "pepper",
+    "sprouts", "brussels", "cress", "oyster-plant", "peppers", "lima",
+}
+
+
+def _has(words: set[str], s: set[str]) -> bool:
+    return bool(words & s)
+
+
+# ---- ambiguity resolvers: each takes the word set, returns (cat, conf, tags) ---
+
+def _rz_pie(w):
+    if _has(_MEAT, w) or "meat" in w:
+        return ("Mains", 0.85, [])
+    if _has(_SWEET, w):
+        return ("Desserts", 0.85, [])
+    return ("Desserts", 0.4, [])          # bare "pie" -> dessert, low conf
+
+
+def _rz_loaf(w):
+    if _has(_MEAT, w):
+        return ("Mains", 0.75, [])
+    if "nut" in w or _has(_VEG, w):
+        return ("Sides", 0.6, [])
+    return ("Breads", 0.55, [])
+
+
+def _rz_cake(w):
+    if _has({"griddle", "buckwheat", "flannel", "batter", "wheat"}, w):
+        return ("Breakfast & Brunch", 0.75, [])
+    if _has({"fish", "clam", "crab", "codfish", "cod", "salmon", "potato", "oyster"}, w):
+        return ("Sides", 0.6, [])
+    return ("Desserts", 0.85, [])
+
+
+def _rz_pudding(w):
+    if "yorkshire" in w:
+        return ("Sides", 0.75, [])
+    if _has(_MEAT, w):
+        return ("Mains", 0.55, [])
+    if _has({"corn", "potato", "cauliflower", "spinach", "vegetable"}, w):
+        return ("Sides", 0.55, [])
+    return ("Desserts", 0.8, [])
+
+
+def _rz_fritter(w):
+    if _has(_SWEET, w):
+        return ("Desserts", 0.7, [])
+    return ("Sides", 0.6, [])
+
+
+def _rz_souffle(w):
+    if _has({"chocolate", "lemon", "orange", "vanilla", "coffee", "fruit",
+             "caramel", "prune", "apricot"}, w):
+        return ("Desserts", 0.75, [])
+    if _has({"cheese", "spinach", "chicken", "fish", "potato", "corn",
+             "cauliflower", "clam", "lobster", "tomato", "sweetbread"}, w):
+        return ("Sides", 0.6, [])
+    return ("Desserts", 0.45, [])
+
+
+def _rz_mousse(w):
+    if _has({"chicken", "fish", "ham", "salmon", "lobster", "foie", "liver"}, w):
+        return ("Sides", 0.6, [])
+    return ("Desserts", 0.7, [])
+
+
+def _rz_jelly(w):
+    if "roll" in w:
+        return ("Desserts", 0.75, [])      # "Jelly Roll" is a sponge cake
+    if _has({"wine", "sauterne", "sherry", "champagne", "coffee", "snow",
+             "russian", "moulded", "port", "rum"}, w):
+        return ("Desserts", 0.6, [])
+    return ("Preserves & Pickles", 0.7, [])
+
+
+def _rz_ice(w):
+    if _has({"chest", "box", "picks", "tongs", "cave", "house"}, w):
+        return (None, 0.0, [])             # "Ice Chest, Care of" is not a dish
+    if "water" in w:
+        return ("Drinks", 0.5, [])
+    return ("Desserts", 0.7, [])
+
+
+def _rz_timbale(w):
+    if _has(_MEAT, w):
+        return ("Mains", 0.6, [])
+    return ("Sides", 0.55, [])
+
+
+def _rz_toast(w):
+    if _has({"french", "milk", "cream", "cinnamon"}, w):
+        return ("Breakfast & Brunch", 0.6, [])
+    return ("Breads", 0.55, [])
+
+
+def _rz_cocktail(w):
+    if _has({"oyster", "clam", "crab", "fruit", "tomato", "shrimp", "lobster",
+             "grapefruit", "fish"}, w):
+        return ("Sides", 0.6, ["appetizer"])
+    return ("Drinks", 0.7, [])
+
+
+def _rz_cup(w):
+    if _has({"claret", "cider", "wine", "champagne", "fruit", "grape", "loving",
+             "currant"}, w):
+        return ("Drinks", 0.55, [])
+    return (None, 0.0, [])                 # bare "cup" is a vessel, not a dish
+
+
+def _rz_custard(w):
+    if _has({"corn", "cheese", "chicken", "vegetable"}, w):
+        return ("Sides", 0.55, [])
+    return ("Desserts", 0.75, [])
+
+
+def _rz_dressing(w):
+    if _has({"bread", "chestnut", "celery", "giblet", "stuffing", "cracker",
+             "sage", "onion"}, w) and "salad" not in w:
+        return ("Basics", 0.55, [])        # American "dressing" == stuffing
+    return ("Sauces & Condiments", 0.75, [])
+
+
+def _rz_filling(w):
+    if "sandwich" in w:
+        return ("Sides", 0.5, [])
+    return ("Desserts", 0.6, [])
+
+
+def _rz_paste(w):
+    if _has({"almond", "chocolate"}, w):
+        return ("Desserts", 0.6, [])
+    if _has({"anchovy", "fish", "ham", "tomato", "cheese", "liver"}, w):
+        return ("Sauces & Condiments", 0.55, [])
+    return ("Basics", 0.55, [])
+
+
+def _rz_butter(w):
+    if _has({"apple", "pear", "plum", "peach", "grape", "quince"}, w):
+        return ("Preserves & Pickles", 0.6, [])   # fruit butters are preserves
+    if "peanut" in w:
+        return ("Sides", 0.5, [])
+    if _has({"cocoa", "clarified", "drawn"}, w) and "sauce" not in w:
+        return ("Basics", 0.5, [])
+    return ("Sauces & Condiments", 0.65, [])       # compound (anchovy, lemon…) butter
+
+
+def _rz_balls(w):
+    if _has(_MEAT, w):
+        return ("Mains", 0.55, [])
+    if _has(_SWEET, w) or "pop" in w or "popcorn" in w:
+        return ("Desserts", 0.55, [])
+    return ("Sides", 0.45, [])
+
+
+def _rz_patties(w):
+    if _has(_MEAT, w):
+        return ("Mains", 0.55, [])
+    return ("Sides", 0.45, [])
+
+
+def _rz_dumpling(w):
+    if _has(_FRUIT, w) or _has({"apple", "peach", "cherry", "berry"}, w):
+        return ("Desserts", 0.6, [])
+    return ("Sides", 0.5, [])
+
+
+# Ordered keyword table. First rule whose keyword set intersects the words
+# wins. Dish-type / head-noun words come BEFORE ingredient words so an inverted
+# index name resolves on the head ("Soup, Tomato" -> soup, not tomato). A tuple
+# ends with a category string (+optional tags) OR a resolver function.
+_SOUP = {"soup", "chowder", "bisque", "bouillon", "consomme", "gumbo",
+         "pottage", "broth", "puree"}
+_SAUCE = {"sauce", "gravy", "ketchup", "catsup", "mayonnaise", "mustard",
+          "relish", "marinade", "hollandaise", "bechamel"}
+_DESSERT = {
+    "cookie", "doughnut", "gingerbread", "shortcake", "cobbler", "trifle",
+    "meringue", "tart", "tartlet", "turnover", "eclair", "charlotte", "blancmange",
+    "junket", "parfait", "bavarian", "sherbet", "sorbet", "sundae", "fudge",
+    "bonbon", "nougat", "taffy", "fondant", "marshmallow", "candy", "candies",
+    "kisses", "brittle", "penuche", "macaroon", "wafer", "brownie", "bombe",
+    "ladyfingers", "marguerites", "hermits", "jumbles", "snaps", "cupcake",
+    "cream-puffs", "creams", "caramel", "caramels", "bars", "fingers", "tapioca",
+}
+_BREAD = {
+    "bread", "rolls", "roll", "biscuit", "muffin", "popover", "bun", "scone",
+    "brioche", "cracker", "zwieback", "gem", "rusks", "twist", "crouton",
+    "cornbread", "shortbread", "breadstick",
+}
+_DRINK = {
+    "punch", "lemonade", "tea", "coffee", "cocoa", "cordial", "fizz", "shrub",
+    "nectar", "beverage", "frappe", "flip", "eggnog", "sangaree", "mead",
+    "lemonade", "cafe", "claret", "cider", "orangeade",
+}
+_PRESERVE = {
+    "pickle", "pickled", "jam", "preserve", "marmalade", "conserve", "chutney",
+    "canned", "canning", "compote", "catchup",
+}
+_BASIC = {
+    "stock", "forcemeat", "force-meat", "dough", "batter", "roux", "essence",
+    "seasoning", "brine", "yeast", "crumbs", "stuffing",
+}
+_SALAD = {"salad", "slaw"}
+# Truncated cake/cookie sub-names (the parent "Cake" is elided in the index).
+# Weak dessert signal — enough to place, honest enough to still surface for
+# review at a middling confidence.
+_DESSERT_HINT = {"pound", "sponge", "spice", "mocha", "marble", "layer",
+                 "drop", "queens", "queen", "fours", "petit", "cream-puff",
+                 "cocoanut", "coconut", "vanilla", "maple", "snow", "meringued"}
+# Lone cooking-method qualifiers ("Broiled", "Planked" under an elided meat
+# parent). Almost always a meat/fish course in this corpus.
+_MEAT_METHOD = {"broiled", "planked", "larded", "barbecued", "grilled",
+                "roasted", "smothered", "fricasseed", "braised", "corned",
+                "jugged", "potted", "fried", "sauted", "sauteed", "deviled",
+                "devilled", "minced", "hashed", "roast"}
+
+_RULES: list[tuple] = [
+    (_SOUP, "Soups & Stews", 0.9),
+    ({"stew"}, "Soups & Stews", 0.8),
+    ({"dressing"}, _rz_dressing),
+    (_SALAD, "Salads", 0.9),
+    (_SAUCE, "Sauces & Condiments", 0.85),
+    ({"pie", "pies"}, _rz_pie),
+    ({"griddle", "pancake", "waffle", "wafles"}, "Breakfast & Brunch", 0.8),
+    ({"cake"}, _rz_cake),
+    ({"pudding"}, _rz_pudding),
+    ({"souffle", "souffl"}, _rz_souffle),
+    ({"mousse"}, _rz_mousse),
+    ({"custard"}, _rz_custard),
+    ({"frosting", "icing"}, "Desserts", 0.85),
+    ({"aspic"}, "Basics", 0.7),
+    ({"jelly"}, _rz_jelly),
+    (_DESSERT, "Desserts", 0.85),
+    ({"ice", "ices", "glace", "glac", "iced"}, _rz_ice),
+    ({"frozen"}, "Desserts", 0.6),
+    ({"fritter"}, _rz_fritter),
+    ({"timbale"}, _rz_timbale),
+    ({"cocktail"}, _rz_cocktail),
+    ({"cup"}, _rz_cup),
+    ({"toast"}, _rz_toast),
+    ({"loaf", "loaves"}, _rz_loaf),
+    ({"filling"}, _rz_filling),
+    ({"paste"}, _rz_paste),
+    ({"butter"}, _rz_butter),
+    (_BREAD, "Breads", 0.8),
+    ({"omelet", "omelette", "cereal", "oatmeal", "oats", "porridge", "mush",
+      "frittata", "hominy"}, "Breakfast & Brunch", 0.75),
+    ({"eggs", "egg"}, "Breakfast & Brunch", 0.7),
+    ({"hash"}, "Mains", 0.55),
+    (_DRINK, "Drinks", 0.7),
+    ({"chocolate"}, "Drinks", 0.4),        # bare: drink or dessert, honest low
+    (_PRESERVE, "Preserves & Pickles", 0.85),
+    (_BASIC, "Basics", 0.7),
+    ({"croquette", "croquettes"}, "Sides", 0.8),
+    ({"sandwich"}, "Sides", 0.6),
+    ({"canape", "canap", "canapes"}, "Sides", 0.7, ["appetizer"]),
+    ({"rarebit", "rabbit-welsh", "fondue", "cheese", "gnocchi", "anchovy",
+      "anchovies"}, "Sides", 0.55),
+    ({"pilaf", "pilau", "risotto", "noodles", "noodle", "greens", "polenta"},
+     "Sides", 0.6),
+    ({"rissoles", "rissole", "croustade", "croustades", "cromesquis", "ramequins",
+      "ramekins", "cannelon", "vol-au-vents", "bouchees", "spaetzle"},
+     "Sides", 0.55, ["appetizer"]),
+    ({"julep", "juleps"}, "Drinks", 0.7),
+    ({"napoleons", "napoleon"}, "Desserts", 0.6),
+    ({"dumpling", "dumplings"}, _rz_dumpling),
+    ({"balls"}, _rz_balls),
+    ({"patties"}, _rz_patties),
+    ({"scalloped", "stuffed", "curried"}, "Sides", 0.5),
+    (_MEAT, "Mains", 0.7),
+    ({"steak", "chops", "cutlet", "ragout", "fricassee", "goulash", "stewed",
+      "fillets", "fillet", "curry"}, "Mains", 0.6),
+    (_VEG, "Sides", 0.65),
+    # -- best-effort tail: truncated qualifiers with no dish noun --------------
+    (_MEAT_METHOD, "Mains", 0.4),          # lone "Broiled"/"Planked" -> review
+    (_DESSERT_HINT, "Desserts", 0.5),      # lone cake sub-name
+    ({"cream", "creamed"}, "Desserts", 0.4),   # Bavarian/Spanish creams dominate
+    (_FRUIT, "Desserts", 0.45),            # bare fruit -> fruit-course dessert
+]
+
+_APPET_RE = re.compile(r"canap|hors.?d.?oeuvre|appetizer")
+
+
+def _clf_scan(words: set[str]) -> tuple[str | None, float, list[str]]:
+    for rule in _RULES:
+        matcher, handler = rule[0], rule[1]
+        if not (matcher & words):
+            continue
+        if callable(handler):
+            cat, conf, tags = handler(words)
+            if cat is None:
+                continue                    # resolver declined; keep scanning
+            return cat, conf, list(tags)
+        tags = list(rule[3]) if len(rule) > 3 else []
+        return handler, rule[2], tags
+    return None, 0.0, []
+
+
+def classify_name(name: str) -> tuple[str | None, float, list[str]]:
+    """Best meal-role category for a recipe NAME, its confidence (0..1), and
+    any auto-tags. Categories are the app's 11 (meal role, never cuisine).
+
+    Inverted index names ("Cake, Rice", "Soup, Tomato") resolve on the head
+    noun — the part before the first comma — which is scanned first, then the
+    whole string. Ambiguous dish words return an honest confidence: "apple pie"
+    -> (Desserts, 0.85) but bare "pie" -> (Desserts, 0.4); "chocolate" alone ->
+    (Drinks, 0.4). No signal at all -> (None, 0.0, [])."""
+    if not name:
+        return (None, 0.0, [])
+    s = _clf_clean(name)
+    if not s:
+        return (None, 0.0, [])
+    tags: list[str] = ["appetizer"] if _APPET_RE.search(s) else []
+    if "ice cream" in s or "ice-cream" in s:   # unambiguous, beats bisque/bread
+        return ("Desserts", 0.85, tags)
+    head = s.split(",", 1)[0].strip()
+    cat, conf, kw_tags = _clf_scan(_clf_words(head))
+    if cat is None:                          # head gave nothing; scan whole name
+        cat, conf, kw_tags = _clf_scan(_clf_words(s))
+    for t in kw_tags:
+        if t not in tags:
+            tags.append(t)
+    return (cat, conf, tags)
+
+
+# Leading tokens that mark a pure fragment (a truncated tail with no head
+# noun): conjunctions, prepositions, articles, and the OCR of "à la"/"au".
+_FRAG_LEAD = {
+    "and", "or", "of", "with", "in", "for", "the", "a", "an", "how", "to", "at",
+    "on", "by", "from", "over", "au", "aux", "en", "k", "h", "why", "when",
+}
+_ROMAN_RE = re.compile(r"^[ivxlcdm]+$")
+
+
+def is_fragment(name: str) -> bool:
+    """True for pure fragments that should be DROPPED (not classified): a
+    leading conjunction/preposition ("and Rice Croquettes", "of Beef, Broiled"),
+    a name that is ONLY function words, fewer than 4 letters, or a bare roman
+    numeral. These are index sub-entry tails whose head noun was elided past
+    recognition — keeping them would ship broken names."""
+    if not name:
+        return True
+    s = _clf_clean(name)
+    if sum(c.isalpha() for c in s) < 4:
+        return True
+    words = re.findall(r"[a-z'-]+", s)
+    if not words:
+        return True
+    if words[0] in _FRAG_LEAD:
+        return True
+    if len(words) == 1 and _ROMAN_RE.match(words[0]):
+        return True
+    if all(w in _FRAG_LEAD for w in words):
+        return True
+    return False
+
+
+def cmd_classify(args: argparse.Namespace) -> int:
+    identifier = args.identifier
+    book_dir = BOOKS_DIR / identifier
+    draft_path = book_dir / "draft.json"
+    if not draft_path.exists():
+        print(f"ERROR: {draft_path} not found — run `extract {identifier}` first",
+              file=sys.stderr)
+        return 1
+    draft = json.loads(draft_path.read_text(encoding="utf-8"))
+    entries = draft["entries"]
+
+    # Build the chapter->category lookup the same way extract did, so a book
+    # WITH a usable chapter map still categorizes by chapter first and only
+    # falls through to the name classifier for the rest.
+    chapter_cat: dict[str, tuple[str, list[str]]] = {}
+
+    kept: list[dict] = []
+    dropped: list[tuple[str, str, str]] = []       # (name, page, reason)
+    review: list[tuple[str, str, str, float]] = []  # (name, page, cat, conf)
+    hist: collections.Counter = collections.Counter()
+    auto = 0
+    for e in entries:
+        name, page = e["name"], e["page"]
+        if is_fragment(name):
+            dropped.append((name, page, "fragment"))
+            continue
+        # chapter-map first (if the draft carried a mapping chapter), else name
+        chap = e.get("chapter")
+        cat, add_tags = (None, [])
+        if chap:
+            cat, add_tags = map_raw_category(chap)
+        conf = 1.0 if cat else 0.0
+        if cat is None:
+            cat, conf, add_tags = classify_name(name)
+        # merge draft tags + classifier tags
+        tags = list(dict.fromkeys([*e.get("tags", []), *add_tags]))
+        label = cat or "Uncategorized"        # histogram / review label
+        hist[label] += 1
+        if conf >= 0.45 and cat is not None:
+            auto += 1
+        else:
+            review.append((name, page, label, conf))
+        kept.append({
+            # final.csv leaves category BLANK when there's no signal — `apply`
+            # installs blanks as Uncategorized (a literal "Uncategorized" string
+            # is an unmapped-category error there).
+            "name": name, "page": page, "category": cat or "",
+            "tags": ", ".join(tags), "url": e.get("url", ""),
+            "pageStatus": e.get("pageStatus", "unverified"),
+        })
+
+    _write_csv(book_dir / "final.csv",
+               ["name", "page", "category", "tags", "url", "pageStatus"],
+               [[k["name"], k["page"], k["category"], k["tags"], k["url"],
+                 k["pageStatus"]] for k in kept])
+    _write_csv(book_dir / "needs_review.csv",
+               ["name", "page", "guessed_category", "confidence"],
+               [[n, p, c, f"{cf:.2f}"] for n, p, c, cf in review])
+    _write_csv(book_dir / "dropped.csv",
+               ["name", "page", "reason"],
+               [[n, p, r] for n, p, r in dropped])
+
+    n_kept = len(kept)
+    print(f"{identifier}: {n_kept} kept, {len(dropped)} dropped "
+          f"(fragments), {len(review)} need review")
+    print(f"  auto-classified (conf >= 0.45): {auto}/{n_kept} "
+          f"({auto / max(n_kept, 1):.1%})")
+    unc = hist.get("Uncategorized", 0)
+    print(f"  Uncategorized: {unc} ({unc / max(n_kept, 1):.1%})")
+    print("  histogram:")
+    for cat, cnt in hist.most_common():
+        print(f"    {cnt:5d}  {cat}")
+    print(f"  wrote {book_dir}/{{final.csv,needs_review.csv,dropped.csv}}")
+    return 0
+
+
+def _write_csv(path: Path, header: list[str], rows: list[list]) -> None:
+    with path.open("w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f)
+        w.writerow(header)
+        w.writerows(rows)
+
+
+# --------------------------------------------------------------------------
 # apply: final.csv -> public/packs/<id>.json + catalog.json entry
 # --------------------------------------------------------------------------
 
@@ -1205,6 +1748,8 @@ def cmd_selftest(_args: argparse.Namespace) -> int:
           == ("Allumettes, with anchovies", "142"))
     check("entry: multi-page list takes first page",
           match_entry("Anchovies, fresh, 142, 261") == ("Anchovies, fresh", "142"))
+    check("entry: comma form + trailing period (Boston 1918 index)",
+          match_entry("Almond  Cakes,  511.") == ("Almond Cakes", "511"))
     check("entry: letter-suffixed recipe number stripped",
           match_entry("1583a  Ailerons  of  chicken,  507")
           == ("Ailerons of chicken", "507"))
@@ -1226,6 +1771,35 @@ def cmd_selftest(_args: argparse.Namespace) -> int:
     check("wrapped index entries join across lines",
           parsed == [("Aiguillettes of Rouen duck bigarrade", "558"),
                      ("Allumettes, with anchovies", "142")], str(parsed))
+
+    # Name-based classifier (pins meal-role decisions for hierarchical-index
+    # books; see classify_name / is_fragment).
+    def clf(name):
+        return classify_name(name)[0]
+
+    check("classify: dessert head noun", clf("Chocolate Cake") == "Desserts")
+    check("classify: soup head noun", clf("Tomato Soup") == "Soups & Stews")
+    check("classify: inverted name resolves on head before comma",
+          clf("Cake, Rice") == "Desserts", str(classify_name("Cake, Rice")))
+    check("classify: inverted soup", clf("Soup, Tomato") == "Soups & Stews")
+    check("classify: pie disambiguates by qualifier",
+          (clf("Apple Pie"), clf("Chicken Pie")) == ("Desserts", "Mains"),
+          f'{clf("Apple Pie")}, {clf("Chicken Pie")}')
+    check("classify: bare 'pie' low confidence",
+          classify_name("Pie")[0] == "Desserts" and classify_name("Pie")[1] < 0.45,
+          str(classify_name("Pie")))
+    check("classify: OCR digit-accent recovered (Canap6s -> canapé)",
+          classify_name("Algonquin Canap6s") == ("Sides", 0.7, ["appetizer"]),
+          str(classify_name("Algonquin Canap6s")))
+    check("classify: no dish signal -> None",
+          classify_name("Russian") == (None, 0.0, []),
+          str(classify_name("Russian")))
+    check("is_fragment: leading preposition dropped",
+          is_fragment("of Beef, Broiled") and is_fragment("and Rice Croquettes"))
+    check("is_fragment: bare roman numeral dropped", is_fragment("III"))
+    check("is_fragment: too short dropped", is_fragment("k"))
+    check("is_fragment: real dish name kept",
+          not is_fragment("Tomato Soup") and not is_fragment("Cake, Rice"))
 
     try:
         text = get_djvu_text(SELFTEST_ID)
@@ -1277,6 +1851,12 @@ def main(argv: list[str] | None = None) -> int:
     p_extract.add_argument("--out-dir", default=None,
                            help="default tools/curation/books/<id>/")
     p_extract.set_defaults(func=cmd_extract)
+
+    p_classify = sub.add_parser(
+        "classify", help="name-based meal-role classify draft.json -> "
+        "final.csv + needs_review.csv + dropped.csv")
+    p_classify.add_argument("identifier", help="archive.org item id")
+    p_classify.set_defaults(func=cmd_classify)
 
     p_apply = sub.add_parser(
         "apply", help="final.csv -> public/packs/<id>.json + catalog entry")

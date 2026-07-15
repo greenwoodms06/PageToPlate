@@ -26,6 +26,10 @@ content) are a separate path — see `tools/build_pack.py`.
 
 ```
 triage  →  extract  →  judgment pass (human)  →  apply  →  verify-links  →  PR
+                          │
+                          └─ or: classify  (name-based, for hierarchical-index
+                                            books whose categories can't come
+                                            from a chapter map — see § 2b)
 ```
 
 All commands are subcommands of `tools/curate_packs.py`. Every network fetch
@@ -89,6 +93,79 @@ Output, in `tools/curation/books/<identifier>/`:
 The command prints a self-check (entry count, %verified, null-category
 count). If the entry count looks like a chapter count (tens, not hundreds or
 thousands), the book probably has no recipe-level index — pick another book.
+
+### 2b. `classify` — name-based meal-role categorization
+
+```
+python3 tools/curate_packs.py classify <identifier>
+```
+
+Use this when the book is a **hierarchical / alphabetical index** and `extract`
+left every category null because it found no usable chapter map (the printed
+CONTENTS parses to a line or two). The classic case is Fannie Farmer's *Boston
+Cooking-School Cook Book* (`cookingscholbost00farmrich`): sub-recipes are listed
+under a parent noun with the parent **elided**, so the raw name is just the
+qualifier — `Butyric` under `Acid`, `Broiled` under `Beef`, `Devil's Food`
+under `Cake`. Page links stay correct (99.9% verified); the name loses its head
+noun. `classify` reads meal ROLE off the recipe NAME instead of the chapter.
+
+For each draft entry it does one of three things:
+
+1. **Drop pure fragments** (`is_fragment`) — an index row that begins with a
+   conjunction/preposition (`and Rice Croquettes`, `of Beef, larded`, `au
+   Gratin`, `k la Newburg` = OCR of *à la*), is a bare roman numeral, is only
+   function words, or has fewer than 4 letters. These are truncated **tails**
+   with no head noun; shipping them would mean broken names. They go to
+   `dropped.csv` (reason `fragment`), not the pack.
+2. **Chapter-map first** — if the entry's draft `chapter` still maps cleanly
+   through the category synonym table, that wins (so a book that DOES have a
+   chapter map isn't forced through the name path).
+3. **Name-classify** (`classify_name`) — otherwise, categorize by dish /
+   head-noun keywords. Categories are **meal role** (`src/data/categories.ts`),
+   never cuisine or technique. Inverted index names resolve on the head noun
+   **before the first comma** (`Cake, Rice` → Cake → Desserts; `Soup, Tomato` →
+   Soup → Soups & Stews). Ambiguous dish words carry an **honest confidence**
+   and resolve by qualifier: `Apple Pie` → Desserts 0.85 but `Chicken Pie` →
+   Mains 0.85; bare `Pie` → Desserts 0.40; `Chocolate` alone → Drinks 0.40.
+   (The classifier also repairs the common OCR of accented vowels as digits —
+   `Canap6s` → canapé — which recovers a big block of French dish words.)
+
+Output in `tools/curation/books/<identifier>/`:
+
+| file               | what it is |
+|--------------------|------------|
+| `final.csv`        | every KEPT entry `name,page,category,tags,url,pageStatus` — ready for `apply`. Category is **blank** when the name gives no signal (blanks install as Uncategorized; do not write a literal `Uncategorized`, it is an unmapped-category error in `apply`) |
+| `needs_review.csv` | `name,page,guessed_category,confidence` for every low-confidence (<0.45) or signal-free entry — the **only** list a human/LLM needs to scan |
+| `dropped.csv`      | `name,page,reason` — the fragments (confirm they are fragments, not real recipes, before shipping) |
+
+The command prints kept/dropped counts, the % auto-classified at confidence
+≥ 0.45, the Uncategorized share, and the full category histogram.
+
+**needs_review workflow (how to improve a run):** open `needs_review.csv` and
+work the residual two ways —
+
+- entries you can place by **dish knowledge** → add their keyword to the
+  classifier table in `curate_packs.py` (the ingredient sets or `_RULES`) and
+  re-run, so the fix is **reusable** on the next book, not a one-off edit;
+- genuinely idiosyncratic entries → hand-correct the category directly in
+  `final.csv` and log which in `notes.md`.
+
+Aim for a histogram that reads like a real cookbook (no single category > ~40%,
+Uncategorized not dominant) and the smallest honest needs-review list.
+
+**Known limitation — hierarchical-index truncation (witness P2P-007).** On a
+book like Fannie Farmer, a real fraction of entries are **lone truncated
+qualifiers** ("Russian", "Harvard", "White", "Boiled") whose parent noun was
+elided in the index. Name-based classification genuinely *cannot* categorize
+these, and reconstructing the parent noun is deliberately **out of scope**
+(fragile, and it changes the printed name). They ship with **correct links**
+and a blank/Uncategorized category, and are listed in `needs_review.csv`. This
+is acceptable for a page-linking randomizer — the label is imperfect but the
+link lands on the right page. Do **not** fabricate a category for a signal-free
+name to hit a target; leave it Uncategorized and say so. (A small tail of the
+book's non-recipe front/back matter — food-science notes, household hints like
+"Wood Floors, to Polish" — also lands here; a recipe/non-recipe filter is a
+possible future improvement.)
 
 ### 3. Judgment pass — the human (or AI-assisted) step
 

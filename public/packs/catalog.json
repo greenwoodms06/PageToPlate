@@ -54,6 +54,34 @@
    ],
    "file": "packs/cu31924000610117.json",
    "version": 1
+  },
+  {
+   "id": "cookingscholbost00farmrich",
+   "title": "The Boston Cooking-school Cook Book",
+   "author": "Farmer, Fannie Merritt",
+   "year": 1918,
+   "country": "US",
+   "cuisines": [
+    "american"
+   ],
+   "era": "historical",
+   "type": "linked",
+   "recipeCount": 3363,
+   "categories": [
+    "Desserts",
+    "Mains",
+    "Sides",
+    "Sauces & Condiments",
+    "Soups & Stews",
+    "Breads",
+    "Drinks",
+    "Salads",
+    "Preserves & Pickles",
+    "Breakfast & Brunch",
+    "Basics"
+   ],
+   "file": "packs/cookingscholbost00farmrich.json",
+   "version": 1
   }
  ]
 }
