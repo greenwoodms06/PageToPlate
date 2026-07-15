@@ -1,18 +1,179 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <!-- PageToPlate mark: an index card with a book-spine stripe, on paper.
-       Colors are the light-theme tokens (tokens.css): paper #F6F4EC,
-       card #FFFEF9, line #E2DFD2, ruling #E7E4D6, spine-1 #0072B2. -->
-  <rect width="512" height="512" fill="#F6F4EC"/>
-  <defs>
-    <clipPath id="card"><rect x="76" y="124" width="360" height="264" rx="30"/></clipPath>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 1024 1024"
+   width="1024"
+   height="1024"
+   role="img"
+   aria-label="App icon: left half an open book page, right half a plate of food"
+   version="1.1"
+   id="svg13"
+   sodipodi:docname="icon-book-plate.svg"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview13"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.56278518"
+     inkscape:cx="265.6431"
+     inkscape:cy="734.73861"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg13" />
+  <defs
+     id="defs1">
+    <!-- palette -->
+    <style
+       id="style1">
+      .bg     { fill: #33814F; }
+      .ink    { fill: none; stroke: #14472C; stroke-width: 20; stroke-linecap: round; stroke-linejoin: round; }
+      .paper  { fill: #F2EDDF; }
+      .rule   { fill: none; stroke: #14472C; stroke-width: 20; stroke-linecap: round; }
+      .food   { fill: #D69A28; }
+      .hilite { fill: #F2EDDF; }
+    </style>
+    <!-- clip that keeps the plate to its right half only -->
+    <clipPath
+       id="rightHalf">
+      <rect
+         x="512"
+         y="120"
+         width="420"
+         height="784"
+         id="rect1" />
+    </clipPath>
   </defs>
-  <rect x="76" y="124" width="360" height="264" rx="30" fill="#FFFEF9" stroke="#E2DFD2" stroke-width="8"/>
-  <g clip-path="url(#card)">
-    <rect x="76" y="124" width="50" height="264" fill="#0072B2"/>
+  <!-- background -->
+  <rect
+     class="bg"
+     width="1024"
+     height="1024"
+     id="rect2" />
+  <!-- ============ RIGHT HALF: plate (semicircle, flat edge on center line) ============ -->
+  <g
+     clip-path="url(#rightHalf)"
+     id="g8">
+    <!-- plate body -->
+    <circle
+       class="paper"
+       cx="512"
+       cy="512"
+       r="360"
+       id="circle2" />
+    <circle
+       class="ink"
+       cx="512"
+       cy="512"
+       r="360"
+       id="circle3" />
+    <!-- inner rim -->
+    <circle
+       class="ink"
+       cx="512"
+       cy="512"
+       r="268"
+       id="circle4"
+       style="stroke-width:5;stroke-dasharray:none" />
+    <!-- food: simple abstract shapes -->
+    <g
+       id="g7">
+      <!-- mushroom-ish cap -->
+      <path
+         class="food"
+         d="M596 396c46-30 104-16 118 28 10 32-14 56-48 60-14 2-26-4-38 4-16 10-36 6-44-10-12-24-8-62 12-82z"
+         id="path4" />
+      <!-- bean / dumpling -->
+      <path
+         class="food"
+         d="M582 566c30-34 92-30 112 6 16 30-4 66-40 74-30 6-64-4-76-28-8-18-8-38 4-52z"
+         id="path5" />
+      <!-- small dots -->
+      <circle
+         class="food"
+         cx="672"
+         cy="500"
+         r="14"
+         id="circle5" />
+      <circle
+         class="food"
+         cx="600"
+         cy="676"
+         r="18"
+         id="circle6" />
+      <!-- highlights -->
+      <ellipse
+         class="hilite"
+         cx="628"
+         cy="590"
+         rx="9"
+         ry="14"
+         transform="rotate(-18 628 590)"
+         id="ellipse6" />
+      <ellipse
+         class="hilite"
+         cx="672"
+         cy="612"
+         rx="8"
+         ry="12"
+         transform="rotate(-18 672 612)"
+         id="ellipse7" />
+    </g>
   </g>
-  <g stroke="#E7E4D6" stroke-width="10" stroke-linecap="round">
-    <line x1="160" y1="238" x2="404" y2="238"/>
-    <line x1="160" y1="294" x2="404" y2="294"/>
-    <line x1="160" y1="350" x2="372" y2="350"/>
+  <!-- ============ LEFT HALF: single open-book page ============ -->
+  <!-- page shape: straight spine on the center line, soft curled outer edge at the bottom -->
+  <path
+     class="paper"
+     d="M 505.71779,160 H 208.34107 a 17.23923,17.361779 0 0 0 -17.23923,17.36178 v 683.62003 c 0,13.02133 10.77452,21.70222 23.70394,19.532 103.43538,-17.36178 204.71586,-19.532 290.91201,-15.19156 z"
+     id="path8"
+     style="stroke-width:1.08127" />
+  <path
+     class="ink"
+     d="M 509.83855,151.99949 H 201.31904 a 17.885189,17.722876 0 0 0 -17.88518,17.72289 v 697.8383 c 0,13.29214 11.17823,22.15359 24.59213,19.93823 107.31114,-17.72288 212.38662,-19.93823 301.81256,-15.50752 z"
+     id="path9" />
+  <!-- text lines -->
+  <g
+     class="rule"
+     id="g12"
+     transform="matrix(1.3667826,0,0,0.98387565,-172.51699,8.1105457)">
+    <line
+       x1="300"
+       y1="404"
+       x2="466"
+       y2="404"
+       id="line9" />
+    <line
+       x1="300"
+       y1="470"
+       x2="466"
+       y2="470"
+       id="line10" />
+    <line
+       x1="300"
+       y1="536"
+       x2="466"
+       y2="536"
+       id="line11" />
+    <line
+       x1="300"
+       y1="602"
+       x2="410"
+       y2="602"
+       id="line12" />
   </g>
+  <!-- ============ CENTER LINE: shared edge where page meets plate ============ -->
+  <path
+     style="fill:#d4ff2a;stroke:#eba013;stroke-width:32;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+     d="M 242.49325,307.82822 H 368.13742"
+     id="path13" />
 </svg>
