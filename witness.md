@@ -96,3 +96,27 @@ STATUS:       Resolved — owner verified picker + restore on device 2026-07-15
 ```
 
 ---
+
+```
+ID:           P2P-007
+WHEN:         2026-07-15 / pack curation / batch of 10, book 2 (Fannie Farmer)
+WHERE:        tools/curate_packs.py extract > back-index parsing, cookingscholbost00farmrich
+WHAT:         Triage bar (100% page-resolvable, >0.9 char-OCR) does not measure index
+              STRUCTURE recoverability. Fannie Farmer's hierarchical alphabetical index
+              flattens under OCR: sub-entries lose their parent headword ("Corn Cake, 75"
+              is really "White Corn Cake"). Page links stay correct (99.9% verified);
+              names truncate; ~7% are pure fragments ("Frosting of", "and Water Bread").
+TYPE:         Multiverse Signal — the selection metric (page-resolve + char-OCR) is not
+              the quality that matters (index self-containedness); Escoffier passed only
+              because its index was numbered/self-contained per line.
+CONSEQUENCE:  Headword reconstruction investigated and REJECTED: djvu.txt preserves no
+              indentation (all lines flush-left), and the alphabetical carry-down trick
+              fabricates ~1/3 of names for early-alphabet headwords (e.g. 'Wedding Corn
+              Cake'). Policy (owner, clean-subset): drop unrecoverable truncated/lone-
+              qualifier entries; ship only confidently-classified self-contained recipes.
+              Fannie Farmer 3,613 raw -> ~2,200 clean. Per-book yield varies (numbered
+              indexes like Escoffier lose ~0%).
+STATUS:       Resolved — policy set; per-book clean subsets, owner spot-checks in-app.
+```
+
+---
