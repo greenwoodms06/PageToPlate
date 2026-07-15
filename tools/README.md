@@ -73,3 +73,49 @@ Staples"). The app's importer applies the current 11-category mapping (owner
 decision, 2026-07-14) at import time — appetizer-vocabulary sections map to
 Sides with an auto `appetizer` tag — so CSVs produced here import cleanly
 without editing the scripts.
+
+## Content packs — `build_pack.py` (plan Task 25)
+
+Turns a clean index CSV (the pipeline's output, or any name/page/category CSV)
+into a content pack the app serves from `public/packs/`:
+
+```
+python3 tools/build_pack.py background/atk_index.csv \
+  --id atk-complete \
+  --name "The Complete America's Test Kitchen TV Show Cookbook 2001–2025" \
+  --author "America's Test Kitchen" --year 2025 --country US \
+  --cuisine american --era modern --type index-only \
+  -o public/packs/atk-complete.json
+```
+
+It applies the SAME normalization as the app importer (trim, old-12→new-11
+category remap incl. the `appetizer` auto-tag, keyword split + redundancy
+filter — mirrored from `src/data/categories.ts` / `src/logic/importer.ts`),
+prints a category histogram for an eyeball check, refuses to write a pack
+with unmapped categories, and creates/replaces the pack's entry in
+`public/packs/catalog.json`.
+
+### Formats
+
+```jsonc
+// public/packs/catalog.json — what the Library lists
+{ "catalogVersion": 1, "packs": [{
+  "id": "atk-complete",
+  "title": "The Complete America's Test Kitchen TV Show Cookbook 2001–2025",
+  "author": "America's Test Kitchen", "year": 2025, "country": "US",
+  "cuisines": ["american"], "era": "modern", "type": "index-only",
+  "recipeCount": 1645, "categories": ["Mains", "Desserts", "..."],
+  "file": "packs/atk-complete.json",   // relative to the app's BASE_URL
+  "version": 1
+}]}
+
+// public/packs/<id>.json — what installPack() imports
+{ "id": "atk-complete", "version": 1,
+  "book": { "name": "…", "tags": [] },
+  "recipes": [{ "name": "…", "page": "2", "category": "Soups & Stews", "tags": [] }] }
+```
+
+Pack categories are ALREADY the app's 11 defaults — `installPack()`
+(src/data/packs.ts) runs them through `planImport` and expects zero
+unrecognized. Linked packs will add `"link": {"url": …, "pageStatus": …}` per
+recipe; the schema slot exists now, the pipeline for it is deferred.

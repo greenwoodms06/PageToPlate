@@ -1,0 +1,33 @@
+{
+ "catalogVersion": 1,
+ "packs": [
+  {
+   "id": "atk-complete",
+   "title": "The Complete America's Test Kitchen TV Show Cookbook 2001–2025",
+   "author": "America's Test Kitchen",
+   "year": 2025,
+   "country": "US",
+   "cuisines": [
+    "american"
+   ],
+   "era": "modern",
+   "type": "index-only",
+   "recipeCount": 1645,
+   "categories": [
+    "Mains",
+    "Desserts",
+    "Sauces & Condiments",
+    "Sides",
+    "Breakfast & Brunch",
+    "Soups & Stews",
+    "Salads",
+    "Breads",
+    "Preserves & Pickles",
+    "Drinks",
+    "Basics"
+   ],
+   "file": "packs/atk-complete.json",
+   "version": 1
+  }
+ ]
+}
