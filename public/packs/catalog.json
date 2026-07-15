@@ -28,6 +28,32 @@
    ],
    "file": "packs/atk-complete.json",
    "version": 1
+  },
+  {
+   "id": "cu31924000610117",
+   "title": "A Guide to Modern Cookery",
+   "author": "Escoffier, A. (Auguste)",
+   "year": 1907,
+   "country": "GB",
+   "cuisines": [
+    "french"
+   ],
+   "era": "historical",
+   "type": "linked",
+   "recipeCount": 2981,
+   "categories": [
+    "Mains",
+    "Desserts",
+    "Sides",
+    "Basics",
+    "Soups & Stews",
+    "Sauces & Condiments",
+    "Salads",
+    "Preserves & Pickles",
+    "Drinks"
+   ],
+   "file": "packs/cu31924000610117.json",
+   "version": 1
   }
  ]
 }
