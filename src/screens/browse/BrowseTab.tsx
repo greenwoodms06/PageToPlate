@@ -41,6 +41,16 @@ const cycleSel = (sel: SelEntry[], id: string): SelEntry[] => {
 const PAGE = 80;
 const PAGE_MORE = 160;
 
+// One-shot pre-filter handoff (Task 23: BookDetail's "Browse its N recipes").
+// A module variable, not a hash query param: Browse filter state is never
+// serialized to the URL anywhere else (deep-linking a filtered Browse is out
+// of scope for v1), and the handoff is consumed exactly once on mount, so a
+// plain variable keeps #/browse clean and adds no parse/serialize code.
+let pendingBookFilter: string | null = null;
+export function presetBrowseBook(bookId: string): void {
+  pendingBookFilter = bookId;
+}
+
 type StatusKey = 'active' | 'made' | 'planned' | 'never' | 'star8';
 const STATUS_CHIPS: { key: StatusKey; label: string }[] = [
   { key: 'active', label: 'Active' },
@@ -53,7 +63,12 @@ const STATUS_CHIPS: { key: StatusKey; label: string }[] = [
 export function BrowseTab() {
   const version = useStore((s) => s.version);
   const [pills, setPills] = useState<PillT[]>([]);
-  const [bookSel, setBookSel] = useState<SelEntry[]>([]);
+  const [bookSel, setBookSel] = useState<SelEntry[]>(() => {
+    // Consume the one-shot handoff (see presetBrowseBook above).
+    const id = pendingBookFilter;
+    pendingBookFilter = null;
+    return id ? [{ id, neg: false }] : [];
+  });
   const [catSel, setCatSel] = useState<SelEntry[]>([]);
   const [statusSel, setStatusSel] = useState<ReadonlySet<StatusKey>>(new Set());
   const [openPanel, setOpenPanel] = useState<'books' | 'cats' | null>(null);

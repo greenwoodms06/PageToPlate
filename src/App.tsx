@@ -11,7 +11,9 @@ import { GenerateTab } from './screens/generate/GenerateTab';
 import { PlansTab } from './screens/plans/PlansTab';
 import { BrowseTab } from './screens/browse/BrowseTab';
 import { BooksTab } from './screens/books/BooksTab';
+import { BookDetail } from './screens/books/BookDetail';
 import { SettingsHome } from './screens/settings/SettingsHome';
+import { AiImportHelp } from './screens/settings/AiImportHelp';
 import { DevGallery } from './screens/DevGallery';
 
 // ── hash routing ────────────────────────────────────────────────────────────
@@ -26,11 +28,14 @@ function useHash(): string {
   );
 }
 
-type Route = { tab: Tab } | { tab: 'settings'; sub?: string } | { tab: 'dev' };
+type Route = { tab: Tab; sub?: string } | { tab: 'settings'; sub?: string } | { tab: 'dev' };
 
 function parseRoute(hash: string): Route {
   const [seg, sub] = hash.replace(/^#\/?/, '').split('/');
-  if (seg === 'plans' || seg === 'browse' || seg === 'books') return { tab: seg };
+  if (seg === 'plans' || seg === 'browse') return { tab: seg };
+  // #/books/<id> is the book-detail sub-route (Task 23) — its own history
+  // entry so system back returns to the shelf.
+  if (seg === 'books') return { tab: 'books', sub: sub || undefined };
   if (seg === 'settings') return { tab: 'settings', sub: sub || undefined };
   // Component gallery (Task 13) — kept in production: harmless and useful.
   if (seg === 'dev') return { tab: 'dev' };
@@ -90,12 +95,18 @@ export default function App() {
       {route.tab === 'generate' && <GenerateTab />}
       {route.tab === 'plans' && <PlansTab />}
       {route.tab === 'browse' && <BrowseTab />}
-      {route.tab === 'books' && <BooksTab />}
-      {route.tab === 'settings' && <SettingsHome sub={route.sub} />}
+      {route.tab === 'books' && (route.sub ? <BookDetail bookId={route.sub} /> : <BooksTab />)}
+      {route.tab === 'settings' &&
+        // AI import help (Task 24) is the first real settings sub-screen; the
+        // rest of #/settings stays the Task 12 placeholder until Task 26.
+        (route.sub === 'ai-import' ? <AiImportHelp /> : <SettingsHome sub={route.sub} />)}
       {route.tab === 'dev' && <DevGallery />}
       {/* Settings has no bottom nav in the design (canvas 4a: back arrow
-          instead); the dev gallery isn't a tab either. */}
-      {route.tab !== 'settings' && route.tab !== 'dev' && <BottomNav active={route.tab} />}
+          instead); the dev gallery isn't a tab either. Book detail (5c) also
+          renders back-arrow-only, like settings. */}
+      {route.tab !== 'settings' && route.tab !== 'dev' && !(route.tab === 'books' && route.sub) && (
+        <BottomNav active={route.tab} />
+      )}
     </ToastProvider>
   );
 }
