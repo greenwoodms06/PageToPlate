@@ -112,6 +112,43 @@ describe('planImport — same-name twins (page as tiebreaker)', () => {
   });
 });
 
+describe('planImport — in-file duplicate rows (never double-enter)', () => {
+  // The ATK index lists 10 recipes twice — same name AND page — because the
+  // book's TOC repeats them across sections. Dedupe against EXISTING recipes
+  // alone misses these on a first-time import (fresh book: existing is empty).
+  it('same name+page twice in one file: first row adds, second row skips (keep first, even across sections)', () => {
+    // Real pair from the index: p.692 is listed under BOTH Mains and Sides.
+    // The differing section must not turn the second row into an update.
+    const plan = planImport([
+      parsedRow('Classic Mashed Potatoes', '692', 'Mains'),
+      parsedRow('Classic Mashed Potatoes', '692', 'Sides'),
+    ], [], CATEGORY_NAMES);
+    expect(plan.rows.map(r => r.action)).toEqual(['add', 'skip']);
+    expect({ adds: plan.adds, skips: plan.skips, updates: plan.updates }).toEqual({ adds: 1, skips: 1, updates: 0 });
+  });
+
+  it('same name but DIFFERENT page twice in one file: legit twins, both add', () => {
+    // The ATK index also has 15 legitimate same-name/different-page pairs —
+    // in-file dedupe must not collapse those.
+    const plan = planImport([
+      parsedRow('Waffles', '12', 'Breakfast & Brunch'),
+      parsedRow('Waffles', '98', 'Breakfast & Brunch'),
+    ], [], CATEGORY_NAMES);
+    expect(plan.rows.map(r => r.action)).toEqual(['add', 'add']);
+    expect({ adds: plan.adds, skips: plan.skips, updates: plan.updates }).toEqual({ adds: 2, skips: 0, updates: 0 });
+  });
+
+  it('in-file dupe of a recipe that also exists in the book: both rows skip, no update', () => {
+    const prior = existingRecipe({ name: 'Pumpkin Pie', page: '993', category: 'Desserts' });
+    const plan = planImport([
+      parsedRow('Pumpkin Pie', '993', 'Desserts'),
+      parsedRow('Pumpkin Pie', '993', 'Desserts'),
+    ], [prior], CATEGORY_NAMES);
+    expect(plan.rows.map(r => r.action)).toEqual(['skip', 'skip']);
+    expect({ adds: plan.adds, skips: plan.skips, updates: plan.updates }).toEqual({ adds: 0, skips: 2, updates: 0 });
+  });
+});
+
 describe('planImport — tag redundancy', () => {
   it('drops keywords already present in the recipe name, keeps the rest', () => {
     const plan = planImport(
@@ -144,7 +181,10 @@ describe('planImport — full ATK export end-to-end', () => {
     const { rows } = parseRecipeCsv(text);
     const plan = planImport(rows, [], CATEGORY_NAMES);
     expect(plan.unrecognized.size).toBe(0);
-    expect(plan.adds).toBe(1645);
+    // 1645 rows minus the 10 exact name+page duplicates the book's TOC
+    // repeats across sections — never double-enter, even on first import.
+    expect(plan.adds).toBe(1635);
+    expect(plan.skips).toBe(10);
     const appetizers = plan.rows.filter(r => r.rawCategory === 'Appetizers & Small Plates');
     expect(appetizers).toHaveLength(9);
     expect(appetizers.every(r => r.category === 'Sides' && r.tags.includes('appetizer'))).toBe(true);

@@ -160,6 +160,19 @@ def main() -> int:
     args = ap.parse_args()
 
     rows = parse_rows(args.csv)
+    # Drop exact normalized-name+page duplicates, keeping the FIRST row (the
+    # ATK index lists 10 recipes twice across TOC sections, 5 of the pairs
+    # under different categories — keep-first mirrors src/logic/importer.ts
+    # planImport, which skips in-file repeats: never double-enter).
+    seen, deduped, dropped = set(), [], 0
+    for row in rows:
+        key = (norm(row["name"]), row["page"])
+        if key in seen:
+            dropped += 1
+            continue
+        seen.add(key)
+        deduped.append(row)
+    rows = deduped
     recipes, unmapped = [], collections.Counter()
     histogram = collections.Counter()
     for row in rows:
@@ -183,6 +196,8 @@ def main() -> int:
         histogram[category or f"UNMAPPED:{row['category']}"] += 1
 
     print(f"{len(recipes)} recipes from {args.csv}")
+    if dropped:
+        print(f"{dropped} in-file duplicates dropped")
     for cat, count in histogram.most_common():
         print(f"  {count:5d}  {cat}")
     if unmapped:

@@ -7889,12 +7889,6 @@
    "tags": []
   },
   {
-   "name": "Classic Mashed Potatoes",
-   "page": "692",
-   "category": "Sides",
-   "tags": []
-  },
-  {
    "name": "Garlic and Olive Oil Mashed Potatoes",
    "page": "693",
    "category": "Sides",
@@ -7916,18 +7910,6 @@
    "name": "Fluffy Mashed Potatoes",
    "page": "694",
    "category": "Sides",
-   "tags": []
-  },
-  {
-   "name": "Fluffy Mashed Potatoes",
-   "page": "694",
-   "category": "Mains",
-   "tags": []
-  },
-  {
-   "name": "Creamy Mashed Potatoes",
-   "page": "694",
-   "category": "Mains",
    "tags": []
   },
   {
@@ -7958,12 +7940,6 @@
    "name": "Mashed Potatoes and Root Vegetables",
    "page": "696",
    "category": "Sides",
-   "tags": []
-  },
-  {
-   "name": "Roasted Root Vegetables",
-   "page": "696",
-   "category": "Mains",
    "tags": []
   },
   {
@@ -9068,12 +9044,6 @@
    "tags": []
   },
   {
-   "name": "Cream Biscuits",
-   "page": "786",
-   "category": "Breads",
-   "tags": []
-  },
-  {
    "name": "Best Drop Biscuits",
    "page": "787",
    "category": "Breads",
@@ -9195,12 +9165,6 @@
    "name": "Rustic Dinner Rolls",
    "page": "796",
    "category": "Breads",
-   "tags": []
-  },
-  {
-   "name": "Rustic Dinner Rolls",
-   "page": "796",
-   "category": "Mains",
    "tags": []
   },
   {
@@ -10835,14 +10799,6 @@
    ]
   },
   {
-   "name": "Spiced Pumpkin Cheesecake",
-   "page": "921",
-   "category": "Desserts",
-   "tags": [
-    "tortes"
-   ]
-  },
-  {
    "name": "Lemon Cheesecake",
    "page": "922",
    "category": "Desserts",
@@ -12018,15 +11974,6 @@
    "tags": []
   },
   {
-   "name": "Classic Apple Pie",
-   "page": "983",
-   "category": "Desserts",
-   "tags": [
-    "crusts",
-    "and tarts"
-   ]
-  },
-  {
    "name": "Deep-Dish Apple Pie",
    "page": "984",
    "category": "Desserts",
@@ -12034,12 +11981,6 @@
     "crusts",
     "and tarts"
    ]
-  },
-  {
-   "name": "Deep-Dish Apple Pie",
-   "page": "984",
-   "category": "Desserts",
-   "tags": []
   },
   {
    "name": "Blueberry Pie",
@@ -12117,15 +12058,6 @@
    "page": "993",
    "category": "Desserts",
    "tags": []
-  },
-  {
-   "name": "Pumpkin Pie",
-   "page": "993",
-   "category": "Desserts",
-   "tags": [
-    "crusts",
-    "and tarts"
-   ]
   },
   {
    "name": "Pecan Pie",

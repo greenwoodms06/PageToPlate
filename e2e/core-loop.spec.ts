@@ -6,9 +6,9 @@
 // Fixture hand-counts (e2e/fixtures/mini.csv — recompute if it changes):
 // 12 rows; 'Puddings' → Desserts (synonym), 'Appetizers & Small Plates' →
 // Sides (+ appetizer tag); 'Garlic Green Beans' p.60 appears twice — an
-// exact name+page duplicate pair. planImport dedupes against EXISTING
-// recipes only (fresh book has none), so the preview plans 12 adds /
-// 0 duplicates and commit stores all 12: Mains 4, Desserts 4, Sides 3,
+// exact name+page duplicate pair. planImport skips in-file repeats (never
+// double-enter, even into a fresh book), so the preview plans 11 adds /
+// 1 duplicate and commit stores 11: Mains 4, Desserts 4, Sides 2,
 // Soups & Stews 1. 'chocolate' matches 2 of the 4 Desserts by name.
 import { expect, test } from '@playwright/test';
 import { fileURLToPath } from 'node:url';
@@ -25,18 +25,18 @@ test('core loop: import → generate → plan → made → browse → persist �
   const summary = page.getByTestId('import-summary');
   await expect(summary).toContainText('12 recipes found');
   await expect(summary).toContainText('4 categories');
-  await expect(summary).toContainText('0 duplicates');
+  await expect(summary).toContainText('1 duplicate'); // the in-file Garlic Green Beans pair
   // Appetizer synonym row maps to Sides (sample shows the first 8 rows).
   const eggsRow = page.getByText('Deviled Eggs').locator('..');
   await expect(eggsRow).toContainText('p. 12');
   await expect(eggsRow).toContainText('Sides');
 
   // ── import → book lands on the shelf ──────────────────────────────────
-  await page.getByText('Import 12 recipes').click();
+  await page.getByText('Import 11 recipes').click();
   await expect(page).toHaveURL(/#\/books\/.+/); // commit routes to book detail
   await page.goto('#/books');
   const bookCard = page.getByText('mini', { exact: true }).locator('..');
-  await expect(bookCard).toContainText('12 recipes');
+  await expect(bookCard).toContainText('11 recipes');
 
   // ── Generate step 1: select the book ──────────────────────────────────
   await page.goto('#/generate');
