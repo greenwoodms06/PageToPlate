@@ -12,6 +12,14 @@ import { useEffect, useRef } from 'react';
 // overlay's listener; only the topmost may act.
 const stack: symbol[] = [];
 
+/** Any Sheet/Dialog currently open? The stack above already tracks exactly
+ * that, so it doubles as the app-wide open-overlay marker — used by
+ * useSwipeTabs (round-1 amendment 3) to keep horizontal swipes from
+ * switching tabs underneath an open overlay. */
+export function overlayOpen(): boolean {
+  return stack.length > 0;
+}
+
 // Programmatic unwinds in flight. Found via Task 22 E2E: saving MarkAsMade
 // from inside RecipeCardSheet closed the SHEET too — the dialog's deferred
 // history.back() (unwinding its own entry after a programmatic close) fired

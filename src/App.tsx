@@ -7,6 +7,7 @@ import { requestPersistOnFirstUse } from './data/persist';
 import { applyTheme, watchSystemTheme } from './theme';
 import { BottomNav, type Tab } from './components/BottomNav';
 import { ToastProvider, useToast } from './components/Toast';
+import { useSwipeTabs } from './components/useSwipeTabs';
 import { GenerateTab } from './screens/generate/GenerateTab';
 import { PlansTab } from './screens/plans/PlansTab';
 import { BrowseTab } from './screens/browse/BrowseTab';
@@ -126,6 +127,14 @@ export default function App() {
   useEffect(() => applyTheme(theme), [theme]);
 
   const route = parseRoute(useHash());
+
+  // Swipe tab navigation (round-1 amendment 3) — armed only on the four main
+  // tab screens; settings, book detail (#/books/<id>) and the dev gallery
+  // keep swipes inert (they aren't bottom-nav siblings, and book detail's
+  // back-arrow mental model would fight a sideways jump).
+  const swipeTab: Tab | null =
+    route.tab !== 'settings' && route.tab !== 'dev' && !('sub' in route && route.sub) ? route.tab : null;
+  useSwipeTabs(ready ? swipeTab : null);
 
   if (!ready) {
     return (
