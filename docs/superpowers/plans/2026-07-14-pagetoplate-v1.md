@@ -47,6 +47,15 @@ Conventional calls (stated, not open): hash-based routing (`HashRouter`), dark m
 3. **Rating display scale setting** — `settings.ratingScale: 5 | 10`, default 10. Storage stays canonical 1–10 forever; 5-scale is display-only binning (1–2→1, 3–4→2, 5–6→3, 7–8→4, 9–10→5; input on 5-scale stores ×2). Switching never mutates data. 1–100 / fully-custom scales considered and rejected (false precision, UI + complexity cost); the canonical 1–10 storage leaves room to add display options later without migration.
 4. **Polish:** Generate step 1 empty state with zero books says "No books yet — add one in Books", not `No books match ""`.
 
+## Post-deploy amendments, round 1 (owner, 2026-07-15, after phone use)
+
+1. **Recipe card:** add a recipe-level Notes section (`Recipe.notes?: string`, instant-save textarea) — distinct from per-MadeEntry notes. Backup covers it automatically (whole-recipe serialization).
+2. **Recipe card book selector:** replace the confusing tap-to-select pill with an explicit "Move to book…" chooser dialog (keeps the spec's move-recipe capability; owner may still opt to remove).
+3. **App-wide swipe navigation:** horizontal swipe switches bottom-nav tabs (interpretation of owner's "left/right swipe to change tabs" — flagged; alternative reading was next/prev recipe in the card). Must not misfire on horizontally scrollable chip rows or open overlays.
+4. **Plans:** swap gets an undo toast (restores previous recipe); plans are deletable via confirm dialog (history/MadeEntries survive); calendar day-detail plan lines tap through to that plan in list view.
+5. **Browse:** rating filter chip moves from the status row up to the Books/Categories dropdown row.
+6. **Backup export:** prefer `navigator.share({files})` (phone share sheet) whenever supported; download is fallback only. File type stays JSON / ZIP-with-photos, `schemaVersion` already stamped.
+
 ## File structure
 
 ```
