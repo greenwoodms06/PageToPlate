@@ -117,5 +117,13 @@ with unmapped categories, and creates/replaces the pack's entry in
 
 Pack categories are ALREADY the app's 11 defaults — `installPack()`
 (src/data/packs.ts) runs them through `planImport` and expects zero
-unrecognized. Linked packs will add `"link": {"url": …, "pageStatus": …}` per
-recipe; the schema slot exists now, the pipeline for it is deferred.
+unrecognized. Linked packs add `"link": {"url": …, "pageStatus": …}` per
+recipe.
+
+## Linked packs from archive.org — `curate_packs.py`
+
+Public-domain books from the Internet Archive become **linked packs** (every
+recipe deep-links to its page in the online reader) via
+`tools/curate_packs.py` (`triage` → `extract` → human judgment pass →
+`apply` → `verify-links`). The full contributor process, schemas, and PR
+checklist live in **[CURATION.md](CURATION.md)**.

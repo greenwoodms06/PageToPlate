@@ -9,5 +9,8 @@ playwright-report/
 # archive.org triage HTTP cache (regenerated on demand by tools/curate_packs.py)
 tools/curation/.cache/
 
+# Python bytecode (curate_packs.py imports build_pack.py)
+__pycache__/
+
 # Soul runtime state (handoff cursor, event log) — not part of the durable record
 .soul/

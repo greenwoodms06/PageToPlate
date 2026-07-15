@@ -125,6 +125,15 @@ export function SettingsHome() {
           Source & issues on GitHub
         </a>
         <br />
+        <a
+          href={`${REPO_URL}/blob/main/tools/CURATION.md`}
+          target="_blank"
+          rel="noreferrer"
+          style={{ color: 'var(--accent)', fontWeight: 600, textDecoration: 'none' }}
+        >
+          Contribute a cookbook pack ›
+        </a>
+        <br />
         <span style={{ fontSize: 12, color: 'var(--ink-soft)' }}>
           Linked packs courtesy of the Internet Archive.
           <br />
