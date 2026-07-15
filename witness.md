@@ -92,7 +92,7 @@ TYPE:         Universe Contradiction — accept filter assumed helpful; on-devic
               blocked the app's own artifact
 CONSEQUENCE:  Restore unusable on device until filter removed (e315e1d). Restore
               validates by content, so the filter added risk without safety.
-STATUS:       Resolved — pending owner's on-device picker retest
+STATUS:       Resolved — owner verified picker + restore on device 2026-07-15
 ```
 
 ---
