@@ -128,9 +128,9 @@ export function SettingsHome() {
         <span style={{ fontSize: 12, color: 'var(--ink-soft)' }}>
           Linked packs courtesy of the Internet Archive.
           <br />
-          {/* No LICENSE file exists in the repo yet, so this line names none —
-              naming one here would invent a decision the owner hasn't made. */}
-          License: see the GitHub repository.
+          {/* Checkpoint 2 amendment 1: the owner chose MIT — LICENSE at the
+              repo root is the authoritative text. */}
+          MIT license.
         </span>
         <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginTop: 12 }}>
           <span style={{ fontWeight: 600, fontSize: 13.5, color: 'var(--ink)' }}>Theme</span>

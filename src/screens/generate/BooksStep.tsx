@@ -91,10 +91,18 @@ export function BooksStep({
           </button>
         );
       })}
-      {shown.length === 0 && (
+      {/* Zero books at all is a different situation from a filter with no
+          hits (Checkpoint 2 amendment 4): point the user at the fix. */}
+      {books.length === 0 ? (
         <div className="meta" style={{ padding: '12px 2px' }}>
-          No books match “{filter.trim()}”.
+          No books yet — add one in Books.
         </div>
+      ) : (
+        shown.length === 0 && (
+          <div className="meta" style={{ padding: '12px 2px' }}>
+            No books match “{filter.trim()}”.
+          </div>
+        )
       )}
 
       {presets.length > 0 && (
