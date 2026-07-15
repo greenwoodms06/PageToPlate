@@ -1,4 +1,5 @@
 /// <reference types="vitest/config" />
+import { configDefaults } from 'vitest/config';
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
@@ -19,5 +20,7 @@ export default defineConfig({
     },
     workbox: { globPatterns: ['**/*.{js,css,html,woff2,png,svg}'] },
   })],
-  test: { environment: 'node' },
+  // e2e/ is Playwright's (playwright.config.ts), not vitest's — its default
+  // include pattern would otherwise try to collect core-loop.spec.ts.
+  test: { environment: 'node', exclude: [...configDefaults.exclude, 'e2e/**'] },
 });
