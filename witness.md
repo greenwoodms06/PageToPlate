@@ -80,3 +80,19 @@ STATUS:       Resolved — hypothesis confirmed; fix d635a3e (.ptp.txt costume);
 ```
 
 ---
+
+```
+ID:           P2P-006
+WHEN:         2026-07-15 / post-deploy / owner device use
+WHERE:        src/screens/settings/BackupRestore.tsx > restore file input accept attribute
+WHAT:         Android's document picker, driven by the input's accept MIME mapping,
+              refused the .ptp.txt backup the app itself had just exported. Second
+              owner-found defect in the backup flow in one day (after P2P-005).
+TYPE:         Universe Contradiction — accept filter assumed helpful; on-device it
+              blocked the app's own artifact
+CONSEQUENCE:  Restore unusable on device until filter removed (e315e1d). Restore
+              validates by content, so the filter added risk without safety.
+STATUS:       Resolved — pending owner's on-device picker retest
+```
+
+---
