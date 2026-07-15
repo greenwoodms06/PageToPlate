@@ -108,3 +108,15 @@ a {
     var(--ruling) 27px
   );
 }
+
+/* Calendar → plan handoff (round-1 amendment 4c): the plan card the user
+   jumped to pulses an accent outline so the eye lands on it after the
+   List-view switch + scrollIntoView. PlansTab clears the class after ~1.3s
+   (just past this duration) so a repeat tap re-triggers the animation. */
+@keyframes flash-plan-outline {
+  0%, 55% { box-shadow: 0 0 0 2.5px var(--accent); }
+  100% { box-shadow: 0 0 0 2.5px transparent; }
+}
+.flash-plan {
+  animation: flash-plan-outline 1.2s ease-out;
+}

@@ -1,7 +1,7 @@
 // Plans tab (plan Task 19; canvas 2c, screenshot 05, dark 3d): List/Calendar
 // segment toggle, display-font stat strip, plan cards reverse-chron by
 // acceptedAt, and the mark-as-made dialog mounted for whichever row asked.
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Settings } from 'lucide-react';
 import { store, useStore } from '../../data/store';
 import { todayISO } from '../../data/types';
@@ -19,6 +19,23 @@ export function PlansTab() {
   const [view, setView] = useState('List');
   const [dialog, setDialog] = useState<DialogState | null>(null);
   const [openRecipeId, setOpenRecipeId] = useState<string | null>(null);
+  const [flashPlanId, setFlashPlanId] = useState<string | null>(null);
+
+  // Calendar → plan handoff (round-1 amendment 4c): a plan line in the
+  // day-detail jumps to that plan in List view. The effect runs AFTER the
+  // list has rendered (flashPlanId also switches `view`), so the card exists
+  // to scroll to; the timeout clears the flag once the 1.2s outline pulse
+  // (base.css .flash-plan) has played, so a second tap can re-trigger it.
+  const goToPlan = (planId: string) => {
+    setView('List');
+    setFlashPlanId(planId);
+  };
+  useEffect(() => {
+    if (flashPlanId === null) return;
+    document.querySelector(`[data-plan-id="${flashPlanId}"]`)?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    const t = setTimeout(() => setFlashPlanId(null), 1300);
+    return () => clearTimeout(t);
+  }, [flashPlanId]);
 
   // Stat strip (canvas 2c): "14 made this year · 2 open plans · 7.4 avg rating".
   // Made counts ENTRIES this calendar year (cooking the same recipe twice is
@@ -90,6 +107,7 @@ export function PlansTab() {
             <PlanCard
               key={p.id}
               plan={p}
+              flash={p.id === flashPlanId}
               onMarkMade={(recipeId) => setDialog({ recipeId, planId: p.id })}
               onEditEntry={(recipeId, madeEntryId) => setDialog({ recipeId, madeEntryId })}
               onOpenRecipe={setOpenRecipeId}
@@ -97,7 +115,7 @@ export function PlansTab() {
           ))
         )
       ) : (
-        <CalendarView />
+        <CalendarView onOpenPlan={goToPlan} />
       )}
 
       {dialog && <MarkAsMadeDialog {...dialog} onClose={() => setDialog(null)} />}

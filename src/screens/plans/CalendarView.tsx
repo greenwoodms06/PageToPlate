@@ -22,7 +22,7 @@ const ring8: CSSProperties = { width: 8, height: 8, borderRadius: '50%', border:
 const dot8: CSSProperties = { width: 8, height: 8, borderRadius: '50%', background: 'var(--accent)', flex: 'none' };
 const dotNeutral8: CSSProperties = { ...dot8, background: 'var(--neutral-spine)' };
 
-export function CalendarView() {
+export function CalendarView({ onOpenPlan }: { onOpenPlan: (planId: string) => void }) {
   useStore((s) => s.version);
   const today = todayISO();
   const [ym, setYm] = useState(today.slice(0, 7)); // 'YYYY-MM'
@@ -138,13 +138,21 @@ export function CalendarView() {
         )}
       </div>
 
-      <DayDetail iso={selected} onOpenRecipe={setOpenRecipeId} />
+      <DayDetail iso={selected} onOpenRecipe={setOpenRecipeId} onOpenPlan={onOpenPlan} />
       {openRecipeId && <RecipeCardSheet recipeId={openRecipeId} onClose={() => setOpenRecipeId(null)} />}
     </section>
   );
 }
 
-function DayDetail({ iso, onOpenRecipe }: { iso: string; onOpenRecipe: (recipeId: string) => void }) {
+function DayDetail({
+  iso,
+  onOpenRecipe,
+  onOpenPlan,
+}: {
+  iso: string;
+  onOpenRecipe: (recipeId: string) => void;
+  onOpenPlan: (planId: string) => void;
+}) {
   const plans = store.plans.filter((p) => p.acceptedAt === iso);
   const entries = store.madeEntries.filter((e) => e.date === iso);
   const header = fromISO(iso).toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
@@ -167,12 +175,14 @@ function DayDetail({ iso, onOpenRecipe }: { iso: string; onOpenRecipe: (recipeId
       {plans.map((p) => {
         const open = p.items.filter((i) => i.state === 'open').length;
         return (
-          <div key={p.id} style={line}>
+          // Tappable (round-1 amendment 4c): jumps to this plan in List view.
+          <button key={p.id} onClick={() => onOpenPlan(p.id)} style={{ ...line, width: '100%', textAlign: 'left' }}>
             <i aria-hidden style={ring8} />
             <span style={{ flex: 1 }}>
               Plan accepted · {p.items.length} recipes{open > 0 ? `, ${open} still open` : ''}
             </span>
-          </div>
+            <span aria-hidden style={{ color: 'var(--ink-soft)', fontSize: 15 }}>›</span>
+          </button>
         );
       })}
       {entries.map((e) => {

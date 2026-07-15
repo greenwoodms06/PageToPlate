@@ -5,7 +5,9 @@
 // opacity until tapped.
 import { useState } from 'react';
 import type { CSSProperties } from 'react';
+import { Trash2 } from 'lucide-react';
 import { store } from '../../data/store';
+import { Dialog } from '../../components/Dialog';
 import { useToast } from '../../components/Toast';
 import { spineColor } from '../../components/spine';
 import { eligible, pick } from '../../logic/generate';
@@ -44,6 +46,7 @@ export function PlanCard({
   onMarkMade,
   onEditEntry,
   onOpenRecipe,
+  flash = false,
 }: {
   plan: Plan;
   /** Open the mark-as-made dialog for an open item (caller passes this plan's id). */
@@ -52,9 +55,12 @@ export function PlanCard({
   onEditEntry: (recipeId: string, madeEntryId: string) => void;
   /** Row body tap → universal recipe card (Task 22); action buttons keep their own handlers. */
   onOpenRecipe: (recipeId: string) => void;
+  /** Brief accent-outline pulse — the calendar→list handoff target (round-1 amendment 4c). */
+  flash?: boolean;
 }) {
   const showToast = useToast();
   const [expandedDone, setExpandedDone] = useState(false);
+  const [confirmDelete, setConfirmDelete] = useState(false);
 
   const recipeById = (id: string) => store.recipes.find((r) => r.id === id);
   const bookNameOf = (r?: Recipe) => store.books.find((b) => b.id === r?.bookId)?.name ?? 'Unknown book';
@@ -92,8 +98,20 @@ export function PlanCard({
       showToast('No more matches to swap in.');
       return;
     }
+    // Undo restores the pre-swap items (round-1 amendment 4a): a swap is a
+    // random re-pick, so "put the old recipe back" must be one tap — the
+    // replaced recipeId is unguessable once the toast is gone.
+    const priorItems = plan.items;
     setItem(index, { recipeId: next.id, state: 'open' });
-    showToast(`Swapped in ${next.name}`);
+    showToast(`Swapped in ${next.name}`, () => void store.updatePlan(plan.id, { items: priorItems }));
+  };
+
+  const deletePlan = () => {
+    setConfirmDelete(false);
+    // deletePlan removes only the plan row — MadeEntries reference recipes,
+    // not plans, so cooking history survives (round-1 amendment 4b).
+    void store.deletePlan(plan.id);
+    showToast('Plan deleted', () => void store.addPlan(plan));
   };
 
   const share = async () => {
@@ -120,6 +138,8 @@ export function PlanCard({
   if (allDone && !expandedDone) {
     return (
       <button
+        data-plan-id={plan.id}
+        className={flash ? 'flash-plan' : undefined}
         onClick={() => setExpandedDone(true)}
         style={{ ...card, opacity: 0.75, width: '100%', textAlign: 'left', display: 'block' }}
       >
@@ -132,9 +152,9 @@ export function PlanCard({
   }
 
   return (
-    <section style={card}>
+    <section data-plan-id={plan.id} className={flash ? 'flash-plan' : undefined} style={card}>
       <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between' }}>
-        <div style={headerStyle}>
+        <div style={{ ...headerStyle, flex: 1 }}>
           {header} · {plan.items.length} recipes
         </div>
         <button
@@ -142,6 +162,13 @@ export function PlanCard({
           style={{ fontSize: 12, fontWeight: 700, color: 'var(--accent)', padding: '2px 0 2px 8px', flex: 'none' }}
         >
           Share ↗
+        </button>
+        <button
+          aria-label="Delete plan"
+          onClick={() => setConfirmDelete(true)}
+          style={{ color: 'var(--ink-soft)', padding: '2px 0 2px 12px', flex: 'none', alignSelf: 'center' }}
+        >
+          <Trash2 size={15} />
         </button>
       </div>
 
@@ -232,6 +259,39 @@ export function PlanCard({
           </div>
         );
       })}
+
+      {confirmDelete && (
+        <Dialog open onClose={() => setConfirmDelete(false)} label="Delete plan">
+          <div style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: 18, marginBottom: 6 }}>
+            Delete this plan?
+          </div>
+          <p className="meta" style={{ marginBottom: 14 }}>
+            Your cooking history is kept.
+          </p>
+          <button
+            onClick={deletePlan}
+            style={{
+              width: '100%',
+              minHeight: 46,
+              background: 'var(--danger)',
+              // on-accent, not #fff: dark --danger brightens to #C97B63, which
+              // needs the same dark-ink flip as accent buttons (dark sweep, T27).
+              color: 'var(--on-accent)',
+              borderRadius: 'var(--r-cta)',
+              fontSize: 14,
+              fontWeight: 700,
+            }}
+          >
+            Delete plan
+          </button>
+          <button
+            onClick={() => setConfirmDelete(false)}
+            style={{ width: '100%', minHeight: 44, fontSize: 14, fontWeight: 600, color: 'var(--ink-soft)', marginTop: 4 }}
+          >
+            Cancel
+          </button>
+        </Dialog>
+      )}
     </section>
   );
 }
