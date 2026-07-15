@@ -8,3 +8,59 @@ Entry format and types: see
 `/mnt/d/Projects/Soul-System/operations/witness-log-format.md`.
 
 ---
+
+```
+ID:           P2P-001
+WHEN:         2026-07-14 / v1 build / Milestones E–F
+WHERE:        src/components/overlay.ts > usePopstateClose
+WHAT:         Two distinct defects in one hook, found in separate milestones: StrictMode
+              double-mount closed overlays that open on mount; a stacked dialog's
+              programmatic close-popstate was read by the parent sheet as a user back-press.
+TYPE:         Failure Mode — hash-history overlay management (same WHERE, twice)
+CONSEQUENCE:  Both caught by browser-driven verification before commit; fixed at the site.
+STATUS:       Resolved
+```
+
+---
+
+```
+ID:           P2P-002
+WHEN:         2026-07-14 / v1 build / Milestone E review
+WHERE:        src/data/types.ts > todayISO
+WHAT:         toISOString().slice(0,10) returned the UTC date; evening entries in US
+              timezones would journal under tomorrow. Surfaced when a subagent's demo
+              run showed Jul 15 on Jul 14.
+TYPE:         Universe Contradiction — "ISO date = today" assumption vs timezones
+CONSEQUENCE:  Fixed before any real user data existed.
+STATUS:       Resolved
+```
+
+---
+
+```
+ID:           P2P-003
+WHEN:         2026-07-14–15 / v1 build / Milestones G–H
+WHERE:        src/logic/importer.ts + background/atk_index.csv
+WHAT:         Real index data violated import assumptions twice: 15 same-name/
+              different-page recipe pairs (dedupe cross-updated their pages) and 10
+              exact name+page duplicate rows (double-entered on first install).
+TYPE:         Universe Contradiction — real data vs name-keyed dedupe
+CONSEQUENCE:  Two TDD fixes (page tiebreaker; in-file seen-set); pack rebuilt 1645→1635.
+STATUS:       Resolved
+```
+
+---
+
+```
+ID:           P2P-004
+WHEN:         2026-07-14 / v1 build / Checkpoint 1
+WHERE:        src/styles/tokens.css > --rejected-fill (dark)
+WHAT:         Token was flagged as missing a dark value at Milestone A (recorded in the
+              Task 2 agent report) but shipped unfixed; owner hit it as unreadable text
+              at the first demo. Screenshot passes had not exercised a dark rejected state.
+TYPE:         Failure Mode — flagged-but-unscheduled defect surfaced to owner
+CONSEQUENCE:  One owner-visible defect; fixed same day. Flags need owners, not just notes.
+STATUS:       Resolved
+```
+
+---
