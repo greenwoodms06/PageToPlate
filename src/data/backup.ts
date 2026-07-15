@@ -37,8 +37,25 @@ interface BackupPayload {
   attachments: { id: string; name: string; type: string }[];
 }
 
-export async function exportBackup(store: Store): Promise<{ blob: Blob; filename: string; exportedAt: string }> {
-  const attachments = await store.allAttachments();
+export interface ExportResult {
+  blob: Blob;
+  filename: string;
+  exportedAt: string;
+  /**
+   * True when the file contains EVERYTHING the app holds. A data-only export
+   * with photos present is incomplete — callers must not markBackedUp on it,
+   * or the 30-day nudge would go quiet while photos stay unprotected.
+   */
+  complete: boolean;
+}
+
+export async function exportBackup(store: Store, opts?: { dataOnly?: boolean }): Promise<ExportResult> {
+  const dataOnly = opts?.dataOnly === true;
+  const allAttachments = await store.allAttachments();
+  // Data-only: strip the photo blobs AND every reference to them — restoring
+  // a file that names photoIds it doesn't carry would leave dangling ids
+  // rendering as broken tiles.
+  const attachments = dataOnly ? [] : allAttachments;
   const now = new Date().toISOString();
   // The backup snapshots POST-backup settings (lastBackupAt = now, counter 0):
   // restoring it means "zero changes since this backup", which is true.
@@ -47,8 +64,8 @@ export async function exportBackup(store: Store): Promise<{ blob: Blob; filename
     schemaVersion: BACKUP_SCHEMA_VERSION,
     exportedAt: now,
     books: store.books,
-    recipes: store.recipes,
-    madeEntries: store.madeEntries,
+    recipes: dataOnly ? store.recipes.map((r) => ({ ...r, attachmentIds: [] })) : store.recipes,
+    madeEntries: dataOnly ? store.madeEntries.map((m) => ({ ...m, photoIds: [] })) : store.madeEntries,
     plans: store.plans,
     categories: store.categories,
     presets: store.presets,
@@ -69,7 +86,10 @@ export async function exportBackup(store: Store): Promise<{ blob: Blob; filename
   // download path too: one artifact, one identity (owner decision,
   // 2026-07-15). Do not "clean this up" to honest extensions without
   // re-verifying share on a real Android device.
-  const filename = `pagetoplate-backup-${date}.ptp.txt`;
+  // Data-only exports are a DIFFERENT artifact and say so in the name.
+  const filename = dataOnly
+    ? `pagetoplate-backup-${date}-data-only.ptp.txt`
+    : `pagetoplate-backup-${date}.ptp.txt`;
   let blob: Blob;
   if (attachments.length === 0) {
     blob = new Blob([json], { type: 'text/plain' });
@@ -85,7 +105,7 @@ export async function exportBackup(store: Store): Promise<{ blob: Blob; filename
   // only after the file actually left the device (share completed or download
   // triggered). A share sheet the user cancels must NOT silence the backup
   // nudge — the file went nowhere. (Post-deploy round 1 follow-up.)
-  return { blob, filename, exportedAt: now };
+  return { blob, filename, exportedAt: now, complete: !dataOnly || allAttachments.length === 0 };
 }
 
 /** Call after the exported file was actually delivered (shared or downloaded). */

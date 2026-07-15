@@ -250,3 +250,62 @@ describe('backup with attachments (zip round trip)', () => {
     expect(Array.from(new Uint8Array(await rec!.blob.arrayBuffer()))).toEqual(Array.from(PHOTO_BYTES));
   });
 });
+
+describe('data-only export (owner request, 2026-07-15)', () => {
+  it('with photos present: plain JSON, refs stripped, complete=false', async () => {
+    const store = await initStore();
+    await seed(store);
+    await store.addAttachment({
+      id: 'a1',
+      blob: new Blob([PHOTO_BYTES], { type: 'image/jpeg' }),
+      name: 'dinner.jpg',
+      type: 'image/jpeg',
+    });
+    await store.updateRecipe('r1', { attachmentIds: ['a1'] });
+    await store.updateMadeEntry('m1', { photoIds: ['a1'] });
+
+    const { blob, filename, complete } = await exportBackup(store, { dataOnly: true });
+
+    // Incomplete: photos exist but are not in the file — the caller must NOT
+    // markBackedUp, or the 30-day nudge goes quiet with photos unprotected.
+    expect(complete).toBe(false);
+    expect(filename).toBe(`pagetoplate-backup-${todayISO()}-data-only.ptp.txt`);
+    const bytes = new Uint8Array(await blob.arrayBuffer());
+    expect(bytes[0]).not.toBe(0x50); // JSON, not a zip
+    const payload = JSON.parse(strFromU8(bytes));
+    expect(payload.attachments).toHaveLength(0);
+    // No dangling references: a restore of this file must not point at
+    // photo ids the file doesn't carry.
+    expect(payload.recipes.find((r: { id: string }) => r.id === 'r1').attachmentIds).toEqual([]);
+    expect(payload.madeEntries.find((m: { id: string }) => m.id === 'm1').photoIds).toEqual([]);
+    // The live store is untouched by the stripping (export must not mutate).
+    expect(store.recipes.find((r) => r.id === 'r1')?.attachmentIds).toEqual(['a1']);
+    expect(store.madeEntries.find((m) => m.id === 'm1')?.photoIds).toEqual(['a1']);
+  });
+
+  it('with no photos: identical coverage to a full backup, complete=true', async () => {
+    const store = await initStore();
+    await seed(store);
+
+    const { complete, blob } = await exportBackup(store, { dataOnly: true });
+
+    expect(complete).toBe(true);
+    const payload = JSON.parse(strFromU8(new Uint8Array(await blob.arrayBuffer())));
+    expect(payload.recipes).toHaveLength(2);
+    expect(payload.madeEntries).toHaveLength(2);
+  });
+
+  it('full export stays complete=true even with photos', async () => {
+    const store = await initStore();
+    await seed(store);
+    await store.addAttachment({
+      id: 'a1',
+      blob: new Blob([PHOTO_BYTES], { type: 'image/jpeg' }),
+      name: 'dinner.jpg',
+      type: 'image/jpeg',
+    });
+
+    const { complete } = await exportBackup(store);
+    expect(complete).toBe(true);
+  });
+});

@@ -33,10 +33,10 @@ export function BackupRestore() {
   const [confirmFile, setConfirmFile] = useState<File | null>(null);
   const [busy, setBusy] = useState(false);
 
-  const doExport = async () => {
+  const doExport = async (dataOnly = false) => {
     setBusy(true);
     try {
-      const { blob, filename, exportedAt } = await exportBackup(store);
+      const { blob, filename, exportedAt, complete } = await exportBackup(store, { dataOnly });
       const file = new File([blob], filename, { type: blob.type });
       // Share FIRST on every device (round-1 amendment 6): the phone share
       // sheet (Drive/Files/messaging) is where a backup actually gets OFF the
@@ -60,9 +60,15 @@ export function BackupRestore() {
         downloadFile(blob, filename);
       }
       // Only now — after the file was shared or handed to the browser's
-      // download — does the backup count as done.
-      await markBackedUp(store, exportedAt);
-      showToast('Backup exported');
+      // download — does the backup count as done. And ONLY if it covered
+      // everything: a data-only export while photos exist must not reset the
+      // 30-day nudge, or photos sit unprotected behind a green light.
+      if (complete) {
+        await markBackedUp(store, exportedAt);
+        showToast('Backup exported');
+      } else {
+        showToast('Data exported — photos not included');
+      }
     } catch (e) {
       showToast(`Export failed: ${(e as Error).message}`);
     } finally {
@@ -149,6 +155,26 @@ export function BackupRestore() {
         >
           ↑ Export backup file
         </button>
+        <button
+          onClick={() => void doExport(true)}
+          disabled={busy}
+          style={{
+            width: '100%',
+            minHeight: 40,
+            marginTop: 8,
+            border: '1.5px solid var(--line)',
+            background: 'none',
+            color: 'var(--ink-mid)',
+            borderRadius: 'var(--r-card)',
+            fontSize: 13.5,
+            fontWeight: 600,
+          }}
+        >
+          Export data only — no photos
+        </button>
+        <div style={{ fontSize: 11.5, color: 'var(--ink-soft)', marginTop: 6 }}>
+          A small plain-text file. Skipping photos won’t count as a full backup.
+        </div>
       </Card>
 
       <Card style={{ padding: 14, marginTop: 10 }}>
@@ -175,7 +201,11 @@ export function BackupRestore() {
         <input
           ref={fileInput}
           type="file"
-          accept=".txt,.json,.zip,text/plain,application/json,application/zip"
+          // NO accept filter, deliberately: Android's document picker maps
+          // accept to MIME filters and blocked the owner's .ptp.txt backup
+          // outright (2026-07-15). restoreBackup validates by CONTENT before
+          // touching anything, so an unfiltered picker is safe — a wrong file
+          // fails with a toast and current data stays intact.
           aria-label="Backup file"
           style={{ display: 'none' }}
           onChange={(e) => {
