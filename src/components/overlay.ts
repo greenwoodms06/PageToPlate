@@ -21,15 +21,31 @@ export function usePopstateClose(open: boolean, onClose: () => void): () => void
   const idRef = useRef<symbol | null>(null);
   const onCloseRef = useRef(onClose);
   onCloseRef.current = onClose;
+  // Pending programmatic unwind (see cleanup). Deferred one macrotask so a
+  // StrictMode dev remount (setup → cleanup → setup, same fiber, refs kept)
+  // can cancel it and adopt the still-live history entry. Found via Task 18:
+  // MarkAsMadeDialog is the first overlay MOUNTED with open=true — the old
+  // synchronous-back cleanup queued a popstate that arrived after the
+  // re-setup and closed the just-opened dialog on the spot. (Overlays that
+  // mount closed and toggle `open` never hit this: their mount effect is a
+  // no-op, and dep-change re-runs are not double-invoked.)
+  const unwindTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
     if (!open) return;
     const id = Symbol('overlay');
     idRef.current = id;
     stack.push(id);
-    // Preserve existing state and URL (incl. the #/route hash); the flag only
-    // documents the entry when inspecting history.state.
-    history.pushState({ ...(history.state ?? {}), overlay: true }, '');
+    if (unwindTimer.current !== null) {
+      // Remounted before the previous cleanup's unwind ran: our entry is
+      // still current — adopt it instead of pushing a duplicate.
+      clearTimeout(unwindTimer.current);
+      unwindTimer.current = null;
+    } else {
+      // Preserve existing state and URL (incl. the #/route hash); the flag
+      // only documents the entry when inspecting history.state.
+      history.pushState({ ...(history.state ?? {}), overlay: true }, '');
+    }
 
     const isTop = () => stack[stack.length - 1] === id;
     const drop = () => {
@@ -57,9 +73,13 @@ export function usePopstateClose(open: boolean, onClose: () => void): () => void
       drop();
       // Closed programmatically (open flipped false / unmount) without a back
       // press: unwind the entry we pushed so back doesn't need two presses.
+      // Deferred one tick so a StrictMode remount can cancel it (see above).
       if (idRef.current === id) {
         idRef.current = null;
-        history.back();
+        unwindTimer.current = setTimeout(() => {
+          unwindTimer.current = null;
+          history.back();
+        }, 0);
       }
     };
   }, [open]);
