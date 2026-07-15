@@ -39,4 +39,9 @@ export const DEFAULT_SETTINGS: Settings = {
   changesSinceBackup: 0, verifiedPagesOnly: false,
 };
 export const newId = () => crypto.randomUUID();
-export const todayISO = () => new Date().toISOString().slice(0, 10);
+// Local date, not UTC: an evening cook must journal under the user's own day
+// (toISOString() rolls to tomorrow after ~7-8pm in US timezones).
+export const todayISO = () => {
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+};
