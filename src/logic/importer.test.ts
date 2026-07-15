@@ -83,6 +83,35 @@ describe('planImport — duplicate detection (skip or update, never double-enter
   });
 });
 
+describe('planImport — same-name twins (page as tiebreaker)', () => {
+  // The ATK index alone has 15 same-name/different-page pairs. With a
+  // name-only dedupe key, re-importing cross-updated the twins' pages.
+  const twin12 = existingRecipe({ id: 'r-waffles-12', name: 'Waffles', page: '12', category: 'Breakfast & Brunch' });
+  const twin98 = existingRecipe({ id: 'r-waffles-98', name: 'Waffles', page: '98', category: 'Breakfast & Brunch' });
+
+  it('re-importing both twins yields 2 skips, 0 updates, 0 adds — each row matched to its own page', () => {
+    const plan = planImport([
+      parsedRow('Waffles', '12', 'Breakfast & Brunch'),
+      parsedRow('Waffles', '98', 'Breakfast & Brunch'),
+    ], [twin12, twin98], CATEGORY_NAMES);
+    expect({ adds: plan.adds, skips: plan.skips, updates: plan.updates }).toEqual({ adds: 0, skips: 2, updates: 0 });
+    expect(plan.rows[0].existingId).toBe(twin12.id);
+    expect(plan.rows[1].existingId).toBe(twin98.id);
+  });
+
+  it('a same-name row matching NEITHER twin page is skipped — never double-entered, never a guessed update', () => {
+    const plan = planImport([parsedRow('Waffles', '50', 'Breakfast & Brunch')], [twin12, twin98], CATEGORY_NAMES);
+    expect(plan.rows[0].action).toBe('skip');
+    expect({ adds: plan.adds, skips: plan.skips, updates: plan.updates }).toEqual({ adds: 0, skips: 1, updates: 0 });
+  });
+
+  it('an exact name+page match with a category change still updates that twin in place', () => {
+    const plan = planImport([parsedRow('Waffles', '12', 'Breads')], [twin12, twin98], CATEGORY_NAMES);
+    expect(plan.rows[0].action).toBe('update');
+    expect(plan.rows[0].existingId).toBe(twin12.id);
+  });
+});
+
 describe('planImport — tag redundancy', () => {
   it('drops keywords already present in the recipe name, keeps the rest', () => {
     const plan = planImport(

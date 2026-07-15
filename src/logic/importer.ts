@@ -13,7 +13,21 @@ const normName = (s: string) => s.trim().replace(/\s+/g, ' ').toLowerCase();
 
 export function planImport(parsed: ReturnType<typeof parseRecipeCsv>['rows'], existing: Recipe[],
     categoryNames: string[], fallbackCategory?: string): ImportPlan {
-  const byName = new Map(existing.map(r => [normName(r.name), r]));
+  // Dedupe matches by normalized name with PAGE AS TIEBREAKER (spec dedupe
+  // rule). A name-only map is not enough: the ATK index alone has 15
+  // same-name/different-page pairs, and re-importing it cross-updated the
+  // twins' pages (each row "matched" whichever twin the map kept last).
+  // NUL separator: normName collapses runs of whitespace, so unlike a space
+  // join ('a b'+'c' vs 'a'+'b c'), no two name/page pairs can share a key.
+  const pageKey = (name: string, page: string) => `${normName(name)}\u0000${page}`;
+  const byNamePage = new Map(existing.map(r => [pageKey(r.name, r.page), r]));
+  const byName = new Map<string, Recipe[]>();
+  for (const r of existing) {
+    const k = normName(r.name);
+    const twins = byName.get(k);
+    if (twins) twins.push(r);
+    else byName.set(k, [r]);
+  }
   const unrecognized = new Map<string, number>();
   const rows = parsed.map(p => {
     let category: string | null; let addTags: string[] = [];
@@ -26,10 +40,28 @@ export function planImport(parsed: ReturnType<typeof parseRecipeCsv>['rows'], ex
     // spec: never store a tag whose text already appears in the recipe name
     const tags = [...new Set([...p.tags, ...addTags])]
       .map(t => t.trim().toLowerCase()).filter(t => t && !name.toLowerCase().includes(t));
-    const prior = byName.get(normName(name));
-    const action: ImportRow['action'] = !prior ? 'add'
-      : prior.page === p.page && (category === null || prior.category === category) ? 'skip' : 'update';
-    return { name, page: p.page, rawCategory: p.category, category, tags, action, existingId: prior?.id };
+    const exact = byNamePage.get(pageKey(name, p.page));
+    const twins = byName.get(normName(name)) ?? [];
+    let action: ImportRow['action'];
+    let existingId: string | undefined;
+    if (exact) {
+      // Exact name+page match: same recipe — skip unless the category changed.
+      action = category === null || exact.category === category ? 'skip' : 'update';
+      existingId = exact.id;
+    } else if (twins.length === 1) {
+      // One name match, page differs: a page (or category) correction.
+      action = 'update';
+      existingId = twins[0].id;
+    } else if (twins.length === 0) {
+      action = 'add';
+    } else {
+      // FORCE: 2+ same-name candidates and no page match. 'add' would
+      // double-enter; 'update' would have to guess a target. The spec's dedupe
+      // rule is "skip or update, never double-enter" — skip is the only action
+      // that neither duplicates nor guesses. No existingId: skip touches nothing.
+      action = 'skip';
+    }
+    return { name, page: p.page, rawCategory: p.category, category, tags, action, existingId };
   });
   return { rows, unrecognized,
     adds: rows.filter(r => r.action === 'add').length,
