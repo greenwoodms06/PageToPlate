@@ -8,6 +8,7 @@ import { todayISO } from '../../data/types';
 import { SegmentToggle } from '../../components/SegmentToggle';
 import { MarkAsMadeDialog } from '../recipe/MarkAsMadeDialog';
 import { PlanCard } from './PlanCard';
+import { CalendarView } from './CalendarView';
 
 type DialogState = { recipeId: string; planId?: string; madeEntryId?: string };
 
@@ -90,7 +91,7 @@ export function PlansTab() {
           ))
         )
       ) : (
-        <p className="meta" style={{ marginTop: 4 }}>Calendar lands in Task 20.</p>
+        <CalendarView />
       )}
 
       {dialog && <MarkAsMadeDialog {...dialog} onClose={() => setDialog(null)} />}
