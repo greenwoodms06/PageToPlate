@@ -7,11 +7,13 @@
 import { createContext, useCallback, useContext, useRef, useState } from 'react';
 import type { ReactNode } from 'react';
 
-export type ShowToast = (msg: string, undoFn?: () => void) => void;
+// actionLabel (Task 26 backup nudge) generalizes the Undo slot: same green
+// button, custom caption — 'Undo' stays the default for every existing caller.
+export type ShowToast = (msg: string, actionFn?: () => void, actionLabel?: string) => void;
 
 const ToastCtx = createContext<ShowToast>(() => {});
 
-/** `showToast(msg, undoFn?)` — undoFn renders a green Undo button. */
+/** `showToast(msg, actionFn?, actionLabel?)` — actionFn renders a green button (default label 'Undo'). */
 export function useToast(): ShowToast {
   return useContext(ToastCtx);
 }
@@ -21,13 +23,13 @@ const DISMISS_MS = 3500;
 export function ToastProvider({ children }: { children: ReactNode }) {
   // `toast` keeps the last message through the fade-out (prototype behavior:
   // the pill's text is never cleared, only opacity drops); `visible` drives it.
-  const [toast, setToast] = useState<{ msg: string; undo?: () => void } | null>(null);
+  const [toast, setToast] = useState<{ msg: string; undo?: () => void; label?: string } | null>(null);
   const [visible, setVisible] = useState(false);
   const timer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
 
-  const showToast = useCallback<ShowToast>((msg, undoFn) => {
+  const showToast = useCallback<ShowToast>((msg, actionFn, actionLabel) => {
     clearTimeout(timer.current);
-    setToast({ msg, undo: undoFn });
+    setToast({ msg, undo: actionFn, label: actionLabel });
     setVisible(true);
     timer.current = setTimeout(() => setVisible(false), DISMISS_MS);
   }, []);
@@ -69,7 +71,7 @@ export function ToastProvider({ children }: { children: ReactNode }) {
         <span style={{ overflow: 'hidden', textOverflow: 'ellipsis' }}>{toast?.msg}</span>
         {toast?.undo && (
           <button onClick={runUndo} style={{ color: 'var(--toast-undo)', fontWeight: 700, fontSize: 13 }}>
-            Undo
+            {toast.label ?? 'Undo'}
           </button>
         )}
       </div>
