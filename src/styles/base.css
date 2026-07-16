@@ -88,11 +88,12 @@ a {
 }
 
 /* Splash icon (App.tsx): the inlined app-icon SVG ships 1024px width/height
-   attributes — size it here. */
+   attributes — size it here. ~Android-launch-screen scale (the web splash
+   mirrors the OS splash so the handoff reads as one). */
 .splash-icon svg {
-  width: 96px;
-  height: 96px;
-  border-radius: 22px;
+  width: 112px;
+  height: 112px;
+  border-radius: 26px;
 }
 
 .field-label {

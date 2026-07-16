@@ -90,10 +90,16 @@ function SettingsRoute({ sub }: { sub?: string }) {
 // during the fade, so the content is revealed, not popped.
 //
 // The icon is INLINED (?raw import, no network fetch): on device, Android's
-// own PWA launch screen (icon only) hands off to this splash, and an <img>
-// pointing at favicon.svg painted late — owner saw icon → blank → text.
-// Inline SVG paints in the same frame as the wordmark, so the OS icon hands
-// off to wordmark+icon together (owner round-3 feedback, 2026-07-16).
+// own PWA launch screen hands off to this splash, and an <img> pointing at
+// favicon.svg painted late — owner saw icon → blank → text.
+//
+// Layout MIRRORS the Android launch screen (owner decision 2026-07-16,
+// "blend into one"): Android always draws its own splash for installed PWAs
+// (manifest background + icon dead-center + name below, not removable), so
+// the web splash copies that geometry — icon at exact screen center, word-
+// mark hanging below without shifting the icon — and the handoff reads as a
+// single splash that holds, then fades. Do NOT move the icon off-center or
+// put the wordmark above it; that re-creates the visible double-splash jump.
 const SPLASH_MIN_MS = 2000;
 const SPLASH_FADE_MS = 1000;
 
@@ -118,10 +124,22 @@ function Splash({ leaving }: { leaving: boolean }) {
         pointerEvents: leaving ? 'none' : 'auto',
       }}
     >
-      <div style={{ display: 'grid', justifyItems: 'center', gap: 18 }}>
-        <div className="screen-title">PageToPlate</div>
+      <div style={{ position: 'relative' }}>
         {/* Sized by .splash-icon in base.css (the raw SVG carries 1024px attrs). */}
         <div className="splash-icon" dangerouslySetInnerHTML={{ __html: appIconSvg }} />
+        <div
+          className="screen-title"
+          style={{
+            position: 'absolute', // hangs below so the icon stays dead-center
+            top: '100%',
+            left: '50%',
+            transform: 'translateX(-50%)',
+            marginTop: 16,
+            whiteSpace: 'nowrap',
+          }}
+        >
+          PageToPlate
+        </div>
       </div>
     </div>
   );
