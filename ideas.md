@@ -11,5 +11,5 @@
 
 ## Pack pipeline — recorded 2026-07-15 (batch of 10 complete)
 - **Extractor limitation (future work):** the shared index parser handles inline `name … page` and numbered indexes, but NOT (a) two-column indexes with a separated page-number column (Calendar of Dinners) or (b) ALL-CAPS chapter contents (Golden Rule). Both were worked around in the per-book judgment pass rather than in code, to avoid regressing existing packs. A structural upgrade could recover more entries from these layouts.
-- **Italian pack (italiancooking00daly) held:** archive.org flags NOT_IN_COPYRIGHT but date 1900 conflicts with its Spring Books London imprint (mid-20thC). Held from catalog pending owner's public-domain decision. Pack file + curation retained in repo.
+- **Italian pack (italiancooking00daly): SHIPPED 2026-07-16** on owner's decision to accept archive.org's NOT_IN_COPYRIGHT flag despite the date/imprint ambiguity (flagged at review). Reconsider if a rightsholder objects.
 - **Backfill candidates** (clearly-PD, from tools/curation/candidates.md top-40) if a 10th linked pack is wanted: "The something-different dish" (Neil, 1915), "Like mother used to make" (1912), "Hawaiian cook book" (1920), "Camp cookery" (Kephart, 1910).
