@@ -86,33 +86,6 @@
    "version": 1
   },
   {
-   "id": "chinesecookbook00chan",
-   "title": "The Chinese Cook Book",
-   "author": "Chan, Shiu Wong",
-   "year": 1917,
-   "country": "US",
-   "cuisines": [
-    "chinese"
-   ],
-   "era": "historical",
-   "type": "linked",
-   "recipeCount": 160,
-   "categories": [
-    "Mains",
-    "Sides",
-    "Soups & Stews",
-    "Breakfast & Brunch",
-    "Desserts",
-    "Breads",
-    "Sauces & Condiments",
-    "Salads"
-   ],
-   "curatedSubset": true,
-   "rawIndexCount": 191,
-   "file": "packs/chinesecookbook00chan.json",
-   "version": 1
-  },
-  {
    "id": "auntcarolinesdix00mckirich",
    "title": "Aunt Caroline's Dixieland Recipes",
    "author": "McKinney, Emma",
@@ -139,6 +112,33 @@
    "curatedSubset": true,
    "rawIndexCount": 190,
    "file": "packs/auntcarolinesdix00mckirich.json",
+   "version": 1
+  },
+  {
+   "id": "chinesecookbook00chan",
+   "title": "The Chinese Cook Book",
+   "author": "Chan, Shiu Wong",
+   "year": 1917,
+   "country": "US",
+   "cuisines": [
+    "chinese"
+   ],
+   "era": "historical",
+   "type": "linked",
+   "recipeCount": 160,
+   "categories": [
+    "Mains",
+    "Sides",
+    "Soups & Stews",
+    "Breakfast & Brunch",
+    "Desserts",
+    "Breads",
+    "Sauces & Condiments",
+    "Salads"
+   ],
+   "curatedSubset": true,
+   "rawIndexCount": 191,
+   "file": "packs/chinesecookbook00chan.json",
    "version": 1
   }
  ]
