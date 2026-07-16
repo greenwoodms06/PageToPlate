@@ -269,7 +269,15 @@ export function TabPager({ active, render }: { active: Tab; render: (tab: Tab) =
 
   return (
     <>
-      <div ref={currentRef}>{render(active)}</div>
+      {/* touch-action pan-y is LOAD-BEARING on real devices (owner round-3
+          feedback, 2026-07-16): without it, mobile Chrome claims any touch on
+          a vertically scrollable screen ~8px in and fires touchcancel — the
+          pan "jiggles" and springs back, and no swipe can ever commit. pan-y
+          keeps vertical scrolling native but leaves horizontal gestures to
+          this pager; pinch-zoom stays allowed. Emulated e2e touch has no
+          scrollable content and zero y-drift, so it can NOT catch a
+          regression here — do not remove based on green e2e alone. */}
+      <div ref={currentRef} style={{ touchAction: 'pan-y pinch-zoom' }}>{render(active)}</div>
       {preview !== null && (
         <div
           ref={previewRef}

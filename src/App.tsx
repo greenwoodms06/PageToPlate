@@ -20,6 +20,7 @@ import { CategoriesEditor } from './screens/settings/CategoriesEditor';
 import { PresetsEditor } from './screens/settings/PresetsEditor';
 import { BackupRestore } from './screens/settings/BackupRestore';
 import { DevGallery } from './screens/DevGallery';
+import appIconSvg from './assets/app-icon.svg?raw';
 
 // ── hash routing ────────────────────────────────────────────────────────────
 
@@ -87,8 +88,14 @@ function SettingsRoute({ sub }: { sub?: string }) {
 // shows the app icon under the wordmark, and fades out over SPLASH_FADE_MS
 // once BOTH init and the minimum hold are done. The app mounts underneath
 // during the fade, so the content is revealed, not popped.
-const SPLASH_MIN_MS = 1000;
-const SPLASH_FADE_MS = 300;
+//
+// The icon is INLINED (?raw import, no network fetch): on device, Android's
+// own PWA launch screen (icon only) hands off to this splash, and an <img>
+// pointing at favicon.svg painted late — owner saw icon → blank → text.
+// Inline SVG paints in the same frame as the wordmark, so the OS icon hands
+// off to wordmark+icon together (owner round-3 feedback, 2026-07-16).
+const SPLASH_MIN_MS = 2000;
+const SPLASH_FADE_MS = 1000;
 
 function Splash({ leaving }: { leaving: boolean }) {
   return (
@@ -113,13 +120,8 @@ function Splash({ leaving }: { leaving: boolean }) {
     >
       <div style={{ display: 'grid', justifyItems: 'center', gap: 18 }}>
         <div className="screen-title">PageToPlate</div>
-        <img
-          src={`${import.meta.env.BASE_URL}favicon.svg`}
-          alt=""
-          width={96}
-          height={96}
-          style={{ borderRadius: 22 }}
-        />
+        {/* Sized by .splash-icon in base.css (the raw SVG carries 1024px attrs). */}
+        <div className="splash-icon" dangerouslySetInnerHTML={{ __html: appIconSvg }} />
       </div>
     </div>
   );
