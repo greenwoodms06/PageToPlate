@@ -5,7 +5,6 @@
 import { useState } from 'react';
 import type { Dispatch } from 'react';
 import type { Cookbook, Preset } from '../../data/types';
-import { OrderBadge } from '../../components/OrderBadge';
 import { SpineChip } from '../../components/SpineChip';
 import { spineColor } from '../../components/spine';
 import { PrimaryCta } from './wizardUi';
@@ -87,7 +86,9 @@ export function BooksStep({
               <br />
               <span className="meta">{bookMeta(b.id)}</span>
             </span>
-            {selected && <OrderBadge n={idx + 1} color={color} />}
+            {/* Tap-order number removed (owner, 2026-07-16): the book's color
+                already conveys selection; the color still derives from
+                sel.indexOf(id), so ordering is unaffected. */}
           </button>
         );
       })}

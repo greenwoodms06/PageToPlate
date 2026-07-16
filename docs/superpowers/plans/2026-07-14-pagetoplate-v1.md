@@ -701,3 +701,33 @@ jobs:
 - Out of scope honored: no shopping lists, no multi-user, no merge-restore.
 - Deferred (named, not dropped): archive.org linked-pack pipeline + verified/unverified tooling (schema slots exist: `Recipe.link`, pack `link` field, `verifiedPagesOnly` setting + generation filter hook when linked packs exist); AI region-pass prompt file absent from handoff (flagged in tools/README).
 - Known unrun-by-unit-tests: `compressImage` (browser API; covered manually + E2E photo step optional), share-sheet paths (device-dependent; manual on Android at checkpoint 2).
+
+## Post-deploy amendments, round 2 (owner, 2026-07-16, after pack launch)
+
+Verified (no change): Browse search already includes recipe tags AND book tags
+(recipeMatches hay = name + recipe.tags + book.tags, BrowseTab.tsx:144).
+
+1. **Generate:** remove the tap-order number badge (color still derives from
+   sel.indexOf(id); ordering unaffected). DONE.
+2. **Plans — made cue:** each planned recipe's "Made ✓" starts greyed/outline,
+   turns solid green once that item is marked made (glance = what's left to cook).
+3. **Plans — filtering:** reuse Browse's pill pattern — keyword (over recipe+book
+   tags), book/category dropdowns, rating filter — with the status row swapped for
+   **Made / Not yet made WITHIN the plan**, plus a **date filter**: preset ranges
+   (This month / Last 3 months / This year / **All** — All must be one easy tap) +
+   optional custom from–to. Filters which plans (and/or rows) show.
+4. **Books — filters on BOTH segments:** the filter row (search, cuisine, era)
+   must work on **My shelf** as well as **Library**, so large collections stay
+   searchable.
+5. **Books — cuisine filter:** dynamic multiselect (include/not/inactive pattern),
+   auto-built from the cuisines present in installed books + catalog (no static list).
+6. **Books — era filter:** a **year range with dynamic min/max derived from the
+   actual books** in the collection (not hardcoded buckets).
+7. **Books — metadata + links:** add optional `author?`, `year?`, `infoUrl?` to
+   Cookbook (populate from catalog on pack install). Book card shows author/year.
+   "Buy / more info" link is smart per type: linked packs → "Read free on
+   archive.org" (archive.org/details/{archiveId}); index-only + user books →
+   "Find this book" (title+author web search); user books may set their own infoUrl.
+   Affiliate (Amazon Associates) deferred — plain links now, add tag later.
+8. **Library — book cards:** tapping any pack (installed OR uninstalled) opens a
+   book card showing its metadata (+ links), same card used from the shelf.
