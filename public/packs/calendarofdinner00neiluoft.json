@@ -1,0 +1,1802 @@
+{
+ "id": "calendarofdinner00neiluoft",
+ "version": 1,
+ "book": {
+  "name": "A Calendar of Dinners, with 615 Recipes",
+  "tags": [
+   "american"
+  ]
+ },
+ "curatedSubset": true,
+ "rawIndexCount": 289,
+ "recipes": [
+  {
+   "name": "Apple Strudel",
+   "page": "221",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n226",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Coffee, Swedish",
+   "page": "113",
+   "category": "Breads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n118",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Corn",
+   "page": "100",
+   "category": "Breads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n105",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fruit, Yorkshire",
+   "page": "114",
+   "category": "Breads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n119",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Hominy",
+   "page": "105",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n110",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Raisin and Buttermilk",
+   "page": "109",
+   "category": "Breads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n114",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Raisin and Nut",
+   "page": "221",
+   "category": "Breads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n226",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Rolled Oats",
+   "page": "109",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n114",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Baking Powder Biscuit",
+   "page": "97",
+   "category": "Breads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n102",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cream Candy",
+   "page": "145",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n150",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Crisco Drops",
+   "page": "145",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n150",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Crisco Fruit Fudge",
+   "page": "145",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n150",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Everton Taffy",
+   "page": "145",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n150",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fig Fudge",
+   "page": "146",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n151",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Maple Candy",
+   "page": "146",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n151",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Molasses Candy",
+   "page": "146",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n151",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Peanut Fudge",
+   "page": "147",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n152",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Canapes",
+   "page": "161",
+   "category": "Sides",
+   "tags": [
+    "appetizer"
+   ],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n166",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cheese Balls",
+   "page": "196",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n201",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Croutons",
+   "page": "214",
+   "category": "Breads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n219",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fondue",
+   "page": "219",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n224",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Ramekins",
+   "page": "151",
+   "category": "Sides",
+   "tags": [
+    "appetizer"
+   ],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n156",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Almond Fingers",
+   "page": "211",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n216",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chocolate Wafers",
+   "page": "99",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n104",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chocolate Brownies",
+   "page": "99",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n104",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Crisco Brownies",
+   "page": "101",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n106",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Filled Cookies",
+   "page": "102",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n107",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fruit Cookies",
+   "page": "103",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n108",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Ginger Snaps",
+   "page": "104",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n109",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Maple Cookies",
+   "page": "107",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n112",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Oatmeal Cookies",
+   "page": "108",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n113",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Shortbread",
+   "page": "111",
+   "category": "Breads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n116",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Spice Cookies",
+   "page": "112",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n117",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "White Cookies",
+   "page": "114",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n119",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Bean",
+   "page": "178",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n183",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Beef",
+   "page": "193",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n198",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chicken",
+   "page": "195",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n200",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chestnut Boulettes",
+   "page": "231",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n236",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Potato",
+   "page": "152",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n157",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Potato and Nut",
+   "page": "136",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n141",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Salmon",
+   "page": "155",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n160",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Tomato",
+   "page": "228",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n233",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Caramel Custard",
+   "page": "178",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n183",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Eggs with Cucumber",
+   "page": "141",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n146",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Eggs with Tomatoes",
+   "page": "141",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n146",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Egg Sandwiches, Fried",
+   "page": "85",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n90",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Apricot Omelet",
+   "page": "200",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n205",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cod, Curried",
+   "page": "54",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n59",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cod, Steamed",
+   "page": "218",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n223",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Crabs, Dressed Fish, Fried",
+   "page": "53",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n58",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fish Pudding",
+   "page": "55",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n60",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Flounder, a la Creme",
+   "page": "54",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n59",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Flounder, a la Turque",
+   "page": "55",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n60",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Gateau of Fish",
+   "page": "56",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n61",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Halibut, Baked",
+   "page": "52",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n57",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Halibut, Grilled with Parmesan",
+   "page": "214",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n219",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Halibut, a la Poulette",
+   "page": "166",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n171",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Halibut Ramekins",
+   "page": "192",
+   "category": "Sides",
+   "tags": [
+    "appetizer"
+   ],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n197",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Halibut Turbans",
+   "page": "154",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n159",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Lobster, Broiled",
+   "page": "171",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n176",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Lobster, Fried with Horseradish Sauce",
+   "page": "56",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n61",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Lobster Newburg",
+   "page": "175",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n180",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mackerel, Broiled Spanish",
+   "page": "167",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n172",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mackerel, a la Claudine",
+   "page": "175",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n180",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mackerel, Cold Vinaigrette",
+   "page": "184",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n189",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Oysters, Fried",
+   "page": "171",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n176",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Oyster Shortcake",
+   "page": "57",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n62",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Salmon, Baked with Colbert Sauce",
+   "page": "52",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n57",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Salmon, Boiled",
+   "page": "167",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n172",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Salmon Croquettes",
+   "page": "155",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n160",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Salmon Mold",
+   "page": "57",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n62",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Salmon, Planked",
+   "page": "189",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n194",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sardine Canapes",
+   "page": "167",
+   "category": "Sides",
+   "tags": [
+    "appetizer"
+   ],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n172",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Shad, Baked",
+   "page": "53",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n58",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Shad, Planked",
+   "page": "170",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n175",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Scallops",
+   "page": "228",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n233",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Scallops, Baked in Shells",
+   "page": "220",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n225",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Smelts, Fried",
+   "page": "222",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n227",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Smelts, Planked",
+   "page": "207",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n212",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Apple Fritters",
+   "page": "78",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n83",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Apricot Fritters",
+   "page": "172",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n177",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Anchovy Fritters",
+   "page": "157",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n162",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Carrot Fritters",
+   "page": "175",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n180",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Corn Fritters",
+   "page": "68",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n73",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "French Pancake",
+   "page": "199",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n204",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Apple Sauce",
+   "page": "103",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n108",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fruit Pancake",
+   "page": "195",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n200",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Italian Fritters",
+   "page": "222",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n227",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Salsify Fritters",
+   "page": "160",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n165",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Strawberry Fritters",
+   "page": "187",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n192",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Waffles",
+   "page": "113",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n118",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Currant Jelly",
+   "page": "224",
+   "category": "Preserves & Pickles",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n229",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Apple Sauce",
+   "page": "225",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n230",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Baked Apples",
+   "page": "229",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n234",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Baked Bananas",
+   "page": "181",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n186",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Beef, a la Mode",
+   "page": "191",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n196",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Beef, Braised Fillet",
+   "page": "158",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n163",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Beef Croquettes",
+   "page": "193",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n198",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Beef, Fillet",
+   "page": "205",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n210",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Beef Loaf",
+   "page": "151",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n156",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Beef Loaf",
+   "page": "186",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n191",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Beef Olives",
+   "page": "200",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n205",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Beefsteak Pudding",
+   "page": "205",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n210",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Beef Steak and Kidney pie",
+   "page": "151",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n156",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Brains, Baked",
+   "page": "189",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n194",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chops, Breaded",
+   "page": "166",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n171",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Ham, Baked",
+   "page": "209",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n214",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Hearts, Baked Stuffed",
+   "page": "164",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n169",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Indian Dry Curry",
+   "page": "213",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n218",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Green Peppers",
+   "page": "162",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n167",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Kidney Omelet",
+   "page": "63",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n68",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Lamb, Casserole",
+   "page": "218",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n223",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Lamb Chops, Broiled",
+   "page": "168",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n173",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Lamb Chops, Stuffed",
+   "page": "221",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n226",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Peas",
+   "page": "180",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n185",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Lamb, Salmi",
+   "page": "189",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n194",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Spring Lamb Steak, a la Minute",
+   "page": "173",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n178",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Lamb, Tournedos",
+   "page": "198",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n203",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Baked and Bacon",
+   "page": "201",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n206",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mushrooms",
+   "page": "206",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n211",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mutton, Braised Loin",
+   "page": "60",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n65",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mushrooms",
+   "page": "157",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n162",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mutton, Boiled",
+   "page": "204",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n209",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mutton Cutlets",
+   "page": "152",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n157",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mutton, a la Soubise",
+   "page": "168",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n173",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Meat Cakes",
+   "page": "63",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n68",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Ox Tongue, Braised",
+   "page": "176",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n181",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Ox Tongue, Curried",
+   "page": "61",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n66",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Tomato",
+   "page": "181",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n186",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Steak, Beef, Baked",
+   "page": "224",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n229",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Steak, Flank, Stuffed",
+   "page": "200",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n205",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Steak, Porterhouse",
+   "page": "208",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n213",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Macaroni",
+   "page": "63",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n68",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Steak, Swiss",
+   "page": "199",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n204",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Stew, Irish",
+   "page": "156",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n161",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sweet Breads",
+   "page": "183",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n188",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sweet Breads, Fried",
+   "page": "62",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n67",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mushroom Puree",
+   "page": "173",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n178",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Tripe, Baked",
+   "page": "229",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n234",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Tripe, Fricasseed",
+   "page": "197",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n202",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Veal, Blanquette",
+   "page": "197",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n202",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Veal, Braised Fillet",
+   "page": "169",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n174",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Veal Chops",
+   "page": "196",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n201",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Veal Cutlets, Breaded",
+   "page": "193",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n198",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Veal Goulash",
+   "page": "159",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n164",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Veal Haricot",
+   "page": "216",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n221",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Veal and Ham Pie",
+   "page": "165",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n170",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Veal Loaf",
+   "page": "180",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n185",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Veal Pot Pie",
+   "page": "172",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n177",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Venison, Cutlets",
+   "page": "220",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n225",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Venison, Spiced",
+   "page": "224",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n229",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fricassee, Brown",
+   "page": "153",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n158",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Roast Stuffed",
+   "page": "150",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n155",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Apple Dumplings",
+   "page": "78",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n83",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Almond and Apple",
+   "page": "221",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n226",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Apple, Charlotte",
+   "page": "212",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n217",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Bread, with Cherries",
+   "page": "210",
+   "category": "Breads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n215",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Canned Corn",
+   "page": "179",
+   "category": "Preserves & Pickles",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n184",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Caramel Bread",
+   "page": "79",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n84",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Caramel Rice",
+   "page": "79",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n84",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Carrot",
+   "page": "79",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n84",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cherry Blanc-Mange",
+   "page": "199",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n204",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chestnut Dainty",
+   "page": "217",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n222",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chocolate Bread",
+   "page": "188",
+   "category": "Breads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n193",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chocolate Jelly",
+   "page": "80",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n85",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Macaroons",
+   "page": "209",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n214",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fish",
+   "page": "55",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n60",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Celery and Nut",
+   "page": "74",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n79",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Asparagus",
+   "page": "74",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n79",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cabbage",
+   "page": "163",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n168",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Carrot",
+   "page": "186",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n191",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Celery and Almond",
+   "page": "74",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n79",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cheese",
+   "page": "206",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n211",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Orange and Tomato",
+   "page": "75",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n80",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pear and Pimiento",
+   "page": "189",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n194",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Potato and Nut",
+   "page": "75",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n80",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Potato and Pimiento",
+   "page": "76",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n81",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Shrimp",
+   "page": "76",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n81",
+    "pageStatus": "verified"
+   }
+  }
+ ]
+}

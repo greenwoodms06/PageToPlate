@@ -1,0 +1,95 @@
+name,page,guessed_category,confidence
+Boston Brown,98,Uncategorized,0.00
+Brown Nut,98,Uncategorized,0.00
+Crisco Milk,101,Uncategorized,0.00
+Gluten,104,Uncategorized,0.00
+Graham,102,Uncategorized,0.00
+Health,105,Uncategorized,0.00
+"Nut, Steamed",112,Uncategorized,0.00
+"Rye, Swedish",113,Uncategorized,0.00
+Savarin,110,Uncategorized,0.00
+Southern Spoon,112,Uncategorized,0.00
+Water,114,Uncategorized,0.00
+"Wheat, Entire",102,Uncategorized,0.00
+Honey Squares,146,Uncategorized,0.00
+Aigrettes,197,Uncategorized,0.00
+Biscuit,151,Breads,0.80
+Drops,194,Desserts,0.50
+Ginger Crisps,203,Uncategorized,0.00
+Rose Leaves,110,Uncategorized,0.00
+Pear,227,Desserts,0.45
+Honey,105,Uncategorized,0.00
+Raised,109,Uncategorized,0.00
+Rich,109,Uncategorized,0.00
+Creole,140,Uncategorized,0.00
+Curried,140,Sides,0.50
+Savory,142,Uncategorized,0.00
+Baked,140,Uncategorized,0.00
+Spanish,183,Uncategorized,0.00
+Crisco Battercakes,101,Uncategorized,0.00
+Cakes,102,Desserts,0.85
+Devilled Bananas,134,Mains,0.40
+BeefCollope,59,Uncategorized,0.00
+Chipped in Cream,183,Desserts,0.40
+Olives,191,Uncategorized,0.00
+Bobotee,182,Uncategorized,0.00
+Vinaigrette,161,Uncategorized,0.00
+Dumplings,197,Sides,0.50
+Stuffed,186,Sides,0.50
+"Roast, with Spaghetti",64,Mains,0.40
+Shepherd's Pie,210,Desserts,0.40
+Fried Apples,65,Mains,0.40
+Toad in the Hole,163,Uncategorized,0.00
+Casserole,60,Uncategorized,0.00
+Country Club,201,Uncategorized,0.00
+Croquettes,195,Sides,0.80
+Curried,192,Sides,0.50
+Fried,61,Mains,0.40
+"Fried, Mexican Style",62,Mains,0.40
+"Fried, Swiss Style",213,Mains,0.40
+Grilled,178,Mains,0.40
+Hot Pot,226,Uncategorized,0.00
+Impanada,208,Uncategorized,0.00
+Planked,158,Mains,0.40
+Planked,199,Mains,0.40
+Stewed,175,Uncategorized,0.00
+Stewed with Olives,168,Uncategorized,0.00
+Souffle,163,Desserts,0.45
+Supreme,160,Uncategorized,0.00
+Belgian en Casserole,230,Uncategorized,0.00
+Jugged,149,Mains,0.40
+Roast,152,Mains,0.40
+Stewed,221,Uncategorized,0.00
+Flake No,1,Uncategorized,0.00
+Flake No,2,Uncategorized,0.00
+Almond,192,Uncategorized,0.00
+Amber,210,Uncategorized,0.00
+Apricot,196,Desserts,0.45
+Baba with Syrup,222,Uncategorized,0.00
+Baked Indian,220,Uncategorized,0.00
+Beefsteak,205,Uncategorized,0.00
+Black Cap,216,Uncategorized,0.00
+Boston,230,Uncategorized,0.00
+Bird's Nest,165,Uncategorized,0.00
+Bread,226,Breads,0.80
+Cabinet,156,Uncategorized,0.00
+Chocolate,202,Drinks,0.40
+Coburg,159,Uncategorized,0.00
+Cocoanut,219,Desserts,0.50
+Conservative,211,Uncategorized,0.00
+Cottage,80,Uncategorized,0.00
+Countess,204,Uncategorized,0.00
+Cranberry,221,Desserts,0.45
+Date,222,Desserts,0.45
+Eve's,229,Uncategorized,0.00
+Farina,225,Uncategorized,0.00
+Golden,219,Uncategorized,0.00
+Graham,223,Uncategorized,0.00
+"Graham, Steamed",166,Uncategorized,0.00
+St. Leonard's,204,Uncategorized,0.00
+Pimiento,154,Uncategorized,0.00
+Daisy,179,Uncategorized,0.00
+Fruit,75,Desserts,0.45
+Hungarian,187,Uncategorized,0.00
+Waldorf,159,Uncategorized,0.00
+Watercress,190,Uncategorized,0.00

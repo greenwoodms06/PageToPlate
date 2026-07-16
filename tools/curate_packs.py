@@ -1310,6 +1310,11 @@ _DRINK = {
     "punch", "lemonade", "tea", "coffee", "cocoa", "cordial", "fizz", "shrub",
     "nectar", "beverage", "frappe", "flip", "eggnog", "sangaree", "mead",
     "lemonade", "cafe", "claret", "cider", "orangeade",
+    # homemade fruit wines ("Blackberry Wine", "Crab Apple Wine", "Tomato Wine")
+    # are beverages, not desserts/mains — reusable for old receipt books. The
+    # sauce/jelly/cake rules run BEFORE _DRINK, so "Wine Sauce"/"Wine Jelly"/
+    # "Wine Cake" still resolve correctly ahead of this.
+    "wine",
 }
 _PRESERVE = {
     "pickle", "pickled", "jam", "preserve", "marmalade", "conserve", "chutney",

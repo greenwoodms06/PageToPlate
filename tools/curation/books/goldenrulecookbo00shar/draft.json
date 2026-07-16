@@ -1,0 +1,5872 @@
+{
+ "identifier": "goldenrulecookbo00shar",
+ "title": "The golden rule cook book : six hundred recipes for meatless dishes",
+ "creator": "Sharpe, M. R. L. (Maud Russell Lorraine), 1867-1949",
+ "year": 1912,
+ "extraction": {
+  "generated": "2026-07-15T21:54:31-0400",
+  "recipe_index": {
+   "heading": "INDEX",
+   "line": 9971,
+   "sections": 8
+  },
+  "chapter_index": {
+   "heading": "viii Contents",
+   "line": 128,
+   "chapters": 1
+  },
+  "duplicates_dropped": 0
+ },
+ "entries": [
+  {
+   "name": "Introduction",
+   "page": "11",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n14",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "The Kitchen",
+   "page": "29",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar",
+   "pageStatus": "unverified"
+  },
+  {
+   "name": "The Dining Room",
+   "page": "35",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar",
+   "pageStatus": "unverified"
+  },
+  {
+   "name": "Seasoning",
+   "page": "39",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar",
+   "pageStatus": "unverified"
+  },
+  {
+   "name": "Measiuing",
+   "page": "39",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar",
+   "pageStatus": "unverified"
+  },
+  {
+   "name": "Thickening",
+   "page": "40",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n49",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "An Herb Garden",
+   "page": "40",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n49",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Gelatine",
+   "page": "41",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n50",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fat for Frying",
+   "page": "41",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n50",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Canned Goods",
+   "page": "41",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n50",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "A Simple Consomme",
+   "page": "45",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n54",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Clear BouUlon",
+   "page": "46",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n55",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cream of Artichoke",
+   "page": "47",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n56",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "with Nastmiiums",
+   "page": "47",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n56",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Lima Beans",
+   "page": "50",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n59",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Carrot and Onion",
+   "page": "52",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n61",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Carrots",
+   "page": "53",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n62",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cauliflower",
+   "page": "53",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n62",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Celery",
+   "page": "54",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n63",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cheese",
+   "page": "53",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n62",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chestnut",
+   "page": "55",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n64",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Curry",
+   "page": "56",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n65",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Lentil",
+   "page": "59",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n68",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Onion",
+   "page": "61",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n70",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Green Pea",
+   "page": "63",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n72",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Rice",
+   "page": "65",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n74",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Spinach",
+   "page": "67",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n76",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Tomato",
+   "page": "70",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n79",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Vegetable",
+   "page": "74",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n83",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Soup, Asparagus",
+   "page": "48",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n57",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Barley and Tomato",
+   "page": "48",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n57",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Black Bean",
+   "page": "48",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n57",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Belgian",
+   "page": "49",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n58",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Plain Bean",
+   "page": "49",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n58",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Brown Bean",
+   "page": "49",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n58",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Red Bean",
+   "page": "50",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n59",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Dutch Cabbage",
+   "page": "51",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n60",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Calcutta Bisque",
+   "page": "51",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n60",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Canton Stew",
+   "page": "51",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n60",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Carrot Broth",
+   "page": "52",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n61",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Soup, Chestnut",
+   "page": "54",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n63",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cockie-Leekie",
+   "page": "56",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n65",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Creole",
+   "page": "56",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n65",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Florentine",
+   "page": "57",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n66",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Heilbronn",
+   "page": "57",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n66",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Juhenne",
+   "page": "58",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n67",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Red Lentil",
+   "page": "58",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n67",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Puree Mongole",
+   "page": "59",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n68",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Hungarian",
+   "page": "59",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n68",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Mushroom Bisque",
+   "page": "60",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n69",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Mushroom",
+   "page": "60",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n69",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Mushroom Stew",
+   "page": "61",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n70",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Noodle",
+   "page": "61",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n70",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Okra",
+   "page": "61",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n70",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Onion au Fromage",
+   "page": "62",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n71",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "New Green Pea",
+   "page": "62",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n71",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Split Pea",
+   "page": "63",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n72",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Princess",
+   "page": "64",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n73",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Potato",
+   "page": "64",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n73",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "German Potato",
+   "page": "64",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n73",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Potato (Flora)",
+   "page": "65",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n74",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Rice and Tomato",
+   "page": "65",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n74",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Rice-Okra",
+   "page": "66",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n75",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Salsify (Oyster Plant)",
+   "page": "66",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n75",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Spinach-Tomato",
+   "page": "67",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n76",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Sorrel (French)",
+   "page": "68",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n77",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Sorrel (German)",
+   "page": "68",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n77",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "St. Germaine",
+   "page": "68",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n77",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Spaghetti",
+   "page": "69",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n78",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Scotch Broth",
+   "page": "69",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n78",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Spanish Tomato",
+   "page": "70",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n79",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Tomato-Tapioca",
+   "page": "70",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n79",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Soup, Tomato and Com",
+   "page": "71",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n80",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Tomato-Macaroni",
+   "page": "71",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n80",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Tomato",
+   "page": "71",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n80",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Mulligatawney",
+   "page": "72",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n81",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Vegetable No",
+   "page": "1",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar",
+   "pageStatus": "unverified"
+  },
+  {
+   "name": "Soup, Vegetable No",
+   "page": "2",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar",
+   "pageStatus": "unverified"
+  },
+  {
+   "name": "Vegetable No",
+   "page": "3",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar",
+   "pageStatus": "unverified"
+  },
+  {
+   "name": "Vegetable No",
+   "page": "5",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar",
+   "pageStatus": "unverified"
+  },
+  {
+   "name": "Vegetable Marrow",
+   "page": "75",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n84",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Artichokes (Jerusalem) in Butter",
+   "page": "79",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n88",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "au Gratin",
+   "page": "79",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n88",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "with Tomato Sauce",
+   "page": "79",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n88",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "with French Sauce",
+   "page": "80",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n89",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fritters",
+   "page": "80",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n89",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fried",
+   "page": "80",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n89",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "French Fried",
+   "page": "80",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n89",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Tartare",
+   "page": "81",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n90",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fried with Tomato Sauce",
+   "page": "81",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n90",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Lyonnaise",
+   "page": "81",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n90",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Puree",
+   "page": "81",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n90",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Newburg",
+   "page": "82",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n91",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Artichokes (Globe)",
+   "page": "82",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n91",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "to steam",
+   "page": "83",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n92",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "to boil",
+   "page": "83",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n92",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "with Mushrooms",
+   "page": "84",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n93",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Vinaigrette",
+   "page": "84",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n93",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fonds",
+   "page": "84",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n93",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Asparagus",
+   "page": "85",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n94",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "with White Sauce",
+   "page": "85",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n94",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "with Dutch Butter",
+   "page": "85",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n94",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Tips",
+   "page": "86",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n95",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "White",
+   "page": "86",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n95",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Vinaigrette",
+   "page": "86",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n95",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fried Tips",
+   "page": "86",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n95",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Tips with White Sauce",
+   "page": "87",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n96",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "in Bread Cases",
+   "page": "87",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n96",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Escalloped",
+   "page": "87",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n96",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Apples, Griddled",
+   "page": "88",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n97",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Apple Fritters",
+   "page": "88",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n97",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Bananas, boiled",
+   "page": "88",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n97",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "with Tomatoes",
+   "page": "88",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n97",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Banana Fritters",
+   "page": "89",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n98",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Boston Beans",
+   "page": "89",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n98",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Beans, Green String",
+   "page": "90",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n99",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Golden Wax",
+   "page": "90",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n99",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "French",
+   "page": "90",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n99",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Deutschland",
+   "page": "90",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n99",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Beans, Florentine",
+   "page": "91",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n100",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "and Corn",
+   "page": "91",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n100",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Itahan",
+   "page": "91",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n100",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Spanish",
+   "page": "92",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n101",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Lima",
+   "page": "92",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n101",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Lima Hollandaise",
+   "page": "93",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n102",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Lima Creamed",
+   "page": "93",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n102",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Lima Sauquetash",
+   "page": "93",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n102",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Beets",
+   "page": "94",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n103",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Creamed",
+   "page": "94",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n103",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Virginia",
+   "page": "94",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n103",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Piquant",
+   "page": "95",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n104",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "German",
+   "page": "95",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n104",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Pickled",
+   "page": "95",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n104",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Brussels Sprouts",
+   "page": "96",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n105",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "in Dutch Butter",
+   "page": "96",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n105",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "with Celery",
+   "page": "96",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n105",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "with Chestnuts",
+   "page": "97",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n106",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Lyonnaise",
+   "page": "97",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n106",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Creamed",
+   "page": "97",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n106",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "in Bread Cases",
+   "page": "97",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n106",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cabbage",
+   "page": "98",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n107",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "New England",
+   "page": "98",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n107",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Western",
+   "page": "98",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n107",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Sarmas",
+   "page": "99",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n108",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Lichtenstein",
+   "page": "99",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n108",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Lady",
+   "page": "100",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n109",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cold Slaw",
+   "page": "100",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n109",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "German Red",
+   "page": "100",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n109",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Hungarian",
+   "page": "100",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n109",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Pickled Red",
+   "page": "101",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n110",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Carrots, Creamed",
+   "page": "101",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n110",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "with Potatoes",
+   "page": "102",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n111",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Saute",
+   "page": "102",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n111",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Glorified",
+   "page": "102",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n111",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Glazed",
+   "page": "103",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n112",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Delmonico",
+   "page": "103",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n112",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Souffle",
+   "page": "104",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n113",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Indi ex",
+   "page": "317",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n326",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cauliflower",
+   "page": "104",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n113",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Creamed",
+   "page": "104",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n113",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "au Gratin",
+   "page": "105",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n114",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "German",
+   "page": "105",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n114",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Italian",
+   "page": "105",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n114",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fritters",
+   "page": "105",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n114",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Celery, Creamed",
+   "page": "106",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n115",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "in Brown Sauce",
+   "page": "106",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n115",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "in Casserole",
+   "page": "106",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n115",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Baked",
+   "page": "107",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n116",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cepes",
+   "page": "107",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n116",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Com, Boiled",
+   "page": "108",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n117",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Roasted",
+   "page": "108",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n117",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Pudding",
+   "page": "108",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n117",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "in Cases",
+   "page": "108",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n117",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Creole",
+   "page": "109",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n118",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "and Tomato Pie",
+   "page": "109",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n118",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chowder",
+   "page": "109",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n118",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Rhode Island Escallop",
+   "page": "110",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n119",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cucumbers, Stewed",
+   "page": "110",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n119",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Stuffed",
+   "page": "110",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n119",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Egg Plant with Sauce Tartare",
+   "page": "111",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n120",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "with Tomato Sauce",
+   "page": "111",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n120",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Endive, Creamed",
+   "page": "111",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n120",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Kohbabi",
+   "page": "112",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n121",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "au Gratin",
+   "page": "112",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n121",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Lentils, Egyptian",
+   "page": "112",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n121",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "German",
+   "page": "113",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n122",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Lentil Pie",
+   "page": "112",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n121",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Leeks",
+   "page": "113",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n122",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Mushrooms",
+   "page": "114",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n123",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Stewed",
+   "page": "114",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n123",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "German",
+   "page": "114",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n123",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Newburg",
+   "page": "115",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n124",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "on Toast",
+   "page": "115",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n124",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "GriUed",
+   "page": "116",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n125",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Sur Cloche",
+   "page": "116",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n125",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "in Casserole",
+   "page": "116",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n125",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Filled",
+   "page": "117",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n126",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "with Truffles",
+   "page": "117",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n126",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "with Peas",
+   "page": "117",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n126",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "with Onions",
+   "page": "117",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n126",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "with Egg",
+   "page": "118",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n127",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Canned",
+   "page": "118",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n127",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Czarina",
+   "page": "119",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n128",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Mushroom and Chestnut Ragout",
+   "page": "115",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n124",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Loaf",
+   "page": "119",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n128",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Okra. Stewed",
+   "page": "120",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n129",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Okra and Grilled Tomatoes",
+   "page": "120",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n129",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "with Tomato Sauce",
+   "page": "120",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n129",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "and Tomato Escallop",
+   "page": "120",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n129",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Onions, Boiled",
+   "page": "121",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n130",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Creamed",
+   "page": "121",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n130",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "with Brown Sauce",
+   "page": "121",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n130",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "au Gratin",
+   "page": "122",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n131",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "with Cheese",
+   "page": "122",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n131",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Escalloped",
+   "page": "122",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n131",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Baked with Chestnuts",
+   "page": "122",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n131",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Souffle",
+   "page": "123",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n132",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Bordeaux",
+   "page": "123",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n132",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "and Tomato Escallop",
+   "page": "124",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n133",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Beatrice",
+   "page": "124",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n133",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Stuffed",
+   "page": "124",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n133",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fried",
+   "page": "125",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n134",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "French Fried",
+   "page": "125",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n134",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "in Potato Cradles",
+   "page": "126",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n135",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "SmaU",
+   "page": "126",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n135",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Glazed",
+   "page": "126",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n135",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "and Apples",
+   "page": "126",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n135",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Parsnips, Boiled",
+   "page": "127",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n136",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "in Butter",
+   "page": "127",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n136",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fried",
+   "page": "127",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n136",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "French Fried",
+   "page": "127",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n136",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "BroUed",
+   "page": "128",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n137",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Peas, Green",
+   "page": "128",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n137",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Paysanne",
+   "page": "128",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n137",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Canned",
+   "page": "128",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n137",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "with Onion",
+   "page": "128",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n137",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Peppers, Stuffed",
+   "page": "129",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n138",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "with Mushrooms",
+   "page": "129",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n138",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "with Rice",
+   "page": "129",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n138",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "with Egg",
+   "page": "130",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n139",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "with Corn",
+   "page": "130",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n139",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Escalloped with Com",
+   "page": "130",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n139",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fried",
+   "page": "131",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n140",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Pimentos, Creamed",
+   "page": "131",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n140",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "RoUed",
+   "page": "131",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n140",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "with Okra",
+   "page": "132",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n141",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "with Tomato",
+   "page": "132",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n141",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Potatoes",
+   "page": "132",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n141",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Mashed",
+   "page": "133",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n142",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "in cases",
+   "page": "133",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n142",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Souffle",
+   "page": "134",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n143",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Riced",
+   "page": "134",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n143",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Mashed with Onion",
+   "page": "135",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n144",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Baked",
+   "page": "135",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n144",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Potatoes, Roast",
+   "page": "135",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n144",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Denver",
+   "page": "135",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n144",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Broiled",
+   "page": "136",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n145",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fried Souffle",
+   "page": "136",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n145",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Whole Fried",
+   "page": "136",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n145",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "French Fried",
+   "page": "137",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n146",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Parisian",
+   "page": "137",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n146",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Lyonnaise",
+   "page": "138",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n147",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "German Fried",
+   "page": "138",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n147",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Creamed",
+   "page": "139",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n148",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Escalloj)ed",
+   "page": "139",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n148",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Delmonico",
+   "page": "140",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n149",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Oak Hill",
+   "page": "140",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n149",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Heilbronn",
+   "page": "140",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n149",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Curried",
+   "page": "142",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n151",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Rennequin",
+   "page": "142",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n151",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "and Cheese",
+   "page": "143",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n152",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Escallop with Om'on",
+   "page": "143",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n152",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "New, in Butter",
+   "page": "143",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n152",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Creamed New",
+   "page": "144",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n153",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Boiled New",
+   "page": "144",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n153",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "INIock New",
+   "page": "144",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n153",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Potato Fritters",
+   "page": "134",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n143",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Straws",
+   "page": "137",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n146",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cradles",
+   "page": "138",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n147",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Savoury",
+   "page": "139",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n148",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cakes",
+   "page": "141",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n150",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Hash",
+   "page": "141",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n150",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Omelet",
+   "page": "141",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n150",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fricassee",
+   "page": "142",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n151",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Saratoga Chips",
+   "page": "137",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n146",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Sweet Potatoes, Boiled",
+   "page": "145",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n154",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Baked",
+   "page": "145",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n154",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Mashed",
+   "page": "145",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n154",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Souffle",
+   "page": "145",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n154",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Escalloped",
+   "page": "146",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n155",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Stuffed",
+   "page": "146",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n155",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Maryland",
+   "page": "147",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n156",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Candied",
+   "page": "148",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n157",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Griddled",
+   "page": "148",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n157",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fried",
+   "page": "148",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n157",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "French Fried",
+   "page": "148",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n157",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Glazed",
+   "page": "149",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n158",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Sweet Potato Pie",
+   "page": "146",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n155",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Texas",
+   "page": "147",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n156",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Salsify (Oyster Plant)",
+   "page": "149",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n158",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "English",
+   "page": "149",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n158",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "in Coquilles",
+   "page": "149",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n158",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Escalloped",
+   "page": "150",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n159",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Tartare",
+   "page": "150",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n159",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Black",
+   "page": "150",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n159",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Spinach",
+   "page": "150",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n159",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "German",
+   "page": "151",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n160",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "with White Sauce",
+   "page": "151",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n160",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "with Rhubarb",
+   "page": "151",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n160",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Italian",
+   "page": "152",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n161",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Novelty",
+   "page": "152",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n161",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Souffle",
+   "page": "152",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n161",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Squash, Baked",
+   "page": "153",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n162",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "California",
+   "page": "153",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n162",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Tomatoes, Stewed",
+   "page": "153",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n162",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Escalloped",
+   "page": "154",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n163",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Breaded",
+   "page": "154",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n163",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fried",
+   "page": "154",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n163",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Devilled",
+   "page": "155",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n164",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Creamed",
+   "page": "155",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n164",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Baked with Mushrooms",
+   "page": "156",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n165",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "with Nut Force-meat",
+   "page": "156",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n165",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Stuffed with Egg and Peppers",
+   "page": "156",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n165",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Baked with Peppers",
+   "page": "156",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n165",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Filled with Egg",
+   "page": "157",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n166",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Stuffed with Spinach",
+   "page": "157",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n166",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "with Macaroni",
+   "page": "158",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n167",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "and Onion",
+   "page": "158",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n167",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Casino",
+   "page": "159",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n168",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Indienne",
+   "page": "159",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n168",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "with Eggs",
+   "page": "159",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n168",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Curried",
+   "page": "159",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n168",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Savoiuy",
+   "page": "160",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n169",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Creole",
+   "page": "160",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n169",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "and Hominy",
+   "page": "161",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n170",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Loaf",
+   "page": "160",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n169",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "American Rarebit",
+   "page": "158",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n167",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Turnips, Stewed",
+   "page": "161",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n170",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Mashed",
+   "page": "162",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n171",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "with Potato",
+   "page": "162",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n171",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "au Gratin",
+   "page": "162",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n171",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Ragout of",
+   "page": "162",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n171",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Parisian",
+   "page": "163",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n172",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Teltower Riibchen",
+   "page": "163",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n172",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chop Suey",
+   "page": "167",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n176",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Q)lcannon",
+   "page": "167",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n176",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Macedoine of Vegetables",
+   "page": "167",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n176",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Canned",
+   "page": "168",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n177",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Vegetable Chowder",
+   "page": "168",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n177",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Hash",
+   "page": "169",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n178",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Stew",
+   "page": "169",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n178",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Casserole",
+   "page": "170",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n179",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Ragout",
+   "page": "171",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n180",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Vegetable Pie St. Georges",
+   "page": "169",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n178",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Bordeaux",
+   "page": "171",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n180",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "New Orleans Stew",
+   "page": "172",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n181",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Curry, Indian",
+   "page": "172",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n181",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Lentils",
+   "page": "173",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n182",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Succotash",
+   "page": "173",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n182",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Creole",
+   "page": "173",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n182",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Various",
+   "page": "174",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n183",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chestnuts, Italian",
+   "page": "177",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n186",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Puree",
+   "page": "177",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n186",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Peanut Puree",
+   "page": "178",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n187",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Michaelmas Loaf",
+   "page": "178",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n187",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Christmas Loaf",
+   "page": "178",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n187",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Nut and Barley Loaf (Roast)",
+   "page": "179",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n188",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Nut and Barley Loaf (Steamed)",
+   "page": "179",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n188",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "and Hominy Loaf",
+   "page": "179",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n188",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "and Fruit Loaf",
+   "page": "180",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n189",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Foundation Loaf",
+   "page": "180",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n189",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Nut Haah",
+   "page": "181",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n190",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Rice, Boiled",
+   "page": "185",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n194",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Baked",
+   "page": "185",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n194",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Indian",
+   "page": "185",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n194",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Spanish",
+   "page": "186",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n195",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Tomato Stew",
+   "page": "186",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n195",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fried",
+   "page": "186",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n195",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Escalloped",
+   "page": "186",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n195",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "and Cheese",
+   "page": "187",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n196",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "and Tomatoes Baked",
+   "page": "187",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n196",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Italian",
+   "page": "187",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n196",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "au Gratin",
+   "page": "188",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n197",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Omelet",
+   "page": "188",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n197",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Czarina",
+   "page": "188",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n197",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Savoury",
+   "page": "189",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n198",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Unpolished",
+   "page": "189",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n198",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Pearl Barley",
+   "page": "189",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n198",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Macaroni, American",
+   "page": "190",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n199",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "au Gratin",
+   "page": "190",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n199",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Bianca",
+   "page": "190",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n199",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Italian",
+   "page": "191",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n200",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Baked Itahan",
+   "page": "192",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n201",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "with Tomato and Onion",
+   "page": "191",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n200",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Mexican",
+   "page": "192",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n201",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "and Cheese",
+   "page": "192",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n201",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Rarebit",
+   "page": "192",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n201",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Spaghetti",
+   "page": "193",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n202",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Noodles",
+   "page": "193",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n202",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "German",
+   "page": "194",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n203",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Italian",
+   "page": "194",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n203",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Croquettes, Bean",
+   "page": "197",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n206",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cheese",
+   "page": "197",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n206",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Swiss Cheese",
+   "page": "197",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n206",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chestnut",
+   "page": "198",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n207",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Croquettes, Farina",
+   "page": "198",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n207",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Hominy",
+   "page": "199",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n208",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Lentil",
+   "page": "199",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n208",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Macaroni",
+   "page": "199",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n208",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Italian",
+   "page": "200",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n209",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Croquettes, Tomato",
+   "page": "200",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n209",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Dried Pea",
+   "page": "201",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n210",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Nut and Potato",
+   "page": "201",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n210",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "and Salsify",
+   "page": "201",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n210",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "and Cocoanut",
+   "page": "202",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n211",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Potato",
+   "page": "202",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n211",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "with Cheese",
+   "page": "202",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n211",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Savoury",
+   "page": "202",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n211",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Mashed",
+   "page": "203",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n212",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Croquettes, Potato Creole",
+   "page": "203",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n212",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Sweet",
+   "page": "203",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n212",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Rice",
+   "page": "204",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n213",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Sweetened",
+   "page": "203",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n212",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Pink",
+   "page": "204",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n213",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Curried",
+   "page": "204",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n213",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Carolina",
+   "page": "204",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n213",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "English Savouiy",
+   "page": "205",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n214",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Mixed Vegetable",
+   "page": "205",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n214",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Timbales, Com",
+   "page": "210",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n219",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Egg-Tomato",
+   "page": "209",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n218",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Potato",
+   "page": "211",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n220",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "and Cheese",
+   "page": "210",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n219",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Rice",
+   "page": "211",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n220",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Savoury Egg",
+   "page": "209",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n218",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Patties, Articnoke",
+   "page": "211",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n220",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Patties, Asparagus",
+   "page": "212",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n221",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Celery",
+   "page": "212",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n221",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chestnut",
+   "page": "212",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n221",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Green Pea",
+   "page": "212",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n221",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Macedoine",
+   "page": "213",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n222",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Mushroom",
+   "page": "213",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n222",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Camied",
+   "page": "213",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n222",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Reduced Vinegar",
+   "page": "217",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n226",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Sauce Bemaise",
+   "page": "217",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n226",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Black Butter",
+   "page": "218",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n227",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Bread",
+   "page": "218",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n227",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Brown",
+   "page": "218",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n227",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Various Brown",
+   "page": "219",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n228",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Bordelaise",
+   "page": "219",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n228",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Curry",
+   "page": "219",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n228",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Caper",
+   "page": "220",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n229",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cheese",
+   "page": "220",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n229",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cucumber",
+   "page": "220",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n229",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Devilled",
+   "page": "221",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n230",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "French",
+   "page": "221",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n230",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "German",
+   "page": "221",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n230",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Herb",
+   "page": "222",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n231",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "HoUandaise",
+   "page": "222",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n231",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Horse-Radish",
+   "page": "222",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n231",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Maitre d'Hotel",
+   "page": "223",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n232",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Mint",
+   "page": "223",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n232",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Sauce, Mushroom",
+   "page": "223",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n232",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Onion",
+   "page": "224",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n233",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Parsley",
+   "page": "224",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n233",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Proven9al",
+   "page": "224",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n233",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Piquant",
+   "page": "225",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n234",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Ravigote",
+   "page": "225",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n234",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Robert",
+   "page": "225",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n234",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Spanish",
+   "page": "225",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n234",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Spinach",
+   "page": "226",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n235",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Tartare",
+   "page": "227",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n236",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Tomato",
+   "page": "227",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n236",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "with other Vegetables",
+   "page": "227",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n236",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "with Nuts",
+   "page": "227",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n236",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "with Egg",
+   "page": "228",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n237",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Vinaigrette",
+   "page": "228",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n237",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "White",
+   "page": "228",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n237",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Drawn Butter",
+   "page": "219",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n228",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Dutch Butter",
+   "page": "220",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n229",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Parsley Butter",
+   "page": "224",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n233",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Salad Dressing",
+   "page": "257",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n266",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Mayonnaise",
+   "page": "258",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n267",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Eggs, Boiled",
+   "page": "231",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n240",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fried",
+   "page": "231",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n240",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Poached",
+   "page": "232",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n241",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "with Gravy",
+   "page": "232",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n241",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Indienne",
+   "page": "232",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n241",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Waldorf",
+   "page": "232",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n241",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Scrambled",
+   "page": "233",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n242",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "with Cheese",
+   "page": "233",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n242",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "with Mushrooms, etc",
+   "page": "233",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n242",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Savomy",
+   "page": "233",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n242",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Indiemie",
+   "page": "234",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n243",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Spanish",
+   "page": "234",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n243",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Shirred",
+   "page": "234",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n243",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "with Tomatoes",
+   "page": "234",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n243",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Griddled",
+   "page": "235",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n244",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Carmelite",
+   "page": "237",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n246",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "with Potato",
+   "page": "237",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n246",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Newburg",
+   "page": "237",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n246",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Lyomiaise",
+   "page": "238",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n247",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Devilled",
+   "page": "238",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n247",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Japanese",
+   "page": "238",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n247",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Golden Rod",
+   "page": "239",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n248",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Frothed",
+   "page": "239",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n248",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fried Stuffed",
+   "page": "239",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n248",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Eggs, Carolina",
+   "page": "240",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n249",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Miinchner",
+   "page": "241",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n250",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "in Marinade",
+   "page": "241",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n250",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Parisienne",
+   "page": "241",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n250",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Perigord",
+   "page": "241",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n250",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "with Cheese",
+   "page": "242",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n251",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Mornay",
+   "page": "242",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n251",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Creamed",
+   "page": "242",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n251",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Omar Pasha",
+   "page": "243",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n252",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Turkish",
+   "page": "243",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n252",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Beurre-Noir",
+   "page": "243",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n252",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Creole",
+   "page": "244",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n253",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "in Savoury Butter",
+   "page": "244",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n253",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Escalloped",
+   "page": "245",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n254",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Omelet, Plain",
+   "page": "235",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n244",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Souffle",
+   "page": "235",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n244",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Baked",
+   "page": "236",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n245",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Herb",
+   "page": "236",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n245",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cheese",
+   "page": "236",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n245",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Swiss Egg Toast",
+   "page": "240",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n249",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Canuck Egg Toast",
+   "page": "245",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n254",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Egg Mould",
+   "page": "245",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n254",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cheese Ramekins",
+   "page": "249",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n258",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Baked with Bread",
+   "page": "249",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n258",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fondu",
+   "page": "249",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n258",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Relish",
+   "page": "250",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n259",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Meringues",
+   "page": "250",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n259",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Creamed",
+   "page": "250",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n259",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Pancakes",
+   "page": "250",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n259",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cottage",
+   "page": "251",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n260",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Liptauer",
+   "page": "252",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n261",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cheese, Camembert",
+   "page": "253",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n262",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Dreams",
+   "page": "253",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n262",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Roquefort Gourmet",
+   "page": "253",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n262",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Grated",
+   "page": "253",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n262",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Rarebit, Welsh",
+   "page": "251",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n260",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Bachelor's",
+   "page": "251",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n260",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Delmonico",
+   "page": "252",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n261",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Pink",
+   "page": "252",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n261",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Salad, American",
+   "page": "259",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n268",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Artichoke",
+   "page": "259",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n268",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Green Bean",
+   "page": "259",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n268",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Wax Bean",
+   "page": "260",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n269",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Beet with Celery",
+   "page": "260",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n269",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cabbage",
+   "page": "260",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n269",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Salad, Celery and Pineapple",
+   "page": "260",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n269",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cherry",
+   "page": "260",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n269",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cucumber",
+   "page": "261",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n270",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cucumber, Russian",
+   "page": "261",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n270",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Country",
+   "page": "261",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n270",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Dent de Lion",
+   "page": "261",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n270",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Salad, Pink Egg",
+   "page": "262",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n271",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Endive",
+   "page": "262",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n271",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fetticus",
+   "page": "262",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n271",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Garden",
+   "page": "262",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n271",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Grape Fruit",
+   "page": "262",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n271",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Italian",
+   "page": "263",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n272",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Lettuce",
+   "page": "263",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n272",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Macedoine",
+   "page": "263",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n272",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Mixed",
+   "page": "263",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n272",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Mushroom",
+   "page": "264",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n273",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Narragansett",
+   "page": "264",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n273",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Philadelphia",
+   "page": "264",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n273",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Pimento",
+   "page": "264",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n273",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Polish",
+   "page": "265",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n274",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Potato (German)",
+   "page": "265",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n274",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Potato (American)",
+   "page": "265",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n274",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Salad, Potato (Red)",
+   "page": "266",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n275",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Romaine",
+   "page": "266",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n275",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Southern",
+   "page": "266",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n275",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Sorrel",
+   "page": "266",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n275",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Spanish",
+   "page": "267",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n276",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Sunday night",
+   "page": "267",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n276",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Tomato (Russian)",
+   "page": "267",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n276",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "with Chives",
+   "page": "268",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n277",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Waldorf",
+   "page": "268",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n277",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Watercress with Oranges",
+   "page": "268",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n277",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Yokohama",
+   "page": "268",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n277",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "A Salad Supper",
+   "page": "269",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n278",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "French Dressing",
+   "page": "257",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n266",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Mayonnaise Dressing",
+   "page": "258",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n267",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Green Colouring for Mayonnaise",
+   "page": "258",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n267",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Tarragon Vinegar",
+   "page": "258",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n267",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fresh Mushroom Cocktails",
+   "page": "273",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n282",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Canned Mushroom Cocktails",
+   "page": "273",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n282",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Pimento Cocktails",
+   "page": "273",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n282",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Savomy, Beet",
+   "page": "274",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n283",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Beet and Egg",
+   "page": "274",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n283",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Brown Bread",
+   "page": "274",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n283",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cucumber",
+   "page": "274",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n283",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Creole",
+   "page": "275",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n284",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Horse-Radish",
+   "page": "275",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n284",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Mustard",
+   "page": "276",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n285",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Savoury, Neufchatel",
+   "page": "276",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n285",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Onion",
+   "page": "276",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n285",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Pickle",
+   "page": "276",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n285",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Stufted Olive",
+   "page": "276",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n285",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Caper",
+   "page": "277",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n286",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Tomato",
+   "page": "277",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n286",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Mayonnaise",
+   "page": "277",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n286",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Liptauer",
+   "page": "277",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n286",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Pimento",
+   "page": "277",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n286",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Rounds of Toast",
+   "page": "278",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n287",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Sandwiches, Apple",
+   "page": "282",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n291",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Bombay",
+   "page": "282",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n291",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cheese",
+   "page": "284",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n293",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Creole",
+   "page": "282",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n291",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "German",
+   "page": "284",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n293",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Honolulu",
+   "page": "284",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n293",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Sandwiches, Lettuce",
+   "page": "283",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n292",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Peanut Butter",
+   "page": "282",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n291",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Pimola",
+   "page": "283",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n292",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Pickle",
+   "page": "283",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n292",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Providence House",
+   "page": "281",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n290",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Savoury Butter",
+   "page": "281",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n290",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Pie-Crust",
+   "page": "287",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n296",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Easy Puff Paste",
+   "page": "287",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n296",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Timbale Cases",
+   "page": "288",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n297",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Batter for Fritters",
+   "page": "288",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n297",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Pastry for Patty Cases",
+   "page": "288",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n297",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Potato Crust",
+   "page": "289",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n298",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Essex Pastry",
+   "page": "289",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n298",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Dumplings",
+   "page": "289",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n298",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Croutons",
+   "page": "289",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n298",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Bread Crumbs",
+   "page": "290",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n299",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Baking Powder Biscuits",
+   "page": "293",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n302",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Pop Overs",
+   "page": "293",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n302",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Graham Gems",
+   "page": "294",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n303",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Tennessee Corn Bread",
+   "page": "294",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n303",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Southern Rice Muffins",
+   "page": "294",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n303",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Rice Griddle Cakes",
+   "page": "295",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n304",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Corn Griddle Cakes",
+   "page": "295",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n304",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Wheat Griddle Cakes",
+   "page": "295",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n304",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Gingerbread",
+   "page": "295",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n304",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Sunday Morning Waffles",
+   "page": "296",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n305",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Plum Pudding",
+   "page": "299",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n308",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Plum Pudding Sauce",
+   "page": "299",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n308",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Nun's Butter",
+   "page": "299",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n308",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Mince Pie",
+   "page": "300",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n309",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Thanksgiving Dinner",
+   "page": "303",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n312",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Christmas Dmner",
+   "page": "304",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n313",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Easter Dinner",
+   "page": "304",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n313",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "A Dozen Dinners",
+   "page": "305",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n314",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "A Dozen Luncheons",
+   "page": "308",
+   "chapter": "SAVOURIES",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/goldenrulecookbo00shar/page/n317",
+   "pageStatus": "verified"
+  }
+ ]
+}

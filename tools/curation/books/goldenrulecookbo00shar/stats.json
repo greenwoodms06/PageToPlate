@@ -1,0 +1,9 @@
+{
+ "raw": 650,
+ "clean": 248,
+ "held": 309,
+ "dropped": 89,
+ "threshold": 0.45,
+ "generated": "2026-07-15T21:54:46-0400",
+ "hand_dropped": 4
+}

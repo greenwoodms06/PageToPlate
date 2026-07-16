@@ -1,0 +1,2623 @@
+{
+ "identifier": "calendarofdinner00neiluoft",
+ "title": "A calendar of dinners, with 615 recipes",
+ "creator": "Neil, Marion Harris",
+ "year": 1922,
+ "extraction": {
+  "generated": "2026-07-15T22:11:14-0400",
+  "recipe_index": {
+   "heading": "RECIPE INDEX",
+   "line": 74,
+   "sections": 3
+  },
+  "chapter_index": {
+   "heading": "TABLE OF CONTENTS",
+   "line": 25,
+   "chapters": 3
+  },
+  "duplicates_dropped": 0
+ },
+ "entries": [
+  {
+   "name": "Apple Strudel",
+   "page": "221",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n226",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Boston Brown",
+   "page": "98",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n103",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Brown Nut",
+   "page": "98",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n103",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Coffee",
+   "page": "99",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n104",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Coffee, Swedish",
+   "page": "113",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n118",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Corn",
+   "page": "100",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n105",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Crisco Milk",
+   "page": "101",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n106",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fruit, Yorkshire",
+   "page": "114",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n119",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Gluten",
+   "page": "104",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n109",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Graham",
+   "page": "102",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n107",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Health",
+   "page": "105",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n110",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Hominy",
+   "page": "105",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n110",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Nut, Steamed",
+   "page": "112",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n117",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Raisin and Buttermilk",
+   "page": "109",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n114",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Raisin and Nut",
+   "page": "221",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n226",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Rolled Oats",
+   "page": "109",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n114",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Rye, Swedish",
+   "page": "113",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n118",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Savarin",
+   "page": "110",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n115",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Southern Spoon",
+   "page": "112",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n117",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Water",
+   "page": "114",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n119",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Wheat, Entire",
+   "page": "102",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n107",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Baking Powder Biscuit",
+   "page": "97",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n102",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "C CAKES Almond and Citron Black Cake with Prune Filling",
+   "page": "98",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n103",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cream Candy",
+   "page": "145",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n150",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Crisco Drops",
+   "page": "145",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n150",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Crisco Fruit Fudge",
+   "page": "145",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n150",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Everton Taffy",
+   "page": "145",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n150",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fig Fudge",
+   "page": "146",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n151",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Honey Squares",
+   "page": "146",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n151",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Maple Candy",
+   "page": "146",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n151",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Molasses Candy",
+   "page": "146",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n151",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Peanut Fudge",
+   "page": "147",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n152",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Aigrettes",
+   "page": "197",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n202",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Biscuit",
+   "page": "151",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n156",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Canapes",
+   "page": "161",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n166",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cheese Balls",
+   "page": "196",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n201",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Croutons",
+   "page": "214",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n219",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Drops",
+   "page": "194",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n199",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fondue",
+   "page": "219",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n224",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Ramekins",
+   "page": "151",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n156",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Almond Fingers",
+   "page": "211",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n216",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chocolate Wafers",
+   "page": "99",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n104",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chocolate Brownies",
+   "page": "99",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n104",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Crisco Brownies",
+   "page": "101",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n106",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Filled Cookies",
+   "page": "102",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n107",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fruit Cookies",
+   "page": "103",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n108",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Ginger Crisps",
+   "page": "203",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n208",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Ginger Snaps",
+   "page": "104",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n109",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Jumbles... Lemon Wafers",
+   "page": "97",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n102",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Maple Cookies",
+   "page": "107",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n112",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Oatmeal Cookies",
+   "page": "108",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n113",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Rose Leaves",
+   "page": "110",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n115",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Shortbread",
+   "page": "111",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n116",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Spice Cookies",
+   "page": "112",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n117",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "White Cookies",
+   "page": "114",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n119",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Bean",
+   "page": "178",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n183",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Beef",
+   "page": "193",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n198",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chicken",
+   "page": "195",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n200",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chestnut Boulettes",
+   "page": "231",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n236",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Pear",
+   "page": "227",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n232",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Potato",
+   "page": "152",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n157",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Potato and Nut",
+   "page": "136",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n141",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Salmon",
+   "page": "155",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n160",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Tomato",
+   "page": "228",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n233",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Honey",
+   "page": "105",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n110",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Raised",
+   "page": "109",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n114",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Rich",
+   "page": "109",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n114",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Caramel Custard",
+   "page": "178",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n183",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Creole",
+   "page": "140",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n145",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Curried",
+   "page": "140",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n145",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cutlet . 16S Croquettes",
+   "page": "141",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n146",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Eggs with Cucumber",
+   "page": "141",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n146",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Eggs with Tomatoes",
+   "page": "141",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n146",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Egg Sandwiches, Fried",
+   "page": "85",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n90",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Savory",
+   "page": "142",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n147",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "EGGS Omelets Apricot",
+   "page": "200",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n205",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Baked",
+   "page": "140",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n145",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Friar's .... . 1S9 Kidney",
+   "page": "63",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n68",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Spanish",
+   "page": "183",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n188",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "F FISH, Etc Blue, Baked",
+   "page": "194",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n199",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cassolettes of Fish . S3 Clams, Scalloped",
+   "page": "183",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n188",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Clams, Steamed Codfish Balls... 22S . 1S2 Cod, Boiled",
+   "page": "169",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n174",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cod, Curried",
+   "page": "54",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n59",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cod, Steamed",
+   "page": "218",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n223",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Crabs, Dressed Fish, Fried",
+   "page": "53",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n58",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "56 Fish, Fried",
+   "page": "198",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n203",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fish Pudding",
+   "page": "55",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n60",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Flounder, a la Creme",
+   "page": "54",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n59",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Flounder, a la Turqu e",
+   "page": "55",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n60",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Gateau of Fish",
+   "page": "56",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n61",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Halibut, Baked",
+   "page": "52",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n57",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Halibut, Grilled with Parmesan",
+   "page": "214",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n219",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Halibut, a la Poulett<",
+   "page": "166",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n171",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Halibut Ramekins",
+   "page": "192",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n197",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Halibut Turbans",
+   "page": "154",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n159",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Lobster, Broiled",
+   "page": "171",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n176",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Lobster, Fried with Horseradish Sauce",
+   "page": "56",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n61",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Lobster Newburg",
+   "page": "175",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n180",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Mackerel, Broiled Spanish",
+   "page": "167",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n172",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Mackerel, a la Claudine",
+   "page": "175",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n180",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Mackerel, Cold Vinaigrette",
+   "page": "184",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n189",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Oysters, Fried",
+   "page": "171",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n176",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Oyster Shortcake",
+   "page": "57",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n62",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Salmon, Baked with Colbert Sauce",
+   "page": "52",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n57",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Salmon, Boiled",
+   "page": "167",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n172",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Salmon Croquettes",
+   "page": "155",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n160",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Salmon Mold",
+   "page": "57",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n62",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Salmon, Planked",
+   "page": "189",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n194",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Sardine Canapes",
+   "page": "167",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n172",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Shad, Baked",
+   "page": "53",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n58",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Shad, Planked",
+   "page": "170",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n175",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Scallops",
+   "page": "228",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n233",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Scallops, Baked in Shells",
+   "page": "220",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n225",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Smelts, Broiled",
+   "page": "214",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n219",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Smelts, Fried",
+   "page": "222",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n227",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Smelts, Planked",
+   "page": "207",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n212",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Terrapin, a la Maryland . 2.^0 Trout, Baked",
+   "page": "190",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n195",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Apple Fritters",
+   "page": "78",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n83",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Apricot Fritters",
+   "page": "172",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n177",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Anchovy Fritters",
+   "page": "157",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n162",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Carrot Fritters",
+   "page": "175",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n180",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Corn Fritters",
+   "page": "68",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n73",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Crisco Battercakes",
+   "page": "101",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n106",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "French Pancake",
+   "page": "199",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n204",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cakes",
+   "page": "102",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n107",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Apple Sauce",
+   "page": "103",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n108",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fruit Pancake",
+   "page": "195",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n200",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Italian Fritters",
+   "page": "222",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n227",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Salsify Fritters",
+   "page": "160",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n165",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Strawberry Fritters",
+   "page": "187",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n192",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Waffles",
+   "page": "113",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n118",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Currant Jelly",
+   "page": "224",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n229",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Apple Sauce",
+   "page": "225",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n230",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Baked Apples",
+   "page": "229",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n234",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Baked Bananas",
+   "page": "181",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n186",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Devilled Bananas",
+   "page": "134",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n139",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Beef, a la Mode",
+   "page": "191",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n196",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Beef, Braised Fillet",
+   "page": "158",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n163",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Beef Croquettes",
+   "page": "193",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n198",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "BeefCollope",
+   "page": "59",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n64",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chipped in Cream",
+   "page": "183",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n188",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Beef, Fillet",
+   "page": "205",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n210",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Beef Loaf",
+   "page": "151",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n156",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Beef Loaf",
+   "page": "186",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n191",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Beef Olives",
+   "page": "200",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n205",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Beefsteak Pudding",
+   "page": "205",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n210",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Beef Steak and Kidney pie",
+   "page": "151",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n156",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Olives",
+   "page": "191",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n196",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Bobotee",
+   "page": "182",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n187",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Brains, Baked",
+   "page": "189",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n194",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Vinaigrette",
+   "page": "161",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n166",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chops, Breaded",
+   "page": "166",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n171",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Ham, Baked",
+   "page": "209",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n214",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Hearts, Baked Stuffed",
+   "page": "164",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n169",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Indian Dry Curry",
+   "page": "213",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n218",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Green Peppers",
+   "page": "162",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n167",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Kidney Omelet",
+   "page": "63",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n68",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Lamb, Casserole",
+   "page": "218",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n223",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Lamb Chops, Broiled",
+   "page": "168",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n173",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Lamb Chops, Stuffed",
+   "page": "221",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n226",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Peas",
+   "page": "180",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n185",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Dumplings",
+   "page": "197",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n202",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Stuffed",
+   "page": "186",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n191",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Lamb, Salmi",
+   "page": "189",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n194",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Lamb, Spring, Steak, a la Minate",
+   "page": "173",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n178",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Lamb, Tournedos",
+   "page": "198",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n203",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Baked and Bacon",
+   "page": "201",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n206",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Mushrooms",
+   "page": "206",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n211",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Mutton, Braised Loin",
+   "page": "60",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n65",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Mushrooms",
+   "page": "157",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n162",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Mutton, Boiled",
+   "page": "204",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n209",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Mutton Cutlets",
+   "page": "152",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n157",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Mutton, a la Soubise",
+   "page": "168",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n173",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Meat Cakes",
+   "page": "63",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n68",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Ox Tongue, Braised",
+   "page": "176",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n181",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Ox Tongue, Curried",
+   "page": "61",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n66",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Roast, with Spaghetti",
+   "page": "64",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n69",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Tomato",
+   "page": "181",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n186",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Shepherd's Pie",
+   "page": "210",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n215",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Steak, Beef, Baked",
+   "page": "224",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n229",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Steak, Flank, Stuffed",
+   "page": "200",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n205",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Steak, Porterhouse",
+   "page": "208",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n213",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Macaroni",
+   "page": "63",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n68",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Steak, Swiss",
+   "page": "199",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n204",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fried Apples",
+   "page": "65",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n70",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Stew, Irish",
+   "page": "156",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n161",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Sweet Breads",
+   "page": "183",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n188",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Sweet Breads, Fried",
+   "page": "62",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n67",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Mushroom Puree",
+   "page": "173",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n178",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Tripe, Baked",
+   "page": "229",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n234",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Tripe, Fricasseed",
+   "page": "197",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n202",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Toad in the Hole",
+   "page": "163",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n168",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Veal, Blanquette",
+   "page": "197",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n202",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Veal, Braised Fillet",
+   "page": "169",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n174",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Veal Chops",
+   "page": "196",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n201",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Veal Cutlets, Breaded",
+   "page": "193",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n198",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Veal Goulash",
+   "page": "159",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n164",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Veal Haricot",
+   "page": "216",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n221",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Veal and Ham Pie",
+   "page": "165",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n170",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Veal Loaf",
+   "page": "180",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n185",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Veal Pot Pie",
+   "page": "172",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n177",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Veniion, Cutlets",
+   "page": "220",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n225",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Venison, Spiced",
+   "page": "224",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n229",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Casserole",
+   "page": "60",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n65",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Country Club",
+   "page": "201",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n206",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Croquettes",
+   "page": "195",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n200",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Curried",
+   "page": "192",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n197",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fried",
+   "page": "61",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n66",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fried, Mexican Style",
+   "page": "62",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n67",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fried, Swiss Style",
+   "page": "213",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n218",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fricassee, Brown",
+   "page": "153",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n158",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Grilled",
+   "page": "178",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n183",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Hot Pot",
+   "page": "226",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n231",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Impanada",
+   "page": "208",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n213",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "A la King",
+   "page": "178",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n183",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Planked",
+   "page": "158",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n163",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Planked",
+   "page": "199",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n204",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Roast Stuffed",
+   "page": "150",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n155",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Stewed",
+   "page": "175",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n180",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Stewed with Olives",
+   "page": "168",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n173",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Souffle",
+   "page": "163",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n168",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Supreme",
+   "page": "160",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n165",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "A la Tartars",
+   "page": "60",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n65",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Turkey, Roast",
+   "page": "217",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n222",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Belgian en Casserole",
+   "page": "230",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n235",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Jugged",
+   "page": "149",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n154",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "A la Marengo",
+   "page": "217",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n222",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Roast",
+   "page": "152",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n157",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Stewed",
+   "page": "221",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n226",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Flake No",
+   "page": "1",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft",
+   "pageStatus": "unverified"
+  },
+  {
+   "name": "Flake No",
+   "page": "2",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n7",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Dominion Hot Water Puff.. Puff, Rough Sugar for Tartlets Tip Top",
+   "page": "90",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n95",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Apple Dumplings",
+   "page": "78",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n83",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Rhubarb Custard Shepherd's",
+   "page": "226",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n231",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Almond",
+   "page": "192",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n197",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Almond and Apple",
+   "page": "221",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n226",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Amber",
+   "page": "210",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n215",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Apple, Charlotte",
+   "page": "212",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n217",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Apricot",
+   "page": "196",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n201",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Baba with Syrup",
+   "page": "222",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n227",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Baked Indian",
+   "page": "220",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n225",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Beefsteak",
+   "page": "205",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n210",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Black Cap",
+   "page": "216",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n221",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Boston",
+   "page": "230",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n235",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Bird's Nest",
+   "page": "165",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n170",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Bread",
+   "page": "226",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n231",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Bread, with Cherries",
+   "page": "210",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n215",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cabinet",
+   "page": "156",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n161",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Canned Corn",
+   "page": "179",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n184",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Caramel Bread",
+   "page": "79",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n84",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Caramel Rice",
+   "page": "79",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n84",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Carrot",
+   "page": "79",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n84",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cherry Blanc-Mange",
+   "page": "199",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n204",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chestnut Dainty",
+   "page": "217",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n222",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chocolate",
+   "page": "202",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n207",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chocolate Bread",
+   "page": "188",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n193",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chocolate Jelly",
+   "page": "80",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n85",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Macaroons",
+   "page": "209",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n214",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Coburg",
+   "page": "159",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n164",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cocoanut",
+   "page": "219",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n224",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Conservative",
+   "page": "211",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n216",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cottage",
+   "page": "80",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n85",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Countess",
+   "page": "204",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n209",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cranberry",
+   "page": "221",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n226",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Date",
+   "page": "222",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n227",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Eve's",
+   "page": "229",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n234",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Farina",
+   "page": "225",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n230",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fish",
+   "page": "55",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n60",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Golden",
+   "page": "219",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n224",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Graham",
+   "page": "223",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n228",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Graham, Steamed",
+   "page": "166",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n171",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "St. Leonard's",
+   "page": "204",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n209",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Celery and Nut",
+   "page": "74",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n79",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Asparagus",
+   "page": "74",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n79",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cabbage",
+   "page": "163",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n168",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Carrot",
+   "page": "186",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n191",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Celery and Almond",
+   "page": "74",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n79",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cheese",
+   "page": "206",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n211",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Pimiento",
+   "page": "154",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n159",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Daisy",
+   "page": "179",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n184",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fruit",
+   "page": "75",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n80",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Hungarian",
+   "page": "187",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n192",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Orange and Tomato",
+   "page": "75",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n80",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Pear and Pimiento",
+   "page": "189",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n194",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Potato and Nut",
+   "page": "75",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n80",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Potato and Pimiento",
+   "page": "76",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n81",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Shrimp",
+   "page": "76",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n81",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Waldorf",
+   "page": "159",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n164",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Watercress",
+   "page": "190",
+   "chapter": "Hints To Young Cooks",
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/calendarofdinner00neiluoft/page/n195",
+   "pageStatus": "verified"
+  }
+ ]
+}

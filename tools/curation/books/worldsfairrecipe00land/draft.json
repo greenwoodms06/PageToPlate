@@ -1,0 +1,4743 @@
+{
+ "identifier": "worldsfairrecipe00land",
+ "title": "The World's fair recipe book",
+ "creator": "Landis, Jacob F. [from old catalog]",
+ "year": 1893,
+ "extraction": {
+  "generated": "2026-07-15T22:33:17-0400",
+  "recipe_index": {
+   "heading": "GENERAL INDEX.",
+   "line": 5296,
+   "sections": 1
+  },
+  "chapter_index": null,
+  "duplicates_dropped": 5
+ },
+ "entries": [
+  {
+   "name": "A good dish",
+   "page": "89",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n94",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Allentown cake",
+   "page": "7",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n12",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Almond cake",
+   "page": "6",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n11",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "American toast",
+   "page": "89",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n94",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "American writing ink",
+   "page": "72",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n77",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Angel cake",
+   "page": "6",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n11",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Angels on horseback",
+   "page": "32",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n37",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Artificial honey",
+   "page": "72",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n77",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Apoplexy, cure for",
+   "page": "59",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n64",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Asthma, cure for",
+   "page": "65",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n70",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Asthma",
+   "page": "44",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n49",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Asthma, cure for",
+   "page": "48",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n53",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Asparagus soup",
+   "page": "97",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n102",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Apple custard pies °",
+   "page": "84",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n89",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Apple dumplings",
+   "page": "88",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n93",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Apple layer",
+   "page": "7",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n12",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Apple pie °",
+   "page": "84",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n89",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Apple snow",
+   "page": "89",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n94",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Apple jack, or coaka",
+   "page": "88",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n93",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Apple ice",
+   "page": "29",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n34",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Apple Jonathan",
+   "page": "88",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n93",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Apple pudding",
+   "page": "89",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n94",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Brown bread",
+   "page": "1",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n6",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Brown beef soup",
+   "page": "98",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n103",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Breakfast cake",
+   "page": "1",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n6",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Bread cake",
+   "page": "7",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n12",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Boston brown bread",
+   "page": "1",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n6",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Berwick sponge",
+   "page": "7",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n12",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Breakfast puffs",
+   "page": "1",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n6",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Broiled oysters",
+   "page": "40",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n45",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Burns, cure for ■",
+   "page": "45",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n50",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Bleeding piles",
+   "page": "44",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n49",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Bed bugs, to drive away",
+   "page": "78",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n83",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Bed bug poison",
+   "page": "72",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n77",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Bed bugs, another poison for",
+   "page": "72",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n77",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Baked salt codfish",
+   "page": "39",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n44",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Blood stopping",
+   "page": "44",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n49",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Beefsteak and onions",
+   "page": "33",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n38",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Butter taffy",
+   "page": "23",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n28",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Baked eggs",
+   "page": "32",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n37",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Broiled oysters >",
+   "page": "40",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n45",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Bloody flux, cure for the",
+   "page": "48",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n53",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Butter scotch, No. 2",
+   "page": "23",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n28",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Bite of a mad dog, cure for",
+   "page": "59",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n64",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Bronchitis",
+   "page": "44",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n49",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Blind, how to prevent horses from going",
+   "page": "70",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n75",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Brooms, how to manage",
+   "page": "75",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n80",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Bread pudding",
+   "page": "90",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n95",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Bots, cure for",
+   "page": "63",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n68",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Butter, how to cure",
+   "page": "80",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n85",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Blackberry wine",
+   "page": "102",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n107",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Bunions, cure for",
+   "page": "53",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n58",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Burns, cure for",
+   "page": "57",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n62",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Boils or carbuncles, cure for",
+   "page": "46",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n51",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Baked white fish",
+   "page": "40",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n45",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Bronchitis, cure for",
+   "page": "52",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n57",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Baked maccaroni",
+   "page": "100",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n105",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Beverly cake",
+   "page": "8",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n13",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Best cake",
+   "page": "8",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n13",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Bunions, cure for",
+   "page": "63",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n68",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Bread omelet",
+   "page": "89",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n94",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Burns, remedy for",
+   "page": "68",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n73",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Baldness, cure for",
+   "page": "64",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n69",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Burns and sores, cure for",
+   "page": "58",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n63",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Bunions, cure for",
+   "page": "62",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n67",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Brine that preserves butter a year",
+   "page": "73",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n78",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Burns, cure for",
+   "page": "58",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n63",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Clam chowder",
+   "page": "40",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n45",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Corn salve",
+   "page": "48",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n53",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cream cabbage",
+   "page": "100",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n105",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cronk beer",
+   "page": "103",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n108",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Currant wine",
+   "page": "102",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n107",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chow chow",
+   "page": "80",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n85",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Corn, to boil on the ear",
+   "page": "102",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n107",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cucumber pickles",
+   "page": "81",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n86",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Croup, cure for",
+   "page": "55",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n60",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Coffee bavarian cream",
+   "page": "29",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n34",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cream candies",
+   "page": "24",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n29",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chocolate mange",
+   "page": "29",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n34",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chocolate caromels",
+   "page": "25",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n30",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cocoanut cream candy",
+   "page": "24",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n29",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chocolate candy",
+   "page": "24",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n29",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cream puffs",
+   "page": "11",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n16",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cupcake",
+   "page": "12",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n17",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Corn bread",
+   "page": "1",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n6",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cocoanut cake",
+   "page": "11",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n16",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cream cake",
+   "page": "11",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n16",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Crullers",
+   "page": "11",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n16",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chocolate cake",
+   "page": "10",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n15",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cream pies",
+   "page": "85",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n90",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Corn starch cake",
+   "page": "10",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n15",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cold tomato catsup",
+   "page": "81",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n86",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cupcake",
+   "page": "10",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n15",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cancer, cure for",
+   "page": "47",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n52",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Colic",
+   "page": "47",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n52",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cucumber pickles",
+   "page": "80",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n85",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chocolate pie",
+   "page": "85",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n90",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Corn cakes j",
+   "page": "1",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n6",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chocolate pudding",
+   "page": "90",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n95",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Coughs and colds",
+   "page": "47",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n52",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Custard cake",
+   "page": "10",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n15",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cora pone",
+   "page": "85",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n90",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cream of bean soup",
+   "page": "98",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n103",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cookies",
+   "page": "11",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n16",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Consomme royal",
+   "page": "98",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n103",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cloth, how to remove tar from",
+   "page": "75",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n80",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Colds, cure for",
+   "page": "60",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n65",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Colds and diarrhoea, cure for",
+   "page": "57",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n62",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Complexion pomatum",
+   "page": "52",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n57",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cement for glass",
+   "page": "73",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n78",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Constipation, cure tor",
+   "page": "61",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n66",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chicken cholera, cure for",
+   "page": "62",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n67",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chronic diarrhoea",
+   "page": "53",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n58",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cough or lung diseases, cure for",
+   "page": "50",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n55",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Clean brass",
+   "page": "79",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n84",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cocoanut pudding",
+   "page": "90",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n95",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chocolate creams",
+   "page": "25",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n30",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Croup, cure for",
+   "page": "54",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n59",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cholera, cure for",
+   "page": "55",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n60",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Corns and bunions, cure for \\",
+   "page": "54",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n59",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cockroach poison",
+   "page": "73",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n78",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chicken cholera",
+   "page": "54",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n59",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Corns and bunions, cure for",
+   "page": "46",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n51",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Catarrh",
+   "page": "47",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n52",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Croup",
+   "page": "47",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n52",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Constipation",
+   "page": "52",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n57",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cubeb berries for catarrh",
+   "page": "46",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n51",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cough, a remedy to cure the",
+   "page": "44",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n49",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Croup",
+   "page": "52",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n57",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cough in horses",
+   "page": "45",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n50",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Colic",
+   "page": "52",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n57",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Clam soup",
+   "page": "41",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n46",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Colic, cure for",
+   "page": "55",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n60",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Carbuncles and boils, cure for",
+   "page": "46",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n51",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cramp, cure for",
+   "page": "45",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n50",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cholera remedy",
+   "page": "50",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n55",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cold, certain cure for a",
+   "page": "47",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n52",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Catarrh",
+   "page": "45",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n50",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chicken gapes, cure for",
+   "page": "62",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n67",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Caramel cake",
+   "page": "8",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n13",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Colic in children, a cure for the",
+   "page": "44",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n49",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cold on the chest",
+   "page": "45",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n50",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Corn soup",
+   "page": "98",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n103",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cream cookies",
+   "page": "10",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n15",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Carpet, to remove ink from",
+   "page": "76",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n81",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cholera and diarrhoea, cure for",
+   "page": "64",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n69",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Carbuncles and felons, cure for",
+   "page": "49",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n54",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Coffeejelly",
+   "page": "29",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n34",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Clean silk",
+   "page": "79",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n84",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chili sauce",
+   "page": "80",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n85",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cranberry rolls",
+   "page": "91",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n96",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Clam fritters",
+   "page": "40",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n45",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cream biscuit",
+   "page": "2",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n7",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cider vinegar",
+   "page": "102",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n107",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Corns, cure for",
+   "page": "63",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n68",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Custard pudding",
+   "page": "90",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n95",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cocoanut cake",
+   "page": "9",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n14",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cream puffs",
+   "page": "10",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n15",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Corn starch cake with fig filling",
+   "page": "10",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n15",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chocolate ice cream",
+   "page": "29",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n34",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Corn starch cake",
+   "page": "9",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n14",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chili sauce",
+   "page": "81",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n86",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cocoanut pie",
+   "page": "85",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n90",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Composition cake",
+   "page": "9",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n14",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chocolate layer cake",
+   "page": "8",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n13",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Corn cakes",
+   "page": "2",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n7",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Coffee cake",
+   "page": "9",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n14",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chocolate cake",
+   "page": "8",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n13",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Caroline cake",
+   "page": "8",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n13",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cream puffs",
+   "page": "91",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n96",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Croquettes",
+   "page": "36",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n41",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chickenpie",
+   "page": "33",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n38",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Charlotte russe",
+   "page": "91",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n96",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Canning",
+   "page": "101",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n106",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Corn starch pudding '",
+   "page": "91",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n96",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Crab apple wine",
+   "page": "102",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n107",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Catsup",
+   "page": "101",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n106",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Croquettes with green peas",
+   "page": "100",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n105",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Doughnuts",
+   "page": "12",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n17",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Daisy hill cake",
+   "page": "12",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n17",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Drill holes in glass",
+   "page": "79",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n84",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Diphtheria, cure for",
+   "page": "63",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n68",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Dominie's soft soap",
+   "page": "78",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n83",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Drive flies from a room",
+   "page": "79",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n84",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Destroy red spiders",
+   "page": "79",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n84",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Dayton cake",
+   "page": "12",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n17",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Dropsy",
+   "page": "56",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n61",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Dyspepsia bitters",
+   "page": "57",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n62",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Diphtheria, cure for >",
+   "page": "57",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n62",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Dog bite, how to cure a",
+   "page": "69",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n74",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Diphtheria, cure for",
+   "page": "58",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n63",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Dandruff cure for",
+   "page": "64",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n69",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Diarrhoea, cure for",
+   "page": "61",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n66",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Dropsy, a never-failing cure for",
+   "page": "43",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n48",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Diphtheria",
+   "page": "56",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n61",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Dover cake",
+   "page": "13",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n18",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Dried apple cake",
+   "page": "12",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n17",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Diarrhoea, cure for",
+   "page": "49",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n54",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Dyspepsia",
+   "page": "56",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n61",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Deviled clams",
+   "page": "41",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n46",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Dysentary, cure for",
+   "page": "53",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n58",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Dropsy, cure for",
+   "page": "53",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n58",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Dyspepsia, cure for",
+   "page": "52",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n57",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Dropsy, certain cure for",
+   "page": "50",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n55",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Delicate cake",
+   "page": "12",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n17",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Dyspepsia, cure for",
+   "page": "51",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n56",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Dyspepsia or soreness of the breast, cure for",
+   "page": "55",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n60",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Drive mosquitoes from a room",
+   "page": "75",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n80",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Diphtheria, prevention of",
+   "page": "68",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n73",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Egg rolls",
+   "page": "2",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n7",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Everton ice cream candy",
+   "page": "25",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n30",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Erysipelas, cure for",
+   "page": "60",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n65",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Eczema or scald head,cure for",
+   "page": "54",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n59",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Eruptions, pimples, &c, certain cure for",
+   "page": "45",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n50",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Erysipelas, cure for",
+   "page": "57",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n62",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Earache, cure for",
+   "page": "61",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n66",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Furniture, how to clean",
+   "page": "77",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n82",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fruit pudding",
+   "page": "92",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n97",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fishes, how to catch many",
+   "page": "77",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n82",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fish, how to catch",
+   "page": "75",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n80",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fruit or berry pudding",
+   "page": "92",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n97",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fruit trees, how to remove insects from <",
+   "page": "4",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n9",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Furniture polish",
+   "page": "73",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n78",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Freckles, cure for .. £° Frozen hands or feet, cure for »* Felon, cure for M",
+   "page": "112",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n117",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fever and ague, cure for",
+   "page": "49",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n54",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Felon and catarrh in the hand, cure for",
+   "page": "48",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n53",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fruitpuffs",
+   "page": "93",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n98",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fried tomatoes",
+   "page": "33",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n38",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Filling for cream puffs",
+   "page": "14",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n19",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fricaseed oysters",
+   "page": "41",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n46",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Frizzled ham",
+   "page": "33",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n38",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fruit jelly",
+   "page": "30",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n35",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fig- cake",
+   "page": "13",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n18",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fruitcake",
+   "page": "13",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n18",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Florence puffs",
+   "page": "2",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n7",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fomentation",
+   "page": "57",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n62",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fancy cake",
+   "page": "13",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n18",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fruit cake",
+   "page": "13",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n18",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Green corn patties",
+   "page": "15",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n20",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Ginger cookies",
+   "page": "15",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n20",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "German puffs",
+   "page": "93",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n98",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Grape wine",
+   "page": "103",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n108",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Gravel, or Bright's disease",
+   "page": "65",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n70",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Ginger cakes",
+   "page": "15",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n20",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Graham pudding",
+   "page": "93",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n98",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Golden ointment",
+   "page": "74",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n79",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Green corn cakes",
+   "page": "37",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n42",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Green tomato pickles",
+   "page": "81",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n86",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Gloves, how to clean",
+   "page": "74",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n79",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Gravel in horses",
+   "page": "65",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n70",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Gold and silver cake",
+   "page": "14",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n19",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Ginger cake",
+   "page": "15",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n20",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Ginger snaps",
+   "page": "14",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n19",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "German coffee cake",
+   "page": "15",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n20",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Green corn pudding",
+   "page": "93",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n98",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Gilt frames, how to renew",
+   "page": "74",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n79",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Gingersnaps",
+   "page": "15",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n20",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Grip, cure for the",
+   "page": "47",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n52",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Game, how to catch",
+   "page": "75",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n80",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Gold loaf cake",
+   "page": "14",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n19",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Graham bread",
+   "page": "3",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n8",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Graham gems, No. 2",
+   "page": "3",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n8",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Gingerbread",
+   "page": "3",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n8",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Hints to cake bakers",
+   "page": "6",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n11",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Hints on confectionery",
+   "page": "23",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n28",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "How to keep a horse healthy and his blood in order",
+   "page": "66",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n71",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Horehound candy",
+   "page": "26",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n31",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Hollandaise sauce for fish",
+   "page": "41",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n46",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Heaves in horses, cure for",
+   "page": "51",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n56",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Hiccoughs, cure for",
+   "page": "53",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n58",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Hysterics, cure for",
+   "page": "51",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n56",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Hermits . ■",
+   "page": "16",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n21",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Headache and rheumatism, cure for",
+   "page": "64",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n69",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Heavy colds, cure for",
+   "page": "63",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n68",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Hot water sponge cake",
+   "page": "16",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n21",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Horse powder",
+   "page": "66",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n71",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Hair renewer",
+   "page": "66",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n71",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Higdom",
+   "page": "82",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n87",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Headache and neuralgic pains, cure for",
+   "page": "60",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n65",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Ivory harness polish",
+   "page": "75",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n80",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Ink eradicator",
+   "page": "76",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n81",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Icing for cakes",
+   "page": "17",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n22",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Indian pudding",
+   "page": "93",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n98",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Ice cream",
+   "page": "30",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n35",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Ice cream candy",
+   "page": "26",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n31",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Ice cream, how to make",
+   "page": "26",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n31",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Ingrowing nails",
+   "page": "66",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n71",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Indian steam loaf, o",
+   "page": "4",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n9",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Icing for cake",
+   "page": "16",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n21",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Tndian salve",
+   "page": "66",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n71",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Inward bleeding piles, cure for",
+   "page": "58",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n63",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Ice cream cake",
+   "page": "16",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n21",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Jackson's itch ointment",
+   "page": "67",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n72",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Jumbles",
+   "page": "17",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n22",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Jenny Lind",
+   "page": "4",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n9",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Jelly cake",
+   "page": "17",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n22",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Keep flies off gilt frames",
+   "page": "80",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n85",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Kidney disease, cure for",
+   "page": "62",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n67",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Lemon jelly",
+   "page": "31",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n36",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Lunch dish",
+   "page": "37",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n42",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Lemon taffy",
+   "page": "26",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n31",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Lemon milk sherbet",
+   "page": "31",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n36",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Lice in vines",
+   "page": "74",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n79",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Lemon ice",
+   "page": "30",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n35",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Lung fever in horses, cure for",
+   "page": "51",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n56",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Lock-jaw, cure for",
+   "page": "52",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n57",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Lemon jelly cake",
+   "page": "17",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n22",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Lemon cake",
+   "page": "17",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n22",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Lemon maccaroons",
+   "page": "26",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n31",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Marble cholocate cake",
+   "page": "17",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n22",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Molasses spice cake",
+   "page": "18",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n23",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Molasses cake",
+   "page": "18",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n23",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Molasses candy",
+   "page": "27",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n32",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Minnehaha cake",
+   "page": "18",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n23",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Mince pie",
+   "page": "87",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n92",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Mustard pickles",
+   "page": "82",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n87",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Maccaroni a la creme",
+   "page": "101",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n106",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Mock mince pie",
+   "page": "86",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n91",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Mutton soup",
+   "page": "99",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n104",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Mahogany stains",
+   "page": "76",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n81",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Malarial fever, cure for",
+   "page": "54",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n59",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Mend China, how to",
+   "page": "74",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n79",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Moths, a preventive of",
+   "page": "72",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n77",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Malarial fever, cure for",
+   "page": "51",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n56",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Marguerite eggs",
+   "page": "33",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n38",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Mending rubber goods",
+   "page": "73",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n78",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Malaria, cure for",
+   "page": "53",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n58",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Mock duck",
+   "page": "33",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n38",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Middlesex cake",
+   "page": "18",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n23",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Malarial fever, cure for",
+   "page": "62",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n67",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Neuralgia or toothache",
+   "page": "67",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n72",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Neuralgia",
+   "page": "67",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n72",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Noodle soup",
+   "page": "99",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n104",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Nineoil",
+   "page": "67",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n72",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Nerve ointment",
+   "page": "67",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n72",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Nut candy",
+   "page": "27",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n32",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Orange marmalade",
+   "page": "31",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n36",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Oyster croquettes",
+   "page": "42",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n47",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Omelet with chopped ham",
+   "page": "34",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n39",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Orange cake",
+   "page": "19",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n24",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Omelet",
+   "page": "34",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n39",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Orange puddings",
+   "page": "94",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n99",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Oyster omelet",
+   "page": "42",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n47",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Overcome by smoke, how to prevent being",
+   "page": "70",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n75",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Oyster soup",
+   "page": "42",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n47",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Poisonous bites, how to treat",
+   "page": "65",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n70",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Pork cake",
+   "page": "19",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n24",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Paralytic stroke, cure for",
+   "page": "58",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n63",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Parker rolls",
+   "page": "4",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n9",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Pop-overs",
+   "page": "19",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n24",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Premium cider",
+   "page": "104",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n109",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Potato soup",
+   "page": "99",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n104",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Pickled oysters",
+   "page": "82",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n87",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Prevent pumps from freezing",
+   "page": "79",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n84",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Potato cream",
+   "page": "94",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n99",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Pie plant pie",
+   "page": "87",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n92",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Preserve eggs for six months to one year",
+   "page": "77",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n82",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Plum pudding",
+   "page": "94",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n99",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Potato souffle",
+   "page": "101",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n106",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Prune pudding",
+   "page": "94",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n99",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Peach pie",
+   "page": "87",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n92",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Pickled eggs and beets",
+   "page": "82",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n87",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Piles, cure for",
+   "page": "51",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n56",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Peach wine",
+   "page": "104",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n109",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Prevent turners' wood splitting",
+   "page": "77",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n82",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Physic for a horse",
+   "page": "68",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n73",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Pearl water for the complexion",
+   "page": "68",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n73",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Pineapple cake",
+   "page": "19",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n24",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Pineapple pie",
+   "page": "87",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n92",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Poison, cure for",
+   "page": "46",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n51",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Pressed turkey",
+   "page": "37",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n42",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Piles, cure for",
+   "page": "50",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n55",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Piles, cure for",
+   "page": "55",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n60",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Popped corn",
+   "page": "27",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n32",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Pancakes",
+   "page": "19",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n24",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Popcorn candy",
+   "page": "27",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n32",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Pop corn balls",
+   "page": "27",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n32",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Poison, how to take out",
+   "page": "70",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n75",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Pain con querer",
+   "page": "71",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n76",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Poison, cure for",
+   "page": "61",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n66",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Piles, cure for",
+   "page": "63",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n68",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Pain in the side and breast",
+   "page": "63",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n68",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Pearl water for the face",
+   "page": "68",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n73",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Pennyroyal and potash",
+   "page": "68",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n73",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Piles, cure for",
+   "page": "58",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n63",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Pains or headache, cure for",
+   "page": "58",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n63",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Pot pie- chicken, veal or lamb",
+   "page": "34",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n39",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Potted herring",
+   "page": "42",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n47",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Pineapple sherbet",
+   "page": "31",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n36",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Peanut candy",
+   "page": "25",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n30",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Quinsy, cure for",
+   "page": "63",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n68",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Quality crest cake",
+   "page": "19",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n24",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Quince wine",
+   "page": "101",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n106",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Quick soup with canned goods",
+   "page": "99",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n104",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Rhubarb wine",
+   "page": "104",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n109",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Raisin pie",
+   "page": "87",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n92",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Raspberry wine",
+   "page": "104",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n109",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Rice pudding",
+   "page": "94",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n99",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Remove fruit spots from cotton goods",
+   "page": "79",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n84",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Raw hides, how to tan",
+   "page": "78",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n83",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Rheumatism, cure for",
+   "page": "50",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n55",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Rheumatism, cure for",
+   "page": "61",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n66",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Rickets, cure for",
+   "page": "62",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n67",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Rupture salve",
+   "page": "69",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n74",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Roman punch",
+   "page": "31",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n36",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Roast beef with Yorkshire pudding",
+   "page": "34",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n39",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Royal fruit cake",
+   "page": "20",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n25",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Rheumatism, cure for",
+   "page": "48",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n53",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Railroad cake",
+   "page": "20",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n25",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Rheumatism, cure for",
+   "page": "62",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n67",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Rolled jell cake",
+   "page": "20",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n25",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Rheumatism, cure for",
+   "page": "69",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n74",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Raised doughnuts",
+   "page": "20",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n25",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Rheumatism, cure for",
+   "page": "49",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n54",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Rheumatism, headache and neuralgia, cure for",
+   "page": "64",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n69",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Sally lunn",
+   "page": "4",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n9",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Sour cherry wine",
+   "page": "105",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n110",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Steamed pudding",
+   "page": "95",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n100",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Stop bleeding, how to",
+   "page": "66",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n71",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Sore eyes, cure for",
+   "page": "51",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n56",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Saratoga potatoes",
+   "page": "101",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n106",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Soup stock",
+   "page": "99",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n104",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Suet pudding",
+   "page": "95",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n100",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Salad dressings",
+   "page": "97",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n102",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Salads",
+   "page": "96",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n101",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Strawberry tapioca",
+   "page": "95",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n100",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Salem pudding",
+   "page": "94",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n99",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Spiced peaches",
+   "page": "83",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n88",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Skins, how to tan",
+   "page": "78",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n83",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Silver ware, cleaning",
+   "page": "73",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n78",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Soda cream =",
+   "page": "76",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n81",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "String beans, how to pickle",
+   "page": "83",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n88",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Sores of long standing, how to cure",
+   "page": "70",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n75",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Stufifed bell peppers",
+   "page": "83",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n88",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Spiced apples",
+   "page": "83",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n88",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Scrofula or sore head, cure for",
+   "page": "49",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n54",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Sweet pickles",
+   "page": "82",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n87",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Sand tarts",
+   "page": "21",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n26",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Sauces",
+   "page": "95",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n100",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Sugar crumb pie",
+   "page": "88",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n93",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Stain wood the color of walnut",
+   "page": "77",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n82",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Spiced tomatoes",
+   "page": "82",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n87",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Sweet oil, how to purify",
+   "page": "66",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n71",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Sore throat",
+   "page": "69",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n74",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Short winded horse, cure for a",
+   "page": "60",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n65",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Silver wash",
+   "page": "76",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n81",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Sore mouth, cure for a",
+   "page": "50",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n55",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Sprinkling plants",
+   "page": "73",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n78",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Sore throat and mouth",
+   "page": "69",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n74",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Stop bleeding, how to",
+   "page": "69",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n74",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Swollen feet and pains of the skin, cure for",
+   "page": "59",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n64",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Sores, cure for",
+   "page": "48",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n53",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Staggers, cure for",
+   "page": "51",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n56",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Sting of a bee or wasp, cure for the",
+   "page": "45",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n50",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Sugar cookies",
+   "page": "20",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n25",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Sugar biscuit",
+   "page": "5",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n10",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Sur le plat",
+   "page": "35",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n40",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Sick stomach, cure for",
+   "page": "59",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n64",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Swollen neck, cure for",
+   "page": "60",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n65",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Stifle slipp'd horse, cure for a",
+   "page": "60",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n65",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Scalloped oysters",
+   "page": "43",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n48",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Splendid eye water",
+   "page": "43",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n48",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Scalloped fish",
+   "page": "37",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n42",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Sauces",
+   "page": "34",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n39",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Spanish sugar cake",
+   "page": "21",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n26",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Salmon in mold",
+   "page": "42",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n47",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Snow custard",
+   "page": "31",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n36",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Scotch butter candy",
+   "page": "28",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n33",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Sprains or backache, cure for",
+   "page": "46",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n51",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Sponge gingerbread",
+   "page": "5",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n10",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Sunshine cake",
+   "page": "21",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n26",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Sponge cake",
+   "page": "21",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n26",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Soft gingerbread",
+   "page": "5",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n10",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Surprise cake",
+   "page": "22",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n27",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Sugar candy",
+   "page": "27",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n32",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Sugar cake",
+   "page": "22",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n27",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Striped cake",
+   "page": "20",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n25",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Spanish ginger cake",
+   "page": "21",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n26",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Spanish cream",
+   "page": "32",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n37",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Sandwiches",
+   "page": "38",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n43",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Tomato soup",
+   "page": "100",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n105",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Tomato hash",
+   "page": "39",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n44",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Tomatocatsup",
+   "page": "102",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n107",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Tomato wine",
+   "page": "105",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n110",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Taylor cake",
+   "page": "22",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n27",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Toast",
+   "page": "38",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n43",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Toothache, cure for",
+   "page": "59",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n64",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Tomato soy",
+   "page": "84",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n89",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Tapioca and Indian pudding",
+   "page": "95",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n100",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Tape worms or seatworms, cure for",
+   "page": "53",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n58",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Tooth powder",
+   "page": "78",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n83",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Tramping on a nail, cure for",
+   "page": "48",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n53",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Tetter ointmeut",
+   "page": "70",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n75",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Toothache, cure for",
+   "page": "60",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n65",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Tetter, cure for",
+   "page": "58",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n63",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Tapioca pudding",
+   "page": "96",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n101",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Tomato catsup",
+   "page": "84",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n89",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Tape worm and small worms, cure for",
+   "page": "65",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n70",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Vinegar",
+   "page": "105",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n110",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Veal loaf",
+   "page": "35",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n40",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Veal turnover",
+   "page": "39",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n44",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Velvet cream",
+   "page": "32",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n37",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Vinegar candy",
+   "page": "38",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n43",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Vanilla taffy",
+   "page": "29",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n34",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Variety cake",
+   "page": "32",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n37",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Veal soup",
+   "page": "100",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n105",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "White swelling, cure for",
+   "page": "54",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n59",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Weak eyes",
+   "page": "71",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n76",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Worms, cure for",
+   "page": "60",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n65",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Whooping cough, a never-failing cure for",
+   "page": "44",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n49",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Welsh rarebit",
+   "page": "39",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n44",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Whitetaffy",
+   "page": "28",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n33",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "White mountain cake",
+   "page": "33",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n38",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Walnut maccaroons",
+   "page": "28",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n33",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Walnut creams",
+   "page": "28",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n33",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Waffles",
+   "page": "5",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n10",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Waffles",
+   "page": "6",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n11",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "When a horse does not eat",
+   "page": "71",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n76",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Walnut cake",
+   "page": "22",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n27",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Whooping cough cure",
+   "page": "71",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n76",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "White swelling, cure for",
+   "page": "49",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n54",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Washington cake",
+   "page": "22",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n27",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "White swelling, cure for",
+   "page": "55",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n60",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Wheat muffins",
+   "page": "6",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n11",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Yellow water, cure for",
+   "page": "51",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/worldsfairrecipe00land/page/n56",
+   "pageStatus": "verified"
+  }
+ ]
+}

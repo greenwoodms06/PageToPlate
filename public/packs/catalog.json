@@ -225,6 +225,89 @@
    "rawIndexCount": 966,
    "file": "packs/cu31924000722862.json",
    "version": 1
+  },
+  {
+   "id": "calendarofdinner00neiluoft",
+   "title": "A Calendar of Dinners, with 615 Recipes",
+   "author": "Neil, Marion Harris",
+   "year": 1922,
+   "country": "US",
+   "cuisines": [
+    "american"
+   ],
+   "era": "historical",
+   "type": "linked",
+   "recipeCount": 178,
+   "categories": [
+    "Mains",
+    "Desserts",
+    "Sides",
+    "Salads",
+    "Breads",
+    "Breakfast & Brunch",
+    "Sauces & Condiments",
+    "Preserves & Pickles",
+    "Soups & Stews"
+   ],
+   "curatedSubset": true,
+   "rawIndexCount": 289,
+   "file": "packs/calendarofdinner00neiluoft.json",
+   "version": 1
+  },
+  {
+   "id": "worldsfairrecipe00land",
+   "title": "The World's Fair Recipe Book",
+   "author": "Landis, Jacob F.",
+   "year": 1893,
+   "country": "US",
+   "cuisines": [
+    "american"
+   ],
+   "era": "historical",
+   "type": "linked",
+   "recipeCount": 258,
+   "categories": [
+    "Desserts",
+    "Mains",
+    "Sides",
+    "Soups & Stews",
+    "Preserves & Pickles",
+    "Breads",
+    "Drinks",
+    "Sauces & Condiments",
+    "Breakfast & Brunch"
+   ],
+   "curatedSubset": true,
+   "rawIndexCount": 525,
+   "file": "packs/worldsfairrecipe00land.json",
+   "version": 1
+  },
+  {
+   "id": "goldenrulecookbo00shar",
+   "title": "The Golden Rule Cook Book : Six Hundred Recipes for Meatless Dishes",
+   "author": "Sharpe, M. R. L. (Maud Russell Lorraine)",
+   "year": 1912,
+   "country": "US",
+   "cuisines": [],
+   "era": "historical",
+   "type": "linked",
+   "recipeCount": 248,
+   "categories": [
+    "Sides",
+    "Soups & Stews",
+    "Sauces & Condiments",
+    "Salads",
+    "Breakfast & Brunch",
+    "Mains",
+    "Breads",
+    "Preserves & Pickles",
+    "Basics",
+    "Desserts"
+   ],
+   "curatedSubset": true,
+   "rawIndexCount": 650,
+   "file": "packs/goldenrulecookbo00shar.json",
+   "version": 1
   }
  ]
 }

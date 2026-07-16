@@ -1,0 +1,310 @@
+name,page,guessed_category,confidence
+Introduction,11,Uncategorized,0.00
+Measiuing,39,Uncategorized,0.00
+Thickening,40,Uncategorized,0.00
+Gelatine,41,Uncategorized,0.00
+Fat for Frying,41,Uncategorized,0.00
+Clear BouUlon,46,Uncategorized,0.00
+Belgian,49,Uncategorized,0.00
+Cockie-Leekie,56,Uncategorized,0.00
+Creole,56,Uncategorized,0.00
+Florentine,57,Uncategorized,0.00
+Heilbronn,57,Uncategorized,0.00
+Juhenne,58,Uncategorized,0.00
+Hungarian,59,Uncategorized,0.00
+Princess,64,Uncategorized,0.00
+Rice-Okra,66,Uncategorized,0.00
+Spinach-Tomato,67,Uncategorized,0.00
+Sorrel (French),68,Uncategorized,0.00
+Sorrel (German),68,Uncategorized,0.00
+St. Germaine,68,Uncategorized,0.00
+Tomato-Tapioca,70,Uncategorized,0.00
+Tomato-Macaroni,71,Uncategorized,0.00
+Mulligatawney,72,Uncategorized,0.00
+Fritters,80,Sides,0.60
+Fried,80,Mains,0.40
+French Fried,80,Mains,0.40
+Tartare,81,Uncategorized,0.00
+Fried with Tomato Sauce,81,Mains,0.40
+Lyonnaise,81,Uncategorized,0.00
+Newburg,82,Uncategorized,0.00
+Vinaigrette,84,Uncategorized,0.00
+Fonds,84,Uncategorized,0.00
+Tips,86,Uncategorized,0.00
+White,86,Uncategorized,0.00
+Vinaigrette,86,Uncategorized,0.00
+Fried Tips,86,Mains,0.40
+Escalloped,87,Uncategorized,0.00
+Golden Wax,90,Uncategorized,0.00
+French,90,Uncategorized,0.00
+Deutschland,90,Uncategorized,0.00
+Itahan,91,Uncategorized,0.00
+Spanish,92,Uncategorized,0.00
+Creamed,94,Desserts,0.40
+Virginia,94,Uncategorized,0.00
+Piquant,95,Uncategorized,0.00
+German,95,Uncategorized,0.00
+Lyonnaise,97,Uncategorized,0.00
+Creamed,97,Desserts,0.40
+New England,98,Uncategorized,0.00
+Western,98,Uncategorized,0.00
+Sarmas,99,Uncategorized,0.00
+Lichtenstein,99,Uncategorized,0.00
+Lady,100,Uncategorized,0.00
+German Red,100,Uncategorized,0.00
+Hungarian,100,Uncategorized,0.00
+Saute,102,Uncategorized,0.00
+Glorified,102,Uncategorized,0.00
+Glazed,103,Uncategorized,0.00
+Delmonico,103,Uncategorized,0.00
+Souffle,104,Desserts,0.45
+Indi ex,317,Uncategorized,0.00
+Creamed,104,Desserts,0.40
+German,105,Uncategorized,0.00
+Italian,105,Uncategorized,0.00
+Fritters,105,Sides,0.60
+Baked,107,Uncategorized,0.00
+Cepes,107,Uncategorized,0.00
+"Com, Boiled",108,Uncategorized,0.00
+Roasted,108,Mains,0.40
+Pudding,108,Desserts,0.80
+Creole,109,Uncategorized,0.00
+Chowder,109,Soups & Stews,0.90
+Rhode Island Escallop,110,Uncategorized,0.00
+Stuffed,110,Sides,0.50
+"Endive, Creamed",111,Desserts,0.40
+Kohbabi,112,Uncategorized,0.00
+German,113,Uncategorized,0.00
+Lentil Pie,112,Desserts,0.40
+Leeks,113,Uncategorized,0.00
+Stewed,114,Uncategorized,0.00
+German,114,Uncategorized,0.00
+Newburg,115,Uncategorized,0.00
+GriUed,116,Uncategorized,0.00
+Sur Cloche,116,Uncategorized,0.00
+Filled,117,Uncategorized,0.00
+Czarina,119,Uncategorized,0.00
+Loaf,119,Breads,0.55
+Creamed,121,Desserts,0.40
+Escalloped,122,Uncategorized,0.00
+Souffle,123,Desserts,0.45
+Bordeaux,123,Uncategorized,0.00
+Beatrice,124,Uncategorized,0.00
+Stuffed,124,Sides,0.50
+Fried,125,Mains,0.40
+French Fried,125,Mains,0.40
+SmaU,126,Uncategorized,0.00
+Glazed,126,Uncategorized,0.00
+Fried,127,Mains,0.40
+French Fried,127,Mains,0.40
+BroUed,128,Uncategorized,0.00
+Paysanne,128,Uncategorized,0.00
+Escalloped with Com,130,Uncategorized,0.00
+Fried,131,Mains,0.40
+"Pimentos, Creamed",131,Desserts,0.40
+RoUed,131,Uncategorized,0.00
+Mashed,133,Uncategorized,0.00
+Souffle,134,Desserts,0.45
+Riced,134,Uncategorized,0.00
+Baked,135,Uncategorized,0.00
+Denver,135,Uncategorized,0.00
+Broiled,136,Mains,0.40
+Whole Fried,136,Mains,0.40
+French Fried,137,Mains,0.40
+Parisian,137,Uncategorized,0.00
+Lyonnaise,138,Uncategorized,0.00
+German Fried,138,Mains,0.40
+Creamed,139,Desserts,0.40
+Escalloj)ed,139,Uncategorized,0.00
+Delmonico,140,Uncategorized,0.00
+Oak Hill,140,Uncategorized,0.00
+Heilbronn,140,Uncategorized,0.00
+Curried,142,Sides,0.50
+Rennequin,142,Uncategorized,0.00
+Escallop with Om'on,143,Uncategorized,0.00
+Creamed New,144,Desserts,0.40
+Boiled New,144,Uncategorized,0.00
+INIock New,144,Uncategorized,0.00
+Straws,137,Uncategorized,0.00
+Cradles,138,Uncategorized,0.00
+Savoury,139,Uncategorized,0.00
+Cakes,141,Desserts,0.85
+Omelet,141,Breakfast & Brunch,0.75
+Saratoga Chips,137,Uncategorized,0.00
+Baked,145,Uncategorized,0.00
+Mashed,145,Uncategorized,0.00
+Souffle,145,Desserts,0.45
+Escalloped,146,Uncategorized,0.00
+Stuffed,146,Sides,0.50
+Maryland,147,Uncategorized,0.00
+Candied,148,Uncategorized,0.00
+Griddled,148,Uncategorized,0.00
+Fried,148,Mains,0.40
+French Fried,148,Mains,0.40
+Glazed,149,Uncategorized,0.00
+Texas,147,Uncategorized,0.00
+English,149,Uncategorized,0.00
+Escalloped,150,Uncategorized,0.00
+Tartare,150,Uncategorized,0.00
+Black,150,Uncategorized,0.00
+German,151,Uncategorized,0.00
+Italian,152,Uncategorized,0.00
+Novelty,152,Uncategorized,0.00
+Souffle,152,Desserts,0.45
+California,153,Uncategorized,0.00
+Escalloped,154,Uncategorized,0.00
+Breaded,154,Uncategorized,0.00
+Fried,154,Mains,0.40
+Devilled,155,Mains,0.40
+Creamed,155,Desserts,0.40
+Casino,159,Uncategorized,0.00
+Indienne,159,Uncategorized,0.00
+Curried,159,Sides,0.50
+Savoiuy,160,Uncategorized,0.00
+Creole,160,Uncategorized,0.00
+Loaf,160,Breads,0.55
+Mashed,162,Uncategorized,0.00
+Parisian,163,Uncategorized,0.00
+Teltower Riibchen,163,Uncategorized,0.00
+Q)lcannon,167,Uncategorized,0.00
+Stew,169,Soups & Stews,0.80
+Casserole,170,Uncategorized,0.00
+Vegetable Pie St. Georges,169,Desserts,0.40
+Bordeaux,171,Uncategorized,0.00
+Creole,173,Uncategorized,0.00
+Various,174,Uncategorized,0.00
+Nut Haah,181,Uncategorized,0.00
+Baked,185,Uncategorized,0.00
+Indian,185,Uncategorized,0.00
+Spanish,186,Uncategorized,0.00
+Fried,186,Mains,0.40
+Escalloped,186,Uncategorized,0.00
+Italian,187,Uncategorized,0.00
+Omelet,188,Breakfast & Brunch,0.75
+Czarina,188,Uncategorized,0.00
+Savoury,189,Uncategorized,0.00
+Unpolished,189,Uncategorized,0.00
+Pearl Barley,189,Uncategorized,0.00
+Bianca,190,Uncategorized,0.00
+Italian,191,Uncategorized,0.00
+Baked Itahan,192,Uncategorized,0.00
+Mexican,192,Uncategorized,0.00
+German,194,Uncategorized,0.00
+Italian,194,Uncategorized,0.00
+Italian,200,Uncategorized,0.00
+Savoury,202,Uncategorized,0.00
+Mashed,203,Uncategorized,0.00
+Sweet,203,Uncategorized,0.00
+Sweetened,203,Uncategorized,0.00
+Pink,204,Uncategorized,0.00
+Curried,204,Sides,0.50
+Carolina,204,Uncategorized,0.00
+English Savouiy,205,Uncategorized,0.00
+Egg-Tomato,209,Uncategorized,0.00
+Macedoine,213,Uncategorized,0.00
+Camied,213,Uncategorized,0.00
+Reduced Vinegar,217,Uncategorized,0.00
+Bread,218,Breads,0.80
+Brown,218,Uncategorized,0.00
+Various Brown,219,Uncategorized,0.00
+Bordelaise,219,Uncategorized,0.00
+Caper,220,Uncategorized,0.00
+Devilled,221,Mains,0.40
+French,221,Uncategorized,0.00
+German,221,Uncategorized,0.00
+Herb,222,Uncategorized,0.00
+HoUandaise,222,Uncategorized,0.00
+Horse-Radish,222,Uncategorized,0.00
+Maitre d'Hotel,223,Uncategorized,0.00
+Mint,223,Uncategorized,0.00
+Parsley,224,Uncategorized,0.00
+Proven9al,224,Uncategorized,0.00
+Piquant,225,Uncategorized,0.00
+Ravigote,225,Uncategorized,0.00
+Robert,225,Uncategorized,0.00
+Spanish,225,Uncategorized,0.00
+Tartare,227,Uncategorized,0.00
+Vinaigrette,228,Uncategorized,0.00
+White,228,Uncategorized,0.00
+Fried,231,Mains,0.40
+Poached,232,Uncategorized,0.00
+Indienne,232,Uncategorized,0.00
+Waldorf,232,Uncategorized,0.00
+Scrambled,233,Uncategorized,0.00
+Savomy,233,Uncategorized,0.00
+Indiemie,234,Uncategorized,0.00
+Spanish,234,Uncategorized,0.00
+Shirred,234,Uncategorized,0.00
+Griddled,235,Uncategorized,0.00
+Carmelite,237,Uncategorized,0.00
+Newburg,237,Uncategorized,0.00
+Lyomiaise,238,Uncategorized,0.00
+Devilled,238,Mains,0.40
+Japanese,238,Uncategorized,0.00
+Golden Rod,239,Uncategorized,0.00
+Frothed,239,Uncategorized,0.00
+Miinchner,241,Uncategorized,0.00
+Parisienne,241,Uncategorized,0.00
+Perigord,241,Uncategorized,0.00
+Mornay,242,Uncategorized,0.00
+Creamed,242,Desserts,0.40
+Omar Pasha,243,Uncategorized,0.00
+Turkish,243,Uncategorized,0.00
+Beurre-Noir,243,Uncategorized,0.00
+Creole,244,Uncategorized,0.00
+Escalloped,245,Uncategorized,0.00
+Souffle,235,Desserts,0.45
+Baked,236,Uncategorized,0.00
+Herb,236,Uncategorized,0.00
+Fondu,249,Uncategorized,0.00
+Creamed,250,Desserts,0.40
+Cottage,251,Uncategorized,0.00
+Liptauer,252,Uncategorized,0.00
+Dreams,253,Uncategorized,0.00
+Roquefort Gourmet,253,Uncategorized,0.00
+Grated,253,Uncategorized,0.00
+Bachelor's,251,Uncategorized,0.00
+Delmonico,252,Uncategorized,0.00
+Pink,252,Uncategorized,0.00
+Cherry,260,Desserts,0.45
+Country,261,Uncategorized,0.00
+Dent de Lion,261,Uncategorized,0.00
+Endive,262,Uncategorized,0.00
+Fetticus,262,Uncategorized,0.00
+Garden,262,Uncategorized,0.00
+Italian,263,Uncategorized,0.00
+Macedoine,263,Uncategorized,0.00
+Mixed,263,Uncategorized,0.00
+Narragansett,264,Uncategorized,0.00
+Philadelphia,264,Uncategorized,0.00
+Pimento,264,Uncategorized,0.00
+Polish,265,Uncategorized,0.00
+Romaine,266,Uncategorized,0.00
+Southern,266,Uncategorized,0.00
+Sorrel,266,Uncategorized,0.00
+Spanish,267,Uncategorized,0.00
+Sunday night,267,Uncategorized,0.00
+Waldorf,268,Uncategorized,0.00
+Yokohama,268,Uncategorized,0.00
+Tarragon Vinegar,258,Uncategorized,0.00
+Creole,275,Uncategorized,0.00
+Horse-Radish,275,Uncategorized,0.00
+"Savoury, Neufchatel",276,Uncategorized,0.00
+Stufted Olive,276,Uncategorized,0.00
+Caper,277,Uncategorized,0.00
+Liptauer,277,Uncategorized,0.00
+Pimento,277,Uncategorized,0.00
+Bombay,282,Uncategorized,0.00
+Creole,282,Uncategorized,0.00
+German,284,Uncategorized,0.00
+Honolulu,284,Uncategorized,0.00
+Pimola,283,Uncategorized,0.00
+Providence House,281,Uncategorized,0.00
+Pie-Crust,287,Uncategorized,0.00
+Pastry for Patty Cases,288,Uncategorized,0.00
+Essex Pastry,289,Uncategorized,0.00
+Dumplings,289,Sides,0.50
+Pop Overs,293,Uncategorized,0.00
+Thanksgiving Dinner,303,Uncategorized,0.00
+Christmas Dmner,304,Uncategorized,0.00
+Easter Dinner,304,Uncategorized,0.00
