@@ -12,8 +12,9 @@
 // Idempotent by design: installPack no-ops when the pack's book exists; the
 // fake books are guarded by book name.
 import { store } from '../data/store';
-import { newId } from '../data/types';
-import type { MadeEntry, Recipe } from '../data/types';
+import { newId, todayISO } from '../data/types';
+import { fromISO } from '../logic/dates';
+import type { MadeEntry, PlanItem, Recipe } from '../data/types';
 import { installPack } from '../data/packs';
 
 // Owner-confirmed at Checkpoint 1 (plan "Checkpoint 1 amendments" item 2):
@@ -97,4 +98,57 @@ export async function seedDemoBooks(): Promise<string> {
     results.push(`${fake.name}: +${recipes.length} recipes, ${entries.length} made entries`);
   }
   return results.join(' · ');
+}
+
+// Round-2 plan-filter demo (verification only): a handful of plans spanning
+// date ranges and made-states so the Plans-list filter bar and the made/not-made
+// cue have something to act on. Seeds the demo books first (idempotent).
+const pad2 = (n: number) => String(n).padStart(2, '0');
+const shiftMonths = (iso: string, delta: number): string => {
+  const d = fromISO(iso);
+  d.setMonth(d.getMonth() + delta);
+  return `${d.getFullYear()}-${pad2(d.getMonth() + 1)}-${pad2(d.getDate())}`;
+};
+
+export async function seedPlans(): Promise<string> {
+  await seedDemoBooks();
+  if (store.plans.length > 0) return 'plans: already seeded';
+
+  const byName = (n: string) => store.recipes.find((r) => r.name === n);
+  const today = todayISO();
+  const ym = today.slice(0, 7);
+
+  // { name, rating? } — rating present ⇒ item is 'made' with a fresh entry.
+  type Spec = { name: string; rating?: number };
+  const makePlan = async (acceptedAt: string, specs: Spec[]) => {
+    const items: PlanItem[] = [];
+    for (const s of specs) {
+      const r = byName(s.name);
+      if (!r) continue;
+      if (s.rating !== undefined) {
+        const entryId = newId();
+        await store.addMadeEntry({ id: entryId, recipeId: r.id, date: acceptedAt, rating: s.rating, photoIds: [] });
+        items.push({ recipeId: r.id, state: 'made', madeEntryId: entryId });
+      } else {
+        items.push({ recipeId: r.id, state: 'open' });
+      }
+    }
+    await store.addPlan({ id: newId(), acceptedAt, items });
+  };
+
+  // A: this month, MIXED — a made (green) beside an open (grey) item.
+  await makePlan(`${ym}-05`, [
+    { name: 'Skillet Chicken Thighs', rating: 9 },
+    { name: 'Charred Broccoli' },
+    { name: 'Tomato Soup with Grilled Cheese' },
+  ]);
+  // B: ~4 months ago (this year, outside last-3-months), all open (not yet made).
+  await makePlan(shiftMonths(today, -4), [{ name: 'Overnight Sourdough Loaf' }, { name: 'Buttermilk Biscuits' }]);
+  // C: this month, all made (no open item → excluded by "Not yet made").
+  await makePlan(`${ym}-02`, [
+    { name: 'Lemon Yogurt Cake', rating: 7 },
+    { name: 'Smashed Potatoes', rating: 8 },
+  ]);
+
+  return `plans: seeded ${store.plans.length} (mixed / older / all-made)`;
 }

@@ -232,10 +232,13 @@ export function PlanCard({
                 </span>
               )}
             </span>
+            {/* Made/not-made cue (round-2 amendment 2): an OPEN item's action is
+                GREYED (soft-ink outline on transparent) — clearly "to do", still
+                tappable; a MADE item turns SOLID GREEN. Grey → green when done. */}
             {item.state === 'open' && recipe && (
               <button
                 onClick={() => onMarkMade(item.recipeId)}
-                style={{ ...pill, border: '1.5px solid var(--accent)', color: 'var(--accent)', background: 'none' }}
+                style={{ ...pill, border: '1.5px solid var(--line)', color: 'var(--ink-soft)', background: 'none' }}
               >
                 Made ✓
               </button>

@@ -223,6 +223,16 @@ export function DevGallery() {
             >
               Seed 2 demo books
             </button>
+            <button
+              data-testid="seed-plans"
+              onClick={async () => {
+                const { seedPlans } = await import('./devSeed');
+                setSeedMsg(await seedPlans());
+              }}
+              style={openerStyle}
+            >
+              Seed demo plans
+            </button>
           </div>
           {seedMsg && (
             <p className="meta" data-testid="seed-result" style={{ marginTop: 8 }}>

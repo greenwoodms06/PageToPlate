@@ -1,7 +1,7 @@
 // Plans tab (plan Task 19; canvas 2c, screenshot 05, dark 3d): List/Calendar
 // segment toggle, display-font stat strip, plan cards reverse-chron by
 // acceptedAt, and the mark-as-made dialog mounted for whichever row asked.
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Settings } from 'lucide-react';
 import { store, useStore } from '../../data/store';
 import { todayISO } from '../../data/types';
@@ -11,6 +11,9 @@ import { MarkAsMadeDialog } from '../recipe/MarkAsMadeDialog';
 import { RecipeCardSheet } from '../recipe/RecipeCardSheet';
 import { PlanCard } from './PlanCard';
 import { CalendarView } from './CalendarView';
+import { PlanFilterBar } from './PlanFilterBar';
+import { EMPTY_PLAN_FILTERS, buildPlanLookups, isEmptyPlanFilters, planMatchesWith } from './planFilter';
+import type { PlanFilters } from './planFilter';
 
 type DialogState = { recipeId: string; planId?: string; madeEntryId?: string };
 
@@ -20,6 +23,8 @@ export function PlansTab() {
   const [dialog, setDialog] = useState<DialogState | null>(null);
   const [openRecipeId, setOpenRecipeId] = useState<string | null>(null);
   const [flashPlanId, setFlashPlanId] = useState<string | null>(null);
+  const scale = store.settings.ratingScale;
+  const [filters, setFilters] = useState<PlanFilters>({ ...EMPTY_PLAN_FILTERS, ratingScale: scale });
 
   // Calendar → plan handoff (round-1 amendment 4c): a plan line in the
   // day-detail jumps to that plan in List view. The effect runs AFTER the
@@ -45,11 +50,39 @@ export function PlansTab() {
   const madeThisYear = store.madeEntries.filter((m) => m.date.startsWith(year)).length;
   const openPlans = store.plans.filter((p) => p.items.some((i) => i.state === 'open')).length;
   const ratings = store.madeEntries.map((m) => m.rating).filter((r): r is number => r !== undefined);
-  const scale = store.settings.ratingScale;
   const avgRating =
     ratings.length > 0 ? avgDisplay(ratings.reduce((a, b) => a + b, 0) / ratings.length, scale).toFixed(1) : '—';
 
-  const plans = [...store.plans].sort((a, b) => b.acceptedAt.localeCompare(a.acceptedAt));
+  const allPlans = [...store.plans].sort((a, b) => b.acceptedAt.localeCompare(a.acceptedAt));
+
+  // Filter dropdowns are DYNAMIC — only the books/categories actually present in
+  // plans (round-2 amendment 3). Ordered by first appearance across plans.
+  const { filterBooks, filterCats } = useMemo(() => {
+    const seenBook = new Map<string, { id: string; name: string }>();
+    const seenCat: string[] = [];
+    for (const p of allPlans) {
+      for (const item of p.items) {
+        const r = store.recipes.find((rr) => rr.id === item.recipeId);
+        if (!r) continue;
+        if (!seenBook.has(r.bookId)) {
+          seenBook.set(r.bookId, { id: r.bookId, name: store.books.find((b) => b.id === r.bookId)?.name ?? 'Unknown book' });
+        }
+        if (!seenCat.includes(r.category)) seenCat.push(r.category);
+      }
+    }
+    return { filterBooks: [...seenBook.values()], filterCats: seenCat };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [store.version]);
+
+  // Live scale wins over whatever was stamped when the filter state was created.
+  const effFilters: PlanFilters = { ...filters, ratingScale: scale };
+  const today = todayISO();
+  const shownPlans = isEmptyPlanFilters(effFilters)
+    ? allPlans
+    : (() => {
+        const lk = buildPlanLookups(store.recipes, store.books, store.madeEntries);
+        return allPlans.filter((p) => planMatchesWith(p, lk, effFilters, today));
+      })();
 
   return (
     <main style={{ padding: '20px 16px 96px' }}>
@@ -100,19 +133,36 @@ export function PlansTab() {
       </div>
 
       {view === 'List' ? (
-        plans.length === 0 ? (
+        allPlans.length === 0 ? (
           <p className="meta" style={{ marginTop: 4 }}>No plans yet — build one from the Generate tab.</p>
         ) : (
-          plans.map((p) => (
-            <PlanCard
-              key={p.id}
-              plan={p}
-              flash={p.id === flashPlanId}
-              onMarkMade={(recipeId) => setDialog({ recipeId, planId: p.id })}
-              onEditEntry={(recipeId, madeEntryId) => setDialog({ recipeId, madeEntryId })}
-              onOpenRecipe={setOpenRecipeId}
+          <>
+            <PlanFilterBar
+              filters={effFilters}
+              onChange={setFilters}
+              books={filterBooks}
+              categories={filterCats}
+              scale={scale}
             />
-          ))
+            <div data-testid="plan-count" style={{ fontSize: 12, color: 'var(--ink-soft)', marginBottom: 10 }}>
+              {shownPlans.length} plan{shownPlans.length === 1 ? '' : 's'}
+              {shownPlans.length !== allPlans.length ? ` of ${allPlans.length}` : ''}
+            </div>
+            {shownPlans.length === 0 ? (
+              <p className="meta" style={{ marginTop: 4 }}>No plans match — loosen a filter.</p>
+            ) : (
+              shownPlans.map((p) => (
+                <PlanCard
+                  key={p.id}
+                  plan={p}
+                  flash={p.id === flashPlanId}
+                  onMarkMade={(recipeId) => setDialog({ recipeId, planId: p.id })}
+                  onEditEntry={(recipeId, madeEntryId) => setDialog({ recipeId, madeEntryId })}
+                  onOpenRecipe={setOpenRecipeId}
+                />
+              ))
+            )}
+          </>
         )
       ) : (
         <CalendarView onOpenPlan={goToPlan} />
