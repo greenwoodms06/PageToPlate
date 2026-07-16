@@ -3,7 +3,13 @@
 // filters = all plans. Content filters (keyword / book / category / rating)
 // operate over the recipes referenced by ALL of the plan's items — the plan is
 // "about" those recipes, so a keyword or book match against any one of them
-// keeps the whole plan. Made-status is the exception: it reads item STATE.
+// keeps the whole plan. These stay PLAN-LEVEL gates: they decide which plans
+// appear, they never hide individual rows.
+//
+// The Made pill is the exception on two counts: it reads item STATE, and in
+// per-recipe scope it ALSO hides the rows that don't match its state (amendment
+// 3b/3c). evaluatePlan therefore returns both a match flag and the set of
+// recipe rows to render.
 //
 // Mirrors Browse (src/screens/browse/BrowseTab.tsx): same include→not chip
 // semantics, the same book-tag inheritance in the keyword hay, and the same
@@ -14,15 +20,29 @@ import type { SelEntry } from '../../components/FilterControls';
 import type { RatingScale } from '../../logic/rating';
 import { ratingMatches } from '../../logic/rating';
 import { recipeMatches } from '../../logic/pills';
-import { fromISO } from '../../logic/dates';
 
-export type DatePreset = 'all' | 'thisMonth' | 'last3Months' | 'thisYear' | 'custom';
+/**
+ * A date-window cycle chip (round-2b): 'off' imposes no constraint, 'in' keeps
+ * plans accepted WITHIN the window (daysAgo ≤ N), 'out' keeps plans accepted
+ * BEYOND it (daysAgo > N). Past month uses N = 30, Past year N = 365. The two
+ * chips + any custom range AND together (a plan must satisfy each active one).
+ */
+export type DateWindowSel = 'off' | 'in' | 'out';
 export type RatingMode = 'above' | 'exact' | 'below';
-export type MadeStatus = 'made' | 'notmade';
+/** Single 3-state Made pill: off (no filter) → made → not-made → off. */
+export type MadeSel = 'off' | 'made' | 'notmade';
+/** Made-pill scope. 'recipe' (default) hides non-matching rows within a shown
+ *  plan; 'plan' keeps every row of a qualifying plan. Only matters when made ≠ off. */
+export type MadeScope = 'recipe' | 'plan';
 
 export interface PlanFilters {
-  datePreset: DatePreset;
-  /** Only meaningful when datePreset === 'custom'. 'YYYY-MM-DD'. */
+  /** "Past month" cycle chip — within/beyond 30 days of acceptedAt. */
+  pastMonth: DateWindowSel;
+  /** "Past year" cycle chip — within/beyond 365 days of acceptedAt. */
+  pastYear: DateWindowSel;
+  /** Whether the custom-range panel is active. Its bounds only gate when true. */
+  custom: boolean;
+  /** Custom range bounds, 'YYYY-MM-DD', inclusive. Only applied when custom. */
   customFrom?: string;
   customTo?: string;
   pills: Pill[];
@@ -30,57 +50,57 @@ export interface PlanFilters {
   catSel: SelEntry[]; // include/not by category NAME (mirrors Browse)
   rating: { value: number; mode: RatingMode } | null; // value in DISPLAY units
   ratingScale: RatingScale;
-  /** Made / Not-yet-made chips, each an independent AND predicate. */
-  madeStatus: MadeStatus[];
+  /** 3-state Made pill (round-2 amendment 3b), lives on the count row. */
+  made: MadeSel;
+  /** Per-recipe (default) vs per-plan row hiding for the Made pill (amendment 3c). */
+  madeScope: MadeScope;
 }
 
 export const EMPTY_PLAN_FILTERS: PlanFilters = {
-  datePreset: 'all',
+  pastMonth: 'off',
+  pastYear: 'off',
+  custom: false,
   pills: [],
   bookSel: [],
   catSel: [],
   rating: null,
   ratingScale: 10,
-  madeStatus: [],
+  made: 'off',
+  madeScope: 'recipe',
 };
 
-/** True when no dimension is active — the caller can skip filtering entirely. */
+/** True when no dimension is active — the caller can skip filtering entirely.
+ *  madeScope is deliberately ignored: it has no effect while made === 'off'.
+ *  An open-but-empty custom panel is treated as active (harmless no-op filter). */
 export function isEmptyPlanFilters(f: PlanFilters): boolean {
   return (
-    f.datePreset === 'all' &&
+    f.pastMonth === 'off' &&
+    f.pastYear === 'off' &&
+    !f.custom &&
     f.pills.length === 0 &&
     f.bookSel.length === 0 &&
     f.catSel.length === 0 &&
     f.rating === null &&
-    f.madeStatus.length === 0
+    f.made === 'off'
   );
 }
 
-const pad2 = (n: number) => String(n).padStart(2, '0');
-const toISO = (d: Date) => `${d.getFullYear()}-${pad2(d.getMonth() + 1)}-${pad2(d.getDate())}`;
-
 /**
- * Resolve a preset to an inclusive {from,to} range on plan.acceptedAt. Anchored
- * presets only set a lower bound — plans can't be accepted in the future, so no
- * upper bound is needed. Boundaries are INCLUSIVE (a plan accepted exactly on
- * `from` passes). `today` is injected for deterministic tests.
+ * Whole days between an accepted date and today, both 'YYYY-MM-DD'. Parsed at
+ * UTC midnight so the result is an exact integer, independent of DST. A plan
+ * accepted today → 0; exactly 30 calendar days earlier → 30.
  */
-export function resolveDateRange(f: PlanFilters, today: string): { from?: string; to?: string } {
-  switch (f.datePreset) {
-    case 'all':
-      return {};
-    case 'thisMonth':
-      return { from: `${today.slice(0, 7)}-01` };
-    case 'last3Months': {
-      const d = fromISO(today);
-      d.setMonth(d.getMonth() - 3);
-      return { from: toISO(d) };
-    }
-    case 'thisYear':
-      return { from: `${today.slice(0, 4)}-01-01` };
-    case 'custom':
-      return { from: f.customFrom || undefined, to: f.customTo || undefined };
-  }
+export function daysAgo(acceptedAt: string, today: string): number {
+  const a = Date.parse(`${acceptedAt}T00:00:00Z`);
+  const t = Date.parse(`${today}T00:00:00Z`);
+  return Math.round((t - a) / 86_400_000);
+}
+
+/** A single window chip's verdict. 'off' never constrains; 'in' = daysAgo ≤ n
+ *  (within/last), 'out' = daysAgo > n (beyond). */
+function windowOk(sel: DateWindowSel, days: number, n: number): boolean {
+  if (sel === 'off') return true;
+  return sel === 'in' ? days <= n : days > n;
 }
 
 export interface PlanLookups {
@@ -90,7 +110,7 @@ export interface PlanLookups {
   maxRating: Map<string, number>;
 }
 
-/** Build the per-render lookup maps once; reuse across every planMatchesWith call. */
+/** Build the per-render lookup maps once; reuse across every evaluatePlan call. */
 export function buildPlanLookups(recipes: Recipe[], books: Cookbook[], made: MadeEntry[]): PlanLookups {
   const recipeById = new Map(recipes.map((r) => [r.id, r]));
   const bookById = new Map(books.map((b) => [b.id, b]));
@@ -102,17 +122,42 @@ export function buildPlanLookups(recipes: Recipe[], books: Cookbook[], made: Mad
   return { recipeById, bookById, maxRating };
 }
 
-export function planMatchesWith(plan: Plan, lk: PlanLookups, f: PlanFilters, today: string): boolean {
-  // ── date range on acceptedAt ──
-  const { from, to } = resolveDateRange(f, today);
-  if (from && plan.acceptedAt < from) return false;
-  if (to && plan.acceptedAt > to) return false;
+export interface PlanMatch {
+  /** Passes every plan-level gate (date, keyword, book, category, rating, made). */
+  match: boolean;
+  /**
+   * recipeIds to render for a matching plan. Equals ALL of the plan's items
+   * unless the Made pill is active in per-recipe scope, in which case only the
+   * rows in the pill's state (made→'made', not-made→'open') are kept. Empty
+   * when match is false. Threaded to PlanCard to hide non-matching rows.
+   */
+  visibleRecipeIds: Set<string>;
+}
 
-  // ── made-status: each selected chip is one more AND predicate ──
-  for (const s of f.madeStatus) {
-    if (s === 'notmade' && !plan.items.some((i) => i.state === 'open')) return false;
-    if (s === 'made' && !plan.items.some((i) => i.state === 'made')) return false;
+const NO_MATCH: PlanMatch = { match: false, visibleRecipeIds: new Set() };
+
+/**
+ * Evaluate a plan against the filters: does it show, and if so which of its
+ * recipe rows are visible. Plan-level gates (date / keyword / book / category /
+ * rating / made) decide visibility; only the Made pill in per-recipe scope
+ * hides individual rows (round-2 amendment 3b/3c).
+ */
+export function evaluatePlan(plan: Plan, lk: PlanLookups, f: PlanFilters, today: string): PlanMatch {
+  // ── date constraints on acceptedAt — the two window chips AND with the
+  //    optional custom range; each active constraint must pass (round-2b). ──
+  const days = daysAgo(plan.acceptedAt, today);
+  if (!windowOk(f.pastMonth, days, 30)) return NO_MATCH;
+  if (!windowOk(f.pastYear, days, 365)) return NO_MATCH;
+  if (f.custom) {
+    if (f.customFrom && plan.acceptedAt < f.customFrom) return NO_MATCH;
+    if (f.customTo && plan.acceptedAt > f.customTo) return NO_MATCH;
   }
+
+  // ── made-status plan-level gate: ≥1 item in the pill's state ──
+  // "made" = an item with state 'made'; "not made" = state 'open' (dismissed
+  // items are neither).
+  if (f.made === 'made' && !plan.items.some((i) => i.state === 'made')) return NO_MATCH;
+  if (f.made === 'notmade' && !plan.items.some((i) => i.state === 'open')) return NO_MATCH;
 
   // Content filters run over every item's live recipe (deleted recipes drop out).
   const recipes = plan.items
@@ -125,20 +170,20 @@ export function planMatchesWith(plan: Plan, lk: PlanLookups, f: PlanFilters, tod
       const bookTags = lk.bookById.get(r.bookId)?.tags ?? [];
       return recipeMatches({ name: r.name, tags: [...r.tags, ...bookTags] }, f.pills);
     });
-    if (!ok) return false;
+    if (!ok) return NO_MATCH;
   }
 
   // ── books include / not ──
   const bookIncl = new Set(f.bookSel.filter((e) => !e.neg).map((e) => e.id));
   const bookExcl = new Set(f.bookSel.filter((e) => e.neg).map((e) => e.id));
-  if (bookIncl.size > 0 && !recipes.some((r) => bookIncl.has(r.bookId))) return false;
-  if (bookExcl.size > 0 && recipes.some((r) => bookExcl.has(r.bookId))) return false;
+  if (bookIncl.size > 0 && !recipes.some((r) => bookIncl.has(r.bookId))) return NO_MATCH;
+  if (bookExcl.size > 0 && recipes.some((r) => bookExcl.has(r.bookId))) return NO_MATCH;
 
   // ── categories include / not (keyed by category name) ──
   const catIncl = new Set(f.catSel.filter((e) => !e.neg).map((e) => e.id));
   const catExcl = new Set(f.catSel.filter((e) => e.neg).map((e) => e.id));
-  if (catIncl.size > 0 && !recipes.some((r) => catIncl.has(r.category))) return false;
-  if (catExcl.size > 0 && recipes.some((r) => catExcl.has(r.category))) return false;
+  if (catIncl.size > 0 && !recipes.some((r) => catIncl.has(r.category))) return NO_MATCH;
+  if (catExcl.size > 0 && recipes.some((r) => catExcl.has(r.category))) return NO_MATCH;
 
   // ── rating: ≥1 recipe's max rating satisfies the (bin-aware) threshold ──
   const rating = f.rating;
@@ -151,16 +196,29 @@ export function planMatchesWith(plan: Plan, lk: PlanLookups, f: PlanFilters, tod
       const max = lk.maxRating.get(r.id);
       return max !== undefined && ratingMatches(max, threshold, rating.mode, f.ratingScale);
     });
-    if (!ok) return false;
+    if (!ok) return NO_MATCH;
   }
 
-  return true;
+  // ── which rows render: per-recipe scope keeps only the pill's state ──
+  const visibleRecipeIds =
+    f.made !== 'off' && f.madeScope === 'recipe'
+      ? new Set(
+          plan.items.filter((i) => i.state === (f.made === 'made' ? 'made' : 'open')).map((i) => i.recipeId),
+        )
+      : new Set(plan.items.map((i) => i.recipeId));
+
+  return { match: true, visibleRecipeIds };
+}
+
+/** Boolean-only view of evaluatePlan — keeps terse call sites and existing tests. */
+export function planMatchesWith(plan: Plan, lk: PlanLookups, f: PlanFilters, today: string): boolean {
+  return evaluatePlan(plan, lk, f, today).match;
 }
 
 /**
  * Pure plan-filter predicate (round-2 amendment 3). Builds the lookup maps from
  * the passed arrays, so it is self-contained for unit tests. Components should
- * build lookups once via buildPlanLookups + call planMatchesWith per plan.
+ * build lookups once via buildPlanLookups + call evaluatePlan per plan.
  */
 export function planMatches(
   plan: Plan,
@@ -171,4 +229,16 @@ export function planMatches(
   today: string = todayISO(),
 ): boolean {
   return planMatchesWith(plan, buildPlanLookups(recipes, books, made), filters, today);
+}
+
+/** evaluatePlan variant that builds its own lookups — self-contained for tests. */
+export function evaluatePlanFrom(
+  plan: Plan,
+  recipes: Recipe[],
+  books: Cookbook[],
+  made: MadeEntry[],
+  filters: PlanFilters,
+  today: string = todayISO(),
+): PlanMatch {
+  return evaluatePlan(plan, buildPlanLookups(recipes, books, made), filters, today);
 }

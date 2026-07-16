@@ -1,9 +1,10 @@
-// Plan filter predicate tests (round-2 amendment 3): date-range boundaries,
-// keyword via book-tag inheritance, book/category include+not, rating over the
-// best entry, made vs not-yet-made state, and empty = all.
+// Plan filter predicate tests (round-2b): cyclable date-window boundaries (Past
+// month at 30 days, Past year at 365, the two ANDing into a day band), keyword
+// via book-tag inheritance, book/category include+not, rating over the best
+// entry, the 3-state Made pill + per-recipe/per-plan visible rows, empty = all.
 import { describe, expect, it } from 'vitest';
 import type { Cookbook, MadeEntry, Plan, Recipe } from '../../data/types';
-import { EMPTY_PLAN_FILTERS, isEmptyPlanFilters, planMatches, resolveDateRange } from './planFilter';
+import { EMPTY_PLAN_FILTERS, daysAgo, evaluatePlanFrom, isEmptyPlanFilters, planMatches } from './planFilter';
 import type { PlanFilters } from './planFilter';
 
 const TODAY = '2026-07-16';
@@ -55,21 +56,35 @@ const planThisMonth: Plan = {
     { recipeId: 'r-broccoli', state: 'open' },
   ],
 };
-// Plan accepted 4 months ago (this year, outside last-3-months), all made, bk2.
+// Plan accepted 4 months ago (this year, well outside the rolling 30 days), all made, bk2.
 const planOld: Plan = {
   id: 'p2',
   acceptedAt: '2026-03-16',
   items: [{ recipeId: 'r-cake', state: 'made', madeEntryId: 'm-r-cake-2026-06-01' }],
 };
+// 3 recipes, exactly ONE made — the per-recipe row-hiding fixture (amendment 3c).
+const planTrio: Plan = {
+  id: 'p5',
+  acceptedAt: '2026-07-05',
+  items: [
+    { recipeId: 'r-chicken', state: 'made', madeEntryId: 'm-r-chicken-2026-07-10' },
+    { recipeId: 'r-broccoli', state: 'open' },
+    { recipeId: 'r-cake', state: 'open' },
+  ],
+};
 
 const match = (plan: Plan, patch: Partial<PlanFilters>) =>
   planMatches(plan, recipes, books, madeEntries, { ...EMPTY_PLAN_FILTERS, ...patch }, TODAY);
+const evaluate = (plan: Plan, patch: Partial<PlanFilters>) =>
+  evaluatePlanFrom(plan, recipes, books, madeEntries, { ...EMPTY_PLAN_FILTERS, ...patch }, TODAY);
 
 // ── empty = all ─────────────────────────────────────────────────────────
 describe('empty filters', () => {
   it('is detected by isEmptyPlanFilters', () => {
     expect(isEmptyPlanFilters(EMPTY_PLAN_FILTERS)).toBe(true);
-    expect(isEmptyPlanFilters({ ...EMPTY_PLAN_FILTERS, madeStatus: ['made'] })).toBe(false);
+    expect(isEmptyPlanFilters({ ...EMPTY_PLAN_FILTERS, made: 'made' })).toBe(false);
+    // madeScope alone never counts as active — it only matters when made ≠ off.
+    expect(isEmptyPlanFilters({ ...EMPTY_PLAN_FILTERS, madeScope: 'plan' })).toBe(true);
   });
   it('match every plan when no dimension is active', () => {
     expect(match(planThisMonth, {})).toBe(true);
@@ -77,44 +92,69 @@ describe('empty filters', () => {
   });
 });
 
-// ── date range boundaries ───────────────────────────────────────────────
-describe('date range', () => {
-  it('resolves preset lower bounds against the injected today', () => {
-    expect(resolveDateRange({ ...EMPTY_PLAN_FILTERS, datePreset: 'thisMonth' }, TODAY)).toEqual({ from: '2026-07-01' });
-    expect(resolveDateRange({ ...EMPTY_PLAN_FILTERS, datePreset: 'last3Months' }, TODAY)).toEqual({ from: '2026-04-16' });
-    expect(resolveDateRange({ ...EMPTY_PLAN_FILTERS, datePreset: 'thisYear' }, TODAY)).toEqual({ from: '2026-01-01' });
-    expect(resolveDateRange({ ...EMPTY_PLAN_FILTERS, datePreset: 'all' }, TODAY)).toEqual({});
+// ── date windows: cyclable Past month / Past year + custom (round-2b) ───────
+describe('daysAgo helper', () => {
+  it('counts whole calendar days, DST-independent', () => {
+    expect(daysAgo('2026-07-16', TODAY)).toBe(0); // today
+    expect(daysAgo('2026-06-16', TODAY)).toBe(30); // exactly 30 days ago
+    expect(daysAgo('2026-06-15', TODAY)).toBe(31); // 31 days ago
+    expect(daysAgo('2025-07-16', TODAY)).toBe(365); // exactly a year ago
+    expect(daysAgo('2025-07-15', TODAY)).toBe(366);
+  });
+});
+
+describe('date windows', () => {
+  it('Past month "in" keeps ≤30-day plans, "out" keeps >30-day plans', () => {
+    expect(match(planThisMonth, { pastMonth: 'in' })).toBe(true); // 07-05 → 11 days
+    expect(match(planOld, { pastMonth: 'in' })).toBe(false); // 03-16 → 122 days
+    expect(match(planThisMonth, { pastMonth: 'out' })).toBe(false);
+    expect(match(planOld, { pastMonth: 'out' })).toBe(true);
   });
 
-  it('this month keeps a plan accepted this month, drops an older one', () => {
-    expect(match(planThisMonth, { datePreset: 'thisMonth' })).toBe(true);
-    expect(match(planOld, { datePreset: 'thisMonth' })).toBe(false);
+  it('Past month boundary sits at 30 days (30 in, 31 out)', () => {
+    const at30: Plan = { ...planThisMonth, acceptedAt: '2026-06-16' }; // daysAgo 30
+    const at31: Plan = { ...planThisMonth, acceptedAt: '2026-06-15' }; // daysAgo 31
+    expect(match(at30, { pastMonth: 'in' })).toBe(true);
+    expect(match(at30, { pastMonth: 'out' })).toBe(false);
+    expect(match(at31, { pastMonth: 'in' })).toBe(false);
+    expect(match(at31, { pastMonth: 'out' })).toBe(true);
   });
 
-  it('this month boundary is inclusive on the 1st', () => {
-    const onFirst: Plan = { ...planThisMonth, acceptedAt: '2026-07-01' };
-    const dayBefore: Plan = { ...planThisMonth, acceptedAt: '2026-06-30' };
-    expect(match(onFirst, { datePreset: 'thisMonth' })).toBe(true);
-    expect(match(dayBefore, { datePreset: 'thisMonth' })).toBe(false);
+  it('Past year boundary sits at 365 days', () => {
+    const at365: Plan = { ...planOld, acceptedAt: '2025-07-16' }; // daysAgo 365
+    const at366: Plan = { ...planOld, acceptedAt: '2025-07-15' }; // daysAgo 366
+    expect(match(at365, { pastYear: 'in' })).toBe(true);
+    expect(match(at366, { pastYear: 'in' })).toBe(false);
+    expect(match(at366, { pastYear: 'out' })).toBe(true);
   });
 
-  it('last 3 months boundary is inclusive on the from-date', () => {
-    const onBoundary: Plan = { ...planThisMonth, acceptedAt: '2026-04-16' };
-    const dayBefore: Plan = { ...planThisMonth, acceptedAt: '2026-04-15' };
-    expect(match(onBoundary, { datePreset: 'last3Months' })).toBe(true);
-    expect(match(dayBefore, { datePreset: 'last3Months' })).toBe(false);
+  it('not-Past-month + Past-year AND into a 30–365-day band', () => {
+    const band = { pastMonth: 'out' as const, pastYear: 'in' as const };
+    expect(match(planOld, band)).toBe(true); // 122 days → inside the band
+    expect(match(planThisMonth, band)).toBe(false); // 11 days → too recent (fails not-Past-month)
+    const ancient: Plan = { ...planOld, acceptedAt: '2024-01-01' }; // >365 days → fails Past-year
+    expect(match(ancient, band)).toBe(false);
   });
 
-  it('this year keeps the 4-months-ago plan but drops last year', () => {
-    expect(match(planOld, { datePreset: 'thisYear' })).toBe(true);
-    const lastYear: Plan = { ...planOld, acceptedAt: '2025-12-31' };
-    expect(match(lastYear, { datePreset: 'thisYear' })).toBe(false);
+  it('a contradictory combo (Past-month in + Past-year out) yields no plans', () => {
+    const impossible = { pastMonth: 'in' as const, pastYear: 'out' as const };
+    expect(match(planThisMonth, impossible)).toBe(false);
+    expect(match(planOld, impossible)).toBe(false);
   });
 
-  it('custom range applies both bounds inclusively', () => {
-    expect(match(planOld, { datePreset: 'custom', customFrom: '2026-03-01', customTo: '2026-03-31' })).toBe(true);
-    expect(match(planOld, { datePreset: 'custom', customFrom: '2026-03-17' })).toBe(false); // acceptedAt 03-16
-    expect(match(planOld, { datePreset: 'custom', customTo: '2026-03-15' })).toBe(false);
+  it('custom range applies both bounds inclusively when active', () => {
+    expect(match(planOld, { custom: true, customFrom: '2026-03-01', customTo: '2026-03-31' })).toBe(true);
+    expect(match(planOld, { custom: true, customFrom: '2026-03-17' })).toBe(false); // acceptedAt 03-16
+    expect(match(planOld, { custom: true, customTo: '2026-03-15' })).toBe(false);
+    // bounds are inert unless the custom panel is active.
+    expect(match(planOld, { custom: false, customFrom: '2026-03-17' })).toBe(true);
+  });
+
+  it('custom range ANDs with a window chip', () => {
+    // Past-year in (≤365) AND a March window → planOld (122 days, 03-16) passes;
+    // Past-month in (≤30) would contradict the 122-day plan → drops it.
+    expect(match(planOld, { pastYear: 'in', custom: true, customFrom: '2026-03-01', customTo: '2026-03-31' })).toBe(true);
+    expect(match(planOld, { pastMonth: 'in', custom: true, customFrom: '2026-03-01', customTo: '2026-03-31' })).toBe(false);
   });
 });
 
@@ -171,32 +211,61 @@ describe('rating filter', () => {
   });
 });
 
-// ── made-status ──────────────────────────────────────────────────────────
-describe('made status', () => {
-  it('not-yet-made keeps plans with ≥1 open item', () => {
-    expect(match(planThisMonth, { madeStatus: ['notmade'] })).toBe(true); // has an open item
-    expect(match(planOld, { madeStatus: ['notmade'] })).toBe(false); // all made
+// ── made pill: plan-level gate ─────────────────────────────────────────────
+describe('made pill (plan-level gate)', () => {
+  it('not-made keeps plans with ≥1 open item', () => {
+    expect(match(planThisMonth, { made: 'notmade' })).toBe(true); // has an open item
+    expect(match(planOld, { made: 'notmade' })).toBe(false); // all made
   });
   it('made keeps plans with ≥1 made item', () => {
-    expect(match(planThisMonth, { madeStatus: ['made'] })).toBe(true);
-    expect(match(planOld, { madeStatus: ['made'] })).toBe(true);
+    expect(match(planThisMonth, { made: 'made' })).toBe(true);
+    expect(match(planOld, { made: 'made' })).toBe(true);
     const allOpen: Plan = { id: 'p4', acceptedAt: '2026-07-05', items: [{ recipeId: 'r-broccoli', state: 'open' }] };
-    expect(match(allOpen, { madeStatus: ['made'] })).toBe(false);
+    expect(match(allOpen, { made: 'made' })).toBe(false);
   });
-  it('both chips AND together → only partially-cooked plans (≥1 made AND ≥1 open)', () => {
-    expect(match(planThisMonth, { madeStatus: ['made', 'notmade'] })).toBe(true); // has both
-    expect(match(planOld, { madeStatus: ['made', 'notmade'] })).toBe(false); // no open item
+  it('off applies no made gate', () => {
+    expect(match(planThisMonth, { made: 'off' })).toBe(true);
+    expect(match(planOld, { made: 'off' })).toBe(true);
+  });
+});
+
+// ── made pill: per-recipe vs per-plan visible rows (amendment 3c) ───────────
+describe('made pill scope (visible rows)', () => {
+  it('off leaves every row visible (no row hiding)', () => {
+    const r = evaluate(planTrio, { made: 'off' });
+    expect(r.match).toBe(true);
+    expect(r.visibleRecipeIds.size).toBe(3);
+  });
+  it('per-recipe "not Made" on a 3-recipe/1-made plan shows exactly the 2 open rows', () => {
+    const r = evaluate(planTrio, { made: 'notmade', madeScope: 'recipe' });
+    expect(r.match).toBe(true);
+    expect([...r.visibleRecipeIds].sort()).toEqual(['r-broccoli', 'r-cake']);
+  });
+  it('per-plan "not Made" shows ALL 3 rows', () => {
+    const r = evaluate(planTrio, { made: 'notmade', madeScope: 'plan' });
+    expect(r.match).toBe(true);
+    expect(r.visibleRecipeIds.size).toBe(3);
+  });
+  it('per-recipe "Made" shows only the one made row', () => {
+    const r = evaluate(planTrio, { made: 'made', madeScope: 'recipe' });
+    expect(r.match).toBe(true);
+    expect([...r.visibleRecipeIds]).toEqual(['r-chicken']);
+  });
+  it('a fully-made plan under per-recipe "not Made" disappears', () => {
+    const r = evaluate(planOld, { made: 'notmade', madeScope: 'recipe' });
+    expect(r.match).toBe(false);
+    expect(r.visibleRecipeIds.size).toBe(0);
   });
 });
 
 // ── cross-dimension AND ──────────────────────────────────────────────────
 describe('cross-dimension', () => {
   it('requires ALL active dimensions to pass', () => {
-    // this month + chicken → planThisMonth passes; adding a rating floor above 9 drops it.
-    expect(match(planThisMonth, { datePreset: 'thisMonth', pills: [{ text: 'chicken', neg: false }] })).toBe(true);
+    // Past month + chicken → planThisMonth passes; adding a rating floor above 9 drops it.
+    expect(match(planThisMonth, { pastMonth: 'in', pills: [{ text: 'chicken', neg: false }] })).toBe(true);
     expect(
       match(planThisMonth, {
-        datePreset: 'thisMonth',
+        pastMonth: 'in',
         pills: [{ text: 'chicken', neg: false }],
         rating: { value: 10, mode: 'above' },
       }),

@@ -43,12 +43,17 @@ const pill: CSSProperties = {
 
 export function PlanCard({
   plan,
+  visibleRecipeIds,
   onMarkMade,
   onEditEntry,
   onOpenRecipe,
   flash = false,
 }: {
   plan: Plan;
+  /** When set, render ONLY the rows whose recipeId is in this set — the Made
+   *  pill in per-recipe scope hid the rest (round-2b, amendment 3c). `undefined`
+   *  renders every row (no active per-recipe filter). */
+  visibleRecipeIds?: Set<string>;
   /** Open the mark-as-made dialog for an open item (caller passes this plan's id). */
   onMarkMade: (recipeId: string) => void;
   /** Open the dialog in edit mode for a made item's entry. */
@@ -172,7 +177,13 @@ export function PlanCard({
         </button>
       </div>
 
-      {plan.items.map((item, i) => {
+      {/* Keep each item's ORIGINAL index (setItem/swap/dismiss/spineColor all
+          key off it); only the render list is narrowed to the visible rows. The
+          dashed divider uses the visible position so the last shown row is clean. */}
+      {plan.items
+        .map((item, i) => ({ item, i }))
+        .filter(({ item }) => !visibleRecipeIds || visibleRecipeIds.has(item.recipeId))
+        .map(({ item, i }, pos, rows) => {
         const recipe = recipeById(item.recipeId);
         const entry = item.madeEntryId ? store.madeEntries.find((m) => m.id === item.madeEntryId) : undefined;
         const dismissed = item.state === 'dismissed';
@@ -184,7 +195,7 @@ export function PlanCard({
               alignItems: 'center',
               gap: 9,
               padding: '9px 0',
-              borderBottom: i === plan.items.length - 1 ? 'none' : '1px dashed var(--line)',
+              borderBottom: pos === rows.length - 1 ? 'none' : '1px dashed var(--line)',
               opacity: dismissed ? 0.55 : 1,
             }}
           >

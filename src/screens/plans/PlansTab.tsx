@@ -6,14 +6,21 @@ import { Settings } from 'lucide-react';
 import { store, useStore } from '../../data/store';
 import { todayISO } from '../../data/types';
 import { SegmentToggle } from '../../components/SegmentToggle';
+import { SelChip } from '../../components/FilterControls';
 import { avgDisplay } from '../../logic/rating';
 import { MarkAsMadeDialog } from '../recipe/MarkAsMadeDialog';
 import { RecipeCardSheet } from '../recipe/RecipeCardSheet';
 import { PlanCard } from './PlanCard';
 import { CalendarView } from './CalendarView';
 import { PlanFilterBar } from './PlanFilterBar';
-import { EMPTY_PLAN_FILTERS, buildPlanLookups, isEmptyPlanFilters, planMatchesWith } from './planFilter';
-import type { PlanFilters } from './planFilter';
+import { EMPTY_PLAN_FILTERS, buildPlanLookups, evaluatePlan, isEmptyPlanFilters } from './planFilter';
+import type { MadeSel, PlanFilters } from './planFilter';
+import type { Plan } from '../../data/types';
+
+// 3-state Made pill on the count row ↔ shared SelChip tri-state render.
+const madeToChip = (m: MadeSel): 'off' | 'inc' | 'not' => (m === 'made' ? 'inc' : m === 'notmade' ? 'not' : 'off');
+const cycleMade = (m: MadeSel): MadeSel => (m === 'off' ? 'made' : m === 'made' ? 'notmade' : 'off');
+const SCOPE_OPTIONS = ['per recipe', 'per plan'] as const;
 
 type DialogState = { recipeId: string; planId?: string; madeEntryId?: string };
 
@@ -76,12 +83,21 @@ export function PlansTab() {
 
   // Live scale wins over whatever was stamped when the filter state was created.
   const effFilters: PlanFilters = { ...filters, ratingScale: scale };
+  const setFilter = (patch: Partial<PlanFilters>) => setFilters({ ...effFilters, ...patch });
   const today = todayISO();
-  const shownPlans = isEmptyPlanFilters(effFilters)
-    ? allPlans
+  // Each shown plan carries which of its recipe rows to render: `undefined`
+  // means all rows (no active filter or per-plan scope), a Set means the Made
+  // pill in per-recipe scope hid the non-matching rows (round-2b, amendment 3c).
+  const shownPlans: { plan: Plan; visible?: Set<string> }[] = isEmptyPlanFilters(effFilters)
+    ? allPlans.map((plan) => ({ plan }))
     : (() => {
         const lk = buildPlanLookups(store.recipes, store.books, store.madeEntries);
-        return allPlans.filter((p) => planMatchesWith(p, lk, effFilters, today));
+        const out: { plan: Plan; visible: Set<string> }[] = [];
+        for (const plan of allPlans) {
+          const r = evaluatePlan(plan, lk, effFilters, today);
+          if (r.match) out.push({ plan, visible: r.visibleRecipeIds });
+        }
+        return out;
       })();
 
   return (
@@ -144,17 +160,45 @@ export function PlansTab() {
               categories={filterCats}
               scale={scale}
             />
-            <div data-testid="plan-count" style={{ fontSize: 12, color: 'var(--ink-soft)', marginBottom: 10 }}>
-              {shownPlans.length} plan{shownPlans.length === 1 ? '' : 's'}
-              {shownPlans.length !== allPlans.length ? ` of ${allPlans.length}` : ''}
+            {/* Count row: N plans on the left; the 3-state Made pill + its
+                per-recipe/per-plan scope toggle on the right (round-2b). */}
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                gap: 10,
+                flexWrap: 'wrap',
+                marginBottom: 10,
+              }}
+            >
+              <span data-testid="plan-count" style={{ fontSize: 12, color: 'var(--ink-soft)' }}>
+                {shownPlans.length} plan{shownPlans.length === 1 ? '' : 's'}
+                {shownPlans.length !== allPlans.length ? ` of ${allPlans.length}` : ''}
+              </span>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                <SelChip
+                  label="Made"
+                  state={madeToChip(effFilters.made)}
+                  onClick={() => setFilter({ made: cycleMade(effFilters.made) })}
+                />
+                {effFilters.made !== 'off' && (
+                  <SegmentToggle
+                    options={SCOPE_OPTIONS}
+                    value={effFilters.madeScope === 'plan' ? 'per plan' : 'per recipe'}
+                    onChange={(v) => setFilter({ madeScope: v === 'per plan' ? 'plan' : 'recipe' })}
+                  />
+                )}
+              </div>
             </div>
             {shownPlans.length === 0 ? (
               <p className="meta" style={{ marginTop: 4 }}>No plans match — loosen a filter.</p>
             ) : (
-              shownPlans.map((p) => (
+              shownPlans.map(({ plan: p, visible }) => (
                 <PlanCard
                   key={p.id}
                   plan={p}
+                  visibleRecipeIds={visible}
                   flash={p.id === flashPlanId}
                   onMarkMade={(recipeId) => setDialog({ recipeId, planId: p.id })}
                   onEditEntry={(recipeId, madeEntryId) => setDialog({ recipeId, madeEntryId })}

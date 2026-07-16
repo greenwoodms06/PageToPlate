@@ -1,7 +1,9 @@
-// Plans-list filter bar (round-2 amendment 3): date presets + optional custom
-// range, keyword pills, Books / Categories / Rating dropdowns (shared
-// FilterControls), and Made / Not-yet-made status chips. Mirrors BrowseTab's
-// pill-input + rating-dropdown pattern; predicate lives in planFilter.ts.
+// Plans-list filter bar (round-2b): a date row of independent cyclable window
+// chips (Past month / Past year) + an "All" reset + a Custom-range toggle,
+// keyword pills, and Books / Categories / Rating dropdowns (shared
+// FilterControls). Mirrors BrowseTab's pill-input + rating-dropdown pattern;
+// predicate lives in planFilter.ts. The Made pill + per-recipe/per-plan toggle
+// live on the count row in PlansTab.
 import { useState } from 'react';
 import type { CSSProperties } from 'react';
 import { addPill, removePill, togglePill } from '../../logic/pills';
@@ -10,20 +12,15 @@ import { Pill } from '../../components/Pill';
 import { SegmentToggle } from '../../components/SegmentToggle';
 import { spineColor } from '../../components/spine';
 import { DashPanel, DropBtn, SelChip, cycleSel } from '../../components/FilterControls';
-import type { DatePreset, MadeStatus, PlanFilters, RatingMode } from './planFilter';
+import type { DateWindowSel, PlanFilters, RatingMode } from './planFilter';
 
-const DATE_PRESETS: { key: DatePreset; label: string }[] = [
-  { key: 'all', label: 'All' },
-  { key: 'thisMonth', label: 'This month' },
-  { key: 'last3Months', label: 'Last 3 months' },
-  { key: 'thisYear', label: 'This year' },
-  { key: 'custom', label: 'Custom range…' },
-];
-
-const MADE_CHIPS: { key: MadeStatus; label: string }[] = [
-  { key: 'made', label: 'Made' },
-  { key: 'notmade', label: 'Not yet made' },
-];
+// A window chip's filter state ↔ the shared SelChip's tri-state render:
+// off → neutral label; 'in' → green "<label> ✓"; 'out' → red "not <label>".
+const winToChip = (w: DateWindowSel): 'off' | 'inc' | 'not' =>
+  w === 'in' ? 'inc' : w === 'out' ? 'not' : 'off';
+// Cycle order matches SelChip: off → in (within) → out (beyond) → off.
+const cycleWindow = (w: DateWindowSel): DateWindowSel =>
+  w === 'off' ? 'in' : w === 'in' ? 'out' : 'off';
 
 const RATING_MODE_OPTIONS: { key: RatingMode; label: string }[] = [
   { key: 'above', label: 'and above' },
@@ -80,20 +77,41 @@ export function PlanFilterBar({
       ? `Categories: ${filters.catSel.length} excluded`
       : 'Categories: all';
 
+  // "All" is the default indicator + reset: active when no date constraint is
+  // set (both window chips off AND custom panel closed). Tapping it clears them.
+  const allActive = filters.pastMonth === 'off' && filters.pastYear === 'off' && !filters.custom;
+
   return (
     <div style={{ marginBottom: 12 }}>
-      {/* Date presets */}
+      {/* Date row: All · Past month · Past year · Custom range… (round-2b) */}
       <div style={{ display: 'flex', gap: 7, flexWrap: 'wrap', marginBottom: 8 }}>
-        {DATE_PRESETS.map((p) => {
-          const on = filters.datePreset === p.key;
-          return (
-            <button key={p.key} aria-pressed={on} onClick={() => set({ datePreset: p.key })} style={toggleChip(on)}>
-              {p.label}
-            </button>
-          );
-        })}
+        <button
+          aria-pressed={allActive}
+          onClick={() => set({ pastMonth: 'off', pastYear: 'off', custom: false, customFrom: undefined, customTo: undefined })}
+          style={toggleChip(allActive)}
+        >
+          All
+        </button>
+        {/* Independent 3-state cycle chips — each ANDs as its own date constraint. */}
+        <SelChip
+          label="Past month"
+          state={winToChip(filters.pastMonth)}
+          onClick={() => set({ pastMonth: cycleWindow(filters.pastMonth) })}
+        />
+        <SelChip
+          label="Past year"
+          state={winToChip(filters.pastYear)}
+          onClick={() => set({ pastYear: cycleWindow(filters.pastYear) })}
+        />
+        <button
+          aria-pressed={filters.custom}
+          onClick={() => set({ custom: !filters.custom })}
+          style={toggleChip(filters.custom)}
+        >
+          Custom range…
+        </button>
       </div>
-      {filters.datePreset === 'custom' && (
+      {filters.custom && (
         <div style={{ display: 'flex', gap: 8, alignItems: 'center', marginBottom: 8, flexWrap: 'wrap' }}>
           <label style={{ fontSize: 12, color: 'var(--ink-soft)', display: 'flex', alignItems: 'center', gap: 5 }}>
             From
@@ -249,27 +267,6 @@ export function PlanFilterBar({
           </button>
         </DashPanel>
       )}
-
-      {/* Made-status chips */}
-      <div style={{ display: 'flex', gap: 7, flexWrap: 'wrap' }}>
-        {MADE_CHIPS.map((c) => {
-          const on = filters.madeStatus.includes(c.key);
-          return (
-            <button
-              key={c.key}
-              aria-pressed={on}
-              onClick={() =>
-                set({
-                  madeStatus: on ? filters.madeStatus.filter((s) => s !== c.key) : [...filters.madeStatus, c.key],
-                })
-              }
-              style={toggleChip(on)}
-            >
-              {c.label}
-            </button>
-          );
-        })}
-      </div>
     </div>
   );
 }
