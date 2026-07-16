@@ -1,0 +1,6520 @@
+{
+ "id": "italiancooking00daly",
+ "version": 1,
+ "book": {
+  "name": "Italian Cooking",
+  "tags": [
+   "italian"
+  ]
+ },
+ "curatedSubset": true,
+ "rawIndexCount": 686,
+ "recipes": [
+  {
+   "name": "Agnello arrosto",
+   "page": "137",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n140",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Agnello in casseruola",
+   "page": "138",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n141",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Agnolotti",
+   "page": "67",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n70",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Almond sauce",
+   "page": "201",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n204",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Anchovies and tunny fish with tagliatelle",
+   "page": "55",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n58",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Anchovies with fried bread",
+   "page": "26",
+   "category": "Sides",
+   "tags": [
+    "appetizer"
+   ],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n29",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Anchovies with spaghetti",
+   "page": "61",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n64",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Anchovy sauce",
+   "page": "219",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n222",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Anchovy toast",
+   "page": "24",
+   "category": "Sides",
+   "tags": [
+    "appetizer"
+   ],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n27",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Anguilla alia Ferrarese",
+   "page": "106",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n109",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Anolini",
+   "page": "67",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n70",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Antipasto, fennel",
+   "page": "22",
+   "category": "Sides",
+   "tags": [
+    "appetizer"
+   ],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n25",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Antipasto Fortunata Ruocco's",
+   "page": "23",
+   "category": "Sides",
+   "tags": [
+    "appetizer"
+   ],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n26",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Antipasto, pepper (cold)",
+   "page": "23",
+   "category": "Sides",
+   "tags": [
+    "appetizer"
+   ],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n26",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Antipasto, pepper (hot)",
+   "page": "25",
+   "category": "Sides",
+   "tags": [
+    "appetizer"
+   ],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n28",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Antipasto, rice",
+   "page": "21",
+   "category": "Sides",
+   "tags": [
+    "appetizer"
+   ],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n24",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Apple charlotte",
+   "page": "190",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n193",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Apple fritters",
+   "page": "186",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n189",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Apple sauce",
+   "page": "210",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n213",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Apricot fritters",
+   "page": "186",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n189",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Aragosta lessata",
+   "page": "104",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n107",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Arangirii",
+   "page": "86",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n89",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Aringa alia gratella",
+   "page": "107",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n110",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Artichoke omelette",
+   "page": "97",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n100",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Artichokes, fricassee of",
+   "page": "163",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n166",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Artichokes, Jewish",
+   "page": "164",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n167",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Artichokes stewed with peas",
+   "page": "164",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n167",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Artichokes with liver",
+   "page": "144",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n147",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Asparagi alia Milanese",
+   "page": "165",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n168",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Asparagi all' olio",
+   "page": "165",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n168",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Asparagus Milanese style",
+   "page": "165",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n168",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Asparagus with oil",
+   "page": "165",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n168",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Aubergines Genoese style",
+   "page": "169",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n172",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Aubergines stuffed",
+   "page": "170",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n173",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Baccala, cream of",
+   "page": "110",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n113",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Bacon and sausage ravioli filling",
+   "page": "71",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n74",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Batter, fritter",
+   "page": "185",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n188",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Battiito",
+   "page": "202",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n205",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Batuffoli al sugo",
+   "page": "91",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n94",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Bean soup, haricot",
+   "page": "43",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n46",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Beans, broad, with bacon",
+   "page": "168",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n171",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Beans, French, buttered",
+   "page": "165",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n168",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Beans, French, fricassee",
+   "page": "166",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n169",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Beans, French, Roman style",
+   "page": "166",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n169",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Beans, haricot or butter, with fish",
+   "page": "22",
+   "category": "Sides",
+   "tags": [
+    "appetizer"
+   ],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n25",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Beccacce al salmi",
+   "page": "158",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n161",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Beccacce alia Romagnola",
+   "page": "159",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n162",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Bechamel sauce",
+   "page": "199",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n202",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Beef, domestic style",
+   "page": "131",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n134",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Beef, stewed",
+   "page": "130",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n133",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Beef, Trieste style",
+   "page": "130",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n133",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Bodino di gabinetto",
+   "page": "191",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n194",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Bodino di latte alia mandorle",
+   "page": "191",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n194",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Braciuole ripiene",
+   "page": "150",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n153",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Veronese",
+   "page": "135",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n138",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Brains risotto",
+   "page": "79",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n82",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Brains rissoles",
+   "page": "148",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n151",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Brains Tuscan style",
+   "page": "149",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n152",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Bread, fried, with anchovies",
+   "page": "26",
+   "category": "Sides",
+   "tags": [
+    "appetizer"
+   ],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n29",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Bread, fried, with cheese cream",
+   "page": "26",
+   "category": "Sides",
+   "tags": [
+    "appetizer"
+   ],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n29",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Broad beans with bacon",
+   "page": "168",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n171",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Broccoli strascicati",
+   "page": "176",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n179",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Broccoli with macaroni",
+   "page": "62",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n65",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Broccoli with salt pork",
+   "page": "176",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n179",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Brown sauce",
+   "page": "200",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n203",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "[ 223 ] Brussels sprouts served with chestnuts",
+   "page": "175",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n178",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Butter beans with fish",
+   "page": "22",
+   "category": "Sides",
+   "tags": [
+    "appetizer"
+   ],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n25",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cabinet pudding",
+   "page": "191",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n194",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cacciucco alia Toscana",
+   "page": "103",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n106",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Calamaretti",
+   "page": "105",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n108",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cannelloni",
+   "page": "49",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n52",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cannelloni filled with cheese and sausage",
+   "page": "66",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n69",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Caper sauce",
+   "page": "216",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n219",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cappelletti",
+   "page": "67",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n70",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cappelletti in brodo",
+   "page": "71",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n74",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cappon magro",
+   "page": "125",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n128",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Capretto in casseruola",
+   "page": "138",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n141",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Carciofi alia giudaica",
+   "page": "164",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n167",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Carciofi in fricassea",
+   "page": "163",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n166",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Carciofi in umido con piselli",
+   "page": "164",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n167",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Carote al burro",
+   "page": "174",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n177",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Carp",
+   "page": "123",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n126",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Carrots, buttered",
+   "page": "174",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n177",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Carrots, candied",
+   "page": "175",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n178",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Carrots, cooked in butter",
+   "page": "175",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n178",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cauliflower Sicilian style",
+   "page": "176",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n179",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cauliflower with meat sauce",
+   "page": "176",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n179",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cavolfiore alia lionese",
+   "page": "176",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n179",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cavolfiore alia Siciliana",
+   "page": "176",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n179",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Ceci",
+   "page": "92",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n95",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Ceci alia marinara",
+   "page": "93",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n96",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Celery, stuffed",
+   "page": "22",
+   "category": "Sides",
+   "tags": [
+    "appetizer"
+   ],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n25",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Charlotte di mele, pere a pesche",
+   "page": "190",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n193",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cheese, cream",
+   "page": "27",
+   "category": "Sides",
+   "tags": [
+    "appetizer"
+   ],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n30",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cheese, fried",
+   "page": "100",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n103",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cheese, omelette",
+   "page": "96",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n99",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cheese, ravioli filling",
+   "page": "69",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n72",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cheese, rice balls",
+   "page": "85",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n88",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cheese, sauce",
+   "page": "199",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n202",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cheese and onion soup",
+   "page": "42",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n45",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chestnut fritters",
+   "page": "188",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n191",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chestnut puree",
+   "page": "177",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n180",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chestnut soup",
+   "page": "39",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n42",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chick peas",
+   "page": "92",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n95",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chick peas, sailors' style",
+   "page": "93",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n96",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chicken, 152 //. Chicken, breasts, Lombard style",
+   "page": "155",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n158",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chicken, broth",
+   "page": "31",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n34",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chicken, garnished",
+   "page": "153",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n156",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chicken in white wine",
+   "page": "155",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n158",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chicken, liver tartlets",
+   "page": "24",
+   "category": "Sides",
+   "tags": [
+    "appetizer"
+   ],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n27",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chicken, livers and rice souffl6",
+   "page": "89",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n92",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chicken, puree",
+   "page": "156",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n159",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chicken, ravioli filling",
+   "page": "70",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n73",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chicken, risotto",
+   "page": "80",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n83",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chicken, Roman style",
+   "page": "156",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n159",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chicken, sauce",
+   "page": "213",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n216",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chicken, stew",
+   "page": "152",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n155",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chicken, tartlets",
+   "page": "24",
+   "category": "Sides",
+   "tags": [
+    "appetizer"
+   ],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n27",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chicken with cream",
+   "page": "154",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n157",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chicken with olives",
+   "page": "152",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n155",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chicken with peas",
+   "page": "153",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n156",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chicken with mushrooms",
+   "page": "154",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n157",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cipolle ripiene",
+   "page": "171",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n174",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Clam sauce",
+   "page": "206",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n209",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Clams fishermen's style",
+   "page": "122",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n125",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Clams with eggs",
+   "page": "121",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n124",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cod au gratin",
+   "page": "103",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n106",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cod, Florentine style",
+   "page": "108",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n111",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cod, salt, creamed",
+   "page": "110",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n113",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cod, salt, in sauce",
+   "page": "109",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n112",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cod, salt, Ligurian style",
+   "page": "109",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n112",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cod, salt, rissoles of",
+   "page": "111",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n114",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cod with tomatoes",
+   "page": "108",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n111",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Coniglio alia borghese",
+   "page": "160",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n163",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Coniglio in salsa piccante",
+   "page": "160",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n163",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cooking times for pasta",
+   "page": "51",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n54",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Coscia di manzo alia casalinga",
+   "page": "131",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n134",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Costolette di vitello al sugo",
+   "page": "134",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n137",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Costolette Milanese",
+   "page": "133",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n136",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Crabs, soft shell",
+   "page": "105",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n108",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Crawfish",
+   "page": "105",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n108",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cream cheese ravioli filling",
+   "page": "69",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n72",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cream of mushroom soup",
+   "page": "44",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n47",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cream of tomato soup",
+   "page": "44",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n47",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Crema di bagnomaria",
+   "page": "192",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n195",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Crostini alVananasso",
+   "page": "193",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n196",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Crostini alia Napolitana",
+   "page": "27",
+   "category": "Sides",
+   "tags": [
+    "appetizer"
+   ],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n30",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cucumber salad",
+   "page": "182",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n185",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Custard, rich steamed",
+   "page": "192",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n195",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Eels Fcrrara style",
+   "page": "106",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n109",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Eels, roast",
+   "page": "106",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n109",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Eels, stewed",
+   "page": "107",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n110",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Egg and parsley sauce",
+   "page": "199",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n202",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Eggs, hard boiled, and salad",
+   "page": "182",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n185",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Eggs, scrambled, with cheese",
+   "page": "99",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n102",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Eggs with rice",
+   "page": "99",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n102",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Elbow macaroni pie",
+   "page": "57",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n60",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fagiano al Madera",
+   "page": "159",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n162",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fagioli alia provinciale",
+   "page": "167",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n170",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fagiolini al burro",
+   "page": "165",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n168",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fagiolini alia Romana",
+   "page": "166",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n169",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fagiolini in fricassea",
+   "page": "166",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n169",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fave al gunciale",
+   "page": "168",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n171",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fegato alia Milanese",
+   "page": "143",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n146",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fegato alia Spagnola",
+   "page": "141",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n144",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fegato alia Toscana",
+   "page": "143",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n146",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fegato alia Veneziana",
+   "page": "144",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n147",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fegato air Italiana",
+   "page": "142",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n145",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fegato, flan di",
+   "page": "145",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n148",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fegato, polpette di",
+   "page": "145",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n148",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fennel, antipasto",
+   "page": "22",
+   "category": "Sides",
+   "tags": [
+    "appetizer"
+   ],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n25",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fennel, stuffed",
+   "page": "22",
+   "category": "Sides",
+   "tags": [
+    "appetizer"
+   ],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n25",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fig fritters",
+   "page": "187",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n190",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fish au gratin",
+   "page": "102",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n105",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fish cakes",
+   "page": "103",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n106",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fish, Genoese style",
+   "page": "115",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n118",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fish in paper cases",
+   "page": "118",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n121",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fish, mixed fried",
+   "page": "121",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n124",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fish salad",
+   "page": "125",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n128",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fish, Sicilian fried",
+   "page": "102",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n105",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fish, to boil",
+   "page": "119",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n122",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fish, to roast",
+   "page": "119",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n122",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fish with haricot or butter beans",
+   "page": "22",
+   "category": "Sides",
+   "tags": [
+    "appetizer"
+   ],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n25",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Flavourings, 12 - 19 Fortunata Ruocco's cold pepper antipasto",
+   "page": "23",
+   "category": "Sides",
+   "tags": [
+    "appetizer"
+   ],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n26",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "French beans, buttered",
+   "page": "165",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n168",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "French beans, fricassee",
+   "page": "166",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n169",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "French beans, Roman style",
+   "page": "166",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n169",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fricassee of artichokes",
+   "page": "163",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n166",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fricassee, French beans",
+   "page": "166",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n169",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fricassee, rabbit",
+   "page": "161",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n164",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fricassee, veal",
+   "page": "136",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n139",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Frittata ai carciofi",
+   "page": "97",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n100",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Frittata ai funghi",
+   "page": "96",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n99",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Frittata ai legumi",
+   "page": "96",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n99",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Frittata ai prosciutto",
+   "page": "97",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n100",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Frittata ai tartuffi",
+   "page": "95",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n98",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Frittata al formaggio",
+   "page": "96",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n99",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Frittata alia cipolle",
+   "page": "97",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n100",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Frittata alia salsa di pomidoro",
+   "page": "96",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n99",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Frittata col riso",
+   "page": "98",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n101",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Frittata di patate",
+   "page": "98",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n101",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Frittata farcita",
+   "page": "97",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n100",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Frittata semplice",
+   "page": "95",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n98",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Frittelle alia Fiorentina",
+   "page": "188",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n191",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fritters, apple",
+   "page": "186",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n189",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fritters, apricot",
+   "page": "186",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n189",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fritters, batter for",
+   "page": "185",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n188",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fritters, chestnut",
+   "page": "188",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n191",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fritters, fig",
+   "page": "187",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n190",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fritters, Florentine",
+   "page": "188",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n191",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fritters, peach",
+   "page": "187",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n190",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fritters, pear",
+   "page": "186",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n189",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fritters, plum",
+   "page": "187",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n190",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fritters, semolina",
+   "page": "187",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n190",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fritters, sweet",
+   "page": "189",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n192",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fritto misto mare",
+   "page": "121",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n124",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fruit flan",
+   "page": "194",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n197",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Gardener's wife's salad",
+   "page": "183",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n186",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Garlic, soup",
+   "page": "42",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n45",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Gavatoni",
+   "page": "51",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n54",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Genoese fish soup",
+   "page": "46",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n49",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Genoese rice",
+   "page": "80",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n83",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Gnocchi, alia Romana",
+   "page": "73",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n76",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Gnocchi, potato",
+   "page": "72",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n75",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Gnocchi, semolina",
+   "page": "72",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n75",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Gnocchi with tomato sauce",
+   "page": "73",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n76",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Green sauce",
+   "page": "207",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n210",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Grey mullet, grilled",
+   "page": "124",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n127",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Ham omelette",
+   "page": "97",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n100",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Ham, sauce with cream",
+   "page": "213",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n216",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Ham with spaghetti",
+   "page": "59",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n62",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Hare in sweet sour sauce",
+   "page": "157",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n160",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Hare, stew",
+   "page": "157",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n160",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Haricot bean soup",
+   "page": "43",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n46",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Haricot beans",
+   "page": "167",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n170",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Haricot beans with bacon",
+   "page": "167",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n170",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Haricot beans with fish",
+   "page": "22",
+   "category": "Sides",
+   "tags": [
+    "appetizer"
+   ],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n25",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Herbs, omelette with",
+   "page": "95",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n98",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Herrings, grilled",
+   "page": "107",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n110",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Hollandaise sauce",
+   "page": "205",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n208",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Insalata alia giardiniera",
+   "page": "183",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n186",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Kid, pot roast of",
+   "page": "138",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n141",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Kidneys, Bolognese style",
+   "page": "148",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n151",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Kidneys, stewed",
+   "page": "147",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n150",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Lamb, pot roast of",
+   "page": "138",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n141",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Lamb, roast",
+   "page": "137",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n140",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Lasagne",
+   "page": "49",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n52",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Lasagne al forno",
+   "page": "64",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n67",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Lasagne imbottite",
+   "page": "65",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n68",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Lasagne verdi",
+   "page": "63",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n66",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Lentil soup",
+   "page": "34",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n37",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Lettuce salad",
+   "page": "182",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n185",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Lettuce soup",
+   "page": "41",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n44",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Lingua alia salsa",
+   "page": "149",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n152",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Lingua con olive",
+   "page": "150",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n153",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Liver flan",
+   "page": "145",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n148",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Liver flan, Italian style",
+   "page": "142",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n145",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Liver flan, Milanese style",
+   "page": "143",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n146",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Liver flan, rissoles",
+   "page": "145",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n148",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Liver flan, sauce",
+   "page": "210",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n213",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Liver flan, Spanish style",
+   "page": "141",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n144",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Liver flan, Tuscan style",
+   "page": "143",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n146",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Liver flan, Venetian style",
+   "page": "144",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n147",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Liver flan with artichokes",
+   "page": "144",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n147",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Lobster, boiled",
+   "page": "104",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n107",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Lobster, cold",
+   "page": "104",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n107",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Lobster, fried",
+   "page": "105",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n108",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Macaroni",
+   "page": "49",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n52",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Macaroni, baked with cheese",
+   "page": "58",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n61",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Macaroni, baked with sour cream",
+   "page": "59",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n62",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Macaroni, pie, elbow",
+   "page": "57",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n60",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Macaroni with broccoli",
+   "page": "62",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n65",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Manzo alia massaia",
+   "page": "131",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n134",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Manzo in umido",
+   "page": "130",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n133",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Marinara sauce",
+   "page": "218",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n221",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Marrow, baby, fried",
+   "page": "177",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n180",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Marrow, baby, stewed",
+   "page": "178",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n181",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Marrow, soup alia Napolitana",
+   "page": "41",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n44",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Marrow, stuffed",
+   "page": "178",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n181",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Marrow with tomato",
+   "page": "179",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n182",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Marrows",
+   "page": "177",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n180",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mayonnaise",
+   "page": "211",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n214",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Meat balls",
+   "page": "35",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n38",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Meat balls with spaghetti",
+   "page": "56",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n59",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Meat ravioli filling",
+   "page": "70",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n73",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Meat sauce",
+   "page": "215",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n218",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Meat sauce with mushrooms",
+   "page": "215",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n218",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Melanzane alia Genovese",
+   "page": "169",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n172",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Melanzane alia Napolitana",
+   "page": "170",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n173",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Melanzane ripiene",
+   "page": "170",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n173",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Meringues",
+   "page": "194",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n197",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Merluzzo alia Fiorentina",
+   "page": "108",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n111",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Merluzzo in salsa",
+   "page": "108",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n111",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Milk pudding with almonds",
+   "page": "191",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n194",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mines tre Crecy",
+   "page": "37",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n40",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Minestrone",
+   "page": "32",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n35",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mont Blanc",
+   "page": "189",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n192",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mullet, grey, grilled",
+   "page": "124",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n127",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mullet, red",
+   "page": "124",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n127",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mullet, red, fried",
+   "page": "114",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n117",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mullet, red, Leghorn style",
+   "page": "114",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n117",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mullet, red, Ligurian style",
+   "page": "114",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n117",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mullet, red, Trieste style",
+   "page": "115",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n118",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mushroom omelette",
+   "page": "96",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n99",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mushroom risotto",
+   "page": "77",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n80",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mushroom sauce (brown)",
+   "page": "200",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n203",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mushroom sauce (white)",
+   "page": "200",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n203",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mushroom and tomato sauce",
+   "page": "214",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n217",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mushroom soup, cream of",
+   "page": "44",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n47",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mushrooms, stuffed",
+   "page": "24",
+   "category": "Sides",
+   "tags": [
+    "appetizer"
+   ],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n27",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mussels fishermen's style",
+   "page": "122",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n125",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mussels with eggs",
+   "page": "121",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n124",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Nasello con piselli",
+   "page": "118",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n121",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Noodles",
+   "page": "49",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n52",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Noodles, stuffed",
+   "page": "65",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n68",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Olives, fried green",
+   "page": "28",
+   "category": "Sides",
+   "tags": [
+    "appetizer"
+   ],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n31",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Omelette, artichoke",
+   "page": "97",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n100",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Omelette, cheese",
+   "page": "96",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n99",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Omelette, ham",
+   "page": "97",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n100",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Omelette, herb",
+   "page": "95",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n98",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Omelette, mushroom",
+   "page": "96",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n99",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Omelette, onion",
+   "page": "97",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n100",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Omelette, plain",
+   "page": "95",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n98",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Omelette, potato",
+   "page": "98",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n101",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Omelette, rice",
+   "page": "98",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n101",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Omelette, stuffed",
+   "page": "97",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n100",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Omelette, truffle",
+   "page": "95",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n98",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Omelette, vegetable",
+   "page": "96",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n99",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Omelette with tomato sauce",
+   "page": "96",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n99",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Onion and cheese soup",
+   "page": "42",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n45",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Onion omelette",
+   "page": "97",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n100",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Onion salad",
+   "page": "182",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n185",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Onions, stuffed",
+   "page": "171",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n174",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Onions with tomatoes",
+   "page": "173",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n176",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Ossohuco",
+   "page": "136",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n139",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Ossobuco alia Milanese",
+   "page": "137",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n140",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Ostriche alia Veneziana",
+   "page": "120",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n123",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Oysters Venetian style",
+   "page": "120",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n123",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pancakes, potato",
+   "page": "171",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n174",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pandorato alia crema di formaggio",
+   "page": "26",
+   "category": "Sides",
+   "tags": [
+    "appetizer"
+   ],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n29",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pandorato alia Romana",
+   "page": "25",
+   "category": "Sides",
+   "tags": [
+    "appetizer"
+   ],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n28",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Parsley, butter",
+   "page": "201",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n204",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Parsley and egg sauce",
+   "page": "199",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n202",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Partridges Milanese style",
+   "page": "158",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n161",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pasta, home made",
+   "page": "52",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n55",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pasta, quantities of",
+   "page": "52",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n55",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pasticcio di frutta",
+   "page": "194",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n197",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pastina",
+   "page": "49",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n52",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Palate al burro",
+   "page": "173",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n176",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Patate arrosto",
+   "page": "172",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n175",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Patate con salsa di pomidoro",
+   "page": "173",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n176",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Patate in stufato",
+   "page": "172",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n175",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pea sauce",
+   "page": "213",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n216",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Peas, green, Parisian style",
+   "page": "169",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n172",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Peas, green, with ham",
+   "page": "168",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n171",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Peas, stewed with artichokes",
+   "page": "164",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n167",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Peach charlotte",
+   "page": "190",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n193",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Peach fritters",
+   "page": "187",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n190",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pear charlotte",
+   "page": "190",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n193",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pear fritters",
+   "page": "186",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n189",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pepper, antipasto (cold)",
+   "page": "23",
+   "category": "Sides",
+   "tags": [
+    "appetizer"
+   ],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n26",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pepper, antipasto (hot)",
+   "page": "25",
+   "category": "Sides",
+   "tags": [
+    "appetizer"
+   ],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n28",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Perniciotte alia Milanese",
+   "page": "158",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n161",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pesce gratinato",
+   "page": "102",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n105",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pesci accartocciati",
+   "page": "118",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n121",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pesto",
+   "page": "208",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n211",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pheasant in Madeira",
+   "page": "159",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n162",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pigeons with peas",
+   "page": "157",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n160",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pigs in blankets",
+   "page": "120",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n123",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pike",
+   "page": "123",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n126",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pike au gratin",
+   "page": "123",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n126",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pineapple toast",
+   "page": "193",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n196",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Piquant sauce",
+   "page": "204",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n207",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Piselli alia Parigina",
+   "page": "169",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n172",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Piselli al prosciutto",
+   "page": "168",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n171",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pizza",
+   "page": "196",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n199",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Plum fritters",
+   "page": "187",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n190",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Polio ai funghi",
+   "page": "154",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n157",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Polio ai piselli",
+   "page": "153",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n156",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Polio alia crema",
+   "page": "154",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n157",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Polio alia Romano",
+   "page": "156",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n159",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Polio alle olive",
+   "page": "152",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n155",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Polio al vino bianco",
+   "page": "155",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n158",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Polio con verdure",
+   "page": "153",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n156",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Polio in umido",
+   "page": "152",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n155",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Polio, petti di, alia Lombarda",
+   "page": "155",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n158",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Polenta with cheese",
+   "page": "91",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n94",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Polenta with tomato sauce",
+   "page": "91",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n94",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Polpetti",
+   "page": "35",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n38",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pomidori alia casalinga",
+   "page": "174",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n177",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pork chops alia Napolitana",
+   "page": "139",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n142",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pork chops with prunes",
+   "page": "140",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n143",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pork in milk alia Bolognese",
+   "page": "138",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n141",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pork, loin of, Perugian style",
+   "page": "139",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n142",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pork, loin of, Tuscan style",
+   "page": "139",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n142",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Potato fritters",
+   "page": "172",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n175",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Potato gnocchi",
+   "page": "72",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n75",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Potato omelette",
+   "page": "98",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n101",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Potato pancakes",
+   "page": "171",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n174",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Potatoes, baked",
+   "page": "172",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n175",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Potatoes, buttered",
+   "page": "173",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n176",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Potatoes, sauteed",
+   "page": "172",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n175",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pozzuoli fishermen's soup",
+   "page": "47",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n50",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pudding, cabinet",
+   "page": "191",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n194",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pudding, milk, with almonds",
+   "page": "191",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n194",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Puree of chestnuts",
+   "page": "177",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n180",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Puree of chicken",
+   "page": "156",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n159",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Rabbit, citizen style",
+   "page": "160",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n163",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Rabbit, fricassee",
+   "page": "161",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n164",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Rabbit, in piquant sauce",
+   "page": "160",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n163",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Ragii Bolognese",
+   "page": "209",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n212",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Rane alia Gastalda",
+   "page": "128",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n131",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Ravioli, 67 //. [ 228 ] Ravioli, bacon and sausage filling for",
+   "page": "71",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n74",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Ravioli, cheese filling for",
+   "page": "69",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n72",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Ravioli, chicken filling for",
+   "page": "70",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n73",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Ravioli, cream cheese filling for",
+   "page": "69",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n72",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Ravioli, meat filling for",
+   "page": "70",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n73",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Ramoli spinach filling for",
+   "page": "68",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n71",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Red mullet",
+   "page": "124",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n127",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Red mullet, fried",
+   "page": "114",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n117",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Red mullet, Leghorn style",
+   "page": "113",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n116",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Red mullet, Ligurian style",
+   "page": "114",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n117",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Red mullet, Trieste style",
+   "page": "115",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n118",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Rice, antipasti",
+   "page": "21",
+   "category": "Sides",
+   "tags": [
+    "appetizer"
+   ],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n24",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Rice, boiled, with butter and cheese",
+   "page": "84",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n87",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Rice, boiled, with butter and celery",
+   "page": "85",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n88",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Rice, fried, with bacon and tgg",
+   "page": "88",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n91",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Rice, omelette",
+   "page": "98",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n101",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Rice and peas Venetian style",
+   "page": "81",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n84",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Rice, souffle with chicken livers",
+   "page": "89",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n92",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Rice, souffle with shrimps",
+   "page": "89",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n92",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Rice, to boil",
+   "page": "83",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n86",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Rice with cabbage",
+   "page": "83",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n86",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Rice with celery",
+   "page": "83",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n86",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Rice with txu-nips",
+   "page": "82",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n85",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Rigatoni",
+   "page": "51",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n54",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Risi e bisi",
+   "page": "81",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n84",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Riso e cavoli",
+   "page": "83",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n86",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Riso e rape",
+   "page": "82",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n85",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Riso e sedano",
+   "page": "83",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n86",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Riso in cagnoni",
+   "page": "84",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n87",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Risotto, brains",
+   "page": "79",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n82",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Risotto, chicken",
+   "page": "80",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n83",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Risotto, favourite",
+   "page": "78",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n81",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Risotto, Genoese",
+   "page": "80",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n83",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Risotto in cagnoni di magro",
+   "page": "85",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n88",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Risotto, mushroom",
+   "page": "77",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n80",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Risotto, plain",
+   "page": "76",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n79",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Risotto, rich",
+   "page": "77",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n80",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Risotto, shellfish",
+   "page": "79",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n82",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Risotto, Venetian",
+   "page": "81",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n84",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Rissoles, brains",
+   "page": "149",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n152",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Rissoles, liver",
+   "page": "145",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n148",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Rissoles, salt cod",
+   "page": "111",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n114",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Rognoni alia Bolognese",
+   "page": "148",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n151",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Rognoni in umido",
+   "page": "147",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n150",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Rump steak housewife fashion",
+   "page": "131",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n134",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sailors' soup",
+   "page": "46",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n49",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Salad dressing",
+   "page": "212",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n215",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Salads, cucumber",
+   "page": "182",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n185",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Salads, gardener's wife's",
+   "page": "183",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n186",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Salads, hard boiled tgg",
+   "page": "182",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n185",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Salads, lettuce",
+   "page": "182",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n185",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Salads, mixed",
+   "page": "183",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n186",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Salads, onion",
+   "page": "182",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n185",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Salads, plain",
+   "page": "182",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n185",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Salads with sour cream",
+   "page": "183",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n186",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Salsa alia pizzaiola",
+   "page": "207",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n210",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Salsa olandese",
+   "page": "205",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n208",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Salsa Remoulade",
+   "page": "212",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n215",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Salsa verde",
+   "page": "207",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n210",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Salsiccie alia Triestina",
+   "page": "141",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n144",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Salt cod, creamed",
+   "page": "110",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n113",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Salt cod, in sauce",
+   "page": "109",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n112",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Salt cod, Ligurian style",
+   "page": "109",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n112",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Salt cod, rissoles of",
+   "page": "111",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n114",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sartii",
+   "page": "87",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n90",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sauce, almond",
+   "page": "201",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n204",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sauce, anchovy",
+   "page": "219",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n222",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sauce, apple",
+   "page": "210",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n213",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sauce, Bechamel",
+   "page": "199",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n202",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sauce, bread",
+   "page": "210",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n213",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sauce, brown",
+   "page": "200",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n203",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sauce, caper",
+   "page": "216",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n219",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sauce, cheese",
+   "page": "199",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n202",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sauce, chicken",
+   "page": "213",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n216",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sauce, clam",
+   "page": "206",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n209",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sauce, egg and parsley",
+   "page": "199",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n202",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sauce, green",
+   "page": "207",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n210",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sauce, ham",
+   "page": "213",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n216",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sauce, Hollandaise",
+   "page": "205",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n208",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sauce, liver",
+   "page": "210",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n213",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sauce, marinara",
+   "page": "218",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n221",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sauce, meat",
+   "page": "215",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n218",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sauce, meat, with mushrooms",
+   "page": "215",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n218",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sauce, mushroom",
+   "page": "200",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n203",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sauce, mushroom and tomato",
+   "page": "214",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n217",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sauce, parsley and tgg",
+   "page": "199",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n202",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sauce, pea",
+   "page": "213",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n216",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sauce, piquant",
+   "page": "204",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n207",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sauce, shrimp",
+   "page": "200",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n203",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sauce, sweet sour",
+   "page": "216",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n219",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sauce, sweet sour, with nuts",
+   "page": "217",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n220",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sauce, tomato",
+   "page": "202",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n205",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sauce, tomato, alia Napolitana",
+   "page": "203",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n206",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sauce, tomato, unsweetened",
+   "page": "203",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n206",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sauce, tomato and mushroom",
+   "page": "214",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n217",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sauce, tunny fish",
+   "page": "206",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n209",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sauce, Venetian",
+   "page": "219",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n222",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sauce, white wine",
+   "page": "201",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n204",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sausages Trieste style",
+   "page": "141",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n144",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sausages with tomato sauce",
+   "page": "141",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n144",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Scaloppe alia Modenese",
+   "page": "134",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n137",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Scaloppe di vitello al sugo",
+   "page": "134",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n137",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Scaloppe Milanese",
+   "page": "133",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n136",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Scaloppine al Marsala",
+   "page": "133",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n136",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Scampi alia Lombarda",
+   "page": "117",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n120",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Scampi alia Modenese",
+   "page": "117",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n120",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Scampi fried",
+   "page": "116",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n119",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Semolina fritters",
+   "page": "187",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n190",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Semolina gnocchi",
+   "page": "187",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n190",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sfogliate dolce di ricotta",
+   "page": "195",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n198",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Shellfish risotto",
+   "page": "79",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n82",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Shrimp sauce",
+   "page": "200",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n203",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Shrimps and rice souffle",
+   "page": "89",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n92",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sicilian fried fish",
+   "page": "102",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n105",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Snails",
+   "page": "127",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n130",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Soffritto",
+   "page": "202",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n205",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sole fried in oil",
+   "page": "122",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n125",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sole grilled",
+   "page": "103",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n106",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sole with white wine",
+   "page": "122",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n125",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Souffle of rice and chicken livers",
+   "page": "89",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n92",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Souffle of rice and shrimps",
+   "page": "89",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n92",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Souffle of tagliatelle",
+   "page": "54",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n57",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Soup stock, clear",
+   "page": "30",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n33",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Soup, bean, haricot",
+   "page": "43",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n46",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Soup, cheese and onion",
+   "page": "42",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n45",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Soup, chestnut",
+   "page": "39",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n42",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Soup, cream of mushroom",
+   "page": "44",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n47",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Soup, cream of tomato",
+   "page": "44",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n47",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Soup, garlic",
+   "page": "42",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n45",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Soup, Genoese",
+   "page": "46",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n49",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Soup, haricot bean",
+   "page": "43",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n46",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Soup, lentil",
+   "page": "34",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n37",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Soup, lettuce",
+   "page": "41",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n44",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Soup, marrow, alia Napolitana",
+   "page": "41",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n44",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Soup, mushroom, cream of",
+   "page": "44",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n47",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Soup, onion and cheese",
+   "page": "42",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n45",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Soup, Pozzuoli fishermen's",
+   "page": "47",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n50",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Soup, sailors'",
+   "page": "46",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n49",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Soup, spinach",
+   "page": "36",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n39",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Soup, Syracusan",
+   "page": "48",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n51",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Soup, tomato, cream of",
+   "page": "44",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n47",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Soup, vegetable, SS",
+   "page": "40",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n43",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Spaghetti",
+   "page": "49",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n52",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "[ 230 ] Spaghetti, con salsa di vongole",
+   "page": "55",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n58",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Spaghetti with anchovies",
+   "page": "61",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n64",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Spaghetti with bacon, egg and onion",
+   "page": "62",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n65",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Spaghetti with butter and cheese",
+   "page": "58",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n61",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Spaghetti with clam sauce",
+   "page": "55",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n58",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Spaghetti with fresh fennel sauce",
+   "page": "61",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n64",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Spaghetti with green olive oil sauce",
+   "page": "60",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n63",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Spaghetti with ham",
+   "page": "59",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n62",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Spaghetti with meat balls",
+   "page": "56",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n59",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Spaghetti with oil and garlic",
+   "page": "60",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n63",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Spinach, Roman style",
+   "page": "179",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n182",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Spinach soup",
+   "page": "36",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n39",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Spinaci alia Parmigiana",
+   "page": "180",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n183",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Spinaci alia Piemontese",
+   "page": "180",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n183",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Steak, stuffed",
+   "page": "150",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n153",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Stew Florentine style",
+   "page": "132",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n135",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Stoccafisso alia Ligure",
+   "page": "109",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n112",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Stoccafisso in salsa",
+   "page": "109",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n112",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Stoccafisso polpettine di",
+   "page": "111",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n114",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Stock",
+   "page": "30",
+   "category": "Basics",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n33",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Stock pot",
+   "page": "30",
+   "category": "Basics",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n33",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Stracciatelle",
+   "page": "39",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n42",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Stufato alia Fiorentina",
+   "page": "132",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n135",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sturgeon",
+   "page": "124",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n127",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sturgeon, housewife style",
+   "page": "113",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n116",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Suppli",
+   "page": "85",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n88",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sweet sour sauce",
+   "page": "216",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n219",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sweet sour sauce, with nuts",
+   "page": "217",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n220",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Tagliatelle",
+   "page": "49",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n52",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Tagliatelle alia crema",
+   "page": "54",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n57",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Tagliatelle, souffle",
+   "page": "54",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n57",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Tagliatelle with anchovy and tunny fish",
+   "page": "55",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n58",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Tench",
+   "page": "124",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n127",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Testa di vitello alia Toscana",
+   "page": "148",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n151",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Tomato sauce",
+   "page": "202",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n205",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Tomato sauce, alia Napolitana",
+   "page": "203",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n206",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Tomato sauce, to enrich",
+   "page": "203",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n206",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Tomato sauce, unsweetened",
+   "page": "203",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n206",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Tomato and mushroom sauce",
+   "page": "214",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n217",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Tomato soup, cream of",
+   "page": "44",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n47",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Tomatoes, housewife style",
+   "page": "174",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n177",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Tomatoes with onions",
+   "page": "173",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n176",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Tongue with olives",
+   "page": "150",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n153",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Tongue with sauce",
+   "page": "149",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n152",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Tortellini",
+   "page": "67",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n70",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Triglie alia Ligure",
+   "page": "114",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n117",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Triglie alia Livornese",
+   "page": "113",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n116",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Triglie alia Triestina",
+   "page": "115",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n118",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Tripe, Florentine style",
+   "page": "146",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n149",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Tripe, Italian style",
+   "page": "146",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n149",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Tripe with Parmesan",
+   "page": "147",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n150",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Trippa alia Fiorentina",
+   "page": "146",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n149",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Trip pa air Italiana",
+   "page": "146",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n149",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Trout",
+   "page": "123",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n126",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Truffle omelette",
+   "page": "95",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n98",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Tunny fish and anchovy with tagliatelle",
+   "page": "55",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n58",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Tunny fish, Ligurian style",
+   "page": "112",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n115",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Tunny fish, roast",
+   "page": "125",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n128",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Tunny fish, sauce",
+   "page": "206",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n209",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Tunny fish, Sicilian style",
+   "page": "111",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n114",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Tunny fish with peas",
+   "page": "111",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n114",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Tunny fish with veal",
+   "page": "134",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n137",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Uove col riso",
+   "page": "99",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n102",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Uove stracciato al formaggio",
+   "page": "99",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n102",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Veal, chops Veronese style",
+   "page": "135",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n138",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Veal, fricassee",
+   "page": "136",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n139",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Veal, pie, stuffed",
+   "page": "151",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n154",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Veal, roast",
+   "page": "136",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n139",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Veal, stew with peas",
+   "page": "135",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n138",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Veal with tunny fish",
+   "page": "134",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n137",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Vegetable omelette",
+   "page": "96",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n99",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Vegetable soup",
+   "page": "40",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n43",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Vegetable soup with meat balls",
+   "page": "35",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n38",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Venetian sauce",
+   "page": "219",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n222",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Vilello in fricassea",
+   "page": "136",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n139",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Vitallo in umido con piselli",
+   "page": "135",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n138",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Vitello ripieno al pasticcio",
+   "page": "151",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n154",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "White wine sauce",
+   "page": "201",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n204",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "White wine sauce for fish",
+   "page": "204",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n207",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Whiting, curled",
+   "page": "118",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n121",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Woodcock",
+   "page": "158",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n161",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Zabaglione (Zabaione)",
+   "page": "185",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n188",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Zucchini fritti",
+   "page": "177",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n180",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Zuppa alia Foubonne",
+   "page": "40",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n43",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Zuppa alia Marinara",
+   "page": "46",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n49",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Zuppa di pesce alia Genovese",
+   "page": "46",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n49",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Zuppa di pesce alia Siracusana",
+   "page": "48",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n51",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pozzuoli",
+   "page": "47",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n50",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Zuppa Paradise",
+   "page": "39",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n42",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Zuppa Pavese",
+   "page": "38",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/italiancooking00daly/page/n41",
+    "pageStatus": "verified"
+   }
+  }
+ ]
+}

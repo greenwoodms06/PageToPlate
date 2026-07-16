@@ -1,0 +1,873 @@
+{
+ "identifier": "onehundredonemex00soutiala",
+ "title": "One hundred & one Mexican dishes",
+ "creator": "Southworth, May E. (May Elizabeth)",
+ "year": 1906,
+ "extraction": {
+  "generated": "2026-07-15T21:10:34-0400",
+  "recipe_index": {
+   "heading": "INDEX",
+   "line": 2118,
+   "sections": 1
+  },
+  "chapter_index": null,
+  "duplicates_dropped": 0
+ },
+ "entries": [
+  {
+   "name": "Almendra (Almond)",
+   "page": "3",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n12",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Caldo de Pescado (Fish)",
+   "page": "3",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n12",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chile Bisque",
+   "page": "4",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n13",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cordero (Lamb)",
+   "page": "4",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n13",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Gitano (Beans and Codfish)",
+   "page": "5",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n14",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Mexican Noodle",
+   "page": "5",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n14",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Rancheros (Vegetable)",
+   "page": "5",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n14",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cangrejuelos (Shrimps)",
+   "page": "9",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n18",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Caracoles con Perejil (Snails)",
+   "page": "9",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n18",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Langosta a la Catalana (Lobster)",
+   "page": "10",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n19",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Pilchers (Sardines)",
+   "page": "10",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n19",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Beef and Eggs)",
+   "page": "13",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n22",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chile con Carne (Pork)... I",
+   "page": "3",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n12",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chonzo (Beef and Pork)",
+   "page": "13",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n22",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chuletas de Ternero (Veal Cutlets)",
+   "page": "14",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n23",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Estofado (Beef)",
+   "page": "14",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n23",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Guiso (Beef)",
+   "page": "15",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n24",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Tongue)",
+   "page": "16",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n25",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Loma de Vaca (Beef)",
+   "page": "17",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n26",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Patitas con Mani (Pigs' Feet)",
+   "page": "17",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n26",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Puerco en Estofado (Pork)",
+   "page": "18",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n27",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Vegetables)",
+   "page": "18",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n27",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Tia Juana (Tripe)",
+   "page": "19",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n28",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Tripe Spanish",
+   "page": "19",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n28",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "A la Moda (Chicken and Macaroni)",
+   "page": "23",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n32",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chile Chicken",
+   "page": "23",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n32",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Peas)",
+   "page": "23",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n32",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Ganso en Aceitunas (Goose)",
+   "page": "24",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n33",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Mexican Turkey",
+   "page": "24",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n33",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Mole de Guajolote (Turkey)",
+   "page": "25",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n34",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Polio Guisado (Chicken)",
+   "page": "26",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n35",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Polluelo en Estofado (Chicken)",
+   "page": "26",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n35",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Arroz en el Homo (Rice)",
+   "page": "29",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n38",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Beans Mexican",
+   "page": "29",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n38",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chile Reinas (Peppers)",
+   "page": "30",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n39",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cidracayote (Summer Squash)",
+   "page": "30",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n39",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Estilo Seco (Beans)",
+   "page": "31",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n40",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Entradas (Macaroni)",
+   "page": "32",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n41",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Frijoles (Beans)",
+   "page": "32",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n41",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cheese)",
+   "page": "33",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n42",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fuente Italiano (Spaghetti)",
+   "page": "33",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n42",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Green Chiles",
+   "page": "33",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n42",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Habas Espana (Beans)",
+   "page": "34",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n43",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Macarrones (Macaroni)",
+   "page": "34",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n43",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Mariana-land (Rice)",
+   "page": "35",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n44",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Pimientos (Peppers)",
+   "page": "36",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n45",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Plato Fuerte (Peppers with Sardines)",
+   "page": "36",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n45",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Rellenos (Peppers)",
+   "page": "36",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n45",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Rellenos de Queso de Gruyere (Peppers and Swiss Cheese)",
+   "page": "37",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n46",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Stuffed Chiles",
+   "page": "37",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n46",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Suculento (Corn and Summer Squash)",
+   "page": "38",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n47",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Albondigas",
+   "page": "41",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n50",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Albondiguillas",
+   "page": "41",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n50",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Artificial Turtle",
+   "page": "42",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n51",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Bunelos",
+   "page": "42",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n51",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Huevos de Carne",
+   "page": "42",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n51",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "DESSERTS PAGE Camote y Pina (Candied Sweet Potatoes and Pineapple)",
+   "page": "47",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n56",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Dulce (Baked Raisins)",
+   "page": "47",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n56",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Mantecado (Ice-Cream)",
+   "page": "47",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n56",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Postre de Manzanas (Apples)",
+   "page": "48",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n57",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Realengo (Fruit Souffle)",
+   "page": "49",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n58",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Torto Frutas (Pie)",
+   "page": "49",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n58",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chile",
+   "page": "55",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n64",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cold Colorado",
+   "page": "55",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n64",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Mexican Chile",
+   "page": "56",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n65",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Salsa Nuez (Nut)",
+   "page": "56",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n65",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Tomato",
+   "page": "57",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n66",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Tortillas de Patatas",
+   "page": "58",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n67",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Americano",
+   "page": "59",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n68",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Domestico",
+   "page": "60",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n69",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Mexican",
+   "page": "60",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n69",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Native",
+   "page": "61",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n70",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Quesadillas",
+   "page": "62",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n71",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Farsanta",
+   "page": "67",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n76",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Genuine",
+   "page": "67",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n76",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Hacienda",
+   "page": "68",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n77",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Hot Tamal",
+   "page": "69",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n78",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Laredo's Celeberrino",
+   "page": "69",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n78",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Mesa Redonda",
+   "page": "70",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n79",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Ajoqueso (Cheese)",
+   "page": "75",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n84",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Almibar (Candy)",
+   "page": "75",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n84",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Azucarillo (Wafers)",
+   "page": "76",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n85",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Blanquillos (Eggs)",
+   "page": "76",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n85",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Milk)",
+   "page": "76",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n85",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Criollo Guisado (Tortillas Fried)",
+   "page": "77",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n86",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Emparedado (Hot Cakes)",
+   "page": "77",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n86",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Ensalada (Salad)",
+   "page": "78",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n87",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Llenar Mejicano (Filling for Sandwiches)",
+   "page": "78",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n87",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Mejicano-Americano (Waffles)",
+   "page": "79",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n88",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Migas (Fried Bread)",
+   "page": "79",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n88",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Mollete (Cakes)",
+   "page": "80",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n89",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Pan Relleno (Stuffed Bread)",
+   "page": "80",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n89",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Polenta (Baked Mush)",
+   "page": "81",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n90",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Tortas Serrano (Cheese in Batter)",
+   "page": "82",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n91",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Tortilla de Huevos (Omelet)",
+   "page": "82",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/onehundredonemex00soutiala/page/n91",
+   "pageStatus": "verified"
+  }
+ ]
+}

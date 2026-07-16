@@ -1,0 +1,9 @@
+{
+ "raw": 686,
+ "clean": 645,
+ "held": 41,
+ "dropped": 0,
+ "threshold": null,
+ "generated": "2026-07-15T21:31:57-0400",
+ "note": "chapter-range categorization (OCR-corrected boundaries); held = non-recipe glossary/measures front matter listed in the index"
+}

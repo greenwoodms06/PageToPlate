@@ -126,7 +126,7 @@ from build_pack import map_raw_category  # noqa: E402
 CUISINE_VOCAB = {
     "italian", "french", "european", "asian", "chinese", "indian", "mexican",
     "latin", "middle eastern", "african", "caribbean", "international",
-    "american", "british",
+    "american", "british", "german",
 }
 
 # --------------------------------------------------------------------------
@@ -1048,7 +1048,13 @@ def _clf_words(s: str) -> set[str]:
     """Word set for scanning, with light depluralization so a table that lists
     the singular ('steak', 'cake') also catches the plural ('steaks')."""
     out: set[str] = set()
-    for w in re.findall(r"[a-z][a-z'&-]*", s):
+    for raw in re.findall(r"[a-z][a-z'&-]*", s):
+        # Strip leading/trailing OCR debris (a leader-dot/quote apostrophe on the
+        # last word — "White Bean Soup'" — otherwise tokenizes to "soup'" and
+        # misses the soup rule). Internal apostrophes ("pig's") are kept.
+        w = raw.strip("'&-")
+        if not w:
+            continue
         out.add(w)
         if w.endswith("ies") and len(w) > 4:
             out.add(w[:-3] + "y")
@@ -1092,6 +1098,8 @@ _MEAT = {
     "whitebait", "whitefish", "perch", "pickerel", "pike", "turbot", "crawfish",
     "crayfish", "prawn", "scampi", "sturgeon", "whiting", "weakfish",
     "tenderloin", "sirloin", "loin", "ribs", "brisket", "rump",
+    # game / meat words common in German cookery (reusable):
+    "pig", "boar", "peacock", "guinea", "carp",
 }
 _VEG = {
     "potato", "bean", "pea", "carrot", "beet", "cabbage", "spinach", "corn",
@@ -1157,7 +1165,8 @@ def _rz_souffle(w):
              "caramel", "prune", "apricot"}, w):
         return ("Desserts", 0.75, [])
     if _has({"cheese", "spinach", "chicken", "fish", "potato", "corn",
-             "cauliflower", "clam", "lobster", "tomato", "sweetbread"}, w):
+             "cauliflower", "clam", "lobster", "tomato", "sweetbread",
+             "meat", "veal", "ham", "game", "liver", "crab"}, w):
         return ("Sides", 0.6, [])
     return ("Desserts", 0.45, [])
 
@@ -1275,9 +1284,14 @@ def _rz_dumpling(w):
 # index name resolves on the head ("Soup, Tomato" -> soup, not tomato). A tuple
 # ends with a category string (+optional tags) OR a resolver function.
 _SOUP = {"soup", "chowder", "bisque", "bouillon", "consomme", "gumbo",
-         "pottage", "broth", "puree"}
+         "pottage", "broth", "puree",
+         # Spanish/Latin soup words (reusable across Mexican/Latin packs):
+         # "Caldo de Pescado" is a fish SOUP, not a fish main — the section
+         # header is elided in a flattened index, so the head noun must carry it.
+         "caldo", "sopa", "pozole", "posole", "gazpacho"}
 _SAUCE = {"sauce", "gravy", "ketchup", "catsup", "mayonnaise", "mustard",
-          "relish", "marinade", "hollandaise", "bechamel"}
+          "relish", "marinade", "hollandaise", "bechamel",
+          "salsa"}   # salsa = sauce (Spanish/Italian); reusable
 _DESSERT = {
     "cookie", "doughnut", "gingerbread", "shortcake", "cobbler", "trifle",
     "meringue", "tart", "tartlet", "turnover", "eclair", "charlotte", "blancmange",
@@ -1318,6 +1332,16 @@ _MEAT_METHOD = {"broiled", "planked", "larded", "barbecued", "grilled",
                 "roasted", "smothered", "fricasseed", "braised", "corned",
                 "jugged", "potted", "fried", "sauted", "sauteed", "deviled",
                 "devilled", "minced", "hashed", "roast"}
+# Spanish/Latin dish-type head nouns (reusable across Mexican/Latin packs).
+# A masa-and-filling or wrapped-tortilla dish is a main course by meal role.
+_LATIN_MAIN = {"tamale", "tamal", "tamales", "enchilada", "enchiladas",
+               "albondigas", "albondiga", "albondiguillas", "empanada",
+               "empanadas", "burrito", "burritos", "carnitas", "barbacoa",
+               "fajita", "fajitas"}
+# Cheese-in-tortilla / bean small plates -> Sides (the app folds small plates
+# into Sides). "Quesadillas", "Frijoles" (beans), "Nachos".
+_LATIN_SIDE = {"quesadilla", "quesadillas", "frijoles", "frijol", "nachos",
+               "tostada", "tostadas"}
 
 _RULES: list[tuple] = [
     (_SOUP, "Soups & Stews", 0.9),
@@ -1363,6 +1387,9 @@ _RULES: list[tuple] = [
       "anchovies"}, "Sides", 0.55),
     ({"pilaf", "pilau", "risotto", "noodles", "noodle", "greens", "polenta"},
      "Sides", 0.6),
+    # German sides (reusable): sauerkraut and dumpling/Spätzle-family words.
+    ({"sauerkraut", "kraut", "sourkrout", "spatzle", "spatzen", "knodel",
+      "klosse", "kloss"}, "Sides", 0.6),
     ({"rissoles", "rissole", "croustade", "croustades", "cromesquis", "ramequins",
       "ramekins", "cannelon", "vol-au-vents", "bouchees", "spaetzle"},
      "Sides", 0.55, ["appetizer"]),
@@ -1372,6 +1399,8 @@ _RULES: list[tuple] = [
     ({"balls"}, _rz_balls),
     ({"patties"}, _rz_patties),
     ({"scalloped", "stuffed", "curried"}, "Sides", 0.5),
+    (_LATIN_MAIN, "Mains", 0.7),
+    (_LATIN_SIDE, "Sides", 0.6),
     (_MEAT, "Mains", 0.7),
     # "stewed" is NOT here: meat stews are already caught by _MEAT above, so a
     # remaining "Stewed X" is a vegetable/fruit ("Stewed Celery", "Stewed Corn")
@@ -1625,6 +1654,7 @@ _PUBLISHER_CITIES = [
     ("london", "GB"), ("edinburgh", "GB"), ("glasgow", "GB"), ("dublin", "IE"),
     ("new york", "US"), ("boston", "US"), ("chicago", "US"),
     ("philadelphia", "US"), ("san francisco", "US"), ("springfield", "US"),
+    ("milwaukee", "US"),
     ("toronto", "CA"), ("paris", "FR"),
 ]
 
@@ -1647,7 +1677,8 @@ def clean_creator(s: str) -> str:
     'Escoffier, A. (Auguste), 1846-1935' -> 'Escoffier, A. (Auguste)';
     'Chan, Shiu Wong, 1893- [from old catalog]' -> 'Chan, Shiu Wong'."""
     s = re.sub(r"\s*\[[^\]]*\]\s*$", "", s)        # trailing "[from old catalog]"
-    s = re.sub(r"[,;\s]*\d{4}\s*-\s*(\d{4})?\.?\s*$", "", s)   # life dates
+    s = re.sub(r"[,;\s]*\d{4}\s*-\s*(\d{4})?\.?\s*$", "", s)   # life dates 1846-1935
+    s = re.sub(r"[,;\s]*[bd]\.\s*\d{4}\.?\s*$", "", s)        # death/birth only: ", d. 1876"
     return s.strip()
 
 

@@ -1,0 +1,9 @@
+{
+ "raw": 966,
+ "clean": 814,
+ "held": 147,
+ "dropped": 5,
+ "threshold": 0.45,
+ "generated": "2026-07-15T21:45:28-0400",
+ "note": "name-classify + judgment-pass OCR cleanup (two-column merge repairs / holds); see notes.md"
+}

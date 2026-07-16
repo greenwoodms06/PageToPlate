@@ -1,0 +1,9 @@
+{
+ "raw": 95,
+ "clean": 80,
+ "held": 15,
+ "dropped": 0,
+ "threshold": 0.45,
+ "generated": "2026-07-15T21:45:28-0400",
+ "note": "counts reflect the judgment pass (section-grounded hand-fixes + rescues) layered over classify; see notes.md"
+}

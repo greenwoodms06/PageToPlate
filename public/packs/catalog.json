@@ -140,6 +140,91 @@
    "rawIndexCount": 191,
    "file": "packs/chinesecookbook00chan.json",
    "version": 1
+  },
+  {
+   "id": "italiancooking00daly",
+   "title": "Italian Cooking",
+   "author": "Daly, Dorothy",
+   "year": 1900,
+   "country": "GB",
+   "cuisines": [
+    "italian"
+   ],
+   "era": "historical",
+   "type": "linked",
+   "recipeCount": 645,
+   "categories": [
+    "Mains",
+    "Sides",
+    "Sauces & Condiments",
+    "Soups & Stews",
+    "Desserts",
+    "Breakfast & Brunch",
+    "Salads",
+    "Basics"
+   ],
+   "curatedSubset": true,
+   "rawIndexCount": 686,
+   "file": "packs/italiancooking00daly.json",
+   "version": 1
+  },
+  {
+   "id": "onehundredonemex00soutiala",
+   "title": "One Hundred & One Mexican Dishes",
+   "author": "Southworth, May E. (May Elizabeth)",
+   "year": 1906,
+   "country": "US",
+   "cuisines": [
+    "mexican"
+   ],
+   "era": "historical",
+   "type": "linked",
+   "recipeCount": 80,
+   "categories": [
+    "Mains",
+    "Sides",
+    "Desserts",
+    "Soups & Stews",
+    "Breakfast & Brunch",
+    "Breads",
+    "Sauces & Condiments",
+    "Drinks",
+    "Salads"
+   ],
+   "curatedSubset": true,
+   "rawIndexCount": 95,
+   "file": "packs/onehundredonemex00soutiala.json",
+   "version": 1
+  },
+  {
+   "id": "cu31924000722862",
+   "title": "German National Cookery for American Kitchens : a Practical Book of the Art of Cooking As Performed in Germany",
+   "author": "Davidis, Henriette",
+   "year": 1904,
+   "country": "US",
+   "cuisines": [
+    "german"
+   ],
+   "era": "historical",
+   "type": "linked",
+   "recipeCount": 814,
+   "categories": [
+    "Mains",
+    "Desserts",
+    "Sides",
+    "Soups & Stews",
+    "Sauces & Condiments",
+    "Preserves & Pickles",
+    "Breakfast & Brunch",
+    "Salads",
+    "Breads",
+    "Basics",
+    "Drinks"
+   ],
+   "curatedSubset": true,
+   "rawIndexCount": 966,
+   "file": "packs/cu31924000722862.json",
+   "version": 1
   }
  ]
 }

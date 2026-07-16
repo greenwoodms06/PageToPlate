@@ -1,0 +1,8154 @@
+{
+ "id": "cu31924000722862",
+ "version": 1,
+ "book": {
+  "name": "German National Cookery for American Kitchens : a Practical Book of the Art of Cooking As Performed in Germany",
+  "tags": [
+   "german"
+  ]
+ },
+ "curatedSubset": true,
+ "rawIndexCount": 966,
+ "recipes": [
+  {
+   "name": "Goose Oil",
+   "page": "4",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n55",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Kidney Suet, to prepare",
+   "page": "5",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n56",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Liver Forcemeat",
+   "page": "6",
+   "category": "Basics",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n57",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mushrooms",
+   "page": "9",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n60",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Onions, to scald",
+   "page": "10",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n61",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Orange Peel, how to preserve",
+   "page": "13",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n64",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Parsley Butter",
+   "page": "3",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n54",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Parsnips and Celery for Soups",
+   "page": "9",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n60",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pepper , Cloves and Mace , when to prepare",
+   "page": "11",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n62",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Poultry Forcemeat",
+   "page": "7",
+   "category": "Basics",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n58",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Raisin Forcemeat",
+   "page": "8",
+   "category": "Basics",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n59",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Raisins, how to clean",
+   "page": "12",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n63",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Rice, cleaning and scalding",
+   "page": "3",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n54",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Veal Sweetbreads for Stews and Gravies",
+   "page": "10",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n61",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Apple Soup",
+   "page": "49",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n102",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Apple Soup with Currants",
+   "page": "49",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n102",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Apricot Cold Soup",
+   "page": "51",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n104",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Barley Soup for invalids",
+   "page": "47",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n100",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Beef Broth Soup for invalids",
+   "page": "31",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n84",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Beef Soup with Pearl Barley and Rice",
+   "page": "18",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n71",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Beer Cold Soup",
+   "page": "52",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n105",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Beer Soup with Raisins",
+   "page": "43",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n96",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Beer Soup with Milk",
+   "page": "43",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n96",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Bread Soup for invalids",
+   "page": "48",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n101",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Brown Flour Soup",
+   "page": "47",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n100",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Brown Soug made from Bones of Hare, Game or Roasts",
+   "page": "29",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n82",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Buttermilk Cold Soup",
+   "page": "52",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n105",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Calf's Head Soup",
+   "page": "22",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n75",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cherry Cold Soup",
+   "page": "51",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n104",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cherry Soup",
+   "page": "49",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n102",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chicken Soup",
+   "page": "23",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n76",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chocolate Soup",
+   "page": "46",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n99",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Clear Brown Beef isoup",
+   "page": "18",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n71",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Clear White Beef Soup",
+   "page": "17",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n70",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Coarse Barley Groats Soup",
+   "page": "41",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n94",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cornmeal Soup",
+   "page": "46",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n99",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Crab Soup",
+   "page": "26",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n79",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Dried Prunes Soup",
+   "page": "50",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n103",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Dumplings in Soups",
+   "page": "16",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862",
+    "pageStatus": "unverified"
+   }
+  },
+  {
+   "name": "Early Vegetable Soup",
+   "page": "34",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n87",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Eel Soup. (Bremen style)",
+   "page": "36",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n89",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Eel Soup. ( Hamburg style)",
+   "page": "26",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n79",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Extract of Beef Soup",
+   "page": "17",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n70",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Orange Cold Soup",
+   "page": "51",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n104",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Ox-tail Soup",
+   "page": "20",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n73",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Ox- tongue Soup",
+   "page": "19",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n72",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Oyster Soup",
+   "page": "25",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n78",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Partridge Soup",
+   "page": "30",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n83",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pearl Barley and Milk Soup",
+   "page": "45",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n98",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pigeon Soup for invalids",
+   "page": "81",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n134",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Plum Soup",
+   "page": "49",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n102",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Plum Soup with Milk",
+   "page": "49",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n102",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Potato Soup",
+   "page": "33",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n86",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Prune Soup for invalids",
+   "page": "50",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n103",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Barley and Fancy Noodles",
+   "page": "16",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862",
+    "pageStatus": "unverified"
+   }
+  },
+  {
+   "name": "Quick Beef Broth",
+   "page": "16",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862",
+    "pageStatus": "unverified"
+   }
+  },
+  {
+   "name": "Rice Soup with Milk",
+   "page": "45",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n98",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Rice Soup with Raisins",
+   "page": "42",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n95",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Russian Cabbage Soup",
+   "page": "32",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n85",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sago or Rice Cold Soup",
+   "page": "51",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n104",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sago Soup with Claret",
+   "page": "41",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n94",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sago Soup with Milk",
+   "page": "46",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n99",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Schweriner Soup",
+   "page": "35",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n88",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Silesian Celery Soup",
+   "page": "38",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n91",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sorrel Soup",
+   "page": "38",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n91",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Soup it l'aurore",
+   "page": "39",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n92",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Soup, how to make stronger",
+   "page": "16",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862",
+    "pageStatus": "unverified"
+   }
+  },
+  {
+   "name": "Soup made with Pastry Dough",
+   "page": "47",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n100",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Soups, to thicken",
+   "page": "15",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n66",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Soup, Vegetables and Meat",
+   "page": "32",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n85",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Split Pea Soup",
+   "page": "35",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n88",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Extract of Beef",
+   "page": "34",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n87",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Vegetables in Soups",
+   "page": "15",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n66",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "White Bean Soup'",
+   "page": "36",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n89",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "White Fibur Soup",
+   "page": "47",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n100",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "White Wine Soup",
+   "page": "40",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n93",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Windsor Soup",
+   "page": "24",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n77",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Wine Soup, plain",
+   "page": "41",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n94",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Wine Soup for invalids",
+   "page": "43",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n96",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Wine Cold Soup",
+   "page": "50",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n103",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Page Page Cabbage, white,. with Mutton (Mecklenburgstyle)",
+   "page": "73",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n126",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Carrots and Peas",
+   "page": "62",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n115",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Carrots, early",
+   "page": "62",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n115",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Carrots, winter",
+   "page": "78",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n131",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cauliflower",
+   "page": "68",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n121",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cheese",
+   "page": "69",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n122",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Celery, stewed",
+   "page": "75",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n128",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Celery, stuffed",
+   "page": "75",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n128",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chestnuts, sweet",
+   "page": "78",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n131",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cucumbers, cooked",
+   "page": "76",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n129",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cucumbers, stewed",
+   "page": "75",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n128",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cucumbers, stuffed",
+   "page": "76",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n129",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Dandelions",
+   "page": "58",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n111",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Duck in Savoy Cabbage",
+   "page": "71",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n124",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Egg Plant",
+   "page": "69",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n122",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Potatoes, baked, with Cheese",
+   "page": "90",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n143",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Potatoes, baked, with Sausages",
+   "page": "89",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n142",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Potatoes, breaded",
+   "page": "88",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n141",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Potatoes, curried",
+   "page": "89",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n142",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Potatoes, roasted",
+   "page": "88",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n141",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Potatoes, sliced ( German style)",
+   "page": "91",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n144",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Potatoes, stuffed",
+   "page": "90",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n143",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Apples baked together",
+   "page": "89",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n142",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Potatoes with Apples",
+   "page": "90",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n143",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Potatoes with Buttermilk",
+   "page": "88",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n141",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Potatoes with Herring",
+   "page": "87",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n140",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Potatoes with Parsley and boiled Fish",
+   "page": "87",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n140",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Potatoes with various kinds ofSauces",
+   "page": "87",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n140",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Puree of White Beans for convalescents'",
+   "page": "85",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n138",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Salsify or Oysterplant",
+   "page": "56",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n109",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Savoy Cabbage",
+   "page": "71",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n124",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Shredded Cabbage (Westphalian style)",
+   "page": "81",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n134",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sourkrout",
+   "page": "81",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n134",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sourkrout with Pike",
+   "page": "82",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n135",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sour Potatoes with Bay Leaves",
+   "page": "87",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n140",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Spinach",
+   "page": "57",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n110",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Vegetables",
+   "page": "54",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n107",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Tomatoes, Spanish",
+   "page": "79",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n132",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Tomatoes, stuffed",
+   "page": "79",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n132",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Turnips",
+   "page": "80",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n133",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Turnips, early",
+   "page": "65",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n118",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Turnips, early, with Mutton",
+   "page": "65",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n118",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Vegetables, mixed",
+   "page": "64",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n117",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Vegetables with Barley Groats",
+   "page": "67",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n120",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Escallop* with Mustard Sauce",
+   "page": "105",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n160",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Filet of Beef",
+   "page": "97",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n152",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fried Chopped Beef",
+   "page": "108",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n163",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Meat",
+   "page": "109",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n164",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fried minced Scallops (German Panhas)",
+   "page": "115",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n172",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fried Sour Rolls",
+   "page": "115",
+   "category": "Breads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n172",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fried Tongue as a side dish",
+   "page": "108",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n163",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Goulash (an Hungarian dish)",
+   "page": "95",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n148",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Hash N . H . J",
+   "page": "113",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n170",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Hash made of Soup Meat or remnants of Boast",
+   "page": "113",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n170",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Irish Stew made of Meat remnants",
+   "page": "112",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862",
+    "pageStatus": "unverified"
+   }
+  },
+  {
+   "name": "Meat Balls, hasty",
+   "page": "110",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862",
+    "pageStatus": "unverified"
+   }
+  },
+  {
+   "name": "Boiled Meat remnants",
+   "page": "110",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862",
+    "pageStatus": "unverified"
+   }
+  },
+  {
+   "name": "Meat Cream",
+   "page": "114",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n171",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Meat Fritters ( Dominikarierschnittej",
+   "page": "114",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n171",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Meat Loaf",
+   "page": "109",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n164",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Meat Loaf, stewed",
+   "page": "110",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862",
+    "pageStatus": "unverified"
+   }
+  },
+  {
+   "name": "Meat, prepairing",
+   "page": "93",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n146",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Meat remnants",
+   "page": "96",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862",
+    "pageStatus": "unverified"
+   }
+  },
+  {
+   "name": "Ox-tongue Brown Ragout",
+   "page": "107",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n162",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Ribs of Beef for invalids",
+   "page": "116",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n173",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Roast Beef",
+   "page": "96",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862",
+    "pageStatus": "unverified"
+   }
+  },
+  {
+   "name": "Roast Beef with Dressing",
+   "page": "102",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n157",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Roast Beef, left over, to warm",
+   "page": "101",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n156",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Rosini Fillet",
+   "page": "98",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n153",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Round of Beef",
+   "page": "102",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n157",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Salted Tongue for Sandwiches",
+   "page": "108",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n163",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Small Forcemeat Balls",
+   "page": "110",
+   "category": "Basics",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862",
+    "pageStatus": "unverified"
+   }
+  },
+  {
+   "name": "Soup Meat Stewed with Apples",
+   "page": "118",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n175",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Soup Meat with Onions",
+   "page": "118",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n175",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Soup with Raisin Sauce",
+   "page": "114",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n171",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Soup Meat Cutlets",
+   "page": "112",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862",
+    "pageStatus": "unverified"
+   }
+  },
+  {
+   "name": "Soup Meat Kagont",
+   "page": "114",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n171",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Soup Meat Salad",
+   "page": "113",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n170",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sour Beef (Sauerbraten)",
+   "page": "99",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n154",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Soup Meat, stewed, served with the Potatoes after",
+   "page": "112",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862",
+    "pageStatus": "unverified"
+   }
+  },
+  {
+   "name": "White Fricassee of Tongue",
+   "page": "107",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n162",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "II. VEAL. Breast of Veal, stewed Brest of Veal, stuffed",
+   "page": "118",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n175",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Calf's Brain Ragout",
+   "page": "123",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n180",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Calf's Head, Brown Ragout",
+   "page": "125",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n182",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Calf s Head Brawn",
+   "page": "124",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n181",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Turtle Ragout",
+   "page": "123",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n180",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Meatballs made of Boiled Veal",
+   "page": "127",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n184",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Veal",
+   "page": "118",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n175",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Neck of Veal, roast",
+   "page": "117",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n174",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Ribs of Veal, stewed",
+   "page": "120",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n177",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Roast Veal Ragout",
+   "page": "128",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862",
+    "pageStatus": "unverified"
+   }
+  },
+  {
+   "name": "Roast Veal, warmed over",
+   "page": "127",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n184",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sausages of small Meatballs made of Cold Veal Roast",
+   "page": "127",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n184",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sweetbreads",
+   "page": "124",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n181",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sweetbread Fritters",
+   "page": "120",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n177",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Veal Roll, stuffed",
+   "page": "122",
+   "category": "Breads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n179",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Veal Cutlets",
+   "page": "121",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n178",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Veal Forcemeat Sausage",
+   "page": "126",
+   "category": "Basics",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n183",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Veal Kettle Roast",
+   "page": "118",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n175",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Veal Roast for invalids",
+   "page": "128",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862",
+    "pageStatus": "unverified"
+   }
+  },
+  {
+   "name": "Veal Stew or Fricassee",
+   "page": "121",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n178",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Veal Sweetbreads for invalids",
+   "page": "129",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n188",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Veal Sweetbread Pudding for invalids",
+   "page": "129",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n188",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Veal Tongue for invalids",
+   "page": "129",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n188",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Veal Steak for invalids",
+   "page": "128",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862",
+    "pageStatus": "unverified"
+   }
+  },
+  {
+   "name": "Veal Kidney Fritters",
+   "page": "120",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n177",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "III.- IV. nUTTON. HARES H Hare, Brown Ragout (Kaninchenpfeffer)",
+   "page": "137",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n196",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Hare Soup, English",
+   "page": "135",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n194",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Hare , roasted",
+   "page": "136",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n195",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Hare Fricassee (White Ragout)",
+   "page": "137",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n196",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Wild Hare",
+   "page": "136",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n195",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Lamb Fricassee with Capers and Anchovy",
+   "page": "133",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n192",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Lamb Chops for invalids",
+   "page": "134",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n193",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mutton Chops, broiled",
+   "page": "132",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n191",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mutton sliced, fried",
+   "page": "134",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n193",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mutton Curry",
+   "page": "134",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n193",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mutton and Lamb Chops",
+   "page": "132",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n191",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mutton Fricassee",
+   "page": "133",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n192",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mutton, Leg of, stewed",
+   "page": "131",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n190",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Frankfurth Sausages",
+   "page": "146",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n209",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Ham, boiled",
+   "page": "140",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n201",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Ham Croquette",
+   "page": "146",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n209",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Ham Remnants with Asparagus",
+   "page": "147",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n210",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Boar",
+   "page": "139",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n200",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Ham with Burgundy Sauce",
+   "page": "141",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n202",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Ham with Madeira Sauce",
+   "page": "141",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n202",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pig, roast",
+   "page": "142",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862",
+    "pageStatus": "unverified"
+   }
+  },
+  {
+   "name": "Pork Chops",
+   "page": "143",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862",
+    "pageStatus": "unverified"
+   }
+  },
+  {
+   "name": "Pork Cutlets, chopped",
+   "page": "143",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862",
+    "pageStatus": "unverified"
+   }
+  },
+  {
+   "name": "Pork Headcheese",
+   "page": "142",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862",
+    "pageStatus": "unverified"
+   }
+  },
+  {
+   "name": "Pork Sausage",
+   "page": "143",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862",
+    "pageStatus": "unverified"
+   }
+  },
+  {
+   "name": "Pork Steaks, chopped",
+   "page": "144",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862",
+    "pageStatus": "unverified"
+   }
+  },
+  {
+   "name": "Pork, pickled",
+   "page": "143",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862",
+    "pageStatus": "unverified"
+   }
+  },
+  {
+   "name": "Pork remnants, warmed over",
+   "page": "146",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n209",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pork Tenderloins",
+   "page": "144",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862",
+    "pageStatus": "unverified"
+   }
+  },
+  {
+   "name": "Spare Ribs, stuffed",
+   "page": "139",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n200",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Ducks a la Francaise",
+   "page": "168",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n233",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Duck, roasted",
+   "page": "167",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n232",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Ducks stewed with Onions",
+   "page": "167",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n232",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Ducks with Claret",
+   "page": "167",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n232",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Ducks with Dumplings",
+   "page": "168",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n233",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Ducks with new Turnips",
+   "page": "169",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n234",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Ducks, jellied",
+   "page": "169",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n234",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fricassee of Capons, Young Spring Chickens or Pigeons with Crabs",
+   "page": "162",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n227",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Rice Border",
+   "page": "164",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n229",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Game Hash",
+   "page": "153",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n216",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Game Headcheese",
+   "page": "153",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n216",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Game",
+   "page": "147",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n210",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Goose Giblets",
+   "page": "171",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n236",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Goose Giblets in Westphalian style",
+   "page": "170",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n235",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Goose in jelly",
+   "page": "170",
+   "category": "Preserves & Pickles",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n235",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Goose Liver, fried",
+   "page": "170",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n235",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Goose Neck, stuffed",
+   "page": "172",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n237",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Goose Ragout",
+   "page": "172",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n237",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Goose, roasted",
+   "page": "169",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n234",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Hare Ragout ( Hasenpfeffer)",
+   "page": "150",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n213",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Hare, roast",
+   "page": "149",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n212",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Hare , stewed and steamed",
+   "page": "150",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n213",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Hen-turkey in a Fricassee i Sauce",
+   "page": "159",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n222",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Patridge Cutlets for invalids",
+   "page": "176",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n241",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chickens",
+   "page": "173",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n238",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Partridges in Saxony style",
+   "page": "174",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n239",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pheasants with Macaroni",
+   "page": "173",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n238",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pigeons, roasted",
+   "page": "166",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n231",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pigeons with Asparagus Tips",
+   "page": "166",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n231",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Prairie Chickens with Gravy,. cold",
+   "page": "174",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n239",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Salmi of Snipe, Grouse and Wild Ducks",
+   "page": "175",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n240",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Spring Chicken, roasted",
+   "page": "161",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n226",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Spring Chicken and Pigeon",
+   "page": "163",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n228",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Spring Chicken in Sauce",
+   "page": "164",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n229",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Turkey with Forcemeat",
+   "page": "158",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n221",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Turkey in Vienna styl§",
+   "page": "159",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n222",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Venison Ragout .'",
+   "page": "152",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n215",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Venison, Roast Haunch of",
+   "page": "151",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n214",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Venison, Roast Loin of",
+   "page": "151",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n214",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Venison, stewed shoulder of",
+   "page": "153",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n216",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Wild Duck and Wild Goose",
+   "page": "169",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n234",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Crab Pie or Fricassee",
+   "page": "188",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n253",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Eel Pie",
+   "page": "190",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n255",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fine Meat Pie",
+   "page": "188",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n253",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Forcemeat Pie",
+   "page": "187",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n252",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fresh Fish Pie",
+   "page": "188",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n253",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pie of Whole Fishes",
+   "page": "189",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n254",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Salmon Pie",
+   "page": "190",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n255",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Salmon Pie, Russian",
+   "page": "190",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n255",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Timbale with Ragout",
+   "page": "183",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n248",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Timbale of Grouse",
+   "page": "180",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n245",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Timbale of Macaroni and Loin of Venison",
+   "page": "182",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n247",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Timbale (turned Meat Pies)",
+   "page": "180",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n245",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Veal Pie, cola",
+   "page": "191",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n256",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Venison Pie",
+   "page": "184",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n249",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Anchovy Patties",
+   "page": "193",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n258",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Baking Small Meat Pies",
+   "page": "192",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n257",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Brown Gravy Patties",
+   "page": "194",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n259",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chicken Patties",
+   "page": "192",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n257",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chicken Patties, baked",
+   "page": "196",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862",
+    "pageStatus": "unverified"
+   }
+  },
+  {
+   "name": "Cheese",
+   "page": "192",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n257",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Crab Patties",
+   "page": "194",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n259",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mushroom Patties",
+   "page": "195",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n260",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Oyster Patties",
+   "page": "194",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n259",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Patties in Moulds",
+   "page": "195",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n260",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Puff Paste Ornaments (Fleurons/",
+   "page": "193",
+   "category": "Basics",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n258",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Rice Patties",
+   "page": "195",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n260",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sweetbread Patties",
+   "page": "193",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n258",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Talleyrand Patties",
+   "page": "196",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862",
+    "pageStatus": "unverified"
+   }
+  },
+  {
+   "name": "Veal Patties",
+   "page": "193",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n258",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Perch Hollandaise",
+   "page": "210",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n277",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Perch in a French Sauce",
+   "page": "211",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n278",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pike, baked",
+   "page": "213",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n280",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pike, baked with Sour Cream",
+   "page": "214",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n281",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pike, chopped and baked",
+   "page": "212",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n279",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pike, Fricassee of",
+   "page": "214",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n281",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pike, larded",
+   "page": "212",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n279",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pike Salad",
+   "page": "215",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n282",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pike, stewed",
+   "page": "212",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n279",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pike with Egg Sauce",
+   "page": "214",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n281",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pike with Parmesan Cheese and Onions",
+   "page": "213",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n280",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Salmon, boiled",
+   "page": "201",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n268",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Salmon, pickled",
+   "page": "202",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n269",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Trout, baked",
+   "page": "207",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n274",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Trout Steaks with varions kinds of Sauces and Vegetables",
+   "page": "206",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n273",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "SALT WATER FISH. Anchovy Sandwiches Bloaters, broiled",
+   "page": "223",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n290",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Oysters, fried",
+   "page": "227",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n294",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Oyster Stew",
+   "page": "227",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n294",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Smelts, boiled",
+   "page": "222",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n289",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Soles, baked",
+   "page": "221",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n288",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Soles, boiled",
+   "page": "221",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n288",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Soles, Fillet of . i",
+   "page": "221",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n288",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Soles, fried",
+   "page": "221",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n288",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Soles, fried with Lemon Juice",
+   "page": "222",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n289",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Soles, fried, Bremen style",
+   "page": "221",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n288",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sturgeon a la Epicure",
+   "page": "216",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n283",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sturgeon, boiled",
+   "page": "216",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n283",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sturgeon Steaks",
+   "page": "216",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n283",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Turbot, baked",
+   "page": "220",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n287",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Turbot, boiled",
+   "page": "220",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n287",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Turbot, crusted",
+   "page": "220",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n287",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Badger, Ragout of",
+   "page": "233",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n300",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Frog Leg Pie",
+   "page": "231",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n298",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Frog Legs, Ragout of",
+   "page": "231",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n298",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Guinea, Fowl",
+   "page": "231",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n298",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mountain Cock or Grouse",
+   "page": "232",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n299",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Peacock, roast (A Suabian receipt)",
+   "page": "231",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n298",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Peacock Pie, Suabian",
+   "page": "232",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n299",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Ptarmigan or White Grouse",
+   "page": "231",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n298",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Snail Salad",
+   "page": "231",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n298",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Snail Soup",
+   "page": "230",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n297",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Snails in Sauce",
+   "page": "230",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n297",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Turtle Soup",
+   "page": "228",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n295",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Turtle Soup, canned",
+   "page": "229",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n296",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Division H. - Hot Puddings, XXI",
+   "page": "243",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n310",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cabinet Pudding",
+   "page": "239",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n306",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chocolate Pudding",
+   "page": "243",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n310",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Common Pudding with Yeast",
+   "page": "245",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n312",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Crab Pudding",
+   "page": "248",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n315",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cream Pudding with Macaroons",
+   "page": "241",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n308",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Currant Pudding",
+   "page": "240",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n307",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "English Apple Pudding",
+   "page": "237",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n304",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "English Chestnut Pudding",
+   "page": "238",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n305",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "English Plum Pudding",
+   "page": "236",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n303",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "English Warm Meat Pudding",
+   "page": "247",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n314",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Farina Pudding",
+   "page": "239",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n306",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Figaro Pudding",
+   "page": "240",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n307",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fish Pudding",
+   "page": "248",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n315",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Flour and Bread Pudding with Fruit, particularly Pears or fresh Plums",
+   "page": "245",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n312",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fruit Pudding",
+   "page": "246",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n313",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Indian Pudding",
+   "page": "247",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n314",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Liver Pudding",
+   "page": "249",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n316",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Neckar Pudding",
+   "page": "247",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n314",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Potato Pudding",
+   "page": "244",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n311",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Potato Pudding with Yeast",
+   "page": "245",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n312",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Portuguese Pudding",
+   "page": "241",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n308",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Prince Regent Pudding",
+   "page": "245",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n312",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pudding made of remnants of boiled Cod Fish",
+   "page": "249",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n316",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Rice Puddings with Macaroons",
+   "page": "238",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n305",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Roll Pudding",
+   "page": "246",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n313",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Rolled English Pudding",
+   "page": "237",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n304",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Suabian Pudding",
+   "page": "242",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n309",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Suet Pudding",
+   "page": "238",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n305",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Uncle Tom's Pudding",
+   "page": "243",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n310",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Vermicelli Pudding",
+   "page": "242",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n309",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Warm Vanilla Pudding",
+   "page": "243",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n310",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "White Sago Pudding",
+   "page": "241",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n308",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cheese",
+   "page": "260",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n327",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Marmalade Souffle",
+   "page": "235",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n302",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Meat Souffle",
+   "page": "258",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n325",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Noodle Souffle",
+   "page": "259",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n326",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Omelette, plain y",
+   "page": "254",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n321",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Omelette Souffle",
+   "page": "254",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n321",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pineapple Souffle for invalids",
+   "page": "259",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n326",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Plain Souffle of Apples, or of any kind of Fruit",
+   "page": "256",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n323",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Potato Souffle",
+   "page": "253",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n320",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Punch Souffle , Leipzig",
+   "page": "257",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n324",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Noodle Dough",
+   "page": "263",
+   "category": "Basics",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n330",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Rice and Apple Souffls",
+   "page": "257",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n324",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Rice Noodles",
+   "page": "262",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n329",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Rice Souffle",
+   "page": "251",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n318",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Rice Souffle with Pineapple",
+   "page": "252",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n319",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sago Souffle",
+   "page": "251",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n318",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Souffle of Bitter Macaroons",
+   "page": "250",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n317",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Parmesan Cheese",
+   "page": "260",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n327",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Souffle of Rice, Sweetbreads and Crab Butter",
+   "page": "258",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n325",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Souffle with Sour Cherries",
+   "page": "255",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n322",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sour Cream Souffle",
+   "page": "255",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n322",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sponge Souffle",
+   "page": "254",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n321",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Strawberry Souffle",
+   "page": "259",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n326",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Vienna (Wiener) Apple Souffle",
+   "page": "255",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n322",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Anise and Caraway Omelettes",
+   "page": "269",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n336",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Apple Cakes, small",
+   "page": "268",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n335",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Apple Pancake",
+   "page": "268",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n335",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Baked Noodles",
+   "page": "270",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n337",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Bouillon Omelette",
+   "page": "266",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n333",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Buckwheat Cakes",
+   "page": "271",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n338",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cherry Omelettes",
+   "page": "269",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n336",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Common Omelettes",
+   "page": "267",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n334",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Common Wheat Cakes",
+   "page": "271",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n338",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cornstarch Omelettes",
+   "page": "267",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n334",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cream Omelette",
+   "page": "266",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n333",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Currant Cake",
+   "page": "268",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n335",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Four-colored Omelettes",
+   "page": "267",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n334",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "French Toast",
+   "page": "271",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n338",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "German Wafers (Plinsen",
+   "page": "264",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n331",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Huckleberry Omelettes",
+   "page": "269",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n336",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Karthusian Dumplings",
+   "page": "272",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n339",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Macaroon Omelettes",
+   "page": "269",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n336",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Noodle Omelette",
+   "page": "270",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n337",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Omelette of Wheat Bread",
+   "page": "266",
+   "category": "Breads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n333",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Omelettes, plain",
+   "page": "267",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n334",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Omelette with Rice",
+   "page": "270",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n337",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Meat",
+   "page": "266",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n333",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pancakes, plain",
+   "page": "267",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n334",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Potato Omelettes",
+   "page": "270",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n337",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pork Omelettes",
+   "page": "266",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n333",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Prune Omelettes",
+   "page": "268",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n335",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Rice Dumplings",
+   "page": "272",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n339",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Roll or Bread Omelettes",
+   "page": "269",
+   "category": "Breads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n336",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sour Cream Wafers",
+   "page": "264",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n331",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Spanish Bread Pudding",
+   "page": "272",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n339",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Wafers filled with various remnants (cooked Fruit or Veal)",
+   "page": "264",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n331",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Wheat Cakes, small",
+   "page": "270",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n337",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Eggs, boiling",
+   "page": "273",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n340",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Egg Cheese",
+   "page": "376",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n445",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Rice, Arabian",
+   "page": "278",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n345",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Rice for Ragout",
+   "page": "278",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n345",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Rice with Apples",
+   "page": "278",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n345",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Rice with Claret for invalids",
+   "page": "278",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n345",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Rice in a bag",
+   "page": "219",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n286",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Rice with Tomatoes",
+   "page": "280",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n347",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Rice Pudding",
+   "page": "277",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n344",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Rice, Turin",
+   "page": "279",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n346",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Rice with Raisins",
+   "page": "278",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n345",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sago Compot",
+   "page": "279",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n346",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Apple Jelly",
+   "page": "295",
+   "category": "Preserves & Pickles",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n362",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Baked Ice",
+   "page": "297",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n364",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Beef Royal",
+   "page": "288",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n355",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Calves' Head Jelly",
+   "page": "289",
+   "category": "Preserves & Pickles",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n356",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Coloring Jellies",
+   "page": "283",
+   "category": "Preserves & Pickles",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n350",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Bucks *a Jelly",
+   "page": "290",
+   "category": "Preserves & Pickles",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n357",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Eel in Jelly",
+   "page": "286",
+   "category": "Preserves & Pickles",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n353",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Filled Capon in Jelly, with sauce",
+   "page": "289",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n356",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Filled Goose in Jelly",
+   "page": "290",
+   "category": "Preserves & Pickles",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n357",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "French Liquor Jelly",
+   "page": "295",
+   "category": "Preserves & Pickles",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n362",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Frozen Westphalian Pudding",
+   "page": "297",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n364",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fruit Ice Pudding",
+   "page": "297",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n364",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fruit Jelly with Cherry-, Raspberry- or Currant Syrup, and Gelatine",
+   "page": "298",
+   "category": "Preserves & Pickles",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n365",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Jelly in Moulds",
+   "page": "283",
+   "category": "Preserves & Pickles",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n350",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Lemon Jelly",
+   "page": "294",
+   "category": "Preserves & Pickles",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n361",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Nesselrode Ice Pudding",
+   "page": "298",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n365",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Orange Ice",
+   "page": "297",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n364",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pork Ribs in Jelly",
+   "page": "289",
+   "category": "Preserves & Pickles",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n356",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Punch Ice",
+   "page": "297",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n364",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Punch Jelly",
+   "page": "295",
+   "category": "Preserves & Pickles",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n362",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Quince Ice",
+   "page": "296",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n363",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Raspberry Ice",
+   "page": "297",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n364",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Ribbon Jelly",
+   "page": "294",
+   "category": "Preserves & Pickles",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n361",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Salmon in Jelly",
+   "page": "285",
+   "category": "Preserves & Pickles",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n352",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sour Jelly for Fish and Meat",
+   "page": "285",
+   "category": "Preserves & Pickles",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n352",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fish and Meat",
+   "page": "284",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n351",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Spring Chicken in Jelly",
+   "page": "290",
+   "category": "Preserves & Pickles",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n357",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Turkey in Jelly",
+   "page": "290",
+   "category": "Preserves & Pickles",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n357",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Vanilla Ice",
+   "page": "296",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n363",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Veal in Jelly",
+   "page": "288",
+   "category": "Preserves & Pickles",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n355",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Wine Jelly",
+   "page": "293",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n360",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Wine Jelly of Gelatine in Jelly dishes",
+   "page": "292",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n359",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Wine Jelly made with Gelatine",
+   "page": "292",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n359",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Wine Jelly with Eggs, or, \"Egg in the Nest",
+   "page": "293",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n360",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chocolate Pudding without -Cold Sweet Dishes",
+   "page": "308",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n375",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sago Pudding",
+   "page": "301",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n368",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Snowball with Vanilla Sauce",
+   "page": "311",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n378",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Spanish Rice",
+   "page": "304",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n371",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Division O. - Dumplings. Almond Dumplings Apple Dumplings B",
+   "page": "320",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n387",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Baked Dumpling with Fruit",
+   "page": "322",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n389",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Baked Middlings Dumplings",
+   "page": "323",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n390",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Beef Dumplings",
+   "page": "317",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n384",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Brain Dumplings",
+   "page": "318",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n385",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Bread Dumplings",
+   "page": "319",
+   "category": "Breads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n386",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Bread Dumplings with Fruit",
+   "page": "324",
+   "category": "Breads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n391",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Browned Dumplings with . baked Fruit",
+   "page": "325",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n392",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cherry Dumplings",
+   "page": "323",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n390",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Common Soup Dumplings made of Flour",
+   "page": "320",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n387",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cracker Dumplings",
+   "page": "319",
+   "category": "Breads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n386",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Dumplings for Brown Soups",
+   "page": "317",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n384",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Egg Dumplings",
+   "page": "319",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n386",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Egyptian Dumplings",
+   "page": "321",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n388",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "English Dumplings",
+   "page": "324",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n391",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fish Dumplings",
+   "page": "317",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n384",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Giant Dumplings",
+   "page": "318",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n385",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Groat Dumplings",
+   "page": "319",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n386",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Hamburg Dumplings",
+   "page": "324",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n391",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Kraut",
+   "page": "326",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n393",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Henneberg Dumplings",
+   "page": "322",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n389",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pint Dumplings",
+   "page": "325",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n392",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Poppy Seed Dumplings",
+   "page": "324",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n391",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Potato Dumplings",
+   "page": "820",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862",
+    "pageStatus": "unverified"
+   }
+  },
+  {
+   "name": "Puff Noodles ( Dampfnudeln)",
+   "page": "322",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n389",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Apple Marmalade",
+   "page": "333",
+   "category": "Preserves & Pickles",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n400",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Apple Salad",
+   "page": "334",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n401",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Apple Sauce",
+   "page": "334",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n401",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Apples with Anise Seed",
+   "page": "334",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n401",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Apples with Rice",
+   "page": "335",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n402",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Baked Compot of Apples Blackberry Compot",
+   "page": "333",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n400",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Carrot Compot with a Roast",
+   "page": "835",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862",
+    "pageStatus": "unverified"
+   }
+  },
+  {
+   "name": "Fig Compot for invalids",
+   "page": "337",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n406",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Green Gooseberry Compot",
+   "page": "328",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n395",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Half-frozen Peaches",
+   "page": "330",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n397",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Huckleberry Compot",
+   "page": "330",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n397",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Melon Compot'",
+   "page": "331",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n398",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Peaches for Dessert",
+   "page": "336",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862",
+    "pageStatus": "unverified"
+   }
+  },
+  {
+   "name": "Peach and Apricot Compot",
+   "page": "330",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n397",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pear Compot",
+   "page": "331",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n398",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pears Cooked Brown",
+   "page": "331",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n398",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pears with Plums",
+   "page": "331",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n398",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pineapple Compot for tlie sick",
+   "page": "336",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862",
+    "pageStatus": "unverified"
+   }
+  },
+  {
+   "name": "Plum Compot",
+   "page": "332",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n399",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Plum Marmalade",
+   "page": "333",
+   "category": "Preserves & Pickles",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n400",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Prune Marmalade",
+   "page": "337",
+   "category": "Preserves & Pickles",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n406",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "B. Raspberry Compot . Rhubarb Compot S Sliced Apple Compot W",
+   "page": "330",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n397",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Wild Strawberries for Dessert",
+   "page": "329",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n396",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Anchovy Salad",
+   "page": "342",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n411",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Asparagus Salad",
+   "page": "347",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n416",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Bean Salad",
+   "page": "348",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n417",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cauliflower Salad",
+   "page": "347",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n416",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Celery Salad",
+   "page": "349",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n418",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chicken Salad",
+   "page": "339",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n408",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cucumber Salad",
+   "page": "347",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n416",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Endive Salad",
+   "page": "349",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n418",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Potato Salad",
+   "page": "345",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n414",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Potato Salad with Bacon",
+   "page": "346",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n415",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pike Salad",
+   "page": "341",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n410",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Polish Salad",
+   "page": "344",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n413",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Turkey Salad",
+   "page": "348",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n417",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Water Cresses",
+   "page": "346",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n415",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "White Cabbage",
+   "page": "348",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n417",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Division R. - Sauces. A A la Diable Sauce. Served with all kinds of cold meats",
+   "page": "362",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n431",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Almond Sauce",
+   "page": "367",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n436",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Bacon Sauce for Salads",
+   "page": "361",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n430",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Bearnease Sauce",
+   "page": "852",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862",
+    "pageStatus": "unverified"
+   }
+  },
+  {
+   "name": "Bechamel Sauce",
+   "page": "353",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n422",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Boiled Horse - radish Sauce for Soup Meat",
+   "page": "357",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n426",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Boiled Mayonnaise",
+   "page": "363",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n432",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pagje Brown Onion Sauce with Bacon for Potatoes",
+   "page": "361",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n430",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Butter for Fish and Potatoes",
+   "page": "356",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n425",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Water Fish",
+   "page": "356",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n425",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Celery Sauce for Soup Meat",
+   "page": "358",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n427",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Meats",
+   "page": "358",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n427",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chives Sauce for cold or warm boiled Beef",
+   "page": "364",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n433",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chocolate Sauce",
+   "page": "367",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n436",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Claret Sauce",
+   "page": "366",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n435",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fish Sauce",
+   "page": "357",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n426",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "different Meat Salads",
+   "page": "361",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n430",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mustard Sauce for Fish",
+   "page": "357",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n426",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Potatoes",
+   "page": "357",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n426",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mustard Sauce for Soup Meat, etc",
+   "page": "357",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n426",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Olive Sauce",
+   "page": "355",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n424",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Oyster Sauce",
+   "page": "353",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n422",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Parisian Sauce for warm Puddings",
+   "page": "363",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n432",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pike Sauce with Sour Cream",
+   "page": "353",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n422",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Poor Man's Sauce",
+   "page": "361",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n430",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Prepared Mustard for various kinds of Meats",
+   "page": "364",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n433",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pure Sago Sauce",
+   "page": "367",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n436",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Raisin Sauce",
+   "page": "358",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n427",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Raspberry Sauce",
+   "page": "368",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n437",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Raw Horse-radish Sauce",
+   "page": "364",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n433",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Remoulade Sauce",
+   "page": "362",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n431",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Recamier Sauce for Fish, particularly Turbot",
+   "page": "354",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n423",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Red Cream Sauce",
+   "page": "367",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n436",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Robert Sauce",
+   "page": "352",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n421",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Salad Sauce",
+   "page": "365",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n434",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sauce for Asparagus, Cauliflower, etc",
+   "page": "360",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n429",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sauce for Cauliflower",
+   "page": "359",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n428",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pork in Jelly",
+   "page": "363",
+   "category": "Preserves & Pickles",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n432",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sauce for Farina Pudding",
+   "page": "368",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n437",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chicken",
+   "page": "359",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n428",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sauce made of Fresh Currants",
+   "page": "367",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n436",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sauce made-of Onions pickled in Tarragon and Dill, for stewing (Soup Meat or to pour over Potatoes",
+   "page": "360",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n429",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Meat",
+   "page": "364",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n433",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sauce for Meat Jelly",
+   "page": "365",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n434",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sauce with Boiled Fish, Salmon, etc",
+   "page": "354",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n423",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Saxon Fish Sauce",
+   "page": "356",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n425",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Soles and Turbot",
+   "page": "356",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n425",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Meat",
+   "page": "357",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n426",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Beans, also for Potatoes",
+   "page": "360",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n429",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sour Mustard",
+   "page": "364",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n433",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Spanish Sauce (Espagnole)",
+   "page": "355",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n424",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Strawberry Sauce",
+   "page": "368",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n437",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Syrup Sauce for Salad or Meat",
+   "page": "361",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n430",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Truffle Sauce",
+   "page": "852",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862",
+    "pageStatus": "unverified"
+   }
+  },
+  {
+   "name": "Vegetable Butter",
+   "page": "365",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n434",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "White Anchovy Sauce",
+   "page": "354",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n423",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "White Cream Sauce",
+   "page": "366",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n435",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "White Cream Sauce with Bum",
+   "page": "366",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n435",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "White Sauce",
+   "page": "352",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n421",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Tongue or Boiled Beef",
+   "page": "358",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n427",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "White Wine Sauce",
+   "page": "365",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n434",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Yellow Caper Sauce for Pike and Salmon",
+   "page": "853",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862",
+    "pageStatus": "unverified"
+   }
+  },
+  {
+   "name": "Almond Cake",
+   "page": "378",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n447",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Almond Cake with Wheatbread",
+   "page": "378",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n447",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Apple Cake",
+   "page": "386",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n455",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Icing",
+   "page": "396",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n465",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Carrot Cake",
+   "page": "380",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n449",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cherry Pie",
+   "page": "384",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n453",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chocolate Cake",
+   "page": "379",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n448",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chocolate Biscuits",
+   "page": "391",
+   "category": "Breads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n460",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cream Cake",
+   "page": "381",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n450",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cup Cake",
+   "page": "392",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n461",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Currant Cake",
+   "page": "392",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n461",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Date Cake",
+   "page": "388",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n457",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Dried Prune Cake",
+   "page": "388",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n457",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "English Crust for Tarts, Cookies, etc",
+   "page": "873",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862",
+    "pageStatus": "unverified"
+   }
+  },
+  {
+   "name": "English Plum Cake",
+   "page": "889",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862",
+    "pageStatus": "unverified"
+   }
+  },
+  {
+   "name": "Hasty Biscuits",
+   "page": "391",
+   "category": "Breads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n460",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Milan Apple Cake",
+   "page": "396",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n465",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Norway Gooseberry Pie",
+   "page": "383",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n452",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Orange Cake",
+   "page": "378",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n447",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Parisian Cake",
+   "page": "399",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n468",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Plain Apple Cake",
+   "page": "387",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n456",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Plain Cake with Fruit Jelly",
+   "page": "382",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n451",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Plain Potato Cake",
+   "page": "400",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n469",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Plum Cake",
+   "page": "387",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n456",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Potato Cake",
+   "page": "379",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n448",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Portuguese»Cofree Cake",
+   "page": "394",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n463",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Puff Paste with Lemon Cream",
+   "page": "395",
+   "category": "Basics",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n464",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Punch Layer Cake",
+   "page": "377",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n446",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Ribbon Cake",
+   "page": "389",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n458",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Rice Cake",
+   "page": "393",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n462",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Rice and Lemon Cake",
+   "page": "385",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n454",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Roll Cake",
+   "page": "400",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n469",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Saarbruck Puff Paste",
+   "page": "373",
+   "category": "Basics",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n442",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sand Cake",
+   "page": "390",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n459",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sextons Cake",
+   "page": "394",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n463",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Silesiari Cheese Cake",
+   "page": "398",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n467",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Spice Cake",
+   "page": "381",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n450",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Suabian Cake",
+   "page": "382",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n451",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sweet Cake (Rodon Kuchen)",
+   "page": "399",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n468",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Swiss Cream Cake",
+   "page": "381",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n450",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Vienna Cake",
+   "page": "377",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n446",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sugar Cake",
+   "page": "396",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n465",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Westphalian Cake",
+   "page": "897",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862",
+    "pageStatus": "unverified"
+   }
+  },
+  {
+   "name": "Wellington Cake",
+   "page": "382",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n451",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Almond Cakes",
+   "page": "404",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n473",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Almond Drop Cakes s",
+   "page": "403",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n472",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Anise Cake",
+   "page": "407",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n476",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Ap'ple Cake",
+   "page": "401",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n470",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Apple Slices baked in Butter or Lard",
+   "page": "414",
+   "category": "Preserves & Pickles",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n483",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Baked Wheat Loaf",
+   "page": "413",
+   "category": "Breads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n482",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Basil Honey Jumbles",
+   "page": "407",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n476",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Berlin Pancakes",
+   "page": "411",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n480",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Brunswick Cakes (Prillken)",
+   "page": "412",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n481",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Butter Kings",
+   "page": "412",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n481",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cherry Bread",
+   "page": "414",
+   "category": "Breads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n483",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Coffee Pretzels",
+   "page": "408",
+   "category": "Drinks",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n477",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cinnamon Rolls or Waflles",
+   "page": "409",
+   "category": "Breads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n478",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Doughnuts",
+   "page": "412",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n481",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Filled Bread",
+   "page": "413",
+   "category": "Breads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n482",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fruit Tarts",
+   "page": "401",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n470",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "German Waffles",
+   "page": "410",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n479",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Hohenzollern Cakes",
+   "page": "404",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n473",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Honey Cakes",
+   "page": "408",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n477",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Kisses",
+   "page": "405",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n474",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Marshall Tarts",
+   "page": "401",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n470",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Milan Tarts",
+   "page": "402",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n471",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "New Years Cake",
+   "page": "409",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n478",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Nice Almond Cakes",
+   "page": "409",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n478",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Nice Anise Cake",
+   "page": "402",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n471",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Silesian Farina Cakes",
+   "page": "413",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n482",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Small Cracners (Zwieback)",
+   "page": "408",
+   "category": "Breads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n477",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Small Cream Cakes",
+   "page": "408",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n477",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Snow Balls",
+   "page": "412",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n481",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Spiced Drop Cakes",
+   "page": "403",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n472",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Spiced Macaroons",
+   "page": "406",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n475",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sugar Drop Cakes",
+   "page": "403",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n472",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sweet Macaroons",
+   "page": "405",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n474",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Swiss Chocolate Bread",
+   "page": "402",
+   "category": "Breads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n471",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Swiss Filled Cakes",
+   "page": "401",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n470",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Swiss Rolls",
+   "page": "413",
+   "category": "Breads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n482",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Yeast Cake",
+   "page": "401",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n470",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pears, pickled",
+   "page": "429",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n498",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pineapple Peel Juice",
+   "page": "423",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n492",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mixed Fruits in Brandy",
+   "page": "424",
+   "category": "Preserves & Pickles",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n493",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Raspberry Jelly",
+   "page": "421",
+   "category": "Preserves & Pickles",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n490",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Raspberry Marmalade",
+   "page": "421",
+   "category": "Preserves & Pickles",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n490",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Raspberry Preserves",
+   "page": "421",
+   "category": "Preserves & Pickles",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n490",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Raspberry Vinegar",
+   "page": "421",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n490",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Rules to be observed in preserving Fruits",
+   "page": "416",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n485",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Strawberry Juice for Invalids",
+   "page": "420",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n489",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Strawberry Marmalade",
+   "page": "420",
+   "category": "Preserves & Pickles",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n489",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Currant Juice",
+   "page": "419",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n488",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sweet Black Cherries in Vinegar and Sugar forCompot or Cherry Cake",
+   "page": "427",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n496",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cucumbers, Russian",
+   "page": "432",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n501",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cucumber Salad, preserved",
+   "page": "433",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n502",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Eschalots and Onions, pickled",
+   "page": "430",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n499",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Green Peas, dried .'",
+   "page": "435",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n504",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Green Peas, salted",
+   "page": "435",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n504",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mushrooms, pickled",
+   "page": "431",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n500",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mushrooms, preserved",
+   "page": "430",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n499",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mustard Pickles",
+   "page": "433",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n502",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pickles, Russian boiled",
+   "page": "432",
+   "category": "Preserves & Pickles",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n501",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Red Cabbage, pickled",
+   "page": "429",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n498",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Salad Beans in Brine",
+   "page": "437",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n506",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Salad Beans, drieJ",
+   "page": "438",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n507",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Salad Beans in Vinegar",
+   "page": "437",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n506",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Small Salad Beans, salted",
+   "page": "436",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n505",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Small Vinegar Pickles",
+   "page": "431",
+   "category": "Preserves & Pickles",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n500",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "String Beans salted after parboiling",
+   "page": "436",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n505",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "String Beans, salted",
+   "page": "436",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n505",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "White Cabbage",
+   "page": "437",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n506",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Bread Water for invalids",
+   "page": "450",
+   "category": "Breads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n519",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Lemonade for the sick",
+   "page": "449",
+   "category": "Drinks",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n518",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Nectar Sherbet with Champagne",
+   "page": "449",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n518",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Oatmeal Gruel for the sick",
+   "page": "450",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n519",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Orange cup",
+   "page": "446",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n515",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Orange Sherbet",
+   "page": "449",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n518",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Bremen Pinkel Sausage",
+   "page": "454",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n523",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pork Rolls in Jellv",
+   "page": "455",
+   "category": "Breads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n524",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Bolls, Sour Beef",
+   "page": "455",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n524",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Smoked Breast of Goose",
+   "page": "458",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n527",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Spare Ribs, jellied",
+   "page": "457",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n526",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Currant Vinegar",
+   "page": "462",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n531",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Currant Wine",
+   "page": "460",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n529",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fruit Vinegar a Gooseberry Wine",
+   "page": "461",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n530",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Huckleberry Wine S Sugar Vinegar W Wine, Apple Cider",
+   "page": "461",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n530",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Canned Tomato Soup",
+   "page": "465",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n534",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chicken Soup",
+   "page": "464",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n533",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Clam Chowder",
+   "page": "463",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n532",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Corn Chowder",
+   "page": "464",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n533",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fish Soup",
+   "page": "464",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n533",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Lobster Chowder",
+   "page": "463",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n532",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Milk Soup",
+   "page": "465",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n534",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mixed Vegetable Soup",
+   "page": "465",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n534",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mock Turtle Soup . '",
+   "page": "464",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n533",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Oyster Soup",
+   "page": "463",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n532",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Beans, baked",
+   "page": "467",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n536",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cauliflower with white Sauce",
+   "page": "466",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n535",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Potato Croquettes",
+   "page": "466",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n535",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Beef Liver, fried",
+   "page": "474",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n543",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Beefsteak Rolls",
+   "page": "473",
+   "category": "Breads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n542",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Kidneys, stewed",
+   "page": "471",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n540",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Potted Ham",
+   "page": "475",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n544",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Spare Ribs, roasted",
+   "page": "476",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n545",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Yorkshire Pudding",
+   "page": "474",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n543",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Codfish Balls",
+   "page": "478",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n547",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Codfish, baked",
+   "page": "478",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n547",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Codfish, stewed",
+   "page": "478",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n547",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fish, baked",
+   "page": "479",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n548",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fish, potted",
+   "page": "478",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n547",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Halibut, baked",
+   "page": "477",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n546",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "White Fish, baked",
+   "page": "477",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n546",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Clam Fritters",
+   "page": "481",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n550",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Crabs, deviled",
+   "page": "480",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n549",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Crab Pie",
+   "page": "480",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n549",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Lobster Croquettes",
+   "page": "480",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n549",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Oysters, Boston fried",
+   "page": "481",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n550",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chicken Croquettes",
+   "page": "483",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n552",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chicken Fatties",
+   "page": "488",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n557",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chicken Pot-Pie",
+   "page": "483",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n552",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chicken Fricassee",
+   "page": "482",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n551",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Dressing or stuffing for Fowls",
+   "page": "481",
+   "category": "Basics",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n550",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Turkey, boned",
+   "page": "482",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n551",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Turkey Scallop",
+   "page": "482",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n551",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Corn Dodgers",
+   "page": "487",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n556",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Graham Bread",
+   "page": "485",
+   "category": "Breads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n554",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Graham Gems",
+   "page": "488",
+   "category": "Breads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n557",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Graham Muffins",
+   "page": "488",
+   "category": "Breads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n557",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Toast,'buttered",
+   "page": "485",
+   "category": "Breads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n554",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "White Hominy or Grits",
+   "page": "488",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n557",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cakes, Cookies, etc. Apple and Lemon Filling Angel Cake",
+   "page": "498",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n567",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Black Cake",
+   "page": "492",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n561",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Delicate Cake",
+   "page": "491",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n560",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Drop Cakes",
+   "page": "495",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n564",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Drop Cookies",
+   "page": "494",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n563",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cookies",
+   "page": "497",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n566",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fig Cake",
+   "page": "491",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n560",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fig Filling",
+   "page": "491",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n560",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Frosting, boiled",
+   "page": "497",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n566",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fruit Ginger Cakes",
+   "page": "496",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n565",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fruit Pound Cake",
+   "page": "489",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n558",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Ginger Snaps",
+   "page": "497",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n566",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Gold Cake",
+   "page": "491",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n560",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Hickory-nut Cake",
+   "page": "490",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n559",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Jelly for filling Jumbles",
+   "page": "492",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n561",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Lady Fingers",
+   "page": "495",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n564",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Apples baked whole",
+   "page": "501",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n570",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Apple Dumplings",
+   "page": "501",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n570",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Apple Dumplings, boiled",
+   "page": "500",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n569",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Apple Pudding, baked",
+   "page": "501",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n570",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cornmeal Pudding, boiled",
+   "page": "500",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n569",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cranberry Puffs",
+   "page": "503",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n572",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fig Pudding",
+   "page": "503",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n572",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fruit Dumplings",
+   "page": "501",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n570",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Lemon Pie",
+   "page": "501",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n570",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mincemeat Pie",
+   "page": "499",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n568",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Peach Cobbler",
+   "page": "503",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n572",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Apple Jelly",
+   "page": "506",
+   "category": "Preserves & Pickles",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n575",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cauliflower, pickled",
+   "page": "512",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n581",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Currant Jelly",
+   "page": "504",
+   "category": "Preserves & Pickles",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n573",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Ginger Pears",
+   "page": "509",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n578",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Grape Jelly",
+   "page": "511",
+   "category": "Preserves & Pickles",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n580",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Grape Preserves",
+   "page": "509",
+   "category": "Preserves & Pickles",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n578",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Grape Sherbet",
+   "page": "510",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n579",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Grapes, spiced",
+   "page": "510",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n579",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Green Gages, canned",
+   "page": "510",
+   "category": "Preserves & Pickles",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n579",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pieplant Butter",
+   "page": "505",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n574",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pineapple, preserved",
+   "page": "507",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n576",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pumpkin, canned",
+   "page": "505",
+   "category": "Preserves & Pickles",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n574",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Quince and Citron Preserves",
+   "page": "505",
+   "category": "Preserves & Pickles",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n574",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Quince Jelly",
+   "page": "504",
+   "category": "Preserves & Pickles",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n573",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Tomato, Catsup",
+   "page": "504",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n573",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Tomatoes, preserved",
+   "page": "508",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n577",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Walnutsor Butternuts, pickled",
+   "page": "511",
+   "category": "Preserves & Pickles",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n580",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Watermelon Preserves",
+   "page": "505",
+   "category": "Preserves & Pickles",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n574",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chocolate Caramels",
+   "page": "515",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n584",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Lemon Taffy",
+   "page": "515",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n584",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Maple Cream",
+   "page": "515",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n584",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Molasses Candy",
+   "page": "514",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/cu31924000722862/page/n583",
+    "pageStatus": "verified"
+   }
+  }
+ ]
+}
