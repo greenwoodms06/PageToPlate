@@ -18,20 +18,14 @@ import { Pill } from '../../components/Pill';
 import { RecipeRow, RowList } from '../../components/RecipeRow';
 import { SegmentToggle } from '../../components/SegmentToggle';
 import { spineColor } from '../../components/spine';
+import { DashPanel, DropBtn, SelChip, cycleSel, type SelEntry } from '../../components/FilterControls';
 import { RecipeCardSheet } from '../recipe/RecipeCardSheet';
 
 // Dropdown selections keep TAP ORDER, not a Set: the Nth *included* book gets
 // spine color N (canvas 2d shows session-order colors on selected book chips
-// and their recipes' stripes; unselected/not'd stay neutral).
-type SelEntry = { id: string; neg: boolean };
-
-/** include → not → off (same cycle as pills, applied to dropdown chips). */
-const cycleSel = (sel: SelEntry[], id: string): SelEntry[] => {
-  const cur = sel.find((e) => e.id === id);
-  if (!cur) return [...sel, { id, neg: false }];
-  if (!cur.neg) return sel.map((e) => (e.id === id ? { ...e, neg: true } : e));
-  return sel.filter((e) => e.id !== id);
-};
+// and their recipes' stripes; unselected/not'd stay neutral). The include→not
+// →off chip cycle (SelChip / cycleSel) is shared with the Books tab —
+// components/FilterControls.tsx.
 
 // Simple windowing (plan Task 21 Step 2: "virtualize with simple windowing
 // only if it visibly janks"). Measured first, as instructed: a flat render of
@@ -484,105 +478,3 @@ function GhostInput({ onAdd }: { onAdd: (text: string) => void }) {
   );
 }
 
-function DropBtn({ label, active, open, onClick }: { label: string; active: boolean; open: boolean; onClick: () => void }) {
-  return (
-    <button
-      onClick={onClick}
-      aria-expanded={open}
-      style={{
-        // 1 0 auto + nowrap: chips grow to share the row but never squash
-        // their labels — overflow makes the row scroll (see row note above).
-        flex: '1 0 auto',
-        whiteSpace: 'nowrap',
-        minHeight: 40,
-        padding: '0 12px',
-        border: `1.5px solid ${active ? 'var(--accent)' : 'var(--line)'}`,
-        background: active ? 'var(--accent-tint)' : 'var(--card)',
-        borderRadius: 'var(--r-pill)',
-        fontSize: 12.5,
-        fontWeight: active ? 700 : 600,
-        color: active ? 'var(--accent)' : 'var(--ink-mid)',
-      }}
-    >
-      {label} ▾
-    </button>
-  );
-}
-
-function DashPanel({ children }: { children: React.ReactNode }) {
-  return (
-    <div
-      style={{
-        background: 'var(--card)',
-        border: '1.5px dashed var(--dash)',
-        borderRadius: 'var(--r-card)',
-        padding: 9,
-        display: 'flex',
-        flexWrap: 'wrap',
-        gap: 7,
-        marginBottom: 10,
-      }}
-    >
-      {children}
-    </div>
-  );
-}
-
-/** Dropdown chip: off (neutral) / inc (colored border+tint, ✓) / not (danger, "not " prefix). */
-function SelChip({
-  label,
-  state,
-  swatch,
-  onClick,
-}: {
-  label: string;
-  state: 'off' | 'inc' | 'not';
-  /** 11×16 spine swatch color; omitted for category chips. */
-  swatch?: string;
-  onClick: () => void;
-}) {
-  const color = state === 'inc' ? (swatch && swatch !== 'var(--neutral-spine)' ? swatch : 'var(--accent)') : 'var(--danger)';
-  const styles =
-    state === 'off'
-      ? { border: '1.5px solid var(--line)', background: 'var(--card)', color: 'var(--ink-soft)', fontWeight: 600 }
-      : state === 'inc'
-        ? {
-            border: `1.5px solid ${color}`,
-            // color-mix ≈ the canvas rgba(spine,.09) tints — CSS vars can't
-            // take an alpha channel directly.
-            background: `color-mix(in srgb, ${color} 10%, transparent)`,
-            color,
-            fontWeight: 700,
-          }
-        : { border: '1.5px solid var(--danger)', background: 'var(--danger-tint)', color: 'var(--danger)', fontWeight: 700 };
-  return (
-    <button
-      onClick={onClick}
-      aria-pressed={state !== 'off'}
-      style={{
-        ...styles,
-        borderRadius: 'var(--r-pill)',
-        padding: '7px 12px',
-        fontSize: 12.5,
-        display: 'inline-flex',
-        alignItems: 'center',
-        gap: 6,
-      }}
-    >
-      {swatch !== undefined && (
-        <i
-          aria-hidden
-          style={{
-            width: 11,
-            height: 16,
-            borderRadius: 2,
-            background: state === 'not' ? 'var(--neutral-spine)' : swatch,
-            boxShadow: 'inset -2px 0 0 rgba(0,0,0,.18)',
-            flex: 'none',
-          }}
-        />
-      )}
-      {state === 'not' ? `not ${label}` : state === 'inc' ? `${label} ✓` : label}
-    </button>
-  );
-}

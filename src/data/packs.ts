@@ -96,6 +96,52 @@ const catalogEntry = async (id: string): Promise<CatalogPack> => {
 };
 
 /**
+ * Round-2 book metadata derived from a catalog entry. `infoUrl` is set only
+ * for LINKED packs — our linked-pack ids ARE archive.org identifiers, so the
+ * book links to its free scan; index-only packs (you own the physical book)
+ * get no infoUrl and fall back to a "Find this book" web search (bookLink.ts).
+ * `cuisines` is always an array (possibly empty) so a populated-but-empty book
+ * is distinguishable from one never touched by backfill.
+ */
+export function catalogMetadata(entry: CatalogPack): Pick<Cookbook, 'author' | 'year' | 'cuisines' | 'infoUrl'> {
+  return {
+    author: entry.author,
+    year: entry.year,
+    cuisines: [...entry.cuisines],
+    infoUrl: entry.type === 'linked' ? `https://archive.org/details/${entry.id}` : undefined,
+  };
+}
+
+/**
+ * Best-effort backfill for pack books installed BEFORE this metadata existed
+ * (the user's already-installed ATK, etc.): for each pack book missing a
+ * field, fill it from the catalog entry. Pure + null-tolerant — an empty
+ * `packs` (offline / absent catalog) yields no patches, so the caller no-ops
+ * and nothing crashes. Only genuinely-absent fields are patched (`=== undefined`),
+ * so a user who cleared cuisines by hand is never overwritten.
+ */
+export function backfillPatches(
+  books: Cookbook[],
+  packs: CatalogPack[],
+): { id: string; patch: Partial<Cookbook> }[] {
+  const byId = new Map(packs.map((p) => [p.id, p]));
+  const out: { id: string; patch: Partial<Cookbook> }[] = [];
+  for (const b of books) {
+    if (!b.packId) continue; // user books keep undefined metadata
+    const entry = byId.get(b.packId);
+    if (!entry) continue; // pack no longer in the catalog — leave it be
+    const meta = catalogMetadata(entry);
+    const patch: Partial<Cookbook> = {};
+    if (b.author === undefined && meta.author !== undefined) patch.author = meta.author;
+    if (b.year === undefined && meta.year !== undefined) patch.year = meta.year;
+    if (b.cuisines === undefined) patch.cuisines = meta.cuisines;
+    if (b.infoUrl === undefined && meta.infoUrl !== undefined) patch.infoUrl = meta.infoUrl;
+    if (Object.keys(patch).length > 0) out.push({ id: b.id, patch });
+  }
+  return out;
+}
+
+/**
  * Install: fetch pack file → create the book (packId/packVersion, pack tags)
  * → import recipes through the same planImport pipeline as CSV import.
  * Returns the new book + recipes; the CALLER runs the re-association hook
@@ -116,6 +162,7 @@ export async function installPack(id: string): Promise<{ book: Cookbook; recipes
     packId: pack.id,
     packVersion: pack.version,
     createdAt: new Date().toISOString(),
+    ...catalogMetadata(entry),
   };
   await store.addBook(book);
   const plan = planImport(pack.recipes, [], store.categories.map((c) => c.name));

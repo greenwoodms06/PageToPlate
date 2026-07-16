@@ -19,6 +19,7 @@ import { SpineChip } from '../../components/SpineChip';
 import { useToast } from '../../components/Toast';
 import { avgDisplay } from '../../logic/rating';
 import { presetBrowseBook } from '../browse/BrowseTab';
+import { BookMetaLine, InfoLink } from './BookMeta';
 import { CsvImportFlow } from './CsvImport';
 
 const sectionLabel: CSSProperties = {
@@ -171,12 +172,21 @@ export function BookDetail({ bookId }: { bookId: string }) {
               </button>
             </div>
           )}
+          {/* Round-2: author · year · cuisines from the catalog (pack books) or
+              set by hand (user books). Omitted entirely when none are known. */}
+          <BookMetaLine book={book} />
           <div style={{ fontSize: 12.5, color: 'var(--ink-soft)' }}>
             {recipes.length.toLocaleString('en-US')} recipes ·{' '}
             {book.packId ? 'content pack' : 'added'} · {monthYear(book.createdAt)}
             {book.archived && ' · disabled'}
           </div>
         </div>
+      </div>
+
+      {/* Smart buy / more info link (round-2 amendment 7): linked packs → "Read
+          free on archive.org"; index-only + user books → "Find this book". */}
+      <div style={{ marginTop: 12 }}>
+        <InfoLink book={book} />
       </div>
 
       <div style={sectionLabel}>Book tags</div>

@@ -224,6 +224,28 @@ export class Store {
     await this.bumpAndNotify();
   }
 
+  /**
+   * Apply catalog-metadata backfill (round-2: author/year/cuisines/infoUrl for
+   * already-installed pack books — see packs.ts backfillPatches). Persists
+   * cheaply but deliberately does NOT bump changesSinceBackup: this is
+   * re-derivable data pulled from the catalog, not a user edit, so it must not
+   * arm the backup reminder (same reasoning as first-run category seeding).
+   * No-ops (and skips notify) when there is nothing to fill.
+   */
+  async applyBackfill(patches: { id: string; patch: Partial<Cookbook> }[]): Promise<void> {
+    const updated: Cookbook[] = [];
+    for (const { id, patch } of patches) {
+      const cur = this.booksMap.get(id);
+      if (!cur) continue;
+      const next = { ...cur, ...patch };
+      this.booksMap.set(id, next);
+      updated.push(next);
+    }
+    if (updated.length === 0) return;
+    await db.bulkPut('books', updated);
+    this.notify();
+  }
+
   // "Delete book, keep cooking history" (spec rule 8): the book and its
   // recipes go, but their MadeEntries become orphans (recipeId: null +
   // {bookTitle, recipeName, page} snapshot — see src/logic/orphans.ts).

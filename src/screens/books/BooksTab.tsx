@@ -2,18 +2,27 @@
 // "Library · N packs" segment chips. Shelf = the user's own books (neutral
 // spines — colors are session-scoped to generation), + Add book / Import CSV
 // entry points. Library = the content-pack catalog (LibrarySection, Task 25).
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Settings } from 'lucide-react';
 import { store, useStore } from '../../data/store';
 import { newId } from '../../data/types';
 import type { Cookbook, Recipe } from '../../data/types';
-import { fetchCatalog, type CatalogPack } from '../../data/packs';
+import { backfillPatches, fetchCatalog, type CatalogPack } from '../../data/packs';
 import { Dialog } from '../../components/Dialog';
 import { SpineChip } from '../../components/SpineChip';
 import { StatusTag } from '../../components/StatusTag';
 import { useToast } from '../../components/Toast';
 import { CsvImportFlow } from './CsvImport';
 import { LibrarySection } from './LibrarySection';
+import {
+  BookFilterBar,
+  applyBookFilters,
+  emptyBookFilter,
+  isFilterActive,
+  type BookFilterState,
+  type FilterableItem,
+} from './BookFilters';
+import { BookMetaLine } from './BookMeta';
 import { checkReassociation, ReassociateDialog, type ReassocPrompt } from './reassociate';
 
 export function BooksTab() {
@@ -23,11 +32,18 @@ export function BooksTab() {
   const [importing, setImporting] = useState(false);
   const [reassoc, setReassoc] = useState<ReassocPrompt | null>(null);
   const [catalog, setCatalog] = useState<{ packs: CatalogPack[]; offline: boolean }>({ packs: [], offline: false });
+  const [shelfFilter, setShelfFilter] = useState<BookFilterState>(emptyBookFilter);
 
   useEffect(() => {
     let live = true;
     void fetchCatalog().then((c) => {
-      if (live) setCatalog(c);
+      if (!live) return;
+      setCatalog(c);
+      // Best-effort backfill of author/year/cuisines/infoUrl onto pack books
+      // installed before this metadata existed (the user's already-installed
+      // ATK, etc.). Tolerates offline/absent catalog: no packs → no patches →
+      // applyBackfill no-ops. Persisted without arming the backup reminder.
+      void store.applyBackfill(backfillPatches(store.books, c.packs));
     });
     return () => {
       live = false;
@@ -35,6 +51,14 @@ export function BooksTab() {
   }, []);
 
   const books = store.books;
+  // Shelf items for the filter bar: installed books carry pack metadata; user
+  // books contribute whatever they have (usually just a title).
+  const shelfItems = useMemo<FilterableItem[]>(
+    () => books.map((b) => ({ id: b.id, title: b.name, author: b.author, year: b.year, cuisines: b.cuisines ?? [] })),
+    [books],
+  );
+  const shelfShownIds = new Set(applyBookFilters(shelfItems, shelfFilter).map((i) => i.id));
+  const shelfBooks = books.filter((b) => shelfShownIds.has(b.id));
 
   // After ANY book add the re-association hook runs (Task 23 Step 3); pack
   // installs land here via LibrarySection's onInstalled.
@@ -81,7 +105,20 @@ export function BooksTab() {
               No books yet — add one below, import a CSV, or install a pack from the Library.
             </p>
           ) : (
-            books.map((b) => <ShelfRow key={b.id} book={b} />)
+            <>
+              {/* Filters work on the shelf too (round-2 amendment 4), so large
+                  collections stay searchable. Hidden for a tiny shelf (≤2) you
+                  can already see at a glance. */}
+              {books.length > 2 && <BookFilterBar items={shelfItems} filter={shelfFilter} onChange={setShelfFilter} />}
+              <div data-testid="shelf-list">
+                {shelfBooks.map((b) => (
+                  <ShelfRow key={b.id} book={b} />
+                ))}
+              </div>
+              {shelfBooks.length === 0 && isFilterActive(shelfFilter) && (
+                <p className="meta" style={{ margin: '4px 0 14px' }}>No books match — clear a filter or two.</p>
+              )}
+            </>
           )}
 
           <div style={{ display: 'flex', gap: 8, marginTop: 12 }}>
@@ -186,6 +223,7 @@ function ShelfRow({ book }: { book: Cookbook }) {
       <SpineChip width={16} height={56} />
       <span style={{ flex: 1, minWidth: 0 }}>
         <b style={{ fontWeight: 600 }}>{book.name}</b>
+        <BookMetaLine book={book} />
         <span style={{ display: 'block', fontSize: 12, color: 'var(--ink-soft)' }}>
           {recipeCount.toLocaleString('en-US')} recipe{recipeCount === 1 ? '' : 's'} · {madeCount} made
         </span>

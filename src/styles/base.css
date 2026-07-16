@@ -120,3 +120,49 @@ a {
 .flash-plan {
   animation: flash-plan-outline 1.2s ease-out;
 }
+
+/* Dual-handle year-range slider (round-2 amendment 6, BookFilters.tsx). Two
+   native range inputs are overlaid on one track: the inputs themselves are
+   transparent and pass pointer events THROUGH to whichever thumb is under the
+   finger (pointer-events on the thumb only), so both handles stay draggable
+   even where they overlap. Thumb + accent styling matches the Card Catalog. */
+.year-range-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 32px;
+  margin: 0;
+  background: none;
+  pointer-events: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.year-range-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  pointer-events: all;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid var(--card);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+  cursor: pointer;
+}
+.year-range-input::-moz-range-thumb {
+  pointer-events: all;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid var(--card);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+  cursor: pointer;
+}
+.year-range-input::-webkit-slider-runnable-track {
+  background: none;
+}
+.year-range-input::-moz-range-track {
+  background: none;
+}

@@ -1,6 +1,11 @@
 export interface Cookbook {
   id: string; name: string; tags: string[]; archived: boolean;
   packId?: string; packVersion?: number; createdAt: string;
+  /** Round-2 metadata (additive; existing books/backups lack these — fine,
+   * they're optional). Populated from the catalog on pack install and
+   * best-effort backfilled for already-installed packs (see packs.ts). User
+   * books may set author/year/infoUrl by hand later. */
+  author?: string; year?: number; cuisines?: string[]; infoUrl?: string;
 }
 export type PageStatus = 'verified' | 'unverified';
 export interface Recipe {

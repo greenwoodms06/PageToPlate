@@ -1,8 +1,10 @@
 // Library section of the Books tab (plan Task 25 Step 4; canvas 2f/3g,
-// screenshot 08): catalog search + filter chips, pack rows with install
-// state. Uninstalled packs render grayed (striped neutral spine, soft-ink
-// title, muted badges) with a 44px Install outline button; installed packs
-// get a colored spine + green Installed tag.
+// screenshot 08): the shared Books filter bar (search + dynamic cuisine + year
+// range), a pair of type chips (Readable online / Index only), and pack rows
+// with install state. Uninstalled packs render grayed (striped neutral spine,
+// soft-ink title, muted badges); installed packs get a colored spine + green
+// Installed tag. Tapping ANY row — installed or not — opens its book card
+// (PackCard, round-2 amendment 8).
 import { useMemo, useState } from 'react';
 import { store, useStore } from '../../data/store';
 import type { Cookbook, Recipe } from '../../data/types';
@@ -10,6 +12,9 @@ import { installPack, type CatalogPack } from '../../data/packs';
 import { SpineChip } from '../../components/SpineChip';
 import { StatusTag } from '../../components/StatusTag';
 import { useToast } from '../../components/Toast';
+import { BookFilterBar, applyBookFilters, emptyBookFilter, type BookFilterState, type FilterableItem } from './BookFilters';
+import { BookMetaLine } from './BookMeta';
+import { PackCard } from './PackCard';
 
 // Ref 08 shows each INSTALLED pack keeping a spine color even though shelf
 // books stay neutral outside a generate session. A stable hash of the pack id
@@ -23,7 +28,13 @@ function packColor(id: string): string {
   return `var(--spine-${(h % 8) + 1})`;
 }
 
-const cap = (s: string): string => (s === '' ? s : s[0].toUpperCase() + s.slice(1));
+const toItem = (p: CatalogPack): FilterableItem => ({
+  id: p.id,
+  title: p.title,
+  author: p.author,
+  year: p.year,
+  cuisines: p.cuisines,
+});
 
 export function LibrarySection({
   packs,
@@ -37,23 +48,16 @@ export function LibrarySection({
 }) {
   useStore((s) => s.version);
   const showToast = useToast();
-  const [q, setQ] = useState('');
+  const [filter, setFilter] = useState<BookFilterState>(emptyBookFilter);
   const [typeFilter, setTypeFilter] = useState<'linked' | 'index-only' | null>(null);
-  const [era, setEra] = useState<string | null>(null);
-  const [cuisine, setCuisine] = useState<string | null>(null);
   const [installing, setInstalling] = useState<string | null>(null);
+  const [cardId, setCardId] = useState<string | null>(null);
 
-  const eras = useMemo(() => [...new Set(packs.map((p) => p.era).filter((e): e is string => !!e))], [packs]);
-  const cuisines = useMemo(() => [...new Set(packs.flatMap((p) => p.cuisines))], [packs]);
+  const items = useMemo(() => packs.map(toItem), [packs]);
+  const byId = useMemo(() => new Map(packs.map((p) => [p.id, p])), [packs]);
 
-  const needle = q.trim().toLowerCase();
-  const shown = packs.filter(
-    (p) =>
-      (needle === '' || `${p.title} ${p.author ?? ''}`.toLowerCase().includes(needle)) &&
-      (typeFilter === null || p.type === typeFilter) &&
-      (era === null || p.era === era) &&
-      (cuisine === null || p.cuisines.includes(cuisine)),
-  );
+  const shownIds = new Set(applyBookFilters(items, filter).map((i) => i.id));
+  const shown = packs.filter((p) => shownIds.has(p.id) && (typeFilter === null || p.type === typeFilter));
 
   const install = async (pack: CatalogPack) => {
     setInstalling(pack.id);
@@ -68,37 +72,23 @@ export function LibrarySection({
     }
   };
 
+  const cardPack = cardId ? byId.get(cardId) : undefined;
+
   return (
     <div>
-      <input
-        value={q}
-        onChange={(e) => setQ(e.target.value)}
-        placeholder="⌕ Search the catalog…"
-        aria-label="Search the catalog"
-        style={{
-          width: '100%',
-          background: 'var(--card)',
-          border: '1.5px solid var(--line)',
-          borderRadius: 'var(--r-card)',
-          padding: '10px 12px',
-          fontSize: 14,
-          marginBottom: 8,
-        }}
-      />
+      <BookFilterBar items={items} filter={filter} onChange={setFilter} />
 
       <div style={{ display: 'flex', gap: 7, flexWrap: 'wrap', marginBottom: 14 }}>
-        <FilterChip
+        <TypeChip
           label="Readable online"
           on={typeFilter === 'linked'}
           onClick={() => setTypeFilter(typeFilter === 'linked' ? null : 'linked')}
         />
-        <FilterChip
+        <TypeChip
           label="Index only"
           on={typeFilter === 'index-only'}
           onClick={() => setTypeFilter(typeFilter === 'index-only' ? null : 'index-only')}
         />
-        <ValueChip name="Era" values={eras} value={era} onChange={setEra} />
-        <ValueChip name="Cuisine" values={cuisines.map(cap)} value={cuisine ? cap(cuisine) : null} onChange={(v) => setCuisine(v ? v.toLowerCase() : null)} />
       </div>
 
       {offline && (
@@ -111,22 +101,36 @@ export function LibrarySection({
         <p className="meta" style={{ marginBottom: 10 }}>No packs match — clear a filter or two.</p>
       )}
 
-      {shown.map((pack) => (
-        <PackRow key={pack.id} pack={pack} installing={installing === pack.id} onInstall={() => void install(pack)} />
-      ))}
+      <div data-testid="library-list">
+        {shown.map((pack) => (
+          <PackRow key={pack.id} pack={pack} onOpen={() => setCardId(pack.id)} />
+        ))}
+      </div>
 
       <div className="hint" style={{ marginTop: 10, textAlign: 'center' }}>
         Linked packs open at the exact page on archive.org — free to cook from.
       </div>
+
+      {cardPack && (
+        <PackCard
+          pack={cardPack}
+          installing={installing === cardPack.id}
+          onInstall={() => void install(cardPack)}
+          onClose={() => setCardId(null)}
+        />
+      )}
     </div>
   );
 }
 
-function PackRow({ pack, installing, onInstall }: { pack: CatalogPack; installing: boolean; onInstall: () => void }) {
+function PackRow({ pack, onOpen }: { pack: CatalogPack; onOpen: () => void }) {
   const installed = store.books.some((b) => b.packId === pack.id);
   return (
-    <div
+    <button
+      onClick={onOpen}
       style={{
+        width: '100%',
+        textAlign: 'left',
         background: 'var(--card)',
         border: '1px solid var(--line)',
         borderRadius: 'var(--r-card)',
@@ -144,9 +148,7 @@ function PackRow({ pack, installing, onInstall }: { pack: CatalogPack; installin
       )}
       <span style={{ flex: 1, minWidth: 0 }}>
         <b style={{ fontWeight: 600, color: installed ? 'var(--ink)' : 'var(--ink-soft)' }}>{pack.title}</b>
-        <span style={{ display: 'block', fontSize: 12, color: installed ? 'var(--ink-soft)' : 'var(--ink-disabled)' }}>
-          {[pack.author, pack.year, pack.cuisines.map(cap).join(', ')].filter(Boolean).join(' · ')}
-        </span>
+        <BookMetaLine book={{ author: pack.author, year: pack.year, cuisines: pack.cuisines }} soft={!installed} />
         {/* Uninstalled rows mute their badges (canvas 2f draws them in lighter
             text); an opacity wash approximates that without new tokens. */}
         <span style={{ display: 'flex', gap: 6, marginTop: 5, flexWrap: 'wrap', alignItems: 'center', opacity: installed ? 1 : 0.7 }}>
@@ -157,31 +159,12 @@ function PackRow({ pack, installing, onInstall }: { pack: CatalogPack; installin
           </span>
         </span>
       </span>
-      {!installed && (
-        <button
-          onClick={onInstall}
-          disabled={installing}
-          style={{
-            flex: 'none',
-            border: '1.5px solid var(--accent)',
-            background: 'none',
-            color: 'var(--accent)',
-            borderRadius: 'var(--r-pill)',
-            padding: '0 16px',
-            minHeight: 44,
-            fontSize: 13,
-            fontWeight: 700,
-            opacity: installing ? 0.6 : 1,
-          }}
-        >
-          {installing ? 'Installing…' : 'Install'}
-        </button>
-      )}
-    </div>
+      <span style={{ color: 'var(--ink-disabled)' }}>›</span>
+    </button>
   );
 }
 
-function FilterChip({ label, on, onClick }: { label: string; on: boolean; onClick: () => void }) {
+function TypeChip({ label, on, onClick }: { label: string; on: boolean; onClick: () => void }) {
   return (
     <button
       onClick={onClick}
@@ -199,34 +182,4 @@ function FilterChip({ label, on, onClick }: { label: string; on: boolean; onClic
       {label}
     </button>
   );
-}
-
-/**
- * Era / Cuisine chip. With >1 distinct value it acts as a cycling dropdown
- * ("Era ▾" → "Era: modern ✓" → next value → … → off) — a full popup menu is
- * more chrome than a one-pack catalog justifies, and the cycle degrades
- * gracefully as the catalog grows. With exactly one value it renders as a
- * plain static toggle chip (per plan: "dropdowns only if >1 value present").
- * Hidden entirely when no pack declares the field.
- */
-function ValueChip({
-  name,
-  values,
-  value,
-  onChange,
-}: {
-  name: string;
-  values: string[];
-  value: string | null;
-  onChange: (v: string | null) => void;
-}) {
-  if (values.length === 0) return null;
-  if (values.length === 1) {
-    return <FilterChip label={values[0]} on={value === values[0]} onClick={() => onChange(value === null ? values[0] : null)} />;
-  }
-  const next = () => {
-    const i = value === null ? -1 : values.indexOf(value);
-    onChange(i + 1 >= values.length ? null : values[i + 1]);
-  };
-  return <FilterChip label={value === null ? `${name} ▾` : `${name}: ${value} ✓`} on={value !== null} onClick={next} />;
 }
