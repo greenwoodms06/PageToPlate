@@ -13,3 +13,11 @@
 - **Extractor limitation (future work):** the shared index parser handles inline `name … page` and numbered indexes, but NOT (a) two-column indexes with a separated page-number column (Calendar of Dinners) or (b) ALL-CAPS chapter contents (Golden Rule). Both were worked around in the per-book judgment pass rather than in code, to avoid regressing existing packs. A structural upgrade could recover more entries from these layouts.
 - **Italian pack (italiancooking00daly): SHIPPED 2026-07-16** on owner's decision to accept archive.org's NOT_IN_COPYRIGHT flag despite the date/imprint ambiguity (flagged at review). Reconsider if a rightsholder objects.
 - **Backfill candidates** (clearly-PD, from tools/curation/candidates.md top-40) if a 10th linked pack is wanted: "The something-different dish" (Neil, 1915), "Like mother used to make" (1912), "Hawaiian cook book" (1920), "Camp cookery" (Kephart, 1910).
+
+## Round-2 minor tweak candidates (2026-07-16, owner may want later)
+- Plan header shows the plan's TRUE recipe count ("· 3 RECIPES") even when
+  per-recipe row-hiding shows fewer rows. Left as-is (plan's real size is
+  informative); flip to visible-row count if it reads confusingly in use.
+- Books shelf filter bar appears only at 3+ books; both Made+Not-made semantics
+  are moot now (single cycling pill); dismissed items still count toward plan
+  keyword/book gates.

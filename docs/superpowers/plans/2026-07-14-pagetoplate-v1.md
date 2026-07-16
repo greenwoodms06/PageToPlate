@@ -731,3 +731,25 @@ Verified (no change): Browse search already includes recipe tags AND book tags
    Affiliate (Amazon Associates) deferred — plain links now, add tag later.
 8. **Library — book cards:** tapping any pack (installed OR uninstalled) opens a
    book card showing its metadata (+ links), same card used from the shelf.
+
+### Round 2 — final shipped design (Plans filter evolved past items 2–3 above)
+
+Owner refined the Plans filter over two exchanges (2026-07-16); what actually
+shipped (commits 808069d, fa43d8f):
+- **Date row:** `All · Past month · Past year · Custom range…`. "Past month" =
+  rolling last 30 days, "Past year" = rolling last 365 days (NOT calendar). Each
+  window chip is an INDEPENDENT 3-state cycle (inactive → within = green → beyond
+  = red "not …" → inactive); the two chips + any custom range AND together.
+  Contradictory nested combos (within-30 + beyond-365) yield 0 plans — accepted,
+  consistent with pill behavior. "All" = reset chip (clears both cycles + custom;
+  lit as default when no date constraint). Boundary: daysAgo ≤ N = in, > N = out,
+  at 30/365. planFilter.ts: pastMonth/pastYear 'off'|'in'|'out' + custom, ANDed.
+- **Made filter:** a SINGLE 3-state cycling pill ("Made" green / "not Made" red /
+  off) on the RIGHT of the "N plans" count row — not two chips, not in the pill bar.
+- **Per-recipe (default) / per-plan toggle** beside the Made pill (only shown when
+  the pill is active): per-recipe hides non-matching ROWS inside each plan (via
+  visibleRecipeIds threaded planFilter→PlansTab→PlanCard); per-plan shows all rows
+  if the plan has ≥1 matching row. Only the Made pill drives row-hiding; keyword/
+  book/category/rating stay plan-level gates.
+- Made cue (item 2): open item's "Made ✓" greyed outline → solid green "Made · N/scale"
+  once made. Shipped.
