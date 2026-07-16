@@ -14,7 +14,7 @@ const stack: symbol[] = [];
 
 /** Any Sheet/Dialog currently open? The stack above already tracks exactly
  * that, so it doubles as the app-wide open-overlay marker — used by
- * useSwipeTabs (round-1 amendment 3) to keep horizontal swipes from
+ * TabPager (round-1 amendment 3; interactive pager since round 3) to keep horizontal swipes from
  * switching tabs underneath an open overlay. */
 export function overlayOpen(): boolean {
   return stack.length > 0;

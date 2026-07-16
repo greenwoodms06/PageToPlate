@@ -7,7 +7,7 @@ import { requestPersistOnFirstUse } from './data/persist';
 import { applyTheme, watchSystemTheme } from './theme';
 import { BottomNav, type Tab } from './components/BottomNav';
 import { ToastProvider, useToast } from './components/Toast';
-import { useSwipeTabs } from './components/useSwipeTabs';
+import { TabPager } from './components/TabPager';
 import { GenerateTab } from './screens/generate/GenerateTab';
 import { PlansTab } from './screens/plans/PlansTab';
 import { BrowseTab } from './screens/browse/BrowseTab';
@@ -79,6 +79,52 @@ function SettingsRoute({ sub }: { sub?: string }) {
   }
 }
 
+// ── splash ───────────────────────────────────────────────────────────────────
+
+// Round 3 (owner 2026-07-16): the init gate used to show "PageToPlate" only
+// for as long as store.init() took — a barely-visible blink. The splash now
+// holds for SPLASH_MIN_MS regardless of init speed (tune the duration here),
+// shows the app icon under the wordmark, and fades out over SPLASH_FADE_MS
+// once BOTH init and the minimum hold are done. The app mounts underneath
+// during the fade, so the content is revealed, not popped.
+const SPLASH_MIN_MS = 1000;
+const SPLASH_FADE_MS = 300;
+
+function Splash({ leaving }: { leaving: boolean }) {
+  return (
+    <div
+      // Swipes must not start on the splash: with the overlay on top, a touch
+      // hit-tests HERE, so TabPager's guard walk never sees what is underneath
+      // (found by e2e — a chip-row swipe during the splash changed tabs).
+      data-swipe-inert
+      data-testid="splash"
+      style={{
+        position: 'fixed',
+        inset: 0,
+        zIndex: 30, // above everything, toast included (20)
+        display: 'grid',
+        placeItems: 'center',
+        background: 'var(--paper)',
+        opacity: leaving ? 0 : 1,
+        transition: `opacity ${SPLASH_FADE_MS}ms ease`,
+        // While fading, let taps reach the app underneath.
+        pointerEvents: leaving ? 'none' : 'auto',
+      }}
+    >
+      <div style={{ display: 'grid', justifyItems: 'center', gap: 18 }}>
+        <div className="screen-title">PageToPlate</div>
+        <img
+          src={`${import.meta.env.BASE_URL}favicon.svg`}
+          alt=""
+          width={96}
+          height={96}
+          style={{ borderRadius: 22 }}
+        />
+      </div>
+    </div>
+  );
+}
+
 // Backup nudge (plan Task 26 Step 3): at most ONE toast per browser session —
 // a module flag, not state, so re-mounts/navigation can't re-fire it.
 let nudgedThisSession = false;
@@ -108,8 +154,25 @@ function BackupNudge() {
   return null;
 }
 
+// The four main tab screens, rendered by the pager (both the active screen
+// and, mid-drag, the neighboring preview).
+function renderMainTab(tab: Tab) {
+  switch (tab) {
+    case 'generate':
+      return <GenerateTab />;
+    case 'plans':
+      return <PlansTab />;
+    case 'browse':
+      return <BrowseTab />;
+    case 'books':
+      return <BooksTab />;
+  }
+}
+
 export default function App() {
   const [ready, setReady] = useState(false);
+  const [minSplashShown, setMinSplashShown] = useState(false);
+  const [splashGone, setSplashGone] = useState(false);
   const theme = useStore((s) => s.settings.theme);
 
   useEffect(() => {
@@ -117,55 +180,54 @@ export default function App() {
       requestPersistOnFirstUse(store);
     });
     void initPromise.then(() => setReady(true));
-    // No cleanup: watchSystemTheme has no unsubscribe; a StrictMode double
+    const id = setTimeout(() => setMinSplashShown(true), SPLASH_MIN_MS);
+    // No cleanup for watchSystemTheme (no unsubscribe); a StrictMode double
     // registration only means applyTheme runs twice — it is idempotent.
     watchSystemTheme(() => store.settings.theme);
+    return () => clearTimeout(id);
   }, []);
 
   // Applies the stored pref once init flips `theme`, and again whenever the
   // Settings screen changes it later.
   useEffect(() => applyTheme(theme), [theme]);
 
+  // Unmount the splash only after its fade-out finishes.
+  const splashLeaving = ready && minSplashShown;
+  useEffect(() => {
+    if (!splashLeaving) return;
+    const id = setTimeout(() => setSplashGone(true), SPLASH_FADE_MS);
+    return () => clearTimeout(id);
+  }, [splashLeaving]);
+
   const route = parseRoute(useHash());
 
-  // Swipe tab navigation (round-1 amendment 3) — armed only on the four main
-  // tab screens; settings, book detail (#/books/<id>) and the dev gallery
-  // keep swipes inert (they aren't bottom-nav siblings, and book detail's
-  // back-arrow mental model would fight a sideways jump).
+  // Swipe tab navigation (round-1 amendment 3; interactive pager since
+  // round 3) — armed only on the four main tab screens; settings, book
+  // detail (#/books/<id>) and the dev gallery keep swipes inert (they
+  // aren't bottom-nav siblings, and book detail's back-arrow mental model
+  // would fight a sideways jump).
   const swipeTab: Tab | null =
     route.tab !== 'settings' && route.tab !== 'dev' && !('sub' in route && route.sub) ? route.tab : null;
-  useSwipeTabs(ready ? swipeTab : null);
 
-  if (!ready) {
-    return (
-      <div
-        style={{
-          minHeight: '100dvh',
-          display: 'grid',
-          placeItems: 'center',
-          background: 'var(--paper)',
-        }}
-      >
-        <div className="screen-title">PageToPlate</div>
-      </div>
-    );
-  }
+  if (!ready) return <Splash leaving={false} />;
 
   return (
     <ToastProvider>
       <BackupNudge />
-      {route.tab === 'generate' && <GenerateTab />}
-      {route.tab === 'plans' && <PlansTab />}
-      {route.tab === 'browse' && <BrowseTab />}
-      {route.tab === 'books' && (route.sub ? <BookDetail bookId={route.sub} /> : <BooksTab />)}
-      {route.tab === 'settings' && <SettingsRoute sub={route.sub} />}
-      {route.tab === 'dev' && <DevGallery />}
+      {swipeTab !== null ? (
+        <TabPager active={swipeTab} render={renderMainTab} />
+      ) : (
+        <>
+          {route.tab === 'books' && route.sub && <BookDetail bookId={route.sub} />}
+          {route.tab === 'settings' && <SettingsRoute sub={route.sub} />}
+          {route.tab === 'dev' && <DevGallery />}
+        </>
+      )}
       {/* Settings has no bottom nav in the design (canvas 4a: back arrow
           instead); the dev gallery isn't a tab either. Book detail (5c) also
           renders back-arrow-only, like settings. */}
-      {route.tab !== 'settings' && route.tab !== 'dev' && !(route.tab === 'books' && route.sub) && (
-        <BottomNav active={route.tab} />
-      )}
+      {swipeTab !== null && <BottomNav active={swipeTab} />}
+      {!splashGone && <Splash leaving={splashLeaving} />}
     </ToastProvider>
   );
 }

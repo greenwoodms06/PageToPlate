@@ -276,7 +276,7 @@ export function BrowseTab() {
           Books/Categories (a dropdown panel, not a toggle), so it lives with
           them. Three chips can outgrow the column once labels lengthen
           ("Categories: 3 selected"), so the row scrolls horizontally instead
-          of wrapping — useSwipeTabs detects that via scrollWidth and keeps a
+          of wrapping — TabPager detects that via scrollWidth and keeps a
           scroll-flick on this row from switching tabs. */}
       <div data-testid="filter-drop-row" style={{ display: 'flex', gap: 8, marginBottom: 8, overflowX: 'auto' }}>
         <DropBtn
