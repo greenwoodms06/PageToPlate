@@ -1,0 +1,1775 @@
+{
+ "id": "auntcarolinesdix00mckirich",
+ "version": 1,
+ "book": {
+  "name": "Aunt Caroline's Dixieland Recipes",
+  "tags": [
+   "southern",
+   "american"
+  ]
+ },
+ "curatedSubset": true,
+ "rawIndexCount": 190,
+ "recipes": [
+  {
+   "name": "Virginia Beaten Biscuit",
+   "page": "1",
+   "category": "Breads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n16",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Southern Sweet-Potato Biscuits",
+   "page": "1",
+   "category": "Breads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n16",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Johnny Reb Cake",
+   "page": "1",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n16",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Spoon Bread",
+   "page": "3",
+   "category": "Breads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n18",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cinnamon Toast",
+   "page": "3",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n18",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Piedmont Corn Meal Mush",
+   "page": "3",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n18",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Virginia Corn Fritters",
+   "page": "5",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n20",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "French Toast",
+   "page": "5",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n20",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mammy's Graham Muffins",
+   "page": "5",
+   "category": "Breads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n20",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Aunt Caroline's Corn Bread",
+   "page": "7",
+   "category": "Breads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n22",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Bolted Corn Meal Bread",
+   "page": "7",
+   "category": "Breads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n22",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mammy's Light Rolls",
+   "page": "9",
+   "category": "Breads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n24",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Golden Toast",
+   "page": "9",
+   "category": "Breads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n24",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Virginia Waffles",
+   "page": "11",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n26",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cotton Blossom Popovers",
+   "page": "11",
+   "category": "Breads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n26",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Dixie Biscuit",
+   "page": "13",
+   "category": "Breads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n28",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Flour Muffins",
+   "page": "13",
+   "category": "Breads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n28",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Baltimore Egg Bread",
+   "page": "15",
+   "category": "Breads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n30",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Griddle Cakes",
+   "page": "15",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n30",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Jeff Davis Muffins",
+   "page": "17",
+   "category": "Breads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n32",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Carolina Corn Meal Rolls",
+   "page": "19",
+   "category": "Breads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n34",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Carolina Brown Bread",
+   "page": "19",
+   "category": "Breads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n34",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Salt Rising Bread",
+   "page": "21",
+   "category": "Breads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n36",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Egg Nog- Maryland Style",
+   "page": "23",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n38",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Swanee Fruit Punch",
+   "page": "23",
+   "category": "Drinks",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n38",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Louisiana Coffee",
+   "page": "23",
+   "category": "Drinks",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n38",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Tea. Southern Style",
+   "page": "25",
+   "category": "Drinks",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n40",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Iced Tea",
+   "page": "25",
+   "category": "Drinks",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n40",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Uncle Remus Mint Julep",
+   "page": "27",
+   "category": "Drinks",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n42",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Devil's Food Cake",
+   "page": "29",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n44",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Filling for Devil's Food Cake",
+   "page": "29",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n44",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Old Dominion Cake",
+   "page": "31",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n46",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Filling for Old Dominion Cake",
+   "page": "31",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n46",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Angels' Food Cake",
+   "page": "31",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n46",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Magnolia Sponge Cake",
+   "page": "33",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n48",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Filling for Magnolia Sponge Cake",
+   "page": "31",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n46",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Tutti Frutti Cake",
+   "page": "33",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n48",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Brides Cake",
+   "page": "33",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n48",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Ponciania Cake",
+   "page": "35",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n50",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sally White Cake",
+   "page": "35",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n50",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cabin Cake",
+   "page": "37",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n52",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Filling for Cabin Cake",
+   "page": "37",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n52",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pride of Kentucky Cake",
+   "page": "37",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n52",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Gold and White Anniversary Cake",
+   "page": "39",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n54",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Filling for Anniversary Cake",
+   "page": "39",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n54",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Marguerites",
+   "page": "39",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n54",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Apple Sauce Cake",
+   "page": "41",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n56",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Betsy Ross Pound Cake",
+   "page": "41",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n56",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Marshmallow Filling",
+   "page": "41",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n56",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Martha Washington Cake",
+   "page": "43",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n58",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Filling for Martha Washington Cake",
+   "page": "43",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n58",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pickaninny Cookies",
+   "page": "39",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n54",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Virginia Doughnuts",
+   "page": "45",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n60",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Plantation Cookies",
+   "page": "45",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n60",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Jelly Roll Cake",
+   "page": "47",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n62",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Aunt Sug's Nut Cookies",
+   "page": "47",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n62",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Ginger Snaps",
+   "page": "49",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n64",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mason and Dixon Cookies",
+   "page": "49",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n64",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "U. D. C. Cocoanut Candy",
+   "page": "53",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n68",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mexican Kisses",
+   "page": "53",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n68",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mammy's Peanut Candy",
+   "page": "53",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n68",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Divinity Candy",
+   "page": "55",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n70",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chocolate Caramels",
+   "page": "55",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n70",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Old Virginia Molasses Taffy",
+   "page": "57",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n72",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cream Peppermint Drops",
+   "page": "57",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n72",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Peanut Butter Fudge",
+   "page": "59",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n74",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chocolate Fudge",
+   "page": "61",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n76",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sea-Foam Candy",
+   "page": "61",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n76",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fried Chicken, Virginia Style",
+   "page": "63",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n78",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Creole Veal Patties",
+   "page": "63",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n78",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sugar Cured Ham Loaf",
+   "page": "63",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n78",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Baked Rice and Ham",
+   "page": "65",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n80",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Martha Washington Cheese Pudding",
+   "page": "65",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n80",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Uncle Remus Omelette",
+   "page": "65",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n80",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Liver Fricasee",
+   "page": "69",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n84",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Breaded Pork Chops, Philadelphia Style",
+   "page": "69",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n84",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Salmon Croquettes",
+   "page": "69",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n84",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Creamed Oysters",
+   "page": "71",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n86",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Deviled Crabs",
+   "page": "71",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n86",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Awit Caroline's Beef Loaf",
+   "page": "71",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n86",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mammy's Chicken Patties",
+   "page": "73",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n88",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Carolina Broiled Steak",
+   "page": "73",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n88",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Massas' Qieese Croquettes",
+   "page": "75",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n90",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Oysters with Macaroni",
+   "page": "75",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n90",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Scalloped Oysters",
+   "page": "75",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n90",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Creamed Dried Beef With Cheese",
+   "page": "11",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n26",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cheese Straws",
+   "page": "11",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n26",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chicken A La King",
+   "page": "11",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n26",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Southern Hash",
+   "page": "79",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n94",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mammy's Veal Loaf",
+   "page": "79",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n94",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chicken Croquettes",
+   "page": "79",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n94",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cream Sauce",
+   "page": "81",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n96",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Aunt Caroline's Own Pickle",
+   "page": "83",
+   "category": "Preserves & Pickles",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n98",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Georgia Watermelon Rind Pickle",
+   "page": "83",
+   "category": "Preserves & Pickles",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n98",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Apple Relish",
+   "page": "85",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n100",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Corn Relish",
+   "page": "85",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n100",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Bell Pepper Relish",
+   "page": "87",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n102",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Green Tomato Pickle",
+   "page": "87",
+   "category": "Preserves & Pickles",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n102",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Stuffed Peppers",
+   "page": "89",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n104",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Peach Pickle",
+   "page": "91",
+   "category": "Preserves & Pickles",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n106",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chili Sauce",
+   "page": "91",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n106",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mount Vernon Pickle",
+   "page": "91",
+   "category": "Preserves & Pickles",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n106",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "English Chopped Pickle",
+   "page": "93",
+   "category": "Preserves & Pickles",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n108",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Heavenly Hash",
+   "page": "95",
+   "category": "Mains",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n110",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Stonewall Jackson Pudding",
+   "page": "97",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n112",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "U. D. C Pudding",
+   "page": "99",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n114",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Rhubarb Pie",
+   "page": "99",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n114",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Jeff Davis Custard",
+   "page": "101",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n116",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Southern Apple Pie",
+   "page": "103",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n118",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Caramel Custard",
+   "page": "103",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n118",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Palmetto Marmalade",
+   "page": "103",
+   "category": "Preserves & Pickles",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n118",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Aunt Jemima's Lemon Pie",
+   "page": "105",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n120",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Nut Bread",
+   "page": "105",
+   "category": "Breads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n120",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chocolate Pudding",
+   "page": "107",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n122",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Maryland Bread Pudding",
+   "page": "107",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n122",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sunset Raisin Pie",
+   "page": "107",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n122",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Soft Ginger Bread",
+   "page": "109",
+   "category": "Breads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n124",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sauce for Ginger Bread",
+   "page": "109",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n124",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cranberry Surprise",
+   "page": "109",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n124",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Louisiana Molasses Custard",
+   "page": "109",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n124",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "New Orleans Dark Nut Bread",
+   "page": "113",
+   "category": "Breads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n128",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "John Brown Custard",
+   "page": "113",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n128",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Virginia Dare Pudding",
+   "page": "115",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n130",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Sweet Potato Custard",
+   "page": "115",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n130",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Banana Custard",
+   "page": "115",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n130",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Strawberry Shortcake",
+   "page": "117",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n132",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Tapioca Custard",
+   "page": "117",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n132",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Bavarian Cream",
+   "page": "117",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n132",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cranberry Snow",
+   "page": "117",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n132",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Chocolate Pie",
+   "page": "119",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n134",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pumpkin Pie",
+   "page": "119",
+   "category": "Desserts",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n134",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mayonnaise Dressing",
+   "page": "121",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n136",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Maryland Chicken Salad",
+   "page": "121",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n136",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Potato Salad",
+   "page": "121",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n136",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Wesson Oil Dressing",
+   "page": "121",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n136",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Tomato Jelly",
+   "page": "123",
+   "category": "Preserves & Pickles",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n138",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "French Dressing",
+   "page": "123",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n138",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Waldorf Salad",
+   "page": "123",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n138",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mammy's Dressing",
+   "page": "125",
+   "category": "Sauces & Condiments",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n140",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Pineapple and Cottage Cheese Salad",
+   "page": "125",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n140",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Water Lily Salad",
+   "page": "125",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n140",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Marshmallow Salad",
+   "page": "127",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n142",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Frozen Fruit Salad",
+   "page": "127",
+   "category": "Salads",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n142",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Old Virginia Brunswick Stew",
+   "page": "129",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n144",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Aunt Caroline's Porridge",
+   "page": "129",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n144",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cream of Celery Soup",
+   "page": "129",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n144",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Tomato Bisque",
+   "page": "129",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n144",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Tomato Soup, Creole Style",
+   "page": "131",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n146",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "DixielancI Soup",
+   "page": "131",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n146",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cream of Tomato Soup",
+   "page": "131",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n146",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Baltimore Oyster Stew",
+   "page": "133",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n148",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cream of Pea Soup",
+   "page": "133",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n148",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Cream of Chicken Soup",
+   "page": "135",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n150",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Oatmeal Soup",
+   "page": "135",
+   "category": "Soups & Stews",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n150",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "General Pickett Corn Pudding",
+   "page": "137",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n152",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Dixie Potatoes",
+   "page": "137",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n152",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Southern Creamed Sweet Potatoes",
+   "page": "139",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n154",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Stuffed Potatoes with Cheese",
+   "page": "139",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n154",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Scalloped Irish Potatoes",
+   "page": "139",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n154",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Stuffed Tomatoes",
+   "page": "139",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n154",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Scalloped Tomatoes in Shells",
+   "page": "139",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n154",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Aunt Katy's Macaroni",
+   "page": "141",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n156",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Irish Potato Puffs",
+   "page": "141",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n156",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Stewed Celery",
+   "page": "141",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n156",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Baked Tomatoes",
+   "page": "141",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n156",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Mammy's Candied Sweet Potatoes",
+   "page": "143",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n158",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Boiled Turnips",
+   "page": "143",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n158",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Stewed Green Corn",
+   "page": "143",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n158",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Creole Potato Balls",
+   "page": "143",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n158",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Potato Chips",
+   "page": "143",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n158",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Stuffed Potatoes with Cheese and Bacon",
+   "page": "145",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n160",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Jenny Lind Potatoes",
+   "page": "145",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n160",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Carolina Sweet Potato Pone",
+   "page": "145",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n160",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Scalloped Potatoes",
+   "page": "147",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n162",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "French Fried Sweet Potatoes",
+   "page": "147",
+   "category": "Sides",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n162",
+    "pageStatus": "verified"
+   }
+  },
+  {
+   "name": "Fried Egg Plant",
+   "page": "147",
+   "category": "Breakfast & Brunch",
+   "tags": [],
+   "link": {
+    "url": "https://archive.org/details/auntcarolinesdix00mckirich/page/n162",
+    "pageStatus": "verified"
+   }
+  }
+ ]
+}

@@ -1,0 +1,1737 @@
+{
+ "identifier": "chinesecookbook00chan",
+ "title": "The Chinese cook book",
+ "creator": "Chan, Shiu Wong, 1893- [from old catalog]",
+ "year": 1917,
+ "extraction": {
+  "generated": "2026-07-15T20:19:03-0400",
+  "recipe_index": {
+   "heading": "CONTENTS",
+   "line": 114,
+   "sections": 7
+  },
+  "chapter_index": null,
+  "duplicates_dropped": 0
+ },
+ "entries": [
+  {
+   "name": "The History of Chinese Cooking",
+   "page": "1",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n22",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "General Laws of Chinese Cooking",
+   "page": "5",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n28",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Marketing",
+   "page": "6",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n29",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Preliminary Recipes",
+   "page": "8",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n33",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Primary Soup",
+   "page": "8",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n33",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chinese Sauce",
+   "page": "10",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n35",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chinese Gravy",
+   "page": "11",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n36",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Sesamum-seed Oil",
+   "page": "12",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n37",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Peanut Oil",
+   "page": "13",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n38",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chicken Starch",
+   "page": "14",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n39",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chinese White Cheese",
+   "page": "15",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n40",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chinese Red Cheese",
+   "page": "16",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n41",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "How to Make Tea",
+   "page": "17",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n42",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Preparation of Secondary Vegetables",
+   "page": "18",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n43",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Soup",
+   "page": "19",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n44",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Bird-nest Soup",
+   "page": "19",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n44",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chicken Mushroom Soup",
+   "page": "21",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n46",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Vegetable Soup",
+   "page": "22",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n47",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Duck Soup",
+   "page": "23",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n48",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Pork Soup",
+   "page": "24",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n49",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fish Soup",
+   "page": "25",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n50",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Noodle Soup",
+   "page": "26",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n51",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Noodle Soup with Chicken and Mushrooms",
+   "page": "28",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n53",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Noodle Soup in Yung Chow Style",
+   "page": "30",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n55",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Noodles",
+   "page": "31",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n56",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fried Noodles",
+   "page": "31",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n56",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chicken Fried Noodles",
+   "page": "33",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n58",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chicken",
+   "page": "35",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n60",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Almond Chicken",
+   "page": "35",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n60",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chicken Chop Suey",
+   "page": "37",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n62",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chestnut Chicken",
+   "page": "38",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n63",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chicken Hash",
+   "page": "39",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n64",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chicken Thread",
+   "page": "40",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n65",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fried Chicken",
+   "page": "41",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n66",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Walnut Chicken",
+   "page": "42",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n67",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Pineapple Chicken",
+   "page": "43",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n68",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Salt Chicken",
+   "page": "45",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n70",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Pan Chicken",
+   "page": "46",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n71",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Bird-nest in Chicken",
+   "page": "47",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n72",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Steamed Chicken",
+   "page": "48",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n73",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Roast Chicken",
+   "page": "49",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n74",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Duck",
+   "page": "51",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n76",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Roast Duck",
+   "page": "51",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n76",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Parsley Duck",
+   "page": "52",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n77",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Duck Hash",
+   "page": "54",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n79",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Duck Chop Suey",
+   "page": "55",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n80",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Potato Duck",
+   "page": "56",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n81",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Wine Vapor Duck",
+   "page": "57",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n82",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Steamed Duck",
+   "page": "59",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n84",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "East Melon Duck",
+   "page": "61",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n86",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fried Duck Feet",
+   "page": "63",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n88",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Pineapple Duck",
+   "page": "65",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n90",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Duck Threads",
+   "page": "66",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n91",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Roast Duck Biscuits",
+   "page": "67",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n92",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Wild Duck",
+   "page": "68",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n93",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Ham and Duck",
+   "page": "70",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n95",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Lamb",
+   "page": "71",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n96",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fried Lamb",
+   "page": "71",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n96",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Lamb Hash",
+   "page": "72",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n97",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Steamed Lamb",
+   "page": "73",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n98",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Lamb Chop Suey",
+   "page": "74",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n99",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chop Suey",
+   "page": "75",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n100",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Plain Chop Suey",
+   "page": "75",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n100",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Extra Chop Suey",
+   "page": "76",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n101",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Pork",
+   "page": "77",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n102",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Pork Hash",
+   "page": "77",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n102",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Pork Threads",
+   "page": "78",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n103",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Potato Pork",
+   "page": "79",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n104",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Brittle Pork",
+   "page": "80",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n105",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Steamed Chestnut Pork",
+   "page": "81",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n106",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Pork Salad",
+   "page": "82",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n107",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fried Pigs' Ribs",
+   "page": "83",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n108",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Beef",
+   "page": "84",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n109",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Beef Chop Suey",
+   "page": "84",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n109",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Green Pepper Beef",
+   "page": "85",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n110",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fish",
+   "page": "86",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n111",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fish Chop Suey",
+   "page": "86",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n111",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fish Balls",
+   "page": "87",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n112",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fried Fish Balls",
+   "page": "89",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n114",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Raw Fish Party",
+   "page": "91",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n116",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fried Fish",
+   "page": "93",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n118",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Hot Water Fish",
+   "page": "94",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n119",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Steamed Pike",
+   "page": "95",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n120",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Eel in Net",
+   "page": "96",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n121",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Turtle",
+   "page": "97",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n122",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Steamed Turtle",
+   "page": "97",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n122",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Turtle Soup",
+   "page": "99",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n124",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Shark",
+   "page": "101",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n126",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Shark Fins",
+   "page": "101",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n126",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Shrimp",
+   "page": "103",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n128",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Shrimp Chop Suey",
+   "page": "103",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n128",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Steamed Shrimp",
+   "page": "104",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n129",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fried Shrimp",
+   "page": "105",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n130",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Oysters",
+   "page": "106",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n131",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Oyster Chop Suey",
+   "page": "106",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n131",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Steamed Oysters",
+   "page": "107",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n132",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Roasted Oysters",
+   "page": "108",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n133",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Lobster",
+   "page": "109",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n134",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Lobster Chop Suey",
+   "page": "109",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n134",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Crab",
+   "page": "110",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n135",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fried Soft Shell Crab",
+   "page": "112",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n137",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chinese Tomato",
+   "page": "113",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n138",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fried Chinese Tomato with Crab",
+   "page": "113",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n138",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fried Chinese Tomato with Shrimp",
+   "page": "114",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n139",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Pigeon",
+   "page": "115",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n140",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Why Shon Pigeon",
+   "page": "115",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n140",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Pigeon Chop Suey",
+   "page": "116",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n141",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Bird-nest in Pigeon",
+   "page": "117",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n142",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fried Pigeon",
+   "page": "118",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n143",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Pigeon Hash",
+   "page": "119",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n144",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Quail",
+   "page": "120",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n145",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Quail Hash",
+   "page": "120",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n145",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Partridge",
+   "page": "121",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n146",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Partridge Hash",
+   "page": "121",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n146",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Partridge Chop Suey",
+   "page": "122",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n147",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Why Shon Partridge",
+   "page": "123",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n148",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Deer",
+   "page": "124",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n149",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Deer (Lock Yok)",
+   "page": "124",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n149",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Goose o",
+   "page": "125",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n150",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Roast Goose",
+   "page": "125",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n150",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Winkle",
+   "page": "126",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n151",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Winkle Chop Suey",
+   "page": "126",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n151",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Eggs",
+   "page": "128",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n153",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Plain Omelet",
+   "page": "128",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n153",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Pork Omelet",
+   "page": "129",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n154",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chicken Omelet",
+   "page": "130",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n155",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Shrimp Omelet",
+   "page": "131",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n156",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Crab Omelet",
+   "page": "132",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n157",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Lobster Omelet",
+   "page": "133",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n158",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Bean Cake Omelet",
+   "page": "134",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n159",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fried Eggs",
+   "page": "135",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n160",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Checker Board Eggs",
+   "page": "137",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n162",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fish Roll",
+   "page": "138",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n163",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Gold and Silver Egg",
+   "page": "140",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n165",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Stuffed Egg",
+   "page": "141",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n166",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Fish Swimming in a Golden Pond",
+   "page": "142",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n167",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Shrimp in Golden Pond",
+   "page": "143",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n168",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Crab in Golden Pond",
+   "page": "144",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n169",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Lobster in Golden Pond",
+   "page": "145",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n170",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Beans",
+   "page": "146",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n171",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Bean Sprouts",
+   "page": "146",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n171",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Bean Cake",
+   "page": "147",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n172",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Bean Cake Chop Suey",
+   "page": "148",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n173",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chicken Starch Bean Cake",
+   "page": "149",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n174",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Stuffed Triangle Bean Cake",
+   "page": "150",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n175",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Ruby Mixed with Pearls",
+   "page": "152",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n177",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Bean Biscuit",
+   "page": "153",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n178",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Squash",
+   "page": "154",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n179",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Stuffed Squash",
+   "page": "154",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n179",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Peppers",
+   "page": "155",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n180",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Stuffed Green Peppers",
+   "page": "155",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n180",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Immortal Food",
+   "page": "156",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n181",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Food of the God of Law Horn",
+   "page": "157",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n182",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Soft Immortal ^ood",
+   "page": "158",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n183",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Hard Immortal Food",
+   "page": "159",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n184",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Dry Foods",
+   "page": "160",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n185",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chinese Frankfurter",
+   "page": "161",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n186",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chinese Frankfurters on Rice",
+   "page": "163",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n188",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chinese Frankfurters with Vegetables",
+   "page": "164",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n189",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Lamb Frankfurters",
+   "page": "165",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n190",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Gold and Silver Frankfurters",
+   "page": "167",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n192",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Spiced Pork",
+   "page": "169",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n194",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Dry Pork",
+   "page": "170",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n195",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Spiced Pork with Gray Potatoes",
+   "page": "171",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n196",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Dry Pork on Rice",
+   "page": "172",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n197",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Dry Pork with Gray Potatoes",
+   "page": "173",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n198",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Dried Pork with Fried Bean Cake and Chinese Vegetable",
+   "page": "174",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n199",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Dry Duck",
+   "page": "175",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n200",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Dry Duck on Rice",
+   "page": "176",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n201",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Dry Flat Fish Chop Suey",
+   "page": "177",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n202",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Dry Flat Fish Soup",
+   "page": "179",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n204",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Roast Dry Flat Fish",
+   "page": "180",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n205",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Stove Party",
+   "page": "181",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n206",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Rice",
+   "page": "182",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n207",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Rice Cooking",
+   "page": "182",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n207",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "To Fry Rice",
+   "page": "183",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n208",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Meat Biscuit",
+   "page": "184",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n209",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chinese Meat Biscuit",
+   "page": "184",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n209",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Cake",
+   "page": "186",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n211",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Almond Cake",
+   "page": "186",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n211",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chinese Sponge Cake",
+   "page": "187",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n212",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Pudding",
+   "page": "188",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n213",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Water Chestnut Pudding",
+   "page": "188",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n213",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Lily Root Pudding",
+   "page": "189",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n214",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Gray Potato Pudding",
+   "page": "190",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n215",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Candy",
+   "page": "191",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n216",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Peanut Candy",
+   "page": "191",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n216",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Sesamum-seed Candy",
+   "page": "192",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n217",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Conclusion: The Chemistry OF Foods",
+   "page": "193",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n218",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Chinese Grocery Stores and Noodle Shops",
+   "page": "198",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n223",
+   "pageStatus": "verified"
+  },
+  {
+   "name": "Price List of Chinese Groceries",
+   "page": "199",
+   "chapter": null,
+   "category": null,
+   "tags": [],
+   "url": "https://archive.org/details/chinesecookbook00chan/page/n224",
+   "pageStatus": "verified"
+  }
+ ]
+}

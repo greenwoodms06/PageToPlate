@@ -16,9 +16,12 @@ Subcommands:
                categorize by chapter, resolve deep links. Writes
                tools/curation/books/<id>/{draft.json,review.md,notes.md}.
   classify     Name-based meal-role classifier for books whose categories can't
-               come from a chapter map (hierarchical/alphabetical indexes):
-               drops pure fragments, categorizes every kept entry by its recipe
-               name. Writes final.csv + needs_review.csv + dropped.csv.
+               come from a chapter map (hierarchical/alphabetical indexes).
+               Enforces the CLEAN-SUBSET policy (witness P2P-007): final.csv
+               ships ONLY entries with a resolved category at confidence >=
+               CLEAN_THRESHOLD; low-confidence + signal-free names are HELD
+               (needs_review.csv, unshipped) and pure fragments are DROPPED
+               (dropped.csv). Also writes stats.json (raw/clean/held/dropped).
   apply        Read tools/curation/books/<id>/final.csv (the judgment pass's
                output) and emit public/packs/<id>.json + a catalog.json entry.
   verify-links HEAD-check a sample of a book's entry URLs (catches malformed
@@ -121,8 +124,8 @@ from build_pack import map_raw_category  # noqa: E402
 # vocabulary (tools/README.md "AI region pass" list, plus american/british
 # for the US/GB books that dominate the public-domain corpus).
 CUISINE_VOCAB = {
-    "italian", "french", "european", "asian", "indian", "mexican", "latin",
-    "middle eastern", "african", "caribbean", "international",
+    "italian", "french", "european", "asian", "chinese", "indian", "mexican",
+    "latin", "middle eastern", "african", "caribbean", "international",
     "american", "british",
 }
 
@@ -381,6 +384,14 @@ COMMA_ENTRY_RE = re.compile(
 RECIPE_NO_RE = re.compile(r"^\d{1,4}[a-z]?\s+(?=[^\d\s])")
 # Cross-references ("Almonds. See Elementary Preparations", "see No. 1755")
 # are not recipes; the trailing number is a recipe number or chapter page.
+# Dotless wide-gutter CONTENTS form: a Title-Case entry whose page number sits
+# ONE space after the name, with no leader dots ("Marketing 6", "Chinese Sauce
+# 10", "Duck 51"). Seen in chinesecookbook00chan, whose OCR puts 2 spaces
+# between words but only 1 before the page number, so the strict [ .]{2,} leader
+# misses ~80% of the table. Guarded to reduce prose false-positives: the name
+# must START uppercase (a heading word, not a mid-sentence tail) and the page
+# number must be the whole line's end. Tried only after the dotted/comma forms.
+SPACED_CONTENTS_RE = re.compile(r"^([A-Z][^\d]{2,78}?)\s(\d{1,4})\s*\.?\s*$")
 CROSS_REF_RE = re.compile(r"\bsee\b", re.IGNORECASE)
 GLOSS_MARK_RE = re.compile(r"\(\s*[vo]\.?\s*gl\.?\s*\)", re.IGNORECASE)
 COLUMN_NOISE_RE = re.compile(r"(?i)^(no\.?\s*of|recipe|page|continued)\s*[.:]?\s*$")
@@ -429,9 +440,20 @@ def match_entry(line: str) -> tuple[str, str] | None:
     s = RECIPE_NO_RE.sub("", s, count=1)
     m = DOTTED_ENTRY_RE.match(s) or COMMA_ENTRY_RE.match(s)
     if not m:
-        return None
+        # Dotless single-space form is riskier: guard it against ALL-CAPS names,
+        # which are running page headers ("THE CHINESE COOK BOOK 85") repeated
+        # through the body, not Title-Case contents entries. Without this the
+        # header matches on every other page and the contents region bleeds
+        # into the whole book.
+        m = SPACED_CONTENTS_RE.match(s)
+        if not m or not any(c.islower() for c in m.group(1)):
+            return None
     name = GLOSS_MARK_RE.sub(" ", m.group(1))
-    name = re.sub(r"\s{2,}", " ", name).strip(" .,;:-")
+    # Trailing/leading OCR debris on entry names ("Chili Sauce ~ ~", "Virginia
+    # Waffles -»", "Betsy Ross Pound Cake .. - „") — strip the mark chars OCR
+    # leaves behind (leader-dot/tilde/caret/underscore/guillemet noise) from
+    # both ends; interior punctuation and apostrophes are kept.
+    name = re.sub(r"\s{2,}", " ", name).strip(" .,;:-~^*_|`«»„“”\"")
     if sum(c.isalpha() for c in name) < 4 or not re.search(r"[A-Za-z]{3}", name):
         return None
     if CROSS_REF_RE.search(name):
@@ -979,9 +1001,29 @@ def write_review_md(path: Path, draft: dict, chapters: list[tuple[str, int]]) ->
 #
 # `is_fragment` drops the ~7% of index rows that are PURE fragments (leading
 # preposition/conjunction, bare roman numeral, sub-word noise) — those carry no
-# classifiable head noun and read as broken. Truncated-but-real sub-entries
-# (a lone qualifier like "Broiled") are KEPT with their correct link and get a
-# best-effort category; they surface in needs_review.csv for a human/LLM scan.
+# classifiable head noun and read as broken.
+#
+# CLEAN-SUBSET POLICY (witness P2P-007) — the reason final.csv is NOT all-kept.
+# Hierarchical-index cookbooks flatten under OCR: a sub-entry's parent headword
+# is elided, so a real fraction of names truncate to lone qualifiers ("Russian",
+# "White", "Broiled") the name classifier cannot place. Parent-noun
+# reconstruction was investigated and REJECTED (djvu.txt preserves no
+# indentation — every line is flush-left — and alphabetical carry-down
+# fabricates ~1/3 of names). We NEVER fabricate a name or invent a category to
+# hit a target. So `classify` SHIPS only the CLEAN subset — entries with a
+# resolved category at confidence >= CLEAN_THRESHOLD — and HOLDS everything else
+# (low-confidence guesses + signal-free names) in needs_review.csv, unshipped.
+# Fragments are DROPPED. Yield varies by book (numbered/self-contained indexes
+# like Escoffier lose ~0%; Fannie Farmer's hierarchical index ~2,000 of 3,613).
+CLEAN_THRESHOLD = 0.45
+# A name of a SINGLE content word that classifies only via a best-effort tail
+# rule (confidence <= this) is a lone truncated qualifier, not a self-contained
+# recipe: "Lemon", "Banana", "Scalloped", bare "Souffle" — the parent dish noun
+# was elided in the index (witness P2P-007). It clears the raw threshold but is
+# still HELD, because real one-word dishes score higher via a dish-noun rule
+# ("Junket" 0.85, "Hash" 0.55). This keeps broken lone-qualifier names out of
+# the shipped subset without fabricating a parent noun.
+LONE_QUALIFIER_MAX_CONF = 0.5
 
 # OCR on these scans routinely renders an accented vowel as a digit
 # ("Canap6s", "Caf6", "Saut6d", "Glac6e", "Consomm6", "Frapp6") — the accent
@@ -1049,6 +1091,7 @@ _MEAT = {
     "partridge", "pigeon", "squab", "snipe", "plover", "reedbird", "eel", "mussel",
     "whitebait", "whitefish", "perch", "pickerel", "pike", "turbot", "crawfish",
     "crayfish", "prawn", "scampi", "sturgeon", "whiting", "weakfish",
+    "tenderloin", "sirloin", "loin", "ribs", "brisket", "rump",
 }
 _VEG = {
     "potato", "bean", "pea", "carrot", "beet", "cabbage", "spinach", "corn",
@@ -1085,7 +1128,10 @@ def _rz_loaf(w):
 def _rz_cake(w):
     if _has({"griddle", "buckwheat", "flannel", "batter", "wheat"}, w):
         return ("Breakfast & Brunch", 0.75, [])
-    if _has({"fish", "clam", "crab", "codfish", "cod", "salmon", "potato", "oyster"}, w):
+    # savory "cakes": fish/crab cakes, potato cake, and Chinese "bean cake"
+    # (dou fu / tofu) — not a Western dessert.
+    if _has({"fish", "clam", "crab", "codfish", "cod", "salmon", "potato",
+             "oyster", "bean"}, w):
         return ("Sides", 0.6, [])
     return ("Desserts", 0.85, [])
 
@@ -1134,6 +1180,8 @@ def _rz_jelly(w):
 def _rz_ice(w):
     if _has({"chest", "box", "picks", "tongs", "cave", "house"}, w):
         return (None, 0.0, [])             # "Ice Chest, Care of" is not a dish
+    if _has({"tea", "coffee"}, w):
+        return ("Drinks", 0.6, [])         # "Iced Tea"/"Iced Coffee" are drinks
     if "water" in w:
         return ("Drinks", 0.5, [])
     return ("Desserts", 0.7, [])
@@ -1325,7 +1373,10 @@ _RULES: list[tuple] = [
     ({"patties"}, _rz_patties),
     ({"scalloped", "stuffed", "curried"}, "Sides", 0.5),
     (_MEAT, "Mains", 0.7),
-    ({"steak", "chops", "cutlet", "ragout", "fricassee", "goulash", "stewed",
+    # "stewed" is NOT here: meat stews are already caught by _MEAT above, so a
+    # remaining "Stewed X" is a vegetable/fruit ("Stewed Celery", "Stewed Corn")
+    # -> let _VEG/_FRUIT below place it, not Mains.
+    ({"steak", "chops", "cutlet", "ragout", "fricassee", "goulash",
       "fillets", "fillet", "curry"}, "Mains", 0.6),
     (_VEG, "Sides", 0.65),
     # -- best-effort tail: truncated qualifiers with no dish noun --------------
@@ -1370,7 +1421,11 @@ def classify_name(name: str) -> tuple[str | None, float, list[str]]:
     tags: list[str] = ["appetizer"] if _APPET_RE.search(s) else []
     if "ice cream" in s or "ice-cream" in s:   # unambiguous, beats bisque/bread
         return ("Desserts", 0.85, tags)
-    head = s.split(",", 1)[0].strip()
+    # The dish is the head noun before the first comma OR " with " — the part
+    # after names an accompaniment, not the dish ("Porterhouse Steak with
+    # Mushroom Sauce" is a Main, not a sauce). Scan the head first, then, if it
+    # gives no signal, the whole string.
+    head = re.split(r",|\bwith\b", s, maxsplit=1)[0].strip()
     cat, conf, kw_tags = _clf_scan(_clf_words(head))
     if cat is None:                          # head gave nothing; scan whole name
         cat, conf, kw_tags = _clf_scan(_clf_words(s))
@@ -1412,8 +1467,82 @@ def is_fragment(name: str) -> bool:
     return False
 
 
+# Bare single-word DISH-TYPE labels. A recipe named only "Sauce", "Jelly",
+# "Pudding" is a truncated sub-entry whose specific qualifier was elided — the
+# index groups dozens of "[X] Sauce" recipes and OCR flattening left just
+# "Sauce" on 29 different pages (witness P2P-007). These score high (a dish-noun
+# rule fires) yet are NOT self-contained recipes, so a lone one is HELD like any
+# other truncated qualifier. Deliberately EXCLUDED: ingredient-as-dish names
+# (bare "Asparagus", "Bacon", "Anchovies" read as real recipes in this era) and
+# specific named dishes (Gingerbread, Doughnuts, Brownies, Junket) — only
+# genuine category super-types belong here.
+GENERIC_HEAD_NOUNS = {
+    "soup", "chowder", "bisque", "bouillon", "consomme", "broth", "pottage",
+    "sauce", "gravy", "dressing", "cake", "bread", "roll", "biscuit", "muffin",
+    "bun", "loaf", "pudding", "custard", "jelly", "sherbet", "sorbet", "cream",
+    "mousse", "souffle", "fritter", "tart", "filling", "paste", "omelet",
+    "omelette", "punch", "cocktail", "cordial", "frappe", "stew", "salad",
+    "toast", "timbale", "dumpling", "sandwich", "croquette",
+}
+
+
+def _lone_word(name: str) -> str | None:
+    """The single content word of a one-word name (OCR-cleaned), else None —
+    e.g. 'Lemon', 'Scalloped', 'Sauce'. Roman-numeral variant suffixes
+    ('Cake II') are ignored so 'Cake II' still reads as the lone word 'cake'."""
+    words = [w for w in re.findall(r"[a-z][a-z'&-]*", _clf_clean(name))
+             if not _ROMAN_RE.match(w)]
+    return words[0] if len(words) == 1 else None
+
+
+def classify_entry(entry: dict, threshold: float = CLEAN_THRESHOLD) -> dict:
+    """Clean-subset verdict for ONE draft entry (witness P2P-007). Pure — no
+    I/O — so the selftest can pin the split without touching files.
+
+    Returns {verdict, name, page, category, confidence, tags[, reason]}:
+      * 'dropped' — a pure fragment (`is_fragment`): a truncated tail with no
+        head noun; shipping it would mean a broken name. -> dropped.csv.
+      * 'clean'   — a RESOLVED category at confidence >= threshold. This is the
+        only verdict that ships (final.csv).
+      * 'held'    — everything else: a low-confidence guess OR a signal-free
+        name (lone truncated qualifier). HELD in needs_review.csv, NOT shipped;
+        we never fabricate a category to force it into the pack.
+
+    Category source is chapter-map-first (a book that DOES carry a usable
+    chapter map keeps it, at confidence 1.0), else the name classifier.
+    """
+    name, page = entry["name"], entry["page"]
+    if is_fragment(name):
+        return {"verdict": "dropped", "name": name, "page": page,
+                "category": None, "confidence": 0.0, "tags": [],
+                "reason": "fragment"}
+    chap = entry.get("chapter")
+    cat, add_tags = (None, [])
+    if chap:
+        cat, add_tags = map_raw_category(chap)
+    conf = 1.0 if cat else 0.0
+    if cat is None:
+        cat, conf, add_tags = classify_name(name)
+    tags = list(dict.fromkeys([*entry.get("tags", []), *add_tags]))
+    verdict = "held"
+    if cat is not None and conf >= threshold:
+        verdict = "clean"
+        # ...unless the name is a single lone word that is either a best-effort
+        # tail match (conf <= 0.5: "Lemon", "Scalloped") OR a bare dish-type
+        # label ("Sauce", "Jelly", any confidence). Both are truncated
+        # qualifiers, not self-contained recipes — hold rather than ship a
+        # broken name (P2P-007).
+        lone = _lone_word(name)
+        if lone is not None and (conf <= LONE_QUALIFIER_MAX_CONF
+                                 or bool(_clf_words(lone) & GENERIC_HEAD_NOUNS)):
+            verdict = "held"
+    return {"verdict": verdict, "name": name, "page": page,
+            "category": cat, "confidence": conf, "tags": tags}
+
+
 def cmd_classify(args: argparse.Namespace) -> int:
     identifier = args.identifier
+    threshold = args.threshold
     book_dir = BOOKS_DIR / identifier
     draft_path = book_dir / "draft.json"
     if not draft_path.exists():
@@ -1423,68 +1552,59 @@ def cmd_classify(args: argparse.Namespace) -> int:
     draft = json.loads(draft_path.read_text(encoding="utf-8"))
     entries = draft["entries"]
 
-    # Build the chapter->category lookup the same way extract did, so a book
-    # WITH a usable chapter map still categorizes by chapter first and only
-    # falls through to the name classifier for the rest.
-    chapter_cat: dict[str, tuple[str, list[str]]] = {}
-
-    kept: list[dict] = []
-    dropped: list[tuple[str, str, str]] = []       # (name, page, reason)
-    review: list[tuple[str, str, str, float]] = []  # (name, page, cat, conf)
-    hist: collections.Counter = collections.Counter()
-    auto = 0
+    clean: list[dict] = []                          # -> final.csv (SHIPPED)
+    held: list[tuple[str, str, str, float]] = []    # -> needs_review (name,page,cat,conf)
+    dropped: list[tuple[str, str, str]] = []        # -> dropped.csv (name,page,reason)
+    hist: collections.Counter = collections.Counter()   # CLEAN-ONLY histogram
     for e in entries:
-        name, page = e["name"], e["page"]
-        if is_fragment(name):
-            dropped.append((name, page, "fragment"))
-            continue
-        # chapter-map first (if the draft carried a mapping chapter), else name
-        chap = e.get("chapter")
-        cat, add_tags = (None, [])
-        if chap:
-            cat, add_tags = map_raw_category(chap)
-        conf = 1.0 if cat else 0.0
-        if cat is None:
-            cat, conf, add_tags = classify_name(name)
-        # merge draft tags + classifier tags
-        tags = list(dict.fromkeys([*e.get("tags", []), *add_tags]))
-        label = cat or "Uncategorized"        # histogram / review label
-        hist[label] += 1
-        if conf >= 0.45 and cat is not None:
-            auto += 1
-        else:
-            review.append((name, page, label, conf))
-        kept.append({
-            # final.csv leaves category BLANK when there's no signal — `apply`
-            # installs blanks as Uncategorized (a literal "Uncategorized" string
-            # is an unmapped-category error there).
-            "name": name, "page": page, "category": cat or "",
-            "tags": ", ".join(tags), "url": e.get("url", ""),
-            "pageStatus": e.get("pageStatus", "unverified"),
-        })
+        v = classify_entry(e, threshold)
+        if v["verdict"] == "dropped":
+            dropped.append((v["name"], v["page"], v["reason"]))
+        elif v["verdict"] == "clean":
+            hist[v["category"]] += 1
+            clean.append({
+                "name": v["name"], "page": v["page"], "category": v["category"],
+                "tags": ", ".join(v["tags"]), "url": e.get("url", ""),
+                "pageStatus": e.get("pageStatus", "unverified"),
+            })
+        else:  # held — not shipped
+            held.append((v["name"], v["page"],
+                         v["category"] or "Uncategorized", v["confidence"]))
 
+    # final.csv is now the CLEAN subset only (witness P2P-007): every row has a
+    # resolved category, so `apply` ships a clean pack with no blank categories.
     _write_csv(book_dir / "final.csv",
                ["name", "page", "category", "tags", "url", "pageStatus"],
                [[k["name"], k["page"], k["category"], k["tags"], k["url"],
-                 k["pageStatus"]] for k in kept])
+                 k["pageStatus"]] for k in clean])
     _write_csv(book_dir / "needs_review.csv",
                ["name", "page", "guessed_category", "confidence"],
-               [[n, p, c, f"{cf:.2f}"] for n, p, c, cf in review])
+               [[n, p, c, f"{cf:.2f}"] for n, p, c, cf in held])
     _write_csv(book_dir / "dropped.csv",
                ["name", "page", "reason"],
                [[n, p, r] for n, p, r in dropped])
 
-    n_kept = len(kept)
-    print(f"{identifier}: {n_kept} kept, {len(dropped)} dropped "
-          f"(fragments), {len(review)} need review")
-    print(f"  auto-classified (conf >= 0.45): {auto}/{n_kept} "
-          f"({auto / max(n_kept, 1):.1%})")
-    unc = hist.get("Uncategorized", 0)
-    print(f"  Uncategorized: {unc} ({unc / max(n_kept, 1):.1%})")
-    print("  histogram:")
+    raw = len(entries)
+    n_clean, n_held, n_drop = len(clean), len(held), len(dropped)
+    # stats.json lets `apply` stamp curatedSubset + rawIndexCount honestly
+    # (how many index entries were withheld) without re-deriving them.
+    (book_dir / "stats.json").write_text(
+        json.dumps({"raw": raw, "clean": n_clean, "held": n_held,
+                    "dropped": n_drop, "threshold": threshold,
+                    "generated": time.strftime("%Y-%m-%dT%H:%M:%S%z")},
+                   indent=1) + "\n", encoding="utf-8")
+
+    def pct(n: int) -> str:
+        return f"{n / max(raw, 1):.1%}"
+    print(f"{identifier}: {raw} raw index entries "
+          f"(threshold {threshold:.2f})")
+    print(f"  clean   (SHIPPED -> final.csv):        {n_clean:5d}  ({pct(n_clean)})")
+    print(f"  held    (needs review, NOT shipped):   {n_held:5d}  ({pct(n_held)})")
+    print(f"  dropped (fragments):                   {n_drop:5d}  ({pct(n_drop)})")
+    print("  clean category histogram:")
     for cat, cnt in hist.most_common():
         print(f"    {cnt:5d}  {cat}")
-    print(f"  wrote {book_dir}/{{final.csv,needs_review.csv,dropped.csv}}")
+    print(f"  wrote {book_dir}/{{final.csv,needs_review.csv,dropped.csv,stats.json}}")
     return 0
 
 
@@ -1523,9 +1643,12 @@ def smart_title(s: str) -> str:
 
 
 def clean_creator(s: str) -> str:
-    """Drop trailing life dates: 'Escoffier, A. (Auguste), 1846-1935' ->
-    'Escoffier, A. (Auguste)'."""
-    return re.sub(r"[,;\s]*\d{4}\s*-\s*(\d{4})?\.?\s*$", "", s).strip()
+    """Drop trailing life dates and archive.org catalog annotations:
+    'Escoffier, A. (Auguste), 1846-1935' -> 'Escoffier, A. (Auguste)';
+    'Chan, Shiu Wong, 1893- [from old catalog]' -> 'Chan, Shiu Wong'."""
+    s = re.sub(r"\s*\[[^\]]*\]\s*$", "", s)        # trailing "[from old catalog]"
+    s = re.sub(r"[,;\s]*\d{4}\s*-\s*(\d{4})?\.?\s*$", "", s)   # life dates
+    return s.strip()
 
 
 def country_from_publisher(publisher: str) -> str | None:
@@ -1627,8 +1750,26 @@ def cmd_apply(args: argparse.Namespace) -> int:
         print(f"warning: {blanks} recipes without category "
               "(they install as Uncategorized)", file=sys.stderr)
 
+    # Honesty flag (witness P2P-007): when classify withheld a material share
+    # of the raw index (held + dropped > 5% of raw), stamp the pack + catalog
+    # entry so the metadata says out loud that this is a curated subset and how
+    # many index entries the book actually had. Read from classify's stats.json;
+    # absent (e.g. a self-contained book curated straight to final.csv) -> omit.
+    curated_extras: dict = {}
+    stats_path = book_dir / "stats.json"
+    if stats_path.exists():
+        try:
+            stats = json.loads(stats_path.read_text(encoding="utf-8"))
+            raw = int(stats.get("raw", 0))
+            withheld = int(stats.get("held", 0)) + int(stats.get("dropped", 0))
+            if raw and withheld / raw > 0.05:
+                curated_extras = {"curatedSubset": True, "rawIndexCount": raw}
+        except (json.JSONDecodeError, ValueError, TypeError):
+            pass
+
     pack = {"id": identifier, "version": 1,
-            "book": {"name": title, "tags": book_tags}, "recipes": recipes}
+            "book": {"name": title, "tags": book_tags},
+            **curated_extras, "recipes": recipes}
     PACKS_DIR.mkdir(parents=True, exist_ok=True)
     pack_path = PACKS_DIR / f"{identifier}.json"
     pack_path.write_text(json.dumps(pack, ensure_ascii=False, indent=1) + "\n",
@@ -1643,6 +1784,7 @@ def cmd_apply(args: argparse.Namespace) -> int:
         "year": meta["year"], "country": country, "cuisines": cuisines,
         "era": "historical", "type": "linked", "recipeCount": len(recipes),
         "categories": [c for c, _ in hist.most_common() if c != "(none)"],
+        **curated_extras,
         "file": f"packs/{identifier}.json", "version": 1,
     }
     entry = {k: v for k, v in entry.items() if v is not None}
@@ -1801,6 +1943,38 @@ def cmd_selftest(_args: argparse.Namespace) -> int:
     check("is_fragment: real dish name kept",
           not is_fragment("Tomato Soup") and not is_fragment("Cake, Rice"))
 
+    # Clean-subset split (witness P2P-007): final.csv ships only cat!=None AND
+    # conf>=CLEAN_THRESHOLD; low-confidence + signal-free names are HELD; pure
+    # fragments are DROPPED. classify_entry is the single decision seam.
+    def verdict(name):
+        return classify_entry({"name": name, "page": "1"})["verdict"]
+    check("clean-subset: high-confidence dish ships to final.csv",
+          verdict("Chocolate Cake") == "clean", verdict("Chocolate Cake"))
+    check("clean-subset: low-confidence guess held ('Chocolate' -> Drinks 0.4)",
+          verdict("Chocolate") == "held", verdict("Chocolate"))
+    check("clean-subset: signal-free truncated qualifier held ('Russian')",
+          verdict("Russian") == "held", verdict("Russian"))
+    check("clean-subset: pure fragment dropped ('and Rice Croquettes')",
+          verdict("and Rice Croquettes") == "dropped",
+          verdict("and Rice Croquettes"))
+    check("clean-subset: --threshold raises the ship bar",
+          classify_entry({"name": "Hash", "page": "1"})["verdict"] == "clean"
+          and classify_entry({"name": "Hash", "page": "1"},
+                             threshold=0.6)["verdict"] == "held",
+          str(classify_entry({"name": "Hash", "page": "1"})["confidence"]))
+    check("clean-subset: lone one-word qualifier held above threshold ('Banana')",
+          verdict("Banana") == "held", verdict("Banana"))
+    check("clean-subset: real one-word dish ships ('Junket' -> Desserts 0.85)",
+          verdict("Junket") == "clean", verdict("Junket"))
+    check("clean-subset: multi-word tail match still ships ('Baked Apples')",
+          verdict("Baked Apples") == "clean", verdict("Baked Apples"))
+    check("clean-subset: bare dish-type label held ('Sauce', high conf)",
+          verdict("Sauce") == "held" and verdict("Jelly") == "held",
+          f'{verdict("Sauce")}/{verdict("Jelly")}')
+    check("classify: 'Steak with Mushroom Sauce' is a Main, not a Sauce",
+          clf("Porterhouse Steak with Mushroom Sauce") == "Mains",
+          str(classify_name("Porterhouse Steak with Mushroom Sauce")))
+
     try:
         text = get_djvu_text(SELFTEST_ID)
         check("djvu.txt starts with 'Copyright'",
@@ -1856,6 +2030,10 @@ def main(argv: list[str] | None = None) -> int:
         "classify", help="name-based meal-role classify draft.json -> "
         "final.csv + needs_review.csv + dropped.csv")
     p_classify.add_argument("identifier", help="archive.org item id")
+    p_classify.add_argument(
+        "--threshold", type=float, default=CLEAN_THRESHOLD,
+        help="min confidence to SHIP an entry into final.csv (clean subset); "
+             f"below this it is HELD in needs_review.csv (default {CLEAN_THRESHOLD})")
     p_classify.set_defaults(func=cmd_classify)
 
     p_apply = sub.add_parser(
