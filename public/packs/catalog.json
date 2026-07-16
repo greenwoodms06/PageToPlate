@@ -1,313 +1,286 @@
 {
- "catalogVersion": 1,
- "packs": [
-  {
-   "id": "atk-complete",
-   "title": "The Complete America's Test Kitchen TV Show Cookbook 2001–2025",
-   "author": "America's Test Kitchen",
-   "year": 2025,
-   "country": "US",
-   "cuisines": [
-    "american"
-   ],
-   "era": "modern",
-   "type": "index-only",
-   "recipeCount": 1635,
-   "categories": [
-    "Mains",
-    "Desserts",
-    "Sauces & Condiments",
-    "Sides",
-    "Breakfast & Brunch",
-    "Soups & Stews",
-    "Salads",
-    "Breads",
-    "Preserves & Pickles",
-    "Drinks",
-    "Basics"
-   ],
-   "file": "packs/atk-complete.json",
-   "version": 1
-  },
-  {
-   "id": "cu31924000610117",
-   "title": "A Guide to Modern Cookery",
-   "author": "Escoffier, A. (Auguste)",
-   "year": 1907,
-   "country": "GB",
-   "cuisines": [
-    "french"
-   ],
-   "era": "historical",
-   "type": "linked",
-   "recipeCount": 2981,
-   "categories": [
-    "Mains",
-    "Desserts",
-    "Sides",
-    "Basics",
-    "Soups & Stews",
-    "Sauces & Condiments",
-    "Salads",
-    "Preserves & Pickles",
-    "Drinks"
-   ],
-   "file": "packs/cu31924000610117.json",
-   "version": 1
-  },
-  {
-   "id": "cookingscholbost00farmrich",
-   "title": "The Boston Cooking-school Cook Book",
-   "author": "Farmer, Fannie Merritt",
-   "year": 1918,
-   "country": "US",
-   "cuisines": [
-    "american"
-   ],
-   "era": "historical",
-   "type": "linked",
-   "recipeCount": 1737,
-   "categories": [
-    "Desserts",
-    "Mains",
-    "Sides",
-    "Sauces & Condiments",
-    "Soups & Stews",
-    "Breads",
-    "Breakfast & Brunch",
-    "Basics",
-    "Drinks",
-    "Preserves & Pickles",
-    "Salads"
-   ],
-   "curatedSubset": true,
-   "rawIndexCount": 3616,
-   "file": "packs/cookingscholbost00farmrich.json",
-   "version": 1
-  },
-  {
-   "id": "auntcarolinesdix00mckirich",
-   "title": "Aunt Caroline's Dixieland Recipes",
-   "author": "McKinney, Emma",
-   "year": 1922,
-   "country": "US",
-   "cuisines": [
-    "american"
-   ],
-   "era": "historical",
-   "type": "linked",
-   "recipeCount": 176,
-   "categories": [
-    "Desserts",
-    "Sides",
-    "Breads",
-    "Mains",
-    "Sauces & Condiments",
-    "Soups & Stews",
-    "Breakfast & Brunch",
-    "Preserves & Pickles",
-    "Salads",
-    "Drinks"
-   ],
-   "curatedSubset": true,
-   "rawIndexCount": 190,
-   "file": "packs/auntcarolinesdix00mckirich.json",
-   "version": 1
-  },
-  {
-   "id": "chinesecookbook00chan",
-   "title": "The Chinese Cook Book",
-   "author": "Chan, Shiu Wong",
-   "year": 1917,
-   "country": "US",
-   "cuisines": [
-    "chinese"
-   ],
-   "era": "historical",
-   "type": "linked",
-   "recipeCount": 160,
-   "categories": [
-    "Mains",
-    "Sides",
-    "Soups & Stews",
-    "Breakfast & Brunch",
-    "Desserts",
-    "Breads",
-    "Sauces & Condiments",
-    "Salads"
-   ],
-   "curatedSubset": true,
-   "rawIndexCount": 191,
-   "file": "packs/chinesecookbook00chan.json",
-   "version": 1
-  },
-  {
-   "id": "italiancooking00daly",
-   "title": "Italian Cooking",
-   "author": "Daly, Dorothy",
-   "year": 1900,
-   "country": "GB",
-   "cuisines": [
-    "italian"
-   ],
-   "era": "historical",
-   "type": "linked",
-   "recipeCount": 645,
-   "categories": [
-    "Mains",
-    "Sides",
-    "Sauces & Condiments",
-    "Soups & Stews",
-    "Desserts",
-    "Breakfast & Brunch",
-    "Salads",
-    "Basics"
-   ],
-   "curatedSubset": true,
-   "rawIndexCount": 686,
-   "file": "packs/italiancooking00daly.json",
-   "version": 1
-  },
-  {
-   "id": "onehundredonemex00soutiala",
-   "title": "One Hundred & One Mexican Dishes",
-   "author": "Southworth, May E. (May Elizabeth)",
-   "year": 1906,
-   "country": "US",
-   "cuisines": [
-    "mexican"
-   ],
-   "era": "historical",
-   "type": "linked",
-   "recipeCount": 80,
-   "categories": [
-    "Mains",
-    "Sides",
-    "Desserts",
-    "Soups & Stews",
-    "Breakfast & Brunch",
-    "Breads",
-    "Sauces & Condiments",
-    "Drinks",
-    "Salads"
-   ],
-   "curatedSubset": true,
-   "rawIndexCount": 95,
-   "file": "packs/onehundredonemex00soutiala.json",
-   "version": 1
-  },
-  {
-   "id": "cu31924000722862",
-   "title": "German National Cookery for American Kitchens : a Practical Book of the Art of Cooking As Performed in Germany",
-   "author": "Davidis, Henriette",
-   "year": 1904,
-   "country": "US",
-   "cuisines": [
-    "german"
-   ],
-   "era": "historical",
-   "type": "linked",
-   "recipeCount": 814,
-   "categories": [
-    "Mains",
-    "Desserts",
-    "Sides",
-    "Soups & Stews",
-    "Sauces & Condiments",
-    "Preserves & Pickles",
-    "Breakfast & Brunch",
-    "Salads",
-    "Breads",
-    "Basics",
-    "Drinks"
-   ],
-   "curatedSubset": true,
-   "rawIndexCount": 966,
-   "file": "packs/cu31924000722862.json",
-   "version": 1
-  },
-  {
-   "id": "calendarofdinner00neiluoft",
-   "title": "A Calendar of Dinners, with 615 Recipes",
-   "author": "Neil, Marion Harris",
-   "year": 1922,
-   "country": "US",
-   "cuisines": [
-    "american"
-   ],
-   "era": "historical",
-   "type": "linked",
-   "recipeCount": 178,
-   "categories": [
-    "Mains",
-    "Desserts",
-    "Sides",
-    "Salads",
-    "Breads",
-    "Breakfast & Brunch",
-    "Sauces & Condiments",
-    "Preserves & Pickles",
-    "Soups & Stews"
-   ],
-   "curatedSubset": true,
-   "rawIndexCount": 289,
-   "file": "packs/calendarofdinner00neiluoft.json",
-   "version": 1
-  },
-  {
-   "id": "worldsfairrecipe00land",
-   "title": "The World's Fair Recipe Book",
-   "author": "Landis, Jacob F.",
-   "year": 1893,
-   "country": "US",
-   "cuisines": [
-    "american"
-   ],
-   "era": "historical",
-   "type": "linked",
-   "recipeCount": 258,
-   "categories": [
-    "Desserts",
-    "Mains",
-    "Sides",
-    "Soups & Stews",
-    "Preserves & Pickles",
-    "Breads",
-    "Drinks",
-    "Sauces & Condiments",
-    "Breakfast & Brunch"
-   ],
-   "curatedSubset": true,
-   "rawIndexCount": 525,
-   "file": "packs/worldsfairrecipe00land.json",
-   "version": 1
-  },
-  {
-   "id": "goldenrulecookbo00shar",
-   "title": "The Golden Rule Cook Book : Six Hundred Recipes for Meatless Dishes",
-   "author": "Sharpe, M. R. L. (Maud Russell Lorraine)",
-   "year": 1912,
-   "country": "US",
-   "cuisines": [],
-   "era": "historical",
-   "type": "linked",
-   "recipeCount": 248,
-   "categories": [
-    "Sides",
-    "Soups & Stews",
-    "Sauces & Condiments",
-    "Salads",
-    "Breakfast & Brunch",
-    "Mains",
-    "Breads",
-    "Preserves & Pickles",
-    "Basics",
-    "Desserts"
-   ],
-   "curatedSubset": true,
-   "rawIndexCount": 650,
-   "file": "packs/goldenrulecookbo00shar.json",
-   "version": 1
-  }
- ]
+  "catalogVersion": 1,
+  "packs": [
+    {
+      "id": "atk-complete",
+      "title": "The Complete America's Test Kitchen TV Show Cookbook 2001–2025",
+      "author": "America's Test Kitchen",
+      "year": 2025,
+      "country": "US",
+      "cuisines": [
+        "american"
+      ],
+      "era": "modern",
+      "type": "index-only",
+      "recipeCount": 1635,
+      "categories": [
+        "Mains",
+        "Desserts",
+        "Sauces & Condiments",
+        "Sides",
+        "Breakfast & Brunch",
+        "Soups & Stews",
+        "Salads",
+        "Breads",
+        "Preserves & Pickles",
+        "Drinks",
+        "Basics"
+      ],
+      "file": "packs/atk-complete.json",
+      "version": 1
+    },
+    {
+      "id": "cu31924000610117",
+      "title": "A Guide to Modern Cookery",
+      "author": "Escoffier, A. (Auguste)",
+      "year": 1907,
+      "country": "GB",
+      "cuisines": [
+        "french"
+      ],
+      "era": "historical",
+      "type": "linked",
+      "recipeCount": 2981,
+      "categories": [
+        "Mains",
+        "Desserts",
+        "Sides",
+        "Basics",
+        "Soups & Stews",
+        "Sauces & Condiments",
+        "Salads",
+        "Preserves & Pickles",
+        "Drinks"
+      ],
+      "file": "packs/cu31924000610117.json",
+      "version": 1
+    },
+    {
+      "id": "cookingscholbost00farmrich",
+      "title": "The Boston Cooking-school Cook Book",
+      "author": "Farmer, Fannie Merritt",
+      "year": 1918,
+      "country": "US",
+      "cuisines": [
+        "american"
+      ],
+      "era": "historical",
+      "type": "linked",
+      "recipeCount": 1737,
+      "categories": [
+        "Desserts",
+        "Mains",
+        "Sides",
+        "Sauces & Condiments",
+        "Soups & Stews",
+        "Breads",
+        "Breakfast & Brunch",
+        "Basics",
+        "Drinks",
+        "Preserves & Pickles",
+        "Salads"
+      ],
+      "curatedSubset": true,
+      "rawIndexCount": 3616,
+      "file": "packs/cookingscholbost00farmrich.json",
+      "version": 1
+    },
+    {
+      "id": "auntcarolinesdix00mckirich",
+      "title": "Aunt Caroline's Dixieland Recipes",
+      "author": "McKinney, Emma",
+      "year": 1922,
+      "country": "US",
+      "cuisines": [
+        "american"
+      ],
+      "era": "historical",
+      "type": "linked",
+      "recipeCount": 176,
+      "categories": [
+        "Desserts",
+        "Sides",
+        "Breads",
+        "Mains",
+        "Sauces & Condiments",
+        "Soups & Stews",
+        "Breakfast & Brunch",
+        "Preserves & Pickles",
+        "Salads",
+        "Drinks"
+      ],
+      "curatedSubset": true,
+      "rawIndexCount": 190,
+      "file": "packs/auntcarolinesdix00mckirich.json",
+      "version": 1
+    },
+    {
+      "id": "chinesecookbook00chan",
+      "title": "The Chinese Cook Book",
+      "author": "Chan, Shiu Wong",
+      "year": 1917,
+      "country": "US",
+      "cuisines": [
+        "chinese"
+      ],
+      "era": "historical",
+      "type": "linked",
+      "recipeCount": 160,
+      "categories": [
+        "Mains",
+        "Sides",
+        "Soups & Stews",
+        "Breakfast & Brunch",
+        "Desserts",
+        "Breads",
+        "Sauces & Condiments",
+        "Salads"
+      ],
+      "curatedSubset": true,
+      "rawIndexCount": 191,
+      "file": "packs/chinesecookbook00chan.json",
+      "version": 1
+    },
+    {
+      "id": "onehundredonemex00soutiala",
+      "title": "One Hundred & One Mexican Dishes",
+      "author": "Southworth, May E. (May Elizabeth)",
+      "year": 1906,
+      "country": "US",
+      "cuisines": [
+        "mexican"
+      ],
+      "era": "historical",
+      "type": "linked",
+      "recipeCount": 80,
+      "categories": [
+        "Mains",
+        "Sides",
+        "Desserts",
+        "Soups & Stews",
+        "Breakfast & Brunch",
+        "Breads",
+        "Sauces & Condiments",
+        "Drinks",
+        "Salads"
+      ],
+      "curatedSubset": true,
+      "rawIndexCount": 95,
+      "file": "packs/onehundredonemex00soutiala.json",
+      "version": 1
+    },
+    {
+      "id": "cu31924000722862",
+      "title": "German National Cookery for American Kitchens : a Practical Book of the Art of Cooking As Performed in Germany",
+      "author": "Davidis, Henriette",
+      "year": 1904,
+      "country": "US",
+      "cuisines": [
+        "german"
+      ],
+      "era": "historical",
+      "type": "linked",
+      "recipeCount": 814,
+      "categories": [
+        "Mains",
+        "Desserts",
+        "Sides",
+        "Soups & Stews",
+        "Sauces & Condiments",
+        "Preserves & Pickles",
+        "Breakfast & Brunch",
+        "Salads",
+        "Breads",
+        "Basics",
+        "Drinks"
+      ],
+      "curatedSubset": true,
+      "rawIndexCount": 966,
+      "file": "packs/cu31924000722862.json",
+      "version": 1
+    },
+    {
+      "id": "calendarofdinner00neiluoft",
+      "title": "A Calendar of Dinners, with 615 Recipes",
+      "author": "Neil, Marion Harris",
+      "year": 1922,
+      "country": "US",
+      "cuisines": [
+        "american"
+      ],
+      "era": "historical",
+      "type": "linked",
+      "recipeCount": 178,
+      "categories": [
+        "Mains",
+        "Desserts",
+        "Sides",
+        "Salads",
+        "Breads",
+        "Breakfast & Brunch",
+        "Sauces & Condiments",
+        "Preserves & Pickles",
+        "Soups & Stews"
+      ],
+      "curatedSubset": true,
+      "rawIndexCount": 289,
+      "file": "packs/calendarofdinner00neiluoft.json",
+      "version": 1
+    },
+    {
+      "id": "worldsfairrecipe00land",
+      "title": "The World's Fair Recipe Book",
+      "author": "Landis, Jacob F.",
+      "year": 1893,
+      "country": "US",
+      "cuisines": [
+        "american"
+      ],
+      "era": "historical",
+      "type": "linked",
+      "recipeCount": 258,
+      "categories": [
+        "Desserts",
+        "Mains",
+        "Sides",
+        "Soups & Stews",
+        "Preserves & Pickles",
+        "Breads",
+        "Drinks",
+        "Sauces & Condiments",
+        "Breakfast & Brunch"
+      ],
+      "curatedSubset": true,
+      "rawIndexCount": 525,
+      "file": "packs/worldsfairrecipe00land.json",
+      "version": 1
+    },
+    {
+      "id": "goldenrulecookbo00shar",
+      "title": "The Golden Rule Cook Book : Six Hundred Recipes for Meatless Dishes",
+      "author": "Sharpe, M. R. L. (Maud Russell Lorraine)",
+      "year": 1912,
+      "country": "US",
+      "cuisines": [],
+      "era": "historical",
+      "type": "linked",
+      "recipeCount": 248,
+      "categories": [
+        "Sides",
+        "Soups & Stews",
+        "Sauces & Condiments",
+        "Salads",
+        "Breakfast & Brunch",
+        "Mains",
+        "Breads",
+        "Preserves & Pickles",
+        "Basics",
+        "Desserts"
+      ],
+      "curatedSubset": true,
+      "rawIndexCount": 650,
+      "file": "packs/goldenrulecookbo00shar.json",
+      "version": 1
+    }
+  ]
 }
