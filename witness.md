@@ -120,3 +120,28 @@ STATUS:       Resolved — policy set; per-book clean subsets, owner spot-checks
 ```
 
 ---
+
+```
+ID:           P2P-008
+WHEN:         2026-07-16 / round 3 / owner device use
+WHERE:        src/components/TabPager.tsx > interactive drag pager touch handling
+WHAT:         The drag pager shipped green on 183 unit + 4 e2e (CDP-emulated
+              touch), but on the owner's phone every swipe "jiggled" and sprang
+              back: mobile Chrome claims touches on a vertically scrollable
+              screen ~8px in and fires touchcancel, killing the drag. The
+              emulated e2e had no scrollable content and zero y-drift, so it
+              was structurally unable to represent the failure.
+TYPE:         Multiverse Signal — the gate (emulated e2e) does not measure the
+              quality that matters (real-device gesture arbitration). Same
+              shape as P2P-005/006 (on-device backup defects) and P2P-007
+              (triage bar ≠ index recoverability).
+CONSEQUENCE:  touch-action: pan-y pinch-zoom on the pager surface (b7cfe9b),
+              force-commented that green e2e cannot defend that line. Lesson
+              fenced: for touch-gesture work in this app, the owner's device
+              is the ONLY closing gate — emulated e2e is a regression floor,
+              not a verification.
+STATUS:       Resolved — owner verified swipes on device 2026-07-16
+              ("this works now").
+```
+
+---

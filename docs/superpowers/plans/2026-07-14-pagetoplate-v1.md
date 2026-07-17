@@ -753,3 +753,25 @@ shipped (commits 808069d, fa43d8f):
   book/category/rating stay plan-level gates.
 - Made cue (item 2): open item's "Made ✓" greyed outline → solid green "Made · N/scale"
   once made. Shipped.
+
+## Post-deploy amendments, round 3 (owner, 2026-07-16, splash + swipe feel)
+
+1. **Splash:** minimum hold + icon. Shipped, then evolved on device feedback:
+   Android's PWA launch screen (manifest bg + icon dead-center + name below)
+   cannot be removed, so the web splash **mirrors its geometry** (icon at exact
+   screen center, wordmark hanging below via absolute positioning) — the OS→web
+   handoff reads as ONE splash. Icon inlined (`?raw`, zero fetch) so it paints
+   with the wordmark. Hold 2s / fade 1s (`SPLASH_MIN_MS` / `SPLASH_FADE_MS`,
+   App.tsx). Splash is swipe-inert (`data-swipe-inert`) — e2e caught a chip-row
+   swipe passing through it.
+2. **Tab swipes → interactive pager** (`TabPager.tsx`, supersedes useSwipeTabs):
+   screen follows the finger, neighbor slides in as live preview (fixed overlay
+   z 5, under nav 10); commit at ≥35% column width OR the original ≥70px/<600ms
+   flick; 1/3 resistance at the ends (no wrap); ~10px axis lock replaces the old
+   |dy|≤50 rule; all round-1 misfire guards kept. **Device-critical:**
+   `touch-action: pan-y pinch-zoom` on the pager surface — without it mobile
+   Chrome touchcancels the drag (P2P-008); emulated e2e cannot catch that class.
+   Owner verified on device.
+
+Shipped: 5ed916a → b7cfe9b → 6cfeeaa, all live-verified by bundle hash.
+Owner: "good enough for now."
