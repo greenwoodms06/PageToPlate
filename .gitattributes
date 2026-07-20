@@ -1,0 +1,27 @@
+# Line endings — normalize everything to LF in the repo AND in the working
+# tree, on every platform. The repo is edited from both Windows (SourceTree)
+# and WSL; with core.autocrlf=false on both sides and no rules here, a Windows
+# checkout produced CRLF working files that showed up as all 180 tracked files
+# "modified". eol=lf makes the result identical for every client and tool.
+* text=auto eol=lf
+
+# CSVs are EXEMPT from normalization — store them byte-for-byte as written.
+# tools/curate_packs.py writes them with Python's csv.writer, which emits CRLF
+# line terminators per RFC 4180, and they are committed that way. Forcing LF
+# here would rewrite every generated CSV once, then show them as modified again
+# after every `classify` run — permanent churn against the tooling's own output.
+*.csv -text
+
+# Binaries — never touch these. `text=auto` already auto-detects most, but
+# being explicit avoids any chance of corruption on a bad detection.
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.ico  binary
+*.webp binary
+*.woff binary
+*.woff2 binary
+*.ttf  binary
+*.eot  binary
+*.pdf  binary

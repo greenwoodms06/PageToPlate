@@ -143,6 +143,23 @@ def parse_rows(path: pathlib.Path) -> list[dict]:
     return rows
 
 
+def upsert_catalog_entry(packs: list[dict], entry: dict) -> list[dict]:
+    """Replace `entry` IN PLACE by id, or append it if the pack is new.
+
+    Catalog order is user-visible: the Library renders packs in array order
+    (src/screens/books/LibrarySection.tsx — applyBookFilters is a pure filter
+    and nothing sorts). Rebuilding as `[p for p in packs if ...] + [entry]`
+    would move any regenerated pack to the bottom of the user's Library, so
+    regeneration must preserve position. New packs still land at the end.
+    """
+    for i, p in enumerate(packs):
+        if p["id"] == entry["id"]:
+            packs[i] = entry
+            return packs
+    packs.append(entry)
+    return packs
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("csv", type=pathlib.Path, help="index CSV (name/page/category[/keywords])")
@@ -235,7 +252,7 @@ def main() -> int:
         "version": args.version,
     }
     entry = {k: v for k, v in entry.items() if v is not None}
-    catalog["packs"] = [p for p in catalog["packs"] if p["id"] != args.id] + [entry]
+    upsert_catalog_entry(catalog["packs"], entry)
     catalog_path.write_text(json.dumps(catalog, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     print(f"updated {catalog_path}")
     return 0

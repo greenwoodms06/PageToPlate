@@ -74,6 +74,33 @@ decision, 2026-07-14) at import time — appetizer-vocabulary sections map to
 Sides with an auto `appetizer` tag — so CSVs produced here import cleanly
 without editing the scripts.
 
+> **Note on these two scripts.** `recipe_organize.py` and `recipe_enrich.py`
+> are pandas-based and predate the rest of the pipeline. They are *not* wired
+> to `build_pack.py`: they write `master_*.csv` to the **current working
+> directory**, and `recipe_organize.py` carries a hard-coded
+> `C:\Users\fig\Downloads` scan path (edit `target_folder` before running).
+> Their output is a CSV you then hand to `build_pack.py` explicitly. Only the
+> finished index CSV is committed (e.g. `background/atk_index.csv`) — the
+> intermediate `master_*.csv` files are not in the repo.
+
+## Where manual fixes belong
+
+Both pack builders **overwrite their outputs completely** on every run, so
+`public/packs/*.json` and `public/packs/catalog.json` are build artifacts, not
+edit surfaces — `build_pack.py` rewrites the pack file and upserts the pack's
+catalog entry by `id`, and `curate_packs.py apply` does the same. (The one
+exception is *removing* a pack, which neither builder supports and which is a
+deliberate hand-edit — see [CURATION.md](CURATION.md) § 3b.)
+
+Fix upstream instead, at the lowest layer that makes the fix reusable:
+
+| kind of fix | where it goes |
+|---|---|
+| wrong name / page / category in an index-only pack | the source CSV (`background/<book>_index.csv`) — it's committed, and `build_pack.py` is a pure function of it |
+| a category synonym any cookbook might use | `SYN` / `APPETIZER_SECTIONS` in `build_pack.py`, mirroring `src/data/categories.ts` |
+| dish knowledge reusable across books | the classifier tables in `curate_packs.py` (`_RULES`, ingredient sets) |
+| book-specific OCR repairs, drops, chapter maps | a per-book `classify.py` — see **[CURATION.md](CURATION.md) § 3b** |
+
 ## Content packs — `build_pack.py` (plan Task 25)
 
 Turns a clean index CSV (the pipeline's output, or any name/page/category CSV)

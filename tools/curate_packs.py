@@ -118,7 +118,7 @@ SELFTEST_ID = "calendarofdinner00neiluoft"
 # that single copy rather than fork a third one.
 if str(TOOLS_DIR) not in sys.path:
     sys.path.insert(0, str(TOOLS_DIR))
-from build_pack import map_raw_category  # noqa: E402
+from build_pack import map_raw_category, upsert_catalog_entry  # noqa: E402
 
 # Catalog `cuisines` come from book-level tags filtered to the region
 # vocabulary (tools/README.md "AI region pass" list, plus american/british
@@ -1824,8 +1824,7 @@ def cmd_apply(args: argparse.Namespace) -> int:
         "file": f"packs/{identifier}.json", "version": 1,
     }
     entry = {k: v for k, v in entry.items() if v is not None}
-    catalog["packs"] = [p for p in catalog["packs"]
-                        if p["id"] != identifier] + [entry]
+    upsert_catalog_entry(catalog["packs"], entry)
     catalog_path.write_text(json.dumps(catalog, ensure_ascii=False, indent=1) + "\n",
                             encoding="utf-8")
     print(f"updated {catalog_path}")

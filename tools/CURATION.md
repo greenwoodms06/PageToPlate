@@ -26,11 +26,18 @@ content) are a separate path — see `tools/build_pack.py`.
 
 ```
 triage  →  extract  →  judgment pass (human)  →  apply  →  verify-links  →  PR
-                          │
-                          └─ or: classify  (name-based, for hierarchical-index
-                                            books whose categories can't come
-                                            from a chapter map — see § 2b)
+             │            │
+             │            └─ or: classify  (name-based, for hierarchical-index
+             │                              books whose categories can't come
+             │                              from a chapter map — see § 2b)
+             │
+             └─ draft.json ─→ per-book classify.py ─→ final.csv   (§ 3b — the
+                              durable home for book-specific manual fixes)
 ```
+
+Everything downstream of `draft.json` is **regenerated wholesale** on each run.
+Before hand-editing any file in this pipeline, check § 3b for which ones
+survive.
 
 All commands are subcommands of `tools/curate_packs.py`. Every network fetch
 is rate-limited (≥0.7 s between requests) and cached under
@@ -172,13 +179,20 @@ The command prints raw / clean (shipped) / held / dropped counts and the
 **clean-only** category histogram.
 
 **Workflow — how to improve a run:** open `needs_review.csv` and work the held
-residual two ways —
+residual three ways —
 
 - entries you can place by **dish knowledge** → add their keyword to the
   classifier table in `curate_packs.py` (the ingredient sets or `_RULES`) and
   re-run, so the fix is **reusable** on the next book, not a one-off edit;
-- genuinely idiosyncratic entries → hand-correct the category directly in
-  `final.csv` and log which in `notes.md`.
+- a **book's worth** of per-book judgment (chapter→category map, OCR name
+  repairs, drops) → write a per-book `classify.py`, § 3b;
+- a handful of genuinely idiosyncratic entries → hand-correct the category
+  directly in `final.csv` and log which in `notes.md`.
+
+> ⚠️ **`classify` overwrites `final.csv`** (`cmd_classify` writes it with mode
+> `"w"`). Hand-edits to `final.csv` survive `apply`, but re-running `classify`
+> on that book destroys them silently. If you expect to re-run `classify`,
+> encode the fixes as a per-book `classify.py` instead — see § 3b.
 
 Aim for a clean histogram that reads like a real cookbook — all/most of the 11
 categories present, none dominating past ~35% (a genuinely dessert- or
@@ -227,6 +241,82 @@ What the judgment pass does:
 
 Keep `url`/`pageStatus` from the draft unless you have reason to change them.
 
+### 3b. Where manual fixes belong
+
+Every stage of this pipeline **regenerates its output file wholesale**. Knowing
+which files are safe to edit is the difference between a fix that survives and
+one that vanishes on the next run:
+
+| file | written by | safe to hand-edit? |
+|---|---|---|
+| `public/packs/<id>.json` | `apply` | **No** — rewritten every `apply` |
+| `public/packs/catalog.json` | `apply`, `build_pack.py` | **No**, except to *remove* a pack — see below |
+| `final.csv` | `classify` (mode `"w"`) | **Only if you never re-run `classify`** for that book |
+| `needs_review.csv`, `dropped.csv`, `stats.json` | `classify` | No — derived |
+| `draft.json`, `review.md` | `extract` | No — rewritten every `extract` |
+| `notes.md` | `extract` (scaffold only) | **Yes** — your judgment log + `Tags:` line |
+| per-book `classify.py` | you | **Yes** — this is the durable fix surface |
+
+**Recommended: encode judgment as a per-book `classify.py`.** For anything
+beyond a couple of one-off tweaks, write a script in the book's workspace that
+reads `draft.json` and regenerates `final.csv` deterministically. The worked
+example is `tools/curation/books/cu31924000610117/classify.py` (Escoffier,
+2,981 recipes), which encodes the judgment pass as reviewable data tables:
+
+- `DROPS` — `(name, page) → reason` for entries that aren't recipes
+- `ORPHANS` — `(name, page) → full name` for second halves of wrapped index
+  lines, each reconstruction read from the raw OCR
+- `FIXES` — exact full-name OCR repairs
+- `CARET_SPECIALS` / `DIGIT_SPECIALS` + `fix_name()` — systematic OCR rules
+  (`^` → `é`, `k la` → `à la`, `HoUandaise` → `Hollandaise`)
+- a chapter → category map, applied by page range
+
+Why this is the right place rather than the alternatives:
+
+- **vs. editing `public/packs/<id>.json`** — destroyed by the next `apply`, and
+  the pack stops matching the `final.csv` a reviewer diffs it against.
+- **vs. hand-editing `final.csv`** — destroyed by the next `classify`, and the
+  reasoning is lost: a reviewer sees a changed category with no record of why.
+- **vs. adding the rule to `curate_packs.py`** — correct for *generalizable*
+  dish knowledge (a keyword any cookbook might use), wrong for book-specific
+  quirks. Escoffier's `"SautW chicken, Fermiere"` teaches the shared classifier
+  nothing and would bloat it for every future book.
+
+The pattern is re-runnable and self-invalidating: `classify.py` asserts that
+every `ORPHANS`/`FIXES` key was actually used, so a stale entry (because
+`extract` improved and the garbled name no longer appears) fails loudly instead
+of rotting silently. Keep the corresponding prose log in `notes.md`.
+
+A book curated this way skips generic `classify` entirely, so it has no
+`stats.json` — and `apply` therefore omits the `curatedSubset` / `rawIndexCount`
+honesty fields. That is correct when the book ships essentially its whole index;
+if your per-book script withholds a material share, write a `stats.json`
+yourself so the pack metadata stays honest.
+
+#### Removing a pack
+
+Neither builder supports removal — there is no `remove` subcommand, and `apply`
+only ever creates or updates. Withdrawing a pack (unclear rights, a bad
+extraction) is a deliberate manual step:
+
+1. delete `public/packs/<id>.json`;
+2. delete that pack's object from the `packs` array in
+   `public/packs/catalog.json`;
+3. optionally keep `tools/curation/books/<id>/` as the record of why.
+
+Re-running `apply` on that id later re-creates it at the end of the catalog.
+
+**A catalog removal is not a recall.** Installed packs are ordinary `Cookbook`
+rows in the user's local IndexedDB — pulling the entry stops new installs and
+hides the Library card, but existing users keep the book, its recipes, and (for
+linked packs) their archive.org URLs. There is no revocation path. The app
+degrades safely: `backfillPatches` skips a book whose pack left the catalog
+(`src/data/packs.ts` — *"pack no longer in the catalog — leave it be"*), and
+`catalogEntry` throws `unknown pack <id>` for install/update, which users can't
+currently reach because `updatePack`/`uninstallPack` have no UI (they're
+console/Playwright-only). If a legal takedown ever needs to reach installed
+users, that is a new feature, not a catalog edit.
+
 ### 4. `apply` — build the pack
 
 ```
@@ -241,6 +331,12 @@ keep-first dedupe on name+page), and writes:
 - an entry in `public/packs/catalog.json` (title/author/year from archive
   metadata, country from the publisher imprint, `era: "historical"`,
   `type: "linked"`; override with `--title/--author/--country` if wrong)
+
+The catalog entry is upserted **in place** (`upsert_catalog_entry`, shared with
+`build_pack.py`): regenerating an existing pack keeps its position, and only new
+packs are appended. This matters because catalog array order *is* the Library's
+display order — nothing in the app sorts it — so an append-on-rebuild would
+silently drop any regenerated pack to the bottom of the user's Library.
 
 It **refuses to write** if any category fails to map, prints a category
 histogram for an eyeball check, and warns on blank categories (those install
@@ -277,9 +373,11 @@ malformed identifiers/paths — it cannot detect a link that lands on the
       dessert book shouldn't be 80% Mains)
 - [ ] No unverified-link rate surprise (extraction typically verifies >90%;
       if most links are unverified, say why in the PR)
-- [ ] `notes.md` judgment log filled in; commit
-      `tools/curation/books/<id>/{draft.json,review.md,notes.md,final.csv}`
-      alongside the pack so reviewers can diff draft → final
+- [ ] `notes.md` judgment log filled in; commit the whole book workspace
+      `tools/curation/books/<id>/` — `{draft.json,review.md,notes.md,final.csv}`
+      plus `{needs_review.csv,dropped.csv,stats.json}` if `classify` ran, and
+      `classify.py` if you wrote one — alongside the pack, so reviewers can
+      diff draft → final and re-run the judgment pass
 - [ ] The work is clearly public domain (see Licensing)
 
 ## Formats
